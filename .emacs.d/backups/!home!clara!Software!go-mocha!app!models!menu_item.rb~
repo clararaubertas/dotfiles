@@ -1,3 +1,0 @@
-class MenuItem < ActiveRecord::Base
-  attr_accessible :name, :price_cents, :business_id
-end

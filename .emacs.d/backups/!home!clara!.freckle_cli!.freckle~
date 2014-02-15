@@ -1,4 +1,0 @@
-[freckle_credentials] 
-base_url = https://yoursubdomain.letsfreckle.com/api
-api_key  = keygeneratedbyfreckle
-user     = clara@parallactic.com

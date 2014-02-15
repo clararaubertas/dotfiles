@@ -1,8 +1,0 @@
-<ul class='messages'>
-<%= @position.name %>
-<%= p.name %>
-
-<% for m in @trial.conversation_between(p, @position) %>
-<li><strong><%= m.from_position.name %></strong> <%= m.content %></li>
-<% end %>
-</ul>
