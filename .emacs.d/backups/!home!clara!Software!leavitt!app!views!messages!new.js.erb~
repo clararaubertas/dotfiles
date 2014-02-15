@@ -1,0 +1,1 @@
+$("#<%= @div %>").html("<%= j(render('show_comments', :comments=> @comments)) %>");

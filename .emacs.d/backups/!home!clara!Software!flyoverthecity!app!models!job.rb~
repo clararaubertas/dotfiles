@@ -1,0 +1,290 @@
+class Job < ActiveRecord::Base
+
+  attr_accessible *column_names, :job_attachments_attributes
+  belongs_to :category
+  delegate :name, :to => :category, :prefix => true, :allow_nil => true
+  attr_accessor :via_client
+  belongs_to :client
+  delegate :name, :to => :client, :prefix => true, :allow_nil => true
+  belongs_to :messenger
+  delegate :name, :to => :messenger, :prefix => true, :allow_nil => true
+  validates_presence_of :client, :origin, :destination_address, :date_due
+  validates_presence_of :atty_code, :if => lambda { self.via_client }
+  validates_uniqueness_of :tracking_number, :allow_nil => true
+  validate :valid_due_date
+  belongs_to :recurrence
+  has_many :job_attachments, :dependent => :destroy
+  accepts_nested_attributes_for :job_attachments, :allow_destroy => true, :reject_if => proc {|ja| ja[:data].blank? }
+  before_save :send_email, :create_tracking_number
+  after_create :send_confirmation, :new_job_notifications
+
+
+  def valid_due_date
+    if date_due && time_ready && (date_due.to_date < time_ready.to_date)
+      errors.add(:time_ready, "must be before or on the date due.")
+    end
+  end
+
+  def create_tracking_number
+    unless self.tracking_number
+      self.tracking_number = loop do
+        random_token = SecureRandom.urlsafe_base64
+        break random_token unless Job.find_by_tracking_number(random_token)
+      end
+    end
+  end
+
+  
+  def category_id
+    if super.nil?
+      0
+    else
+      super
+    end
+  end
+  
+  def new_job_notifications
+    for a in Admin.all
+      Confirmation.new_job(a, self).deliver if a.send_email && a.email
+      send_text_to(a) if a.send_text
+    end
+    if self.market
+      for d in self.market.dispatching_users
+        Confirmation.new_job(d, self).deliver if d.send_email && d.email
+
+        send_text_to(d) if d.send_text
+      end
+    end
+  end
+
+  def send_text_to(user)
+
+    if user.cell_no
+      number_to_send_to = user.cell_no
+
+      twilio_client = Twilio::REST::Client.new(ENV['twilio_sid'], ENV['twilio_token'])
+      begin
+        twilio_client.account.sms.messages.create(
+          :from => "+1#{ENV['twilio_phone_number']}",
+          :to => number_to_send_to,
+          :body => "New FOTC job ##{self.id} just created"
+          )
+      rescue
+        # fail silently for invalid phone
+      end
+    end
+  end
+
+  def messenger
+    if created_at && (created_at < DateTime.new(2013,8,4).to_date) && old_messenger_id
+      m = Messenger.unscoped.find_by_old_messenger_id(old_messenger_id)
+      if m
+        m
+      elsif messenger_id
+        Messenger.find_by_id(messenger_id)
+      else
+        nil
+      end
+    elsif messenger_id
+      Messenger.find_by_id(messenger_id)
+    else
+      nil
+    end
+  end
+  
+  def recommend_to(messenger)
+    Recommendation.create(:messenger => messenger, :job => self)
+    if !(messenger.email.blank?) && (messenger.email =~ /@/)
+      Confirmation.recommended(self, messenger).deliver
+    end
+    if !(messenger.phone.blank?)
+      number_to_send_to = messenger.phone
+      twilio_client = Twilio::REST::Client.new(ENV['twilio_sid'], ENV['twilio_token'])
+      begin
+        twilio_client.account.sms.messages.create(
+          :from => "+1#{ENV['twilio_phone_number']}",
+          :to => number_to_send_to,
+          :body => "New FOTC job ##{self.id} just recommended to you"
+          )
+      rescue
+        # fail silently if the phone # is invalid or something?
+      end
+    end
+  end
+
+  def market
+    self.client.market
+  end
+
+  def unassigned?
+    self.messenger.nil?
+  end
+
+
+  def complete?
+    self.completed
+  end
+
+  def cancelled?
+    self.cancelled
+  end
+
+  def assign!(messenger)
+    self.update_attribute(:messenger_id, messenger.id)
+  end
+
+  def complete!
+    self.update_attribute(:completed, true)
+  end
+
+  def uncomplete!
+    self.update_attribute(:completed, false)
+  end
+
+  def cancel!
+    self.update_attribute(:cancelled, true)
+  end
+
+  def uncancel!
+    self.update_attribute(:cancelled, false)
+  end
+
+  default_scope lambda { where :cancelled => false }
+  scope :cancelled, lambda { where :cancelled => true }
+  scope :unassigned, lambda { where :messenger_id => nil }
+  scope :incomplete, lambda { where "completed IS NULL OR completed = ?", false }
+  scope :complete, lambda { where :completed => true }
+  scope :unassigned_and_incomplete, lambda { unassigned.incomplete }
+  scope :for_client, lambda { |client| where :client_id => client if client }
+  scope :with_address, lambda { |address| where :destination_address => address if address }
+  scope :for_messenger, lambda { |messenger| where :messenger_id => messenger if messenger }
+  has_event_calendar :start_at_field => :date_due, :end_at_field => :date_due
+  scope :between_dates, lambda { |start_date, end_date| where :date_due => Date.parse(start_date.to_s)..(Date.parse(end_date.to_s)) if start_date && end_date }
+  scope :sorted_by_client, lambda { |ord| includes(:client).order("users.name #{ord}") }
+  scope :sorted_by_messenger, lambda { |ord| includes(:messenger).order("users.name #{ord}") }
+
+  def special_charge
+    [self.wait_time_charge,self.oversize_charge,self.roundtrip_charge,self.rush_charge,self.other_charge,self.physical_signature_charge].map{|c| c.to_f}.reduce(:+)
+  end
+
+  def total_charge
+    [self.special_charge, self.base_charge].map{|c| c.to_f}.reduce(:+)
+  end
+
+  def send_email
+    if self.signed_by_changed?
+      Confirmation.signed_for(self.email, self.destination_address, self.signed_by, self).deliver unless self.signed_by.blank? || self.email.blank? || !(self.deliver_notify)
+    end
+  end	
+  
+  def send_confirmation
+    Confirmation.job(self, self.email).deliver if !(self.email.blank?) && self.create_notify
+  end
+
+
+  def time_due
+    rush = self.rush
+    rush = 'standard' if rush == ''
+    sl = ServiceLevel.find_by_name_and_market_id_and_category_id(rush, (self.client.market_id if self.client), self.category_id)
+    if !(sl.blank?) && sl.minutes
+      created_at + sl.minutes.minutes
+    elsif self.rush == 'custom'
+      super
+    elsif self.rush == 'direct'
+      created_at
+    else
+      nil
+    end
+  end
+
+  def print_special_instructions(pdf = false)
+    if pdf
+      arr = ['wait_time', 'oversize', 'roundtrip', 'other_description', 'rush_details'].map {|l| self.send(l).to_s }
+      arr << "Physical Signature Required" if self.physical_signature
+      arr << "Return Original Signature" if self.original_sig
+      arr << "OK to Leave Without Signature" if self.without_sig
+      arr << "TIME DUE: " + time_due.strftime("%l:%M %p") if (rush == 'custom') && time_due
+      arr << self.rush unless (self.rush == 'custom' || self.rush.blank?)
+      arr.delete_if{|l| l.blank? }.join("\n")
+    else
+      arr = ['wait_time', 'oversize', 'roundtrip', 'other_description', 'rush_details'].map {|l| "<span class='#{l}'>#{self.send(l).to_s}</span>" }
+      arr << "<span class='sig'>Physical Signature Required</span>" if self.physical_signature
+      arr << "<span class='sig'>Return Original Signature</span>" if self.original_sig
+      arr << "<span class='sig'>OK to Leave Without Signature</span>" if self.without_sig
+      arr << "<span class='rush'>TIME DUE: " + time_due.strftime("%l:%M %p") + '</span>' if (rush == 'custom') && time_due
+      arr << "<span class='rush'>" + self.rush + "</span>" unless (self.rush == 'custom' || self.rush.blank?)
+      arr.unshift "PICK UP TIME: " + time_ready.strftime("%l:%M %p %m/%d/%y") if time_ready && time_ready.in_time_zone('Eastern Time (US & Canada)') > created_at.in_time_zone('Eastern Time (US & Canada)')
+      arr.delete_if{|l| l.blank? }.join('<br /> ').html_safe
+    end
+
+  end
+
+  def link
+    # used by event_calendar gem
+    %(<a class="#{self.completed ? 'complete' : 'incomplete'}" href="/jobs/#{self.id}" title="#{h(self.id)}">#{h(self.id)}</a>)
+  end
+
+  def self.event_strips_for_month_and_market(month, market)
+    start_d, end_d =Job.get_start_and_end_dates(month)
+    events = Job.between_dates(start_d, end_d)
+    if market
+      events = events.select{|e| e.respond_to?('market') && e.market == market}
+    end
+
+    event_strips = Job.create_event_strips(start_d, end_d, events)
+    unless event_strips.empty?
+      links1 = []
+      links2 = []
+      links3 = []
+      for i in event_strips.first
+        if i
+          l = Link.new
+          l.start_at = i.start_at
+          l.end_at = i.end_at
+          l.range = i.clip_range(i.start_at.to_date, i.end_at.to_date)
+          m = l.clone
+          n = l.clone
+          l.name = 'Report for this Date'
+          m.name = 'Mark All Complete'
+          n.name = 'Mark All Incomplete'
+          links1 << l
+          links2 << m
+          links3 << n
+        else
+          links1 << nil
+          links2 << nil
+          links3 << nil
+        end
+      end
+      event_strips = event_strips.unshift links1
+      event_strips.unshift links2
+      event_strips.unshift links3
+    end
+    return event_strips
+  end
+
+  alias :name :to_s
+
+  def to_s
+    self.id.to_s
+  end
+  
+  def field3
+    self.client ? self.client.field3.to_s : "Sender"
+  end
+
+  def field4
+    self.client ? self.client.field4.to_s : "Reference" 
+  end
+
+  def messenger_cut
+    if self.payment_amount.to_f > 0
+      return self.payment_amount.to_f
+    elsif self.messenger
+      return ((self.total_charge.to_f * self.messenger.payment_percent.to_f) / 100).round(2)
+    else
+      nil
+    end
+  end
+  
+end

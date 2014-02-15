@@ -1,0 +1,18 @@
+Communicate with nearby unit.
+
+Syntax:  TRANSMIT bitstring TO unit
+   TRANSMIT <standard code> TO unit
+
+Example:  TRANSMIT “0101” TO DRONE #302
+       TRANSMIT PING TO STOKER #016
+       TRANSMIT MSG TO WORKER (prompts for message type)
+
+Note:  Bitstring must be of form “010101” or similar; string length restricted based on access level.  The following standard cross-machine codes are supported:
+   000 – MSG_NO:  denial message
+   001 – MSG_YES:  confirmation message
+   010 – MSG_ACK:  acknowledge message received
+   011 – MSG_FEED:  request power message
+   100 – MSG_ERR:  error message
+   101 – MSG_PING:  ping/status verification message
+   110 – MSG_RPING:  ping response message
+   111 – MSG_QUERY:  generic/specifiable query message

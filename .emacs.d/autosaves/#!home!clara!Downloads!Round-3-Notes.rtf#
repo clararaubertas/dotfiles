@@ -1,0 +1,231 @@
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 When a borrower clicks on "View my public profile"(/dashboard)  and has none, he is redirected to the home page. Instead, he should be redirected to a blank profile which says what to do, or a popup saying what to do, or this option should be grayed out, or something. Or the action should be not there. \cf2 REPORTED (150508). \
+\cf0 \
+If a user is a borrower, the "Make A Bid" button should not be active.\
+\
+In the borrower agreement, it's very difficult to find fields that need filling in/checking. Could we somehow highlight them, different background color, that yellow band, or something?\
+\
+When a borrower clicks on "Edit my business information" [/dashboard] and has not yet completed this page, he is redirected to [//edit] and\
+gets an error page. A good answer would be to redirect this to the "Enter business information page"\cf2 .REPORTED (130508)\cf0  \
+\
+Monthly payment calculator has a bug. It displays "Monthly Payment of Monthly Payment of $42.20".(See Text section)\
+\
+Borrower agreement should highlight form validation errors --else they are hard to find. [/borrowers/agree]\
+\
+After changing email, redirect to dashboard not to home.\
+\
+Once all steps have been completed, but before approval is requested, the navigation bar disappears. Is this on purpose/why? I think they should be able to modify things until they request approval. \
+\
+Because we need the borrower agreement to be signed last, and because we need it be the last step, and because we need lenders to be able to modify their request before they submit for approval, we should: let them modify things, but if they do, have them re-sign the borrower agreement. \
+\
+Once the loan has been approved, it should be impossible to change the pre-listing application and the borrower agreement.  \
+Once the loan has been approved, the "complete pre-listing application" link [/dashboard] should instead take them to the page where they can view it (but not edit it). Same should also apply for all of the links.\
+\
+Clicking link to loan page from footer doesn't give me vanity url. It would be nice if one could *only* see the vanity URL..\cf3 REPORTED (130508) \
+\cf0 \
+How is the ssn being stored? We should discuss encrypting it.\
+\
+When time to end loans is near, "about 1 hour left" etc is not precise enough should say hours/minutes or exact time.\cf2  REPORTED (130508) \cf0 \
+\
+Pledge period not ending. On a loan, (68, kind kids coloring books), I manually changed the end of pledge period on the admin to 05-08 (this was done on 05-07). It is now 05-10 and: The loan page still has the "make a pledge" button; the admin page still says "Loan in Pledging stage"; the borrower's dashboard DOES say it is in the Auction Stage. \cf3 REPORTED (150509). \
+\cf0 \
+[Jose's Bug]: I'm not sure what the exacts steps are for this bug, but we've reproduced it twice. If a new borrower follows all of the steps in order when creating a loan, and clicks on "preview loan" *before* saving his loan profile, then: when she saves her loan, nothing is saved, AND the "Fill out loan profile" link on the dashboard is incomplete, AND preview my loan is blank, even though the preview showed a nice loan profile. Also, this creates an additional loan in the admin's Loan table, even for the same borrower. Check it out.\cf3  REPORTED (150510). \
+\
+\cf0 In the "Add Business Info" page, we should have a field for "Name of the person filling out this form (private)" under the Telephone field.\
+\pard\pardeftab720
+\cf0 \
+If i hit update business info and there is a mistake that i have to correct, it does not show files that have been uploaded. It says \'93no file chosen\'94 when i had already uploaded something. I had to re-upload them.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340
+\ls1\ilvl0\cf0 If i go back to edit profile, same issue the portion to upload says nothing has been uploaded, it allows me to go forward and the previously uploaded things are OK, but the entry to upload says blank. \
+Missing Invalid Fields error:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl340
+\ls1\ilvl1\cf0 	this is because it deleted the document based on the point before, however the error message is wrong.\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl340
+\ls1\ilvl2\cf0 {\listtext	
+\f1 \uc0\u9642 
+\f0 	}Tells me financials doc can\'92t be blank, but we are not asking for any financials in this section.\
+{\listtext	
+\f1 \uc0\u9642 
+\f0 	}Should not be required.
+\f2\fs30 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \
+Clicking on links under "Get More Information" in the public profile page displays the information as a very small rectangle in the corner of the browser window. See screenshot \
+\
+Create loan (2 of 3): Let's limit the slider to 3 years (3x12=36 months). \
+\
+Pre-Listing application: Website should be pre-filled with website from business info page, or not be shown at all. Number of locations should allow only numbers. \
+Pre-Listing Application: After trying to submit: Told me legal name was not there; I had typed it and it got deleted. It is flagging in red the box for monthly revenue
+\b . 
+\b0 I imagine it is because i typed 20,000 with the comma, but it does not specify why the error happens. Should give meaningful validation errors.\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs26 \cf0 Calculations\
+--------------\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 Right now, the calculations on amounts due to lenders are being done on the amount *sent* to a borrower. This does not allow us to keep our fixed fee of 2.5%! The question then is, what number should be used for calculations? One solution is "the sum of all payments sent to LendSquare for this loan". Another alternative is for this to be a field admin inputs "actual loan amount" or something. The best answer would be to combine these two, and default an editable number to the sum of all payments sent to LendSquare for this loan, and we can edit it if necessary. Then, when we make a payment to the borrowing business, we will make it for 97.5% of their loan amount and the payments/due/etc will still be calculated on the 100%.\
+\
+Also, I am getting a wrong calculation for what is due to a Lender (see screenshot 5, same loan as above/below). We should be careful with how things are calculated if/when a number like amount sent is changed. Principal remaining is wrong (should be 1000), and even with numbers shown interest due is wrong.  \
+\
+Can we have an alert/test for when numbers don't add up. Ie, if amount sent to business != amount transferred by lenders (confirmed) X .095, and similar for amounts due to lenders and from borrowers? Are there any tests already programmed in? If so, what are they? \
+\
+Variable fee is being calculated wrong, I think. Look at loan "Buying a LetterPress Machine". Here, I see a variable fee due on month 1 of $4.99. Now, my calculations show that this fee should be $1.25. \
+Principal Remaining= 1,000\
+Max IR = .05\
+Actual IR = .02\
+Savings Fee % = (.05-.02)/2 = .015\
+Savings Fee ($) = .015/12 X 1000 = 1.25 \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs26 \cf0 Lender\
+--------------\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 Crash. New lender (from dashboard). Verified email. Clicked on lender agreement [/lenders/agree], filled out the agreement, clicked Sign and Continue and got a "we're sorry..." page. This kept happening until I made a pledge first. \cf2 REPORTED (130508) \cf0 \
+\
+Tried to make a dwolla transfer and it failed (will check why). Got error "sorry there was a problem paying through dwolla..."... *but* I still got an email saying your LendSquare payment has been initiated (from us). This should not happen, unless the sending payment part of the process is successful. Also, every time I try to make a payment, I get another "your lendsquare payment has been initiated" email. \cf3 REPORTED (150510)\cf0 \
+\
+There is no way for me to re-authenticate with dwolla. So now I keep getting the above error "The user to send to could not be found", but I can't try new credentials. If, indeed, I was not able to log in, then I shouldn't be getting the send money form boxes. \cf3 REPORTED (150510)\
+\cf0 \
+For a lender with loans in repayment **and** pledge periods: her dashboard shows only the table "My archived bids". It should show all relevant tables: My archived bids, outstanding loans, payments coming in, etc. For example: this lender cannot see her payment schedule for the loan she currently has in repayment period. We won't be requiring the lender agreement to be signed for every loan, so the dashboard should not change much if a lender has new bids or loans (and we won't require the "you have xx days" band anymore).  \
+\
+Links to terms and conditions should be new window/tab.\
+\
+After changing email, I'm redirected to the home page, should be redirected to the dashboard and ask for confirmation again.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Lender Agreement\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 We will write this document such that it only needs to be signed once. We should not request it be signed for every bid/loan.\
+\
+I'm allowed to make pledges to businesses whose campaigns have finished, and then I just get the dashboard in screenshot 8. This overrode (word?) the previous dashboard which told me I had so-and-so days to finish my bid. As we have already seen, ti would also override one where I could see my payment schedule, etc.\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs26 \cf0 Both\
+-------\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 After clicking on the "Confirm email button link", there is no sort of notification that a new email has been sent. We should add one, so that users know what's happening and to avoid people clicking 7 times in a row.\
+There is no way for a user to update their information! Change dwolla account at which to receive payments, change name, etc. We need to discuss this.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\fs24 \cf0 \
+What steps (SPF, etc) can we take to avoid spam filters?\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs28 \cf0 Blog\
+
+\fs26 --------------
+\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 Blog should not have the "log in"/"log out" buttons, since you could be a user who is logged in to the (main) site, and then goes to the blog and gets confused about the log in there. Also, very few people will actually log in, so it's really not necessary. \cf3 REPORTED (130508) \cf0 \
+\
+Change url so that it's not /blog/ but /help/ or /info/\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs32 \cf0 Admin\
+======\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\fs28 \cf0 Pre Approval\
+-------------------\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 It would be nice to link to the application from the loan. When we are approving a loan we'll need to make sure we are looking at the correct\
+application. \
+\
+As well, we'll need to be able to see a the paragraphs of their loan page (or their loan page in its entirety) since we'll probably want to give them\
+feedback and/or use the content of that page to decide whether or not to approve the loan.  \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs26 \cf0 Loans\
+----------\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 Manually inputting loans: here (and in general), people in the drop-down menus are identified by their Names. This is a problem, since we will almost certainly have users with the same (or similar!) names in the future. 
+\b Whenever users need to be identified using drop-downs, we should be using a unique, human-readable identifier. I suggest email address.\
+
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs28 \cf0 Payments\
+---------------\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 When manually inputting a payment, who is the payee? Let's say that, for example, I'm manually inputting a payment from a lender (because they couldn't authenticate with dwolla and the system wouldn't let them try again). They are the payer. Who is the payee? LendSquare? How do I select them in the menu? \cf3 REPORTED (150510)\
+\
+\cf0 We would like to be able to do the following. Is this possible with the current admin/how: A business gets 30K of funds transferred to us by their lenders. We take our 2.5% fee and send them: a dwolla transfer for $10,000 and a check for $19,350. We record *two* payments in the system one dwolla and one check, or just the one dwolla payment (for $10,000), and their loan is calculated as being $30,000 for purposes of payments due, etc.\
+\
+\cf3 \
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs28 \cf0 Pledge Period\
+---------------------
+\b0\fs24 \
+The loan says "100% funded by 1 valid bidders with $0 needed". Can we actually show the admin the *real* % pledged (ie, not cap it at 100%)? (also, change the wording to % pledged)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs38 \cf0 Visual\
+=====\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 Remove "Signed in succesfuly notification" (super redundant). Optional. Not urgent.  \
+\
+Suggest removing the breadcrumbs navigation bar. It's taking a lot of space and where it's used is not very useful, since navigation is very "shallow" if that makes sense. \
+\
+Loan preview is broken (with paragraphs and images I supplied). See [/kind-kids-coloring-books]. See screenshot 3. \cf2 REPORTED (130508)  \
+\cf0 \
+What is the "COMPLETED" text at the bottom of every loan (/loans) supposed to mean?\
+\
+In the design by P.Mak and co. , the "Sucess Story" banner is full-width. Is there a reason why this was changed? (If so, we welcome comments).\
+\
+I thought that loans not currently available for pledging loans would appear in blueish (at least, that was happening before) under active loans in the all loans page (/loans). \
+\
+When a loan is no longer in pledging period and I go to it, say, by typing in the link, the "make a bid" button is gone (good) but there is nothing there (bad) so the layout breaks and a user wouldn't know that the pledging period is over. I suggest replacing the "make a bid" button with a non-clickable one that says "This campaign is no longer active".\
+\
+Intermediate page btw/ "Authenticate with dwolla" and dwolla page to explain what's what, and also to give them a link to create an account. \
+\
+The sections in the dashboard are not very well defined. Can we have more space between them? Esp. between the first section and "my outstanding". (screenshot4)\
+\
+The navigation menu's display is not working when menu items have sub-items. \
+\
+Create Loan (3 of 3): add subsection heading for title, and subsection heading for the Banner. This will emphasize the importance of these two sections. Move "please add paragraphs \'85 image/caption" under the "Sections" subheading. \
+ \
+Pre-Listing Application: The text "Any other address associated with your business" should be the same heading style as "Location Information", not a side-note.   Monthly Expenses field label should be right under the input, right now it's under the explanation.\
+\
+Make a Pledge Step 1 (and everywhere else) Form validation errors (missing or invalid fields, etc) should be red.\
+\
+Lender dashboard: once a lender has had a bid end and lose (see screenshot), there are not Loans Outstanding or payments coming in but the tables (empty) are still there. See screenshot 7.\
+\
+If a lender has no outstanding loans, add text to top that says "You currently have no loans outstanding. See [this link] for all currently active campaigns.\
+\
+Notification bar has way too much whitespace, at least in this case: see screenshot\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs26 \cf0 Forms\
+----------
+\b0\fs24 \
+Login forms still have labels between the rows, which makes them ambiguous. I didn't find this to be a problem with other forms.\
+}

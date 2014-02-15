@@ -1,0 +1,33 @@
+class Confirmation < ActionMailer::Base
+  default :from => "fotc@flyoverthecity.com"
+
+  def new_job(user, job)
+    mail(:to => user.email, :subject => "New FOTC Job")
+  end
+  
+  def assigned(job, messenger)
+    @job = job
+    mail(:to => messenger.email, :subject => "FOTC Job Assignment")
+  end
+
+  def job(job, email)
+    @job = job
+    mail(:to => email, :subject => "RE: Fly Over The City Hand Delivery Request")
+  end
+
+  def forgot_password(to, login, pass, sent_at = Time.now)
+
+    @login = login
+    @pass = pass
+    mail(:to => to, :subject =>  "Your new password from Fly Over The City")
+  end
+	
+  def signed_for(to, destination, signed_by, job)
+    @job = job
+    @destination = destination
+    @signed_by = signed_by
+    mail(:to => to, :subject => "RE: FOTC Hand Delivery Completed")
+  end
+
+
+end

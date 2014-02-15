@@ -1,0 +1,13 @@
+entering custom time due: not displaying correctly!
+messenger's manifest: due at: reformat time. time only, not date/seconds/timezone
+option for clients: "time ready"
+"sender info": required fields --> required field
+move due date below package size
+move due date over to right
+to left of due date, shipment pickup time: autofilled with current date and current time
+"select service level" --> "delivery service level"
+nothing displayed on board for pickup time if client doesn't edit it
+if client does edit it, put this info in the special box
+validate that pickup time is <= date due
+note after due date explaining validation
+a

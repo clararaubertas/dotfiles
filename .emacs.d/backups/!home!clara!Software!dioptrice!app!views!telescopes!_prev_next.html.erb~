@@ -1,0 +1,16 @@
+<% if @filter %>
+  <%= link_to(image_tag('arrow_right.png', :alt => 'Next'), t.next(@filter)) if t.next(@filter) %>
+  <%= link_to(image_tag('arrow_left.png', :alt => 'Previous'), t.previous(@filter)) if t.previous(@filter) %>
+<% elsif @collection_id %> 
+  <%= link_to(image_tag('arrow_right.png', :alt => 'Next'), t.next_in_collection(@collection_id)) if t.next_in_collection(@collection_id) %>
+  <%= link_to(image_tag('arrow_left.png', :alt => 'Previous'), t.prev_in_collection(@collection_id)) if
+        t.prev_in_collection(@collection_id) %> 
+<% elsif params[:search] && @search && @search.include?(t.id) %>
+<%= link_to(image_tag('arrow_right.png', :alt => 'Next'), telescope_path(Telescope.find(@search[@search.index(t.id) + 1]),   :search => true)) unless t.id == @search.last %> 
+<%= link_to(image_tag('arrow_left.png', :alt => 'Previous'), telescope_path(Telescope.find(@search[@search.index(t.id) - 1]), :search => true)) unless t.id == @search.first %>
+<% else %>
+  <%= link_to(image_tag('arrow_right.png', :alt => 'Next'), t.next if t.next %>
+  <%= link_to(image_tag('arrow_left.png', :alt => 'Previous'), t.previous if t.previous %>
+
+
+<% end %>

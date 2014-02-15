@@ -1,0 +1,3 @@
+(defun my-high-fn(foo) (format t foo))
+
+(defun my-adder(foo) (+ foo 1))

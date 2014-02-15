@@ -1,0 +1,9 @@
+<h2>Let's Play A Game!!</h2>
+
+<h3>You are player <%= @position.name %>!</h3>
+
+<h4>You can send messages to:</h4>
+<ol>
+<%= @position.connected_in_trial(@trial).each do |p| %>
+<li><%= p.name %></li>
+</ol>

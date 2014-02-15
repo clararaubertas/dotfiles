@@ -1,0 +1,3 @@
+class Business < ActiveRecord::Base
+  attr_accessible :name, :lat, :lng, :description
+end

@@ -1,0 +1,3 @@
+class PositionShape < ActiveRecord::Base
+  attr_accessible :position_id, :shape_id, :trial_id
+end

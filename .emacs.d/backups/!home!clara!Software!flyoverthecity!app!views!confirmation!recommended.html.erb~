@@ -1,0 +1,1 @@
+You've been assigned a Fly Over the City job with ticket number <%= @job.id %>, client <%= @job.client_name %>, origin <%= @job.origin %>, and destination address <%= @job.destination_address %> for <%= @job.date_due %>.

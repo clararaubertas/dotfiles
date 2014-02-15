@@ -1,0 +1,43 @@
+#!/usr/bin/ruby
+require 'ascii_charts'
+
+def logmap(c)
+  lambda { |x|
+  (c * x * [0, (1 - x)].max).to_f
+  }
+end
+
+# NestList [func,x0,n], in which func(x) is the function to be
+# iterated, x0 is the
+# starting value of x, and n is the number of iterations
+
+def nestList(f,x,n)
+  result = []
+  for i in (1..n)
+    result << [i, f.call(x)]
+    x = result.last.last
+  end
+  return result
+end
+
+n = 50
+x0 = 0.50
+r = 3.7
+
+# r = 0-1: population eventually dies
+# r = 1-2: population quickly approaches (r-1)/r
+# r = 2-3: population slowly approaches (r-1)/r
+# r = 3-3.449: population approaches 2-value oscillation
+# r = 3.449-3.544: population approaches 4-value oscillation
+# r = 3.544-3.569: either chaos or several-value oscillation
+# r = 3.569-4: mostly chaos!!
+# r = 4+: values leave interval [0,1] and diverge
+
+
+l = nestList(logmap(r),x0,n)
+
+#puts l.map{|i| i.last }.inspect
+puts AsciiCharts::Cartesian.new(l, :bar => true, :hide_zero => true).draw
+
+
+
