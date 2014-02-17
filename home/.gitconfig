@@ -1,5 +1,5 @@
 [user]
-	email = clara@parallactic.com\n
+	email = clara@parallactic.com
 	name = Clara Raubertas
 [push]
-	default = simple
+	default = matching
