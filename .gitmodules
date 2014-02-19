@@ -1,3 +1,6 @@
 [submodule "emacs-color-theme-solarized"]
        path = home/.emacs.d/emacs-color-theme-solarized
        url = https://github.com/sellout/emacs-color-theme-solarized
+[submodule "rhtml"]
+       path = home/.emacs.d/rhtml
+       url = https://github.com/eschulte/rhtml
