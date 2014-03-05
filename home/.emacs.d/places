@@ -1,6 +1,5 @@
 ;;; -*- coding: utf-8 -*-
 (("/home/clara/.bashrc" . 4001)
- ("/home/clara/.emacs" . 1170)
  ("/home/clara/.emacs.d/elpa/ace-jump-mode-2.0.0.0/ace-jump-mode-autoloads.el" . 1662)
  ("/home/clara/.emacs.d/elpa/android-mode-0.2.4/android-mode-autoloads.el" . 454)
  ("/home/clara/.emacs.d/elpa/anything-1.287/anything-autoloads.el" . 2461)
@@ -52,10 +51,8 @@
  ("/home/clara/.emacs.d/elpa/yaml-mode-0.0.9/yaml-mode-autoloads.el" . 613)
  ("/home/clara/.emacs.d/elpa/yasnippet-bundle-0.6.1/yasnippet-bundle-autoloads.el" . 1256)
  ("/home/clara/.emacs.d/elpa/zencoding-mode-0.5.1/zencoding-mode-autoloads.el" . 1486)
- ("/home/clara/.emacs.d/emacs-color-theme-solarized/color-theme-solarized-pkg.el" . 110)
- ("/home/clara/.emacs.d/emacs-color-theme-solarized/makepkg.sh" . 50)
- ("/home/clara/.emacs.d/emacs-color-theme-solarized/solarized-definitions.el" . 2043)
  ("/home/clara/.emacs.d/ruby-electric.el" . 6127)
+ ("/home/clara/.homesick/repos/dotfiles/home/.emacs" . 3796)
  ("/home/clara/.xbindkeysrc" . 1267)
  ("/home/clara/Software/dioptrice/Capfile" . 173)
  ("/home/clara/Software/dioptrice/Gemfile" . 1508)
