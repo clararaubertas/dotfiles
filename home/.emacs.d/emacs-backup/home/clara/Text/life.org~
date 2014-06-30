@@ -21,8 +21,8 @@ SCHEDULED: <2014-07-01 Tue +1m>
 :LAST_REPEAT: [2014-06-02 Mon 13:47]
 :END:
 *
-** DONE brush teeth                                                   :home:
-CLOSED: [2014-06-25 Wed 17:19] SCHEDULED: <2014-06-26 Thu .+1d>
+** TODO brush teeth                                                   :home:
+SCHEDULED: <2014-06-26 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
 - State "DONE"       from "TODO"       [2014-06-15 Sun 17:29]
@@ -121,7 +121,8 @@ SCHEDULED: <2014-06-18 Wed .+1d>
 :ID:       ea91157e-cb13-4e92-b6b5-0e2d0e537de5
 :END:
 ** TODO buy coffee beans                                                :hp:
-SCHEDULED: <2014-06-20 Fri .+6d/9d>
+SCHEDULED: <2014-07-06 Sun .+6d/9d>
+- State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-11 Wed 15:20]
 - State "DONE"       from "TODO"       [2014-06-02 Mon 20:14]
 - State "CANCELLED"  from "TODO"       [2014-05-25 Sun 15:32]
@@ -145,7 +146,7 @@ SCHEDULED: <2014-06-20 Fri .+6d/9d>
 :PROPERTIES:
 :ID:       51d4db79-f6ef-49f0-972d-0a0e658b889c
 :STYLE: habit
-:LAST_REPEAT: [2014-06-14 Sat 14:04]
+:LAST_REPEAT: [2014-06-30 Mon 14:14]
 :END:
 ** TODO charge Roomba                                                 :home:
 SCHEDULED: <2014-06-19 Thu .+1d/3d>
@@ -641,7 +642,8 @@ SCHEDULED: <2014-06-26 Thu .+1d/2d>
 :LAST_REPEAT: [2014-06-25 Wed 17:04]
 :END:
 ** TODO make bed                                                      :home:
-SCHEDULED: <2014-06-26 Thu .+1d>
+SCHEDULED: <2014-07-01 Tue .+1d>
+- State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:52]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
@@ -765,7 +767,7 @@ SCHEDULED: <2014-06-26 Thu .+1d>
 - State "DONE"       from "TODO"       [2013-10-07 Mon 11:44]
 :PROPERTIES:
 :ID:       0c4ffe26-1cc3-433a-8de0-27266f66589c
-:LAST_REPEAT: [2014-06-25 Wed 17:04]
+:LAST_REPEAT: [2014-06-30 Mon 14:14]
 :END:
 ** TODO take meds                                                     :home:
 SCHEDULED: <2014-06-10 Tue .+1d>
@@ -881,7 +883,8 @@ SCHEDULED: <2014-06-10 Tue .+1d>
 :LAST_REPEAT: [2014-06-09 Mon 16:21]
 :END:
 ** TODO drink water
-SCHEDULED: <2014-06-26 Thu .+1d>
+SCHEDULED: <2014-07-01 Tue .+1d>
+- State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 13:24]
@@ -954,7 +957,7 @@ SCHEDULED: <2014-06-26 Thu .+1d>
 - State "DONE"       from "TODO"       [2013-10-22 Tue 20:01]
 :PROPERTIES:
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
-:LAST_REPEAT: [2014-06-25 Wed 17:04]
+:LAST_REPEAT: [2014-06-30 Mon 14:14]
 :END:
 ** TODO water Malka                                                   :home:
 SCHEDULED: <2014-06-26 Thu .+1d>
@@ -1147,7 +1150,8 @@ SCHEDULED: <2014-06-26 Thu .+1d>
 :END:
 [2014-01-16 Thu 00:01]
 ** TODO Yard malk                                                    :malka:
-SCHEDULED: <2014-06-26 Thu .+1d>
+SCHEDULED: <2014-07-01 Tue .+1d>
+- State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:53]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 17:25]
@@ -1215,7 +1219,7 @@ SCHEDULED: <2014-06-26 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-01-20 Mon 17:31]
 :PROPERTIES:
 :ID:       a29db4aa-8fab-401d-959f-8c6e6075dc24
-:LAST_REPEAT: [2014-06-25 Wed 17:04]
+:LAST_REPEAT: [2014-06-30 Mon 14:14]
 :END:
 [2014-01-16 Thu 00:00]
 ** DONE Malk morning drugs                                           :malka:
@@ -2456,7 +2460,8 @@ SCHEDULED: <2014-06-21 Sat .+5d/10d>
 :LAST_REPEAT: [2014-06-16 Mon 14:56]
 :END:
 ** TODO gather laundry                                                :home:
-SCHEDULED: <2014-06-30 Mon .+2w>
+SCHEDULED: <2014-07-14 Mon .+2w>
+- State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 09:48]
 - State "DONE"       from "TODO"       [2014-06-02 Mon 19:49]
 - State "DONE"       from "TODO"       [2014-05-13 Tue 21:34]
@@ -2466,7 +2471,7 @@ SCHEDULED: <2014-06-30 Mon .+2w>
 - State "DONE"       from "TODO"       [2014-02-23 Sun 23:08]
 :PROPERTIES:
 :ID:       f3901c98-ca6c-4cac-bad0-981143bfdc23
-:LAST_REPEAT: [2014-06-16 Mon 09:48]
+:LAST_REPEAT: [2014-06-30 Mon 14:14]
 :END:
 ** TODO put laundry away                                              :home:
 SCHEDULED: <2014-07-09 Wed .+2w>
@@ -2797,7 +2802,8 @@ CLOSED: [2014-06-13 Fri 17:15]
 CLOSED: [2014-05-25 Sun 16:15]
 ** DONE [#A] retrieve prescription                                      :hp:
 CLOSED: [2014-05-26 Mon 18:51]
-** TODO [#C] buy jeans                                                  :hp:
+** DONE [#C] buy jeans                                                  :hp:
+CLOSED: [2014-06-30 Mon 14:15]
 :PROPERTIES:
 :ID:       eb2f66f7-8237-4b83-9557-f53c9bd80798
 :END:
@@ -2901,7 +2907,8 @@ CLOSED: [2014-06-22 Sun 19:16]
 :PROPERTIES:
 :ID:       f77c2877-e9ed-4108-b075-ac86c0b94fcf
 :END:
-** TODO [#A] pack for roadtrip/camping                                :home:
+** DONE [#A] pack for roadtrip/camping                                :home:
+CLOSED: [2014-06-30 Mon 14:14]
 :PROPERTIES:
 :ID:       4633316d-ecdc-4c2a-b331-594acadcc6c6
 :END:
@@ -3005,9 +3012,13 @@ CLOSED: [2014-06-22 Sun 20:00]
 :PROPERTIES:
 :ID:       cb3dccdb-1864-4faa-8da9-0ec90adce722
 :END:
-** TODO [#B] make list of party invitees                          :computer:
+** TODO [#A] make list of party invitees                          :computer:
 :PROPERTIES:
 :ID:       ddb0feea-7f43-4a18-a5b9-a35e460ef8a2
+:END:
+** JESSE call grandma                                                 :phone:
+:PROPERTIES:
+:ID:       76a081fc-835c-443e-8358-b87695ccb2ed
 :END:
 * Tasks
 ** DONE [#A] move router                                              :home:
