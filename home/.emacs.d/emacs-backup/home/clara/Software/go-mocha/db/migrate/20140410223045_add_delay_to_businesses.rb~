@@ -1,0 +1,4 @@
+class AddDelayToBusinesses < ActiveRecord::Migration
+  def change
+  end
+end

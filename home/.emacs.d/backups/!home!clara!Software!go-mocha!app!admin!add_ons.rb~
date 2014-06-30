@@ -1,0 +1,19 @@
+ActiveAdmin.register AddOn do
+  form do |f|
+    f.inputs 'Details' do
+      f.input :description
+      f.input :menu_item
+      f.input :price
+    end
+    f.buttons
+  end
+
+  index do
+    column :description
+    column :menu_item
+    column :price
+    default_actions
+  end
+
+
+end

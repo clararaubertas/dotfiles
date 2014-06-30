@@ -1,0 +1,3 @@
+Tagcloud.tagcloudize(array).each do |e|
+  %span{:style => "font-size: #{e[:size]}%"}
+    = link_to e[:text], search_path(:q => e[:text])

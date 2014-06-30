@@ -1,0 +1,18 @@
+* location stuff
+** nav bar: specify what location the site is currently using, with a "change this" link
+** add the town name in the "where are you" search box if we have it set
+** get the user's location via HTML5 if possible
+** sort bulletin board by location
+** add new fields to ads to get location (ads will use the location of the user who posted them when there is no other information available)
+** sort front page ads by geographic location
+* bulletin board
+** sort by category, sort by location, randomize by date
+* minor UI changes
+** remove 'contact us', replace with map
+** remove map from homepage, replace with second column of ads
+** switch 'find job' and 'post job' in navbar
+** rename 'sign in' as 'log in' and 'register' as 'sign up'
+** link to the user profile rather than the homepage from the email confirmation
+* admin page
+** add state to user export
+** jobs export: who posted, date, location, category, # of applicants, # hired, rating from buyer, rating from service provider, time between job appearing & first applicant, price

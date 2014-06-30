@@ -1,0 +1,22 @@
+<% title "In My Cart" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price Cents</th>
+    <th>Business</th>
+  </tr>
+  <% for menu_item in @menu_items %>
+    <tr>
+      <td><%= menu_item.name %></td>
+      <td><%= menu_item.price_cents %></td>
+      <td><%= menu_item.business_id %></td>
+      <td><%= link_to "Show", menu_item %></td>
+      <td><%= link_to "Edit", edit_menu_item_path(menu_item) %></td>
+      <td><%= link_to "Destroy", menu_item, :confirm => 'Are you      sure?', :method => :delete %></td>
+      <td><%= button_to "Add to Cart", :action => :add_to_cart, :id => menu_item %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Menu Item", new_menu_item_path %></p>

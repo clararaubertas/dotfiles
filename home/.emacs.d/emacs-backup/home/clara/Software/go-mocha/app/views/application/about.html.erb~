@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>GoMocha | By Isometry Labs</title>
+  <meta name="viewport" content="width=device-width">
+  
+  <meta property="og:title" content="GoMocha | Designed By Isometry Labs">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.isometrylabs.com">
+  <meta property="og:site_name" content="GoMocha">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom-styles.css">
+
+  <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <!-- Time Picker -->
+  <script src="http://cdn.alloyui.com/2.0.0/aui/aui-min.js"></script>
+  <script>
+      YUI().use(
+        'aui-timepicker',
+        function(Y) {
+          new Y.TimePicker(
+            {
+              trigger: 'input',
+              popover: {
+                zIndex: 1
+              },
+              on: {
+                selectionChange: function(event) {
+                  console.log(event.newSelection)
+                }
+              }
+            }
+          );
+        }
+      );
+  </script>
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand img-responsive" href="index.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signup.html">Start GoMocha</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inside GoMocha<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="platforms.html">Platforms</a></li>
+                  <li><a href="howitworks.html">How It Works</a></li>
+                  <li><a href="order.html">Order Demo</a></li>
+                </ul>
+              </li>
+            <li><a href="order.html">Demo</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+      
+
+    <!--Content-->
+    <section id="content1" class="section">
+      <div class="container">
+        <div class="row margin-40">
+          <div class="col-sm-4">
+            <h3>Smart</h3>
+            <p class="lead">It does the hard work for you</p>
+            <img src="img/smart.png"/ style="max-width: 100%;" >
+            <p><br>GoMocha uses existing technology on your smartphone and applies it in new ways. With our
+            geolocation algorithms, we can calculate when you get within a certain distance of your order
+            destination.  Once you're close, we alert the store so that your order is ready when you arrive.</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Secure</h3>
+            <p class="lead">Your data. You keep it.</p>
+            <img src="img/lock.png"/ style="max-width: 100%;" >
+            <p><br>GoMocha keeps your data private and encrypted.  Businesses will never know where you are, just
+            when they need to have your order ready.  All purchasing will be done through our secure servers.  Your
+            personal data stays personal.</p>
+            <a href="signup.html" class="readyWhen">Try it!<i class="fa fa-user  fa-2x iconMargin "></i></a>
+          </div>  
+          <div class="col-sm-4">
+            <h3>Simple</h3>
+            <p class="lead">Intuitive & Fast</p>
+            <img src="img/simple.png"/ style="max-width: 100%;" >
+            <p><br>Spend less time learning the more time using.  GoMocha combines a clear design with an intuitive
+            user interface.  Create complete orders in just three clicks, or place repeat orders in just one.  Start
+            using GoMocha and see just how easy it is.</p>
+          </div>                    
+        </div>
+        
+      </div>
+    </section>
+    
+     <!--Twitter Feed-->
+    <section id="twitter" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <i class="fa fa-twitter fa-4x gray margin-20"></i>
+          </div>
+        </div>
+        
+        <div class="row">
+        
+          <div class="col-sm-6">
+            <blockquote class="twitter-tweet" lang="en"><p>Theme Armada New Website Launch <a href="http://t.co/YLbXUFhz5d">http://t.co/YLbXUFhz5d</a></p>&mdash; Theme Armada (@themearmada) <a href="https://twitter.com/themearmada/statuses/404968762446970880">November 25, 2013</a></blockquote>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          
+          <div class="col-sm-6">
+            <blockquote class="twitter-tweet" lang="en"><p>Our sites up and CSSMania <a href="http://t.co/KKaKX75WrH">http://t.co/KKaKX75WrH</a> <a href="https://twitter.com/cssmania">@cssmania</a> - Give it a vote if you like it!</p>&mdash; Theme Armada (@themearmada) <a href="https://twitter.com/themearmada/statuses/403515461158961152">November 21, 2013</a></blockquote>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    
+    <!--Bottom Section-->
+    <section id="bottom">
+      <div class="container">
+        <div class="row margin-40">
+          <div class="col-sm-10 col-sm-offset-1 text-center lightFont">
+            <p>3423 Main Street San Francisco, CA 94102 | 404.555.5555  |  <a href="mailto:info@isometrylabs.com"><i class="icon-envelope-alt"></i> support@gomocha.com</a></p>
+            <hr>
+            <p><b>This is a prototype website for demonstration purposes only.</b> <br><br> Unauthorized use is strictly prohibited. All material and systems are subject to copyright.</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <!--Social Icons-->          
+            <ul class="social-icons">
+              <li><a class="twitter" href="http://www.twitter.com/themearmada" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+              <li><a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
+              <li><a class="google" href="http://www.googleplus.com" target="_blank"><i class="fa fa-google-plus fa-3x"></i></a></li>
+              <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa fa-camera-retro fa-3x"></i></a></li>
+              <li><a class="pinterest" href="http://www.pinterest.com" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a></li>
+              <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+              <li><a class="Github" href="http://www.github.com" target="_blank"><i class="fa fa-github-alt fa-3x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p>Copyright 2014. All Rights Reserved. By <a href="http://www.isometrylabs.com">Isometry Labs</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+     
+    </body>
+</html>

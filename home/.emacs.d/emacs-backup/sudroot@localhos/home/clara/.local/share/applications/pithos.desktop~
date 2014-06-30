@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Pithos
+Comment=Play music from Pandora Radio
+Categories=GNOME;AudioVideo;Player;
+Exec=pithos
+Icon=ksysguard
+Terminal=false
+Type=Application

@@ -2,33 +2,33 @@
 ;; ----- smex-history -----
 (
  eval-current-buffer
+ org-mobile-pull
+ new-frame
  esk-sudo-edit
- idle-highlight-mode
+ make-directory
  replace-string
- print-buffer
  package-install
- eval-region
 )
 
 ;; ----- smex-data -----
 (
  (paredit-mode . 1)
- (esk-sudo-edit . 64)
+ (esk-sudo-edit . 74)
  (eshell . 3)
  (org-babel-execute-buffer . 2)
- (package-install . 46)
- (replace-string . 55)
+ (package-install . 48)
+ (replace-string . 58)
  (recover-this-file . 2)
  (global-set-key . 1)
  (occur . 3)
  (man . 3)
  (eval-buffer . 9)
  (ruby-electric-mode . 4)
- (eval-current-buffer . 224)
+ (eval-current-buffer . 230)
  (global-rinari-mode . 4)
  (list-packages . 2)
  (heartbeat-cursor-mode . 15)
- (eval-region . 34)
+ (eval-region . 35)
  (spook . 1)
  (rainbow-mode . 1)
  (vc-dir . 1)
@@ -61,7 +61,7 @@
  (byte-recompile-file . 1)
  (comment-box . 1)
  (count-words . 30)
- (make-directory . 6)
+ (make-directory . 7)
  (unfill-region . 1)
  (unfill-paragraph . 27)
  (ibuffer . 2)
@@ -71,16 +71,16 @@
  (org-agenda . 2)
  (list-colors-display . 2)
  (list-faces-display . 1)
- (eval-defun . 4)
+ (eval-defun . 13)
  (org-reload . 4)
  (sort-lines . 1)
  (org-sort-entries . 10)
- (org-sort . 1)
+ (org-sort . 3)
  (lawlist-sort . 18)
  (what-face . 6)
  (print-buffer . 5)
- (org-mobile-push . 21)
- (org-mobile-pull . 8)
+ (org-mobile-push . 31)
+ (org-mobile-pull . 16)
  (comment-dwim . 1)
  (org-habit-toggle-habits . 2)
  (hs-hide-all . 1)
@@ -96,4 +96,7 @@
  (table-insert-row . 3)
  (table-insert . 3)
  (idle-highlight-mode . 1)
+ (os . 2)
+ (replace-regexp . 1)
+ (new-frame . 2)
 )

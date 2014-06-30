@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>GoMocha | By Isometry Labs</title>
+  <meta name="viewport" content="width=device-width">
+  
+  <meta property="og:title" content="GoMocha | Designed By Isometry Labs">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.isometrylabs.com">
+  <meta property="og:site_name" content="GoMocha">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom-styles.css">
+
+  <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <!-- Time Picker -->
+  <script src="http://cdn.alloyui.com/2.0.0/aui/aui-min.js"></script>
+  <script>
+      YUI().use(
+        'aui-timepicker',
+        function(Y) {
+          new Y.TimePicker(
+            {
+              trigger: 'input',
+              popover: {
+                zIndex: 1
+              },
+              on: {
+                selectionChange: function(event) {
+                  console.log(event.newSelection)
+                }
+              }
+            }
+          );
+        }
+      );
+  </script>
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand img-responsive" href="index.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="signup.html">Start GoMocha</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inside GoMocha<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="platforms.html">Platforms</a></li>
+                  <li><a href="howitworks.html">How It Works</a></li>
+                  <li><a href="order.html">Order Demo</a></li>
+                </ul>
+              </li>
+            <li><a href="order.html">Demo</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+      
+
+    <!--Content-->
+    <section id="content1" class="section">
+      <div class="container">
+         <ul class="breadcrumb2">
+          <a href="order.html"><li class="past">Location</li></a>
+          <a href="drinkbuilder.html"><li class="past">Order Builder</li></a>
+          <a href="checkout.html"><li class="past">Checkout</li></a>
+          <li class="current">Status</li>
+          </ul>
+        <div class="row margin-40">
+          <div class="col-sm-3">
+                <h3>Location</h3>
+                  <div class="location">
+                    <p><h4>Acme Coffee Shop</h4>
+                      123 Acme Lane<br>
+                      San Francisco, CA. 91345
+                    </p>
+                    <a href="#" class="mapButton">Map</a><a href="#" class="mapButton">Directions</a>
+                  </div>
+                  <img class="img-scale" src="img/beans.jpg"/ >
+             </div>    
+          <div class="col-sm-4">
+            <h3>Final Order</h3>
+               <div class="cartItem">
+                  <b>Americano</b>
+                  <i class="fa fa-minus-circle fa-1x "></i>
+                  <i class="fa fa-pencil fa-1x "></i>
+                  <span class="cartPrice">$3.75</span>
+                  <ul>
+                    <li>Medium</li>
+                    <li>Vanilla Syrup</li>
+                    <li>No Whip</li>
+                    <li>Please 1 pump of vanilla only</li>
+                  </ul>
+               </div>
+               <div class="cartItem">
+                  <b>Cafe Latte</b>
+                  <i class="fa fa-minus-circle fa-1x "></i>
+                  <i class="fa fa-pencil fa-1x "></i>
+                  <span class="cartPrice">$2.75</span>
+                  <ul>
+                    <li>Small</li>
+                    <li>Soy Milk</li>
+                    <li>Hazelnut</li>
+                    <li>Extra Hot</li>
+                  </ul>
+               </div>
+               <div class="cartItem">
+                  <span class="totals">Total: $6.50</span>
+               </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="orderStatus">
+                  Order Successfully Sent!<i class="fa fa-check  fa-2x white iconMargin"></i>
+              </div>
+              <div class="orderStats">
+                  Ready at 9:30am<i class="fa fa-clock-o  fa-2x white iconMargin"></i>
+              </div>
+              <div class="orderBusiness">
+                  No Delays<i class="fa fa-thumbs-up  fa-2x white iconMargin"></i>
+              </div>
+             </div>    
+        </div>
+      </div>
+    </section>
+    <!--Bottom Section-->
+    <section id="bottom">
+      <div class="container">
+        <div class="row margin-40">
+          <div class="col-sm-10 col-sm-offset-1 text-center lightFont">
+            <p>3423 Main Street San Francisco, CA 94102 | 404.555.5555  |  <a href="mailto:info@isometrylabs.com"><i class="icon-envelope-alt"></i> support@gomocha.com</a></p>
+            <hr>
+            <p><b>This is a prototype website for demonstration purposes only.</b> <br><br> Unauthorized use is strictly prohibited. All material and systems are subject to copyright.</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <!--Social Icons-->          
+            <ul class="social-icons">
+              <li><a class="twitter" href="http://www.twitter.com/themearmada" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+              <li><a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
+              <li><a class="google" href="http://www.googleplus.com" target="_blank"><i class="fa fa-google-plus fa-3x"></i></a></li>
+              <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa fa-camera-retro fa-3x"></i></a></li>
+              <li><a class="pinterest" href="http://www.pinterest.com" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a></li>
+              <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+              <li><a class="Github" href="http://www.github.com" target="_blank"><i class="fa fa-github-alt fa-3x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p>Copyright 2014. All Rights Reserved. By <a href="http://www.isometrylabs.com">Isometry Labs</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+     
+    </body>
+</html>

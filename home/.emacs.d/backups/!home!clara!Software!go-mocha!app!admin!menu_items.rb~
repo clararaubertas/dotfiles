@@ -1,0 +1,28 @@
+ActiveAdmin.register MenuItem do
+  form html: { enctype: 'multipart/form-data' } do |f|
+    f.inputs 'Details' do
+      f.input :business
+      f.input :name
+      f.input :description, as: :text
+      f.input :clipart, hint: f.template.image_tag(f.object.clipart.url(:thumb))
+      f.input :price
+      f.input :prep_time_in_secs
+    end
+    f.buttons
+  end
+
+  index do
+    column :business
+    column :name
+    column :description
+    column :clipart do |mi|
+      image_tag(mi.clipart.url(:thumb))
+    end
+    column :price
+    column :prep_time_in_secs
+    default_actions
+  end
+
+
+  
+end

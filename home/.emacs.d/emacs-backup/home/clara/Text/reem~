@@ -1,0 +1,101 @@
+Hi Clara & Steven,
+
+after a long silence, I do have some work I would like you to do, please.
+
+Could you please send me an estimate before you start?
+Of the $1,000 I had sent you in 2013, I believe there is still $400 available. Is that correct?
+This should amount to 4 hours of work.
+Is there any hope to fit all the below in 4 hrs?
+
+
+1. HOME PAGE CHANGES
+
+A. TAGLINE
+
+    Delete blue text labels: “Your neighborhood”, “Job board-free” and “Bulletin Board”
+    Replace with this tagline: A community marketplace for local, flexible jobs, small businesses and non-profits
+-15mins
+
+B. BUTTONS
+
+    Please change green “Post a job” button to “Find help”
+    Please change purple “Find a job” button to “Find work"
+    Please change green “Promote" button to “Ads"
+-15mins
+
+C. MAP box on home page
+
+    Change map on home page to map one gets when click on it (i.e. map from map page  http://www.helparoundtown.com/map  )
+    Zoom out twice before showing the map, so shows regional, not
+    Lexington focus  
+-15mins
+    Change map pins so they are smaller - so that dense user areas do NOT look like a blob (or change to circle whose size reflects user density. Might be even better.)
+    Delete text “Jobs around Lexington MA”. Make “Where are you?” text entry box & adjoining ‘Go’ bigger (or stet if easier, faster).
+-30mins
+
+D. SOCIAL MEDIA AREA 
+
+    Reduce size of buttons slightly (if necessary)
+    Above buttons, add link to recent Boston Herald article:
+        Site’s a Source for Local Jobs 
+        Can you show the Boston Herald logo next to the article title?
+        http://bostonherald.com/business/business_markets/2014/02/site_s_a_source_for_local_jobs
+-15mins
+
+D. WHAT PEOPLE ARE SAYING...
+
+    Left text: 
+        Delete “HelpAroundTown receives” and “& One to Watch 2013” from Award text.
+            So text will read:
+            Lexington Chamber of Commerce Rising Star Award for “this valuable new way of connecting within the community”
+        Underneath it (or to the right), show the Merrimack Valley Sandbox Accelerator Finalist logo (attached, please reduce in size!)
+    Middle text. 
+        User Testimonials and How To Videos
+        Link to our YouTube channel: http://www.youtube.com/playlist?list=PLTH660zZPAKDmlqWIbYYNH2-Wda1Bk4DG
+    Right text: stet.
+-15mins
+
+
+2. JOBS PAGE CHANGE
+Change one Job category: 
+change 'Summer Jobs' to Education
+-15mins
+
+3. PUSH RUBY 1.9 UPDATES to EngineYard
+Work was previously done. Not sure if the updates were already pushed to production.
+-1hr
+
+Please, let me know how much work is involved in all this and when you could possibly do it. Please, break the cost down among the different parts, so I can prioritize.
+
+A further question:
+we are currently starting out on building an app. We will need someone to write the REST API to talk to the app. (The app developers do not know RoR). The app is being built in PhoneGap.
+Is the REST API something you would do?
+Any sense of how big a job it would be and how much we should budget for it? At least an order of magnitude. 
+
+-20-30hrs
+
+	
+5:28 PM (22 hours ago)
+		
+to Clara, Steven
+Re-sending with 2 more additions (plus one in text below)
+
+MOST IMPORTANT: Metatitles
+
+Add Metatitles to Job pages
+1. Add Job location (Town & state)
+2. Add job title. Cut off at 150 characters?
+At very least, set up for new jobs pages going forward.
+3. If have space, also add job category in metatitle
+-1hr
+
+For Bulletin board ads:
+Add card title to page Metatitle
+If you can pull user’s town and state, also add that to metatitle
+Again, make changes going forward. 
+I am assuming it would be a significant job to do these retroactively.
+-1hr
+—
+Community Page
+Can you set it up so the landing page of community is the list of all the community pages? I do not want it to default to Lexington anymore. (Similar to the Press page http://www.helparoundtown.com/press )
+-30mins

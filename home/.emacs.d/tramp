@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <14/01/26 14:45:06 /home/clara/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <14/06/25 16:46:36 /home/clara/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -14,7 +14,7 @@
   ("perl" "\\perl")
   ("file-exists" "test -e"))
  (["sudo" "root" "localhost" nil]
-  ("uname" "Linux 3.8.0-32-generic")
+  ("uname" "Linux 3.8.0-35-generic")
   ("test" "test")
   ("remote-path"
    ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
@@ -32,24 +32,22 @@
   ("local-encoding" base64-encode-region)
   ("local-decoding" base64-decode-region)
   ("remote-encoding" "base64")
-  ("remote-decoding" "base64 -d -i")
-  ("inline-compress" "gzip")
-  ("inline-decompress" "gzip -d")
-  ("~root" "/root"))
+  ("remote-decoding" "base64 -d -i"))
  (["sudo" "root" "localhost" nil nil]
-  ("uname" "Linux 3.11.0-15-generic")
+  ("uname" "Linux 3.13.0-30-generic")
   ("test" "test")
   ("remote-path"
    ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
   ("remote-shell" "/bin/sh")
   ("busybox" nil)
-  ("readlink" "\\readlink")
   ("stat" "\\stat")
   ("file-exists" "test -e")
   ("id" "/usr/bin/id")
   ("gid-integer" 0)
+  ("readlink" "\\readlink")
   ("uid-integer" 0)
   ("perl-file-spec" t)
   ("perl-cwd-realpath" t)
   ("perl" "\\perl")
+  ("ls" "/bin/ls --color=never")
   ("~root" "/root")))

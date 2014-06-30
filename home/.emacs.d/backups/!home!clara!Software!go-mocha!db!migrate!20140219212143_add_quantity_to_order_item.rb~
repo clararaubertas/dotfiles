@@ -1,0 +1,4 @@
+class AddQuantityToOrderItem < ActiveRecord::Migration
+  def change
+  end
+end

@@ -1,0 +1,15 @@
+#!/usr/bin/ruby
+
+a = (1..48).to_a
+new_a = Array.new
+
+while (!(a.empty?)) do
+    new_a << a.last
+    new_a << a.first
+    a = a - new_a    
+  new_a << a.first
+    new_a << a.last
+    a = a - new_a
+end
+
+puts new_a.inspect

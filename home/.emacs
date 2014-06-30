@@ -2,12 +2,24 @@
 
 ;;;;;;;;;; I. Package Management ;;;;;;;;;;
 (require 'package)
+
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+             '("ELPA" . "http://tromey.com/elpa/")) 
+(add-to-list 'package-archives
+               '("gnu" . "http://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives
+               '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+               '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives
+               '("org" . "http://orgmode.org/elpa/"))
 (package-initialize)
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/icicles/")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
+;;(add-to-list 'load-path "~/.emacs.d/org-sync")
+;; (mapc 'load
+;;       '("org-element" "os" "os-github"))
 ;; Upgrade all packages
 (defun package-update-all ()
   "Update all packages"
@@ -86,7 +98,7 @@ If the new path's directories does not exist, create them."
 )
 (setq make-backup-file-name-function 'my-backup-file-name)
 
-;; When saving files, set execute permission if #! is in first line.
+;;when saving files, set execute permission if #! is in first line.
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 ;;;;;;;;;; ;;;;;;;;;;
 
@@ -119,15 +131,19 @@ If the new path's directories does not exist, create them."
 ;; (define-key global-map "\C-x\C-b" 'ibuffer-other-window)
 
 ;;;;;;;;;; VI. Ruby preferences ;;;;;;;;;;
-(setq rsense-home "/opt/rsense-0.3")
-(add-to-list 'load-path (concat rsense-home "/etc"))
-(require 'rsense)
+;; (setq rsense-home "/opt/rsense-0.3")
+;; (add-to-list 'load-path (concat rsense-home "/etc"))
+;; (require 'rsense)
 (add-to-list 'load-path "~/.emacs.d/rinari")
 (require 'rinari)
 (require 'ruby-electric)
 (require 'yaml-mode)
 (add-to-list 'load-path "~/.emacs.d/rhtml")
 (require 'rhtml-mode)
+(add-hook 'haml-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode nil)
+            (define-key haml-mode-map "\C-m" 'newline-and-indent)))
 (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.r\\(b\\(w\\|x\\)?\\|html?\\|js\\)$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\([Rr]ake\\|[Cc]ap\\|[Gg]em\\)file$" . ruby-mode))
@@ -185,7 +201,7 @@ If the new path's directories does not exist, create them."
 
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "|" "DONE(d)" "NOTNOW(n)")
-              (sequence "WAITING(w)" "HOLD(h)" "JESSE(j)" "|" "CANCELLED(c)")
+              (sequence "WAITING(w)" "HOLD(h)" "JESSE(j)" "|" "CANCELLED(c)" "DUPLICATE(d)")
 )))
 (setq org-todo-keyword-faces      (quote (
                     ("TODO" ( :background "#859900" :weight bold :foreground "#002b36"))
@@ -207,45 +223,102 @@ If the new path's directories does not exist, create them."
 (defun my-org-archive-cancelled-tasks ()
   (interactive)
   (org-map-entries 'org-archive-subtree "/CANCELLED" 'file))
+
+(require 'org-habit)
+(setq org-log-done 'time)
+
+
 (setq org-directory "~/Text/")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
 (setq org-mobile-inbox-for-pull "~/Text/orgmob")
-(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/para")))
-(require 'org-habit)
-(setq org-log-done 'time)
+(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/para" "~/Text/shopping.org")))
 
-(defvar org-mobile-sync-timer nil)
-(defvar org-mobile-sync-idle-secs (* 60 5))
-(defun org-mobile-background-sync ()
-     (start-process 'org-mobile-sync))
-(defun org-mobile-sync ()
-  (interactive)
-  (org-mobile-pull)
-  (org-mobile-push))
-(defun org-mobile-sync-enable ()
-  "enable mobile org idle sync"
-  (interactive)
-  (setq org-mobile-sync-timer
-        (run-with-idle-timer org-mobile-sync-idle-secs t
-                             'org-mobile-background-sync)));
-(defun org-mobile-sync-disable ()
-  "disable mobile org idle sync"
-  (interactive)
-  (cancel-timer org-mobile-sync-timer))
-(org-mobile-sync-enable)
 
-;; Parent can't be marked as done unless all children are done
-;; (setq org-enforce-todo-dependencies t)
-;; (defun org-summary-todo (n-done n-not-done)
-;;   "Switch entry to DONE when all subentries are done, to TODO otherwise."
-;;   (let (org-log-done org-log-states)   ; turn off logging
-;;     (org-todo (if (= n-not-done 0) "DONE" "TODO"))))
+(defun my-org-mob-sync()
+  (interactive)
+           (message "pushing to mobile! ...")
+              (org-mobile-push)
+              (message "... pushed to mobile!")
+              (message "pulling from mobile! ...")
+              (org-mobile-push)
+              (message "... pulled from mobile!")
+)
+(global-set-key '[f4]  'my-org-mob-sync)
 
-(setq org-agenda-sorting-strategy '(priority-down tag-down todo-state-down))
+
+
+(defvar org-mobile-push-timer nil
+  "Timer that `org-mobile-push-timer' used to reschedule itself, or nil.")
+
+(defun org-mobile-push-with-delay (secs)
+  (when org-mobile-push-timer
+    (cancel-timer org-mobile-push-timer))
+  (setq org-mobile-push-timer
+        (run-with-idle-timer
+         (* 1 secs) nil 'org-mobile-push)))
+
+(add-hook 'after-save-hook 
+ (lambda () 
+   (when (eq major-mode 'org-mode)
+     (dolist (file (org-mobile-files-alist))
+      (if (string= (file-truename (expand-file-name (car file)))
+		   (file-truename (buffer-file-name)))
+           (org-mobile-push-with-delay 30)))
+   )))
+
+(run-at-time "00:05" 86400 '(lambda () (org-mobile-push-with-delay 1))) ;; refreshes agenda file each day
+
+(org-mobile-pull) ;; run org-mobile-pull at startup
+
+(defun install-monitor (file secs)
+  (run-with-timer
+   0 secs
+   (lambda (f p)
+     (unless (< p (second (time-since (elt (file-attributes f) 5))))
+       (org-mobile-pull)))
+   file secs))
+
+(install-monitor (file-truename
+                  (concat
+                   (file-name-as-directory org-mobile-directory)
+                          org-mobile-capture-file))
+                 5)
+
+;; Do a pull every 5 minutes to circumvent problems with timestamping
+;; (ie. dropbox bugs)
+(run-with-timer 0 (* 5 60) 'org-mobile-pull)
+
+
+(setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
 (setq org-agenda-include-all-todo t)
+(setq org-mobile-agendas '("p"))
 (setq org-agenda-custom-commands
-      '(("p" "wow such agenda"
+      '(
+        ("h" "wow such home tasks"
+         ((tags-todo "home"))
+          ((org-agenda-sorting-strategy '(time-up todo-state-up priority-down)))         
+          )
+       ("d" "wow such today"
+          ((agenda "" ((org-agenda-ndays 1)                      ;; daily agenda
+                      (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
+                      (org-agenda-scheduled-leaders '("" ""))
+                                            ))
+          (todo "TODO"
+                (
+                 (org-agenda-todo-ignore-scheduled t)
+                 (org-agenda-sorting-strategy '(priority-down tag-down))
+) )
+
+          (todo "JESSE"               
+                 ((org-agenda-todo-keyword-format "%-8s "))) 
+           (todo "WAITING"
+                 ((org-agenda-todo-keyword-format "%-8s "))) 
+           (todo "HOLD"
+                 ((org-agenda-todo-keyword-format "%-8s ")))
+          )
+) 
+        ("p" "wow such agenda"
          ((agenda "" ((org-agenda-ndays 7)                      ;; overview of appointments
                       (org-agenda-start-on-weekday nil)         ;; calendar begins today
                       (org-agenda-repeating-timestamp-show-all t)
@@ -256,7 +329,7 @@ If the new path's directories does not exist, create them."
                         (org-agenda-ndays 1)
                         (org-agenda-log-mode-items '(closed state))
                         (org-agenda-show-log t)
-                        (org-agenda-todo-keyword-format "[X] ")
+                ;;        (org-agenda-todo-keyword-format "")
                         (org-agenda-remove-tags t)
                         (org-agenda-entry-types '(:timestamp))
                         (org-agenda-time-grid nil)
@@ -265,11 +338,13 @@ If the new path's directories does not exist, create them."
           (agenda "" ((org-agenda-ndays 1)                      ;; daily agenda
                       (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                       (org-agenda-scheduled-leaders '("" ""))
-                      (org-agenda-todo-keyword-format "[ ] ")
+                  ;;    (org-agenda-todo-keyword-format "[ ] ")
+                      (org-agenda-sorting-strategy '(priority-down))
                          ))
           (todo "TODO"
-                ((org-agenda-todo-keyword-format "[ ] ")
+                ( ;; (org-agenda-todo-keyword-format "[ ] ")
                  (org-agenda-todo-ignore-scheduled t)
+                 (org-agenda-sorting-strategy '(priority-down tag-down))
 ) )
 
           (todo "JESSE"               
@@ -290,28 +365,45 @@ If the new path's directories does not exist, create them."
            (org-habit-preceding-days 18)
            ))))
 
+;; Always hilight the current agenda line
+(add-hook 'org-agenda-mode-hook
+          '(lambda () (hl-line-mode 1))
+          'append)
+
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/Text/life.org" "Tasks")
-             "* TODO %?\n  %i\n  %a")))
+      '(("t" "Todo" entry (file+headline "~/Text/life.org" "Everys Thang")
+             "* TODO %? %i %^g")
+        ("j" "Jesse" entry (file+headline "~/Text/life.org" "Everys Thang")
+             "* JESSE %? %i %^g")
+        ("s" "Shopping" entry (file+headline "~/Text/shopping.org" "Buy It")
+             "* %? %i %^g")
 
-(set-face-attribute 'org-warning nil :foreground "#fdf6e3"  )
-(set-face-attribute 'org-scheduled-previously nil :foreground "eee8d5" :bold t )
-(set-face-attribute 'org-upcoming-deadline nil :foreground "#859900"  )
-(set-face-attribute 'org-scheduled-today nil :foreground "#eee8d5"  )
-(set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  )
-(set-face-attribute 'org-agenda-date nil :foreground "#b58900"  )
-(set-face-attribute 'org-agenda-date-weekend nil :foreground "#2aa198"  )
-(set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3")
+  ("q" "Quick task" entry
+         (file+headline "~/personal/organizer.org" "Tasks")
+         "* TODO %^{Task}
+SCHEDULED: %^t"
+         :immediate-finish t)
+))
 
-(set-face-attribute 'org-habit-clear-future-face nil :background "#073642"  )
-(set-face-attribute 'org-habit-clear-face nil :background "#073642"  )
-(set-face-attribute 'org-habit-overdue-face nil :background "#859900"  )
-(set-face-attribute 'org-habit-overdue-future-face nil :background "#657b83")
+
+(set-face-attribute 'org-agenda-date nil :background "#073642"  :foreground "#859900" :underline t)
+(set-face-attribute 'org-agenda-date-weekend nil :foreground "#859900" :background "#073642" :underline t)
+(set-face-attribute 'org-agenda-date-today nil :background "#262626")
+(set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
+(set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
+(set-face-attribute 'org-done nil :strike-through t  )
 (set-face-attribute 'org-habit-alert-face nil :background "#b58900")
 (set-face-attribute 'org-habit-alert-future-face nil :background "#b58900")
-(set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
+(set-face-attribute 'org-habit-clear-face nil :background "#073642"  )
+(set-face-attribute 'org-habit-clear-future-face nil :background "#073642"  )
+(set-face-attribute 'org-habit-overdue-face nil :background "#859900"  )
+(set-face-attribute 'org-habit-overdue-future-face nil :background "#657b83")
 (set-face-attribute 'org-habit-ready-face nil :background "#073642")
-
+(set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
+(set-face-attribute 'org-scheduled-previously nil :foreground "eee8d5" :bold t )
+(set-face-attribute 'org-scheduled-today nil :foreground "#eee8d5"  )
+(set-face-attribute 'org-upcoming-deadline nil :foreground "#859900"  )
+(set-face-attribute 'org-warning nil :foreground "#fdf6e3"  )
 
 
 (setq mark-diary-entries-in-calendar t)

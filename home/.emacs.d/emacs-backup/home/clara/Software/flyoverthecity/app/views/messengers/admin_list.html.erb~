@@ -1,0 +1,17 @@
+<table>
+<tr>
+<th>Username</th>
+<th>Email</th>
+<th>Name</th>
+<th>Phone</th>
+<th>Avatar</th>
+<% for m in @messengers %>
+<tr>
+<td><%= m.username %></td>
+<td><%= m.email %></td>
+<td><%= m.name %></td>
+<td><%= m.phone %></td>
+<td><%= image_tag(m.avatar.url(:thumb)) %></td>
+</tr>
+<% end %>
+</table>

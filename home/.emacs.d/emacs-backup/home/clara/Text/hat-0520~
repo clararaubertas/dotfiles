@@ -1,0 +1,63 @@
+    Create a new class of Admnistrators on HelpAroundTown. These would have
+        What we now call parent privileges: every time one of their children applies to a job, they got notified by email, same as parents now
+        Admin privileges: so they can see all the children in their group. They can see everything a kid applied to, all the messages exchanged, ratings received and given.
+--------- is this the same as: admin's view but with limits on the users you can see?
+
+    Create a new pin symbol for the map, of a different color, to highlight those kids. Every kid has his pin. We activate the link to the profile. (now links are off).
+--------- what map view where? what user view?
+
+        While at it, also create a feature so every user can decide to activate his profile on the map. We will charge for that. Activate at payment. I need to be able to activate free for certain people.
+-------------- 10 hours
+
+    Create a contact Me feature for managing users’ contact info. Users can choose whether they want to be contacted by email, phone, SMS, Facebook.  We make the contact. [[Note sure: Users can also decide which contact info they want to make public, if any.]]
+        This Contact me feature would be seen from User profiles and from ads.
+------------------ ?????????????? what is this
+
+
+    Nav bar clean up & streamlining
+        Remove FAQ & Contact Us from the Nav Bar. 
+        Switch position of Find a job and Post a job in Nav Bar. 
+        Change Sign in to Log In.
+        Change Register to Sign Up  
+--------------------- 1 hour
+
+
+    Social media integration
+        Enable Log In with Facebook, Twitter, LinkedIn Pinterest
+---- 5 hours
+ - ask for location & friends
+            For users who have logged in via social, ask them for address info and full name when post a job or apply to job or post an ad
+        Enable sharing a job just posted on Facebook, Twitter, LinkedIn Pinterest
+            Enable sharing an ad just posted on Facebook, Twitter, LinkedIn Pinterest
+            Enable sharing a recommendation received on Facebook, Twitter, LinkedIn Pinterest
+
+---- what is this
+
+        For users who have logged in via social, ask them for address info and full name when post a job or apply to job or post an ad
+----- 5 hours
+
+    Enable sharing a job just posted on Facebook, Twitter, LinkedIn Pinterest
+        Enable sharing an ad just posted on Facebook, Twitter, LinkedIn Pinterest
+        Enable sharing a recommendation received on Facebook, Twitter, LinkedIn Pinterest
+------- 5 hours
+
+What would it take to make the site HTTPS ????
+-------- 2 hours + she needs to have certificate for $200
+
+What would it take to make HelpAroundTown Town-based.
+URL structure would be HelpAroundTown/[lexington](whatever relevant town)/…whatever it is now
+Home page would have map centered on town, jobs from that town prioritized by date, ads from that town
+Jobs page would prioritize jobs from that town (then categories and dates and existing structure)
+Bulletin Board would present ads from that town on out, closest then most distant.
+-------------------- 15 hours??
+
+Also some Admin changes:
+- show STATE, not just town in user listings (I just had someone sign up in AK, and the only reason I know is they are a minor and I got an email request for parental approval)
+------- < 1 hour
+- Do an Admin jobs report, with data for each job on:
+who posted it, date, location, category, number of applicants, nb hired?, rating by buyer? rating by service provider?
+------- downloadable or viewable?
+we would also need to track time between job posting and first applicant
+price (payment). This might be a bit tricky, given all the options.
+----- currently no payment set up for *jobs* (only for "cards")
+
