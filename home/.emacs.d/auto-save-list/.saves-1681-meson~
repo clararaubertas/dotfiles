@@ -1,3 +1,7 @@
+/home/clara/Text/foo
+/home/clara/Text/#foo#
+/home/clara/.homesick/repos/dotfiles/home/.emacs
+/home/clara/.homesick/repos/dotfiles/home/#.emacs#
 /home/clara/my-crontab
 /home/clara/#my-crontab#
 /home/clara/Text/life.org
@@ -8,5 +12,3 @@
 /home/clara/Text/#para#
 /home/clara/Text/shopping.org
 /home/clara/Text/#shopping.org#
-/home/clara/diary
-/home/clara/#diary#

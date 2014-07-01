@@ -17,10 +17,11 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/icicles/")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
-;;(add-to-list 'load-path "~/.emacs.d/org-sync")
-;; (mapc 'load
-;;       '("org-element" "os" "os-github"))
-;; Upgrade all packages
+(add-to-list 'load-path "~/.emacs.d/org-sync")
+ (mapc 'load
+       '("os" "os-github"))
+(setq os-github-auth '("clararaubertas" . "poppyasm"))
+;; all packages
 (defun package-update-all ()
   "Update all packages"
   (interactive)
