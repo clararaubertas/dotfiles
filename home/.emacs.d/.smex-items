@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- eval-current-buffer
- org-mobile-pull
- new-frame
- esk-sudo-edit
- make-directory
- replace-string
- package-install
+ os
+ org-mode
+ os-import
+ os-sync
+ org-sort-entries
+ org-sort
+ eval-region
 )
 
 ;; ----- smex-data -----
@@ -24,11 +24,11 @@
  (man . 3)
  (eval-buffer . 9)
  (ruby-electric-mode . 4)
- (eval-current-buffer . 230)
+ (eval-current-buffer . 231)
  (global-rinari-mode . 4)
  (list-packages . 2)
  (heartbeat-cursor-mode . 15)
- (eval-region . 35)
+ (eval-region . 36)
  (spook . 1)
  (rainbow-mode . 1)
  (vc-dir . 1)
@@ -74,8 +74,8 @@
  (eval-defun . 13)
  (org-reload . 4)
  (sort-lines . 1)
- (org-sort-entries . 10)
- (org-sort . 3)
+ (org-sort-entries . 11)
+ (org-sort . 4)
  (lawlist-sort . 18)
  (what-face . 6)
  (print-buffer . 5)
@@ -87,7 +87,7 @@
  (org-cycle . 3)
  (package-refresh-contents . 1)
  (org-agenda-log-mode . 2)
- (org-mode . 4)
+ (org-mode . 5)
  (wordstar-mode . 2)
  (set-variable . 1)
  (table-capture . 4)
@@ -96,7 +96,9 @@
  (table-insert-row . 3)
  (table-insert . 3)
  (idle-highlight-mode . 1)
- (os . 2)
+ (os . 23)
  (replace-regexp . 1)
  (new-frame . 2)
+ (os-import . 7)
+ (os-sync . 21)
 )

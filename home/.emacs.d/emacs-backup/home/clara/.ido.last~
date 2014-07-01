@@ -93,19 +93,19 @@
  ("/home/clara/.config/" . "variety/")
  ("/home/clara/Software/flyoverthecity/spec/" . "models/")
  ("/home/clara/Software/lendsquare/app/views/loans/" . "build/")
- ("/home/clara/Software/flyoverthecity/app/assets/" . "javascripts/")
+ ("/home/clara/Software/flyoverthecity/app/assets/" . "stylesheets/")
  ("/home/clara/Software/lendsquare/app/views/devise/" . "registrations/")
  ("/home/clara/Software/lendsquare/app/views/admin/" . "loans/")
- ("/home/clara/Software/flyoverthecity/app/views/" . "jobs/")
+ ("/home/clara/Software/flyoverthecity/app/views/" . "invoices/")
  ("/home/clara/Software/flyoverthecity/app/" . "views/")
  ("/home/clara/Software/flyoverthecity/" . "app/")
  ("/home/clara/Software/lendsquare/app/assets/" . "javascripts/")
  ("/home/" . "clara/")
  ("/home/clara/Software/lendsquare/" . "app/")
- ("/home/clara/Software/" . "leavitt/")
+ ("/home/clara/Software/" . "flyoverthecity/")
  ("/home/clara/Software/lendsquare/app/views/" . "notifier/")
  ("/home/clara/Software/lendsquare/app/" . "models/")
- ("/home/clara/" . ".local/")
+ ("/home/clara/" . "Text/")
  ("/home/clara/.emacs.d/elpa/" . "cursor-chg-20.1/")
  ("/home/clara/.emacs.d/" . "emacs-color-theme-solarized/")
  ("/usr/share/" . "vlc/")
@@ -115,22 +115,31 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Text/"
+ "/home/clara/"
+ "/home/clara/Software/flyoverthecity/app/views/invoices/"
+ "/home/clara/Software/flyoverthecity/app/views/recurrences/"
+ "/home/clara/Software/flyoverthecity/app/views/photos/"
+ "/home/clara/Software/flyoverthecity/app/views/notes/"
+ "/home/clara/Software/flyoverthecity/app/views/categories/"
+ "/home/clara/Software/flyoverthecity/app/views/markets/"
+ "/home/clara/Software/flyoverthecity/app/views/users/"
+ "/home/clara/Software/flyoverthecity/app/views/jobs/"
+ "/home/clara/Software/flyoverthecity/app/assets/stylesheets/"
+ "/home/clara/Software/flyoverthecity/app/views/pages/"
+ "/home/clara/Software/flyoverthecity/app/views/saved_companies/"
+ "/home/clara/Software/flyoverthecity/app/controllers/"
  "/sudo:root@localhost:/home/clara/.local/share/applications/"
  "/home/clara/.local/share/applications/"
  "/sudo:root@localhost:/home/clara/.applications/"
- "/home/clara/"
  "/home/clara/Software/leavitt/app/assets/stylesheets/"
  "/home/clara/Software/leavitt/app/controllers/"
  "/home/clara/Software/leavitt/app/models/"
  "/home/clara/Software/leavitt/app/views/trials/"
- "/home/clara/Software/flyoverthecity/app/views/jobs/"
  "/home/clara/Software/flyoverthecity/app/models/"
  "/home/clara/Software/flyoverthecity/db/migrate/"
  "/home/clara/Software/flyoverthecity/app/assets/javascripts/"
- "/home/clara/Text/"
  "/home/clara/Software/flyoverthecity/app/views/messengers/"
- "/home/clara/Software/flyoverthecity/app/views/invoices/"
- "/home/clara/Software/flyoverthecity/app/controllers/"
  "/home/clara/Software/flyoverthecity/app/views/clients/"
  "/home/clara/Software/flyoverthecity/spec/models/"
  "/home/clara/Software/desoto/app/models/"
@@ -156,44 +165,59 @@
  "/home/clara/Software/dioptrice/app/views/collections/"
  "/home/clara/Software/dioptrice/config/"
  "/home/clara/Software/dioptrice/app/models/"
- "/home/clara/Software/dioptrice/app/views/telescopes/"
- "/home/clara/Software/dioptrice/app/views/application/"
- "/home/clara/Software/leavitt/app/views/questionnaires/"
- "/home/clara/.emacs.d/emacs-color-theme-solarized/"
- "/home/clara/Software/dioptrice/app/controllers/"
- "/home/clara/Software/lsq/spec/factories/"
- "/home/clara/Software/dioptrice/spec/factories/"
- "/home/clara/Software/lsq/spec/controllers/"
- "/home/clara/Software/dioptrice/spec/controllers/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "transmission-gtk.desktop"
- "GoogleCalendargooglecom.desktop"
- "Twittertwittercom.desktop"
- "Tumblrtumblrcom.desktop"
- "pithos.desktop"
+ "invite"
+ "foo"
+ "my-crontab"
  ".emacs"
- "application.css"
- "guesses_controller.rb"
- "trial.rb"
- "trials_controller.rb"
+ "_form.html.erb"
+ "new.html.erb"
+ "para"
+ "revamp.css"
+ "shopping.org"
+ "jobs_controller.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/Text/" (21426 64397 259116 185000) "jobless" "reem-0604" "story" "para" "emails.txt" "notes.org" "stories/" "drive" "chaos2" "moojo5.org" "agendas.org" "scrib.html" "shopping.org" "fotc" "foo" "rincewitch" "steve-case" "chaos" "wed.txt" "badmachine" "para0306.org" "lsq-notes-0401" "#foo#" "./" "lsq-bar-notifications" "lsq-0626" "movingvan" "mechturk" "stuff.org" "test.asc" "bildungsroman" "hat-0520" "list.txt" "intro" "foobar" "Text/" "movie-diary" "lsq-draft3-notes" "move-schedule_archive" "insurance" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "#Captures#" "gitissues.org" "orgmob" "trash.txt" "fotc-meeting" "setlist" "../" "rincewitch-ii" "videos.org" "lsq-bar-notifications-2" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "timetravel2" "lendsquare-actionables" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "greg" "lsq-final-draft-response" "bi.org" "stuff.txt" "cinnamon" "timandsarah" "nastygram.txt" "truisms.txt" "mobileorg.org" "reem2" "tv.org" "orb" "index.org" "letter" ".#foo" "moltables" "clothes.org" "packing.org" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "good-movies")
+
+ ("/home/clara/" (21426 10474 38787 804000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "pepper" "Games/" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" "Music/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".dmrc" ".hplip/" ".emacs" ".ido.last" ".applications/" "Text/" ".profile" ".cinnamon/" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".lesshst" ".dropbox/" ".emacs.d/" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" "dropbox-setup.sh" ".gitconfig" ".gconf/" ".wireshark/" ".bash_logout" ".gemrc" ".emerald/" ".huludesktop" ".macromedia/" ".selected_editor" ".gem/" ".gitk" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" "gdrive/" "malka" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".gdfuse/" ".pki/" "Pictures/" ".dropbox-master/" ".gksu.lock" ".synaptic/" ".exercism" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" "my-crontab" ".fonts.conf" ".bash_profile" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" ".appdata/" ".zshrc" ".pry_history" "Software/")
+
+ ("/home/clara/.homesick/repos/dotfiles/home/" (21426 10490 875200 974000) ".bashrc" "./" ".emacs" "../" ".emacs.d/" ".gitconfig")
+
+ ("/home/clara/Software/flyoverthecity/app/views/recurrences/" (21425 51176 600759 506000) "_form.html.erb" "./" "show.html.erb" "edit.html.erb" "../" "index.html.erb" "jobs.html.erb" "new.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/views/photos/" (21425 51163 352760 159000) "_form.html.erb" "./" "edit.html.erb" "../" "index.html.erb" "new.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/views/notes/" (21425 51152 584760 690000) "_form.html.erb" "./" "show.html.erb" "edit.html.erb" "../" "index.html.erb" "new.html.erb" "_note.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/views/categories/" (21425 51141 428761 240000) "./" "../" "index.html.erb" "new.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/views/markets/" (21425 51131 636761 722000) "_form.html.erb" "./" "edit.html.erb" "_service_level.html.erb" "../" "index.html.erb" "new.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/views/users/" (21425 51111 588762 710000) "_password_helper.html.erb" "_form.html.erb" "./" "show.html.erb" "edit.html.erb" "market.html.erb" "../" "index.html.erb" "change_password.html.erb" "new.html.erb" "forgot_password.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/views/jobs/" (21425 51098 764763 342000) "_hide2.html.erb" "_form.html.erb" "date_report.html.erb" "_job.html.erb" "./" "show.html.erb" "completable.html.erb" "#cancel_dates.rhtml#" "edit.html.erb" "_job_attachment.html.erb" "_list.html.erb" "calendar.html.erb" "../" "uncomplete.html.erb" "rider.html.erb" "csv_import.html.erb" "cancelled.html.erb" "report.html.erb" "index.html.erb" "_clientform.html.erb" "client_report.html.erb" "label.html.erb" "assign.html.erb" "incomplete.html.erb" "new.html.erb" "cancel.html.erb" "rider_report.html.erb" "total.html.erb" "_rider.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/controllers/" (21425 50554 692790 153000) "recurrences_controller.rb" "notes_controller.rb" "admins_controller.rb" "./" "invoices_controller.rb" "categories_controller.rb" "pages_controller.rb" "homepage_bottom_images_controller.rb" "users_controller.rb" "photos_controller.rb" "jobs_controller.rb" "#application#" "markets_controller.rb" "../" "messengers_controller.rb" "login_controller.rb" "dispatching_users_controller.rb" "clients_controller.rb" "application_controller.rb" "homepage_images_controller.rb" "service_levels_controller.rb")
+
+ ("/home/clara/Software/flyoverthecity/app/assets/stylesheets/" (21400 47066 539564 467000) "pages.css.scss" "./" "revamp.css" "scaffold.css" "photos.css.scss" "saved_companies.css.scss" "notes.css.scss" "weekdays.css.scss" "main.css" "responsive-tables.css" "../" "scaffolds.css.scss" "event_calendar.css" "invoices.css.scss" "service_levels.css.scss" "dispatching_users.css.scss" "application.css" "homepage_image.css.scss")
+
+ ("/home/clara/Software/flyoverthecity/app/views/pages/" (21105 29766 0 0) "_form.html.erb" "_homepage_bottom_image_form.html.erb" "./" "_homepage_image_form.html.erb" "show.html.erb" "../" "index.html.erb" "#new.html.erb#" "new.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/views/invoices/" (21425 46713 392979 445000) "_form.html.erb" "show.csv.erb" "./" "show.html.erb" "edit.html.erb" "../" "index.html.erb" "new.html.erb" "_report.html.erb" "show.pdf.prawn")
+
+ ("/home/clara/Software/flyoverthecity/app/views/saved_companies/" (21425 46657 892982 180000) "_form.html.erb" "./" "show.html.erb" "edit.html.erb" "../" "index.html.erb" "new.html.erb")
+
+ ("/home/clara/Software/flyoverthecity/app/views/messengers/" (21400 47066 543564 467000) "admin_list.html.erb" "./" "show.html.erb" "prefs.html.erb" "home.html.erb" "../" "index.html.erb" "_recent_jobs.html.erb" "date.html.erb")
+
  ("/home/clara/.local/share/applications/" (21419 16361 548208 404000) "wine-extension-vbs.desktop" "wine-extension-png.desktop" "Twittertwittercom.desktop" "Tumblrtumblrcom.desktop" "mimeapps.list" "./" "gmail-indicator.desktop" "wine-extension-url.desktop" "defaults.list" "wine-extension-txt.desktop" "facebookfacebookcom.desktop" "pithos.desktop" "wine-extension-rtf.desktop" "wine-extension-gif.desktop" "wine-extension-xml.desktop" "../" "wine-extension-ini.desktop" "wine/" "wine-extension-chm.desktop" "wine-extension-htm.desktop" "spotify.desktop" "wine-extension-jpe.desktop" "emacs24.desktop" "transmission-gtk.desktop" "GoogleCalendargooglecom.desktop" "wine-extension-wri.desktop" "mimeinfo.cache" "#_asudo_broot@localhost_b_ahome_aclara_a.applications_aspotify.desktop#" "wine-extension-msp.desktop" "zoncolor.desktop" "wine-extension-hlp.desktop" "wine-extension-jfif.desktop")
 
- ("/home/clara/" (21419 16440 596211 110000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" "Music/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".dmrc" ".hplip/" ".emacs" ".ido.last" ".applications/" "Text/" ".profile" ".cinnamon/" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".lesshst" ".dropbox/" ".emacs.d/" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" ".gitconfig" ".gconf/" ".wireshark/" ".bash_logout" ".gemrc" ".emerald/" ".huludesktop" ".macromedia/" ".selected_editor" ".gem/" ".gitk" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".pki/" "Pictures/" ".dropbox-master/" ".gksu.lock" ".synaptic/" ".exercism" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".fonts.conf" ".bash_profile" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" ".appdata/" ".zshrc" ".pry_history" "Software/")
-
- ("/sudo:root@localhost:/sudo:root@localhost:/home/clara/.local/share/applications/" (ftp . 389925.5444444445) "../" "./")
-
- ("/sudo:root@localhost:/home/clara/.local/share/applications/" (ftp . 389925.5413888889) "wine-extension-jfif.desktop" "wine-extension-hlp.desktop" "zoncolor.desktop" "wine-extension-msp.desktop" "#_asudo_broot@localhost_b_ahome_aclara_a.applications_aspotify.desktop#" "mimeinfo.cache" "wine-extension-wri.desktop" "GoogleCalendargooglecom.desktop" "transmission-gtk.desktop" "emacs24.desktop" "wine-extension-jpe.desktop" "spotify.desktop" "wine-extension-htm.desktop" "wine-extension-chm.desktop" "wine/" "wine-extension-ini.desktop" "../" "wine-extension-xml.desktop" "wine-extension-gif.desktop" "wine-extension-rtf.desktop" "pithos.desktop" "facebookfacebookcom.desktop" "wine-extension-txt.desktop" "defaults.list" "wine-extension-url.desktop" "gmail-indicator.desktop" "./" "mimeapps.list" "Tumblrtumblrcom.desktop" "Twittertwittercom.desktop" "wine-extension-png.desktop" "wine-extension-vbs.desktop")
-
  ("/home/clara/.local/share/" (21419 16181 416202 237000) "zeitgeist/" "gegl-0.2/" ".huludesktop.data" "spotify/" "resources/" "./" "fonts/" "vlc/" "session_migration-cinnamon" "nemo/" ".converted-launchers" "previews/" "gstreamer-1.0/" "folks/" "mime/" "../" "tracker/" "unity-webapps/" "unity-settings-daemon/" "gnome-settings-daemon/" "locale/" "desktop-directories/" "GoogleDocsdocsgooglecom/" "gvfs-metadata/" "font-manager/" "GoogleCalendargooglecom/" "evolution/" "gsettings-data-convert" "icc/" "session_migration-gnome" "telepathy/" "nautilus/" "shotwell/" "Trash/" "TpLogger/" "sounds/" "cinnamon/" "icons/" "Steam/" "ubuntuone/" "gnome-shell/" "applications/" "totem/" "keyrings/" "session_migration-ubuntu" "recently-used.xbel" "webkit/")
-
- ("/home/clara/Text/" (21415 31958 953831 129000) "jobless" "reem-0604" "story" "para" "emails.txt" "notes.org" "stories/" "drive" "chaos2" "moojo5.org" "agendas.org" "scrib.html" "fotc" "foo" "rincewitch" "steve-case" "chaos" "wed.txt" "badmachine" "para0306.org" "lsq-notes-0401" "./" "lsq-bar-notifications" "lsq-0626" "movingvan" "mechturk" "stuff.org" "test.asc" "bildungsroman" "hat-0520" "list.txt" "intro" "Text/" "movie-diary" "lsq-draft3-notes" "move-schedule_archive" "insurance" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "#Captures#" "gitissues.org" "orgmob" "trash.txt" "fotc-meeting" "setlist" "../" "rincewitch-ii" "videos.org" "lsq-bar-notifications-2" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "timetravel2" "lendsquare-actionables" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "greg" "lsq-final-draft-response" "bi.org" "stuff.txt" "cinnamon" "timandsarah" "nastygram.txt" "truisms.txt" "mobileorg.org" "reem2" "tv.org" "orb" "index.org" "letter" "moltables" "clothes.org" "packing.org" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "good-movies")
 
  ("/home/clara/.local/" (20807 63614 0 0) "./" "../" "share/")
 
@@ -213,8 +237,6 @@
 
  ("/home/clara/Software/flyoverthecity/app/models/" (21407 5934 97613 861000) "homepage_image.rb" "admin.rb" ".gitkeep" "./" "note.rb" "dispatching_user.rb" "job.rb" "photo.rb" "market.rb" "saved_email.rb" "messenger.rb" "user.rb" "page.rb" "../" "work_phone.rb" "service_level.rb" "saved_company.rb" "invoice.rb" "link.rb" "client.rb" "homepage_bottom_image.rb" "category.rb" "weekday.rb" "job_attachment.rb" "recommendation.rb" "recurrence.rb")
 
- ("/home/clara/Software/flyoverthecity/app/views/jobs/" (21407 5747 825618 752000) "_hide2.html.erb" "_form.html.erb" "date_report.html.erb" "_job.html.erb" "./" "show.html.erb" "completable.html.erb" "#cancel_dates.rhtml#" "edit.html.erb" "_job_attachment.html.erb" "_list.html.erb" "calendar.html.erb" "../" "uncomplete.html.erb" "rider.html.erb" "csv_import.html.erb" "cancelled.html.erb" "report.html.erb" "index.html.erb" "_clientform.html.erb" "client_report.html.erb" "label.html.erb" "assign.html.erb" "incomplete.html.erb" "new.html.erb" "cancel.html.erb" "rider_report.html.erb" "total.html.erb" "_rider.html.erb")
-
  ("/home/clara/Software/flyoverthecity/db/migrate/" (21407 5681 233620 501000) "012_add_links.rb" "20130802163613_homepage_bottom_images.rb" "20131021234450_change_time_ready.rb" "004_create_work_phones.rb" "20130208191710_add_personal_email.rb" "20130329163214_add_links_page.rb" "20130329011302_add_market_fields.rb" "20130208193546_add_profile_to_messenger.rb" "20130910220521_store_invoice_total.rb" "./" "20130513160022_create_job_attachments.rb" "007_create_users.rb" "20140616160410_add_time_ready_text.rb" "20120814202134_add_type_to_users.rb" "015_add_time.rb" "20130217170852_create_markets.rb" "20130217171248_create_categories.rb" "20130214233513_standard_operating_procedure.rb" "20130219211142_change_page_layouts.rb" "20130208181950_add_physical_signature.rb" "016_add_cancelled.rb" "20120910182620_change_recurrence_messenger.rb" "010_add_notes.rb" "20120220162102_add_confirmation_email_to_job.rb" "20130131192802_add_attachment_avatar_to_users.rb" "20130205185345_add_check_box_fields_to_job.rb" "009_new_recurrence_fields.rb" "20130131200107_acts_as_taggable_on_migration.rb" "20130219215349_archive_categories.rb" "20131021182434_add_time_ready.rb" "014_modify_overnight.rb" "20130208174213_add_fields_to_invoices.rb" "20130926172254_add_rush_details.rb" "20100819200932_add_new_fields_to_client.rb" "20130321144737_add_fields_to_jobs.rb" "017_add_timestamps.rb" "20131216225554_add_second_client_to_invoice.rb" "../" "20120120172941_create_photos.rb" "20130321213749_recommendations.rb" "006_create_recurrences.rb" "20130214214421_create_dispatching_users.rb" "20130612014306_add_tracking_number.rb" "20131212194846_create_notes.rb" "20130731193335_add_attachment_image_to_homepage_images.rb" "20130212205827_add_job_id_to_invoice.rb" "20121019172406_add_payment_scale.rb" "#20100819200932_add_new_fields_to_client.rb#" "20130217171539_add_ids_to_jobs_and_dispatcher.rb" "20130513160257_add_attachment_data_to_job_attachments.rb" "011_create_information.rb" "20130918192714_add_service_levels.rb" "008_create_background.rb" "20120815010614_change_rider_id_to_messenger_id.rb" "20130208193757_add_rates_to_client.rb" "20130731192934_create_homepage_image.rb" "20120306232044_create_saved_emails.rb" "20130805160803_add_old_messenger_id.rb" "20120306182943_add_archived_to_users.rb" "003_create_riders.rb" "001_create_jobs.rb" "20120821201343_change_rider_id.rb" "20111209185234_create_pages.rb" "013_add_client_notes.rb" "20130726205749_add_attachment_image_to_pages.rb" "20130530205100_add_fields.rb" "20130909233809_messenger_cut.rb" "20120305230108_add_notes_to_recurrence.rb" "20111209190819_add_backgrounds.rb" "20140505201003_add_second_messenger.rb" "20130806210550_add_old_messenger_id_to_users.rb" "20111230204909_add_background_fields_to_clients.rb" "20120819202425_create_weekdays.rb" "20140527214217_add_second_payment_amount.rb" "20120502185217_add_calendar_fields.rb" "20120124153114_create_invoices.rb" "018_add_email_to_job.rb" "20111230232527_create_saved_companies.rb")
 
  ("/home/clara/Software/flyoverthecity/db/" (21381 968 512202 433000) "./" "migrate/" "../" "schema.rb")
@@ -232,14 +254,6 @@
  ("/home/clara/.homesick/repos/" (21248 12640 0 0) "./" "../" "dotfiles/")
 
  ("/home/clara/.homesick/repos/dotfiles/" (21253 17018 0 0) "./" "home/" ".gitmodules" ".git/" "../")
-
- ("/home/clara/.homesick/repos/dotfiles/home/" (21362 54543 997861 461000) ".bashrc" "./" ".emacs" "../" ".emacs.d/" ".gitconfig")
-
- ("/home/clara/Software/flyoverthecity/app/views/messengers/" (21325 55154 0 0) "admin_list.html.erb" "./" "show.html.erb" "prefs.html.erb" "home.html.erb" "../" "index.html.erb" "_recent_jobs.html.erb" "date.html.erb")
-
- ("/home/clara/Software/flyoverthecity/app/views/invoices/" (21394 14933 501439 27000) "_form.html.erb" "show.csv.erb" "./" "show.html.erb" "edit.html.erb" "../" "index.html.erb" "new.html.erb" "_report.html.erb" "show.pdf.prawn")
-
- ("/home/clara/Software/flyoverthecity/app/controllers/" (21394 12520 577441 32000) "recurrences_controller.rb" "notes_controller.rb" "admins_controller.rb" "./" "invoices_controller.rb" "categories_controller.rb" "pages_controller.rb" "homepage_bottom_images_controller.rb" "users_controller.rb" "photos_controller.rb" "jobs_controller.rb" "#application#" "markets_controller.rb" "../" "messengers_controller.rb" "login_controller.rb" "dispatching_users_controller.rb" "clients_controller.rb" "application_controller.rb" "homepage_images_controller.rb" "service_levels_controller.rb")
 
  ("/home/clara/Software/flyoverthecity/app/views/clients/" (21394 13230 233440 443000) "rates.html.erb" "admin_list.html.erb" "invoice.pdf.prawn" "./" "pdf.pdf.prawn" "show.html.erb" "prefs.html.erb" "home.html.erb" "../" "_recent_jobs.html.erb" "pdf.html.erb")
 
@@ -368,18 +382,6 @@
  ("/home/clara/Software/dioptrice/lib/" (21032 53212 831549 834000) "./" "assets/" "phusion_passenger.rb" "tasks/" "../")
 
  ("/home/clara/Software/dioptrice/app/views/layouts/" (21197 63421 586102 458000) "./" "../" "application.html.erb")
-
- ("/home/clara/Software/dioptrice/app/views/categories/" (21107 62678 832751 376000) "./" "show.html.erb" "index.html.erb" "new.html.erb" "_form.html.erb" "edit.html.erb" "../")
-
- ("/home/clara/Software/flyoverthecity/app/views/layouts/" (21196 20049 151581 600000) "./" ".#application.html.erb" "../" "application.html.erb" "application.rhtml")
-
- ("/home/clara/Software/flyoverthecity/config/" (21196 19549 547607 423000) "./" "application.rb" "environments/" "schedule.rb" "locales/" "environment.rb" "initializers/" "deploy/" "deploy.rb" "boot.rb" "database.yml" "routes.rb" "../")
-
- ("/home/clara/Software/flyoverthecity/app/views/notes/" (21163 43413 925099 931000) "./" "show.html.erb" "index.html.erb" "new.html.erb" "_form.html.erb" "_note.html.erb" "edit.html.erb" "../")
-
- ("/home/clara/Software/flyoverthecity/app/assets/stylesheets/" (21196 17692 903703 388000) "responsive-tables.css" "./" "saved_companies.css.scss" "pages.css.scss" "invoices.css.scss" "dispatching_users.css.scss" "service_levels.css.scss" "photos.css.scss" "homepage_image.css.scss" "revamp.css" "weekdays.css.scss" "scaffolds.css.scss" "scaffold.css" "event_calendar.css" "notes.css.scss" "main.css" "application.css" "../")
-
- ("/home/clara/.ssh/" (21195 3932 73885 633000) "./" "known_hosts.old" "id_rsa" "known_hosts" "id_dsa" "../" "id_rsa.pub" "id_dsa.pub")
 )
 
 ;; ----- ido-unc-hosts-cache -----

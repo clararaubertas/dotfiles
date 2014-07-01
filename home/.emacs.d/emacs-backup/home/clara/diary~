@@ -1,7 +1,10 @@
 io
+&%%(and (diary-block 7 31 2014 7 31 2014)) Mame Exam
+&7/7/2014 11:45-12:45 Neihaus
+ Location: Vet
+&%%(and (diary-block 7 4 2014 7 4 2014)) party
 &6/30/2014 19:00-20:00 Cones bbq
  Location: The point
-&%%(and (diary-block 8 12 2014 8 26 2014)) Isle Royale (JESSE AWAY)
 &%%(and (diary-block 9 13 2014 9 14 2014)) Amanda & Raul visit!
 &%%(and (diary-block 8 7 2014 8 10 2014)) Visit new England
 &6/17/2014 20:00-22:00 Nellcote
@@ -35,7 +38,6 @@ io
 &%%(and (diary-date t 10 t) (diary-block 2 10 2014 6 8 2014)) 09:00-10:00 laundry pickup
 &6/12/2014 04:00-05:00 Dr pandian
  Location: 120 East Ogden Ave Suite 106 Hinsdale, IL 60521
-&%%(and (diary-block 7 14 2014 7 20 2014)) south carolina
 &5/21/2014 06:00-07:00 dinner w mame dad
  Location: Dinner w mame dad
 &5/22/2014 15:45-17:00 Appointment at Shivkumar Pandian, MD's office
@@ -1185,7 +1187,6 @@ io
 &%%(and (diary-block 9 26 2014 9 28 2014)) steven gone
 &%%(and (diary-block 8 25 2014 9 1 2014)) burning man
 &%%(and (diary-block 6 27 2014 7 12 2014)) SL in berlin
-&%%(and (diary-block 7 14 2014 7 20 2014)) south carolina (Clara)
 &%%(and (diary-block 6 19 2014 6 22 2014)) Clara in Boston
 &%%(and (diary-block 6 23 2014 6 30 2014)) ROADTRIP (Clara)
 &%%(and (diary-block 6 18 2014 6 18 2014)) c&s
