@@ -2,8 +2,8 @@
 ;; ----- smex-history -----
 (
  os
- org-mode
  eval-defun
+ org-mode
  eval-region
  eval-current-buffer
  os-import
@@ -71,7 +71,7 @@
  (org-agenda . 2)
  (list-colors-display . 2)
  (list-faces-display . 1)
- (eval-defun . 14)
+ (eval-defun . 18)
  (org-reload . 4)
  (sort-lines . 1)
  (org-sort-entries . 11)
@@ -87,7 +87,7 @@
  (org-cycle . 3)
  (package-refresh-contents . 1)
  (org-agenda-log-mode . 2)
- (org-mode . 8)
+ (org-mode . 9)
  (wordstar-mode . 2)
  (set-variable . 1)
  (table-capture . 4)
@@ -96,7 +96,7 @@
  (table-insert-row . 3)
  (table-insert . 3)
  (idle-highlight-mode . 1)
- (os . 41)
+ (os . 50)
  (replace-regexp . 1)
  (new-frame . 2)
  (os-import . 7)
