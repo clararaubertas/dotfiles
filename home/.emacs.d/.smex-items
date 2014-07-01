@@ -1,11 +1,11 @@
 
 ;; ----- smex-history -----
 (
- eval-defun
  os
+ org-mode
+ eval-defun
  eval-region
  eval-current-buffer
- org-mode
  os-import
  os-sync
 )
@@ -87,7 +87,7 @@
  (org-cycle . 3)
  (package-refresh-contents . 1)
  (org-agenda-log-mode . 2)
- (org-mode . 6)
+ (org-mode . 7)
  (wordstar-mode . 2)
  (set-variable . 1)
  (table-capture . 4)
@@ -96,7 +96,7 @@
  (table-insert-row . 3)
  (table-insert . 3)
  (idle-highlight-mode . 1)
- (os . 36)
+ (os . 39)
  (replace-regexp . 1)
  (new-frame . 2)
  (os-import . 7)

@@ -124,6 +124,8 @@ Append new tags in EXISTING-TAGS by side effects."
     (dolist (b (os-get-prop :bugs buglist))
       (let* ((sync (os-get-prop :sync b))
              (id (os-get-prop :id b))
+             (message "the id is %s" id)
+             (message "b looks like %s" b)
              (data (os-github-bug-to-json b))
              (modif-url (format "%s/%d" new-url (or id 0)))
              (result
