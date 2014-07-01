@@ -266,6 +266,7 @@ Return the server decoded JSON response."
    `((title . ,(os-get-prop :title bug))
      (body . ,(os-get-prop :desc bug))
      (assignee . ,(os-get-prop :assignee bug))
+     (id . ,(os-get-prop :id bug))
      (state . ,(symbol-name (os-get-prop :status bug)))
      (labels . [ ,@(os-get-prop :tags bug) ])))))
 
