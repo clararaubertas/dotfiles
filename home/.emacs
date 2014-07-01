@@ -226,7 +226,7 @@ If the new path's directories does not exist, create them."
   (org-map-entries 'org-archive-subtree "/CANCELLED" 'file))
 
 (require 'org-habit)
-(setq org-log-done 'time)
+
 
 
 (setq org-directory "~/Text/")
@@ -366,9 +366,12 @@ If the new path's directories does not exist, create them."
            (org-habit-preceding-days 18)
            ))))
 
-;; Always hilight the current agenda line
+
 (add-hook 'org-agenda-mode-hook
+          ;; Always hilight the current agenda line
           '(lambda () (hl-line-mode 1))
+          ;; We gonna log stuff here.
+          '(setq org-log-done 'time)
           'append)
 
 (setq org-capture-templates
