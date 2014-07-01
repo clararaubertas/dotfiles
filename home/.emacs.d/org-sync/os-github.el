@@ -132,12 +132,15 @@ Append new tags in EXISTING-TAGS by side effects."
                ((null id)
                 (os-github-handle-tags b existing-tags)
                 (push (os-github-json-to-bug
-                       (os-github-request "POST" new-url data)) newbugs))
+                       (os-github-request "POST" new-url data)) newbugs)
+                (message "We thought it was a new bug."))
 
                ;; update bug
                (t
                 (os-github-handle-tags b existing-tags)
-                (os-github-request "PATCH" modif-url data))))
+                (os-github-request "PATCH" modif-url data))
+               (message "We thought it was a old bug.")
+               ))
              (err (cdr (assoc 'message result))))
 
         (when (stringp err)
@@ -266,7 +269,6 @@ Return the server decoded JSON response."
    `((title . ,(os-get-prop :title bug))
      (body . ,(os-get-prop :desc bug))
      (assignee . ,(os-get-prop :assignee bug))
-     (id . ,(os-get-prop :id bug))
      (state . ,(symbol-name (os-get-prop :status bug)))
      (labels . [ ,@(os-get-prop :tags bug) ])))))
 
