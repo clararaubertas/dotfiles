@@ -291,6 +291,11 @@ If the new path's directories does not exist, create them."
 (run-with-timer 0 (* 5 60) 'org-mobile-pull)
 
 
+(add-hook 'org-agenda-mode-hook
+          (lambda ()
+            (visual-line-mode -1)
+            (toggle-truncate-lines 1)))
+
 (setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p" "h" "d" "l"))
@@ -302,9 +307,9 @@ If the new path's directories does not exist, create them."
          ((agenda "" 
                   ((org-agenda-ndays 1)                      ;; daily agenda
                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
-                   (org-agenda-scheduled-leaders '("" ""))
+                   (org-agenda-scheduled-leaders '("." ","))
                    ;;    (org-agenda-todo-keyword-format "[ ] ")
-                   (org-agenda-sorting-strategy '(priority-down tag-down))
+                   (org-agenda-sorting-strategy '(tag-down priority-down))
                    ))
           (todo "TODO"
                 ( ;; (org-agenda-todo-keyword-format "[ ] ")
@@ -324,6 +329,7 @@ If the new path's directories does not exist, create them."
           (org-fast-tag-selection-single-key (quote expert))
           (org-habit-following-days 3)
           (org-habit-preceding-days 8)
+          (org-agenda-use-time-grid nil)
           )
          )      
         
