@@ -352,10 +352,6 @@ If the new path's directories does not exist, create them."
 
           (todo "JESSE"               
                 ((org-agenda-todo-keyword-format "%-8s "))) 
-          (todo "WAITING"
-                ((org-agenda-todo-keyword-format "%-8s "))) 
-          (todo "HOLD"
-                ((org-agenda-todo-keyword-format "%-8s ")))
           )
          ) 
         ;; very context
@@ -364,21 +360,30 @@ If the new path's directories does not exist, create them."
                       (org-agenda-start-on-weekday nil)         ;; calendar begins today
                       (org-agenda-repeating-timestamp-show-all t)
                       (org-agenda-entry-types '(:timestamp :sexp))
+                      (org-agenda-time-grid nil)
+                      (org-agenda-use-time-grid nil)
                       ))
           ;; today's accomplishments
           (agenda "" (
                       (org-agenda-ndays 1)
                       (org-agenda-log-mode-items '(closed state))
                       (org-agenda-show-log t)
-                      ;;        (org-agenda-todo-keyword-format "")
+                      (org-agenda-todo-keyword-format "")
                       (org-agenda-remove-tags t)
                       (org-agenda-entry-types '(:timestamp))
                       (org-agenda-time-grid nil)
                       
                       ))
+
+          (todo "WAITING"
+                ((org-agenda-todo-keyword-format "%-8s "))) 
           (todo "HOLD"
                 ((org-agenda-todo-keyword-format "%-8s ")))
-          ))
+
+          )
+
+         )
+
 ))
 
 (add-hook 'org-agenda-mode-hook
