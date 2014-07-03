@@ -319,28 +319,30 @@ If the new path's directories does not exist, create them."
                  ((org-agenda-todo-keyword-format "%-8s ")))
           )
 ) 
+       ("l" "very context"      
+        ((agenda "" ((org-agenda-ndays 7)                      ;; overview of appointments
+                     (org-agenda-start-on-weekday nil)         ;; calendar begins today
+                     (org-agenda-repeating-timestamp-show-all t)
+                     (org-agenda-entry-types '(:timestamp :sexp))
+                     ))
+         ;; today's accomplishments
+         (agenda "" (
+                     (org-agenda-ndays 1)
+                     (org-agenda-log-mode-items '(closed state))
+                     (org-agenda-show-log t)
+                     ;;        (org-agenda-todo-keyword-format "")
+                     (org-agenda-remove-tags t)
+                     (org-agenda-entry-types '(:timestamp))
+                     (org-agenda-time-grid nil))
+
         ("p" "wow such agenda"
-         ((agenda "" ((org-agenda-ndays 7)                      ;; overview of appointments
-                      (org-agenda-start-on-weekday nil)         ;; calendar begins today
-                      (org-agenda-repeating-timestamp-show-all t)
-                      (org-agenda-entry-types '(:timestamp :sexp))
-                      ))
-          ;; today's accomplishments
-          (agenda "" (
-                        (org-agenda-ndays 1)
-                        (org-agenda-log-mode-items '(closed state))
-                        (org-agenda-show-log t)
-                ;;        (org-agenda-todo-keyword-format "")
-                        (org-agenda-remove-tags t)
-                        (org-agenda-entry-types '(:timestamp))
-                        (org-agenda-time-grid nil)
-))
+  
 
           (agenda "" ((org-agenda-ndays 1)                      ;; daily agenda
                       (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                       (org-agenda-scheduled-leaders '("" ""))
                   ;;    (org-agenda-todo-keyword-format "[ ] ")
-                      (org-agenda-sorting-strategy '(priority-down))
+                      (org-agenda-sorting-strategy '(priority-down tag-down))
                          ))
           (todo "TODO"
                 ( ;; (org-agenda-todo-keyword-format "[ ] ")
@@ -364,7 +366,7 @@ If the new path's directories does not exist, create them."
            (org-fast-tag-selection-single-key (quote expert))
            (org-habit-following-days 4)
            (org-habit-preceding-days 18)
-           ))))
+           ))))))
 
 
 (add-hook 'org-agenda-mode-hook
