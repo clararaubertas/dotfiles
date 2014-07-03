@@ -293,32 +293,35 @@ If the new path's directories does not exist, create them."
 
 (setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
 (setq org-agenda-include-all-todo t)
-(setq org-mobile-agendas '("p"))
+(setq org-mobile-agendas '("p" "h" "d" "l"))
 (setq org-agenda-custom-commands
       '(
+        ;; wow such home tasks
         ("h" "wow such home tasks"
          ((tags-todo "home"))
           ((org-agenda-sorting-strategy '(time-up todo-state-up priority-down)))         
           )
-       ("d" "wow such today"
-          ((agenda "" ((org-agenda-ndays 1)                      ;; daily agenda
+        ;; wow such today
+        ("d" "wow such today"
+         ((agenda "" ((org-agenda-ndays 1)                      ;; daily agenda
                       (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                       (org-agenda-scheduled-leaders '("" ""))
-                                            ))
+                      ))
           (todo "TODO"
                 (
                  (org-agenda-todo-ignore-scheduled t)
                  (org-agenda-sorting-strategy '(priority-down tag-down))
-) )
+                 ) )
 
           (todo "JESSE"               
-                 ((org-agenda-todo-keyword-format "%-8s "))) 
-           (todo "WAITING"
-                 ((org-agenda-todo-keyword-format "%-8s "))) 
-           (todo "HOLD"
-                 ((org-agenda-todo-keyword-format "%-8s ")))
+                ((org-agenda-todo-keyword-format "%-8s "))) 
+          (todo "WAITING"
+                ((org-agenda-todo-keyword-format "%-8s "))) 
+          (todo "HOLD"
+                ((org-agenda-todo-keyword-format "%-8s ")))
           )
-) 
+         ) 
+        ;; very context
        ("l" "very context"      
         ((agenda "" ((org-agenda-ndays 7)                      ;; overview of appointments
                      (org-agenda-start-on-weekday nil)         ;; calendar begins today
@@ -333,8 +336,13 @@ If the new path's directories does not exist, create them."
                      ;;        (org-agenda-todo-keyword-format "")
                      (org-agenda-remove-tags t)
                      (org-agenda-entry-types '(:timestamp))
-                     (org-agenda-time-grid nil))
-
+                     (org-agenda-time-grid nil)
+                     
+                     ))
+         (todo "HOLD"
+               ((org-agenda-todo-keyword-format "%-8s ")))
+         ))
+                 ;; wow such agenda
         ("p" "wow such agenda"
   
 
@@ -354,8 +362,6 @@ If the new path's directories does not exist, create them."
                  ((org-agenda-todo-keyword-format "%-8s "))) 
            (todo "WAITING"
                  ((org-agenda-todo-keyword-format "%-8s "))) 
-           (todo "HOLD"
-                 ((org-agenda-todo-keyword-format "%-8s ")))
           )
           (
            (org-agenda-compact-blocks t)
@@ -366,7 +372,7 @@ If the new path's directories does not exist, create them."
            (org-fast-tag-selection-single-key (quote expert))
            (org-habit-following-days 4)
            (org-habit-preceding-days 18)
-           ))))))
+           )))
 
 
 (add-hook 'org-agenda-mode-hook
