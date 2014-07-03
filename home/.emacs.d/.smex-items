@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ os
+ os-import
+ os-sync
+ new-frame
+ org-sort-entries
  eval-defun
  lisp-mode
- emacs-lisp-mode
- org-sort-entries
- org-clock-modify-effort-estimate
- org-refile
- os
 )
 
 ;; ----- smex-data -----
@@ -74,7 +74,7 @@
  (eval-defun . 46)
  (org-reload . 4)
  (sort-lines . 1)
- (org-sort-entries . 12)
+ (org-sort-entries . 14)
  (org-sort . 4)
  (lawlist-sort . 18)
  (what-face . 6)
@@ -96,11 +96,11 @@
  (table-insert-row . 3)
  (table-insert . 3)
  (idle-highlight-mode . 1)
- (os . 59)
+ (os . 84)
  (replace-regexp . 1)
- (new-frame . 2)
- (os-import . 8)
- (os-sync . 21)
+ (new-frame . 4)
+ (os-import . 11)
+ (os-sync . 22)
  (org-refile . 2)
  (org-clock-modify-effort-estimate . 1)
  (emacs-lisp-mode . 1)

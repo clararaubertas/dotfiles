@@ -133,10 +133,7 @@ Append new tags in EXISTING-TAGS by side effects."
                 (os-github-handle-tags b existing-tags)
                 (push (os-github-json-to-bug
                        (os-github-request "POST" new-url data)) newbugs)
-                (message "Id appears to be %s" id)
-                (message "bug lookin like %s" (pp b))
-                (message "We thought it was a new bug."))
-
+                )
                ;; update bug
                (t
                 (os-github-handle-tags b existing-tags)
