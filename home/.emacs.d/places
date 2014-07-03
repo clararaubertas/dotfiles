@@ -1,5 +1,6 @@
 ;;; -*- coding: utf-8 -*-
 (("/home/clara/.bashrc" . 4001)
+ ("/home/clara/.emacs" . 14112)
  ("/home/clara/.emacs.d/elpa/ace-jump-mode-2.0.0.0/ace-jump-mode-autoloads.el" . 1662)
  ("/home/clara/.emacs.d/elpa/android-mode-0.2.4/android-mode-autoloads.el" . 454)
  ("/home/clara/.emacs.d/elpa/anything-1.287/anything-autoloads.el" . 2461)
@@ -57,8 +58,9 @@
  ("/home/clara/.homesick/repos/dotfiles/home/.emacs.d/org-sync/os.el" . 8716)
  ("/home/clara/.xbindkeysrc" . 1267)
  ("/home/clara/Software/desoto/Gemfile" . 797)
- ("/home/clara/Software/desoto/app/models/design.rb" . 63)
- ("/home/clara/Software/desoto/app/models/game.rb" . 116)
+ ("/home/clara/Software/desoto/app/models/design.rb" . 370)
+ ("/home/clara/Software/desoto/app/models/game.rb" . 128)
+ ("/home/clara/Software/desoto/app/models/line.rb" . 86)
  ("/home/clara/Software/desoto/app/models/question.rb" . 134)
  ("/home/clara/Software/desoto/app/models/run.rb" . 128)
  ("/home/clara/Software/desoto/app/models/user.rb" . 84)
