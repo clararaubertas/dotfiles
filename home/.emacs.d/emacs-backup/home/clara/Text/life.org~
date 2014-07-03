@@ -1656,7 +1656,8 @@ SCHEDULED: <2014-07-02 Wed .+2d/5d>
 :ID: b158a9c9-35a2-47ce-8631-ef9a3cd29e4c
 :END:
 ** TODO get groceries                                                   :hp:
-SCHEDULED: <2014-06-21 Sat .+5d/8d>
+SCHEDULED: <2014-07-07 Mon .+5d/8d>
+- State "DONE"       from "TODO"       [2014-07-02 Wed 20:46]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 13:25]
 - State "DONE"       from "TODO"       [2014-06-11 Wed 18:53]
 - State "DONE"       from "TODO"       [2014-06-02 Mon 20:14]
@@ -1679,7 +1680,7 @@ SCHEDULED: <2014-06-21 Sat .+5d/8d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       f5e8c1fb-0db3-4aed-8eaa-491c9d8228ff
-:LAST_REPEAT: [2014-06-16 Mon 13:25]
+:LAST_REPEAT: [2014-07-02 Wed 20:46]
 :END:
 ** TODO get mail                                           :home:downstairs:
 SCHEDULED: <2014-07-02 Wed .+2d/4d>
