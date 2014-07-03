@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ magit-status
  os
+ magit-commit-mode
+ new-frame
  os-import
  os-sync
- new-frame
  org-sort-entries
- eval-defun
- lisp-mode
 )
 
 ;; ----- smex-data -----
@@ -33,7 +33,7 @@
  (rainbow-mode . 1)
  (vc-dir . 1)
  (magit-log . 1)
- (magit-status . 9)
+ (magit-status . 12)
  (rinari-cap . 21)
  (follow-mode . 1)
  (re-builder . 1)
@@ -96,12 +96,13 @@
  (table-insert-row . 3)
  (table-insert . 3)
  (idle-highlight-mode . 1)
- (os . 84)
+ (os . 97)
  (replace-regexp . 1)
- (new-frame . 4)
+ (new-frame . 5)
  (os-import . 11)
  (os-sync . 22)
  (org-refile . 2)
  (org-clock-modify-effort-estimate . 1)
  (emacs-lisp-mode . 1)
+ (magit-commit-mode . 1)
 )

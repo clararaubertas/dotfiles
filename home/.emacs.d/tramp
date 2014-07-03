@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <14/07/03 15:36:08 /home/clara/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <14/07/03 17:00:44 /home/clara/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -58,4 +58,6 @@
    ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
   ("remote-shell" "/bin/sh")
   ("busybox" nil)
-  ("file-exists" "test -e")))
+  ("file-exists" "test -e"))
+ (["scp" "git" "github.com" nil nil]
+  nil))

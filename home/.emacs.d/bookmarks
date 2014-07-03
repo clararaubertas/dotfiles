@@ -8,8 +8,8 @@
  (rear-context-string . "19f011\n:END:\n\n\n\n")
  (position . 157861))
 ("org-capture-last-stored"
- (filename . "~/Text/shopping.org")
- (front-context-string . "** horseradish o")
- (rear-context-string . "gan aioli stuff\n")
- (position . 485))
+ (filename . "~/Text/life.org")
+ (front-context-string . "** TODO [#C] ema")
+ (rear-context-string . "     :computer:\n")
+ (position . 161869))
 )

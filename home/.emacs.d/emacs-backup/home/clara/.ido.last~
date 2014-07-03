@@ -8,7 +8,7 @@
  ("/home/clara/.homesick/repos/" . "dotfiles/")
  ("/home/clara/.homesick/" . "repos/")
  ("/home/clara/Software/desoto/app/" . "models/")
- ("/home/clara/Software/desoto/" . "app/")
+ ("/home/clara/Software/desoto/" . "config/")
  ("/home/clara/Software/go-mocha/app/assets/" . "javascripts/")
  ("/home/clara/Software/go-mocha/app/views/" . "menu_items/")
  ("/home/clara/Software/go-mocha/app/" . "assets/")
@@ -23,7 +23,7 @@
  ("/home/clara/Software/leavitt/app/views/" . "trials/")
  ("/usr/share/themes/Solarized-Dark/" . "cinnamon/")
  ("/home/clara/Software/leavitt/app/" . "assets/")
- ("/home/clara/Software/leavitt/" . "app/")
+ ("/home/clara/Software/leavitt/" . "config/")
  ("/home/clara/Software/rummagemarketplace/config/" . "initializers/")
  ("/home/clara/Software/rummagemarketplace/app/views/" . "sale/")
  ("/home/clara/Software/rummagemarketplace/app/assets/" . "javascripts/")
@@ -36,7 +36,7 @@
  ("/home/clara/Software/hat/spec/" . "helpers/")
  ("/home/clara/Software/hat/app/views/" . "home/")
  ("/home/clara/Software/hat/app/" . "controllers/")
- ("/home/clara/Software/hat/" . "app/")
+ ("/home/clara/Software/hat/" . "config/")
  ("/home/clara/Software/dioptrice/config/" . "deploy/")
  ("/home/clara/Software/dioptrice/app/views/" . "collections/")
  ("/home/clara/Software/dioptrice/app/assets/" . "stylesheets/")
@@ -103,11 +103,11 @@
  ("/home/clara/Software/lendsquare/app/views/admin/" . "loans/")
  ("/home/clara/Software/flyoverthecity/app/views/" . "invoices/")
  ("/home/clara/Software/flyoverthecity/app/" . "views/")
- ("/home/clara/Software/flyoverthecity/" . "app/")
+ ("/home/clara/Software/flyoverthecity/" . "config/")
  ("/home/clara/Software/lendsquare/app/assets/" . "javascripts/")
  ("/home/" . "clara/")
  ("/home/clara/Software/lendsquare/" . "app/")
- ("/home/clara/Software/" . "desoto/")
+ ("/home/clara/Software/" . "flyoverthecity/")
  ("/home/clara/Software/lendsquare/app/views/" . "notifier/")
  ("/home/clara/Software/lendsquare/app/" . "models/")
  ("/home/clara/" . "Text/")
@@ -120,10 +120,13 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/.homesick/repos/dotfiles/home/.emacs.d/org-sync/"
  "/home/clara/"
  "/home/clara/Text/"
+ "/home/clara/Software/flyoverthecity/config/"
+ "/home/clara/Software/hat/config/"
+ "/home/clara/Software/leavitt/config/"
  "/home/clara/Software/desoto/app/models/"
- "/home/clara/.homesick/repos/dotfiles/home/.emacs.d/org-sync/"
  "/home/clara/Software/flyoverthecity/app/views/invoices/"
  "/home/clara/Software/flyoverthecity/app/views/recurrences/"
  "/home/clara/Software/flyoverthecity/app/views/photos/"
@@ -153,7 +156,6 @@
  "/home/clara/Software/leavitt/app/views/analytics/"
  "/home/clara/Software/leavitt/db/migrate/"
  "/home/clara/Software/leavitt/app/views/layouts/"
- "/home/clara/Software/leavitt/config/"
  "/home/clara/Software/leavitt/app/views/runs/"
  "/home/clara/.config/variety/"
  "/home/clara/Software/hat/app/controllers/"
@@ -168,37 +170,43 @@
  "/home/clara/Software/hat/app/views/home/"
  "/home/clara/Software/flyoverthecity/config/environments/"
  "/home/clara/Software/dioptrice/app/assets/stylesheets/"
- "/home/clara/Software/dioptrice/app/views/collections/"
- "/home/clara/Software/dioptrice/config/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "os-github.el"
+ "org-element.el"
  ".emacs"
- "invite"
- "para"
- "life.org"
- "orgmob"
- "line.rb"
- "game.rb"
- "design.rb"
+ "fotc.org"
  "mochabugs.org"
- "os.el"
+ "para"
+ "shopping.org"
+ "deploy.rb"
+ "invite"
+ "life.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/" (21428 35369 963282 174000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "pepper" "Games/" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" "Music/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".applications/" "Text/" ".profile" ".cinnamon/" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" "#test#" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".lesshst" ".dropbox/" ".emacs.d/" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" "dropbox-setup.sh" ".gitconfig" ".gconf/" ".wireshark/" ".bash_logout" ".gemrc" ".emerald/" ".huludesktop" ".macromedia/" ".selected_editor" ".gem/" ".gitk" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" "gdrive/" "malka" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".gdfuse/" ".pki/" "Pictures/" ".dropbox-master/" ".gksu.lock" ".synaptic/" ".exercism" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" "my-crontab" ".fonts.conf" ".bash_profile" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" ".appdata/" ".zshrc" ".pry_history" "Software/")
+ ("/home/clara/.homesick/repos/dotfiles/home/.emacs.d/org-sync/" (21427 6329 489176 802000) "./" "os.el" "omd.el" "org-element.el" "README.org" "os-rtm.el" "../" "os-github.el" "TODO.org" "os-bb.el" "os-rmine.el")
 
- ("/home/clara/Text/" (21428 44315 538961 1000) "jobless" "reem-0604" "story" "para" "emails.txt" "notes.org" "stories/" "drive" "chaos2" "moojo5.org" "agendas.org" "scrib.html" "shopping.org" "fotc" "foo" "rincewitch" "steve-case" "chaos" "wed.txt" "badmachine" "para0306.org" "lsq-notes-0401" "./" "lsq-bar-notifications" "lsq-0626" "movingvan" "mechturk" "stuff.org" "test.asc" "bildungsroman" "hat-0520" "list.txt" "intro" "foobar" "Text/" "movie-diary" "lsq-draft3-notes" "move-schedule_archive" "insurance" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "#Captures#" "gitissues.org" "orgmob" "trash.txt" "fotc-meeting" "setlist" "../" "rincewitch-ii" "videos.org" "lsq-bar-notifications-2" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "timetravel2" "lendsquare-actionables" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "bi.org" "stuff.txt" "cinnamon" "timandsarah" "nastygram.txt" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "index.org" "letter" "moltables" "clothes.org" "packing.org" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "good-movies")
+ ("/home/clara/.homesick/repos/dotfiles/home/.emacs.d/" (21429 48800 623828 851000) "session.10fa6c11aa183b032c137945594052462900000019650079" "session.10b8dd34a04592537b137486098827084800000302610054" "projectile-bookmarks.eld" "rainbow-mode.elc" "ruby-electric.el.orig" "ruby-electric.el.rej" "org-sync/" "table-1.5.54.el" "%backup%~" "auto-save-list/" "session.109d6779abc02acac5138669941953924400000014260075" "./" "session.108bd6f34233b93cd8138177176154828500000017720053" "autosaves/" "rainbow-mode.el" "ruby-electric.elc" "session.106eb680d43e18ff5d137341215381611900000016160070" "backups/" "eshell/" "session.1031aeec2dbcdc19be14007034039709800000012930057" ".smex-items" "url/" "rinari/" "session.104c6fc4d75039f014140373297141077000000013820072" "session.104b0a1c21e6930912139749193558649200000320990055" ".org-id-locations" "session.10d9a12d3cca5cfa71137531013476286500000020720055" "../" "session.10ba1c8c94966b6947137840163943963800000016400101" "session.10828b31c9c2670a45139707217123365600000015000054" "rhtml/" "emacs-backup/" "session.104481d7ffe5d072f313708779413686600000024450050" "pretty-mode.elc" "session.10b992a4e041530c6b140267477223255200000013590056" "session.1063a2f2038822860a140053884048204400000012760043" "session.1021a207c3742233c7138204678952804800000013920057" "session.101179c8caba2cafc1137702222418388200000019990052" "session.10a9182e4b36d30a71138687786174254900000014200056" "places" "tramp" "rainbow-delimiters.elc" "session.105729d163c994153140071334464634000000013060055" "session.104887c5d19be3feb6137098177744405300000025820057" "session.10493e4c6d95a9aaef137652980396240500000019920108" "session.10efa5a5a378157fd2137479878711626400000025100046" "ruby-end.elc" "session.101cbb91bb98936a40139543932253437800000015120053" "session.10c97543b5f82f0217137479817226820700000252610052" "session.10bfeea6c13d2e6acb14006229493778100000014050057" "pretty-mode.el" "emacs-color-theme-solarized/" "ac-comphist.dat" "ruby-electric.el" "session.10a883e322f0304e0a139561118952297000000015200053" "bookmarks" "rainbow-delimiters.el" "ruby-end.el" "elpa/" "session.1024f066dac0f3ae06140078132147791200000013320056")
+
+ ("/home/clara/.homesick/repos/dotfiles/home/" (21428 46493 362882 810000) ".bashrc" "./" ".emacs" "../" ".emacs.d/" ".gitconfig")
+
+ ("/home/clara/Text/" (21429 48786 235829 368000) "jobless" "reem-0604" "story" "para" "emails.txt" "notes.org" "stories/" "drive" "chaos2" "moojo5.org" "agendas.org" "scrib.html" "shopping.org" "fotc" "foo" "rincewitch" "steve-case" "chaos" "wed.txt" "badmachine" "para0306.org" "lsq-notes-0401" "./" "lsq-bar-notifications" "lsq-0626" "movingvan" "mechturk" "stuff.org" "test.asc" "bildungsroman" ".#life.org" "hat-0520" "list.txt" "intro" "foobar" "Text/" "movie-diary" "lsq-draft3-notes" "move-schedule_archive" "insurance" "fotc.org" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "#Captures#" "gitissues.org" "orgmob" "trash.txt" "fotc-meeting" "setlist" "../" "rincewitch-ii" "videos.org" "lsq-bar-notifications-2" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "timetravel2" "lendsquare-actionables" "quaker.txt" "coastal.txt" "reem" "leah" "#life.org#" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "bi.org" "stuff.txt" "cinnamon" "timandsarah" "nastygram.txt" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "index.org" "letter" "moltables" "clothes.org" "packing.org" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "good-movies")
+
+ ("/home/clara/Software/flyoverthecity/config/" (21400 47066 543564 467000) "environments/" "./" "routes.rb" "boot.rb" "initializers/" "database.yml" "locales/" "deploy/" "../" "deploy.rb" "environment.rb" "application.rb" "schedule.rb")
+
+ ("/home/clara/Software/leavitt/config/" (21429 33994 192480 106000) "environments/" "./" "routes.rb" "boot.rb" "initializers/" "database.yml" "locales/" "deploy/" "../" "deploy.rb" "environment.rb" "application.rb")
+
+ ("/home/clara/Software/hat/config/" (21363 51868 753657 756000) "environments/" "./" "routes.rb" "boot.rb" "initializers/" "cucumber.yml" "database.yml" "locales/" "deploy/" "../" "deploy.rb" "environment.rb" "application.rb")
+
+ ("/home/clara/Software/desoto/config/" (21392 60208 357510 315000) "environments/" "./" "routes.rb" "boot.rb" "initializers/" "database.yml" "locales/" "../" "environment.rb" "application.rb")
+
+ ("/home/clara/" (21428 46720 998874 637000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "pepper" "Games/" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" "Music/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".applications/" "Text/" ".profile" ".cinnamon/" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" "#test#" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".lesshst" ".dropbox/" ".emacs.d/" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" "dropbox-setup.sh" ".gitconfig" ".gconf/" ".wireshark/" ".bash_logout" ".gemrc" ".emerald/" ".huludesktop" ".macromedia/" ".selected_editor" ".gem/" ".gitk" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" "gdrive/" "malka" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".gdfuse/" ".pki/" "Pictures/" ".dropbox-master/" ".gksu.lock" ".synaptic/" ".exercism" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" "my-crontab" ".fonts.conf" ".bash_profile" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" ".appdata/" ".zshrc" ".pry_history" "Software/")
 
  ("/home/clara/Software/desoto/app/models/" (21427 8993 149081 168000) ".gitkeep" "./" "game.rb" "user.rb" "design.rb" "../" "question.rb" "line.rb" "run.rb")
-
- ("/home/clara/.homesick/repos/dotfiles/home/.emacs.d/org-sync/" (21427 5170 437218 415000) "./" "os.el" "omd.el" "org-element.el" "README.org" "os-rtm.el" "../" "os-github.el" "TODO.org" "os-bb.el" "os-rmine.el")
-
- ("/home/clara/.homesick/repos/dotfiles/home/.emacs.d/" (21427 6111 933184 613000) "session.10fa6c11aa183b032c137945594052462900000019650079" "session.10b8dd34a04592537b137486098827084800000302610054" "projectile-bookmarks.eld" "rainbow-mode.elc" "ruby-electric.el.orig" "ruby-electric.el.rej" "org-sync/" "table-1.5.54.el" "%backup%~" "auto-save-list/" "session.109d6779abc02acac5138669941953924400000014260075" "./" "session.108bd6f34233b93cd8138177176154828500000017720053" "autosaves/" "rainbow-mode.el" "ruby-electric.elc" "session.106eb680d43e18ff5d137341215381611900000016160070" "backups/" "eshell/" "session.1031aeec2dbcdc19be14007034039709800000012930057" ".smex-items" "url/" "rinari/" "session.104c6fc4d75039f014140373297141077000000013820072" "session.104b0a1c21e6930912139749193558649200000320990055" ".org-id-locations" "session.10d9a12d3cca5cfa71137531013476286500000020720055" "../" "session.10ba1c8c94966b6947137840163943963800000016400101" "session.10828b31c9c2670a45139707217123365600000015000054" "rhtml/" "emacs-backup/" "session.104481d7ffe5d072f313708779413686600000024450050" "pretty-mode.elc" "session.10b992a4e041530c6b140267477223255200000013590056" "session.1063a2f2038822860a140053884048204400000012760043" "session.1021a207c3742233c7138204678952804800000013920057" "session.101179c8caba2cafc1137702222418388200000019990052" "session.10a9182e4b36d30a71138687786174254900000014200056" "places" "tramp" "rainbow-delimiters.elc" "session.105729d163c994153140071334464634000000013060055" "session.104887c5d19be3feb6137098177744405300000025820057" "session.10493e4c6d95a9aaef137652980396240500000019920108" "session.10efa5a5a378157fd2137479878711626400000025100046" "ruby-end.elc" "session.101cbb91bb98936a40139543932253437800000015120053" "session.10c97543b5f82f0217137479817226820700000252610052" "session.10bfeea6c13d2e6acb14006229493778100000014050057" "pretty-mode.el" "emacs-color-theme-solarized/" "ac-comphist.dat" "ruby-electric.el" "session.10a883e322f0304e0a139561118952297000000015200053" "bookmarks" "rainbow-delimiters.el" "ruby-end.el" "elpa/" "session.1024f066dac0f3ae06140078132147791200000013320056")
-
- ("/home/clara/.homesick/repos/dotfiles/home/" (21427 6257 149179 399000) ".bashrc" "./" ".emacs" "../" ".emacs.d/" ".gitconfig")
 
  ("/home/clara/Software/flyoverthecity/app/views/recurrences/" (21425 51176 600759 506000) "_form.html.erb" "./" "show.html.erb" "edit.html.erb" "../" "index.html.erb" "jobs.html.erb" "new.html.erb")
 
@@ -292,8 +300,6 @@
 
  ("/home/clara/Software/leavitt/app/views/layouts/" (21373 4588 888874 659000) "./" "../" "application.html.erb")
 
- ("/home/clara/Software/leavitt/config/" (21373 4134 296867 863000) "environments/" "./" "routes.rb" "boot.rb" "initializers/" "database.yml" "locales/" "deploy/" "../" "deploy.rb" "environment.rb" "application.rb")
-
  ("/home/clara/Software/leavitt/app/views/runs/" (21373 4028 996866 289000) "_form.html.erb" "./" "show.html.erb" "edit.html.erb" "../" "admin.html.erb" "play.html.erb" "index.html.erb" "new.html.erb" "placeholder.html.erb")
 
  ("/home/clara/.config/variety/" (21224 30242 0 0) "plugins/" "wallpaper/" "./" "ui.conf" "variety.conf" "Favorites/" ".firstrun" "scripts/" "banned.txt" "../" "history.txt" "variety_latest_default.conf" ".version" "pencil_tile.png" ".last_change_time" "Downloaded/" "Fetched/" "variety.log")
@@ -381,12 +387,6 @@
  ("/home/clara/Software/dioptrice/script/luiscripts/" (21207 3740 859937 538000) "source2.py" "./" "photos_syncer.py" "source1.py" "tmp.mysql" "utils.py" "schema_problems.txt" "DB.sqlite" "db.py" "../")
 
  ("/home/clara/Software/dioptrice/script/" (21105 11759 925669 898000) "console" "./" "server" "generate" "dbconsole" "rails" "luiscripts/" "runner" "about" "../" "performance/" "destroy" "plugin")
-
- ("/home/clara/Software/dioptrice/app/admin/" (21205 53740 926856 47000) "./" "admin_user.rb" "dashboard.rb" "materials.rb" "users.rb" "telescopes.rb" "../")
-
- ("/home/clara/Software/lsq/" (21116 180 550925 303000) "./" "lib/" "Capfile" "giver_0.1.8-6_all.deb" "vendor/" "LICENSE" "Gemfile.lock" ".rspec" "log/" "db/" "README" "script/" "spec/" "coverage/" "Guardfile" ".ruby-version" ".ruby-gemset" "app/" "config/" "README.md" ".guardrc" "public/" "Gemfile" "tmp/" "config.ru" ".gitignore" "../" ".git/" "doc/" "Rakefile")
-
- ("/home/clara/Software/dioptrice/config/initializers/" (21200 13274 393123 432000) "./" "cookie_verification_secret.rb" "devise.rb" "backtrace_silencers.rb" "secret_token.rb" "mime_types.rb" "inflections.rb" "rack.rb" "../" "session_store.rb" "wrap_parameters.rb" "kaminari.rb" "active_admin.rb")
 )
 
 ;; ----- ido-unc-hosts-cache -----
