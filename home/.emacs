@@ -297,6 +297,37 @@ If the new path's directories does not exist, create them."
 
 (setq org-agenda-custom-commands
       '(
+        ;; wow such agenda
+        ("p" "wow such agenda"
+         ((agenda "" 
+                  ((org-agenda-ndays 1)                      ;; daily agenda
+                   (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
+                   (org-agenda-scheduled-leaders '("" ""))
+                   ;;    (org-agenda-todo-keyword-format "[ ] ")
+                   (org-agenda-sorting-strategy '(priority-down tag-down))
+                   ))
+          (todo "TODO"
+                ( ;; (org-agenda-todo-keyword-format "[ ] ")
+                 (org-agenda-todo-ignore-scheduled t)
+                 (org-agenda-sorting-strategy '(priority-down tag-down))
+                 ))
+          (todo "JESSE"               
+                ((org-agenda-todo-keyword-format "%-8s "))) 
+          (todo "WAITING"
+                ((org-agenda-todo-keyword-format "%-8s "))) 
+
+          
+          ((org-agenda-compact-blocks t)
+           ;; (org-agenda-sorting-strategy '(priority-down tag-up))
+           (org-agenda-prefix-format "  ")
+           (org-agenda-overriding-header "")
+           (org-fast-tag-selection-single-key (quote expert))
+           (org-habit-following-days 4)
+           (org-habit-preceding-days 18)
+           )
+          )      
+         )
+
         ;; wow such home tasks
         ("h" "wow such home tasks"
          ((tags-todo "home"))
@@ -343,41 +374,7 @@ If the new path's directories does not exist, create them."
           (todo "HOLD"
                 ((org-agenda-todo-keyword-format "%-8s ")))
           ))
-        ;; wow such agenda
-        ("p" "wow such agenda"
-         
-
-         ((agenda "" ((org-agenda-ndays 1)                      ;; daily agenda
-                      (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
-                      (org-agenda-scheduled-leaders '("" ""))
-                      ;;    (org-agenda-todo-keyword-format "[ ] ")
-                      (org-agenda-sorting-strategy '(priority-down tag-down))
-                      ))
-          (todo "TODO"
-                ( ;; (org-agenda-todo-keyword-format "[ ] ")
-                 (org-agenda-todo-ignore-scheduled t)
-                 (org-agenda-sorting-strategy '(priority-down tag-down))
-                 ) )
-
-          (todo "JESSE"               
-                ((org-agenda-todo-keyword-format "%-8s "))) 
-          (todo "WAITING"
-                ((org-agenda-todo-keyword-format "%-8s "))) 
-          )
-         )
-        )
-      (
-       (org-agenda-compact-blocks t)
-       ;; (org-agenda-sorting-strategy '(priority-down tag-up))
-
-       (org-agenda-prefix-format "  ")
-       (org-agenda-overriding-header "")
-       (org-fast-tag-selection-single-key (quote expert))
-       (org-habit-following-days 4)
-       (org-habit-preceding-days 18)
-       )
-      )      
-
+))
 
 (add-hook 'org-agenda-mode-hook
           ;; Always hilight the current agenda line
