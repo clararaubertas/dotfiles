@@ -316,18 +316,17 @@ If the new path's directories does not exist, create them."
           (todo "WAITING"
                 ((org-agenda-todo-keyword-format "%-8s "))) 
 
-          
-          ((org-agenda-compact-blocks t)
-           ;; (org-agenda-sorting-strategy '(priority-down tag-up))
-           (org-agenda-prefix-format "  ")
-           (org-agenda-overriding-header "")
-           (org-fast-tag-selection-single-key (quote expert))
-           (org-habit-following-days 4)
-           (org-habit-preceding-days 18)
-           )
-          )      
-         )
-
+          )
+         ((org-agenda-compact-blocks t)
+          ;; (org-agenda-sorting-strategy '(priority-down tag-up))
+          (org-agenda-prefix-format "  ")
+          (org-agenda-overriding-header "")
+          (org-fast-tag-selection-single-key (quote expert))
+          (org-habit-following-days 3)
+          (org-habit-preceding-days 8)
+          )
+         )      
+        
         ;; wow such home tasks
         ("h" "wow such home tasks"
          ((tags-todo "home"))
