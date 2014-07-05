@@ -589,7 +589,8 @@ SCHEDULED: <2014-07-03 Thu .+1d/2d>
 :LAST_REPEAT: [2014-07-02 Wed 17:34]
 :END:
 ** TODO clear work inbox                                          :computer:
-SCHEDULED: <2014-07-03 Thu .+1d/2d>
+SCHEDULED: <2014-07-04 Fri .+1d/2d>
+- State "DONE"       from "TODO"       [2014-07-03 Thu 16:52]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 16:26]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 19:32]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
@@ -648,7 +649,7 @@ SCHEDULED: <2014-07-03 Thu .+1d/2d>
 :PROPERTIES:
 :ID:       2636e99f-c430-4342-80e1-4b86fcaf4896
 :STYLE: habit
-:LAST_REPEAT: [2014-07-02 Wed 16:26]
+:LAST_REPEAT: [2014-07-03 Thu 16:52]
 :END:
 ** DONE make bed                                              :home:bedroom:
 SCHEDULED: <2014-07-01 Tue .+1d>
@@ -1542,7 +1543,7 @@ CLOSED: [2014-04-05 Sat 14:57] SCHEDULED: <2014-03-28 Fri .+3d/7d>
 :PROPERTIES:
 :ID:       ba3aedfa-9a5f-4615-8e8e-7a88375fee67
 :END:
-** TODO [#C] draw Nightvale                                         :tablet:
+** WAITING [#C] draw Nightvale                                      :tablet:
 :PROPERTIES:
 :ID:       2019249e-ab10-4bab-bdff-476d2c81d386
 :END:
@@ -1694,7 +1695,8 @@ SCHEDULED: <2014-07-07 Mon .+5d/8d>
 :LAST_REPEAT: [2014-07-02 Wed 20:46]
 :END:
 ** TODO get mail                                           :home:downstairs:
-SCHEDULED: <2014-07-02 Wed .+2d/4d>
+SCHEDULED: <2014-07-05 Sat .+2d/4d>
+- State "DONE"       from "TODO"       [2014-07-03 Thu 16:52]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 19:31]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 13:24]
 - State "DONE"       from "TODO"       [2014-06-12 Thu 19:01]
@@ -1731,7 +1733,7 @@ SCHEDULED: <2014-07-02 Wed .+2d/4d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       70518612-eaac-4848-801e-dfdf13760a0c
-:LAST_REPEAT: [2014-06-30 Mon 19:31]
+:LAST_REPEAT: [2014-07-03 Thu 16:52]
 :END:
 ** TODO get zoloft refill                                               :hp:
 SCHEDULED: <2014-07-08 Tue +1m>
@@ -2789,17 +2791,18 @@ CLOSED: [2014-06-09 Mon 16:22]
 CLOSED: [2014-06-09 Mon 16:23]
 ** CANCELLED [#B] Lauren re: school                               :computer:
 CLOSED: [2014-06-09 Mon 16:23]
-** TODO [#B] life insurance                                       :computer:
+** WAITING [#B] life insurance                                    :computer:
 :PROPERTIES:
 :ID:       7283cffa-593e-426d-a33b-1b581896a9eb
 :END:
+***  Please remember that your customer number is 4970424.
 ** DONE [#A] get psychiatrist                                        :phone:
 CLOSED: [2014-05-19 Mon 17:36]
 ** DONE [#B] dogs with friends                                    :computer:
 CLOSED: [2014-06-09 Mon 16:23]
 ** DONE [#A] MooJo sex submissions                                :computer:
 CLOSED: [2014-06-09 Mon 17:36]
-** TODO [#B] outline bisexuality piece                            :computer:
+** TODO [#A] outline bisexuality piece                            :computer:
 :PROPERTIES:
 :ID:       96889e7c-4343-4342-a7aa-a88e800dca54
 :END:
@@ -3053,7 +3056,7 @@ CLOSED: [2014-06-22 Sun 20:00]
 :PROPERTIES:
 :ID:       ddb0feea-7f43-4a18-a5b9-a35e460ef8a2
 :END:
-** JESSE [#A] call grandma                                           :phone:
+** DONE [#A] call grandma                                            :phone:
 :PROPERTIES:
 :ID:       76a081fc-835c-443e-8358-b87695ccb2ed
 :END:
@@ -3171,4 +3174,12 @@ CLOSED: [2014-06-16 Mon 14:38]
 ** TODO [#B] reorganize office art                             :home:office:
 :PROPERTIES:
 :ID:       9051f06f-4039-490e-909b-c03b590533d6
+:END:
+** TODO [#A] emacs org sync server                                :computer:
+:PROPERTIES:
+:ID:       5a26edda-536b-48d7-9ac7-9852d4568304
+:END:
+** TODO [#C] emacs capistrano                                      :computer:
+:PROPERTIES:
+:ID:       d257b545-7a08-42a6-9ad6-789f2f121c6c
 :END:
