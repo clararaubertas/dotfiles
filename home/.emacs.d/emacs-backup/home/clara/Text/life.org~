@@ -1,4 +1,4 @@
-#+LAST_MOBILE_CHANGE: 2014-07-02 13:41:37
+#+LAST_MOBILE_CHANGE: 2014-07-05 17:15:37
 * Everys Thang
 ** DONE Pay the rent                                                  :mail:
 SCHEDULED: <2014-07-01 Tue +1m>
@@ -894,7 +894,7 @@ SCHEDULED: <2014-07-04 Fri .+1d>
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
 :LAST_REPEAT: [2014-07-03 Thu 13:43]
 :END:
-** TODO drink water                                                :bedroom:
+** DONE drink water                                                :bedroom:
 SCHEDULED: <2014-07-03 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-07-02 Wed 21:22]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
@@ -1758,7 +1758,7 @@ CLOSED: [2014-06-22 Sun 19:51]
 :ID:       49bf59a7-f380-4232-8a6d-adf2d0326e8f
 :END:
 
-** TODO prep foods                                                    :home:
+** DONE prep foods                                                    :home:
 SCHEDULED: <2014-06-16 Mon .+2d/5d>
 - State "DONE"       from "TODO"       [2014-06-14 Sat 14:04]
 - State "CANCELLED"  from "TODO"       [2014-05-24 Sat 17:14]
