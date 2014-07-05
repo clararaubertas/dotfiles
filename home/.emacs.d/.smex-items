@@ -3,11 +3,11 @@
 (
  magit-status
  os
- magit-commit-mode
  new-frame
  os-import
  os-sync
  org-sort-entries
+ eval-current-buffer
 )
 
 ;; ----- smex-data -----
