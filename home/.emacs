@@ -299,7 +299,7 @@ If the new path's directories does not exist, create them."
 
 (setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
 (setq org-agenda-include-all-todo t)
-(setq org-mobile-agendas '("p" "h" "d" "l"))
+(setq org-mobile-agendas '("p"))
 
 (setq org-agenda-custom-commands
       '(
