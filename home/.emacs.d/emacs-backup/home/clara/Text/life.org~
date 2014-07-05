@@ -1758,7 +1758,7 @@ CLOSED: [2014-06-22 Sun 19:51]
 :ID:       49bf59a7-f380-4232-8a6d-adf2d0326e8f
 :END:
 
-** WAITING prep foods                                                 :home:
+** TODO prep foods                                                    :home:
 SCHEDULED: <2014-06-16 Mon .+2d/5d>
 - State "DONE"       from "TODO"       [2014-06-14 Sat 14:04]
 - State "CANCELLED"  from "TODO"       [2014-05-24 Sat 17:14]

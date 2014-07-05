@@ -238,12 +238,13 @@ If the new path's directories does not exist, create them."
 
 (defun my-org-mob-sync()
   (interactive)
-           (message "pushing to mobile! ...")
-              (org-mobile-push)
-              (message "... pushed to mobile!")
               (message "pulling from mobile! ...")
               (org-mobile-push)
               (message "... pulled from mobile!")
+
+           (message "pushing to mobile! ...")
+              (org-mobile-push)
+              (message "... pushed to mobile!")
 )
 (global-set-key '[f4]  'my-org-mob-sync)
 
