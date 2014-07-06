@@ -1,4 +1,4 @@
-#+LAST_MOBILE_CHANGE: 2014-07-05 19:19:13
+#+LAST_MOBILE_CHANGE: 2014-07-05 22:16:45
 * Everys Thang
 ** DONE Pay the rent                                                  :mail:
 SCHEDULED: <2014-07-01 Tue +1m>
@@ -16,7 +16,7 @@ SCHEDULED: <2014-07-01 Tue +1m>
 :END:
 *
 ** DONE brush teeth                                          :home:bathroom:
-SCHEDULED: <2014-06-26 Thu .+1d>
+CLOSED: [2014-07-05 Sat 22:14] SCHEDULED: <2014-06-26 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
 - State "DONE"       from "TODO"       [2014-06-15 Sun 17:29]
@@ -783,7 +783,8 @@ SCHEDULED: <2014-07-06 Sun .+1d>
 :LAST_REPEAT: [2014-07-05 Sat 19:19]
 :END:
 ** TODO take meds                                             :home:bedroom:
-SCHEDULED: <2014-07-04 Fri .+1d>
+SCHEDULED: <2014-07-06 Sun .+1d>
+- State "DONE"       from "TODO"       [2014-07-05 Sat 22:18]
 - State "DONE"       from "TODO"       [2014-07-03 Thu 13:43]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 21:22]
 - State "DONE"       from "TODO"       [2014-06-09 Mon 16:21]
@@ -895,10 +896,10 @@ SCHEDULED: <2014-07-04 Fri .+1d>
 - State "DONE"       from "TODO"       [2013-10-05 Sat 15:52]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2014-07-03 Thu 13:43]
+:LAST_REPEAT: [2014-07-05 Sat 22:18]
 :END:
-** DONE drink water                                                :bedroom:
-SCHEDULED: <2014-07-03 Thu .+1d>
+** TODO drink water                                                :bedroom:
+SCHEDULED: <2014-07-06 Sun .+1d>
 - State "DONE"       from "TODO"       [2014-07-02 Wed 21:22]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
