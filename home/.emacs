@@ -358,7 +358,7 @@ If the new path's directories does not exist, create them."
          ) 
         ;; very context
         ("l" "very context"      
-         ((agenda "" ((org-agenda-ndays 7)                      ;; overview of appointments
+         ((agenda "week upcoming" ((org-agenda-ndays 7)                      ;; overview of appointments
                       (org-agenda-start-on-weekday nil)         ;; calendar begins today
                       (org-agenda-repeating-timestamp-show-all t)
                       (org-agenda-entry-types '(:timestamp :sexp))
@@ -366,9 +366,9 @@ If the new path's directories does not exist, create them."
                       (org-agenda-use-time-grid nil)
                       ))
           ;; today's accomplishments
-          (agenda "" (
+          (agenda "done today" (
                       (org-agenda-ndays 1)
-                      (org-agenda-log-mode-items '(closed state))
+                      (org-agenda-log-mode)
                       (org-agenda-show-log t)
                       (org-agenda-todo-keyword-format "")
                       (org-agenda-remove-tags t)
