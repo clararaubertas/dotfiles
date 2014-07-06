@@ -1,11 +1,11 @@
-#+LAST_MOBILE_CHANGE: 2014-07-06 14:39:19
+#+LAST_MOBILE_CHANGE: 2014-07-06 14:51:35
 * Everys Thang
-** TODO Wenbo margaritas
+** TODO [#C] Wenbo margaritas                                  :majorouting:
 :PROPERTIES:
 :ID:       7d5a0229-8540-434c-a118-c66136a29707
 :END:
 [2014-07-06 Sun 13:53]
-** TODO Field museum
+** TODO [#C] Field museum                                      :majorouting:
 :PROPERTIES:
 :ID:       aaeab271-2b00-4941-90cc-2a4a395ec7fd
 :END:
@@ -27,7 +27,10 @@ SCHEDULED: <2014-07-01 Tue +1m>
 :END:
 *
 ** TODO brush teeth                                          :home:bathroom:
-SCHEDULED: <2014-07-06 Sun .+1d>
+SCHEDULED: <2014-07-07 Mon .+1d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 14:51]
+- State "DONE"       from "TODO"       [2014-07-06 Sun 14:50]
+- State "DONE"       from "TODO"       [2014-07-06 Sun 14:47]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
 - State "DONE"       from "TODO"       [2014-06-15 Sun 17:29]
@@ -95,10 +98,10 @@ SCHEDULED: <2014-07-06 Sun .+1d>
 - State "DONE"       from "TODO"       [2013-10-05 Sat 15:09]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2014-06-25 Wed 17:04]
+:LAST_REPEAT: [2014-07-06 Sun 14:51]
 :END:
 ** TODO wash face                                            :home:bathroom:
-SCHEDULED: <2014-06-18 Wed .+1d>
+SCHEDULED: <2014-07-07 Mon .+1d>
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 14:55]
 - State "DONE"       from "TODO"       [2014-06-15 Sun 17:29]
@@ -122,7 +125,7 @@ SCHEDULED: <2014-06-18 Wed .+1d>
 - State "DONE"       from "TODO"       [2014-02-19 Wed 17:10]
 - State "DONE"       from "TODO"       [2014-02-16 Sun 17:26]
 :PROPERTIES:
-:LAST_REPEAT: [2014-06-17 Tue 18:21]
+:LAST_REPEAT: [2014-07-06 Sun 14:45]
 :ID:       ea91157e-cb13-4e92-b6b5-0e2d0e537de5
 :END:
 ** TODO buy coffee beans                                                :hp:
@@ -154,7 +157,7 @@ SCHEDULED: <2014-07-06 Sun .+6d/9d>
 :LAST_REPEAT: [2014-06-30 Mon 14:14]
 :END:
 ** TODO charge Roomba                                                 :home:
-SCHEDULED: <2014-07-06 Sun .+1d/3d>
+SCHEDULED: <2014-07-07 Mon .+1d/3d>
 - State "DONE"       from "TODO"       [2014-06-18 Wed 18:58]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 14:06]
 - State "DONE"       from "TODO"       [2014-06-13 Fri 16:59]
@@ -198,10 +201,11 @@ SCHEDULED: <2014-07-06 Sun .+1d/3d>
 :PROPERTIES:
 :ID:       ac7178f7-3b0e-4ce1-a9c4-e32c618bd6a6
 :STYLE: habit
-:LAST_REPEAT: [2014-07-05 Sat 19:18]
+:LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
-** DONE charge computer                                               :home:
-CLOSED: [2014-07-06 Sun 14:32] SCHEDULED: <2014-07-06 Sun .+1d/2d>
+** TODO charge computer                                               :home:
+SCHEDULED: <2014-07-07 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 14:45]
 - State "DONE"       from "TODO"       [2014-07-03 Thu 13:44]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 17:19]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 19:31]
@@ -284,10 +288,10 @@ CLOSED: [2014-07-06 Sun 14:32] SCHEDULED: <2014-07-06 Sun .+1d/2d>
 :PROPERTIES:
 :ID:       6bb85b33-e7fe-4b41-bb74-34770b90290e
 :STYLE: habit
-:LAST_REPEAT: [2014-07-05 Sat 19:18]
+:LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
-** DONE charge phone                                                  :home:
-CLOSED: [2014-07-06 Sun 14:34] SCHEDULED: <2014-07-06 Sun .+1d/2d>
+** TODO charge phone                                                  :home:
+SCHEDULED: <2014-07-07 Mon .+1d/2d>
 - State "DONE"       from "TODO"       [2014-07-03 Thu 13:44]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 17:43]
 - State "DONE"       from "TODO"       [2014-06-22 Sun 19:15]
@@ -354,7 +358,7 @@ CLOSED: [2014-07-06 Sun 14:34] SCHEDULED: <2014-07-06 Sun .+1d/2d>
 :PROPERTIES:
 :ID:       2df301ab-286c-4ee2-9f32-1a72c93b419e
 :STYLE: habit
-:LAST_REPEAT: [2014-07-05 Sat 19:18]
+:LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
 ** TODO charge tablet                                                 :home:
 SCHEDULED: <2014-07-06 Sun .+1d/2d>
@@ -666,7 +670,7 @@ SCHEDULED: <2014-07-06 Sun .+1d/2d>
 :LAST_REPEAT: [2014-07-05 Sat 17:22]
 :END:
 ** TODO make bed                                              :home:bedroom:
-SCHEDULED: <2014-07-06 Sun .+1d>
+SCHEDULED: <2014-07-07 Mon .+1d>
 - State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:52]
@@ -791,7 +795,7 @@ SCHEDULED: <2014-07-06 Sun .+1d>
 - State "DONE"       from "TODO"       [2013-10-07 Mon 11:44]
 :PROPERTIES:
 :ID:       0c4ffe26-1cc3-433a-8de0-27266f66589c
-:LAST_REPEAT: [2014-07-05 Sat 19:19]
+:LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
 ** TODO take meds                                             :home:bedroom:
 SCHEDULED: <2014-07-06 Sun .+1d>
@@ -1799,7 +1803,7 @@ SCHEDULED: <2014-07-07 Mon .+2d/5d>
 :ID:       edae40ad-b666-49a4-a9be-27ac3207c7ef
 :LAST_REPEAT: [2014-07-05 Sat 19:18]
 :END:
-** TODO run Roomba                                                    :home:
+** TODO run Roomba                               b                     :home:
 SCHEDULED: <2014-07-03 Thu .+1d/3d>
 - State "DONE"       from "WAITING"    [2014-07-02 Wed 17:43]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 17:26]
@@ -1871,8 +1875,8 @@ SCHEDULED: <2014-07-07 Mon .+2d/5d>
 :ID:       0c9a7db7-06a6-4400-806d-8f96d69727e7
 :END:
 *
-** DONE take out trash                                     :home:downstairs:
-CLOSED: [2014-07-06 Sun 14:31] SCHEDULED: <2014-06-17 Tue .+1d/3d>
+** TODO take out trash                                     :home:downstairs:
+SCHEDULED: <2014-07-07 Mon .+1d/3d>
 - State "DONE"       from "TODO"       [2014-06-16 Mon 09:47]
 - State "DONE"       from "TODO"       [2014-06-12 Thu 19:01]
 - State "DONE"       from "TODO"       [2014-06-09 Mon 12:54]
@@ -1924,7 +1928,7 @@ CLOSED: [2014-07-06 Sun 14:31] SCHEDULED: <2014-06-17 Tue .+1d/3d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       9fb70ef8-8e46-4fcc-a990-8edf7aa618aa
-:LAST_REPEAT: [2014-06-16 Mon 09:47]
+:LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
 ** DONE [#C] take stuff to goodwill                            :majorouting:
 CLOSED: [2014-03-05 Wed 19:17]
@@ -1932,7 +1936,8 @@ CLOSED: [2014-03-05 Wed 19:17]
 :ID:       2b7068ac-99c8-4b87-9c98-21a58ed7ac5b
 :END:
 ** TODO shower                                               :home:bathroom:
-SCHEDULED: <2014-07-04 Fri .+2d/3d>
+SCHEDULED: <2014-07-08 Tue .+2d/3d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 14:54]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 15:51]
 - State "DONE"       from "TODO"       [2014-06-22 Sun 19:15]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:52]
@@ -1991,7 +1996,7 @@ SCHEDULED: <2014-07-04 Fri .+2d/3d>
 :PROPERTIES:
 :STYLE: habit
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2014-07-02 Wed 15:51]
+:LAST_REPEAT: [2014-07-06 Sun 14:54]
 :END:
 ** TODO walk Malka                                                :malka:hp:
 - State "DONE"       from "WAITING"    [2014-05-21 Wed 15:34]
@@ -2039,7 +2044,8 @@ SCHEDULED: <2014-07-04 Fri .+2d/3d>
 :END:
 
 ** TODO water plants                                          :home:allhome:
-SCHEDULED: <2014-07-05 Sat .+3d/4d>
+SCHEDULED: <2014-r07-09 Wed .+3d/4d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 14:54]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 17:19]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:52]
 - State "DONE"       from "TODO"       [2014-06-02 Mon 20:31]
@@ -2073,7 +2079,7 @@ SCHEDULED: <2014-07-05 Sat .+3d/4d>
 :PROPERTIES:
 :STYLE: habit
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2014-07-02 Wed 17:19]
+:LAST_REPEAT: [2014-07-06 Sun 14:54]
 :END:
 ** TODO wipe down stove                                       :home:kitchen:
 SCHEDULED: <2014-07-04 Fri .+2d/4d>
@@ -3096,7 +3102,8 @@ CLOSED: [2014-06-22 Sun 20:00]
 :PROPERTIES:
 :ID:       0938fa09-fc28-4752-8857-22c5c88509bc
 :END:
-** TODO [#B] time shower                                     :home:bathroom:
+** DONE [#B] time shower                                     :home:bathroom:
+CLOSED: [2014-07-06 Sun 14:45]
 :PROPERTIES:
 :ID:       831894c9-8023-4278-99fe-0ef790dd3c99
 :END:
