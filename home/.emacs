@@ -390,9 +390,11 @@ If the new path's directories does not exist, create them."
 (add-hook 'org-agenda-mode-hook
           ;; Always hilight the current agenda line
           '(lambda () (hl-line-mode 1))
-          ;; We gonna log stuff here.
-          '(setq org-log-done 'time)
           'append)
+
+;; We gonna log stuff here.
+(setq org-log-done 'time)
+
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/Text/life.org" "Everys Thang")
