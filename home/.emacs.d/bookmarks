@@ -4,9 +4,9 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-refile-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** DONE [#A] Buy")
- (rear-context-string . "19f011\n:END:\n\n\n\n")
- (position . 157861))
+ (front-context-string . "** TODO Email da")
+ (rear-context-string . "f2f121c6c\n:END:\n")
+ (position . 163621))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
  (front-context-string . "** TODO [#C] ema")

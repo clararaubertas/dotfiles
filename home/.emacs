@@ -301,7 +301,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
-
+(setq org-agenda-sticky 1)
 (setq org-agenda-custom-commands
       '(
         ;; wow such agenda
@@ -368,13 +368,13 @@ If the new path's directories does not exist, create them."
           ;; today's accomplishments
           (agenda "done today" (
                       (org-agenda-ndays 1)
-                      (org-agenda-log-mode)
+                      (org-agenda-log-items '(closed state))
                       (org-agenda-show-log t)
                       (org-agenda-todo-keyword-format "")
                       (org-agenda-remove-tags t)
                       (org-agenda-entry-types '(:timestamp))
                       (org-agenda-time-grid nil)
-                      
+                      (org-agenda-show-diary nil)
                       ))
 
           (todo "WAITING"
