@@ -369,6 +369,7 @@ If the new path's directories does not exist, create them."
           (agenda "done today" (
                       (org-agenda-ndays 1)
                       (org-agenda-log-items '(closed state))
+                      (org-agenda-repeating-timestamp-show-all t)
                       (org-agenda-show-log t)
                       (org-agenda-todo-keyword-format "")
                       (org-agenda-remove-tags t)
@@ -395,6 +396,7 @@ If the new path's directories does not exist, create them."
 
 ;; We gonna log stuff here.
 (setq org-log-done 'time)
+(setq org-log-repeat 'time)
 
 
 (setq org-capture-templates
