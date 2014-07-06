@@ -16,7 +16,7 @@ SCHEDULED: <2014-07-01 Tue +1m>
 :END:
 *
 ** DONE brush teeth                                          :home:bathroom:
-CLOSED: [2014-07-05 Sat 22:14] SCHEDULED: <2014-06-26 Thu .+1d>
+<2014-07-06 Sat .+1d>
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
 - State "DONE"       from "TODO"       [2014-06-15 Sun 17:29]
@@ -1306,8 +1306,8 @@ CLOSED: [2014-05-13 Tue 21:36]
 :END:
 [2014-01-16 Thu 00:01]
 
-** DONE collect dishes                                        :home:allhome:
-SCHEDULED: <2014-07-04 Fri .+1d>
+** TODO collect dishes                                        :home:allhome:
+SCHEDULED: <2014-07-06 Sat .+1d>
 - State "DONE"       from "TODO"       [2014-07-03 Thu 14:26]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 14:55]
