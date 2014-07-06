@@ -1,4 +1,4 @@
-#+LAST_MOBILE_CHANGE: 2014-07-06 14:32:25
+#+LAST_MOBILE_CHANGE: 2014-07-06 14:39:19
 * Everys Thang
 ** TODO Wenbo margaritas
 :PROPERTIES:
@@ -286,8 +286,8 @@ CLOSED: [2014-07-06 Sun 14:32] SCHEDULED: <2014-07-06 Sun .+1d/2d>
 :STYLE: habit
 :LAST_REPEAT: [2014-07-05 Sat 19:18]
 :END:
-** TODO charge phone                                                  :home:
-SCHEDULED: <2014-07-06 Sun .+1d/2d>
+** DONE charge phone                                                  :home:
+CLOSED: [2014-07-06 Sun 14:34] SCHEDULED: <2014-07-06 Sun .+1d/2d>
 - State "DONE"       from "TODO"       [2014-07-03 Thu 13:44]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 17:43]
 - State "DONE"       from "TODO"       [2014-06-22 Sun 19:15]
@@ -1097,7 +1097,7 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 :LAST_REPEAT: [2014-07-06 Sun 14:31]
 :END:
 ** TODO Malk breakfast                                               :malka:
-SCHEDULED: <2014-06-26 Thu .+1d>
+SCHEDULED: <2014-07-07 Mon .+1d>
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:52]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 17:25]
@@ -1176,12 +1176,13 @@ SCHEDULED: <2014-06-26 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-01-20 Mon 17:31]
 - State "DONE"       from "TODO"       [2014-01-19 Sun 19:19]
 :PROPERTIES:
-:LAST_REPEAT: [2014-06-25 Wed 17:04]
+:LAST_REPEAT: [2014-07-06 Sun 14:39]
 :ID:       7ce09717-8596-4573-9028-26739304e79d
 :END:
 [2014-01-16 Thu 00:01]
 ** TODO Yard malk                                                    :malka:
-SCHEDULED: <2014-07-01 Tue .+1d>
+SCHEDULED: <2014-07-07 Mon .+1d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 14:39]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:53]
@@ -1250,7 +1251,7 @@ SCHEDULED: <2014-07-01 Tue .+1d>
 - State "DONE"       from "TODO"       [2014-01-20 Mon 17:31]
 :PROPERTIES:
 :ID:       a29db4aa-8fab-401d-959f-8c6e6075dc24
-:LAST_REPEAT: [2014-06-30 Mon 14:14]
+:LAST_REPEAT: [2014-07-06 Sun 14:39]
 :END:
 [2014-01-16 Thu 00:00]
 ** DONE Malk morning drugs                                           :malka:
