@@ -1,5 +1,10 @@
 #+LAST_MOBILE_CHANGE: 2014-07-05 22:16:45
 * Everys Thang
+** TODO Wenbo margaritas
+[2014-07-06 Sun 13:53]
+** TODO Field museum
+[2014-07-06 Sun 13:53]
+
 ** DONE Pay the rent                                                  :mail:
 SCHEDULED: <2014-07-01 Tue +1m>
 - State "DONE"       from "TODO"       [2014-06-02 Mon 13:47]
@@ -976,7 +981,7 @@ SCHEDULED: <2014-07-06 Sun .+1d>
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
 :LAST_REPEAT: [2014-07-02 Wed 21:22]
 :END:
-** TODO water Malka                                                   :home:
+** TODO water Malka                                             :home:malka:
 SCHEDULED: <2014-07-04 Fri .+1d>
 - State "DONE"       from "TODO"       [2014-07-03 Thu 14:26]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
@@ -1083,7 +1088,7 @@ SCHEDULED: <2014-07-04 Fri .+1d>
 :ID:       0b590040-fc21-451a-a39f-8d060feeae27
 :LAST_REPEAT: [2014-07-03 Thu 14:26]
 :END:
-** DONE Malk breakfast                                               :malka:
+** TODO Malk breakfast                                               :malka:
 SCHEDULED: <2014-06-26 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:52]
@@ -1167,7 +1172,7 @@ SCHEDULED: <2014-06-26 Thu .+1d>
 :ID:       7ce09717-8596-4573-9028-26739304e79d
 :END:
 [2014-01-16 Thu 00:01]
-** DONE Yard malk                                                    :malka:
+** TODO Yard malk                                                    :malka:
 SCHEDULED: <2014-07-01 Tue .+1d>
 - State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
@@ -1857,7 +1862,7 @@ SCHEDULED: <2014-07-07 Mon .+2d/5d>
 :ID:       0c9a7db7-06a6-4400-806d-8f96d69727e7
 :END:
 *
-** TODO take out trash                                                :home:
+** TODO take out trash                                     :home:downstairs:
 SCHEDULED: <2014-06-17 Tue .+1d/3d>
 - State "DONE"       from "TODO"       [2014-06-16 Mon 09:47]
 - State "DONE"       from "TODO"       [2014-06-12 Thu 19:01]
@@ -1917,7 +1922,7 @@ CLOSED: [2014-03-05 Wed 19:17]
 :PROPERTIES:
 :ID:       2b7068ac-99c8-4b87-9c98-21a58ed7ac5b
 :END:
-** TODO shower                                                        :home:
+** TODO shower                                               :home:bathroom:
 SCHEDULED: <2014-07-04 Fri .+2d/3d>
 - State "DONE"       from "TODO"       [2014-07-02 Wed 15:51]
 - State "DONE"       from "TODO"       [2014-06-22 Sun 19:15]
@@ -2024,7 +2029,7 @@ SCHEDULED: <2014-07-04 Fri .+2d/3d>
 :LAST_REPEAT: [2014-05-21 Wed 15:34]
 :END:
 
-** TODO water plants                                                  :home:
+** TODO water plants                                          :home:allhome:
 SCHEDULED: <2014-07-05 Sat .+3d/4d>
 - State "DONE"       from "TODO"       [2014-07-02 Wed 17:19]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:52]
@@ -2061,7 +2066,7 @@ SCHEDULED: <2014-07-05 Sat .+3d/4d>
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
 :LAST_REPEAT: [2014-07-02 Wed 17:19]
 :END:
-** TODO wipe down stove                                               :home:
+** TODO wipe down stove                                       :home:kitchen:
 SCHEDULED: <2014-07-04 Fri .+2d/4d>
 - State "DONE"       from "TODO"       [2014-07-02 Wed 15:51]
 - State "DONE"       from "TODO"       [2014-06-06 Fri 20:48]
@@ -2268,7 +2273,7 @@ CLOSED: [2014-04-12 Sat 20:05]
 [2013-12-17 Tue 22:43]
 ** MAPS, SCHOOL, SEX
 ** REGRESSION
-** DONE Malk dinner                                                  :malka:
+** TODO Malk dinner                                                  :malka:
 SCHEDULED: <2014-06-12 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-05-13 Tue 22:36]
 - State "DONE"       from "TODO"       [2014-03-16 Sun 20:10]
