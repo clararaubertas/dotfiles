@@ -239,7 +239,7 @@ If the new path's directories does not exist, create them."
 (defun my-org-mob-sync()
   (interactive)
               (message "pulling from mobile! ...")
-              (org-mobile-push)
+              (org-mobile-pull)
               (message "... pulled from mobile!")
 
            (message "pushing to mobile! ...")
