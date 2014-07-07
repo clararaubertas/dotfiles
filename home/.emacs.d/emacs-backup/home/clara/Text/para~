@@ -29,15 +29,23 @@
 ** WAITING changes for Reem once she approves them
 :PROPERTIES:
 :ID:       e93def73-4b57-44a6-acd7-488992c8d486
+:LASTCONTACT: [2014-06-30 Mon]
+:BECAUSE:  need Reem to approve a specific list of changes
 :END:
 * Leavitt                                                  :leavitt:computer:
-** WAITING Steven needs to advise so we can respond
+** DONE Steven needs to advise so we can respond
+CLOSED: [2014-07-06 Sun 20:47]
 :PROPERTIES:
 :ID:       961a5a3c-ed81-42c1-a88f-c3b0ab2e4b73
 :END:
 ** DONE [#A] put repo on github with issues list
 :PROPERTIES:
 :ID:       49547d3d-34b8-4753-8232-3d1ebc8f261f
+:END:
+** WAITING Becca testing
+:PROPERTIES:
+:BECAUSE:  -- expected <2014-07-11 Fri>
+:ID:       fd36561e-1b5e-44b9-9fd3-9942e60b1973
 :END:
 * DeSoto                                                    :desoto:computer:
 ** DONE read paper & translate into todos
@@ -52,6 +60,8 @@
 ** WAITING they may want calendar help
 :PROPERTIES:
 :ID:       4c87c923-24c9-48b0-8b47-125f1629a2c7
+:LASTCONTACT: [2014-06-30 Mon]
+:BECAUSE:  John is supposed to send requests, agree to contract
 :END:
 * Bookstore Website                                            :fsb:computer:
 ** TODO [#B] send them a quote/estimate
@@ -62,4 +72,6 @@
 ** WAITING for them to call us to talk about some C/Lua stuff
 :PROPERTIES:
 :ID:       1de7e7ad-d4e6-4a5f-9c0d-7a1e9418e087
+:BECAUSE:  they are supposed to call us
+:LASTCONTACT: [2014-06-19 Thu]
 :END:
