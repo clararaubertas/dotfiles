@@ -129,7 +129,8 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 :ID:       ea91157e-cb13-4e92-b6b5-0e2d0e537de5
 :END:
 ** TODO buy coffee beans                                                :hp:
-SCHEDULED: <2014-07-06 Sun .+6d/9d>
+SCHEDULED: <2014-07-12 Sat .+6d/9d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 19:58]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 14:14]
 - State "DONE"       from "TODO"       [2014-06-11 Wed 15:20]
 - State "DONE"       from "TODO"       [2014-06-02 Mon 20:14]
@@ -154,7 +155,7 @@ SCHEDULED: <2014-07-06 Sun .+6d/9d>
 :PROPERTIES:
 :ID:       51d4db79-f6ef-49f0-972d-0a0e658b889c
 :STYLE: habit
-:LAST_REPEAT: [2014-06-30 Mon 14:14]
+:LAST_REPEAT: [2014-07-06 Sun 19:58]
 :END:
 ** TODO charge Roomba                                                 :home:
 SCHEDULED: <2014-07-07 Mon .+1d/3d>
@@ -361,7 +362,8 @@ SCHEDULED: <2014-07-07 Mon .+1d/2d>
 :LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
 ** TODO charge tablet                                                 :home:
-SCHEDULED: <2014-07-06 Sun .+1d/2d>
+SCHEDULED: <2014-07-07 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 19:58]
 - State "DONE"       from "TODO"       [2014-06-22 Sun 19:15]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 15:07]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 14:06]
@@ -418,7 +420,7 @@ SCHEDULED: <2014-07-06 Sun .+1d/2d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       bd40d909-f4f5-4a51-8ee7-0f3eab91c9c6
-:LAST_REPEAT: [2014-07-05 Sat 19:18]
+:LAST_REPEAT: [2014-07-06 Sun 19:58]
 :END:
 ** TODO clean bathtub                                                 :home:
 SCHEDULED: <2014-07-11 Fri .+6d/10d>
@@ -563,7 +565,8 @@ SCHEDULED: <2014-07-07 Mon .+1d/2d>
 :LAST_REPEAT: [2014-07-06 Sun 15:10]
 :END:
 ** TODO clear up bag                                                  :home:
-SCHEDULED: <2014-07-06 Sun .+1d/2d>
+SCHEDULED: <2014-07-07 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 19:58]
 - State "DONE"       from "TODO"       [2014-07-05 Sat 17:28]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 17:34]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 19:32]
@@ -604,7 +607,7 @@ SCHEDULED: <2014-07-06 Sun .+1d/2d>
 :PROPERTIES:
 :ID:       e1e3eea1-c20c-4844-b5d9-fe7d07a1378d
 :STYLE: habit
-:LAST_REPEAT: [2014-07-05 Sat 17:28]
+:LAST_REPEAT: [2014-07-06 Sun 19:58]
 :END:
 ** TODO clear work inbox                                          :computer:
 SCHEDULED: <2014-07-07 Mon .+1d/2d>
@@ -799,7 +802,8 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 :LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
 ** TODO take meds                                             :home:bedroom:
-SCHEDULED: <2014-07-06 Sun .+1d>
+SCHEDULED: <2014-07-07 Mon .+1d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 19:58]
 - State "DONE"       from "TODO"       [2014-07-05 Sat 22:18]
 - State "DONE"       from "TODO"       [2014-07-03 Thu 13:43]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 21:22]
@@ -912,7 +916,7 @@ SCHEDULED: <2014-07-06 Sun .+1d>
 - State "DONE"       from "TODO"       [2013-10-05 Sat 15:52]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2014-07-05 Sat 22:18]
+:LAST_REPEAT: [2014-07-06 Sun 19:58]
 :END:
 ** TODO drink water                                                :bedroom:
 SCHEDULED: <2014-07-07 Mon .+1d>
@@ -1568,6 +1572,8 @@ CLOSED: [2014-04-05 Sat 14:57] SCHEDULED: <2014-03-28 Fri .+3d/7d>
 :ID:       ba3aedfa-9a5f-4615-8e8e-7a88375fee67
 :END:
 ** WAITING [#C] draw Nightvale                                      :tablet:
+- Note taken on [2014-07-06 Sun 19:55] \\
+  need to catch up on listening to the series first
 - Note taken on [2014-07-06 Sun 19:36] \\
   waiting to catch up on the show
 :PROPERTIES:
@@ -2003,6 +2009,8 @@ SCHEDULED: <2014-07-08 Tue .+2d/3d>
 :LAST_REPEAT: [2014-07-06 Sun 14:54]
 :END:
 ** WAITING walk Malka                                             :malka:hp:
+- Note taken on [2014-07-06 Sun 19:56] \\
+  Malka needs to be cleared by the vet for long walks and runs
 - State "DONE"       from "WAITING"    [2014-05-21 Wed 15:34]
 - State "CANCELLED"  from "WAITING"    [2014-05-21 Wed 15:34]
 - State "DONE"       from "WAITING"    [2014-05-21 Wed 15:18]
@@ -2277,6 +2285,8 @@ CLOSED: [2014-05-21 Wed 15:26]
 :ID:       25180da2-37bf-4758-91af-a7af114fd87e
 :END:
 ** WAITING update car registration
+- Note taken on [2014-07-06 Sun 19:55] \\
+  Car insurance needs to be updated first
 :PROPERTIES:
 :ID: 34dad458-375b-4717-aaff-c6cb65b3855b
 :END:
@@ -2408,10 +2418,14 @@ CLOSED: [2014-05-21 Wed 15:26]
 :PROPERTIES:
 :ID:       5195c727-ae54-446e-b6c0-64aece2cbeea
 :END:
-** WAITING update car insurance
+** WAITING update car insuranceC
+- Note taken on [2014-07-06 Sun 19:55] \\
+  New drivers license is needed first.
 :PROPERTIES:
-:ID:       55e52cd3-2926-45d7-9ded-786031e42025
+:ID:       425c6247-15b3-4c74-83a1-41fffd4899a0
 :END:
+:ID:       55e52cd3-2926-45d7-9ded-786031e42025
+:END:ar
 ** DONE [#C] office cords                                             :home:
 CLOSED: [2014-06-13 Fri 17:07]
 :PROPERTIES:
@@ -2923,6 +2937,8 @@ CLOSED: [2014-06-11 Wed 18:53]
 :ID:       30991c83-fbb4-48f7-827a-21e469655911
 :END:
 ** WAITING [#A] moomer band                                       :computer:
+- Note taken on [2014-07-06 Sun 19:57] \\
+  emailed the others on 07/03
 :PROPERTIES:
 :ID:       46ab7cc2-b807-49ae-bbbf-bfcfdec6228e
 :END:
@@ -2968,6 +2984,8 @@ CLOSED: [2014-06-13 Fri 17:03]
 :ID:       364f4130-66f3-4852-a65b-24119ef64d72
 :END:
 ** WAITING [#A] get plane reimbursement                           :computer:
+- Note taken on [2014-07-06 Sun 19:57] \\
+  this isn't doable until we've finalized other august plans
 :PROPERTIES:
 :ID:       d916fe41-b658-4b4c-89cb-5b07bfae34de
 :END:
@@ -3197,14 +3215,20 @@ CLOSED: [2014-07-06 Sun 16:33]
 :ID:       cf4a151b-642e-4b6f-9c9d-c0621216bd64
 :END:
 ** WAITING August: New England
+- Note taken on [2014-07-06 Sun 19:54] \\
+  Jesse needs to get anthology deadline
 :PROPERTIES:
 :ID:       e8344aea-5fa8-40b4-a631-46676824b947
 :END:
 ** WAITING August: West Virginia
+- Note taken on [2014-07-06 Sun 19:54] \\
+  Jesse needs to get anthology deadline
 :PROPERTIES:
 :ID:       5e467ee0-2676-4b87-8fb6-f655c587e3fd
 :END:
 ** WAITING August: Tucker visit
+- Note taken on [2014-07-06 Sun 19:54] \\
+  Jesse needs to get anthology deadline
 :PROPERTIES:
 :ID:       439f0b0d-7c94-4699-9c9c-08f7ff1ade2e
 :END:
@@ -3241,55 +3265,50 @@ CLOSED: [2014-07-06 Sun 16:33]
 :ID:       694f0dd5-d2ee-4366-8abb-3c7e227e0ec6
 :END:
 [2014-07-06 Sun 15:47]
-** TODO Check on invoices
+** TODO [#A] Check on invoices                                    :computer:
 :PROPERTIES:
 :ID:       e71427fd-68ff-487e-a2cd-48bc4ea48a63
 :END:
 [2014-07-06 Sun 18:37]
-** TODO Folders
-:PROPERTIES:
-:ID:       de887fb9-182c-422d-90be-a047ee08db61
-:END:
-[2014-07-06 Sun 18:41]
-** TODO Tickler
+** TODO [#C] Tickler                                              :computer:
 :PROPERTIES:
 :ID:       95586802-d7e5-4828-8104-7b30454aa3bc
 :END:
 [2014-07-06 Sun 18:41]
-** TODO Notes for waiting items
+** TODO [#B] Notes for waiting items                              :computer:
 :PROPERTIES:
 :ID:       ca3516d2-2eeb-4a2f-8ca5-09a8330a4d3d
 :END:
 [2014-07-06 Sun 18:45]
 
-** TODO Projects list
+** TODO [#B] Projects list                                        :computer:
 :PROPERTIES:
 :ID:       076b2695-1f6b-4aba-add6-61ff6dede87c
 :END:
 [2014-07-06 Sun 18:52]
 
-** TODO Book list
+** TODO [#B] Book list                                            :computer:
 :PROPERTIES:
 :ID:       b5f77e07-072e-4bb8-8000-af1786d95a8c
 :END:
 [2014-07-06 Sun 19:01]
-** TODO Cosmetic box
+** TODO [#B] Cosmetic box                                         :computer:
 :PROPERTIES:
 :ID:       58e449ef-f4a5-4220-bd8b-4e92a67dab42
 :END:
 [2014-07-06 Sun 16:41]
-** TODO Will
+** TODO [#A] Will                                                 :computer:
 :PROPERTIES:
 :ID:       0f9c10d6-0d3b-4582-bb6d-4c835fe620dd
 :END:
 [2014-07-06 Sun 16:42]
 
-** TODO Sort camping box
+** TODO [#B] Sort camping box
 :PROPERTIES:
 :ID:       2d53e52f-17f6-456f-8781-fe89be2aba4b
 :END:
 [2014-07-06 Sun 16:49]
-** TODO Sort goodwill box
+** TODO [#B] Sort goodwill box                                :home:allhome:
 :PROPERTIES:
 :ID:       5420df9b-24d0-4c6e-988b-68e04ddbf243
 :END:
@@ -3304,23 +3323,27 @@ CLOSED: [2014-07-06 Sun 16:33]
 :ID:       a119a668-f524-4942-9bea-c47cefd7b2a0
 :END:
 [2014-07-06 Sun 16:53]
-** TODO Clean/sort cords
+** TODO [#B] Clean/sort cords                                  :home:office:
 :PROPERTIES:
 :ID:       5f5e6a19-b75f-4d54-86fb-f6125225dbf8
 :END:
 [2014-07-06 Sun 16:54]
-** TODO Staging area
+** TODO Staging area                                                  :home:
+SCHEDULED: <2014-07-06 Sun .+3d/5d>
 :PROPERTIES:
 :ID:       a8a46c1a-c9f6-407c-b074-316ec1014172
+:STYLE:    habit
 :END:
 [2014-07-06 Sun 16:55]
 ** TODO Clean porch
+SCHEDULED: <2014-07-06 Sun .+2d/4d>
 :PROPERTIES:
 :ID:       8ca6d4bc-a807-4646-bcb0-a5cc768ce4a3
+:STYLE:    habit
 :END:
 [2014-07-06 Sun 16:56]
 
-** TODO Add handle to bag
+** TODO [#B] Add handle to bag                                        :home:
 :PROPERTIES:
 :ID:       16c79a15-12ca-440f-b602-16593c07ad1c
 :END:

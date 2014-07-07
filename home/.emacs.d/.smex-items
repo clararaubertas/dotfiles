@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ org-set-property
  eval-defun
  org-mobile-pull
  eval-region
  org-refile
  magit-status
  os
- eval-current-buffer
 )
 
 ;; ----- smex-data -----
@@ -105,4 +105,5 @@
  (org-clock-modify-effort-estimate . 1)
  (emacs-lisp-mode . 1)
  (magit-commit-mode . 1)
+ (org-set-property . 4)
 )
