@@ -1,77 +1,88 @@
-* Fly Over The City                                           :fotc:computer:
-** WAITING help Joe the designer
+* Parallactic                                                          :para:
+** Fly Over The City                                         :fotc:computer:
+*** WAITING help Joe the designer
 :PROPERTIES:
 :ID:       a75d9832-fd8c-4a8b-bbdb-67e068e07c5d
 :BECAUSE:  waiting for his technical requirements or code
 :LASTCONTACT: [2014-06-30 Mon]
 :END:
-** DONE [#A] put repo on github with issues list
+*** DONE [#A] put repo on github with issues list
 :PROPERTIES:
 :ID:       00790702-e854-4f75-8bee-32ab00fbadab
 :END:
-** DONE [#A] cancel button
+*** DONE [#A] cancel button
 :PROPERTIES:
 :ID:       c70600a5-fd29-4c1a-bb23-10b5d6b34741
 :END:
-*** - Please omit it from the ADMIN / Dispatch new job form.
+**** - Please omit it from the ADMIN / Dispatch new job form.
 :PROPERTIES:
 :ID:       f2ace86f-4b72-433d-9fe4-fcf361f68a9d
 :END:
-** DONE [#A] For the Client New Job Form:  
+*** DONE [#A] For the Client New Job Form:  
 :PROPERTIES:
 :ID:       329be494-a8c3-4509-87d4-3b07c5ef131d
 :END:
-*** Change the text to CLEAR - and if engaged it should send the user to a clear New Job Form  NOT return to the last job entered.
+**** Change the text to CLEAR - and if engaged it should send the user to a clear New Job Form  NOT return to the last job entered.
 :PROPERTIES:
 :ID:       76d9d4a9-4a59-41e9-ac89-bbda8cca078f
 :END:
-* Help Around Town                                             :hat:computer:
-** WAITING changes for Reem once she approves them
+** Help Around Town                                           :hat:computer:
+*** WAITING changes for Reem once she approves them
 :PROPERTIES:
 :ID:       e93def73-4b57-44a6-acd7-488992c8d486
 :LASTCONTACT: [2014-06-30 Mon]
 :BECAUSE:  need Reem to approve a specific list of changes
 :END:
-* Leavitt                                                  :leavitt:computer:
-** DONE Steven needs to advise so we can respond
+** Leavitt                                                :leavitt:computer:
+*** DONE Steven needs to advise so we can respond
 CLOSED: [2014-07-06 Sun 20:47]
 :PROPERTIES:
 :ID:       961a5a3c-ed81-42c1-a88f-c3b0ab2e4b73
 :END:
-** DONE [#A] put repo on github with issues list
+*** DONE [#A] put repo on github with issues list
 :PROPERTIES:
 :ID:       49547d3d-34b8-4753-8232-3d1ebc8f261f
 :END:
-** WAITING Becca testing
+*** WAITING Becca testing
 :PROPERTIES:
 :BECAUSE:  -- expected <2014-07-11 Fri>
 :ID:       fd36561e-1b5e-44b9-9fd3-9942e60b1973
 :END:
-* DeSoto                                                    :desoto:computer:
-** DONE read paper & translate into todos
+** DeSoto                                                  :desoto:computer:
+*** DONE read paper & translate into todos
 :PROPERTIES:
 :ID:       be40332e-bd3a-43be-a858-02733b759c76
 :END:
-** DONE put repo on github with issues list
+*** DONE put repo on github with issues list
 :PROPERTIES:
 :ID:       df3e7990-2919-4639-8fd9-7fa4feced21d
 :END:
-* Friends Meeting                                           :quaker:computer:
-** WAITING they may want calendar help
+** Friends Meeting                                         :quaker:computer:
+*** WAITING they may want calendar help
 :PROPERTIES:
 :ID:       4c87c923-24c9-48b0-8b47-125f1629a2c7
 :LASTCONTACT: [2014-06-30 Mon]
 :BECAUSE:  John is supposed to send requests, agree to contract
 :END:
-* Bookstore Website                                            :fsb:computer:
-** TODO [#B] send them a quote/estimate
+** Bookstore Website                                          :fsb:computer:
+*** TODO [#B] send them a quote/estimate
 :PROPERTIES:
 :ID:       50642f77-93c0-4609-a74c-d744f438eee0
 :END:
-* Fairbanks Scales                                       :fairbanks:computer:
-** WAITING for them to call us to talk about some C/Lua stuff
+** Fairbanks Scales                                     :fairbanks:computer:
+*** WAITING for them to call us to talk about some C/Lua stuff
 :PROPERTIES:
 :ID:       1de7e7ad-d4e6-4a5f-9c0d-7a1e9418e087
 :BECAUSE:  they are supposed to call us
 :LASTCONTACT: [2014-06-19 Thu]
+:END:
+** Administrative
+** Getting Clients
+*** TODO [#B] Brigid for leads                                   :computer:
+:PROPERTIES:
+:ID:       22fc12a9-2259-438c-9438-d0f8e9e6ec2c
+:END:
+*** TODO [#B] put Dioptrice on blog                              :computer:
+:PROPERTIES:
+:ID:       9bc989f3-2681-4ae4-b0b7-b39d59ff414f
 :END:
