@@ -1,4 +1,4 @@
-#+LAST_MOBILE_CHANGE: 2014-07-06 15:44:15
+#+LAST_MOBILE_CHANGE: 2014-07-06 16:34:05
 * Everys Thang
 ** TODO [#C] Wenbo margaritas                                  :majorouting:
 :PROPERTIES:
@@ -1386,7 +1386,8 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 :LAST_REPEAT: [2014-07-06 Sun 15:44]
 :END:
 ** TODO collect laundry                                       :home:allhome:
-SCHEDULED: <2014-07-03 Thu .+1d>
+SCHEDULED: <2014-07-07 Mon .+1d>
+- State "DONE"       from "TODO"       [2014-07-06 Sun 16:34]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 21:30]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 18:21]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 14:56]
@@ -1447,7 +1448,7 @@ SCHEDULED: <2014-07-03 Thu .+1d>
 - State "DONE"       from "TODO"       [2013-11-19 Tue 18:35]
 :PROPERTIES:
 :ID:       c6ff50a9-5c25-4a32-93c4-453a4e386ce6
-:LAST_REPEAT: [2014-07-02 Wed 21:30]
+:LAST_REPEAT: [2014-07-06 Sun 16:34]
 :END:
 ** TODO collect shoes                                         :home:allhome:
 SCHEDULED: <2014-07-03 Thu .+1d>
@@ -1567,6 +1568,8 @@ CLOSED: [2014-04-05 Sat 14:57] SCHEDULED: <2014-03-28 Fri .+3d/7d>
 :ID:       ba3aedfa-9a5f-4615-8e8e-7a88375fee67
 :END:
 ** WAITING [#C] draw Nightvale                                      :tablet:
+- Note taken on [2014-07-06 Sun 19:36] \\
+  waiting to catch up on the show
 :PROPERTIES:
 :ID:       2019249e-ab10-4bab-bdff-476d2c81d386
 :END:
@@ -1999,7 +2002,7 @@ SCHEDULED: <2014-07-08 Tue .+2d/3d>
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
 :LAST_REPEAT: [2014-07-06 Sun 14:54]
 :END:
-** TODO walk Malka                                                :malka:hp:
+** WAITING walk Malka                                             :malka:hp:
 - State "DONE"       from "WAITING"    [2014-05-21 Wed 15:34]
 - State "CANCELLED"  from "WAITING"    [2014-05-21 Wed 15:34]
 - State "DONE"       from "WAITING"    [2014-05-21 Wed 15:18]
@@ -2205,7 +2208,7 @@ CLOSED: [2014-06-13 Fri 17:07]
 :PROPERTIES:
 :ID:       530ce161-1f69-48b6-900d-d03466ec2c87
 :END:
-** JESSE [#B] update driver's license                          :majorouting:
+** JESSE [#A] update driver's license                          :majorouting:
 :PROPERTIES:
 :ID: b87b7063-d945-472a-8eef-82d0a9a813b3
 :END:
@@ -2351,11 +2354,15 @@ CLOSED: [2014-05-13 Tue 21:36]
 :LAST_REPEAT: [2014-02-28 Fri 22:09]
 :END:
 [2013-12-17 Tue 22:42]
-** TODO [#C] fix tiles                                       :home:bathroom:
+** fix tiles                                                  
 :PROPERTIES:
 :ID:       913315de-cab2-479f-9d10-61c1f02902aa
 :END:
 [2014-01-16 Thu 00:06]
+*** TODO [#C] look up how to fix tiles                           :computer:
+:PROPERTIES:
+:ID:       40d02229-0d72-4a2d-986b-216a178a4d92
+:END:
 ** DONE [#B] Multiple alarms                                         :phone:
 CLOSED: [2014-03-15 Sat 17:19]
 :PROPERTIES:
@@ -2770,7 +2777,7 @@ CLOSED: [2014-05-13 Tue 21:36]
 :STYLE: habit
 :LAST_REPEAT: [2014-04-15 Tue 20:34]
 :END:
-** WAITING [#B] dinner party                                      :computer:
+** TODO [#B] dinner party                                         :computer:
 :PROPERTIES:
 :ID:       71530ef7-af97-4ef0-bbca-1b59643c6594
 :END:
@@ -2818,7 +2825,7 @@ CLOSED: [2014-06-09 Mon 16:22]
 CLOSED: [2014-06-09 Mon 16:23]
 ** CANCELLED [#B] Lauren re: school                               :computer:
 CLOSED: [2014-06-09 Mon 16:23]
-** WAITING [#B] life insurance                                    :computer:
+** TODO [#B] life insurance                                       :computer:
 :PROPERTIES:
 :ID:       7283cffa-593e-426d-a33b-1b581896a9eb
 :END:
@@ -3075,7 +3082,8 @@ CLOSED: [2014-06-22 Sun 20:00]
 :PROPERTIES:
 :ID:       70588030-66ec-44ed-98c7-4556c2197898
 :END:
-** WAITING [#B] get airline tickets for august                    :computer:
+** CANCELLED [#B] get airline tickets for august                  :computer:
+CLOSED: [2014-07-06 Sun 19:45]
 :PROPERTIES:
 :ID:       cb3dccdb-1864-4faa-8da9-0ec90adce722
 :END:
@@ -3179,26 +3187,29 @@ CLOSED: [2014-06-16 Mon 14:38]
 :ID:       1c6c6066-f4e6-4561-a659-441e50b65a79
 :END:
 [2014-07-02 Wed 13:36]
-** TODO [#A] collect driver license materials                  :home:office:
+** DONE [#A] collect driver license materials                  :home:office:
+CLOSED: [2014-07-06 Sun 16:33]
 :PROPERTIES:
 :ID:       7ac53f0c-47e4-469c-945f-593165ce7215
 :END:
-** WAITING August: Isle Royale
+** WAITING for Jesse to get the exact deadline for the anthology project
+*** August: Isle Royale
 :PROPERTIES:
 :ID:       cf4a151b-642e-4b6f-9c9d-c0621216bd64
 :END:
-** WAITING August: New England
+*** August: New England
 :PROPERTIES:
 :ID:       e8344aea-5fa8-40b4-a631-46676824b947
 :END:
-** WAITING August: West Virginia
+*** August: West Virginia
 :PROPERTIES:
 :ID:       5e467ee0-2676-4b87-8fb6-f655c587e3fd
 :END:
-** WAITING August: Tucker visit
+*** August: Tucker visit
 :PROPERTIES:
 :ID:       439f0b0d-7c94-4699-9c9c-08f7ff1ade2e
 :END:
+
 ** TODO [#B] reorganize office art                             :home:office:
 :PROPERTIES:
 :ID:       9051f06f-4039-490e-909b-c03b590533d6
@@ -3231,3 +3242,86 @@ CLOSED: [2014-06-16 Mon 14:38]
 :ID:       694f0dd5-d2ee-4366-8abb-3c7e227e0ec6
 :END:
 [2014-07-06 Sun 15:47]
+** TODO Check on invoices
+:PROPERTIES:
+:ID:       e71427fd-68ff-487e-a2cd-48bc4ea48a63
+:END:
+[2014-07-06 Sun 18:37]
+** TODO Folders
+:PROPERTIES:
+:ID:       de887fb9-182c-422d-90be-a047ee08db61
+:END:
+[2014-07-06 Sun 18:41]
+** TODO Tickler
+:PROPERTIES:
+:ID:       95586802-d7e5-4828-8104-7b30454aa3bc
+:END:
+[2014-07-06 Sun 18:41]
+** TODO Notes for waiting items
+:PROPERTIES:
+:ID:       ca3516d2-2eeb-4a2f-8ca5-09a8330a4d3d
+:END:
+[2014-07-06 Sun 18:45]
+
+** TODO Projects list
+:PROPERTIES:
+:ID:       076b2695-1f6b-4aba-add6-61ff6dede87c
+:END:
+[2014-07-06 Sun 18:52]
+
+** TODO Book list
+:PROPERTIES:
+:ID:       b5f77e07-072e-4bb8-8000-af1786d95a8c
+:END:
+[2014-07-06 Sun 19:01]
+** TODO Cosmetic box
+:PROPERTIES:
+:ID:       58e449ef-f4a5-4220-bd8b-4e92a67dab42
+:END:
+[2014-07-06 Sun 16:41]
+** TODO Will
+:PROPERTIES:
+:ID:       0f9c10d6-0d3b-4582-bb6d-4c835fe620dd
+:END:
+[2014-07-06 Sun 16:42]
+
+** TODO Sort camping box
+:PROPERTIES:
+:ID:       2d53e52f-17f6-456f-8781-fe89be2aba4b
+:END:
+[2014-07-06 Sun 16:49]
+** TODO Sort goodwill box
+:PROPERTIES:
+:ID:       5420df9b-24d0-4c6e-988b-68e04ddbf243
+:END:
+[2014-07-06 Sun 16:50]
+** JESSE Put books away
+:PROPERTIES:
+:ID:       ea58af21-a399-4e68-9bdc-09d6e0edf691
+:END:
+[2014-07-06 Sun 16:53]
+** JESSE Sort papers
+:PROPERTIES:
+:ID:       a119a668-f524-4942-9bea-c47cefd7b2a0
+:END:
+[2014-07-06 Sun 16:53]
+** TODO Clean/sort cords
+:PROPERTIES:
+:ID:       5f5e6a19-b75f-4d54-86fb-f6125225dbf8
+:END:
+[2014-07-06 Sun 16:54]
+** TODO Staging area
+:PROPERTIES:
+:ID:       a8a46c1a-c9f6-407c-b074-316ec1014172
+:END:
+[2014-07-06 Sun 16:55]
+** TODO Clean porch
+:PROPERTIES:
+:ID:       8ca6d4bc-a807-4646-bcb0-a5cc768ce4a3
+:END:
+[2014-07-06 Sun 16:56]
+
+** TODO Add handle to bag
+:PROPERTIES:
+:ID:       16c79a15-12ca-440f-b602-16593c07ad1c
+:END:

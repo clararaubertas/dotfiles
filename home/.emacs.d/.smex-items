@@ -2,12 +2,12 @@
 ;; ----- smex-history -----
 (
  eval-defun
- org-agenda-log-mode
  org-mobile-pull
  eval-region
  org-refile
  magit-status
  os
+ eval-current-buffer
 )
 
 ;; ----- smex-data -----
@@ -71,7 +71,7 @@
  (org-agenda . 2)
  (list-colors-display . 2)
  (list-faces-display . 1)
- (eval-defun . 52)
+ (eval-defun . 53)
  (org-reload . 4)
  (sort-lines . 1)
  (org-sort-entries . 14)
