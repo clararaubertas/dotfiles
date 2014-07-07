@@ -21,6 +21,7 @@
  (mapc 'load
        '("os" "os-github"))
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
+(require 'org-agenda-property)
 ;; all packages
 (defun package-update-all ()
   "Update all packages"
@@ -298,7 +299,8 @@ If the new path's directories does not exist, create them."
             (visual-line-mode -1)
             (toggle-truncate-lines 1)))
 
-
+(setq org-agenda-property-list '(BECAUSE))
+(setq org-agenda-property-position 'below)
 
 (setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
 (setq org-agenda-include-all-todo t)
