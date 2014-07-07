@@ -9,7 +9,7 @@
  (position . 765))
 ("org-capture-last-stored"
  (filename . "~/Text/shopping.org")
- (front-context-string . "** wireless repe")
- (rear-context-string . "frul cable ties\n")
- (position . 699))
+ (front-context-string)
+ (rear-context-string . "* tile adhesive\n")
+ (position . 888))
 )
