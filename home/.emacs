@@ -351,7 +351,7 @@ If the new path's directories does not exist, create them."
           (todo "TODO"
                 (
                  (org-agenda-todo-ignore-scheduled t)
-                 (org-agenda-sorting-strategy '(priority-down tag-down))
+           n      (org-agenda-sorting-strategy '(priority-down tag-down))
                  ) )
 
           (todo "JESSE"               
