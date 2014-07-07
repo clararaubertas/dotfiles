@@ -1578,6 +1578,7 @@ CLOSED: [2014-04-05 Sat 14:57] SCHEDULED: <2014-03-28 Fri .+3d/7d>
   waiting to catch up on the show
 :PROPERTIES:
 :ID:       2019249e-ab10-4bab-bdff-476d2c81d386
+:BECAUSE:  need to catch up with the series
 :END:
 ** TODO [#C] draw Parks & Rec                                       :tablet:
 :PROPERTIES:
@@ -2053,6 +2054,7 @@ SCHEDULED: <2014-07-08 Tue .+2d/3d>
 :STYLE: habit
 :ID:       4b7fc6dc-97bf-4c1f-a820-cfb95c44cc0d
 :LAST_REPEAT: [2014-05-21 Wed 15:34]
+:BECAUSE:  need Dr N to clear Malka for walks & runs
 :END:
 
 ** TODO water plants                                          :home:allhome:
@@ -2289,6 +2291,7 @@ CLOSED: [2014-05-21 Wed 15:26]
   Car insurance needs to be updated first
 :PROPERTIES:
 :ID: 34dad458-375b-4717-aaff-c6cb65b3855b
+:BECAUSE:  need new car insurance
 :END:
 ** DONE get birth certificate/SS card
 CLOSED: [2014-04-12 Sat 20:05]
@@ -2418,11 +2421,11 @@ CLOSED: [2014-05-21 Wed 15:26]
 :PROPERTIES:
 :ID:       5195c727-ae54-446e-b6c0-64aece2cbeea
 :END:
-** WAITING update car insuranceC
-- Note taken on [2014-07-06 Sun 19:55] \\
+** WAITING update car insurance- Note taken on [2014-07-06 Sun 19:55] \\
   New drivers license is needed first.
 :PROPERTIES:
 :ID:       425c6247-15b3-4c74-83a1-41fffd4899a0
+:BECAUSE:  need new drivers licenses
 :END:
 :ID:       55e52cd3-2926-45d7-9ded-786031e42025
 :END:ar
@@ -2941,6 +2944,8 @@ CLOSED: [2014-06-11 Wed 18:53]
   emailed the others on 07/03
 :PROPERTIES:
 :ID:       46ab7cc2-b807-49ae-bbbf-bfcfdec6228e
+:LASTCONTACT: [2014-07-03 Thu]
+:BECAUSE:  need to schedule a practice
 :END:
 ** DONE [#A] update MJ address spreadsheet                        :computer:
 CLOSED: [2014-06-11 Wed 18:53]
@@ -2988,6 +2993,7 @@ CLOSED: [2014-06-13 Fri 17:03]
   this isn't doable until we've finalized other august plans
 :PROPERTIES:
 :ID:       d916fe41-b658-4b4c-89cb-5b07bfae34de
+:BECAUSE:  need August New England visit to be finalized
 :END:
 ** DONE [#A] plan road trip days                                  :computer:
 CLOSED: [2014-06-14 Sat 18:52]
@@ -3069,9 +3075,10 @@ CLOSED: [2014-06-17 Tue 16:15]
 :PROPERTIES:
 :ID:       d85d946b-9cb4-4c0c-90e0-9888b0526aae
 :END:
-** TODO [#A] Kevin band                                           :computer:
+** WAITING [#A] Kevin band                                        :computer:
 :PROPERTIES:
 :ID:       57dc19d8-2e51-471e-bfbb-fa2a1126a094
+:BECAUSE:  need others to confirm date
 :END:
 ** DONE [#A] get Cone phone                                           :home:
 CLOSED: [2014-06-17 Tue 18:21]
@@ -3213,24 +3220,26 @@ CLOSED: [2014-07-06 Sun 16:33]
 ** WAITING August: Isle Royale
 :PROPERTIES:
 :ID:       cf4a151b-642e-4b6f-9c9d-c0621216bd64
+:BECAUSE:  need Jesse's anthology deadline
 :END:
 ** WAITING August: New England
 - Note taken on [2014-07-06 Sun 19:54] \\
   Jesse needs to get anthology deadline
 :PROPERTIES:
 :ID:       e8344aea-5fa8-40b4-a631-46676824b947
+:BECAUSE:  need Jesse's anthology deadline
 :END:
 ** WAITING August: West Virginia
 - Note taken on [2014-07-06 Sun 19:54] \\
   Jesse needs to get anthology deadline
 :PROPERTIES:
 :ID:       5e467ee0-2676-4b87-8fb6-f655c587e3fd
+:BECAUSE:  need Jesse's anthology deadline
 :END:
 ** WAITING August: Tucker visit
-- Note taken on [2014-07-06 Sun 19:54] \\
-  Jesse needs to get anthology deadline
 :PROPERTIES:
 :ID:       439f0b0d-7c94-4699-9c9c-08f7ff1ade2e
+:BECAUSE:  need Jesse's anthology deadline
 :END:
 
 ** TODO [#B] reorganize office art                             :home:office:
@@ -3324,9 +3333,10 @@ CLOSED: [2014-07-06 Sun 20:04]
 :ID:       a119a668-f524-4942-9bea-c47cefd7b2a0
 :END:
 [2014-07-06 Sun 16:53]
-** TODO [#B] Clean/sort cords                                  :home:office:
+** WAITING [#B] Clean/sort cords                               :home:office:
 :PROPERTIES:
 :ID:       5f5e6a19-b75f-4d54-86fb-f6125225dbf8
+:BECAUSE:  need to have all the new cords and velcros
 :END:
 [2014-07-06 Sun 16:54]
 ** TODO Staging area                                                  :home:
