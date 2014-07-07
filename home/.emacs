@@ -299,8 +299,20 @@ If the new path's directories does not exist, create them."
             (visual-line-mode -1)
             (toggle-truncate-lines 1)))
 
-(setq org-agenda-property-list ( "BECAUSE"))
+(setq org-agenda-property-list '("BECAUSE" "LASTCONTACT"))
 (setq org-agenda-property-position 'next-line)
+
+
+(setq enable-recursive-minibuffers t)
+
+(defun org-completing-read (&rest args)
+  "Completing-read with SPACE being a normal character."
+  (let ((minibuffer-local-completion-map
+         (copy-keymap minibuffer-local-completion-map)))
+    (org-defkey minibuffer-local-completion-map " " 'self-insert-command)
+    (org-defkey minibuffer-local-completion-map "?" 'self-insert-command)
+    (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
+    (apply 'org-icompleting-read args)))
 
 (setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
 (setq org-agenda-include-all-todo t)
@@ -384,9 +396,6 @@ If the new path's directories does not exist, create them."
 
           (todo "WAITING"
                 ((org-agenda-todo-keyword-format "%-8s "))) 
-          (todo "HOLD"
-                ((org-agenda-todo-keyword-format "%-8s ")))
-
           )
 
          )
