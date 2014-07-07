@@ -3245,7 +3245,8 @@ CLOSED: [2014-07-06 Sun 16:33]
 :PROPERTIES:
 :ID:       d257b545-7a08-42a6-9ad6-789f2f121c6c
 :END:
-** TODO [#A] Email dan + rebecca                                  :computer:
+** DONE [#A] Email dan + rebecca                                  :computer:
+CLOSED: [2014-07-06 Sun 20:04]
 :PROPERTIES:
 :ID:       a12df81b-7ab5-4604-8092-7c6f7647ddb8
 :END:
@@ -3297,13 +3298,13 @@ CLOSED: [2014-07-06 Sun 16:33]
 :ID:       58e449ef-f4a5-4220-bd8b-4e92a67dab42
 :END:
 [2014-07-06 Sun 16:41]
-** TODO [#A] Will                                                 :computer:
+** JESSE [#A] Will                                                :computer:
 :PROPERTIES:
 :ID:       0f9c10d6-0d3b-4582-bb6d-4c835fe620dd
 :END:
 [2014-07-06 Sun 16:42]
 
-** TODO [#B] Sort camping box
+** TODO [#B] Sort camping box                                         :home:
 :PROPERTIES:
 :ID:       2d53e52f-17f6-456f-8781-fe89be2aba4b
 :END:

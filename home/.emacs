@@ -299,8 +299,8 @@ If the new path's directories does not exist, create them."
             (visual-line-mode -1)
             (toggle-truncate-lines 1)))
 
-(setq org-agenda-property-list '(BECAUSE))
-(setq org-agenda-property-position 'below)
+(setq org-agenda-property-list ( "BECAUSE"))
+(setq org-agenda-property-position 'next-line)
 
 (setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
 (setq org-agenda-include-all-todo t)
