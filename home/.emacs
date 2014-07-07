@@ -201,15 +201,15 @@ If the new path's directories does not exist, create them."
 (setq org-startup-indented t)
 
 (setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "|" "DONE(d)" "NOTNOW(n)")
-              (sequence "WAITING(w)" "HOLD(h)" "JESSE(j)" "|" "CANCELLED(c)" "DUPLICATE(d)")
+      (quote ((sequence "TODO(t)" "|" "DONE(d)")
+              (sequence "WAITING(w)" "SOMEDAY/MAYBE(m)" "JESSE(j)" "PROJECT(p)" "|" "CANCELLED(c)")
 )))
 (setq org-todo-keyword-faces      (quote (
                     ("TODO" ( :background "#859900" :weight bold :foreground "#002b36"))
                     ("WAITING" (  :weight bold :foreground "#fdf6e3"))
-                    ("NOTNOW" (  :weight bold :foreground "#2aa198"))
+                    ("SOMEDAY/MAYBE" (  :weight bold :foreground "#2aa198"))
                     ("DONE" (  :weight bold :foreground "#859900"))
-                    ("HOLD" ( :background "#2aa198" :weight bold  :foreground "#002b36"))
+                    ("PROJECT" ( :background "#2aa198" :weight bold  :foreground "#002b36"))
                     ("JESSE" ( :weight bold :foreground "#fdf6e3"))
                     ("CANCELLED" (  :weight bold :foreground "#2aa198"))
                     )))
