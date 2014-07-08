@@ -202,7 +202,7 @@ If the new path's directories does not exist, create them."
 (setq org-startup-indented t)
 
 (setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "|" "DONE(d)")
+      (quote ((sequence "TODO(t)" "|" "DONE(d!)")
               (sequence "WAITING(w)" "SOMEDAY/MAYBE(m)" "JESSE(j)" "PROJECT(p)" "|" "CANCELLED(c)")
 )))
 (setq org-todo-keyword-faces      (quote (

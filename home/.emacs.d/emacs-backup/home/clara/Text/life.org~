@@ -1,4 +1,4 @@
-#+LAST_MOBILE_CHANGE: 2014-07-07 20:30:02
+#+LAST_MOBILE_CHANGE: 2014-07-07 20:32:40
 * Everys Thang
 ** TODO [#C] Wenbo margaritas                                  :majorouting:
 :PROPERTIES:
@@ -997,7 +997,7 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
 :LAST_REPEAT: [2014-07-06 Sun 14:32]
 :END:
-** TODO water Malka                                             :home:malka:
+** DONE water Malka                                             :home:malka:
 SCHEDULED: <2014-07-07 Mon .+1d>
 - State "DONE"       from "TODO"       [2014-07-06 Sun 14:31]
 - State "DONE"       from "TODO"       [2014-07-03 Thu 14:26]
