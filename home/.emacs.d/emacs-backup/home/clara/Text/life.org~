@@ -1500,6 +1500,7 @@ SCHEDULED: <2014-07-03 Thu .+1d>
 :PROPERTIES:
 :ID:       419a9156-e440-463f-8d65-52e8caca1afe
 :LAST_REPEAT: [2014-07-02 Wed 21:30]
+:Effort:   5
 :END:
 ** TODO collect trash                                                 :home:
 SCHEDULED: <2014-04-06 Sun .+1d-2d>
@@ -2156,7 +2157,7 @@ SCHEDULED: <2014-07-03 Thu .+1d/5d>
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
 :LAST_REPEAT: [2014-07-02 Wed 15:52]
 :END:
-** TODO buy pot                                                      :phone:
+** WAITING buy pot                                                   :phone:
 SCHEDULED: <2014-06-20 Fri .+2w/4w>
 - State "DONE"       from "TODO"       [2014-06-06 Fri 15:12]
 - State "DONE"       from "TODO"       [2014-05-13 Tue 21:34]
@@ -2170,6 +2171,7 @@ SCHEDULED: <2014-06-20 Fri .+2w/4w>
 :PROPERTIES:
 :ID:       4ea31836-d0c9-42ef-8575-45f9c09d82ed
 :LAST_REPEAT: [2014-06-06 Fri 15:12]
+:BECAUSE:  need to have more available cash
 :END:
 :ID:       3d343ea1-6d82-4564-93dc-8f887eb7234f
 :STYLE: habit
@@ -2305,7 +2307,7 @@ CLOSED: [2014-04-12 Sat 20:05]
 [2013-12-17 Tue 22:43]
 ** MAPS, SCHOOL, SEX
 ** REGRESSION
-** TODO Malk dinner                                                  :malka:
+** TODO Malk dinner                                          :malka:evening:
 SCHEDULED: <2014-06-12 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-05-13 Tue 22:36]
 - State "DONE"       from "TODO"       [2014-03-16 Sun 20:10]
@@ -2657,10 +2659,6 @@ CLOSED: [2014-03-04 Tue 20:32]
 :PROPERTIES:
 :ID:       9a290845-762b-4d72-b0ec-fab68f2f7b87
 :END:
-** TODO [#B] put Dioptrice on blog                                :computer:
-:PROPERTIES:
-:ID:       9bc989f3-2681-4ae4-b0b7-b39d59ff414f
-:END:
 ** DONE [#B] rags                                                     :home:
 CLOSED: [2014-03-17 Mon 13:07]
 :PROPERTIES:
@@ -2832,10 +2830,6 @@ CLOSED: [2014-05-13 Tue 21:36]
 :PROPERTIES:
 :ID:       2a798a2b-dbdd-494f-91da-3312c6b06c5c
 :END:
-** TODO [#B] Brigid for leads                                     :computer:
-:PROPERTIES:
-:ID:       22fc12a9-2259-438c-9438-d0f8e9e6ec2c
-:END:
 ** DONE [#B] Brigid for adjunct stuff                             :computer:
 CLOSED: [2014-06-09 Mon 16:22]
 ** CANCELLED [#B] idealist.org                                    :computer:
@@ -2865,7 +2859,8 @@ CLOSED: [2014-06-09 Mon 17:36]
 CLOSED: [2014-05-19 Mon 19:40]
 ** DONE [#A] set up backups                                       :computer:
 CLOSED: [2014-05-24 Sat 18:44]
-** TODO [#B] batteries for smoke detector                     :home:allhome:
+** DONE [#B] batteries for smoke detector                     :home:allhome:
+CLOSED: [2014-07-06 Sun 21:11] SCHEDULED: <2014-07-06 Sun>
 :PROPERTIES:
 :ID:       ce0c2000-2c85-440d-a267-a2bf8eed1ea4
 :END:
@@ -3141,7 +3136,8 @@ CLOSED: [2014-07-06 Sun 14:45]
 :PROPERTIES:
 :ID:       831894c9-8023-4278-99fe-0ef790dd3c99
 :END:
-** TODO [#B] read GTD                                                 :book:
+** DONE [#B] read GTD                                                 :book:
+CLOSED: [2014-07-06 Sun 21:02]
 :PROPERTIES:
 :ID:       3ad79fc7-d425-4287-a070-8fda086dc86e
 :END:
@@ -3275,7 +3271,8 @@ CLOSED: [2014-07-06 Sun 20:04]
 :ID:       694f0dd5-d2ee-4366-8abb-3c7e227e0ec6
 :END:
 [2014-07-06 Sun 15:47]
-** TODO [#A] Check on invoices                                    :computer:
+** DONE [#A] Check on invoices                                    :computer:
+CLOSED: [2014-07-06 Sun 21:20]
 :PROPERTIES:
 :ID:       e71427fd-68ff-487e-a2cd-48bc4ea48a63
 :END:
@@ -3285,7 +3282,8 @@ CLOSED: [2014-07-06 Sun 20:04]
 :ID:       95586802-d7e5-4828-8104-7b30454aa3bc
 :END:
 [2014-07-06 Sun 18:41]
-** TODO [#B] Notes for waiting items                              :computer:
+** DONE [#B] Notes for waiting items                              :computer:
+CLOSED: [2014-07-06 Sun 21:14]
 :PROPERTIES:
 :ID:       ca3516d2-2eeb-4a2f-8ca5-09a8330a4d3d
 :END:
@@ -3302,7 +3300,8 @@ CLOSED: [2014-07-06 Sun 20:04]
 :ID:       b5f77e07-072e-4bb8-8000-af1786d95a8c
 :END:
 [2014-07-06 Sun 19:01]
-** TODO [#B] Cosmetic box                                         :computer:
+** DONE [#B] Cosmetic box                                         :computer:
+CLOSED: [2014-07-06 Sun 21:12]
 :PROPERTIES:
 :ID:       58e449ef-f4a5-4220-bd8b-4e92a67dab42
 :END:
@@ -3313,7 +3312,7 @@ CLOSED: [2014-07-06 Sun 20:04]
 :END:
 [2014-07-06 Sun 16:42]
 
-** TODO [#B] Sort camping box                                         :home:
+** TODO [#B] Sort camping box                                     :computer:
 :PROPERTIES:
 :ID:       2d53e52f-17f6-456f-8781-fe89be2aba4b
 :END:
@@ -3357,4 +3356,13 @@ SCHEDULED: <2014-07-06 Sun .+2d/4d>
 ** TODO [#B] Add handle to bag                                        :home:
 :PROPERTIES:
 :ID:       16c79a15-12ca-440f-b602-16593c07ad1c
+:END:
+** TODO organize stash                                                 :home:
+:PROPERTIES:
+:ID:       ce05d9ea-9ca1-411f-b524-cfc894bf9d7c
+:END:
+** DONE fix light in office                                           :home:
+CLOSED: [2014-07-06 Sun 21:40]
+:PROPERTIES:
+:ID:       00071af7-0ec0-4075-bc55-c44ed598e183
 :END:
