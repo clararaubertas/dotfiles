@@ -1,4 +1,4 @@
-#+LAST_MOBILE_CHANGE: 2014-07-07 20:15:38
+#+LAST_MOBILE_CHANGE: 2014-07-07 20:30:02
 * Everys Thang
 ** TODO [#C] Wenbo margaritas                                  :majorouting:
 :PROPERTIES:
@@ -1454,8 +1454,8 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 :ID:       c6ff50a9-5c25-4a32-93c4-453a4e386ce6
 :LAST_REPEAT: [2014-07-06 Sun 16:34]
 :END:
-** DONE collect shoes                                         :home:allhome:
-<2014-07-03 Thu .+1d>
+** TODO collect shoes                                         :home:allhome:
+<SCHEDULED 2014-07-03 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-07-02 Wed 21:30]
 - State "DONE"       from "TODO"       [2014-06-15 Sun 17:29]
 - State "DONE"       from "TODO"       [2014-05-26 Mon 18:51]
