@@ -1,4 +1,4 @@
-#+LAST_MOBILE_CHANGE: 2014-07-07 20:32:40
+#+LAST_MOBILE_CHANGE: 2014-07-07 20:41:12
 * Everys Thang
 ** TODO [#C] Wenbo margaritas                                  :majorouting:
 :PROPERTIES:
@@ -28,6 +28,7 @@ SCHEDULED: <2014-07-01 Tue +1m>
 *
 ** TODO brush teeth                                          :home:bathroom:
 SCHEDULED: <2014-07-07 Mon .+1d>
+- State "DONE"       from "TODO"       [2014-07-07 Mon 20:38]
 - State "DONE"       from "TODO"       [2014-07-06 Sun 14:51]
 - State "DONE"       from "TODO"       [2014-07-06 Sun 14:50]
 - State "DONE"       from "TODO"       [2014-07-06 Sun 14:47]
@@ -362,7 +363,8 @@ SCHEDULED: <2014-07-07 Mon .+1d/2d>
 :LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
 ** TODO charge tablet                                                 :home:
-SCHEDULED: <2014-07-07 Mon .+1d/2d>
+SCHEDULED: <2014-07-08 Tue .+1d/2d>
+- State "DONE"       from "TODO"       [2014-07-07 Mon 20:41]
 - State "DONE"       from "TODO"       [2014-07-06 Sun 19:58]
 - State "DONE"       from "TODO"       [2014-06-22 Sun 19:15]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 15:07]
@@ -420,7 +422,7 @@ SCHEDULED: <2014-07-07 Mon .+1d/2d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       bd40d909-f4f5-4a51-8ee7-0f3eab91c9c6
-:LAST_REPEAT: [2014-07-06 Sun 19:58]
+:LAST_REPEAT: [2014-07-07 Mon 20:41]
 :END:
 ** TODO clean bathtub                                                 :home:
 SCHEDULED: <2014-07-11 Fri .+6d/10d>
@@ -508,7 +510,7 @@ SCHEDULED: <2014-07-07 Mon .+5d/8d>
 :STYLE: habit
 :LAST_REPEAT: [2014-07-02 Wed 17:19]
 :END:
-** TODO clear personal inbox                                      :computer:
+** DONE clear personal inbox                                      :computer:
 SCHEDULED: <2014-07-07 Mon .+1d/2d>
 - State "DONE"       from "TODO"       [2014-07-06 Sun 15:10]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 16:26]
@@ -609,7 +611,7 @@ SCHEDULED: <2014-07-07 Mon .+1d/2d>
 :STYLE: habit
 :LAST_REPEAT: [2014-07-06 Sun 19:58]
 :END:
-** TODO clear work inbox                                          :computer:
+** DONE clear work inbox                                          :computer:
 SCHEDULED: <2014-07-07 Mon .+1d/2d>
 - State "DONE"       from "TODO"       [2014-07-05 Sat 17:22]
 - State "DONE"       from "TODO"       [2014-07-03 Thu 16:52]
@@ -997,8 +999,8 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
 :LAST_REPEAT: [2014-07-06 Sun 14:32]
 :END:
-** DONE water Malka                                             :home:malka:
-SCHEDULED: <2014-07-07 Mon .+1d>
+** TODO water Malka                                             :home:malka:
+SCHEDULED: <2014-07-08 Tue .+1d>
 - State "DONE"       from "TODO"       [2014-07-06 Sun 14:31]
 - State "DONE"       from "TODO"       [2014-07-03 Thu 14:26]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
@@ -1103,10 +1105,11 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 - State "DONE"       from "TODO"       [2013-10-19 Sat 16:56]
 :PROPERTIES:
 :ID:       0b590040-fc21-451a-a39f-8d060feeae27
-:LAST_REPEAT: [2014-07-06 Sun 14:31]
+:LAST_REPEAT: [2014-07-07 Mon 20:38]
 :END:
 ** TODO Malk breakfast                                               :malka:
 SCHEDULED: <2014-07-07 Mon .+1d>
+- State "DONE"       from "TODO"       [2014-07-07 Mon 20:37]
 - State "DONE"       from "TODO"       [2014-06-25 Wed 17:04]
 - State "DONE"       from "TODO"       [2014-06-18 Wed 11:52]
 - State "DONE"       from "TODO"       [2014-06-17 Tue 17:25]
