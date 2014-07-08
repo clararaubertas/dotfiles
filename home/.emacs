@@ -408,9 +408,9 @@ If the new path's directories does not exist, create them."
           'append)
 
 ;; We gonna log stuff here.
-(setq org-log-done 'time)
 (setq org-log-repeat 'time)
-
+;; DONT LOG ORG-MODE-DONE IT FUX U
+(setq org-log-done nil)
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/Text/life.org" "Everys Thang")

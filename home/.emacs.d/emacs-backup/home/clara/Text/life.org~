@@ -1,4 +1,4 @@
-#+LAST_MOBILE_CHANGE: 2014-07-06 16:34:05
+#+LAST_MOBILE_CHANGE: 2014-07-07 20:15:38
 * Everys Thang
 ** TODO [#C] Wenbo margaritas                                  :majorouting:
 :PROPERTIES:
@@ -204,8 +204,8 @@ SCHEDULED: <2014-07-07 Mon .+1d/3d>
 :STYLE: habit
 :LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
-** TODO charge computer                                               :home:
-SCHEDULED: <2014-07-07 Mon .+1d/2d>
+** DONE charge computer                                               :home:
+CLOSED: [2014-07-07 Mon 20:15] SCHEDULED: <2014-07-07 Mon .+1d/2d>
 - State "DONE"       from "TODO"       [2014-07-06 Sun 14:45]
 - State "DONE"       from "TODO"       [2014-07-03 Thu 13:44]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 17:19]
@@ -291,7 +291,7 @@ SCHEDULED: <2014-07-07 Mon .+1d/2d>
 :STYLE: habit
 :LAST_REPEAT: [2014-07-06 Sun 14:45]
 :END:
-** TODO charge phone                                                  :home:
+** DONE charge phone                                                  :home:
 SCHEDULED: <2014-07-07 Mon .+1d/2d>
 - State "DONE"       from "TODO"       [2014-07-03 Thu 13:44]
 - State "DONE"       from "TODO"       [2014-07-02 Wed 17:43]
@@ -564,7 +564,7 @@ SCHEDULED: <2014-07-07 Mon .+1d/2d>
 :STYLE: habit
 :LAST_REPEAT: [2014-07-06 Sun 15:10]
 :END:
-** TODO clear up bag                                                  :home:
+** DONE clear up bag                                                  :home:
 SCHEDULED: <2014-07-07 Mon .+1d/2d>
 - State "DONE"       from "TODO"       [2014-07-06 Sun 19:58]
 - State "DONE"       from "TODO"       [2014-07-05 Sat 17:28]
@@ -1454,8 +1454,8 @@ SCHEDULED: <2014-07-07 Mon .+1d>
 :ID:       c6ff50a9-5c25-4a32-93c4-453a4e386ce6
 :LAST_REPEAT: [2014-07-06 Sun 16:34]
 :END:
-** TODO collect shoes                                         :home:allhome:
-SCHEDULED: <2014-07-03 Thu .+1d>
+** DONE collect shoes                                         :home:allhome:
+<2014-07-03 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-07-02 Wed 21:30]
 - State "DONE"       from "TODO"       [2014-06-15 Sun 17:29]
 - State "DONE"       from "TODO"       [2014-05-26 Mon 18:51]
@@ -1729,8 +1729,8 @@ SCHEDULED: <2014-07-07 Mon .+5d/8d>
 :ID:       f5e8c1fb-0db3-4aed-8eaa-491c9d8228ff
 :LAST_REPEAT: [2014-07-02 Wed 20:46]
 :END:
-** TODO get mail                                           :home:downstairs:
-SCHEDULED: <2014-07-05 Sat .+2d/4d>
+** DONE get mail                                           :home:downstairs:
+CLOSED: [2014-07-07 Mon 20:15] SCHEDULED: <2014-07-05 Sat .+2d/4d>
 - State "DONE"       from "TODO"       [2014-07-03 Thu 16:52]
 - State "DONE"       from "TODO"       [2014-06-30 Mon 19:31]
 - State "DONE"       from "TODO"       [2014-06-16 Mon 13:24]
@@ -1793,8 +1793,8 @@ CLOSED: [2014-06-22 Sun 19:51]
 :ID:       49bf59a7-f380-4232-8a6d-adf2d0326e8f
 :END:
 
-** TODO prep foods                                                    :home:
-SCHEDULED: <2014-07-07 Mon .+2d/5d>
+** DONE prep foods                                                    :home:
+CLOSED: [2014-07-07 Mon 20:15] SCHEDULED: <2014-07-07 Mon .+2d/5d>
 - State "DONE"       from "TODO"       [2014-06-14 Sat 14:04]
 - State "CANCELLED"  from "TODO"       [2014-05-24 Sat 17:14]
 - State "DONE"       from "TODO"       [2014-04-15 Tue 20:34]
@@ -1887,8 +1887,8 @@ SCHEDULED: <2014-07-07 Mon .+2d/5d>
 :ID:       0c9a7db7-06a6-4400-806d-8f96d69727e7
 :END:
 *
-** TODO take out trash                                     :home:downstairs:
-SCHEDULED: <2014-07-07 Mon .+1d/3d>
+** DONE take out trash                                     :home:downstairs:
+CLOSED: [2014-07-07 Mon 20:15] SCHEDULED: <2014-07-07 Mon .+1d/3d>
 - State "DONE"       from "TODO"       [2014-06-16 Mon 09:47]
 - State "DONE"       from "TODO"       [2014-06-12 Thu 19:01]
 - State "DONE"       from "TODO"       [2014-06-09 Mon 12:54]
@@ -3338,7 +3338,7 @@ CLOSED: [2014-07-06 Sun 21:12]
 :BECAUSE:  need to have all the new cords and velcros
 :END:
 [2014-07-06 Sun 16:54]
-** TODO Staging area                                                  :home:
+** DONE Staging area                                                  :home:
 SCHEDULED: <2014-07-06 Sun .+3d/5d>
 :PROPERTIES:
 :ID:       a8a46c1a-c9f6-407c-b074-316ec1014172
@@ -3366,3 +3366,15 @@ CLOSED: [2014-07-06 Sun 21:40]
 :PROPERTIES:
 :ID:       00071af7-0ec0-4075-bc55-c44ed598e183
 :END:
+** TODO Set up lamps
+:PROPERTIES:
+:ID:       5ae6970b-aa2a-40b8-891d-e9f68b9b6111
+:END:
+[2014-07-07 Mon 01:22]
+
+
+** TODO Spanish nite
+:PROPERTIES:
+:ID:       54880ab5-11db-4627-ba24-9028a8bbfad1
+:END:
+[2014-07-07 Mon 11:27]
