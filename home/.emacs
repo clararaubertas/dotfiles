@@ -438,7 +438,7 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-habit-alert-future-face nil :background "#b58900")
 (set-face-attribute 'org-habit-clear-face nil :background "#073642"  )
 (set-face-attribute 'org-habit-clear-future-face nil :background "#073642"  )
-(set-face-attribute 'org-habit-overdue-face nil :background "#859900"  )
+(set-face-attribute 'org-habit-overdue-face nil :background "#b58900"  )
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#657b83")
 (set-face-attribute 'org-habit-ready-face nil :background "#073642")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")

@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ replace-string
+ new-frame
  eval-defun
  org-mobile-pull
  make-directory
  os
- new-frame
  os-sync
- os-import
 )
 
 ;; ----- smex-data -----
@@ -17,7 +17,7 @@
  (eshell . 3)
  (org-babel-execute-buffer . 2)
  (package-install . 49)
- (replace-string . 58)
+ (replace-string . 61)
  (recover-this-file . 2)
  (global-set-key . 1)
  (occur . 3)
@@ -98,7 +98,7 @@
  (idle-highlight-mode . 1)
  (os . 111)
  (replace-regexp . 1)
- (new-frame . 6)
+ (new-frame . 7)
  (os-import . 13)
  (os-sync . 26)
  (org-refile . 3)
