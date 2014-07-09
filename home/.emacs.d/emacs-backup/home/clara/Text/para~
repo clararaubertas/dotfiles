@@ -26,6 +26,7 @@
 :PROPERTIES:
 :ID:       76d9d4a9-4a59-41e9-ac89-bbda8cca078f
 :END:
+*** [[file:fotc.org]]
 ** Help Around Town                                           :hat:computer:
 *** WAITING changes for Reem once she approves them
 :PROPERTIES:
@@ -33,6 +34,7 @@
 :LASTCONTACT: [2014-06-30 Mon]
 :BECAUSE:  need Reem to approve a specific list of changes
 :END:
+*** [[file:hat.org]]
 ** Leavitt                                                :leavitt:computer:
 *** DONE Steven needs to advise so we can respond
 CLOSED: [2014-07-06 Sun 20:47]
@@ -43,34 +45,36 @@ CLOSED: [2014-07-06 Sun 20:47]
 :PROPERTIES:
 :ID:       49547d3d-34b8-4753-8232-3d1ebc8f261f
 :END:
-*** WAITING Becca testing
+**** WAITING Becca testing
 :PROPERTIES:
 :BECAUSE:  -- expected <2014-07-11 Fri>
 :ID:       fd36561e-1b5e-44b9-9fd3-9942e60b1973
 :END:
+*** [[file:leavitt.org]]
 ** DeSoto                                                  :desoto:computer:
-*** DONE read paper & translate into todos
+**** DONE read paper & translate into todos
 :PROPERTIES:
 :ID:       be40332e-bd3a-43be-a858-02733b759c76
 :END:
-*** DONE put repo on github with issues list
+**** DONE put repo on github with issues list
 :PROPERTIES:
 :ID:       df3e7990-2919-4639-8fd9-7fa4feced21d
 :END:
+**** [[file:desoto.org]]
 ** Friends Meeting                                         :quaker:computer:
-*** WAITING they may want calendar help
+**** WAITING they may want calendar help
 :PROPERTIES:
 :ID:       4c87c923-24c9-48b0-8b47-125f1629a2c7
 :LASTCONTACT: [2014-06-30 Mon]
 :BECAUSE:  John is supposed to send requests, agree to contract
 :END:
 ** Bookstore Website                                          :fsb:computer:
-*** TODO [#B] send them a quote/estimate
+**** TODO [#B] send them a quote/estimate
 :PROPERTIES:
 :ID:       50642f77-93c0-4609-a74c-d744f438eee0
 :END:
 ** Fairbanks Scales                                     :fairbanks:computer:
-*** WAITING for them to call us to talk about some C/Lua stuff
+**** WAITING for them to call us to talk about some C/Lua stuff
 :PROPERTIES:
 :ID:       1de7e7ad-d4e6-4a5f-9c0d-7a1e9418e087
 :BECAUSE:  they are supposed to call us
@@ -78,11 +82,11 @@ CLOSED: [2014-07-06 Sun 20:47]
 :END:
 ** Administrative
 ** Getting Clients
-*** TODO [#B] Brigid for leads                                   :computer:
+**** TODO [#B] Brigid for leads                                 :computer:
 :PROPERTIES:
 :ID:       22fc12a9-2259-438c-9438-d0f8e9e6ec2c
 :END:
-*** TODO [#B] put Dioptrice on blog                              :computer:
+**** TODO [#B] put Dioptrice on blog                            :computer:
 :PROPERTIES:
 :ID:       9bc989f3-2681-4ae4-b0b7-b39d59ff414f
 :END:
