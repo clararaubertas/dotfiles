@@ -327,7 +327,7 @@ If the new path's directories does not exist, create them."
                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                    (org-agenda-scheduled-leaders '("." ","))
                    ;;    (org-agenda-todo-keyword-format "[ ] ")
-                   (org-agenda-sorting-strategy '(tag-down priority-down))
+                   (org-agenda-sorting-strategy '(priority-down tag-down))
                    ))
           (todo "TODO"
                 ( ;; (org-agenda-todo-keyword-format "[ ] ")
@@ -435,7 +435,7 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
 (set-face-attribute 'org-done nil :strike-through t  )
 (set-face-attribute 'org-habit-alert-face nil :background "#b58900" :bold t :strike-through nil :foreground "#cb4b16")
-(set-face-attribute 'org-habit-alert-future-face nil :background "#b58900" :strike-through t :foreground "#cb4b16")
+(set-face-attribute 'org-habit-alert-future-face nil :background "#b58900" :strike-through t :foreground "#cb4b16n")
 (set-face-attribute 'org-habit-clear-face nil :background "#073642"  :strike-through nil)
 (set-face-attribute 'org-habit-clear-future-face nil :background "#073642" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#cb4b16" :bold t :strike-through t :foreground "#b58900")
