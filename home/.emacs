@@ -446,7 +446,7 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-scheduled-today nil :foreground "#eee8d5"  )
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#859900"  )
 (set-face-attribute 'org-warning nil :foreground "#fdf6e3"  )
-
+(setq org-habit-graph-column 35)
 
 (setq mark-diary-entries-in-calendar t)
 (defun getcal (url)
