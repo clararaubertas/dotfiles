@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ magit-status
+ rinari-cap
+ os
  eval-current-buffer
  package-update-all
  eval-defun
  replace-string
- new-frame
- org-mobile-pull
- make-directory
 )
 
 ;; ----- smex-data -----
@@ -33,8 +33,8 @@
  (rainbow-mode . 1)
  (vc-dir . 1)
  (magit-log . 1)
- (magit-status . 12)
- (rinari-cap . 21)
+ (magit-status . 20)
+ (rinari-cap . 24)
  (follow-mode . 1)
  (re-builder . 1)
  (set-buffer-file-coding-system . 1)
@@ -96,7 +96,7 @@
  (table-insert-row . 3)
  (table-insert . 3)
  (idle-highlight-mode . 1)
- (os . 111)
+ (os . 117)
  (replace-regexp . 1)
  (new-frame . 7)
  (os-import . 13)
