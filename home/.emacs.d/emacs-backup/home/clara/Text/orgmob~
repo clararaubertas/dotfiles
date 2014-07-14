@@ -39,3 +39,21 @@
 
 
 
+
+
+
+* State `DONE' not valid in this file F(edit:todo) [[olp:shopping.org:Buy It/tile adhesive][tile adhesive]]
+** Old value
+GETIT
+** New value
+DONE
+** End of edit
+
+* State `DONE' not valid in this file F(edit:todo) [[olp:shopping.org:Buy It/tiles][tiles]]
+** Old value
+GETIT
+** New value
+DONE
+** End of edit
+
+
