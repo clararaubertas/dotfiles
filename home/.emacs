@@ -448,6 +448,29 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-warning nil :foreground "#fdf6e3"  )
 (setq org-habit-graph-column 35)
 
+
+(defun org-todo-toggle-yesterday ()
+  ;; this function is interactive, meaning a "command" that we call
+  ;; as an emacs user (allows us to do "M-x org-todo-toggle-yesterday")
+  (interactive)
+
+  (let ((time-in-question (decode-time))) 
+    ;; time-in-question is the current time, decoded into convenient fields
+
+    ;; decrease the field by one which represents the day -- make it "yesterday"
+    (decf (nth 3 time-in-question))
+
+    ;; now, re-encode that time
+    (setq time-in-question (apply 'encode-time time-in-question))
+
+    (flet ((current-time () time-in-question))
+      ;; flet temporarily binds current-time to this version, which
+      ;; returns the time from yesterday 
+
+      (org-todo)
+      ;; toggles the todo heading
+      )))
+
 (setq mark-diary-entries-in-calendar t)
 (defun getcal (url)
   "Download ics file and add to diary"
