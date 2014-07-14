@@ -331,7 +331,8 @@ current time."
 	      (while (and done-dates
 			  (= start (car done-dates)))
 		(setq last-done-date (car done-dates)
-		      done-dates (cdr done-dates))))
+		      done-dates (cdr done-dates)
+        )))
 	  (if todayp
 	      (aset graph index org-habit-today-glyph)))
 	(setq face (if (or in-the-past-p todayp)

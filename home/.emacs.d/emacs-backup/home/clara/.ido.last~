@@ -122,6 +122,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/"
  "/home/clara/Text/"
  "/home/clara/Software/flyoverthecity/app/views/layouts/"
  "/home/clara/Software/flyoverthecity/app/assets/javascripts/"
@@ -136,7 +137,6 @@
  "/home/clara/Software/flyoverthecity/app/models/"
  "/home/clara/Software/flyoverthecity/spec/controllers/"
  "/home/clara/Software/flyoverthecity/app/views/invoices/"
- "/home/clara/"
  "/home/clara/Software/lilscripts/"
  "/home/clara/Software/desoto/app/models/"
  "/home/clara/Software/desoto/app/controllers/"
@@ -176,6 +176,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".emacs"
  "moojo-theme-ideas"
  "bi.org"
  "life.org"
@@ -185,14 +186,13 @@
  "services.html.erb"
  "application.css"
  "revamp.css"
- "routes.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Text/" (21441 35533 379713 708000) "jobless" "reem-0604" "story" "para" "emails.txt" "notes.org" "stories/" "drive" "chaos2" "moojo5.org" "agendas.org" "scrib.html" "shopping.org" "fotc" "foo" "hat.org" "rincewitch" "steve-case" "chaos" "wed.txt" "desoto.org" "badmachine" "para0306.org" "lsq-notes-0401" "./" "lsq-bar-notifications" "lsq-0626" "movingvan" "mechturk" "stuff.org" "test.asc" "bildungsroman" "hat-0520" "list.txt" "intro" "foobar" "Text/" "movie-diary" "lsq-draft3-notes" "move-schedule_archive" "insurance" "fotc.org" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "#Captures#" "gitissues.org" "orgmob" "trash.txt" "fotc-meeting" "setlist" "../" "rincewitch-ii" "videos.org" "lsq-bar-notifications-2" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "timetravel2" "lendsquare-actionables" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "bi.org" "stuff.txt" "cinnamon" "timandsarah" "nastygram.txt" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "action-verbs" "index.org" "letter" "leavitt.org" "moltables" "clothes.org" "packing.org" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "good-movies")
+ ("/home/clara/" (21443 2481 381281 419000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "pepper" "Games/" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" "fotc/" ".dropbox-dist/" ".gnome2_private/" "will.odt" ".gnome2/" "Music/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".applications/" "Text/" ".profile" ".cinnamon/" ".gphoto/" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" "#test#" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".lesshst" ".dropbox/" ".emacs.d/" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" "dropbox-setup.sh" ".gitconfig" ".gconf/" ".wireshark/" ".bash_logout" ".gemrc" ".emerald/" ".huludesktop" ".macromedia/" ".selected_editor" ".gem/" ".gitk" "Inform/" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" "gdrive/" "malka" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".gdfuse/" ".pki/" "Pictures/" ".dropbox-master/" ".gksu.lock" ".synaptic/" ".exercism" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" "my-crontab" ".fonts.conf" ".bash_profile" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" ".appdata/" ".zshrc" ".pry_history" "Software/")
 
- ("/home/clara/" (21441 35570 887715 584000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "pepper" "Games/" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" "fotc/" ".dropbox-dist/" ".gnome2_private/" "will.odt" ".gnome2/" "Music/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".applications/" "Text/" ".profile" ".cinnamon/" ".gphoto/" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" "#test#" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".lesshst" ".dropbox/" ".emacs.d/" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" "dropbox-setup.sh" ".gitconfig" ".gconf/" ".wireshark/" ".bash_logout" ".gemrc" ".emerald/" ".huludesktop" ".macromedia/" ".selected_editor" ".gem/" ".gitk" "Inform/" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" "gdrive/" "malka" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".gdfuse/" ".pki/" "Pictures/" ".dropbox-master/" ".gksu.lock" ".synaptic/" ".exercism" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" "my-crontab" ".fonts.conf" ".bash_profile" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" ".appdata/" ".zshrc" ".pry_history" "Software/")
+ ("/home/clara/Text/" (21441 35533 379713 708000) "jobless" "reem-0604" "story" "para" "emails.txt" "notes.org" "stories/" "drive" "chaos2" "moojo5.org" "agendas.org" "scrib.html" "shopping.org" "fotc" "foo" "hat.org" "rincewitch" "steve-case" "chaos" "wed.txt" "desoto.org" "badmachine" "para0306.org" "lsq-notes-0401" "./" "lsq-bar-notifications" "lsq-0626" "movingvan" "mechturk" "stuff.org" "test.asc" "bildungsroman" "hat-0520" "list.txt" "intro" "foobar" "Text/" "movie-diary" "lsq-draft3-notes" "move-schedule_archive" "insurance" "fotc.org" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "#Captures#" "gitissues.org" "orgmob" "trash.txt" "fotc-meeting" "setlist" "../" "rincewitch-ii" "videos.org" "lsq-bar-notifications-2" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "timetravel2" "lendsquare-actionables" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "bi.org" "stuff.txt" "cinnamon" "timandsarah" "nastygram.txt" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "action-verbs" "index.org" "letter" "leavitt.org" "moltables" "clothes.org" "packing.org" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "good-movies")
 
  ("/home/clara/Software/flyoverthecity/app/views/layouts/" (21436 25797 695585 847000) "./" "../" "application.html.erb" "application.rhtml")
 
