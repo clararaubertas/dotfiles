@@ -1781,7 +1781,8 @@ SCHEDULED: <2014-07-15 Tue .+5d/8d>
 :LAST_REPEAT: [2014-07-10 Thu 16:09]
 :END:
 ** TODO get mail                                           :home:downstairs:
-SCHEDULED: <2014-07-12 Sat .+2d/4d>
+SCHEDULED: <2014-07-15 Tue .+2d/4d>
+- State "DONE"       from "TODO"       [2014-07-13 Sun 19:25]
 - State "DONE"       from "TODO"       [2014-07-10 Thu 13:42]
 - State "DONE"       from "TODO"       [2014-07-08 Tue 19:08]
 - State "DONE"       from "TODO"       [2014-07-03 Thu 16:52]
@@ -1821,7 +1822,7 @@ SCHEDULED: <2014-07-12 Sat .+2d/4d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       70518612-eaac-4848-801e-dfdf13760a0c
-:LAST_REPEAT: [2014-07-10 Thu 13:42]
+:LAST_REPEAT: [2014-07-13 Sun 19:25]
 :END:
 ** TODO get zoloft refill                                               :hp:
 SCHEDULED: <2014-08-08 Fri +1m>
@@ -2817,7 +2818,8 @@ CLOSED: [2014-03-15 Sat 17:19]
 :END:
 ** DONE [#A] schedule appointment for malka surgery                  :email:
 CLOSED: [2014-03-20 Thu 12:27]
-** TODO [#C] hang up nic cage                               :home:frontroom:
+** DONE [#C] hang up nic cage                               :home:frontroom:
+- State "DONE"       from "TODO"       [2014-07-13 Sun 19:25]
 :PROPERTIES:
 :ID:       427fe4ff-3f04-46f3-bb07-652adef64090
 :END:
@@ -3348,7 +3350,8 @@ CLOSED: [2014-07-06 Sun 20:04]
 :ID:       8c95e9e9-0cd2-4c24-9152-f642aba45a29
 :END:
 [2014-07-06 Sun 15:47]
-** TODO [#C] Cozy front nook                                :home:frontroom:
+** DONE [#C] Cozy front nook                                :home:frontroom:
+- State "DONE"       from "TODO"       [2014-07-13 Sun 19:24]
 :PROPERTIES:
 :ID:       694f0dd5-d2ee-4366-8abb-3c7e227e0ec6
 :END:
@@ -3414,7 +3417,8 @@ CLOSED: [2014-07-06 Sun 21:12]
 :ID:       a119a668-f524-4942-9bea-c47cefd7b2a0
 :END:
 [2014-07-06 Sun 16:53]
-** TODO [#B] Clean/sort cords                                  :home:office:
+** DONE [#B] Clean/sort cords                                  :home:office:
+- State "DONE"       from "TODO"       [2014-07-13 Sun 19:24]
 :PROPERTIES:
 :ID:       5f5e6a19-b75f-4d54-86fb-f6125225dbf8
 :BECAUSE:  
