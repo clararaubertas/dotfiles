@@ -210,7 +210,7 @@ SCHEDULED: <2014-07-11 Fri .+1d/3d>
 :ID:       ac7178f7-3b0e-4ce1-a9c4-e32c618bd6a6
 :STYLE: habit
 :LAST_REPEAT: [2014-07-10 Thu 16:09]
-:BECAUSE:  need to get a non-terrible Roomba; need money for that
+:BECAUSE:  waiting for new ROOMBA
 :END:
 ** TODO charge computer                                               :home:
 SCHEDULED: <2014-07-14 Mon .+1d/2d>
@@ -1227,7 +1227,8 @@ SCHEDULED: <2014-07-12 Sat .+1d>
 :END:
 [2014-01-16 Thu 00:01]
 ** TODO Yard malk                                                    :malka:
-SCHEDULED: <2014-07-12 Sat .+1d>
+SCHEDULED: <2014-07-14 Mon .+1d>
+- State "DONE"       from "TODO"       [2014-07-13 Sun 18:06]
 - State "DONE"       from "TODO"       [2014-07-11 Fri 16:10]
 - State "DONE"       from "TODO"       [2014-07-10 Thu 14:57]
 - State "DONE"       from "TODO"       [2014-07-09 Wed 16:40]
@@ -1301,7 +1302,7 @@ SCHEDULED: <2014-07-12 Sat .+1d>
 - State "DONE"       from "TODO"       [2014-01-20 Mon 17:31]
 :PROPERTIES:
 :ID:       a29db4aa-8fab-401d-959f-8c6e6075dc24
-:LAST_REPEAT: [2014-07-11 Fri 16:10]
+:LAST_REPEAT: [2014-07-13 Sun 18:06]
 :END:
 [2014-01-16 Thu 00:00]
 ** DONE Malk morning drugs                                           :malka:
@@ -1847,7 +1848,8 @@ CLOSED: [2014-06-22 Sun 19:51]
 :END:
 
 ** TODO prep foods                                                    :home:
-SCHEDULED: <2014-07-10 Thu .+2d/5d>
+SCHEDULED: <2014-07-15 Tue .+2d/5d>
+- State "DONE"       from "TODO"       [2014-07-13 Sun 18:06]
 - State "DONE"       from "TODO"       [2014-07-08 Tue 17:26]
 - State "DONE"       from "TODO"       [2014-06-14 Sat 14:04]
 - State "CANCELLED"  from "TODO"       [2014-05-24 Sat 17:14]
@@ -1867,7 +1869,7 @@ SCHEDULED: <2014-07-10 Thu .+2d/5d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       edae40ad-b666-49a4-a9be-27ac3207c7ef
-:LAST_REPEAT: [2014-07-08 Tue 17:26]
+:LAST_REPEAT: [2014-07-13 Sun 18:06]
 :END:
 ** WAITING run Roomba                               b                 :home:
 SCHEDULED: <2014-07-11 Fri .+1d/3d>
@@ -1910,7 +1912,7 @@ SCHEDULED: <2014-07-11 Fri .+1d/3d>
 :ID:       2e9e2dc8-8e95-4c80-bba4-08ce1f11f46f
 :STYLE: habit
 :LAST_REPEAT: [2014-07-10 Thu 16:09]
-:BECAUSE:  need to get a non-terrible Roomba; need money for that
+:BECAUSE:  waiting for new roomba
 :END:
 ** TODO shelve books                                                  :home:
 SCHEDULED: <2014-07-16 Wed .+5d/8d>
