@@ -89,7 +89,8 @@ CLOSED: [2014-07-06 Sun 20:47]
 :ID:       22fc12a9-2259-438c-9438-d0f8e9e6ec2c
 :BECAUSE:  need Steven to be in town
 :END:
-**** TODO [#B] put Dioptrice on blog                            :computer:
+**** DONE [#B] put Dioptrice on blog                            :computer:
+- State "DONE"       from "TODO"       [2014-07-14 Mon 17:18]
 :PROPERTIES:
 :ID:       9bc989f3-2681-4ae4-b0b7-b39d59ff414f
 :END:
