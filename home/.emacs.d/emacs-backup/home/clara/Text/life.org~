@@ -1,3 +1,4 @@
+#+LAST_MOBILE_CHANGE: 2014-07-15 22:04:07
 * Everys Thang
 ** TODO [#C] Wenbo margaritas                                     :computer:
 :PROPERTIES:
@@ -1553,7 +1554,8 @@ SCHEDULED: <2014-04-06 Sun .+1d-2d>
 :LAST_REPEAT: [2014-04-05 Sat 16:57]
 :END:
 ** TODO brush malka                                                  :malka:
-SCHEDULED: <2014-07-14 Mon .+3d/7d>
+SCHEDULED: <2014-07-17 Thu .+3d/7d>
+- State "DONE"       from "TODO"       [2014-07-15 Tue 21:54]
 - State "DONE"       from "TODO"       [2014-03-25 Tue 13:53]
 - State "DONE"       from "TODO"       [2014-03-20 Thu 12:20]
 - State "DONE"       from "TODO"       [2014-02-28 Fri 22:58]
@@ -1569,7 +1571,7 @@ SCHEDULED: <2014-07-14 Mon .+3d/7d>
 :PROPERTIES:
 :ID:       78a129cb-f747-4254-a998-a43e4729caa6
 :STYLE: habit
-:LAST_REPEAT: [2014-03-25 Tue 13:53]
+:LAST_REPEAT: [2014-07-15 Tue 21:54]
 :END:
 ** TODO [#C] draw Annie & Abed                              :tablet:drawing:
 :PROPERTIES:
@@ -2866,7 +2868,8 @@ SCHEDULED: <2014-07-14 Mon .+2d/4d>
 :ID:       883fe18c-58d1-40f0-a942-5fbc6d25b4a0
 :END:
 [2014-07-15 Tue 21:18]
-** TODO [#A] Auto sync from lappy                                 :computer:
+** DONE [#A] Auto sync from lappy                                 :computer:
+- State "DONE"       from "TODO"       [2014-07-15 Tue 22:04]
 :PROPERTIES:
 :ID:       79f0a39e-7d8e-4645-ba62-0133333d1cb6
 :END:
