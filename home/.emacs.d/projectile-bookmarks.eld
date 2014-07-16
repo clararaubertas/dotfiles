@@ -1,1 +1,1 @@
-("~/Software/leavitt/" "~/.homesick/repos/dotfiles/" "~/Software/desoto/" "~/.emacs.d/elpa/company-0.7/" "~/Software/flyoverthecity/" "~/Software/hat/" "~/Software/go-mocha/" "~/Software/rummagemarketplace/" "~/Software/concordance/" "~/Software/dioptrice/")
+("~/Software/desoto/" "~/Software/leavitt/" "~/.homesick/repos/dotfiles/" "~/.emacs.d/elpa/company-0.7/" "~/Software/flyoverthecity/" "~/Software/hat/" "~/Software/go-mocha/" "~/Software/rummagemarketplace/" "~/Software/concordance/" "~/Software/dioptrice/")
