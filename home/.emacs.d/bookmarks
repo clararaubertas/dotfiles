@@ -4,12 +4,12 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-refile-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO Set up l")
- (rear-context-string . "ed598e183\n:END:\n")
- (position . 168914))
+ (front-context-string . "** TODO Auto syn")
+ (rear-context-string . "7-15 Tue 21:18]\n")
+ (position . 151846))
 ("org-capture-last-stored"
- (filename . "~/Text/shopping.org")
- (front-context-string)
- (rear-context-string . "* tile adhesive\n")
- (position . 888))
+ (filename . "~/Text/life.org")
+ (front-context-string . "** TODO [#A] sca")
+ (rear-context-string . "7-13 Sun 20:02]\n")
+ (position . 151316))
 )

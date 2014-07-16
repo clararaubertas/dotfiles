@@ -257,7 +257,8 @@ If the new path's directories does not exist, create them."
    0 secs
    (lambda (f p)
      (unless (< p (second (time-since (elt (file-attributes f) 5))))
-       (org-mobile-pull)))
+       (org-mobile-pull)
+       (org-mobile-push)))
    file secs))
 
 (defun install-push-monitor (file secs)
