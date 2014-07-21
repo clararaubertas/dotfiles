@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ org-agenda-todo-yesterday
+ print-buffer
+ eval-defun
+ rename-file
+ os
  org-mobile-push
  org-mobile-pull
- org-agenda-todo-yesterday
- org-todo-toggle-yesterday
- eval-defun
- org-todo-yesterday
- rinari-cap
 )
 
 ;; ----- smex-data -----
@@ -66,19 +66,19 @@
  (unfill-paragraph . 27)
  (ibuffer . 2)
  (tabbar-mode . 2)
- (rename-file . 1)
+ (rename-file . 3)
  (arp . 1)
  (org-agenda . 2)
  (list-colors-display . 2)
  (list-faces-display . 1)
- (eval-defun . 81)
+ (eval-defun . 83)
  (org-reload . 4)
  (sort-lines . 1)
  (org-sort-entries . 14)
  (org-sort . 4)
  (lawlist-sort . 18)
  (what-face . 6)
- (print-buffer . 5)
+ (print-buffer . 6)
  (org-mobile-push . 33)
  (org-mobile-pull . 23)
  (comment-dwim . 1)
@@ -96,7 +96,7 @@
  (table-insert-row . 3)
  (table-insert . 3)
  (idle-highlight-mode . 1)
- (os . 117)
+ (os . 128)
  (replace-regexp . 1)
  (new-frame . 7)
  (os-import . 13)
@@ -109,5 +109,5 @@
  (org-agenda-property-customize . 2)
  (org-todo-yesterday . 4)
  (org-todo-toggle-yesterday . 1)
- (org-agenda-todo-yesterday . 1)
+ (org-agenda-todo-yesterday . 5)
 )
