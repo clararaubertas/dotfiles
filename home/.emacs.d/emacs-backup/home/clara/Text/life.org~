@@ -3027,3 +3027,15 @@ DEADLINE: r<2014-07-21 Mon>
 :ID:       312413b5-9648-4f31-add2-d8da890b90b3
 :END:
 ** TODO [#A] fill out health insurance info                  :home:computer:
+:PROPERTIES:
+:ID:       605632a3-6525-4fef-aa06-765a1f878577
+:END:
+** TODO plan trip to San Francisco
+SCHEDULED: <2014-10-09 Thu>
+** TODO [#B] get new winter coat
+SCHEDULED: <2014-09-15 Mon>
+:PROPERTIES:
+:ID:       f1e67d14-89ff-42ea-9d04-53b9f76f8b29
+:END:
+** TODO get new winter boots
+SCHEDULED: <2014-09-15 Mon>
