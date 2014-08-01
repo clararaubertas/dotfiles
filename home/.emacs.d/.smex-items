@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ count-words
  org-agenda-todo-yesterday
+ woman
  print-buffer
  eval-defun
  rename-file
  os
- org-mobile-push
- org-mobile-pull
 )
 
 ;; ----- smex-data -----
@@ -38,7 +38,7 @@
  (follow-mode . 1)
  (re-builder . 1)
  (set-buffer-file-coding-system . 1)
- (woman . 1)
+ (woman . 2)
  (insert-file . 3)
  (byte-compile-file . 2)
  (byte-recompile-directory . 1)
@@ -60,7 +60,7 @@
  (find-dired . 1)
  (byte-recompile-file . 1)
  (comment-box . 1)
- (count-words . 30)
+ (count-words . 34)
  (make-directory . 9)
  (unfill-region . 1)
  (unfill-paragraph . 27)
@@ -109,5 +109,5 @@
  (org-agenda-property-customize . 2)
  (org-todo-yesterday . 4)
  (org-todo-toggle-yesterday . 1)
- (org-agenda-todo-yesterday . 5)
+ (org-agenda-todo-yesterday . 6)
 )
