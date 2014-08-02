@@ -22,6 +22,10 @@
        '("os" "os-github"))
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
+
+(require 'android-mode)
+(custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
+
 ;; all packages
 (defun package-update-all ()
   "Update all packages"
