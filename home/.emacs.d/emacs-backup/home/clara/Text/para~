@@ -20,14 +20,16 @@
 ** DeSoto                                                  :desoto:computer:
 *** [[file:desoto.org]]
 ** Friends Meeting                                         :quaker:computer:
-*** WAITING they may want calendar help
+*** DONE they may want calendar help
+- State "DONE"       from "WAITING"    [2014-07-31 Thu 13:23]
 :PROPERTIES:
 :ID:       4c87c923-24c9-48b0-8b47-125f1629a2c7
 :LASTCONTACT: [2014-06-30 Mon]
 :BECAUSE:  John is supposed to send requests, agree to contract
 :END:
 ** Bookstore Website                                          :fsb:computer:
-*** TODO [#B] send them a quote/estimate
+*** DONE [#B] send them a quote/estimate
+- State "DONE"       from "TODO"       [2014-07-23 Wed 19:10]
 :PROPERTIES:
 :ID:       50642f77-93c0-4609-a74c-d744f438eee0
 :END:
