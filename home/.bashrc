@@ -132,3 +132,5 @@ alias many='bundle exec cap'
 mymosh() { /usr/bin/mosh "$@" -- screen -dR -s bash -e^Aa;}
 
 alias thrus='dict -d moby-thesaurus'
+
+PATH=$PATH:~/opt/android/tools
