@@ -116,9 +116,6 @@ export RSENSE_HOME=/opt/rsense-0.3/
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-export ALTERNATE_EDITOR=""
-export EDITOR=emacsclient
-
 alias apt-get="apt-fast"
 
 alias freckle='python .freckle_cli/freckle.py'
@@ -134,3 +131,5 @@ mymosh() { /usr/bin/mosh "$@" -- screen -dR -s bash -e^Aa;}
 alias thrus='dict -d moby-thesaurus'
 
 PATH=$PATH:~/opt/android/tools
+
+export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
