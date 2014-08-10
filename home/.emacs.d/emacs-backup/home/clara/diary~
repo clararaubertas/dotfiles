@@ -1,4 +1,6 @@
 
+&%%(and (diary-block 8 18 2014 8 18 2014)) rhs?
+&%%(and (diary-block 8 14 2014 8 14 2014)) rhs?
 &8/6/2014 19:30-20:30 Bbq
  Location: The point
 &%%(and (diary-block 8 10 2014 8 10 2014)) dogfest
@@ -1211,6 +1213,7 @@
 &%%(and (diary-block 5 28 2006 5 28 2006)) write HIPS exam
 &%%(and (diary-block 5 28 2006 5 28 2006)) finish drafting HIPS final paper
  Location: maclab
+&8/15/2014 19:00-20:00 sebas?
 &8/1/2014 19:00-20:00 sebastian
 &%%(and (diary-block 8 1 2014 8 1 2014)) C&S
 &8/7/2014 12:00-13:00 You're Invited - Data Management Interest Group - Kickoff Webinar 7 August
