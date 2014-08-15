@@ -35,33 +35,6 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm-color) color_prompt=yes;;
-esac
-
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
-force_color_prompt=yes
-
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
-fi
-
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to directory
 case "$TERM" in
@@ -134,49 +107,129 @@ PATH=$PATH:~/opt/android/tools
 
 export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 
+
+# set 256 color profile where possible
+if [[ $COLORTERM == gnome-* && $TERM == xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
+export TERM=gnome-256color
+elif infocmp xterm-256color >/dev/null 2>&1; then
+export TERM=xterm-256color
+fi
+
 #solar
 # set up command prompt
-function __prompt_command()
-{
-    # capture the exit status of the last command
-    EXIT="$?"
-    PS1=""
- 
-    if [ $EXIT -eq 0 ]; then PS1+="\[$Green\][\!]\[$Color_Off\] "; else PS1+="\[$Red\][\!]\[$Color_Off\] "; fi
- 
-    # if logged in via ssh shows the ip of the client
-    if [ -n "$SSH_CLIENT" ]; then PS1+="\[$Yellow\]("${$SSH_CLIENT%% *}")\[$Color_Off\]"; fi
- 
-    # debian chroot stuff (take it or leave it)
-    PS1+="${debian_chroot:+($debian_chroot)}"
- 
-    # basic information (user@host:path)
-    PS1+="\[$BRed\]\u\[$Color_Off\]@\[$BRed\]\h\[$Color_Off\]:\[$BPurple\]\w\[$Color_Off\] "
- 
-    # check if inside git repo
-    local git_status="`git status -unormal 2>&1`"    
-    if ! [[ "$git_status" =~ Not\ a\ git\ repo ]]; then
-        # parse the porcelain output of git status
-        if [[ "$git_status" =~ nothing\ to\ commit ]]; then
-            local Color_On=$Green
-        elif [[ "$git_status" =~ nothing\ added\ to\ commit\ but\ untracked\ files\ present ]]; then
-            local Color_On=$Purple
-        else
-            local Color_On=$Red
-        fi
- 
-        if [[ "$git_status" =~ On\ branch\ ([^[:space:]]+) ]]; then
-            branch=${BASH_REMATCH[1]}
-        else
-            # Detached HEAD. (branch=HEAD is a faster alternative.)
-            branch="(`git describe --all --contains --abbrev=4 HEAD 2> /dev/null || echo HEAD`)"
-        fi
- 
-        # add the result to prompt
-        PS1+="\[$Color_On\][$branch]\[$Color_Off\] "
-    fi
- 
-    # prompt $ or # for root
-    PS1+="\$ "
+# bash_prompt
+# Example:
+# nicolas@host: ~/.dotfiles on master [+!?$]
+# $
+# Screenshot: http://i.imgur.com/DSJ1G.png
+# iTerm2 prefs: import Solarized theme (disable bright colors for bold text)
+# Color ref: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+# More tips: http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
+prompt_git() {
+local s=""
+local branchName=""
+# check if the current directory is in a git repository
+if [ $(git rev-parse --is-inside-work-tree &>/dev/null; printf "%s" $?) == 0 ]; then
+# check if the current directory is in .git before running git checks
+if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == "false" ]; then
+# ensure index is up to date
+git update-index --really-refresh -q &>/dev/null
+# check for uncommitted changes in the index
+if ! $(git diff --quiet --ignore-submodules --cached); then
+s="$s+";
+fi
+# check for unstaged changes
+if ! $(git diff-files --quiet --ignore-submodules --); then
+s="$s!";
+fi
+# check for untracked files
+if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+s="$s?";
+fi
+# check for stashed files
+if $(git rev-parse --verify refs/stash &>/dev/null); then
+s="$s$";
+fi
+fi
+# get the short symbolic ref
+# if HEAD isn't a symbolic ref, get the short SHA
+# otherwise, just give up
+branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
+git rev-parse --short HEAD 2> /dev/null || \
+printf "(unknown)")"
+[ -n "$s" ] && s=" [$s]"
+printf "%s" "$1$branchName$s"
+else
+return
+fi
 }
-PROMPT_COMMAND=__prompt_command
+set_prompts() {
+local black=""
+local blue=""
+local bold=""
+local cyan=""
+local green=""
+local orange=""
+local purple=""
+local red=""
+local reset=""
+local white=""
+local yellow=""
+local hostStyle=""
+local userStyle=""
+if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+tput sgr0 # reset colors
+bold=$(tput bold)
+reset=$(tput sgr0)
+# Solarized colors
+# (https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized#the-values)
+black=$(tput setaf 0)
+blue=$(tput setaf 33)
+cyan=$(tput setaf 37)
+green=$(tput setaf 64)
+orange=$(tput setaf 166)
+purple=$(tput setaf 125)
+red=$(tput setaf 124)
+white=$(tput setaf 15)
+yellow=$(tput setaf 136)
+else
+bold=""
+reset="\e[0m"
+black="\e[1;30m"
+blue="\e[1;34m"
+cyan="\e[1;36m"
+green="\e[1;32m"
+orange="\e[1;33m"
+purple="\e[1;35m"
+red="\e[1;31m"
+white="\e[1;37m"
+yellow="\e[1;33m"
+fi
+# build the prompt
+# logged in as root
+if [[ "$USER" == "root" ]]; then
+userStyle="\[$bold$red\]"
+else
+userStyle="\[$orange\]"
+fi
+# connected via ssh
+if [[ "$SSH_TTY" ]]; then
+hostStyle="\[$bold$red\]"
+else
+hostStyle="\[$yellow\]"
+fi
+# set the terminal title to the current working directory
+PS1="\[\033]0;\w\007\]"
+PS1+="\n" # newline
+PS1+="\[$userStyle\]\u" # username
+PS1+="\[$reset$white\]@"
+PS1+="\[$hostStyle\]\h" # host
+PS1+="\[$reset$white\]: "
+PS1+="\[$green\]\w" # working directory
+PS1+="\$(prompt_git \"$white on $cyan\")" # git repository details
+PS1+="\n"
+PS1+="\[$reset$white\]\$ \[$reset\]" # $ (and reset color)
+export PS1
+}
+set_prompts
+unset set_prompts
