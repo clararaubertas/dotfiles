@@ -310,7 +310,7 @@ If the new path's directories does not exist, create them."
     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(tag-down priority-down todo-state-down))
+(setq org-agenda-sorting-strategy '(priority-down tag-down todo-state-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 
