@@ -323,12 +323,12 @@ If the new path's directories does not exist, create them."
                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                    (org-agenda-scheduled-leaders '("." ","))
                    ;;    (org-agenda-todo-keyword-format "[ ] ")
-                   (org-agenda-sorting-strategy '(priority-down tag-down))
+
                    ))
           (todo "TODO"
                 ( ;; (org-agenda-todo-keyword-format "[ ] ")
                  (org-agenda-todo-ignore-scheduled t)
-                 (org-agenda-sorting-strategy '(priority-down tag-down))
+
                  ))
           (todo "JESSE"               
                 ((org-agenda-todo-keyword-format "%-8s "))) 
