@@ -7042,3 +7042,14 @@ CLOSED: [2014-07-06 Sun 21:40]
 :ARCHIVE_CATEGORY: life
 :ARCHIVE_TODO: DONE
 :END:
+
+* CANCELLED put laundry away                                           :home:
+SCHEDULED: <2014-08-06 Wed>
+:PROPERTIES:
+:ID:       ec5ff43a-e3d1-456d-b7f4-48347fe131aa
+:ARCHIVE_TIME: 2014-08-06 Wed 11:38
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
