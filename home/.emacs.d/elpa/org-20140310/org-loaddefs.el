@@ -2140,8 +2140,9 @@ Call the customize function with org as argument.
 
 ;;;### (autoloads (org-export-dispatch org-export-to-file org-export-to-buffer
 ;;;;;;  org-export-insert-default-template org-export-replace-region-by
-;;;;;;  org-export-string-as org-export-as) "ox" "ox.el" "466b6c2e9e886b6be3dc0db4de098e95")
-;;; Generated autoloads from ox.el
+;;;;;;  org-export-string-as org-export-as) "ox" "../../../../../../../.emacs.d/elpa/org-20140310/ox.el"
+;;;;;;  "466b6c2e9e886b6be3dc0db4de098e95")
+;;; Generated autoloads from ../../../../../../../.emacs.d/elpa/org-20140310/ox.el
 
 (autoload 'org-export-as "ox" "\
 Transcode current Org buffer into BACKEND code.
