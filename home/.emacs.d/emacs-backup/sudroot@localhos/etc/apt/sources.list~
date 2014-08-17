@@ -57,3 +57,7 @@ deb-src http://archive.canonical.com/ubuntu trusty partner
 # deb http://extras.ubuntu.com/ubuntu raring main
 deb http://us.archive.ubuntu.com/ubuntu/ trusty-proposed main restricted multiverse universe
 # deb-src http://extras.ubuntu.com/ubuntu raring main
+deb http://repository.spotify.com stable non-free
+deb http://debian.scribus.net/debian/ raring main
+deb http://debian.tagancha.org/debian/ raring main
+deb http://ppa.launchpad.net/cairo-dock-team/ppa/ubuntu trusty main ## Cairo-Dock-PPA
