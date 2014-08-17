@@ -54,7 +54,7 @@
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
 (require 'rainbow-delimiters )
 (require 'rainbow-mode)
-(require 'pretty-mode)
+
 (global-font-lock-mode t)
 (add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
 (add-hook 'ruby-mode-hook (lambda () (rainbow-mode 1)))
