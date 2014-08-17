@@ -132,7 +132,7 @@ boundaries from BEG to END, the return value is nil."
   (save-excursion
     (goto-char BEG)
     (catch 'found
-      (flet ((overlay-change (pos)
+      (cl-flet ((overlay-change (pos)
                              (if (< BEG END) (next-overlay-change pos)
                                (previous-overlay-change pos)))
              (within-bounds-p (pos)

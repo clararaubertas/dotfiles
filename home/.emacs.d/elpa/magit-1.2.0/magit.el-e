@@ -5259,7 +5259,7 @@ for the file whose log must be displayed."
 (defun magit-show-file-revision ()
   "Open a new buffer showing the current file in the revision at point."
   (interactive)
-  (flet ((magit-show-file-from-diff (item)
+  (cl-flet ((magit-show-file-from-diff (item)
                                     (switch-to-buffer-other-window
                                      (magit-show (cdr (magit-diff-item-range item))
                                                  (magit-diff-item-file item)))))

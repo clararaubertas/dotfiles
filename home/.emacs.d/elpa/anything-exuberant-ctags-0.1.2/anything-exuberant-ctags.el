@@ -261,7 +261,7 @@ If SYMBOL-NAME is non-nil, jump tag position with SYMBOL-NAME."
 (defun anything-exuberant-ctags-find-tag-file (current-dir)
   "Find tag file.
 Try to find tag file in upper directory if haven't found in CURRENT-DIR."
-  (flet ((file-exists? (dir)
+  (cl-flet ((file-exists? (dir)
            (let ((tag-path (expand-file-name anything-exuberant-ctags-tag-file-name dir)))
              (and (stringp tag-path)
                   (file-exists-p tag-path)

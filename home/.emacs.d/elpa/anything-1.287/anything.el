@@ -298,7 +298,7 @@
 ;;   (anything-interpret-value
 ;;    (lambda () anything-source-name)
 ;;    source))                             ; => "lambda with source name"
-;; (flet ((f () "function symbol"))
+;; (cl-flet ((f () "function symbol"))
 ;;   (anything-interpret-value 'f))        ; => "function symbol"
 ;; (let ((v "variable symbol"))
 ;;   (anything-interpret-value 'v))        ; => "variable symbol"
@@ -4279,7 +4279,7 @@ Given pseudo `anything-sources' and `anything-pattern', returns list like
         (let ((source '((name . "lambda with source name"))))
           (anything-interpret-value (lambda () anything-source-name) source)))
       (expect "function symbol"
-        (flet ((f () "function symbol"))
+        (cl-flet ((f () "function symbol"))
           (anything-interpret-value 'f)))
       (expect "variable symbol"
         (let ((v "variable symbol"))
@@ -5851,7 +5851,7 @@ Given pseudo `anything-sources' and `anything-pattern', returns list like
           i))
       (expect 1
         (let ((i 0))
-          (flet ((init1 () (anything-once (lambda () (incf i)))))
+          (cl-flet ((init1 () (anything-once (lambda () (incf i)))))
             (anything-test-candidates
              '(((name . "1")
                 (init . init1))

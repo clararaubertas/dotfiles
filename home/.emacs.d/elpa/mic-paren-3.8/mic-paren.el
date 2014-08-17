@@ -950,7 +950,7 @@ This is the main function of mic-paren."
   (let ((loc mic-paren-previous-location)
         charquote two opos matched-paren mismatch face visible)
 
-    (flet ((highlight-p
+    (cl-flet ((highlight-p
             (pos prio which)
             (let ((fcq (mic-paren-is-following-char-quoted pos))
                   (right-prio (eq prio paren-priority))

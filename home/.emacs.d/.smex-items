@@ -3,11 +3,11 @@
 (
  package-update-all
  package-install
- lawlist-reorganize
  eval-defun
  eval-current-buffer
  org-set-property
  org-tags-view
+ os
 )
 
 ;; ----- smex-data -----
