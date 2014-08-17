@@ -1,22 +1,22 @@
 
 ;; ----- smex-history -----
 (
- count-words
- org-agenda-todo-yesterday
- woman
- print-buffer
+ package-update-all
+ package-install
+ lawlist-reorganize
  eval-defun
- rename-file
- os
+ eval-current-buffer
+ org-set-property
+ org-tags-view
 )
 
 ;; ----- smex-data -----
 (
  (paredit-mode . 1)
- (esk-sudo-edit . 74)
+ (esk-sudo-edit . 75)
  (eshell . 3)
  (org-babel-execute-buffer . 2)
- (package-install . 49)
+ (package-install . 52)
  (replace-string . 61)
  (recover-this-file . 2)
  (global-set-key . 1)
@@ -24,7 +24,7 @@
  (man . 3)
  (eval-buffer . 9)
  (ruby-electric-mode . 4)
- (eval-current-buffer . 236)
+ (eval-current-buffer . 237)
  (global-rinari-mode . 4)
  (list-packages . 2)
  (heartbeat-cursor-mode . 15)
@@ -55,7 +55,7 @@
  (senny-ruby-open-spec-other-buffer . 1)
  (ruby-mode . 7)
  (lisp-mode . 3)
- (package-update-all . 7)
+ (package-update-all . 9)
  (electric-pair-mode . 1)
  (find-dired . 1)
  (byte-recompile-file . 1)
@@ -71,7 +71,7 @@
  (org-agenda . 2)
  (list-colors-display . 2)
  (list-faces-display . 1)
- (eval-defun . 83)
+ (eval-defun . 86)
  (org-reload . 4)
  (sort-lines . 1)
  (org-sort-entries . 14)
@@ -105,9 +105,11 @@
  (org-clock-modify-effort-estimate . 1)
  (emacs-lisp-mode . 1)
  (magit-commit-mode . 1)
- (org-set-property . 6)
+ (org-set-property . 7)
  (org-agenda-property-customize . 2)
  (org-todo-yesterday . 4)
  (org-todo-toggle-yesterday . 1)
  (org-agenda-todo-yesterday . 6)
+ (org-tags-view . 1)
+ (lawlist-reorganize . 4)
 )
