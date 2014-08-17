@@ -1,0 +1,68 @@
+#+TODO: OPEN | CLOSED
+#+STARTUP: nologdone
+* Bugs of fotc                                                         :para:
+:PROPERTIES:
+:since:    nil
+:url:      https://api.github.com/repos/Parallactic/fotc
+:END:
+** CLOSED put repo on github with issues list
+:PROPERTIES:
+:id:       1
+:date-modification: 2014-07-07T14:47:12-0500
+:date-creation: 2014-07-03T15:31:30-0500
+:author:   "clararaubertas"
+:END:
+** CLOSED put repo on github with issues list
+:PROPERTIES:
+:tags:     ("to-test")
+:id:       2
+:date-modification: 2014-07-07T14:47:12-0500
+:date-creation: 2014-07-03T15:32:00-0500
+:author:   "clararaubertas"
+:END:
+** CLOSED cancel button
+:PROPERTIES:
+:id:       7
+:date-modification: 2014-07-07T14:47:12-0500
+:date-creation: 2014-07-03T15:38:49-0500
+:author:   "clararaubertas"
+:END:
+: Please omit it from the ADMIN / Dispatch new job form.
+** CLOSED foo
+:PROPERTIES:
+:id:       5
+:date-modification: 2014-07-07T14:47:11-0500
+:date-creation: 2014-07-03T15:35:25-0500
+:author:   "clararaubertas"
+:END:
+** CLOSED foo
+:PROPERTIES:
+:id:       4
+:date-modification: 2014-07-07T14:47:11-0500
+:date-creation: 2014-07-03T15:34:30-0500
+:author:   "clararaubertas"
+:END:
+** CLOSED put repo on github with issues list
+:PROPERTIES:
+:id:       3
+:date-modification: 2014-07-07T14:47:11-0500
+:date-creation: 2014-07-03T15:32:43-0500
+:author:   "clararaubertas"
+:END:
+: *
+** CLOSED foo
+:PROPERTIES:
+:id:       6
+:date-modification: 2014-07-07T14:47:11-0500
+:date-creation: 2014-07-03T15:35:36-0500
+:author:   "clararaubertas"
+:END:
+** CLOSED For the Client New Job Form:
+:PROPERTIES:
+:sync:     conflict-local
+:id:       8
+:date-modification: 2014-07-07T14:46:57-0500
+:date-creation: 2014-07-03T15:39:59-0500
+:author:   "clararaubertas"
+:END:
+: Change the text to CLEAR - and if engaged it should send the user to a clear New Job Form  NOT return to the last job entered.

@@ -1,0 +1,1 @@
+ "You got #{@wrong_questions} incorrect out of 12. We will run through the same 12 relationships again in a different order."

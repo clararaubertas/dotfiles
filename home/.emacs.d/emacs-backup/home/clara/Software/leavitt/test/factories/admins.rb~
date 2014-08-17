@@ -1,0 +1,6 @@
+FactoryGirl.define do
+  factory :edge do
+    position
+    association :other_position, :factory => :position
+  end
+end

@@ -1,0 +1,26 @@
+<% unless controller.action_name == 'sample' %>
+<p><%= @correct %> out of 12 relationships learned</p>
+<p><%= @incomplete_questions.size %> unanswered</p>
+<p><%= @question.run.questions.size %> total questions</p>
+<% end %>
+<h2>Does the following relation hold?</h2>
+
+<div class='third'>
+<%= @question.name1 %>
+</div>
+<div class='third'>
+<%= @question.verb %><br />
+<%= image_tag 'arrow.png' %>
+</div>
+<div class='third'>
+<%= @question.name2 %>
+</div>
+
+<%= form_for @question, url: { action: 'update' } do |f| %>
+<p class='clearing'>
+<%= f.radio_button 'user_answer', true %>Yes<br />
+<%= f.radio_button 'user_answer', false %>No
+</p>
+<p><%= f.submit "Next Relationship" %></p>
+<% end %>
+
