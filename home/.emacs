@@ -22,7 +22,6 @@
        '("os" "os-github"))
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
-
 (require 'android-mode)
 (custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
 
@@ -44,6 +43,8 @@
                  (package-version-join available-version))
         (package-install name)
         (package-delete file-name (package-version-join current-version))))))
+(package-update-all)
+(byte-recompile-directory (expand-file-name "~/.emacs.d") 0)
 ;;;;;;;;;; END Package Management ;;;;;;;;;;
 
 ;;;;;;;;;; II. Starter Kit ;;;;;;;;;;
