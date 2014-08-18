@@ -7053,3 +7053,36 @@ SCHEDULED: <2014-08-06 Wed>
 :ARCHIVE_CATEGORY: life
 :ARCHIVE_TODO: CANCELLED
 :END:
+
+* DONE [#A] fix porch couch                                      :home:porch:
+- State "DONE"       from "TODO"       [2014-07-19 Sat 20:45]
+:PROPERTIES:
+:ID:       9c491934-1a11-4e9f-aa13-10eb861ac4ad
+:ARCHIVE_TIME: 2014-08-16 Sat 18:30
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+** buy fabric
+
+* DONE [#A] set up dog gate                                      :home:porch:
+- State "DONE"       from "TODO"       [2014-07-19 Sat 22:50]
+:PROPERTIES:
+:ID:       a2638297-3521-4999-bf33-99c5300088d6
+:ARCHIVE_TIME: 2014-08-16 Sat 18:30
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* CANCELLED [#B] fix chair                                      :home:office:
+:PROPERTIES:
+:ID:       9aeb284d-33e9-495b-9988-25a303bb80c0
+:ARCHIVE_TIME: 2014-08-16 Sat 18:30
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:

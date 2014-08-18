@@ -158,7 +158,7 @@ If the new path's directories does not exist, create them."
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gem\\(spec\\)?$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-(require 'ruby-compilation-rspec)
+
 (add-hook 'ruby-mode-hook '(lambda ()
                                (setq ruby-deep-arglist t)
                                (setq ruby-deep-indent-paren nil)
@@ -460,7 +460,7 @@ SCHEDULED: %^t"
     ;; now, re-encode that time
     (setq time-in-question (apply 'encode-time time-in-question))
 
-    (flet ((current-time () time-in-question))
+    (cl-flet ((current-time () time-in-question))
       ;; flet temporarily binds current-time to this version, which
       ;; returns the time from yesterday 
 
