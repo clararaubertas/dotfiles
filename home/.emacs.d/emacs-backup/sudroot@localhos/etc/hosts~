@@ -1,10 +1,14 @@
 127.0.0.1	localhost
 127.0.1.1	meson
-66.175.209.206  pepper
-162.216.17.116  kumquat
 10.0.0.16       tachyon
 10.0.0.7        printer
-
+10.0.0.13       tabloid
+65.60.60.66     whisker
+66.175.209.206  pepper
+# bouvet
+# fortnight
+# mfm
+162.216.17.116  kumquat
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
