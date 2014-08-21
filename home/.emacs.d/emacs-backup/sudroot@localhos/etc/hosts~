@@ -1,10 +1,11 @@
 127.0.0.1	localhost
 127.0.1.1	meson
-10.0.0.16       tachyon
-10.0.0.7        printer
-10.0.0.13       tabloid
+192.168.2.17    tachyon
+192.168.2.41    printer
 65.60.60.66     whisker
 66.175.209.206  pepper
+192.168.0.254   extender
+192.168.2.1     router
 # bouvet
 # fortnight
 # mfm
