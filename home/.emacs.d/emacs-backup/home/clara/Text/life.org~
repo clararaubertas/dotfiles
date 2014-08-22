@@ -1015,7 +1015,8 @@ SCHEDULED: <2014-08-21 Thu .+1d>
 :LAST_REPEAT: [2014-08-20 Wed 16:14]
 :END:
 ** TODO take meds                                             :home:bedroom:
-SCHEDULED: <2014-08-21 Thu .+1d>
+SCHEDULED: <2014-08-22 Fri .+1d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 16:53]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:14]
 - State "DONE"       from "TODO"       [2014-08-19 Tue 20:46]
 - State "DONE"       from "TODO"       [2014-08-18 Mon 17:02]
@@ -1151,7 +1152,7 @@ SCHEDULED: <2014-08-21 Thu .+1d>
 - State "DONE"       from "TODO"       [2013-10-05 Sat 15:52]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2014-08-20 Wed 16:14]
+:LAST_REPEAT: [2014-08-21 Thu 16:53]
 :END:
 ** TODO drink water                                           :bedroom:home:
 SCHEDULED: <2014-08-21 Thu .+1d>
@@ -1379,7 +1380,8 @@ SCHEDULED: <2014-08-21 Thu .+1d>
 :LAST_REPEAT: [2014-08-20 Wed 16:14]
 :END:
 ** TODO Malk breakfast                                          :malka:home:
-SCHEDULED: <2014-08-21 Thu .+1d>
+SCHEDULED: <2014-08-22 Fri .+1d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 16:53]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:14]
 - State "DONE"       from "TODO"       [2014-08-19 Tue 18:22]
 - State "DONE"       from "TODO"       [2014-08-18 Mon 12:24]
@@ -1483,12 +1485,13 @@ SCHEDULED: <2014-08-21 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-01-20 Mon 17:31]
 - State "DONE"       from "TODO"       [2014-01-19 Sun 19:19]
 :PROPERTIES:
-:LAST_REPEAT: [2014-08-20 Wed 16:14]
+:LAST_REPEAT: [2014-08-21 Thu 16:53]
 :ID:       7ce09717-8596-4573-9028-26739304e79d
 :END:
 [2014-01-16 Thu 00:01]
 ** TODO Yard malk                                                    :malka:
-SCHEDULED: <2014-08-21 Thu .+1d>
+SCHEDULED: <2014-08-22 Fri .+1d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 16:53]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:14]
 - State "DONE"       from "TODO"       [2014-08-19 Tue 20:27]
 - State "DONE"       from "TODO"       [2014-08-18 Mon 17:02]
@@ -1588,7 +1591,7 @@ SCHEDULED: <2014-08-21 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-01-20 Mon 17:31]
 :PROPERTIES:
 :ID:       a29db4aa-8fab-401d-959f-8c6e6075dc24
-:LAST_REPEAT: [2014-08-20 Wed 16:14]
+:LAST_REPEAT: [2014-08-21 Thu 16:53]
 :END:
 [2014-01-16 Thu 00:00]
 ** TODO collect dishes                                        :home:allhome:
@@ -2497,7 +2500,8 @@ SCHEDULED: <2014-08-24 Sun .+4d/8d>
 :END:
 
 ** TODO water plants                                          :home:allhome:
-SCHEDULED: <2014-08-19 Tue .+3d/4d>
+SCHEDULED: <2014-08-24 Sun .+3d/4d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 16:53]
 - State "DONE"       from "TODO"       [2014-08-16 Sat 19:10]
 - State "DONE"       from "TODO"       [2014-08-04 Mon 14:15]
 - State "DONE"       from "TODO"       [2014-07-28 Mon 20:46]
@@ -2539,7 +2543,7 @@ SCHEDULED: <2014-08-19 Tue .+3d/4d>
 :PROPERTIES:
 :STYLE: habit
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2014-08-16 Sat 19:10]
+:LAST_REPEAT: [2014-08-21 Thu 16:53]
 :END:
 ** TODO wipe down stove                                       :home:kitchen:
 SCHEDULED: <2014-08-21 Thu .+2d/4d>
@@ -2910,7 +2914,8 @@ SCHEDULED: <2014-09-01 Mon .+2w>
 :LAST_REPEAT: [2014-08-18 Mon 17:02]
 :END:
 ** TODO [#A] put laundry away                                         :home:
-SCHEDULED: <2014-08-20 Wed .+2w>
+SCHEDULED: <2014-09-04 Thu .+2w>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 16:53]
 - State "DONE"       from "TODO"       [2014-08-06 Wed 15:57]
 - State "DONE"       from "TODO"       [2014-07-23 Wed 19:05]
 - State "DONE"       from "TODO"       [2014-07-11 Fri 17:38]
@@ -2925,7 +2930,7 @@ SCHEDULED: <2014-08-20 Wed .+2w>
 - State "DONE"       from "TODO"       [2014-02-01 Sat 12:17]
 :PROPERTIES:
 :ID:       647ec3e3-2cb1-4966-a207-108af46bd0d9
-:LAST_REPEAT: [2014-08-06 Wed 15:57]
+:LAST_REPEAT: [2014-08-21 Thu 16:53]
 :END:
 ** TODO clean microwave                                       :home:kitchen:
 SCHEDULED: <2014-08-20 Wed .+15d/18d>
