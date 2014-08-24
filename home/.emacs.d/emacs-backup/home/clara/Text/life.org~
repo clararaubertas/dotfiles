@@ -255,7 +255,8 @@ SCHEDULED: <2014-08-19 Tue .+1d/3d>
 :BECAUSE:  
 :END:
 ** TODO charge computer                                               :home:
-SCHEDULED: <2014-08-21 Thu .+1d/2d>
+SCHEDULED: <2014-08-22 Fri .+1d/2d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 18:32]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:18]
 - State "DONE"       from "TODO"       [2014-08-19 Tue 18:22]
 - State "DONE"       from "TODO"       [2014-08-18 Mon 12:25]
@@ -370,7 +371,7 @@ SCHEDULED: <2014-08-21 Thu .+1d/2d>
 :PROPERTIES:
 :ID:       6bb85b33-e7fe-4b41-bb74-34770b90290e
 :STYLE: habit
-:LAST_REPEAT: [2014-08-20 Wed 16:18]
+:LAST_REPEAT: [2014-08-21 Thu 18:32]
 :END:
 ** TODO charge phone                                                  :home:
 SCHEDULED: <2014-08-22 Fri .+1d/2d>
@@ -460,7 +461,8 @@ SCHEDULED: <2014-08-22 Fri .+1d/2d>
 :LAST_REPEAT: [2014-08-21 Thu 00:13]
 :END:
 ** TODO charge tablet                                         :home:bedroom:
-SCHEDULED: <2014-08-21 Thu .+1d/2d>
+SCHEDULED: <2014-08-22 Fri .+1d/2d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 18:32]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:18]
 - State "DONE"       from "TODO"       [2014-08-19 Tue 18:24]
 - State "DONE"       from "TODO"       [2014-08-18 Mon 12:24]
@@ -539,7 +541,7 @@ SCHEDULED: <2014-08-21 Thu .+1d/2d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       bd40d909-f4f5-4a51-8ee7-0f3eab91c9c6
-:LAST_REPEAT: [2014-08-20 Wed 16:18]
+:LAST_REPEAT: [2014-08-21 Thu 18:32]
 :END:
 ** TODO clean bathtub                                                 :home:
 SCHEDULED: <2014-08-22 Fri .+6d/10d>
@@ -644,7 +646,8 @@ SCHEDULED: <2014-08-26 Tue .+5d/8d>
 :LAST_REPEAT: [2014-08-21 Thu 00:11]
 :END:
 ** TODO clear personal inbox                                      :computer:
-SCHEDULED: <2014-08-21 Thu .+1d/2d>
+SCHEDULED: <2014-08-22 Fri .+1d/2d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 18:32]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:18]
 - State "DONE"       from "TODO"       [2014-08-19 Tue 18:24]
 - State "DONE"       from "TODO"       [2014-08-18 Mon 20:35]
@@ -717,7 +720,7 @@ SCHEDULED: <2014-08-21 Thu .+1d/2d>
 :PROPERTIES:
 :ID:       51a1ddc5-78d7-4635-b696-13d0e9bc6b1d
 :STYLE: habit
-:LAST_REPEAT: [2014-08-20 Wed 16:18]
+:LAST_REPEAT: [2014-08-21 Thu 18:32]
 :END:
 ** TODO clear up bag                                                  :home:
 SCHEDULED: <2014-08-20 Wed .+1d/2d>
@@ -778,7 +781,8 @@ SCHEDULED: <2014-08-20 Wed .+1d/2d>
 :LAST_REPEAT: [2014-08-19 Tue 20:23]
 :END:
 ** TODO clear work inbox                                          :computer:
-SCHEDULED: <2014-08-21 Thu .+1d/2d>
+SCHEDULED: <2014-08-22 Fri .+1d/2d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 18:32]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:18]
 - State "DONE"       from "TODO"       [2014-08-19 Tue 18:24]
 - State "DONE"       from "TODO"       [2014-08-18 Mon 12:24]
@@ -857,10 +861,11 @@ SCHEDULED: <2014-08-21 Thu .+1d/2d>
 :PROPERTIES:
 :ID:       2636e99f-c430-4342-80e1-4b86fcaf4896
 :STYLE: habit
-:LAST_REPEAT: [2014-08-20 Wed 16:18]
+:LAST_REPEAT: [2014-08-21 Thu 18:32]
 :END:
 ** TODO make bed                                              :home:bedroom:
-SCHEDULED: <2014-08-21 Thu .+1d>
+SCHEDULED: <2014-08-22 Fri .+1d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 18:32]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:14]
 - State "DONE"       from "TODO"       [2014-08-19 Tue 18:22]
 - State "DONE"       from "TODO"       [2014-08-18 Mon 12:24]
@@ -1012,7 +1017,7 @@ SCHEDULED: <2014-08-21 Thu .+1d>
 - State "DONE"       from "TODO"       [2013-10-07 Mon 11:44]
 :PROPERTIES:
 :ID:       0c4ffe26-1cc3-433a-8de0-27266f66589c
-:LAST_REPEAT: [2014-08-20 Wed 16:14]
+:LAST_REPEAT: [2014-08-21 Thu 18:32]
 :END:
 ** TODO take meds                                             :home:bedroom:
 SCHEDULED: <2014-08-22 Fri .+1d>
@@ -3421,11 +3426,11 @@ SCHEDULED: <2014-09-15 Mon>
 :PROPERTIES:
 :ID:       401e533b-d2d4-4454-a383-5d8e16607cd5
 :END:
-** TODO [#B] repaint in bathroom                                      :home:
+** TODO [#B] repaint in bathroom                             :home:bathroom:
 :PROPERTIES:
 :ID:       c5e7366b-9ed2-49f0-9df0-adc486137c2c
 :END:
-** TODO [#B] regrout bathroom edges                                   :home:
+** TODO [#B] regrout bathroom edges                          :home:bathroom:
 :PROPERTIES:
 :ID:       e8b737b1-b279-4c16-ab4c-1dd3eb7ced58
 :END:
@@ -3534,12 +3539,13 @@ SCHEDULED: <2014-08-06 Wed>
 :ID:       fbfed128-9a07-4e2a-b15e-018973804cd6
 :END:
 ** TODO training                                                     :malka:
-SCHEDULED: <2014-08-20 Wed .+1d/2d>
+SCHEDULED: <2014-08-21 Thu .+1d/2d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 18:32]
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:13]
 :PROPERTIES:
 :ID:       62239a29-27fa-4120-8579-80fde0ec8da0
 :STYLE:    habit
-:LAST_REPEAT: [2014-08-20 Wed 16:13]
+:LAST_REPEAT: [2014-08-21 Thu 18:32]
 :END:
 ** TODO meditate                                                       :home:
 SCHEDULED: <2014-08-19 Tue .+1d/2d>
@@ -3547,11 +3553,13 @@ SCHEDULED: <2014-08-19 Tue .+1d/2d>
 :ID:       0a9160bf-d363-4d0b-98fd-9969d22f4488
 :STYLE:    habit
 :END:
-** TODO apply to drumming ads                                      :computer:
-SCHEDULED: <2014-08-19 Tue .+10d/12d>
+** TODO apply to drumming ads                                     :computer:
+SCHEDULED: <2014-08-31 Sun .+10d/12d>
+- State "DONE"       from "TODO"       [2014-08-21 Thu 18:32]
 :PROPERTIES:
 :ID:       2601bbea-862c-4436-90ca-a681b76f86b3
 :STYLE:    habit
+:LAST_REPEAT: [2014-08-21 Thu 18:32]
 :END:
 ** TODO [#A] cancel NYT subscription [?]                             :phone:
 :PROPERTIES:
@@ -3562,12 +3570,12 @@ SCHEDULED: <2014-08-26 Tue .+3w>
 :PROPERTIES:
 :ID:       1bc62ad0-2be6-4b83-ad88-e3cd3d65e8cb
 :END:
-** TODO [#B] fix porch couch                                          :home:
+** TODO [#B] fix porch couch                                    :home:porch:
 :PROPERTIES:
 :ID:       54b23216-0f06-4412-a2ef-3946563de7d5
 :END:
 
-* TODO Open bathroom window
+* TODO [#B] Open bathroom window                              :home:bathroom:
 :PROPERTIES:
 :ID:       b70cf7c0-be78-425c-8009-c047fc715fe1
 :END:
