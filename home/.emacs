@@ -144,6 +144,7 @@ If the new path's directories does not exist, create them."
 (add-to-list 'load-path "~/.emacs.d/rinari")
 (require 'rinari)
 (require 'ruby-electric)
+(require 'ruby-electric-addon)
 (require 'yaml-mode)
 (add-to-list 'load-path "~/.emacs.d/rhtml")
 (require 'rhtml-mode)
