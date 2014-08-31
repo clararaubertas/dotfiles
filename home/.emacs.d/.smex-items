@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- package-update-all
  package-install
  eval-defun
  eval-current-buffer
- org-set-property
  org-tags-view
- os
+ esk-sudo-edit
+ replace-string
+ eval-region
 )
 
 ;; ----- smex-data -----
