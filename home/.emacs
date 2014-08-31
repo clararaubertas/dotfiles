@@ -144,7 +144,13 @@ If the new path's directories does not exist, create them."
 (add-to-list 'load-path "~/.emacs.d/rinari")
 (require 'rinari)
 (require 'ruby-electric)
-(require 'ruby-electric-addon)
+(defun ruby-insert-end () 
+  "Insert \"end\" at point and reindent current line." 
+  (interactive) 
+  (insert "end") 
+  (ruby-indent-line t) 
+  (end-of-line))
+
 (require 'yaml-mode)
 (add-to-list 'load-path "~/.emacs.d/rhtml")
 (require 'rhtml-mode)
