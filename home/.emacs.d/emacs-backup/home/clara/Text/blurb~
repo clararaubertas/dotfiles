@@ -1,7 +1,12 @@
-Parallactic develops flexible databases to handle all kinds of collections of data, specializing in custom surveys and digitized collections for museums and academic institutions. 
-We worked with the Adler Planetarium to create digitized, searchable, web-accessible versions of their Herschel Correspondence Database, Webster Signatures Database, and Dioptrice Telescope Database. 
-With the University of Chicago Graduate School of Business, we developed several flexible survey tools for collecting social science data. 
-Just a few of the things we can do:
+Parallactic develops flexible databases to handle all kinds of
+collections of data, specializing in custom surveys and digitized
+collections for museums and academic institutions. We worked with the
+Adler Planetarium to create digitized, searchable, web-accessible
+versions of their Herschel Correspondence Database, Webster Signatures
+Database, and Dioptrice Telescope Database. With the University of
+Chicago Graduate School of Business, we developed several flexible
+survey tools for collecting social science data. Just a few of the
+things we can do:
 * databases viewable on the web by the public
 * "members-only" sections or records visible only to project administrators
 * records searchable by text or other fields, including complex searches combining year ranges, tags, etc.
@@ -12,3 +17,9 @@ Just a few of the things we can do:
 * flexible surveys that direct users based on previous responses
 * survey responses collected and displayed in custom ways for administrators
 * browseable online catalogs or virtual exhibits
+
+Here are a few links to some of our past work:
+* http://dioptrice.com
+* http://cailla.uchicago.edu
+* http://historydb.adlerplanetarium.org/herschel/
+* http://tevcat.uchicago.edu
