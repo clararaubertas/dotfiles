@@ -327,7 +327,7 @@ If the new path's directories does not exist, create them."
         ;; wow such agenda
         ("p" "wow such agenda"
          ((agenda "" 
-                  ((org-agenda-ndays 2)                      ;; daily agenda
+                  ((org-agenda-ndays 1)                      ;; daily agenda
                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                    (org-agenda-scheduled-leaders '("." ","))
                    ;;    (org-agenda-todo-keyword-format "[ ] ")
