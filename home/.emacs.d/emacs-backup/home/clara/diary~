@@ -1,4 +1,15 @@
 
+&9/9/2014 13:00-13:30 JBR: Appointment at Carlos Crudup, MD's office
+ Desc: Appointment at Dr. Carlos Crudup - MD's office
+ 
+ 1525 E 55th Street Suite 312 Chicago, IL 60615
+ (773) 863-3600
+ 
+ via ZocDoc
+ Location: 1525 E 55th Street Suite 312 Chicago, IL 60615
+ Organizer: mailto:clara.raubertas@gmail.com
+&%%(and (diary-date t 3 t) (diary-block 9 3 2014 1 1 9999)) 19:00-20:30 dog therapy
+ Location:  Rainbow Animal Assisted Therapy, Inc. 6042 West Oakton Street Morton Grove, IL 60053
 &9/6/2014 18:00-19:00 Housewarming!
 &8/28/2014 11:45-12:45 Chicago Railsbridge
 &%%(and (diary-block 8 28 2014 8 28 2014)) Chicago Railsbridge
