@@ -1,53 +1,88 @@
 #+TODO: OPEN | CLOSED
 #+TODO: OPEN | CLOSED
 #+STARTUP: nologdone
-* Bugs of desoto                                                       :para:
+* Bugs of desoto
 :PROPERTIES:
 :since:    nil
 :url:      https://api.github.com/repos/Parallactic/desoto
 :END:
-** CLOSED Splash screen
+** OPEN Wording
 :PROPERTIES:
-:sync:     conflict-local
-:id:       1
-:date-modification: 2014-07-14T14:48:16-0500
-:date-creation: 2014-07-01T15:47:10-0500
+:id:       6
+:date-modification: 2014-07-17T15:46:19-0500
+:date-creation: 2014-07-15T17:08:22-0500
 :author:   "clararaubertas"
 :END:
-: Make an intro splash screen like the other network surveys.
+: Change wording of "Update Question" and flash messages to be more convenient/professional.
+** OPEN data results page for admin
+:PROPERTIES:
+:id:       9
+:date-modification: 2014-07-17T15:46:18-0500
+:date-creation: 2014-07-15T17:21:16-0500
+:author:   "slucy"
+:END:
+: for each user:
+: 
+: - run design
+: - number of runs it took for user to get them all right
+: - for each run:
+:   - number correct
+:   - start / end times
+** OPEN Run start and end times
+:PROPERTIES:
+:id:       8
+:date-modification: 2014-07-17T15:46:18-0500
+:date-creation: 2014-07-15T17:11:58-0500
+:author:   "clararaubertas"
+:END:
+: Record starting and ending times for runs
+** OPEN Update run after failed run
+:PROPERTIES:
+:tags:     ("to-test")
+:sync:     conflict-local
+:id:       7
+:date-modification: 2014-07-15T17:11:10-0500
+:date-creation: 2014-07-15T17:11:10-0500
+:author:   "clararaubertas"
+:END:
+: After a user answers 12 questions, not all correct -- print the # they got right/wrong, then give them a new run with the same design.
 ** CLOSED Generate design
 :PROPERTIES:
-:sync:     conflict-local
 :id:       2
-:date-modification: 2014-07-14T14:48:16-0500
+:date-modification: 2014-07-17T15:46:19-0500
 :date-creation: 2014-07-01T15:48:29-0500
 :author:   "clararaubertas"
 :END:
 : Generate a design for an experiment -- this is associated with a relationship verb and has a boolean for every pairr of people
-** CLOSED Tell user when they are correct.
+** CLOSED Splash screen
 :PROPERTIES:
-:sync:     conflict-local
-:id:       5
-:date-modification: 2014-07-14T14:48:15-0500
-:date-creation: 2014-07-01T15:52:32-0500
+:id:       1
+:date-modification: 2014-07-17T15:46:19-0500
+:date-creation: 2014-07-01T15:47:10-0500
 :author:   "clararaubertas"
 :END:
-: If they get all 12 right, stop generating more runs and give them a funtimes message.
-** CLOSED Create runs
-:PROPERTIES:
-:sync:     conflict-local
-:id:       3
-:date-modification: 2014-07-14T14:48:15-0500
-:date-creation: 2014-07-01T15:51:45-0500
-:author:   "clararaubertas"
-:END:
-: Users should go through several runs of guesses.
+: Make an intro splash screen like the other network surveys.
 ** CLOSED Interface to create guesses
 :PROPERTIES:
-:sync:     conflict-local
 :id:       4
-:date-modification: 2014-07-14T14:48:15-0500
+:date-modification: 2014-07-17T15:46:19-0500
 :date-creation: 2014-07-01T15:52:00-0500
 :author:   "clararaubertas"
 :END:
 : User should have interface to create guesses.
+** CLOSED Create runs
+:PROPERTIES:
+:id:       3
+:date-modification: 2014-07-17T15:46:19-0500
+:date-creation: 2014-07-01T15:51:45-0500
+:author:   "clararaubertas"
+:END:
+: Users should go through several runs of guesses.
+** CLOSED Tell user when they are correct.
+:PROPERTIES:
+:id:       5
+:date-modification: 2014-07-17T15:46:19-0500
+:date-creation: 2014-07-01T15:52:32-0500
+:author:   "clararaubertas"
+:END:
+: If they get all 12 right, stop generating more runs and give them a funtimes message.
