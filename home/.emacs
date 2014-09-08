@@ -15,7 +15,6 @@
                '("org" . "http://orgmode.org/elpa/"))
 (package-initialize)
 (add-to-list 'load-path "~/.emacs.d/")
-(add-to-list 'load-path "~/icicles/")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/org-sync")
  (mapc 'load
@@ -53,7 +52,7 @@
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
 (require 'rainbow-delimiters )
-(require 'rainbow-mode)
+
 
 (global-font-lock-mode t)
 (add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
