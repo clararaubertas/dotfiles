@@ -127,7 +127,7 @@ decoded response in JSON."
 
 (defun os-rmine-json-to-bug (json)
   "Return JSON as a bug."
-  (noflet ((va (key alist) (cdr (assoc key alist)))
+  (flet ((va (key alist) (cdr (assoc key alist)))
          (v (key) (va key json)))
     (let* ((id (v 'id))
            (author (va 'name (v 'author)))

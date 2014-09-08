@@ -230,7 +230,7 @@ Return the server decoded JSON response."
 
 (defun os-github-json-to-bug (data)
   "Return DATA (in json) converted to a bug."
-  (noflet ((va (key alist) (cdr (assoc key alist)))
+  (flet ((va (key alist) (cdr (assoc key alist)))
          (v (key) (va key data)))
     (let* ((id (v 'number))
            (stat (if (string= (v 'state) "open") 'open 'closed))

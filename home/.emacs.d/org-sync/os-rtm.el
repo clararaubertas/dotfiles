@@ -80,7 +80,7 @@
 
 (defun os-rtm-task-to-bug (task)
   "Return TASK as a bug."
-  (noflet ((v (&rest key) (apply 'os-getalist task key)))
+  (flet ((v (&rest key) (apply 'os-getalist task key)))
     (let* ((id (string-to-number (v 'id)))
            (title (v 'name))
            (status (if (string= (v 'task 'completed) "")
