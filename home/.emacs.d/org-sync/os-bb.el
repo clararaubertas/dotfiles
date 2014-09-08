@@ -192,7 +192,7 @@ decoded response in JSON."
 
 (defun os-bb-json-to-bug (json)
   "Return JSON as a bug."
-  (cl-flet ((va (key alist) (cdr (assoc key alist)))
+  (noflet ((va (key alist) (cdr (assoc key alist)))
          (v (key) (va key json)))
     (let* ((id (v 'local_id))
            (metadata (v 'metadata))

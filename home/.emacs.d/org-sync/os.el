@@ -336,7 +336,7 @@ Return ELEM if it was added, nil otherwise."
 ;; OPEN bugs sorted by mod time then CLOSED bugs sorted by mod time
 (defun os-bug-sort (a b)
   "Return non-nil if bug A should appear before bug B."
-  (cl-flet ((time-less-safe (a b)
+  (noflet ((time-less-safe (a b)
                          (if (and a b)
                              (time-less-p a b)
                            (or a b))))
