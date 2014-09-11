@@ -317,10 +317,10 @@ If the new path's directories does not exist, create them."
     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(priority-down tag-up))
+(setq org-agenda-sorting-strategy '(time-up tag-up priority-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
-(setq org-habit-show-habits-only-for-today nil)
+(setq org-habit-show-habits-only-for-today t)
 (setq org-agenda-span 2)
 (setq org-agenda-sticky nil)
 (setq org-agenda-show-log t)
@@ -339,10 +339,11 @@ If the new path's directories does not exist, create them."
         ("p" "wow such agenda"
          ( (tags-todo "+PRIORITY=\"A\"")
            (agenda "" 
-                   ((org-agenda-ndays 2)                      ;; daily agenda
+                   ((org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                     ;; (org-agenda-scheduled-leaders '("." ","))
                     ;;    (org-agenda-todo-keyword-format "[ ] ")
+
                     ))
            (tags-todo "+PRIORITY=\"B\"")
            (todo "WAITING") 
