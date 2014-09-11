@@ -337,7 +337,7 @@ If the new path's directories does not exist, create them."
            (tags-todo "STYLE=\"habit\""
                ((org-agenda-overriding-header "Habits")
                 (org-agenda-sorting-strategy
-                 '(todo-state-down effort-up category-keep))))
+                 '(priority-down tag-down effort-up category-keep))))
            (tags-todo "+PRIORITY=\"B\"")
            (todo "WAITING") 
            (todo "JESSE") 
