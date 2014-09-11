@@ -326,6 +326,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-skip-deadline-if-done t)
 (setq  org-habit-show-all-today nil)
 
+
 (setq org-agenda-custom-commands
       '(
         ;; wow such agenda
