@@ -70,7 +70,8 @@
   "On each blink the cursor will cycle to the next color in this list.")
 (setq blink-cursor-count 0)
 (defun blink-cursor-timer-function ()
-  "Zarza wrote this cyberpunk variant of timer `blink-cursor-timer'. 
+  "Cyberpunk variant of timer `blink-cursor-timer'. OVERWRITES original version in `frame.el'.
+
 This one changes the cursor color on each blink. Define colors in `blink-cursor-colors'."
   (when (not (internal-show-cursor-p))
     (when (>= blink-cursor-count (length blink-cursor-colors))
@@ -80,11 +81,8 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
     )
   (internal-show-cursor nil (not (internal-show-cursor-p)))
   )
-(add-to-list 'default-frame-alist '(cursor-color . "#859900"))
-;; cursor
-(require 'cursor-chg)  ; Load the library
-(toggle-cursor-type-when-idle nil) ; Turn on cursor change when Emacs is idle
-(change-cursor-mode 1) ; Turn on change for overwrite, read-only, and input mode
+
+
 ;;;;;;;;;; END Colors ;;;;;;;;;;
 
 
