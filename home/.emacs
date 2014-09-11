@@ -83,7 +83,7 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
 (add-to-list 'default-frame-alist '(cursor-color . "#859900"))
 ;; cursor
 (require 'cursor-chg)  ; Load the library
-(toggle-cursor-type-when-idle 1) ; Turn on cursor change when Emacs is idle
+(toggle-cursor-type-when-idle nil) ; Turn on cursor change when Emacs is idle
 (change-cursor-mode 1) ; Turn on change for overwrite, read-only, and input mode
 ;;;;;;;;;; END Colors ;;;;;;;;;;
 
@@ -327,12 +327,6 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
 (setq  org-habit-show-all-today nil)
-(setq org-agenda-time-grid
-      '((daily today require-timed)
-       "----------------"
-       (800 1000 1200 1400 1600 1800)))
-(setq org-columns-default-format "%50ITEM %12SCHEDULED %TODO %3PRIORITY %Effort{:} %TAGS")
-
 
 (setq org-agenda-custom-commands
       '(
@@ -343,7 +337,7 @@ If the new path's directories does not exist, create them."
                       )
            (agenda "" 
                    ((org-agenda-ndays 1)                      ;; daily agenda
-                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
+                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlinesrp
                     ))
            (tags-todo "+PRIORITY=\"B\""
                       ( (org-agenda-overriding-header ""))
@@ -362,6 +356,7 @@ If the new path's directories does not exist, create them."
           (org-fast-tag-selection-single-key (quote expert))
           (org-habit-following-days 5)
           (org-habit-preceding-days 10)
+          (org-agenda-time-grid nil)
           )
          )      
         
