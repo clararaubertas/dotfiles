@@ -339,14 +339,14 @@ If the new path's directories does not exist, create them."
         ;; wow such agenda
         ("p" "wow such agenda"
          ( (tags-todo "+PRIORITY=\"A\""
-                      ( (org-agenda-overriding-header "improtant"))
+                      ( (org-agenda-overriding-header ""))
                       )
            (agenda "" 
                    ((org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                     ))
            (tags-todo "+PRIORITY=\"B\""
-                      ( (org-agenda-overriding-header "less improtant"))
+                      ( (org-agenda-overriding-header ""))
                       )
            (todo "WAITING"
                       ( (org-agenda-overriding-header nil))
@@ -450,18 +450,17 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-done nil :strike-through t  )
 
 (set-face-attribute 'org-habit-alert-face nil :background "#073642" :bold t :strike-through nil :foreground "#fdf6e3")
-(set-face-attribute 'org-habit-alert-future-face nil :background "#859900" :strike-through t :foreground "#fdf6e3")
+(set-face-attribute 'org-habit-alert-future-face nil :background "#268bd2" :strike-through nil :foreground "#fdf6e3")
 (set-face-attribute 'org-habit-clear-face nil :background "#073642"  :strike-through nil)
 (set-face-attribute 'org-habit-clear-future-face nil :background "#073642" )
-(set-face-attribute 'org-habit-overdue-face nil :background "#d33682" :bold t :strike-through t :foreground "#fdf6e3")
-(set-face-attribute 'org-habit-overdue-future-face nil :background "#657b83" :strike-through t :underline nil)
-(set-face-attribute 'org-habit-ready-face nil :background "#fdf6e3")
+(set-face-attribute 'org-habit-overdue-face nil :background "#d33682" :bold t :strike-through nil :foreground "#fdf6e3")
+(set-face-attribute 'org-habit-overdue-future-face nil :background "#657b83" :strike-through nil :underline nil)
+(set-face-attribute 'org-habit-ready-face nil :background "#6c71c4")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
-
-(set-face-attribute 'org-scheduled-previously nil :foreground "eee8d5" :bold t )
+(set-face-attribute 'org-scheduled-previously nil :foreground "#2aa198" :bold t )
 (set-face-attribute 'org-scheduled-today nil :foreground "#eee8d5"  )
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#859900"  )
-(set-face-attribute 'org-warning nil :foreground "#fdf6e3"  )
+(set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-habit-graph-column 35)
 
 
