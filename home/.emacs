@@ -349,7 +349,7 @@ If the new path's directories does not exist, create them."
                       )
            )
          ((org-agenda-compact-blocks t)
-          (org-agenda-sorting-strategy '(habit-down priority-down tag-up))
+          (org-agenda-sorting-strategy '(habit-down priority-down tag-up time-up))
           (org-agenda-prefix-format "  ")
           (org-agenda-skip-entry-if 'scheduled)
           (org-fast-tag-selection-single-key (quote expert))
