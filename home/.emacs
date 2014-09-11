@@ -361,7 +361,7 @@ If the new path's directories does not exist, create them."
           (org-agenda-skip-entry-if 'scheduled)
           (org-fast-tag-selection-single-key (quote expert))
           (org-habit-following-days 5)
-          (org-habit-preceding-days 8)
+          (org-habit-preceding-days 10)
           )
          )      
         
