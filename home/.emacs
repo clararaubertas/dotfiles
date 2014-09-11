@@ -325,6 +325,12 @@ If the new path's directories does not exist, create them."
       '(
         ;; wow such agenda
         ("p" "wow such agenda"
+         (tags-todo "+PRIORITY=\"A\"")
+         (todo "TODO"
+                ( ;; (org-agenda-todo-keyword-format "[ ] ")
+                 (org-agenda-todo-ignore-scheduled t)
+
+                 ))
          ((agenda "" 
                   ((org-agenda-ndays 1)                      ;; daily agenda
                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
@@ -332,16 +338,12 @@ If the new path's directories does not exist, create them."
                    ;;    (org-agenda-todo-keyword-format "[ ] ")
 
                    ))
-          (todo "TODO"
-                ( ;; (org-agenda-todo-keyword-format "[ ] ")
-                 (org-agenda-todo-ignore-scheduled t)
-
-                 ))
+          (tags-todo "+PRIORITY=\"B\"")
           (todo "JESSE"               
                 ((org-agenda-todo-keyword-format "%-8s "))) 
           (todo "WAITING"
                 ((org-agenda-todo-keyword-format "%-8s "))) 
-
+          (tags-todo "+PRIORITY=\"C\"")
           )
          ((org-agenda-compact-blocks t)
           ;; (org-agenda-sorting-strategy '(priority-down tag-up))

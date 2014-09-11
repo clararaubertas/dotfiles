@@ -1,8 +1,12 @@
 
+&10/21/2014 11:30-12:30 dr holmquist
+ Location: Duchossois Center For Advanced Medicine Clinic Pharmacy, 5758 S Maryland Ave, Chicago, IL, United States
+&9/11/2014 18:00-19:00 Chicago Free School Volunteer Orientation
+ Location: Augustana Lutheran Church, 5500 S Woodlawn Ave, Chicago, IL, United States
+&9/13/2014 16:00-17:00 free school orientation
+ Location: Augustana Lutheran Church, 5500 S Woodlawn Ave, Chicago, IL, United States
 &9/11/2014 12:30-13:30 Hangout to discuss Chicago Railsbridge
  Organizer: mailto:clara.raubertas@gmail.com
-&9/11/2014 10:00-11:00 test
- Organizer: mailto:steven.lucy@gmail.com
 &9/9/2014 13:00-13:30 JBR: Appointment at Carlos Crudup, MD's office
  Desc: Appointment at Dr. Carlos Crudup - MD's office
  
@@ -1240,6 +1244,7 @@
 &%%(and (diary-block 5 28 2006 5 28 2006)) write HIPS exam
 &%%(and (diary-block 5 28 2006 5 28 2006)) finish drafting HIPS final paper
  Location: maclab
+&9/9/2014 15:00-16:00 sl calls bob
 &9/9/2014 11:00-12:00 Clara call Doug
 &%%(and (diary-block 9 8 2014 9 8 2014)) S&C
 &8/29/2014 11:00-12:00 Soup in the Loop call
