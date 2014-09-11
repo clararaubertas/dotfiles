@@ -326,6 +326,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-show-log t)
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
+(setq  org-habit-show-all-today nil)
 (setq org-agenda-time-grid
       '((daily today require-timed)
        "----------------"
@@ -341,9 +342,6 @@ If the new path's directories does not exist, create them."
            (agenda "" 
                    ((org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
-                    ;; (org-agenda-scheduled-leaders '("." ","))
-                    ;;    (org-agenda-todo-keyword-format "[ ] ")
-
                     ))
            (tags-todo "+PRIORITY=\"B\"")
            (todo "WAITING") 
