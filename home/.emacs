@@ -353,12 +353,12 @@ If the new path's directories does not exist, create them."
                       ) 
            (tags-todo "+PRIORITY=\"C\""
                       ( (org-agenda-overriding-header nil))
-)
+                      )
            )
          ((org-agenda-compact-blocks t)
           (org-agenda-sorting-strategy '(habit-down priority-down tag-up))
           (org-agenda-prefix-format "  ")
-
+          (org-agenda-skip-entry-if 'scheduled)
           (org-fast-tag-selection-single-key (quote expert))
           (org-habit-following-days 5)
           (org-habit-preceding-days 8)
