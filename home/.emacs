@@ -317,10 +317,21 @@ If the new path's directories does not exist, create them."
     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(priority-down tag-down todo-state-down))
+(setq org-agenda-sorting-strategy '(priority-down tag-up))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
-(setq org-agenda-todo-keyword-format "%-8s ")
+(setq org-habit-show-habits-only-for-today nil)
+(setq org-agenda-span 2)
+(setq org-agenda-sticky nil)
+(setq org-agenda-show-log t)
+(setq org-agenda-skip-scheduled-if-done t)
+(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-time-grid
+      '((daily today require-timed)
+       "----------------"
+       (800 1000 1200 1400 1600 1800)))
+(setq org-columns-default-format "%50ITEM %12SCHEDULED %TODO %3PRIORITY %Effort{:} %TAGS")
+
 
 (setq org-agenda-custom-commands
       '(
@@ -328,16 +339,11 @@ If the new path's directories does not exist, create them."
         ("p" "wow such agenda"
          ( (tags-todo "+PRIORITY=\"A\"")
            (agenda "" 
-                   ((org-agenda-ndays 1)                      ;; daily agenda
+                   ((org-agenda-ndays 2)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
-                    (org-agenda-scheduled-leaders '("." ","))
+                    ;; (org-agenda-scheduled-leaders '("." ","))
                     ;;    (org-agenda-todo-keyword-format "[ ] ")
-                    
                     ))
-           (tags-todo "STYLE=\"habit\""
-               ((org-agenda-overriding-header "Habits")
-                (org-agenda-sorting-strategy
-                 '(priority-down tag-down effort-up category-keep))))
            (tags-todo "+PRIORITY=\"B\"")
            (todo "WAITING") 
            (todo "JESSE") 
