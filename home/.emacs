@@ -320,31 +320,29 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-sorting-strategy '(priority-down tag-down todo-state-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
+(setq org-agenda-todo-keyword-format "%-8s ")
 
 (setq org-agenda-custom-commands
       '(
         ;; wow such agenda
         ("p" "wow such agenda"
-         (tags-todo "+PRIORITY=\"A\"")
-         (todo "TODO"
-                ( ;; (org-agenda-todo-keyword-format "[ ] ")
-                 (org-agenda-todo-ignore-scheduled t)
-
-                 ))
-         ((agenda "" 
-                  ((org-agenda-ndays 1)                      ;; daily agenda
-                   (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
-                   (org-agenda-scheduled-leaders '("." ","))
-                   ;;    (org-agenda-todo-keyword-format "[ ] ")
-
-                   ))
-          (tags-todo "+PRIORITY=\"B\"")
-          (todo "JESSE"               
-                ((org-agenda-todo-keyword-format "%-8s "))) 
-          (todo "WAITING"
-                ((org-agenda-todo-keyword-format "%-8s "))) 
-          (tags-todo "+PRIORITY=\"C\"")
-          )
+         ( (tags-todo "+PRIORITY=\"A\"")
+           (agenda "" 
+                   ((org-agenda-ndays 1)                      ;; daily agenda
+                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
+                    (org-agenda-scheduled-leaders '("." ","))
+                    ;;    (org-agenda-todo-keyword-format "[ ] ")
+                    
+                    ))
+           (tags-todo "STYLE=\"habit\""
+               ((org-agenda-overriding-header "Habits")
+                (org-agenda-sorting-strategy
+                 '(todo-state-down effort-up category-keep))))
+           (tags-todo "+PRIORITY=\"B\"")
+           (todo "WAITING") 
+           (todo "JESSE") 
+           (tags-todo "+PRIORITY=\"C\"")
+           )
          ((org-agenda-compact-blocks t)
           ;; (org-agenda-sorting-strategy '(priority-down tag-up))
           (org-agenda-prefix-format "  ")
