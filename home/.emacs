@@ -338,20 +338,27 @@ If the new path's directories does not exist, create them."
       '(
         ;; wow such agenda
         ("p" "wow such agenda"
-         ( (tags-todo "+PRIORITY=\"A\"")
+         ( (tags-todo "+PRIORITY=\"A\""
+                      ( (org-agenda-overriding-header "improtant"))
+                      )
            (agenda "" 
                    ((org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                     ))
-           (tags-todo "+PRIORITY=\"B\"")
-           (todo "WAITING") 
-           (todo "JESSE") 
-           (tags-todo "+PRIORITY=\"C\"")
+           (tags-todo "+PRIORITY=\"B\""
+                      ( (org-agenda-overriding-header "less improtant"))
+                      )
+           (todo "WAITING"
+                      ( (org-agenda-overriding-header nil))
+                      ) 
+           (tags-todo "+PRIORITY=\"C\""
+                      ( (org-agenda-overriding-header nil))
+)
            )
          ((org-agenda-compact-blocks t)
           (org-agenda-sorting-strategy '(habit-down priority-down tag-up))
           (org-agenda-prefix-format "  ")
-;;          (org-agenda-overriding-header "yo")
+
           (org-fast-tag-selection-single-key (quote expert))
           (org-habit-following-days 5)
           (org-habit-preceding-days 8)
