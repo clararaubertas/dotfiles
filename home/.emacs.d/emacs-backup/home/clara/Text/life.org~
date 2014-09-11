@@ -3315,11 +3315,11 @@ SCHEDULED: <2014-09-22 Mon>
 ** DONE buy pot                                                      :phone:
 CLOSED: [2014-05-19 Mon 19:40]
 ** TODO [#B] batteries for smoke detector                     :home:allhome:
-SCHEDULED: <2015-01-14 Wed .+6m>
+SCHEDULED: <2015-01-10 Sat .+6m>
 - State "DONE"       from "TODO"       [2014-07-14 Mon 20:06]
 :PROPERTIES:
 :ID:       ce0c2000-2c85-440d-a267-a2bf8eed1ea4
-:LAST_REPEAT: [2014-07-14 Mon 20:06]
+:LAST_REPEAT: [2014-09-10 Wed 23:29]
 :END:
 ** WAITING moomer band                                            :computer:
 - Note taken on [2014-07-06 Sun 19:57] \\
@@ -3989,19 +3989,19 @@ SCHEDULED: <2014-09-11 Thu>
 :PROPERTIES:
 :ID:       b49b5b13-d8b2-4325-b1b7-90a2e71f5ad8
 :END:
-* TODO [#B] Open bathroom window                              :home:bathroom:
+** TODO [#B] Open bathroom window                             :home:bathroom:
 :PROPERTIES:
 :ID:       b70cf7c0-be78-425c-8009-c047fc715fe1
 :END:
 [2014-08-21 Thu 00:09]
 
-* DONE [#A] Send blurb to brigid                                   :computer:
+** DONE [#A] Send blurb to brigid                                  :computer:
 - State "DONE"       from "TODO"       [2014-09-01 Mon 15:24]
 :PROPERTIES:
 :ID:       dc6cb4e6-40f9-4889-8fc3-87c1e62898c5
 :END:
 [2014-08-28 Thu 15:59]
-* TODO [#B] Update para website                                    :computer:
+** TODO [#B] Update para website                                   :computer:
 :PROPERTIES:
 :ID:       a288715f-6415-4e1f-93c2-5ea4f739520e
 :END:
