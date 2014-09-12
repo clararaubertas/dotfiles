@@ -333,26 +333,26 @@ If the new path's directories does not exist, create them."
         ("p" "wow such agenda"
          ( (tags-todo "+PRIORITY=\"A\""
                       ( (org-agenda-overriding-header "")
-                        (org-agenda-sorting-strategy '(tag-up))
-                      )
+                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
+                        ))
            (agenda "" 
                    ((org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlinesrp
                     ))
            (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
+                       ( (org-agenda-overriding-header "")
+                         ))
+           (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
                       ( (org-agenda-overriding-header "")
-                      ))
-           (tags-todo "+PRIORITY=\"B\""
-                      ( (org-agenda-overriding-header "")
-                        (org-agenda-sorting-strategy '(tag-up))
-                      )
+                        (org-agenda-sorting-strategy '(tag-down))
+                        ))
            (todo "WAITING"
-                      ( (org-agenda-overriding-header nil))
-                      ) 
+                 ( (org-agenda-overriding-header nil)
+                   ) )
            (tags-todo "+PRIORITY=\"C\""
                       ( (org-agenda-overriding-header nil)
                         (org-agenda-sorting-strategy '(tag-up))
-                      )
+                        ))
            )
          ((org-agenda-compact-blocks t)
           (org-agenda-sorting-strategy '(habit-down priority-down tag-up time-up))
