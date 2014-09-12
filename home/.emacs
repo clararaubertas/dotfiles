@@ -326,7 +326,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-skip-deadline-if-done t)
 (setq  org-habit-show-all-today nil)
 
-
+(setq org-agenda-tags-todo-honor-ignore-options t)
 (setq org-agenda-custom-commands
       '(
         ;; wow such agenda
@@ -338,6 +338,9 @@ If the new path's directories does not exist, create them."
                    ((org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlinesrp
                     ))
+           (tags-todo "-STYLE=\"habit\"+PRIORITY=\"\""
+                      ( (org-agenda-overriding-header "move us"))
+                      )
            (tags-todo "+PRIORITY=\"B\""
                       ( (org-agenda-overriding-header ""))
                       )
