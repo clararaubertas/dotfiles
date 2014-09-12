@@ -344,7 +344,7 @@ If the new path's directories does not exist, create them."
                          ))
            (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
                       ( (org-agenda-overriding-header "")
-                        (org-agenda-sorting-strategy '(tag-down))
+                        (org-agenda-sorting-strategy '(todo-state-down tag-down))
                         ))
            (todo "WAITING"
                  ( (org-agenda-overriding-header nil)
