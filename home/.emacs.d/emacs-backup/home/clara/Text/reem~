@@ -99,3 +99,14 @@ I am assuming it would be a significant job to do these retroactively.
 Community Page
 Can you set it up so the landing page of community is the list of all the community pages? I do not want it to default to Lexington anymore. (Similar to the Press page http://www.helparoundtown.com/press )
 -30mins
+
+* copy production DB
+* restore text on map page to smaller original
+* remove homepage map text
+* add users to homepage map
+* homepage map should become longer
+* a community marketplace for flexible jobs, local businesses, & non-profits
+** shrink text on this to fit in one line
+* zoom both maps out by two units
+* move "boston herald" under "user testimonials and how to videos"
+* move "how to videos" above "tell me when a new job posts"
