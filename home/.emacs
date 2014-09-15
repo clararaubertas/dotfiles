@@ -449,19 +449,20 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
 (set-face-attribute 'org-done nil :strike-through t  )
 
-(set-face-attribute 'org-habit-alert-face nil :background "#073642" :bold t :strike-through nil :foreground "#fdf6e3")
-(set-face-attribute 'org-habit-alert-future-face nil :background "#268bd2" :strike-through nil :foreground "#fdf6e3")
+(set-face-attribute 'org-habit-alert-face nil :background "#b58900" :bold t :strike-through nil :foreground "#073652")
+(set-face-attribute 'org-habit-alert-future-face nil :background "#268bd2" :strike-through nil :foreground "#073642")
 (set-face-attribute 'org-habit-clear-face nil :background "#073642"  :strike-through nil)
 (set-face-attribute 'org-habit-clear-future-face nil :background "#6c71c4" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#d33682" :bold t :strike-through nil :foreground "#fdf6e3")
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#657b83" :strike-through nil :underline nil)
 (set-face-attribute 'org-habit-ready-face nil :background "#fdf6e3" :foreground "#657b83")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
+(set-face-attribute 'org-habit-warning-face nil :background: "#b58900")
 (setq org-habit-graph-column 35)
 
-(set-face-attribute 'org-scheduled-previously nil :foreground "#2aa198" :bold t :background "#073642")
+(set-face-attribute 'org-scheduled-previously nil :foreground "#b58900" :bold t :background "#073642")
 (set-face-attribute 'org-scheduled-today nil :background "#073642"  :foreground "#fdf6e3")
-(set-face-attribute 'org-upcoming-deadline nil :foreground "#b859900"  )
+(set-face-attribute 'org-upcoming-deadline nil :foreground "#b85990"  )
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 
 
