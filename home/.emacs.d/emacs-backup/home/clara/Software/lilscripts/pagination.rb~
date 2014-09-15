@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-a = (1..32).to_a
+a = (1..27).to_a
 new_a = Array.new
 
 while (!(a.empty?)) do
