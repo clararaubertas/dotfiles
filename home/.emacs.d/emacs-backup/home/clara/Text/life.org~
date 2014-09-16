@@ -3047,11 +3047,8 @@ SCHEDULED: <2014-10-07 Tue .+1m>
 :ID:       3926b66e-5631-44a2-9eb9-d1a47c2a2ca0
 :END:
 ** JESSE [#A] update car registration
-- Note taken on [2014-07-06 Sun 19:55] \\
-  Car insurance needs to be updated first
 :PROPERTIES:
 :ID: 34dad458-375b-4717-aaff-c6cb65b3855b
-:BECAUSE:  need new car insurance
 :END:
 ** DONE [#C] Tin of treats                                    :home:ARCHIVE:
 :PROPERTIES:
@@ -4156,12 +4153,12 @@ SCHEDULED: <2014-09-11 Thu>
 :ID:       bcbc6932-049b-4db1-8543-29b23717bff7
 :END:
 ** TODO [#A] practice drums at moomers                                  :hp:
-SCHEDULED: <2014-09-15 Mon>
+SCHEDULED: <2014-09-16 Tue>
 :PROPERTIES:
 :ID:       cd48175a-cbb9-43da-b130-effc86dfef4d
 :END:
 ** TODO [#A] get drums from moomers                                  :hp:car:
-SCHEDULED: <2014-09-15 Mon>
+SCHEDULED: <2014-09-16 Tue>
 :PROPERTIES:
 :ID:       9317b078-0ec5-426d-a38f-84fda781c297
 :END:
