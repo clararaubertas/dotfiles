@@ -450,13 +450,13 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-done nil :strike-through t  )
 
 (set-face-attribute 'org-habit-alert-face nil :background "#b58900" :bold t :strike-through nil :foreground "#073652")
-(set-face-attribute 'org-habit-alert-future-face nil :background "#b58900" :strike-through nil :foreground "#073642")
+(set-face-attribute 'org-habit-alert-future-face nil :background "#2aa198" :strike-through nil :foreground "#073642")
 (set-face-attribute 'org-habit-clear-face nil :background "#073642"  :strike-through nil)
 (set-face-attribute 'org-habit-clear-future-face nil :background "#073642" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#d33682" :bold t :strike-through nil :foreground "#073642")
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#657b83" :strike-through nil :underline nil)
 (set-face-attribute 'org-habit-ready-face nil :background "#268bd2" :foreground "#073642")
-(set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
+(set-face-attribute 'org-habit-ready-future-face nil :background "#6c71c4")
 
 (setq org-habit-graph-column 35)
 
