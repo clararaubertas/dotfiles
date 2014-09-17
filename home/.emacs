@@ -458,7 +458,12 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-habit-ready-face nil :background "#268bd2" :foreground "#073642")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
  
-(add-hook 'markdown-mode-hook (lambda () (variable-pitch-mode t)))
+;; make a face
+(make-face 'agenda-face)
+(set-face-attribute 'agenda-face nil :height 1.5) 
+
+(add-hook 'org-agenda-mode-hook (lambda ()  (buffer-face-set 'agenda-face)))
+
 (setq org-habit-graph-column 35)
 
 (set-face-attribute 'org-scheduled-previously nil :foreground "#b58900" :bold t :background "#073642")
