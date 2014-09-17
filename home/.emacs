@@ -457,7 +457,8 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#859900" :strike-through nil :underline nil)
 (set-face-attribute 'org-habit-ready-face nil :background "#268bd2" :foreground "#073642")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
-
+ 
+(add-hook 'markdown-mode-hook (lambda () (variable-pitch-mode t)))
 (setq org-habit-graph-column 35)
 
 (set-face-attribute 'org-scheduled-previously nil :foreground "#b58900" :bold t :background "#073642")
