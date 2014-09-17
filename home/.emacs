@@ -462,7 +462,7 @@ SCHEDULED: %^t"
 (make-face 'agenda-face)
 (set-face-attribute 'agenda-face nil :height 1.5) 
 
-(add-hook 'org-agenda-mode-hook (lambda ()  (buffer-face-set 'agenda-face)))
+(add-hook 'org-finalize-agenda-hook (lambda ()  (buffer-face-set 'agenda-face)))
 
 (setq org-habit-graph-column 35)
 
