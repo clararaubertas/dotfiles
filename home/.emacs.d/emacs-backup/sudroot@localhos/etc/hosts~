@@ -1,14 +1,13 @@
+#local network!
 127.0.0.1	localhost
 127.0.1.1	meson
 192.168.2.17    tachyon
-192.168.2.41    printer
+192.168.2.5     printer
+192.168.2.1     router
+
+#moomers/parallactic servers
 65.60.60.66     whisker
 66.175.209.206  pepper
-192.168.0.254   extender
-192.168.2.1     router
-# bouvet
-# fortnight
-# mfm
 162.216.17.116  kumquat
 
 # The following lines are desirable for IPv6 capable hosts
