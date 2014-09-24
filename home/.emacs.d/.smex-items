@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ org-agenda-todo-yesterday
  package-install
  eval-defun
  eval-current-buffer
  org-tags-view
  esk-sudo-edit
  replace-string
- eval-region
 )
 
 ;; ----- smex-data -----
@@ -109,7 +109,7 @@
  (org-agenda-property-customize . 2)
  (org-todo-yesterday . 4)
  (org-todo-toggle-yesterday . 1)
- (org-agenda-todo-yesterday . 6)
+ (org-agenda-todo-yesterday . 7)
  (org-tags-view . 1)
  (lawlist-reorganize . 4)
 )

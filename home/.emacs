@@ -300,8 +300,8 @@ If the new path's directories does not exist, create them."
             (visual-line-mode -1)
             (toggle-truncate-lines 1)))
 
-(setq org-agenda-property-list '("BECAUSE" "LASTCONTACT"))
-(setq org-agenda-property-position 'next-line)
+;; (setq org-agenda-property-list '("BECAUSE" "LASTCONTACT"))
+;; (setq org-agenda-property-position 'next-line)
 
 
 (setq enable-recursive-minibuffers t)
@@ -458,11 +458,11 @@ SCHEDULED: %^t"
 (set-face-attribute 'org-habit-ready-face nil :background "#268bd2" :foreground "#073642")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
  
-;; make a face
-(make-face 'agenda-face)
-(set-face-attribute 'agenda-face nil :height 1.5) 
+;; ;; make a face
+;; (make-face 'agenda-face)
+;; (set-face-attribute 'agenda-face nil :height 1.5) 
 
-(add-hook 'org-finalize-agenda-hook (lambda ()  (buffer-face-set 'agenda-face)))
+;; (add-hook 'org-finalize-agenda-hook (lambda ()  (buffer-face-set 'agenda-face)))
 
 (setq org-habit-graph-column 35)
 
