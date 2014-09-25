@@ -9,7 +9,7 @@
  (position . 151846))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO get titl")
- (rear-context-string . "be32f4f77\n:END:\n")
- (position . 217916))
+ (front-context-string . "** TODO process ")
+ (rear-context-string . "ance :computer:\n")
+ (position . 232890))
 )

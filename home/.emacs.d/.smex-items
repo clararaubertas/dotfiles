@@ -1,8 +1,8 @@
 
 ;; ----- smex-history -----
 (
- org-agenda-todo-yesterday
  package-install
+ org-agenda-todo-yesterday
  eval-defun
  eval-current-buffer
  org-tags-view
@@ -16,7 +16,7 @@
  (esk-sudo-edit . 75)
  (eshell . 3)
  (org-babel-execute-buffer . 2)
- (package-install . 52)
+ (package-install . 53)
  (replace-string . 61)
  (recover-this-file . 2)
  (global-set-key . 1)
@@ -109,7 +109,7 @@
  (org-agenda-property-customize . 2)
  (org-todo-yesterday . 4)
  (org-todo-toggle-yesterday . 1)
- (org-agenda-todo-yesterday . 7)
+ (org-agenda-todo-yesterday . 10)
  (org-tags-view . 1)
  (lawlist-reorganize . 4)
 )

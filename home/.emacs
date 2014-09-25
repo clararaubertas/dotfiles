@@ -247,19 +247,6 @@ If the new path's directories does not exist, create them."
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 
-(defun my-org-mob-sync()
-  (interactive)
-              (message "pulling from mobile! ...")
-              (org-mobile-pull)
-              (message "... pulled from mobile!")
-
-           (message "pushing to mobile! ...")
-              (org-mobile-push)
-              (message "... pushed to mobile!")
-)
-(global-set-key '[f4]  'my-org-mob-sync)
-
-(org-mobile-pull) ;; run org-mobile-pull at startup
 
 (defun install-pull-monitor (file secs)
   (run-with-timer
