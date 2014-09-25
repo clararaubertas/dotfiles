@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ esk-sudo-edit
  package-install
  org-agenda-todo-yesterday
  eval-defun
  eval-current-buffer
  org-tags-view
- esk-sudo-edit
  replace-string
 )
 
 ;; ----- smex-data -----
 (
  (paredit-mode . 1)
- (esk-sudo-edit . 75)
+ (esk-sudo-edit . 77)
  (eshell . 3)
  (org-babel-execute-buffer . 2)
  (package-install . 53)
