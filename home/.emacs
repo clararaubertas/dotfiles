@@ -247,41 +247,6 @@ If the new path's directories does not exist, create them."
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 
-
-(defun install-pull-monitor (file secs)
-  (run-with-timer
-   0 secs
-   (lambda (f p)
-     (unless (< p (second (time-since (elt (file-attributes f) 5))))
-       (org-mobile-pull)
-       (org-mobile-push)))
-   file secs))
-
-(defun install-push-monitor (file secs)
-  (run-with-timer
-   0 secs
-   (lambda (f p)
-     (unless (< p (second (time-since (elt (file-attributes f) 5))))
-       (org-mobile-push)))
-   file secs))
-
-(install-pull-monitor (file-truename
-                  (concat
-                   (file-name-as-directory org-mobile-directory)
-                          org-mobile-capture-file))
-                 5)
-
-(install-push-monitor (file-truename
-                  (concat
-                   (file-name-as-directory org-directory)
-                          "life.org"))
-                 5)
-
-;; Do a pull every 5 minutes to circumvent problems with timestamping
-;; (ie. dropbox bugs)
-(run-with-timer 0 (* 5 60) 'org-mobile-pull)
-
-
 (add-hook 'org-agenda-mode-hook
           (lambda ()
             (visual-line-mode -1)
