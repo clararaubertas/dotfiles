@@ -2,8 +2,9 @@ package com.android.testproject;
 
 import android.app.Activity;
 import android.os.Bundle;
+import com.google.android.maps.MapView;
 
-public class test_activity extends Activity
+public class test_activity extends MapActivity
 {
     /** Called when the activity is first created. */
     @Override
