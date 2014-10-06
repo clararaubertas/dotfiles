@@ -1425,7 +1425,8 @@ SCHEDULED: <2014-10-04 Sat .+1d>
 :STYLE:    
 :END:
 ** TODO drink water                                           :bedroom:home:
-SCHEDULED: <2014-10-01 Wed .+1d>
+SCHEDULED: <2014-10-06 Mon .+1d>
+- State "DONE"       from "TODO"       [2014-10-05 Sun 17:10]
 - State "DONE"       from "TODO"       [2014-10-01 Wed 13:13]
 - State "DONE"       from "TODO"       [2014-09-28 Sun 18:09]
 - State "DONE"       from "TODO"       [2014-09-27 Sat 13:03]
@@ -1542,7 +1543,7 @@ SCHEDULED: <2014-10-01 Wed .+1d>
 - State "DONE"       from "TODO"       [2013-10-22 Tue 20:01]
 :PROPERTIES:
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
-:LAST_REPEAT: [2014-10-01 Wed 13:13]
+:LAST_REPEAT: [2014-10-05 Sun 17:10]
 :STYLE:    habit
 :END:
 ** TODO water Malka                                                  :malka:
@@ -4585,14 +4586,5 @@ SCHEDULED: <2014-10-01 Wed>
 :ID:       51733748-5b5c-42ff-bc25-23c5bc1f706b
 :END:
 ** TODO email Becci re: childcare                                  :computer:
-:PROPERTIES:
-:ID:       859c7e2b-7192-480c-9198-9e89633e8c3d
-:END:
 ** TODO email Mom                                                  :computer:
-:PROPERTIES:
-:ID:       0e7e19a4-59d2-402f-b317-1a276424540b
-:END:
 ** TODO email Hildegard                                            :computer:
-:PROPERTIES:
-:ID:       75a8d1ff-d5f5-40f5-bb04-16a4dc603d83
-:END:
