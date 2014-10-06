@@ -1266,7 +1266,8 @@ SCHEDULED: <2014-10-05 Sun .+1d>
 :STYLE:    
 :END:
 ** TODO take meds                                             :home:bedroom:
-SCHEDULED: <2014-10-04 Sat .+1d>
+SCHEDULED: <2014-10-07 Tue .+1d>
+- State "DONE"       from "TODO"       [2014-10-06 Mon 13:08]
 - State "DONE"       from "TODO"       [2014-10-03 Fri 20:16]
 - State "DONE"       from "TODO"       [2014-10-02 Thu 15:57]
 - State "DONE"       from "TODO"       [2014-10-01 Wed 17:22]
@@ -1430,11 +1431,12 @@ SCHEDULED: <2014-10-04 Sat .+1d>
 - State "DONE"       from "TODO"       [2013-10-05 Sat 15:52]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2014-10-03 Fri 20:16]
+:LAST_REPEAT: [2014-10-06 Mon 13:08]
 :STYLE:    
 :END:
 ** TODO drink water                                           :bedroom:home:
-SCHEDULED: <2014-10-06 Mon .+1d>
+SCHEDULED: <2014-10-07 Tue .+1d>
+- State "DONE"       from "TODO"       [2014-10-06 Mon 13:09]
 - State "DONE"       from "TODO"       [2014-10-05 Sun 17:10]
 - State "DONE"       from "TODO"       [2014-10-01 Wed 13:13]
 - State "DONE"       from "TODO"       [2014-09-28 Sun 18:09]
@@ -1552,7 +1554,7 @@ SCHEDULED: <2014-10-06 Mon .+1d>
 - State "DONE"       from "TODO"       [2013-10-22 Tue 20:01]
 :PROPERTIES:
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
-:LAST_REPEAT: [2014-10-05 Sun 17:10]
+:LAST_REPEAT: [2014-10-06 Mon 13:09]
 :STYLE:    habit
 :END:
 ** TODO water Malka                                                  :malka:
@@ -2646,8 +2648,9 @@ SCHEDULED: <2014-10-11 Sat +1m>
 :LAST_REPEAT: [2014-09-11 Thu 12:07]
 :END:
 
-** TODO moojo resourcebarn                                :computer:writing:
+** DONE moojo resourcebarn                                :computer:writing:
 SCHEDULED: <2014-10-06 Mon>
+- State "DONE"       from "TODO"       [2014-10-06 Mon 13:09]
 :PROPERTIES:
 :ID:       631dd6d8-b23d-4b9b-a94c-26070c151a05
 :END:
@@ -4629,6 +4632,6 @@ SCHEDULED: <2014-10-01 Wed>
 :ID:       178b9e3c-b9f3-4d90-a573-4f4bd4aab757
 :END:
 ** TODO thanksgiving tickets                                       :computer:
-:PROPERTIES:
-:ID:       1becb2f9-ceea-4182-a458-3402468edc0f
-:END:
+** TODO MooJo store email                                          :computer:
+** TODO MooJo address email                                        :computer:
+** TODO MooJo SCHOOL reminder email                                :computer:
