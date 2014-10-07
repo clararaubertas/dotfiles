@@ -2489,7 +2489,8 @@ SCHEDULED: <2014-10-13 Mon .+8d/10d>
 :LAST_REPEAT: [2014-10-06 Mon 11:30]
 :END:
 ** TODO file papers                                            :home:office:
-SCHEDULED: <2014-09-30 Tue .+2d/6d>
+SCHEDULED: <2014-10-08 Wed .+2d/6d>
+- State "DONE"       from "TODO"       [2014-10-06 Mon 15:55]
 - State "DONE"       from "TODO"       [2014-09-28 Sun 18:20]
 - State "DONE"       from "TODO"       [2014-09-23 Tue 17:23]
 - State "DONE"       from "TODO"       [2014-09-14 Sun 15:53]
@@ -2523,7 +2524,7 @@ SCHEDULED: <2014-09-30 Tue .+2d/6d>
 :PROPERTIES:
 :ID:       afc34b7e-7c57-4df1-a51e-1653a5ae352a
 :STYLE: habit
-:LAST_REPEAT: [2014-09-28 Sun 18:20]
+:LAST_REPEAT: [2014-10-06 Mon 15:55]
 :END:
 ** DONE [#B] get dentist                                             :phone:
 - State "DONE"       from "TODO"       [2014-08-20 Wed 16:18]
@@ -4581,9 +4582,10 @@ DEADLINE: <2014-09-30 Tue>
 :END:
 ** JESSE driver's license for car insurance :computer:
 ** TODO process notebook                                      :home:computer:
-SCHEDULED: <2014-09-25 Thu>
+SCHEDULED: <2014-09-25 Thu .+3d/5d>
 :PROPERTIES:
 :ID:       37292058-e425-4b4c-9e43-569e276b7fae
+:STYLE:    habit
 :END:
 ** TODO [#A] register for LL63                                    :computer:
 :PROPERTIES:
@@ -4632,7 +4634,8 @@ SCHEDULED: <2014-10-01 Wed>
 :PROPERTIES:
 :ID:       48c79237-e027-4e85-b699-0d145615154b
 :END:
-** TODO [#A] email Mom                                            :computer:
+** DONE [#A] email Mom                                            :computer:
+- State "DONE"       from "TODO"       [2014-10-06 Mon 15:44]
 :PROPERTIES:
 :ID:       fc691f46-7da5-427e-b1f6-e05c41c7af1b
 :END:
@@ -4641,7 +4644,8 @@ SCHEDULED: <2014-10-01 Wed>
 :PROPERTIES:
 :ID:       178b9e3c-b9f3-4d90-a573-4f4bd4aab757
 :END:
-** TODO [#A] thanksgiving tickets                                 :computer:
+** DONE [#A] thanksgiving tickets                                 :computer:
+- State "DONE"       from "TODO"       [2014-10-06 Mon 15:44]
 :PROPERTIES:
 :ID:       d16f5ad2-a034-42ba-82a3-d79bc5640384
 :END:
