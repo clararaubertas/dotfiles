@@ -4133,6 +4133,9 @@ DEADLINE: r<2014-07-21 Mon>
 :END:
 ** TODO plan trip to San Francisco
 SCHEDULED: <2014-10-09 Thu>
+:PROPERTIES:
+:ID:       e8ae9281-b73c-4e0f-b74d-49a1b9c3e14e
+:END:
 ** DONE [#B] get new winter coat
 SCHEDULED: <2014-09-22 Mon>
 - State "DONE"       from "TODO"       [2014-09-24 Wed 18:21]
