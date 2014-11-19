@@ -44,6 +44,8 @@ xterm*|rxvt*)
     ;;
 esac
 
+
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -218,9 +220,12 @@ hostStyle="\[$bold$red\]"
 else
 hostStyle="\[$yellow\]"
 fi
+
 # set the terminal title to the current working directory
-PS1="\[\033]0;\w\007\]"
-PS1+="\n" # newline
+#PS1="\[\033]0;\w\007\]"
+PROMPT_COMMAND='echo -ne "\033];${USER}@${HOSTNAME}: ${PWD}\007"'
+
+PS1="\n" # newline
 PS1+="$userStyle\u" # username
 PS1+="$white@"
 PS1+="$hostStyle\h" # host
