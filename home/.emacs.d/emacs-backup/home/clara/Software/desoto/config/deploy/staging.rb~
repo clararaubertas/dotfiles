@@ -1,3 +1,0 @@
-server 'flyoverthecity.parallactic.com', :app, :web, :db, :primary => true
-set :user, "web"
-set :deploy_to, "/var/www/flyoverthecity"

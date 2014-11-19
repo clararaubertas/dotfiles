@@ -35,8 +35,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-
-# If this is an xterm set the title to directory
+# If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
     PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
@@ -97,7 +96,8 @@ alias such=git
 alias very=git
 alias wow='git status'
 alias many='bundle exec cap'
-
+alias corm='crontab'
+alias cormtab='crontab'
 
 mymosh() { /usr/bin/mosh "$@" -- screen -dR -s bash -e^Aa;}
 

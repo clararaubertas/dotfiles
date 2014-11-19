@@ -1,4 +1,0 @@
-class AddAddressToOrders < ActiveRecord::Migration
-  def change
-  end
-end

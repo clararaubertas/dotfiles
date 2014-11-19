@@ -1,9 +1,0 @@
-.tab-text {
-
-  color: #000 !important;
-
-} 
-
-#urlbar {
-background-color: #F6F6F6 !important;
-color: #000000 !important; }

@@ -1,9 +1,0 @@
-class AddPositionShapeTimestamp < ActiveRecord::Migration
-  def up
-    add_column :position_shape, :still_there_time, :datetime
-  end
-
-  def down
-    remove_column :position_shape, :still_there_time
-  end
-end

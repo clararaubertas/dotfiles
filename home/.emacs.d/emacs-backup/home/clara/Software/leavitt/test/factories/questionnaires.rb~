@@ -1,5 +1,0 @@
-FactoryGirl.define do
-  factory :run do
-    questionnaire
-  end
-end

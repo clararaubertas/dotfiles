@@ -1,3 +1,0 @@
-require 'minimal'
-
-run MyApp.new

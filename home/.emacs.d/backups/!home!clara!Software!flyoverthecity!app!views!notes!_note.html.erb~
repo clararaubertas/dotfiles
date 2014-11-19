@@ -1,6 +1,0 @@
-<div class='note'>
-<%= n.text %>
-<br />
-<br />
--- <%= n.user.name %>, <%= n.created_at.to_s(:short) %>
-</div>

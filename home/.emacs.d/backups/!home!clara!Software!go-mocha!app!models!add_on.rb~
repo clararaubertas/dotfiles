@@ -1,3 +1,0 @@
-class AddOn < ActiveRecord::Base
-  attr_accessible :description, :menu_item_id, :price_cents
-end

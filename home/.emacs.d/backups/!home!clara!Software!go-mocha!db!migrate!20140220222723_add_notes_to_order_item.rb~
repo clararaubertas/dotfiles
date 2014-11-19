@@ -1,4 +1,0 @@
-class AddNotesToOrderItem < ActiveRecord::Migration
-  def change
-  end
-end

@@ -1,3 +1,0 @@
-<%= @question.name1 %>
-<%= image_tag 'arrow' %>
-<%= @question.name2 %>

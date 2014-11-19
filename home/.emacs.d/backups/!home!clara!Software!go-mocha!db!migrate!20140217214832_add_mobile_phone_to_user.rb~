@@ -1,4 +1,0 @@
-class AddMobilePhoneToUser < ActiveRecord::Migration
-  def change
-  end
-end

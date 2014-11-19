@@ -1,3 +1,0 @@
-class Room < ActiveRecord::Base
-  attr_accessible :shape_id, :color_id, :north_room_id, :west_room_id, :south_room_id, :east_room_id, :has_treasure
-end
