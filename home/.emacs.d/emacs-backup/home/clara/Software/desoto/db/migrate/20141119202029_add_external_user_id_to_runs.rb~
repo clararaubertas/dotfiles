@@ -1,0 +1,4 @@
+class AddExternalUserIdToRuns < ActiveRecord::Migration
+  def change
+  end
+end

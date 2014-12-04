@@ -1,0 +1,130 @@
+#!/usr/bin/ruby
+require 'term/ansicolor'
+include Term::ANSIColor
+
+class Cost
+  attr_accessor :time_unit
+  attr_accessor :n
+  attr_accessor :name
+  attr_accessor :description
+  
+  def format_string
+    bold("Spending #{cf(self.n)}") + bold(" on #{self.name} each #{self.time_unit}") +
+    "\n   #{self.description}"
+  end
+
+  def initialize(params)
+    self.n = params[:n]
+    self.time_unit = params[:time_unit]
+    self.name = params[:name]
+    self.description = params[:description]
+    self.time_unit ||= :month
+  end
+end
+
+@descriptions = {}
+
+@packaging_cost = 1
+@descriptions[:packaging_cost] =
+"City of Cambridge Inspectional Services says we don't need to refrigerate during transport."
+
+@boxes_per_day = 100
+@descriptions[:boxes_per_day] =
+"Each day of delivery we will deliver only to a specific part of the Boston Metro Area.
+  Customers will choose from delivery 1, 2, 3, or 4 weeks per month."   
+
+@box_price = 20
+@descriptions[:box_price] = 
+"$24 is the cheapest box that Boston Organics (popular local vegetable box service) offers... 
+   I'd like to keep the box as affordable as possible, since I know Boston Organics prices itself out of a lot of households.
+   Ideally we would be price competitive with grocery stores with the added convenience of delivery, but I will need to research grocery store prices and the prices I can get on various products to see if this is realistic."
+
+@margin = 55
+@descriptions[:margin] =
+"Seems reasonable... obviously could vary."
+
+@costs =
+  [Cost.new(:name => 'rent', :n => 500, :description =>  
+            "Hoping to rent-share with an existing licensed restaurant somehow.
+   We probably need a licensed refrigerated area to temporarily store products and to assemble boxes, but since we won't need to use it full-time and may be able to be pretty flexible about the days/times, hopefully we can find an affordable share."),
+   Cost.new(:name => 'salary', :n => 2000, :description =>
+            "Can be deferred, but needs to be accounted for.
+  This includes the cost of developing MightyBox's information technology architecture, since MB's founder is an experienced database programmer!"),
+   Cost.new(:name => 'insurance', :n => 50, :description =>
+            "$50 is around what Open Produce pays"),
+   Cost.new(:name => 'permit fees', :n => 50, :description =>
+            "$50 is around what Open Produce pays"),
+   Cost.new(:name => 'truck', :n => 70, :time_unit => :delivery_day, :description => 
+            "$70 cost for any type of car via ZipCar for Business
+   gas, insurance included"),
+   Cost.new(:name => 'truck driver', :n => 80, :time_unit => :delivery_day, :description => 
+            "$80 estimate based on 6 hours of labor at $10/hr
+   plus some overhead"),
+   Cost.new(:name => 'miscellaneous', :n => 1000, :description => 
+            "There's always miscellaneous. 
+   Marketing costs subsumed under here for now")
+  ]
+
+
+def monthly_profit(units)
+  (((@box_price * @margin/100) - @packaging_cost) * units) -
+    monthly_operating_cost(units)
+end
+
+def monthly_operating_cost(units)
+  fixed_costs = @costs.select {|c| c.time_unit == :month }
+  variable_costs = @costs.select { |c| c.time_unit == :delivery_day }
+  fixed_costs.map(&:n).reduce(:+) + 
+    (variable_costs.map(&:n).reduce(:+) * (units / @boxes_per_day))
+end
+
+def break_even_point(units = 1, max = 5000)
+  if monthly_profit(units) > 0
+    return units.to_i
+  elsif units > max
+    return 0
+  else
+    return break_even_point(units + 1, max)
+  end
+end
+
+def cf(string)
+  return "$#{string.to_s}".blue
+end
+
+def formatted_plan
+  if break_even_point == 0
+    puts red("MIGHTYBOX will never be profitable with the numbers you have used.")
+  else
+    puts "--------------"
+    puts white(on_black(bold("MIGHTYBOX")))
+    puts "MIGHTYBOX is a vegetarian protein delivery service for consumers."
+    puts "Customers can subscribe to a box of protein that will arrive 1-4 times per month; the box will be stocked with soy tenders, seitan, tofu, vegan jerky, and other vegetarian protein products sourced from a variety of distributors and stores."
+    puts ""
+    puts white(on_black(bold("CUSTOMERS")))
+    puts "MIGHTYBOX appeals most obviously to committed vegetarians and vegans, a rapidly growing segment of the population. The 'farm share' model shows that customers will pay for deliveries of fresh vegetables and even frozen 'meat CSAs' -- but meat shares obviously don't appeal to vegetarians, so MightyBox will be targeting this market segment."
+    puts "MightyBox also aims to provide a convenient delivery service, a high protein-to-fat ratio in each box, and an affordable and (where practical) locally-sourced collection of products, all of which may appeal to customers who are omnivores or 'flexitarians'."
+    puts ""
+    puts white(on_black(bold("BREAK-EVEN POINT:")))
+    puts "  #{blue(break_even_point.to_s)} boxes monthly (#{blue((break_even_point / 4).to_s)} each week)"
+    puts ""
+    puts white(on_black(bold("COST BREAKDOWN:")))
+    puts bold("Selling each box to the consumer for #{cf(@box_price)}")
+    puts "   #{@descriptions[:box_price]}"
+    puts "An overhead cost of #{cf(@packaging_cost)}".bold + " for packaging each box".bold
+    puts "   #{@descriptions[:packaging_cost]}"
+    puts "Having an average margin of #{blue(@margin.to_s + "%")}".bold + " on box contents".bold
+    puts "   #{@descriptions[:margin]}"
+    puts "Delivering #{@boxes_per_day.to_s.blue} ".bold + "boxes on each delivery day".bold
+    puts "   #{@descriptions[:boxes_per_day]}\n"
+    @costs.each { |cost| puts cost.format_string }
+    puts ""
+    puts white(on_black(bold("MONTHLY OPERATING COST:")))
+    puts "  #{monthly_operating_cost(break_even_point)}"
+    puts "---------------"
+    puts "100 boxes"
+    puts " #{monthly_operating_cost(100)}"
+  end
+end
+
+puts formatted_plan

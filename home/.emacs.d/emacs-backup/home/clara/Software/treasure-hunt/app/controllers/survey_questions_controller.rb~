@@ -1,0 +1,10 @@
+class SurveyQuestionsController < ApplicationController
+
+  def survey
+    @survey_quesitons = SurveyQuestion.all
+    if request.post?
+      SurveyAnswer.create params[:survey_answers]
+    end
+  end
+
+end

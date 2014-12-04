@@ -1,0 +1,48 @@
+#!/usr/bin/ruby
+require 'rubygems'
+require 'nokogiri'
+require 'open-uri'
+require 'mechanize'
+require 'csv'
+
+$results = Array.new
+
+def process_page(url)
+  mechanize = Mechanize.new
+  page = mechanize.get(url)
+  begin
+    print "."
+    for f in page.forms
+      # this is a check for stricter filtering than originally requested, because at least on the sites I was testing with I got a lot of false positives from comment forms
+      # just remove the 'if' statement to get *all* forms
+      if f.inspect.match(/contact/i)
+        $results << [url, page.uri]
+      end
+    end
+  rescue Exception => e  
+    # puts "Couldn't parse #{url} for some reason: #{e.message}"
+    # commented out the puts because it's not really useful; it seems to make the most sense to skip and move on if an error encountered
+    # in this context we get errors for things like following links to jpgs that we just want to ignore
+  end
+end
+
+
+urls = CSV.read(ARGV.first).first
+
+urls.each do |u|
+  mechanize = Mechanize.new
+  page = mechanize.get(u)
+  # this is one level of screen scraping. possibly, upgrade to more levels of recursion; in that case, will need checks to prevent long loops
+  page.links.each do |link|
+    next unless link.uri && link.uri.host && link.uri.host.match(URI.parse(u).host)
+    process_page(link.uri)
+  end
+
+end
+
+CSV.open(ARGV[1] || 'results.csv', 'w' ) do |writer|
+  $results.each do |r|
+    writer << r
+  end
+end
+

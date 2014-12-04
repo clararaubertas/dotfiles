@@ -2,5 +2,6 @@ home/.emacs.d/auto-save-list
 home/.emacs.d/places
 home/.emacs.d/session.*
 home/.emacs.d/backups
+home/.emacs.d/emacs-backup
 home/.emacs.d/lawlist-org
 home/.emacs.d/emacs-color-theme-solarized

@@ -1,0 +1,8 @@
+To access the admin panel, visit http://treasure-hunt.parallactic.com/admin/ and log in with 'admin@example.com', 'password'.
+
+You will need to create "games" for users to play. Each user who visits the homepage will be sent to a randomly selected game that is *active* -- you will need to use the admin interface to set to "active" the games 
+
+Each game has its own map that does not change; 
+
+To get data on the runs, visit http://treasure-hunt.parallactic.com/admin/runs; there you can see the length of time each run took, what round in the user's game session it was, and what map the run was using.
+

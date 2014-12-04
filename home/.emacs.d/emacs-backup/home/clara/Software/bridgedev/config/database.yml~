@@ -1,0 +1,15 @@
+staging:
+  host: localhost
+  database: bridgedev
+  username: root
+  password: ''
+production:
+  host: localhost
+  database: wordpress_4
+  username: bridgedev
+  password: 'developer789'
+local:
+  host: localhost
+  database: bridgedev
+  username: root
+  password: ''
