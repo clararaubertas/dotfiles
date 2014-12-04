@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- esk-sudo-edit
  package-install
+ list-packages
+ about-emacs
+ package-menu-mark-unmark
+ esk-sudo-edit
  org-agenda-todo-yesterday
  eval-defun
- eval-current-buffer
- org-tags-view
- replace-string
 )
 
 ;; ----- smex-data -----
@@ -16,7 +16,7 @@
  (esk-sudo-edit . 77)
  (eshell . 3)
  (org-babel-execute-buffer . 2)
- (package-install . 53)
+ (package-install . 54)
  (replace-string . 61)
  (recover-this-file . 2)
  (global-set-key . 1)
@@ -26,7 +26,7 @@
  (ruby-electric-mode . 4)
  (eval-current-buffer . 237)
  (global-rinari-mode . 4)
- (list-packages . 2)
+ (list-packages . 4)
  (heartbeat-cursor-mode . 15)
  (eval-region . 42)
  (spook . 1)
@@ -112,4 +112,6 @@
  (org-agenda-todo-yesterday . 10)
  (org-tags-view . 1)
  (lawlist-reorganize . 4)
+ (package-menu-mark-unmark . 1)
+ (about-emacs . 1)
 )

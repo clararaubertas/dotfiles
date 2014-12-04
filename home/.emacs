@@ -1,52 +1,29 @@
 ;; it's clara's .emacs
 
 ;;;;;;;;;; I. Package Management ;;;;;;;;;;
-(require 'package)
-
+(package-initialize)
 (add-to-list 'package-archives
              '("ELPA" . "http://tromey.com/elpa/")) 
 (add-to-list 'package-archives
                '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives
                '("marmalade" . "http://marmalade-repo.org/packages/"))
-;;(add-to-list 'package-archives
-;;               '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives
+               '("melpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives
                '("org" . "http://orgmode.org/elpa/"))
-(package-initialize)
+
+
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/org-sync")
- (mapc 'load
+
+(mapc 'load
        '("os" "os-github"))
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
 (require 'android-mode)
-;; (custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
-
-;; all packages
-(defun package-update-all ()
-  "Update all packages"
-  (interactive)
-  (dolist (elt package-alist)
-    (let* ((name (car elt))
-           (file-name (symbol-name name))
-           (available-pkg (assq name package-archive-contents))
-           (available-version (and available-pkg
-                                   (package-desc-vers (cdr available-pkg))))
-           (current-version (package-desc-vers (cdr elt)))
-           )
-      (when (and available-version
-                 (version-list-< current-version available-version))
-        (message "Updating to: %s - %s" file-name
-                 (package-version-join available-version))
-        (package-install name)
-        (package-delete file-name (package-version-join current-version))))))
-(package-update-all)
-(byte-recompile-directory (expand-file-name "~/.emacs.d") 0)
-;;;;;;;;;; END Package Management ;;;;;;;;;;
-
-;;;;;;;;;; II. Starter Kit ;;;;;;;;;;
+(custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
 (require 'starter-kit)
 ;;;;;;;;;; ;;;;;;;;;;
 
@@ -58,7 +35,7 @@
 (add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
 (add-hook 'ruby-mode-hook (lambda () (rainbow-mode 1)))
 (add-hook 'emacs-lisp-mode-hook (lambda () (rainbow-mode 1)))
-(global-rainbow-delimiters-mode)
+;;(global-rainbow-delimiters-mode)
 (global-pretty-mode)
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
@@ -106,8 +83,8 @@ If the new path's directories does not exist, create them."
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 ;;;;;;;;;; ;;;;;;;;;;
 
-;; ;; git
-;; (require 'magit)
+;; git
+(require 'magit)
 
 ;; (require 'auto-complete)
 ;; (require 'auto-complete-config)
@@ -243,7 +220,9 @@ If the new path's directories does not exist, create them."
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (setq org-mobile-directory "~/Dropbox/MobileOrg")
 (setq org-mobile-inbox-for-pull "~/Text/orgmob")
-(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/para" "~/Text/shopping.org" "~/Text/bi.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org" "~/Text/tv.org")))
+(require 'org-mobile-sync)
+(org-mobile-sync-mode 1)
+(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/para" "~/Text/shopping.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org" "~/Text/tv.org")))
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 
@@ -267,7 +246,7 @@ If the new path's directories does not exist, create them."
     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(time-up tag-up priority-down))
+(setq org-agenda-sorting-strategy '(tag-up time-up priority-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
@@ -285,7 +264,7 @@ If the new path's directories does not exist, create them."
         ("p" "wow such agenda"
          ( (tags-todo "+PRIORITY=\"A\""
                       ( (org-agenda-overriding-header "")
-                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
+;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
                         ))
            (agenda "" 
                    ((org-agenda-ndays 1)                      ;; daily agenda
@@ -296,18 +275,18 @@ If the new path's directories does not exist, create them."
                          ))
            (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
                       ( (org-agenda-overriding-header "")
-                        (org-agenda-sorting-strategy '(todo-state-down tag-down))
+  ;;                      (org-agenda-sorting-strategy '(todo-state-down tag-down))
                         ))
            (todo "WAITING"
                  ( (org-agenda-overriding-header nil)
                    ) )
            (tags-todo "+PRIORITY=\"C\""
                       ( (org-agenda-overriding-header nil)
-                        (org-agenda-sorting-strategy '(tag-up))
+    ;;                    (org-agenda-sorting-strategy '(tag-up))
                         ))
            )
          ((org-agenda-compact-blocks t)
-          (org-agenda-sorting-strategy '(priority-down time-up tag-down habit-down))
+;;          (org-agenda-sorting-strategy '(priority-down time-up tag-down habit-down))
           (org-agenda-prefix-format "  ")
           (org-agenda-skip-entry-if 'scheduled)
           (org-fast-tag-selection-single-key (quote expert))
