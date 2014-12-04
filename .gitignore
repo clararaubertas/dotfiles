@@ -3,3 +3,5 @@ home/.emacs.d/places
 home/.emacs.d/elpa
 home/.emacs.d/session.*
 home/.emacs.d/backups
+home/.emacs.d/lawlist-org
+home/.emacs.d/emacs-color-theme-solarized
