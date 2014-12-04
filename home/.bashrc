@@ -100,6 +100,7 @@ alias wow='git status'
 alias many='bundle exec cap'
 alias corm='crontab'
 alias cormtab='crontab'
+alias emacs='emacsclient -c'
 
 mymosh() { /usr/bin/mosh "$@" -- screen -dR -s bash -e^Aa;}
 
