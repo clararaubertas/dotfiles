@@ -14,7 +14,7 @@
                '("org" . "http://orgmode.org/elpa/"))
 
 
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/*")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/org-sync")
 
@@ -24,7 +24,7 @@
 (require 'org-agenda-property)
 (require 'android-mode)
 (custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
-(require 'starter-kit)
+;; (require 'starter-kit)
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
