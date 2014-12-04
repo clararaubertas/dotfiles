@@ -1,4 +1,5 @@
 
+&%%(and (diary-cyclic 7 12 4 2014)) 18:15-19:15 band
 &12/1/2014 13:15-14:15 RailsBridge Convo
  Organizer: mailto:emily@devbootcamp.com
 &11/30/2014 13:35-16:15 Flight to Chicago
@@ -27,7 +28,6 @@
 &11/29/2014 12:20-13:20 Check in for flight
 &%%(and (diary-block 12 27 2014 12 27 2014)) philadelphia
 &%%(and (diary-block 12 26 2014 12 26 2014)) philadelphia
-&12/4/2014 18:00-19:00 band
 &%%(and (diary-block 5 6 2015 5 10 2015)) Scav hunt
 &%%(and (diary-block 3 11 2015 3 13 2015)) vegas!
 &%%(and (diary-block 8 29 2015 9 5 2015)) burning man
@@ -1374,6 +1374,7 @@
 &%%(and (diary-block 5 28 2006 5 28 2006)) write HIPS exam
 &%%(and (diary-block 5 28 2006 5 28 2006)) finish drafting HIPS final paper
  Location: maclab
+&12/2/2014 11:00-12:00 call re: unpage
 &%%(and (diary-block 2 16 2015 2 22 2015)) Steven gone
 &%%(and (diary-block 11 1 2014 11 11 2014)) steven gone
 &%%(and (diary-block 2 9 2015 2 14 2015)) Steven busy with Vday

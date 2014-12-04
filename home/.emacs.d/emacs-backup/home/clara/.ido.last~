@@ -124,7 +124,7 @@
  ("/home/clara/Software/" . "bridgedev/")
  ("/home/clara/Software/lendsquare/app/views/" . "notifier/")
  ("/home/clara/Software/lendsquare/app/" . "models/")
- ("/home/clara/" . "Software/")
+ ("/home/clara/" . ".AndroidStudioBeta/")
  ("/home/clara/.emacs.d/elpa/" . "org-20140310/")
  ("/home/clara/.emacs.d/" . "lawlist-org/")
  ("/usr/share/" . "vlc/")
@@ -134,11 +134,11 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/"
  "/home/clara/Software/bridgedev/content/themes/better/"
  "/home/clara/Software/bridgedev/"
  "/home/clara/Software/bridgedev/content/themes/better/includes/"
  "/home/clara/.homesick/repos/dotfiles/home/"
- "/home/clara/"
  "/home/clara/Text/"
  "/home/clara/Software/hat/app/models/"
  "/home/clara/Software/hat/app/models/cards/"
@@ -188,6 +188,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".emacs"
  "header.php"
  "content.php"
  "template-blog.php"
@@ -196,13 +197,14 @@
  "aq_resizer.php"
  ".gitignore"
  ".gitconfig"
- ".emacs"
  "read.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/" (21615 45714 645719 677000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" "privateironyandliberalhope.pdf" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" "10-02-14.odt" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".applications/" "Text/" ".profile" ".cinnamon/" "article.odt" ".gphoto/" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".FontForge/" "music/" ".Skype/" ".mysql_history" "sex word search.pdf" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".xine/" "contingencyofselfhood.pdf" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".lesshst" ".dropbox/" ".emacs.d/" ".bzr.log" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" ".gitconfig" ".gconf/" ".AndroidStudioBeta/" ".wireshark/" "whaa-nup.pdf" ".bash_logout" ".bazaar/" ".gemrc" ".emerald/" ".huludesktop" ".gradle/" ".macromedia/" ".selected_editor" ".gem/" ".android/" ".gitk" "Inform/" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" "malka" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".wine/" ".thunderbird/" ".gdfuse/" ".pki/" "Pictures/" ".gksu.lock" ".synaptic/" ".exercism" "no-week.png" ".xinputrc" ".steam/" ".Xauthority.TNT00W" "draft.odt" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".npm/" ".fonts.conf" ".bash_profile" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" "solidarity.pdf" ".appdata/" ".zshrc" "opt/" ".pry_history" "Software/")
+ ("/home/clara/.AndroidStudioBeta/" (21517 60998 808979 70000) "./" "config/" "../" "system/")
+
+ ("/home/clara/" (21615 46356 637726 975000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" "privateironyandliberalhope.pdf" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" "10-02-14.odt" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".applications/" "Text/" ".profile" ".cinnamon/" "article.odt" ".gphoto/" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".FontForge/" "music/" ".Skype/" ".mysql_history" "sex word search.pdf" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".xine/" "contingencyofselfhood.pdf" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".lesshst" ".dropbox/" ".emacs.d/" ".bzr.log" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" ".gitconfig" ".gconf/" ".AndroidStudioBeta/" ".wireshark/" "whaa-nup.pdf" ".bash_logout" ".bazaar/" ".gemrc" ".emerald/" ".huludesktop" ".gradle/" ".macromedia/" ".selected_editor" ".gem/" ".android/" ".gitk" "Inform/" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" "malka" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".wine/" ".thunderbird/" ".gdfuse/" ".pki/" "Pictures/" ".gksu.lock" ".synaptic/" ".exercism" "no-week.png" ".xinputrc" ".steam/" ".Xauthority.TNT00W" "draft.odt" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".npm/" ".fonts.conf" ".bash_profile" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" "solidarity.pdf" ".appdata/" ".zshrc" "opt/" ".pry_history" "Software/")
 
  ("/home/clara/Software/bridgedev/content/themes/better/" (21540 35005 954056 342000) "footer.php" "content.php" "wpml-config.xml" "functions.php" "template-portfolio.php" "./" "attachment.php" "template-contact.php" "changelog.txt" "pixelentity-theme-update/" "lang/" "js/" "404.php" "../" "page.php" "includes/" "images/" "template-slider.php" "archive.php" "template-blog.php" "template-archives.php" "header.php" "single-portfolio.php" "css/" "index.php" "font/" "comments.php" "screenshot.png" "search.php" "style.css~" "option-tree/" "editor-style.css" "style.css" "template-sitemap.php" "single.php")
 
