@@ -239,3 +239,6 @@ export PS1
 }
 set_prompts
 unset set_prompts
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
