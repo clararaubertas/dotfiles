@@ -23,7 +23,7 @@
  
  Location: Chicago MDW
  Organizer: mailto:unknownorganizer@calendar.google.com
-&%%(and (diary-cyclic 7 12 4 2014)) 18:15-19:15 band
+&%%(and (not (diary-date 1 1 2015)) (not (diary-date 12 25 2014)) (not (diary-date 12 18 2014)) (not (diary-date 12 11 2014)) (diary-cyclic 7 12 4 2014)) 18:15-19:15 band
 &12/1/2014 13:15-14:15 RailsBridge Convo
  Organizer: mailto:emily@devbootcamp.com
 &11/30/2014 13:35-16:15 Flight to Chicago
