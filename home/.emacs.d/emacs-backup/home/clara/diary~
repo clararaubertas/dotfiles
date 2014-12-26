@@ -1,4 +1,7 @@
 
+&12/27/2014 09:45-10:45 tucker arrive chicago
+&12/23/2014 12:30-13:30 House building party
+ Desc:  
 &%%(and (diary-block 12 26 2014 12 27 2014)) Stay at Motel 6 Philadelphia King of Prussia
  Desc: To get a better Google Calendar experience for automatically created events like this one, use the official Google Calendar app. http://g.co/calendar
  
@@ -6,6 +9,8 @@
  
  Location: Motel 6 Philadelphia - King of Prussia
  Organizer: mailto:unknownorganizer@calendar.google.com
+&12/22/2014 16:30-17:30 Dinner with bike monks
+&%%(and (diary-block 2 3 2015 2 8 2015)) san francisco
 &%%(and (diary-cyclic 7 1 5 2015)) 09:00-10:00 laundry pickup
 &%%(and (diary-block 4 3 2015 4 3 2015)) April trip
 &%%(and (diary-block 12 16 2014 12 16 2014)) date
@@ -55,7 +60,6 @@
 &12/6/2014 09:00-17:00 Railsbridge workshop
 &12/5/2014 06:30-09:00 Railsbridge install
 &%%(and (diary-block 12 27 2014 1 4 2015)) Tucker visit
-&%%(and (diary-block 2 3 2015 2 8 2015)) san francisco
 &2/8/2015 15:55-20:05 Flight to Chicago
  Desc: To get a better Google Calendar experience for automatically created events like this one, use the official Google Calendar app. http://g.co/calendar
  Location: San Francisco SFO
@@ -82,7 +86,6 @@
 &%%(and (diary-block 12 15 2014 12 15 2014)) Fall 2014 classes end
 &11/16/2014 18:00-19:00 Matt's 31st Birthday Party
 &11/13/2014 18:15-19:15 band
-&12/27/2014 09:45-10:45 tucker arrive chicago
 &%%(and (diary-date t 20 t) (diary-block 11 20 2014 1 1 9999)) 18:00-22:00 Adler After Dark
 &%%(and (diary-block 12 28 2014 1 4 2015)) Alex visit
 &%%(and (diary-block 11 9 2014 11 9 2014)) brunch @ katie's
@@ -157,11 +160,11 @@
 &9/23/2014 12:00-13:00 JBR @ Crudup
 &%%(and (diary-date t 14 t) (diary-block 10 14 2014 1 1 9999)) 13:00-14:30 Drop-in dog therapy
  Location: Rainbow Animal Assisted Therapy, 6042 Oakton St, Morton Grove, IL, United States
-&%%(and (diary-date t 23 t) (diary-block 9 23 2014 1 1 9999)) 13:00-14:30 Drop-in dog therapy
+&%%(and (not (diary-date 12 23 2014)) (diary-date t 23 t) (diary-block 9 23 2014 1 1 9999)) 13:00-14:30 Drop-in dog therapy
  Location: Rainbow Animal Assisted Therapy, 6042 Oakton St, Morton Grove, IL, United States
 &%%(and (diary-date t 17 t) (diary-block 9 17 2014 1 1 9999)) 19:00-20:30 Drop-in dog therapy
  Location: Rainbow Animal Assisted Therapy, 6042 Oakton St, Morton Grove, IL, United States
-&%%(and (diary-date t 1 t) (diary-block 10 1 2014 1 1 9999)) 19:00-20:30 Drop-in dog therapy
+&%%(and (not (diary-date 2 4 2015)) (diary-date t 1 t) (diary-block 10 1 2014 1 1 9999)) 19:00-20:30 Drop-in dog therapy
  Location: Rainbow Animal Assisted Therapy, 6042 Oakton St, Morton Grove, IL, United States
 &9/18/2014 16:30-17:30 Railsbridge meeting
  Location: Brad's Deals, 640 n Lasalle, suite 460.
@@ -1412,6 +1415,8 @@
 &%%(and (diary-block 5 28 2006 5 28 2006)) write HIPS exam
 &%%(and (diary-block 5 28 2006 5 28 2006)) finish drafting HIPS final paper
  Location: maclab
+&%%(and (diary-block 3 11 2015 3 13 2015)) Clara in Las Vegas
+&%%(and (diary-block 2 3 2015 2 8 2015)) Clara in San Francisco
 &12/11/2014 14:00-15:00 c&s
 &12/4/2014 13:00-17:00 c&s moomers
 &12/2/2014 11:00-12:00 call re: unpage
