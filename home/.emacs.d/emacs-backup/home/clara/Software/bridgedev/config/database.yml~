@@ -5,9 +5,9 @@ staging:
   password: ''
 production:
   host: localhost
-  database: wordpress_4
-  username: bridgedev
-  password: 'developer789'
+  database: bridgedev
+  username: wordpress
+  password: 'wordpress'
 local:
   host: localhost
   database: bridgedev
