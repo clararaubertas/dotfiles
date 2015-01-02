@@ -1,18 +1,22 @@
 
+&1/7/2015 17:30-18:30 railsbridge mtg?
+&%%(and (diary-block 4 3 2015 4 3 2015)) seder
+&%%(and (diary-block 4 2 2015 4 5 2015)) Passover in Glastonbury
+&4/6/2015 14:50-17:20 Flight to Chicago
+ Desc: To get a better Google Calendar experience for automatically created events like this one, use the official Google Calendar app. http://g.co/calendar
+ Location: Hartford BDL
+ Organizer: mailto:unknownorganizer@calendar.google.com
+&4/2/2015 12:20-14:20 Flight to Hartford
+ Desc: To get a better Google Calendar experience for automatically created events like this one, use the official Google Calendar app. http://g.co/calendar
+ Location: Chicago MDW
+ Organizer: mailto:unknownorganizer@calendar.google.com
+&12/28/2014 16:00-17:00 Holiday Get-Together
 &12/27/2014 09:45-10:45 tucker arrive chicago
 &12/23/2014 12:30-13:30 House building party
  Desc:  
-&%%(and (diary-block 12 26 2014 12 27 2014)) Stay at Motel 6 Philadelphia King of Prussia
- Desc: To get a better Google Calendar experience for automatically created events like this one, use the official Google Calendar app. http://g.co/calendar
- 
- This event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOAUyF-HB-HU0at68-JjM_4AbuGls7_c7Y
- 
- Location: Motel 6 Philadelphia - King of Prussia
- Organizer: mailto:unknownorganizer@calendar.google.com
 &12/22/2014 16:30-17:30 Dinner with bike monks
 &%%(and (diary-block 2 3 2015 2 8 2015)) san francisco
 &%%(and (diary-cyclic 7 1 5 2015)) 09:00-10:00 laundry pickup
-&%%(and (diary-block 4 3 2015 4 3 2015)) April trip
 &%%(and (diary-block 12 16 2014 12 16 2014)) date
  Organizer: mailto:clara.raubertas@gmail.com
 &12/15/2014 18:30-21:30 December Developer Dinner
@@ -54,7 +58,6 @@
  
  Location: Hartford BDL
  Organizer: mailto:unknownorganizer@calendar.google.com
-&%%(and (diary-block 4 1 2015 4 3 2015)) Passover in Glastonbury
 &%%(and (diary-block 12 10 2014 12 10 2014)) MooJo submissions due
 &12/1/2014 18:00-20:00 Railsbridge TA training
 &12/6/2014 09:00-17:00 Railsbridge workshop
@@ -69,8 +72,6 @@
  Location: Chicago MDW
  Organizer: mailto:unknownorganizer@calendar.google.com
 &11/29/2014 12:20-13:20 Check in for flight
-&%%(and (diary-block 12 27 2014 12 27 2014)) philadelphia
-&%%(and (diary-block 12 26 2014 12 26 2014)) philadelphia
 &%%(and (diary-block 5 6 2015 5 10 2015)) Scav hunt
 &%%(and (diary-block 3 11 2015 3 13 2015)) vegas!
 &%%(and (diary-block 8 29 2015 9 5 2015)) burning man
@@ -1415,6 +1416,7 @@
 &%%(and (diary-block 5 28 2006 5 28 2006)) write HIPS exam
 &%%(and (diary-block 5 28 2006 5 28 2006)) finish drafting HIPS final paper
  Location: maclab
+&%%(and (diary-block 4 2 2015 4 5 2015)) Clara in Glastonbury
 &%%(and (diary-block 3 11 2015 3 13 2015)) Clara in Las Vegas
 &%%(and (diary-block 2 3 2015 2 8 2015)) Clara in San Francisco
 &12/11/2014 14:00-15:00 c&s
