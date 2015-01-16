@@ -4658,7 +4658,8 @@ SCHEDULED: <2015-01-10 Sat .+21d/28d>
 :ID:       c4d76f13-3216-40f8-8350-357ede19148e
 :END:
 ** TODO clear off dining table                             :home:diningroom:
-SCHEDULED: <2015-01-15 Thu .+1d/3d>
+SCHEDULED: <2015-01-16 Fri .+1d/3d>
+- State "DONE"       from "TODO"       [2015-01-15 Thu 22:49]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:51]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:04]
 - State "DONE"       from "TODO"       [2014-12-25 Thu 16:11]
@@ -4717,7 +4718,7 @@ SCHEDULED: <2015-01-15 Thu .+1d/3d>
 - State "DONE"       from "TODO"       [2014-02-15 Sat 22:29]
 :PROPERTIES:
 :STYLE: habit
-:LAST_REPEAT: [2015-01-14 Wed 16:51]
+:LAST_REPEAT: [2015-01-15 Thu 22:49]
 :ID:       5e1f9dde-93fd-4b26-aaee-2fa33106b880
 :END:
 ** DONE [#B] layouts for moojo issues                             :computer:
@@ -12277,3 +12278,5 @@ k
 ** TODO [#A] life.org archiving                                   :computer:
 ** TODO clean up .emacs file                                       :computer:
 ** TODO get rug                                                    :shopping:
+** TODO clean up office boxes                                          :home:
+** TODO rearrange office furniture                              :home:office:
