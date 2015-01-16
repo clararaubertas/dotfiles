@@ -9,7 +9,7 @@
  (position . 151846))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO fix tach")
- (rear-context-string . "2dd889086\n:END:\n")
- (position . 330278))
+ (front-context-string . "** TODO get phon")
+ (rear-context-string . "omputer:tablet:\n")
+ (position . 455185))
 )
