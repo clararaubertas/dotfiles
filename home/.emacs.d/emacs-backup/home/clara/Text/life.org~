@@ -33,7 +33,8 @@ SCHEDULED: <2015-01-28 Wed +1m>
 :END:
 *
 ** TODO brush teeth                                          :home:bathroom:
-SCHEDULED: <2015-01-15 Thu .+1d>
+SCHEDULED: <2015-01-17 Sat .+1d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 12:30]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:51]
 - State "DONE"       from "TODO"       [2015-01-09 Fri 19:22]
 - State "DONE"       from "TODO"       [2015-01-08 Thu 14:48]
@@ -187,11 +188,12 @@ SCHEDULED: <2015-01-15 Thu .+1d>
 - State "DONE"       from "TODO"       [2013-10-05 Sat 15:09]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-01-14 Wed 16:51]
+:LAST_REPEAT: [2015-01-16 Fri 12:30]
 :STYLE:    habit
 :END:
 ** TODO wash face                                            :home:bathroom:
-SCHEDULED: <2015-01-15 Thu .+1d>
+SCHEDULED: <2015-01-17 Sat .+1d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 12:30]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:51]
 - State "DONE"       from "TODO"       [2015-01-09 Fri 19:22]
 - State "DONE"       from "TODO"       [2015-01-08 Thu 14:48]
@@ -296,7 +298,7 @@ SCHEDULED: <2015-01-15 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-02-19 Wed 17:10]
 - State "DONE"       from "TODO"       [2014-02-16 Sun 17:26]
 :PROPERTIES:
-:LAST_REPEAT: [2015-01-14 Wed 16:51]
+:LAST_REPEAT: [2015-01-16 Fri 12:30]
 :ID:       ea91157e-cb13-4e92-b6b5-0e2d0e537de5
 :STYLE:    habit
 :END:
@@ -818,7 +820,8 @@ SCHEDULED: <2015-01-15 Thu .+1d/2d>
 :LAST_REPEAT: [2015-01-14 Wed 16:51]
 :END:
 ** TODO charge tablet                                         :home:bedroom:
-SCHEDULED: <2015-01-16 Fri .+1d/2d>
+SCHEDULED: <2015-01-17 Sat .+1d/2d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 12:30]
 - State "DONE"       from "TODO"       [2015-01-15 Thu 21:59]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:50]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:04]
@@ -958,7 +961,7 @@ SCHEDULED: <2015-01-16 Fri .+1d/2d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       bd40d909-f4f5-4a51-8ee7-0f3eab91c9c6
-:LAST_REPEAT: [2015-01-15 Thu 21:59]
+:LAST_REPEAT: [2015-01-16 Fri 12:30]
 :END:
 ** TODO clean bathtub                                        :home:bathroom:
 SCHEDULED: <2015-01-11 Sun .+6d/10d>
@@ -1477,7 +1480,8 @@ SCHEDULED: <2015-01-16 Fri .+1d/2d>
 :LAST_REPEAT: [2015-01-15 Thu 21:59]
 :END:
 ** TODO make bed                                              :home:bedroom:
-SCHEDULED: <2015-01-15 Thu .+1d>
+SCHEDULED: <2015-01-17 Sat .+1d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 12:30]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:50]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:04]
 - State "DONE"       from "TODO"       [2015-01-09 Fri 19:22]
@@ -1709,11 +1713,12 @@ SCHEDULED: <2015-01-15 Thu .+1d>
 - State "DONE"       from "TODO"       [2013-10-07 Mon 11:44]
 :PROPERTIES:
 :ID:       0c4ffe26-1cc3-433a-8de0-27266f66589c
-:LAST_REPEAT: [2015-01-14 Wed 16:50]
+:LAST_REPEAT: [2015-01-16 Fri 12:30]
 :STYLE:    
 :END:
 ** TODO take meds                                             :home:bedroom:
-SCHEDULED: <2015-01-16 Fri .+1d>
+SCHEDULED: <2015-01-17 Sat .+1d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 12:30]
 - State "DONE"       from "TODO"       [2015-01-15 Thu 21:59]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:04]
 - State "DONE"       from "TODO"       [2015-01-09 Fri 19:22]
@@ -1924,7 +1929,7 @@ SCHEDULED: <2015-01-16 Fri .+1d>
 - State "DONE"       from "TODO"       [2013-10-05 Sat 15:52]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-01-15 Thu 21:59]
+:LAST_REPEAT: [2015-01-16 Fri 12:30]
 :STYLE:    
 :END:
 ** TODO drink water                                                   :home:
@@ -3541,7 +3546,8 @@ SCHEDULED: <2015-01-16 Fri .+2d/5d>
 :LAST_REPEAT: [2015-01-14 Wed 16:51]
 :END:
 ** TODO run Roomba                                                    :home:
-SCHEDULED: <2015-01-10 Sat .+1d/3d>
+SCHEDULED: <2015-01-17 Sat .+1d/3d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 12:33]
 - State "DONE"       from "TODO"       [2015-01-09 Fri 20:13]
 - State "DONE"       from "TODO"       [2015-01-08 Thu 14:48]
 - State "DONE"       from "TODO"       [2015-01-05 Mon 21:59]
@@ -3650,7 +3656,7 @@ SCHEDULED: <2015-01-10 Sat .+1d/3d>
 :PROPERTIES:
 :ID:       2e9e2dc8-8e95-4c80-bba4-08ce1f11f46f
 :STYLE: habit
-:LAST_REPEAT: [2015-01-09 Fri 20:13]
+:LAST_REPEAT: [2015-01-16 Fri 12:33]
 :BECAUSE:  
 :END:
 ** TODO shelve books                                        :home:frontroom:
@@ -3835,7 +3841,8 @@ SCHEDULED: <2015-01-15 Thu .+1d/3d>
 :ID:       2b7068ac-99c8-4b87-9c98-21a58ed7ac5b
 :END:
 ** TODO shower                                               :home:bathroom:
-SCHEDULED: <2015-01-15 Thu .+1d/3d>n
+SCHEDULED: <2015-01-17 Sat .+1d/3d>n
+- State "DONE"       from "TODO"       [2015-01-16 Fri 12:30]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:51]
 - State "DONE"       from "TODO"       [2015-01-08 Thu 14:48]
 - State "DONE"       from "TODO"       [2015-01-06 Tue 12:52]
@@ -3950,7 +3957,7 @@ SCHEDULED: <2015-01-15 Thu .+1d/3d>n
 :PROPERTIES:
 :STYLE: habit
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-01-14 Wed 16:51]
+:LAST_REPEAT: [2015-01-16 Fri 12:30]
 :END:
 ** TODO walk Malka                                                :malka:hp:
 SCHEDULED: <2015-01-18 Sun .+4d/8d>
@@ -4392,7 +4399,8 @@ SCHEDULED: <2014-12-27 Sat .+3d/4d>
 :LAST_REPEAT: [2014-12-24 Wed 17:02]
 :END:
 ** TODO wipe down butler pantry                            :home:diningroom:
-SCHEDULED: <2014-12-28 Sun .+8d/12d>
+SCHEDULED: <2015-01-23 Fri .+8d/12d>
+- State "DONE"       from "TODO"       [2015-01-15 Thu 22:53]
 - State "CANCELLED"  from "TODO"       [2014-12-20 Sat 11:43]
 - State "DONE"       from "TODO"       [2014-12-09 Tue 22:24]
 - State "DONE"       from "TODO"       [2014-11-24 Mon 22:58]
@@ -4410,7 +4418,7 @@ SCHEDULED: <2014-12-28 Sun .+8d/12d>
 :PROPERTIES:
 :ID:       91f93c47-4a10-4531-aa09-09832635c598
 :STYLE: habit
-:LAST_REPEAT: [2014-12-20 Sat 11:43]
+:LAST_REPEAT: [2015-01-15 Thu 22:53]
 :END:
 ** TODO wipe down other bathroom                           :home:elliptical:
 SCHEDULED: <2014-12-26 Fri .+10d/14d>
@@ -4516,7 +4524,8 @@ SCHEDULED: <2014-12-26 Fri .+10d/15d>
 :LAST_REPEAT: [2014-12-16 Tue 17:43]
 :END:
 ** TODO wipe down dining room                              :home:diningroom:
-SCHEDULED: <2014-12-30 Tue .+10d/14d>
+SCHEDULED: <2015-01-25 Sun .+10d/14d>
+- State "DONE"       from "TODO"       [2015-01-15 Thu 22:54]
 - State "CANCELLED"  from "TODO"       [2014-12-20 Sat 11:43]
 - State "DONE"       from "TODO"       [2014-12-09 Tue 22:24]
 - State "DONE"       from "TODO"       [2014-11-22 Sat 19:09]
@@ -4531,7 +4540,7 @@ SCHEDULED: <2014-12-30 Tue .+10d/14d>
 :PROPERTIES:
 :ID:       b9920522-ef67-4bc4-be2d-032dcde9c68a
 :STYLE: habit
-:LAST_REPEAT: [2014-12-20 Sat 11:43]
+:LAST_REPEAT: [2015-01-15 Thu 22:54]
 :END:
 ** TODO wipe down bedroom                                     :home:bedroom:
 SCHEDULED: <2015-01-03 Sat .+10d/14d>
@@ -4556,7 +4565,8 @@ SCHEDULED: <2015-01-03 Sat .+10d/14d>
 :LAST_REPEAT: [2014-12-24 Wed 16:56]
 :END:
 ** TODO wipe down hallways                                    :home:allhome:
-SCHEDULED: <2014-12-28 Sun .+8d/15d>
+SCHEDULED: <2015-01-23 Fri .+8d/15d>
+- State "DONE"       from "TODO"       [2015-01-15 Thu 23:01]
 - State "CANCELLED"  from "TODO"       [2014-12-20 Sat 11:43]
 - State "DONE"       from "TODO"       [2014-12-10 Wed 14:19]
 - State "DONE"       from "TODO"       [2014-11-22 Sat 19:47]
@@ -4582,7 +4592,7 @@ SCHEDULED: <2014-12-28 Sun .+8d/15d>
 :PROPERTIES:
 :ID:       8629401d-6301-46fa-bac7-0cceeaf22137
 :STYLE: habit
-:LAST_REPEAT: [2014-12-20 Sat 11:43]
+:LAST_REPEAT: [2015-01-15 Thu 23:01]
 :END:
 ** TODO gather laundry                                                :home:
 SCHEDULED: <2015-01-22 Thu .+2w>
@@ -4868,7 +4878,7 @@ SCHEDULED: <2015-01-04 Sun .+15d/18d>
 :PROPERTIES:
 :ID:       17d11aa7-12b9-4b97-815e-e5e7258c2d45
 :END:
-** TODO [#B] clean suit                                                 :hp:
+** JESSE [#B] clean suit                                                :hp:
 :PROPERTIES:
 :ID:       d85d946b-9cb4-4c0c-90e0-9888b0526aae
 :END:
@@ -5858,12 +5868,12 @@ DEADLINE: <2014-09-30 Tue>
 :PROPERTIES:
 :ID:       34df015c-b3e4-41f1-979c-3898db5efcc4
 :END:
-** TODO [#B] get potting soil                                           :hp:
+** TODO [#C] get potting soil                                           :hp:
 :PROPERTIES:
 :ID:       b3df2ccc-be7e-4b73-940f-7512697d6b64
 :END:
 ** JESSE driver's license for car insurance :computer:
-** TODO process notebook                                     :home:computer:
+** TODO process notebook                                          :computer:
 SCHEDULED: <2015-01-15 Thu .+3d/5d>
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:04]
 - State "DONE"       from "TODO"       [2015-01-08 Thu 14:48]
@@ -5984,7 +5994,7 @@ SCHEDULED: <2014-10-08 Wed>
 :END:
 ** DONE [#A] tachyon new hard drive                               :computer:
 - State "DONE"       from "TODO"       [2014-10-15 Wed 23:30]
-** TODO [#B] get plants                                        :majorouting:
+** TODO [#C] get plants                                        :majorouting:
 :PROPERTIES:
 :ID:       b312e963-6d41-45d6-b5f4-5e8bd94b7ca2
 :END:
@@ -6094,7 +6104,7 @@ SCHEDULED: <2014-11-28 Fri>
 :PROPERTIES:
 :ID:       e092fca6-1abf-4dee-8427-3c3cf01bfa92
 :END:
-** TODO [#B] clear basket                                             :home:
+** CANCELLED [#B] clear basket                                        :home:
 :PROPERTIES:
 :ID:       4404e39a-7af6-4db0-b580-eea3f4eab2ee
 :END:
@@ -6102,7 +6112,8 @@ SCHEDULED: <2014-11-28 Fri>
 :PROPERTIES:
 :ID:       4be07557-f571-487e-9a84-a7632551991e
 :END:
-** JESSE [#B] sofabed                                          :majorouting:
+** DONE [#B] sofabed                                           :majorouting:
+- State "DONE"       from "JESSE"      [2015-01-15 Thu 22:50]
 :PROPERTIES:
 :ID:       0397a94a-c0e1-4f94-b6c1-14bc2ead7783
 :END:
@@ -6130,7 +6141,7 @@ SCHEDULED: <2014-11-28 Fri>
 :PROPERTIES:
 :ID:       80512711-6c2c-42c9-83bc-8984a3435e14
 :END:
-** TODO [#C] clothing exchange                                      :social:
+** TODO [#B] clothing exchange                                      :social:
 :PROPERTIES:
 :ID:       3760792d-ec53-490d-9567-f23dbf593862
 :END:
@@ -6159,7 +6170,7 @@ SCHEDULED: <2014-11-28 Fri>
 :PROPERTIES:
 :ID:       d5a7ece1-579f-462d-8997-f14fad3cc2e6
 :END:
-** TODO [#B] imdb interface                                       :computer:
+** CANCELLED [#B] imdb interface                                  :computer:
 :PROPERTIES:
 :ID:       2eed9555-0a29-4de7-92bd-62b8b3af5122
 :END:
@@ -6183,7 +6194,7 @@ SCHEDULED: <2014-11-28 Fri>
 :ID:       ae28dcd5-19d5-4c29-aa42-b14111a01b72
 :END:
 g
-** TODO [#B] shelving/fridge                      :home:kitchen:bigprojects:
+** CANCELLED [#B] shelving/fridge                 :home:kitchen:bigprojects:
 :PROPERTIES:
 :ID:       af4bc0b3-d196-4e81-9c53-c326a5a553d8
 :END:
@@ -6196,7 +6207,7 @@ g
 :PROPERTIES:
 :ID:       75cab52c-caf2-4805-ba06-aa5cbdb6b182
 :END:
-** TODO [#B] get new chairs                                     :craigslist:
+** CANCELLED [#B] get new chairs                                :craigslist:
 :PROPERTIES:
 :ID:       7bb098ee-fb5e-47e5-a793-71325f72ab88
 :END:
@@ -6219,7 +6230,7 @@ SCHEDULED: <2014-12-03 Wed>
 :PROPERTIES:
 :ID:       3352a2de-9506-4b18-80c3-a6d2dd889086
 :END:
-** TODO [#B] fix tachyon                                     :home:computer:
+** CANCELLED [#B] fix tachyon                                :home:computer:
 :PROPERTIES:
 :ID:       a588caa2-638a-487c-ae4f-11ad56427d10
 :END:
@@ -11753,6 +11764,9 @@ k
 :ID:       ee6a37b3-7013-4b77-b14a-73b881f3a5fd
 :END:
 ** TODO [#A] return HDMI                                     :home:computer:
+:PROPERTIES:
+:ID:       0c228c54-be94-4a21-9a66-01e1cbfa83de
+:END:
 :PROPERTIES::ID: 1865689e-5966-4332-bbfd-69002c08e154
 
 :END:
@@ -12270,13 +12284,995 @@ k
 
 :END:
 ** TODO [#A] return gloves                                   :home:computer:
+:PROPERTIES:
+:ID:       fce99446-1b21-47fb-8af4-fd7e07ce01b8
+:END:
 ** JESSE [#A] parking tickets                                         :home:
+:PROPERTIES:
+:ID:       dac4e019-8514-4803-a2a7-fce65f7b7215
+:END:
 ** TODO [#B] get tablet org mode working                   :computer:tablet:
+:PROPERTIES:
+:ID:       3cff3d04-252c-44db-815b-cecff102721d
+:END:
 ** TODO [#B] get phone org mode working                     :computer:phone:
+:PROPERTIES:
+:ID:       95e044a3-a502-43fd-a6df-a4b636cd40ca
+:END:
 ** CANCELLED [#A] RailsBridge                                     :computer:
 ** TODO [#A] RailsBridge suggestions                      :computer:writing:
+:PROPERTIES:
+:ID:       0a7e369d-cb20-4cd6-b7cc-ac1c1c1aade2
+:END:
 ** TODO [#A] life.org archiving                                   :computer:
-** TODO clean up .emacs file                                       :computer:
-** TODO get rug                                                    :shopping:
+:PROPERTIES:
+:ID:       e71fb504-fc6f-459c-ad20-7e2ae2de0a2c
+:END:
+** TODO [#A] clean up .emacs file                                 :computer:
+:PROPERTIES:
+:ID:       3fd2532a-6bcd-43ef-9317-c9f1fe6d9e75
+:END:
+** TODO [#B] get rug                                              :shopping:
+:PROPERTIES:
+:ID:       12732c13-ab36-400a-990b-e83e594ed0e3
+:END:
 ** TODO clean up office boxes                                          :home:
-** TODO rearrange office furniture                              :home:office:
+:PROPERTIES:
+:ID:       a9ea0432-4973-4757-8704-a0fa60fb4863
+:END:
+** TODO [#B] rearrange office furniture                        :home:office:
+:PROPERTIES:
+:ID:       0354c418-0a6f-4c1b-b481-b0eeecb4765a
+:END:
+** TODO set deadline for moojo                               :computer:moojo:
+:PROPERTIES:
+:ID:       9343dfc4-1649-4c5b-b192-1fb074f04f6b
+:END:
+** TODO outline archives issue                               :computer:moojo:
+:PROPERTIES:
+:ID:       224e56e4-aec5-4430-addf-874db5b9caa6
+:END:
+** TODO write up questions for Becca                         :computer:moojo:
+:PROPERTIES:
+:ID:       810994d2-e487-4463-846a-2af114385dec
+:END:
+** TODO get new tools                                                    :hp:
+:PROPERTIES:
+:ID:       287d374f-0405-41fd-9ae2-a8243042c328
+:END:
+** TODO moojo addresses                                               :moojo:
+:PROPERTIES:
+:ID:       3caa85d5-7d6f-4364-8aae-e8a99e6ed966
+:END:
+** TODO moojo backissues                                              :moojo:
+:PROPERTIES:
+:ID:       e77a2acb-2f8c-4263-bf95-e30fb5113c90
+:END:
+** TODO mop floors                                                     :home:
+:PROPERTIES:
+:ID:       3f0bbd85-a72c-447f-8360-b4b9f3119b96
+:END:
+:PROPERTIES::ID: 28bf1efe-4221-42b4-85eb-e998101cbad5
+
+:END:
+:PROPERTIES::ID: be40cccb-5afd-4360-9d7d-9cc2633e5f45
+
+:END:
+:PROPERTIES::ID: ab3d23ba-7a7f-483a-b46e-0f3825508b46
+
+:END:
+:PROPERTIES::ID: 9cd1eb6e-4381-41d5-8911-ac0e964ddac1
+
+:END:
+:PROPERTIES::ID: 4b68fc5b-9dfa-4d63-adf9-126bf56e0d93
+
+:END:
+:PROPERTIES::ID: bedf65f1-5b4b-463d-b095-2f7644e455fd
+
+:END:
+:PROPERTIES::ID: 5d478631-2894-4599-806a-1c774bcab2bd
+
+:END:
+:PROPERTIES::ID: 5672889e-1761-4df8-bc53-503d31bace5d
+
+:END:
+:PROPERTIES::ID: 9d112c76-8660-4e6f-aa2e-ecd6331c28e1
+
+:END:
+:PROPERTIES::ID: d740aecc-2da6-403a-90d8-8fa4fdb81e09
+
+:END:
+** TODO buy flowers                                                      :hp:
+** TODO fix printer                                                    :home:
+:PROPERTIES:
+:ID:       f522b155-4d01-4e24-af29-58d480acb59a
+:END:
+:PROPERTIES:
+:ID:       aa276ca0-6db4-454e-a1ef-583c92f5d259
+:END:
+:PROPERTIES:
+:ID:       02e18554-d475-4aad-a10d-f6b081c548d1
+:END:
+:PROPERTIES:
+:ID:       907851c5-f63f-4f11-aaee-a3743ce0517a
+:END:
+:PROPERTIES:
+:ID:       7c884b66-d04b-4b7c-8426-7081add21f20
+:END:
+:PROPERTIES:
+:ID:       bc1a65c2-a275-47cc-9023-ab34e257567c
+:END:
+:PROPERTIES:
+:ID:       b214a980-9f20-41ea-9162-b45b80f37db6
+:END:
+:PROPERTIES:
+:ID:       9f0ffa9e-e2f4-48a1-8651-a490347bf70d
+:END:
+:PROPERTIES:
+:ID:       a81054d8-95f3-4518-99f6-a6871e019ac9
+:END:
+:PROPERTIES:
+:ID:       4261a323-a9ad-4142-9316-604eca42f67e
+:END:
+:PROPERTIES:
+:ID:       8b316885-626b-4f65-80fe-421cb0f030ae
+:END:
+:PROPERTIES:
+:ID:       a1eb0230-cfb4-427b-a593-6e1d13f18656
+:END:
+:PROPERTIES:
+:ID:       5760dc42-24d5-4351-b6c0-eae32d7b17d8
+:END:
+:PROPERTIES:
+:ID:       3b51b086-9e21-422f-93b7-e796aad5092b
+:END:
+:PROPERTIES:
+:ID:       1d891110-9ed6-4971-b1c9-a718fb685ed8
+:END:
+:PROPERTIES:
+:ID:       59e817c4-fc2e-4614-9267-d19da1cd1fab
+:END:
+:PROPERTIES:
+:ID:       41d0659d-ffeb-4397-bb57-d587fc84e414
+:END:
+:PROPERTIES:
+:ID:       989c3adf-618a-4e53-a910-46e780234780
+:END:
+:PROPERTIES:
+:ID:       2bee935a-42dd-4382-9a99-5973e59009cf
+:END:
+:PROPERTIES:
+:ID:       167018d7-8424-4408-9efa-6bdcf6c781aa
+:END:
+:PROPERTIES:
+:ID:       8ef80410-951b-4280-82cb-14a47a012593
+:END:
+:PROPERTIES:
+:ID:       37fa1ea0-16d8-4069-a7b5-b42f18a0ea9e
+:END:
+:PROPERTIES:
+:ID:       81dc0b15-14a9-4737-b46a-ed5b061234d3
+:END:
+:PROPERTIES:
+:ID:       b34bb270-f360-44ad-8d49-e6d5d239eb8f
+:END:
+:PROPERTIES:
+:ID:       67fd97e1-159b-4112-9f2f-0ed4412f977a
+:END:
+:PROPERTIES:
+:ID:       203565a3-ae74-4124-a3e2-7f72d323599b
+:END:
+:PROPERTIES:
+:ID:       4bfd2635-ad22-4e5d-a5ce-a897382fc041
+:END:
+:PROPERTIES:
+:ID:       a221691a-4a18-4005-8ee3-5133aa312c4b
+:END:
+:PROPERTIES:
+:ID:       299fb48d-8fdf-4753-b617-9dfeccc59ac3
+:END:
+:PROPERTIES:
+:ID:       8e4e3d29-7021-4305-a7ad-51e3717f34a1
+:END:
+:PROPERTIES:
+:ID:       d292a1e7-4a99-4697-96b7-d423a7c26317
+:END:
+:PROPERTIES:
+:ID:       37c0e407-4981-4207-bbcc-15a63f9d321f
+:END:
+:PROPERTIES:
+:ID:       6a4a2d70-5d59-403e-836f-3da540c36584
+:END:
+:PROPERTIES:
+:ID:       a9094404-eb2d-45aa-8c70-ac5f8c58763f
+:END:
+:PROPERTIES:
+:ID:       89c52916-2163-42a2-91bd-301f4f9625ff
+:END:
+:PROPERTIES:
+:ID:       f58f657e-4f4d-4216-a774-20d2d078924c
+:END:
+:PROPERTIES:
+:ID:       6efd6608-8928-4478-b39a-fa79d6ca7b79
+:END:
+:PROPERTIES:
+:ID:       cd6ee532-3e7f-45c3-ba54-ae84689d0c3e
+:END:
+:PROPERTIES:
+:ID:       e0e472e3-321e-4c1a-b541-84dc28498868
+:END:
+:PROPERTIES:
+:ID:       96ea6cb6-d1fe-46b3-a0df-c2396de69978
+:END:
+:PROPERTIES:
+:ID:       fc107b8d-82a3-4193-a84b-32ba89a2510b
+:END:
+:PROPERTIES:
+:ID:       c039e3ed-56db-41e6-a7c5-36e6a43cabee
+:END:
+:PROPERTIES:
+:ID:       56bc4232-4876-488c-89fb-aba9f4451619
+:END:
+:PROPERTIES:
+:ID:       0d483722-e900-480d-b77a-e554bc0a2288
+:END:
+:PROPERTIES:
+:ID:       039fdd53-717c-463c-9724-314d137fc473
+:END:
+:PROPERTIES:
+:ID:       b6bd96f1-ab10-46fc-be5a-a7399ee7b3b4
+:END:
+:PROPERTIES:
+:ID:       e383211b-bae2-4863-a03c-95c70c5d71a9
+:END:
+:PROPERTIES:
+:ID:       73338b8f-f984-41cb-b41f-481c103dafbe
+:END:
+:PROPERTIES:
+:ID:       e61266d5-dfd1-47a2-9d56-1d8d416c6b8c
+:END:
+:PROPERTIES:
+:ID:       c73cac9a-176a-4fa1-9f15-07c149014d72
+:END:
+:PROPERTIES:
+:ID:       b7ac46d4-6660-419f-bc38-5b3d78a003cc
+:END:
+:PROPERTIES:
+:ID:       25857b98-5c3f-4829-981f-bbe421799005
+:END:
+:PROPERTIES:
+:ID:       ab0fbc39-fa20-4cff-9008-e6216f91cabb
+:END:
+:PROPERTIES:
+:ID:       515fbf58-ed07-43ca-b345-5fac2bf3a45b
+:END:
+:PROPERTIES:
+:ID:       962e0b17-abf8-4e27-8d02-6a5a55e1c6c3
+:END:
+:PROPERTIES:
+:ID:       ebd5fac5-86ad-4667-abd8-6b8de9e0c749
+:END:
+:PROPERTIES:
+:ID:       6265a817-842e-4865-a38b-7dcdef23d66f
+:END:
+:PROPERTIES:
+:ID:       66661f92-5fa5-4fd9-82e9-2b71c30af9c3
+:END:
+:PROPERTIES:
+:ID:       56bd7a83-116b-45aa-a98f-8325788212e1
+:END:
+:PROPERTIES:
+:ID:       a6968d9e-01e8-4632-8c24-b1daf87e37cb
+:END:
+:PROPERTIES:
+:ID:       1b980c08-3ae2-4c43-806a-a73309ac3826
+:END:
+:PROPERTIES:
+:ID:       2b5d6987-8579-4fd5-bab1-77aa16016e7b
+:END:
+:PROPERTIES:
+:ID:       e15798bd-bbb0-47f9-ade9-e612a2d2f669
+:END:
+:PROPERTIES:
+:ID:       3d0a1856-fd60-4532-bd8e-cd387cf70c8b
+:END:
+:PROPERTIES:
+:ID:       3dfc88e4-95a1-4d60-b2bb-ee75308fa28b
+:END:
+:PROPERTIES:
+:ID:       54d4dc6a-7bcb-412c-a327-f1f475000caf
+:END:
+:PROPERTIES:
+:ID:       ddc49405-2daa-4a66-bf6e-4adfb3fd0b48
+:END:
+:PROPERTIES:
+:ID:       0d29b992-e291-4b7d-819f-497d03252177
+:END:
+:PROPERTIES:
+:ID:       0bcc57de-b513-4645-a1d3-8708f968496c
+:END:
+:PROPERTIES:
+:ID:       d335b172-99ff-4075-b9df-0bed8d8af7af
+:END:
+:PROPERTIES:
+:ID:       7f70abec-074d-40d5-8d4c-3538b773de5b
+:END:
+:PROPERTIES:
+:ID:       b7c8c094-0e6d-4015-87a7-39c9ac904a5b
+:END:
+:PROPERTIES:
+:ID:       a36554a2-b134-442d-afc4-0aca4ef52be5
+:END:
+:PROPERTIES:
+:ID:       11a87088-554e-4849-b83f-eca5d53e0b2c
+:END:
+:PROPERTIES:
+:ID:       2afb8ee7-7b80-483a-a2a9-fdf187f4aea1
+:END:
+:PROPERTIES:
+:ID:       01a12d60-eed4-45be-8a39-9d3975733257
+:END:
+:PROPERTIES:
+:ID:       32f114cf-130b-4bf2-b54b-6081c619fdd2
+:END:
+:PROPERTIES:
+:ID:       05ff69de-1956-4f4b-a2a3-937598f1e83a
+:END:
+:PROPERTIES:
+:ID:       84883f1e-e1ad-424b-aac5-9cbf933f7986
+:END:
+:PROPERTIES:
+:ID:       aeff6306-b4f5-4305-adee-62bcc4dd1148
+:END:
+:PROPERTIES:
+:ID:       15a084fb-51d5-4199-ae6d-4546cfc48037
+:END:
+:PROPERTIES:
+:ID:       1fe44709-7b04-426a-a2e2-859cc4551e18
+:END:
+:PROPERTIES:
+:ID:       dbc0e7ac-87f5-442a-839a-5d585de3c51e
+:END:
+:PROPERTIES:
+:ID:       6437e886-4a4b-4376-a181-0ec23cbb5b1d
+:END:
+:PROPERTIES:
+:ID:       1af4bb8c-c73a-4a8b-852c-2fe5914fab72
+:END:
+:PROPERTIES:
+:ID:       3b547959-c918-4746-9183-4fa5f9b6706c
+:END:
+:PROPERTIES:
+:ID:       29cd23d2-6a4d-413c-b34d-995592826396
+:END:
+:PROPERTIES:
+:ID:       713ec17a-2b64-4622-931b-fa15bb57cdae
+:END:
+:PROPERTIES:
+:ID:       a2b124f4-219a-4cf2-9fab-9d130cd24d5c
+:END:
+:PROPERTIES:
+:ID:       44a6807c-cb77-4bb3-8641-0311bff3b1a5
+:END:
+:PROPERTIES:
+:ID:       a0e85f58-cbb1-40c9-9b51-2cd980d28574
+:END:
+:PROPERTIES:
+:ID:       cb5d94b5-b920-4bc9-8cc7-6da651c3775a
+:END:
+:PROPERTIES:
+:ID:       4545222f-0f83-458e-a11d-f0feeab5d68f
+:END:
+:PROPERTIES:
+:ID:       73543159-18f9-4c4b-9c9d-4e2d74fa573a
+:END:
+:PROPERTIES:
+:ID:       f6110506-cd27-4403-abec-7037a8e829d0
+:END:
+:PROPERTIES:
+:ID:       1d60376e-ccb0-40b1-9bc7-db6fbf3472f5
+:END:
+:PROPERTIES:
+:ID:       31457286-ccb3-4b3d-b5ff-eed39593c0fc
+:END:
+:PROPERTIES:
+:ID:       cb9af002-c07a-47ff-beb5-43b973f4586d
+:END:
+:PROPERTIES:
+:ID:       fbf35f2e-faae-453e-be99-dab0d3fc34d5
+:END:
+:PROPERTIES:
+:ID:       75af9ff1-0f12-4124-a740-84e216372efa
+:END:
+:PROPERTIES:
+:ID:       36621125-7085-4afb-82f0-8678bd3e88e6
+:END:
+:PROPERTIES:
+:ID:       47c6d022-386b-4af5-bcbd-9469e6fc553a
+:END:
+:PROPERTIES:
+:ID:       e2f9ce8b-d7ac-4efc-814d-5699ec041aa6
+:END:
+:PROPERTIES:
+:ID:       ca6f107c-87ff-4d0d-bc88-5087fd994867
+:END:
+:PROPERTIES:
+:ID:       30ccdaaf-f2ca-4d64-99e8-24aca73aca02
+:END:
+:PROPERTIES:
+:ID:       94f3c0e9-80dc-44a9-a72a-3da5e6f82776
+:END:
+:PROPERTIES:
+:ID:       eb5d7827-baf2-4f15-889a-6e955ee7e751
+:END:
+:PROPERTIES:
+:ID:       1a206817-f4af-4668-a2f7-5967e7ab7beb
+:END:
+:PROPERTIES:
+:ID:       24493bc3-9669-4002-9710-0dcf92bee494
+:END:
+:PROPERTIES:
+:ID:       db21b30c-a54c-44b0-8aab-6cd884e648c5
+:END:
+:PROPERTIES:
+:ID:       73b24ada-18e9-4cf5-b54c-a68ad308f5dc
+:END:
+:PROPERTIES:
+:ID:       5da03542-4040-4a5b-854a-44d560a0ff01
+:END:
+:PROPERTIES:
+:ID:       c8adacef-41b8-4ecd-9615-58a27d42f16f
+:END:
+:PROPERTIES:
+:ID:       00c8f55d-bd7d-4fbc-97dc-a0094d3ddf29
+:END:
+:PROPERTIES:
+:ID:       299221d7-e706-4996-92b4-f13d8d3badf2
+:END:
+:PROPERTIES:
+:ID:       6893b3f2-7c1b-4d8d-b01e-d4b53ea41239
+:END:
+:PROPERTIES:
+:ID:       2182e8db-6cc1-447b-bb2e-86cb154270a3
+:END:
+:PROPERTIES:
+:ID:       4f5068b8-e7a5-48a4-a1a2-ad68e9669818
+:END:
+:PROPERTIES:
+:ID:       fb96316e-fdf4-42c3-8c7d-a39bcd006753
+:END:
+:PROPERTIES:
+:ID:       ed31fc8e-a215-48c7-8145-8e4e25a5c898
+:END:
+:PROPERTIES:
+:ID:       bfd34b33-32c2-4402-94cf-57181c6022c0
+:END:
+:PROPERTIES:
+:ID:       b57ca16d-1c59-4278-a319-e53daabbe056
+:END:
+:PROPERTIES:
+:ID:       397bfc3c-8f3f-4251-9939-edccb03efc22
+:END:
+:PROPERTIES:
+:ID:       620377f2-dfb0-4671-a2a5-e904726566d7
+:END:
+:PROPERTIES:
+:ID:       351efbe6-c601-48dc-b231-c3f87091e561
+:END:
+:PROPERTIES:
+:ID:       42cbdb86-094b-4d5c-bacd-fe2beb3783b1
+:END:
+:PROPERTIES:
+:ID:       44d8e559-6307-40ac-8f39-85652e94d251
+:END:
+:PROPERTIES:
+:ID:       ce80a4b8-3904-4cce-8171-56468d808594
+:END:
+:PROPERTIES:
+:ID:       3426c312-8a48-496d-9556-11e5a6f1ff26
+:END:
+:PROPERTIES:
+:ID:       f86ba669-632c-48a0-bed6-06f10f8e233e
+:END:
+:PROPERTIES:
+:ID:       e5e2ae18-e989-45d5-b3d4-513bd524afbf
+:END:
+:PROPERTIES:
+:ID:       55c3fb1f-fbf1-48d9-b0ae-3a2dd45457fb
+:END:
+:PROPERTIES:
+:ID:       6f037eb6-4c05-4db2-9728-7de4b612db10
+:END:
+:PROPERTIES:
+:ID:       9321b718-428d-4f48-8d5c-c4d830198f70
+:END:
+:PROPERTIES:
+:ID:       3df40e93-fe91-405d-aae1-e3a3c01581c2
+:END:
+:PROPERTIES:
+:ID:       3698105f-77ab-4cb0-8fcc-66925611bd0f
+:END:
+:PROPERTIES:
+:ID:       d47411f1-6ebc-4354-98fc-4d51363be5d7
+:END:
+:PROPERTIES:
+:ID:       2c0ac8f7-0a71-4a83-97d2-4999fec0afb9
+:END:
+:PROPERTIES:
+:ID:       239d6615-351b-4aec-87ca-eb418f2fe61d
+:END:
+:PROPERTIES:
+:ID:       a48c0753-3287-4951-9d3f-b92ac30e1291
+:END:
+:PROPERTIES:
+:ID:       274dc391-ab55-4132-ad50-5b9b1d317f14
+:END:
+:PROPERTIES:
+:ID:       7cc00a6a-43c0-4f98-a7d0-59bf4c6aaf96
+:END:
+:PROPERTIES:
+:ID:       35bb72db-2e20-46fb-99ff-9ae4ea885c06
+:END:
+:PROPERTIES:
+:ID:       eb400da8-2feb-438d-a566-3e9de67cb154
+:END:
+:PROPERTIES:
+:ID:       305bd536-3bed-4857-92cb-09df7dc4a86a
+:END:
+:PROPERTIES:
+:ID:       be1bf3e6-955e-40b0-ad76-06e3c4513336
+:END:
+:PROPERTIES:
+:ID:       0c08927a-eb2a-4a5f-ba20-909e9ece7cab
+:END:
+:PROPERTIES:
+:ID:       e9904768-6bf8-44e7-87ec-2808e66b1364
+:END:
+:PROPERTIES:
+:ID:       1fa69b60-ac75-42b6-b028-6ab5df0bd870
+:END:
+:PROPERTIES:
+:ID:       6f7e8d03-c65f-4b91-9e25-23d877fae225
+:END:
+:PROPERTIES:
+:ID:       ef731266-242c-4ce4-887e-77de59aa43be
+:END:
+:PROPERTIES:
+:ID:       ca8fc63f-37f1-4d09-88d3-559e45091c9e
+:END:
+:PROPERTIES:
+:ID:       93f5d59e-b89e-439a-b870-cae93815db6a
+:END:
+:PROPERTIES:
+:ID:       f00c019b-8625-49ca-8b38-d02e6e4d5773
+:END:
+:PROPERTIES:
+:ID:       9bfec5dc-f46c-4394-8197-9af6d1c7f3cf
+:END:
+:PROPERTIES:
+:ID:       3161a212-9f33-4575-8157-0f761af53341
+:END:
+:PROPERTIES:
+:ID:       9a0c34f4-4066-47d2-8005-35ef6b96cb59
+:END:
+:PROPERTIES:
+:ID:       1402fe9a-29a9-4736-97c1-41c6d8763cdc
+:END:
+:PROPERTIES:
+:ID:       4d4031d6-94de-4d64-8ccc-4bd5f50cacde
+:END:
+:PROPERTIES:
+:ID:       79532622-c2c6-42db-9920-0e39afaec77c
+:END:
+:PROPERTIES:
+:ID:       1a9451d6-adcb-4ce8-852c-4e549813f4f2
+:END:
+:PROPERTIES:
+:ID:       3ef2950c-9b70-4363-92ee-e42d26682590
+:END:
+:PROPERTIES:
+:ID:       fafc0cc8-7273-4d98-ab0a-f94babc07caf
+:END:
+:PROPERTIES:
+:ID:       7bb39d88-e511-4638-9c0e-57680e41ad4f
+:END:
+:PROPERTIES:
+:ID:       1b48ff4b-e5ac-4d58-8b5e-db4fffe697be
+:END:
+:PROPERTIES:
+:ID:       f38e03bc-3777-4c80-ac2d-977155427af7
+:END:
+:PROPERTIES:
+:ID:       c7db9782-32d4-4306-9931-1992f4fd14dc
+:END:
+:PROPERTIES:
+:ID:       f5621376-f2d5-48f6-a2a0-f60d852f6623
+:END:
+:PROPERTIES:
+:ID:       a675cc36-a376-4cba-9381-800794b3e023
+:END:
+:PROPERTIES:
+:ID:       b703fea4-06a8-4a5f-b4b6-7c0960176fb5
+:END:
+:PROPERTIES:
+:ID:       330cccda-6172-4921-883c-8879bd537410
+:END:
+:PROPERTIES:
+:ID:       dc816e62-6940-4bdd-9144-94b1cbfa26dc
+:END:
+:PROPERTIES:
+:ID:       2c3c163f-bdfe-4993-96ad-3094105cb02f
+:END:
+:PROPERTIES:
+:ID:       1a417047-6e6b-44f9-80a1-8f5273bdb3fa
+:END:
+:PROPERTIES:
+:ID:       90d68d38-032d-4c66-a6c2-060621d1136e
+:END:
+:PROPERTIES:
+:ID:       8ca5cc4a-6469-4421-9896-9135a4943aa4
+:END:
+:PROPERTIES:
+:ID:       b923669f-7592-4c97-b747-228342339713
+:END:
+:PROPERTIES:
+:ID:       bd595637-b638-45b7-9a5f-ce84a7a963bc
+:END:
+:PROPERTIES:
+:ID:       763c1c51-183b-4559-81a0-f5cd4ee41379
+:END:
+:PROPERTIES:
+:ID:       16a2377a-53a1-4a26-b265-8f6494bfd722
+:END:
+:PROPERTIES:
+:ID:       c07968c9-e150-42f1-a81f-dbbce926cbbb
+:END:
+:PROPERTIES:
+:ID:       3a4c04c9-9cc4-40d7-a3b6-82f0a31147df
+:END:
+:PROPERTIES:
+:ID:       9ba2d456-8f05-47b1-b0c4-94196fe0fa43
+:END:
+:PROPERTIES:
+:ID:       478ed4c1-c1c1-49c8-83fe-fbda3705a3d8
+:END:
+:PROPERTIES:
+:ID:       32a64320-79aa-4ece-b118-fdc05229a3d5
+:END:
+:PROPERTIES:
+:ID:       03fcf1d5-ce20-4fdb-8fdb-1dff5bf51318
+:END:
+:PROPERTIES:
+:ID:       3dba956c-2898-4ea6-ad39-6912df57a58d
+:END:
+:PROPERTIES:
+:ID:       d82b2499-29ff-4378-870f-2caf06e52085
+:END:
+:PROPERTIES:
+:ID:       d648684b-d4b4-467e-b673-012087f35a78
+:END:
+:PROPERTIES:
+:ID:       495acdf6-b950-479e-b683-0ea811828a3a
+:END:
+:PROPERTIES:
+:ID:       da04525c-b96d-41d1-bd50-baeaf458234a
+:END:
+:PROPERTIES:
+:ID:       737ef39a-ad9c-4590-914a-df162631300d
+:END:
+:PROPERTIES:
+:ID:       9e1856d2-7ffa-4854-b3f1-fc4eb7c1da32
+:END:
+:PROPERTIES:
+:ID:       9e6002de-e2f9-46d3-b432-a85e0cbea59c
+:END:
+:PROPERTIES:
+:ID:       a31f5bb5-73b6-404d-bd70-77a76c3735b4
+:END:
+:PROPERTIES:
+:ID:       b8856ece-904d-46cc-9921-393b4fbb450a
+:END:
+:PROPERTIES:
+:ID:       b4f9a1aa-89a1-4a1a-88e6-5c2c36f232fe
+:END:
+:PROPERTIES:
+:ID:       011af7aa-9710-4ff6-9410-b20c7cf3c3bb
+:END:
+:PROPERTIES:
+:ID:       4e01e7bc-1fb1-44fe-b8b3-fd6cff120e4f
+:END:
+:PROPERTIES:
+:ID:       d6ccc12f-b37b-4161-9791-73f7a2fc6244
+:END:
+:PROPERTIES:
+:ID:       674c801f-11b6-4fdf-9c86-0d1d26cdd08a
+:END:
+:PROPERTIES:
+:ID:       e3608b89-1be4-4677-936c-10723847a606
+:END:
+:PROPERTIES:
+:ID:       b359bcd7-62a6-4028-91be-ac51acd40df1
+:END:
+:PROPERTIES:
+:ID:       6a8106df-d90c-4154-9c3c-0a2781447eaf
+:END:
+:PROPERTIES:
+:ID:       108de949-3d12-4779-bb91-efdb322ea2e1
+:END:
+:PROPERTIES:
+:ID:       a7915b00-239d-4e98-ba74-ea330ff135d2
+:END:
+:PROPERTIES:
+:ID:       d3e1cd78-1616-4fa0-be90-dda21587ec0c
+:END:
+:PROPERTIES:
+:ID:       1470b0f9-18fe-4ae7-b85d-b1493b8e6738
+:END:
+:PROPERTIES:
+:ID:       a81491d2-79c1-4431-9a56-bfa3e3328446
+:END:
+:PROPERTIES:
+:ID:       5884404d-04dd-4826-b0ca-e085a4b490e8
+:END:
+:PROPERTIES:
+:ID:       402da103-e0df-4479-9fc4-5f621fbe9833
+:END:
+:PROPERTIES:
+:ID:       f84b3914-0392-4f0f-9857-051b601d59fe
+:END:
+:PROPERTIES:
+:ID:       adbb6f74-2036-423c-a269-cbeaa96b1b7f
+:END:
+:PROPERTIES:
+:ID:       5416b1b5-e535-48d4-9703-528cc4b18c8c
+:END:
+:PROPERTIES:
+:ID:       3d397bd3-4e14-4537-80ab-8ea0e48ff93c
+:END:
+:PROPERTIES:
+:ID:       d2b69426-c5a8-406f-ae11-f4b476f618a1
+:END:
+:PROPERTIES:
+:ID:       73b556af-c131-4984-94d5-d451d7c410d3
+:END:
+:PROPERTIES:
+:ID:       a06786db-b8ad-43df-86da-82508cbc585c
+:END:
+:PROPERTIES:
+:ID:       724bbb8f-cac4-4120-a9c9-41ff0bb56bb8
+:END:
+:PROPERTIES:
+:ID:       c285d5ed-03c6-474f-b730-2a381839c029
+:END:
+:PROPERTIES:
+:ID:       3e6afc97-50fa-4af2-bf12-0f1f451e2d51
+:END:
+:PROPERTIES:
+:ID:       09f4fac1-911f-4709-928d-f87f271424e3
+:END:
+:PROPERTIES:
+:ID:       24b997df-3744-4bdd-879f-7dcb51f2d556
+:END:
+:PROPERTIES:
+:ID:       8cd4c699-ff6c-4ef0-87c4-e849295025e3
+:END:
+:PROPERTIES:
+:ID:       aaa48753-4ed7-42a2-a08d-a91732875f4d
+:END:
+:PROPERTIES:
+:ID:       5da1a21b-4650-4d8d-855b-636554cd4e43
+:END:
+:PROPERTIES:
+:ID:       cae49777-f63e-45df-b12a-fea354825dff
+:END:
+:PROPERTIES:
+:ID:       95ce50d7-6d61-434e-b870-db6c1eb6a1b1
+:END:
+:PROPERTIES:
+:ID:       edd8abdf-c577-404a-8190-dcb7fcd0682c
+:END:
+:PROPERTIES:
+:ID:       ebc4f7c0-72a4-44e8-9b34-a91b174ec8d7
+:END:
+:PROPERTIES:
+:ID:       aa7e1d2d-fa30-4d35-9c7c-08226a252ec3
+:END:
+:PROPERTIES:
+:ID:       2e8e345b-4d1b-49d7-a934-2adc504c6fcb
+:END:
+:PROPERTIES:
+:ID:       fc85d8f4-cc06-4bfd-b18e-db8739a3fccd
+:END:
+:PROPERTIES:
+:ID:       b6b035b5-ad26-4e08-8034-42e5d4f2d7c4
+:END:
+:PROPERTIES:
+:ID:       8683b93f-b1af-43c6-a9d8-a157ef483790
+:END:
+:PROPERTIES:
+:ID:       1197981a-9fce-468c-91f1-095ab4053746
+:END:
+:PROPERTIES:
+:ID:       b72e4428-4612-4844-b747-fda8f4c2d673
+:END:
+:PROPERTIES:
+:ID:       b3727aa1-adc2-4a0f-b252-912954530117
+:END:
+:PROPERTIES:
+:ID:       372d08c4-67d8-4e25-a22f-53c9858b4363
+:END:
+:PROPERTIES:
+:ID:       9e5f9c33-877c-43b8-838b-25fa083c6b90
+:END:
+:PROPERTIES:
+:ID:       18b81f65-c44c-43d5-9ba1-843e3167b880
+:END:
+:PROPERTIES:
+:ID:       b7c2706d-0c7c-4c4b-8e95-3eb425cbaad2
+:END:
+:PROPERTIES:
+:ID:       897a353d-70cf-466e-a2fd-d6d80d21d5bd
+:END:
+:PROPERTIES:
+:ID:       66072de1-88d6-409b-ab99-821d0fd2306a
+:END:
+:PROPERTIES:
+:ID:       ee69e7bf-72c9-4088-8638-0b56542ac422
+:END:
+:PROPERTIES:
+:ID:       b62329c2-5e80-4579-90cc-a5468708f575
+:END:
+:PROPERTIES:
+:ID:       98bfc29b-4510-4f11-b6f7-cf2f64e79495
+:END:
+:PROPERTIES:
+:ID:       5d6b66e0-b562-46fd-a50d-2170fdd2ce1e
+:END:
+:PROPERTIES:
+:ID:       38a3b74d-de28-4043-b7ff-2065f2af0528
+:END:
+:PROPERTIES:
+:ID:       ba5536f1-7aa2-435d-be15-1d5f9d9fea28
+:END:
+:PROPERTIES:
+:ID:       a5808283-f12c-464f-acae-7ca4234c6abf
+:END:
+:PROPERTIES:
+:ID:       748b63cc-0f36-4a33-98db-25001757f587
+:END:
+:PROPERTIES:
+:ID:       8412982e-9665-41c3-8051-d90e588a8777
+:END:
+:PROPERTIES:
+:ID:       76ca917b-6e2e-44ef-bcee-a53f779fe9b0
+:END:
+:PROPERTIES:
+:ID:       958e5d0e-f692-41a4-8ef9-033583611e9f
+:END:
+:PROPERTIES:
+:ID:       4f1fa674-99a3-48f6-a4db-12c26d00d033
+:END:
+:PROPERTIES:
+:ID:       407a105b-61e0-4af2-b457-48ad6f2409e6
+:END:
+:PROPERTIES:
+:ID:       2840b728-712e-48f5-8675-bb80b7727a5f
+:END:
+:PROPERTIES:
+:ID:       d2857c33-6dd5-4967-abb4-0566c22f5ff6
+:END:
+:PROPERTIES:
+:ID:       a1c08731-3e5b-4984-bbd7-b16e33a36046
+:END:
+:PROPERTIES:
+:ID:       84ef9ce1-8876-461a-81f9-8aaaea66ea3c
+:END:
+:PROPERTIES:
+:ID:       edde0d8e-6a73-40a9-bcec-52ed64afd65a
+:END:
+:PROPERTIES:
+:ID:       103e21b8-068a-470d-9a26-3d110ddae72a
+:END:
+:PROPERTIES:
+:ID:       34412d6c-6312-4ce8-b285-64e85e506d95
+:END:
+:PROPERTIES:
+:ID:       24f2e7e4-21d1-49ee-a7cc-cdf95f5a7448
+:END:
+:PROPERTIES:
+:ID:       361b52d7-f37c-4b1e-b621-83094ba1149c
+:END:
+:PROPERTIES:
+:ID:       c4488e80-e2af-46dc-b9db-ecf00a48254d
+:END:
+:PROPERTIES:
+:ID:       257a2c56-9df5-4994-94f2-40e66d3a8e1c
+:END:
+:PROPERTIES:
+:ID:       eedcb5bf-7d0c-4c1c-b373-1507daec32b2
+:END:
+:PROPERTIES:
+:ID:       7d1d786b-b85d-4dbe-ba50-a7e52138678f
+:END:
+:PROPERTIES:
+:ID:       971ee765-40a1-4e59-8070-bb712048b93c
+:END:
+:PROPERTIES:
+:ID:       c99320db-46dd-4b56-8b2b-619d5bcaf8e2
+:END:
+:PROPERTIES:
+:ID:       95b40de5-a601-43bf-b269-c49589c53769
+:END:
+:PROPERTIES:
+:ID:       3f452556-ca09-4626-ba8c-55b9aa819bad
+:END:
+:PROPERTIES:
+:ID:       53cf04d3-c881-4782-9333-85a88032bd94
+:END:
+:PROPERTIES:
+:ID:       a9130e7f-542f-4a56-b8ee-de7c7222f1fe
+:END:
+:PROPERTIES:
+:ID:       eb5ce607-0070-48f3-a9aa-49fdb845d55d
+:END:
+:PROPERTIES:
+:ID:       dcd60367-75ec-4bde-82b9-9ac614fb4ee4
+:END:
+:PROPERTIES:
+:ID:       ee003b31-e58a-4473-824b-5d3eb3aca891
+:END:
+:PROPERTIES:
+:ID:       931d445f-073c-4cd1-8ce4-94e4b7864602
+:END:
+:PROPERTIES:
+:ID:       2eeb071a-ec2e-4bbe-9549-1d7cef2cde00
+:END:
+:PROPERTIES:
+:ID:       8b799822-33f0-453b-8f44-415e9ef17322
+:END:
+:PROPERTIES:
+:ID:       2b9cb5a3-a44f-46c8-991a-abebf09e01d4
+:END:
+:PROPERTIES:
+:ID:       c002c654-92bd-438c-be0d-c5e28db49905
+:END:
+:PROPERTIES:
+:ID:       08247d03-1bb1-4202-9c7a-32527c52a98b
+:END:
+:PROPERTIES:
+:ID:       212f072a-cba6-4ee9-a5b6-c6011468b7c6
+:END:
+:PROPERTIES:
+:ID:       70dc2b2f-f08a-4b89-9435-6e23f67be085
+:END:
+:PROPERTIES:
+:ID:       9147d139-0dc6-400a-9c46-6d3c8208e7ee
+:END:
+:PROPERTIES:
+:ID:       f9887464-942b-4570-ad8f-96d14cc726f1
+:END:
+:PROPERTIES:
+:ID:       4745c1b7-1558-412f-ab5d-907bd0b9ae8e
+:END:
+:PROPERTIES:
+:ID:       b7a77c4b-bdac-4a0d-bfd6-9651da685f3e
+:END:
+:PROPERTIES:
+:ID:       921e3d96-9d4b-4e80-9ece-f91e234246ea
+:END:
+:PROPERTIES:
+:ID:       50b63d5d-bb18-4798-a475-00a4e9e4e1bd
+:END:
+:PROPERTIES:
+:ID:       df7ce019-1653-477a-b262-4948c5bfa123
+:END:
+:PROPERTIES:
+:ID:       c3b35fac-25f0-4367-b22b-7f8f43385a75
+:END:
+** TODO clean up fireplace area                              :home:frontroom:
+:PROPERTIES:
+:ID:       6076412d-03a3-495c-922d-7e8bb25f699c
+:END:
+:PROPERTIES::ID: 27c69dad-d5c6-4348-b64b-52bacaba334e
+
+:END:
