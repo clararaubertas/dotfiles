@@ -1,4 +1,6 @@
 
+&%%(and (diary-block 4 18 2015 4 18 2015)) possible Railsbridge
+&%%(and (diary-block 4 17 2015 4 17 2015)) possible Railsbridge
 &1/21/2015 18:00-18:30 Railsbridge planning chat
  Desc: Agenda:
  Review Google doc of organizational roles and get on the same page re what they are.
@@ -103,7 +105,7 @@
 &%%(and (diary-block 12 15 2014 12 15 2014)) Fall 2014 classes end
 &11/16/2014 18:00-19:00 Matt's 31st Birthday Party
 &11/13/2014 18:15-19:15 band
-&%%(and (diary-date t 20 t) (diary-block 11 20 2014 1 1 9999)) 18:00-22:00 Adler After Dark
+&%%(and (not (diary-date 1 15 2015)) (diary-date t 20 t) (diary-block 11 20 2014 1 1 9999)) 18:00-22:00 Adler After Dark
 &%%(and (diary-block 12 28 2014 1 4 2015)) Alex visit
 &%%(and (diary-block 11 9 2014 11 9 2014)) brunch @ katie's
 &11/8/2014 18:00-19:00 shamam dinner
@@ -1432,9 +1434,8 @@
 &%%(and (diary-block 5 28 2006 5 28 2006)) write HIPS exam
 &%%(and (diary-block 5 28 2006 5 28 2006)) finish drafting HIPS final paper
  Location: maclab
+&1/16/2015 10:00-18:00 C&S @ moomers
 &1/13/2015 14:00-15:00 Clara meets Lauren @ 1871
-&%%(and (diary-block 1 16 2015 1 16 2015)) C&S?
-&%%(and (diary-block 1 15 2015 1 15 2015)) C&S?
 &%%(and (diary-block 1 9 2015 1 9 2015)) C&S @ OP basement
 &1/7/2015 11:00-13:00 ET @ Moomers
 &1/7/2015 10:00-13:00 C&S @ Moomers
