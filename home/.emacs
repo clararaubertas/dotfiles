@@ -222,7 +222,7 @@ If the new path's directories does not exist, create them."
 (setq org-mobile-inbox-for-pull "~/Text/orgmob")
 (require 'org-mobile-sync)
 (org-mobile-sync-mode 1)
-(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/para" "~/Text/shopping.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org" "~/Text/tv.org")))
+(setq org-agenda-files (quote ("~/Text/para" "~/Text/shopping.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org")))
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 
@@ -248,7 +248,7 @@ If the new path's directories does not exist, create them."
 
 (setq org-agenda-sorting-strategy '(tag-up time-up priority-down))
 (setq org-agenda-include-all-todo t)
-(setq org-mobile-agendas '("p" "h" "d"))
+(setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
 (setq org-agenda-span 2)
 (setq org-agenda-sticky nil)
@@ -365,12 +365,7 @@ If the new path's directories does not exist, create them."
         ("s" "Shopping" entry (file+headline "~/Text/shopping.org" "Buy It")
              "* %? %i %^g")
 
-  ("q" "Quick task" entry
-         (file+headline "~/personal/organizer.org" "Tasks")
-         "* TODO %^{Task}
-SCHEDULED: %^t"
-         :immediate-finish t)
-))
+	))
 
 
 (set-face-attribute 'org-agenda-date nil :background "#073642"  :foreground "#859900" :underline t)
@@ -426,25 +421,25 @@ SCHEDULED: %^t"
       ;; toggles the todo heading
       )))
 
-(setq mark-diary-entries-in-calendar t)
-(defun getcal (url)
-  "Download ics file and add to diary"
-  (let ((tmpfile (url-file-local-copy url)))
-    (icalendar-import-file tmpfile "~/diary" t)
-    (kill-buffer (car (last (split-string tmpfile "/"))))
-    )
-  )
-(setq google-calendars '(
-                     "https://www.google.com/calendar/ical/clara.raubertas%40gmail.com/private-89f852a8af2420a9afcf0b88b36658eb/basic.ics"
-                         "https://www.google.com/calendar/ical/qefiaa27cig1mlij5v44e0orfo%40group.calendar.google.com/private-3c956aa9fec9c60483ee639b701d9408/basic.ics"
-                         ))
-(defun getcals ()
-  (find-file "~/diary")
-  (flush-lines "^[& ]")
-  (dolist (url google-calendars) (getcal url))
-  (kill-buffer "diary"))
-(getcals)
-(setq org-agenda-include-diary t)
+;; (setq mark-diary-entries-in-calendar t)
+;; (defun getcal (url)
+;;   "Download ics file and add to diary"
+;;   (let ((tmpfile (url-file-local-copy url)))
+;;     (icalendar-import-file tmpfile "~/diary" t)
+;;     (kill-buffer (car (last (split-string tmpfile "/"))))
+;;     )
+;;   )
+;; (setq google-calendars '(
+;;                      "https://www.google.com/calendar/ical/clara.raubertas%40gmail.com/private-89f852a8af2420a9afcf0b88b36658eb/basic.ics"
+;;                          "https://www.google.com/calendar/ical/qefiaa27cig1mlij5v44e0orfo%40group.calendar.google.com/private-3c956aa9fec9c60483ee639b701d9408/basic.ics"
+;;                          ))
+;; (defun getcals ()
+;;   (find-file "~/diary")
+;;   (flush-lines "^[& ]")
+;;   (dolist (url google-calendars) (getcal url))
+;;   (kill-buffer "diary"))
+;; (getcals)
+;; (setq org-agenda-include-diary t)
 ;;;;;;;;;; ;;;;;;;;;; 
 
 ;;;;;;;;;; VI. Lisp & Scheme ;;;;;;;;;;

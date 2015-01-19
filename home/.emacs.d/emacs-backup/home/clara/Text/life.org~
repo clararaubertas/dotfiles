@@ -1119,7 +1119,8 @@ SCHEDULED: <2015-01-10 Sat .+5d/8d>
 :LAST_REPEAT: [2015-01-05 Mon 21:59]
 :END:
 ** TODO clear personal inbox                                      :computer:
-SCHEDULED:  <2015-01-16 Fri .+1d/2d>
+SCHEDULED:  <2015-01-17 Sat .+1d/2d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 18:40]
 - State "DONE"       from "TODO"       [2015-01-15 Thu 21:59]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:50]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 17:20]
@@ -1244,7 +1245,7 @@ SCHEDULED:  <2015-01-16 Fri .+1d/2d>
 :PROPERTIES:
 :ID:       51a1ddc5-78d7-4635-b696-13d0e9bc6b1d
 :STYLE: habit
-:LAST_REPEAT: [2015-01-15 Thu 21:59]
+:LAST_REPEAT: [2015-01-16 Fri 18:40]
 :END:
 ** TODO clear up bag                                                  :home:
 SCHEDULED: <2015-01-16 Fri .+2d/4d>
@@ -1339,7 +1340,8 @@ SCHEDULED: <2015-01-16 Fri .+2d/4d>
 :LAST_REPEAT: [2015-01-14 Wed 16:51]
 :END:
 ** TODO clear work inbox                                          :computer:
-SCHEDULED: <2015-01-16 Fri .+1d/2d>
+SCHEDULED: <2015-01-17 Sat .+1d/2d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 18:41]
 - State "DONE"       from "TODO"       [2015-01-15 Thu 21:59]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:50]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 17:20]
@@ -1477,7 +1479,7 @@ SCHEDULED: <2015-01-16 Fri .+1d/2d>
 :PROPERTIES:
 :ID:       2636e99f-c430-4342-80e1-4b86fcaf4896
 :STYLE: habit
-:LAST_REPEAT: [2015-01-15 Thu 21:59]
+:LAST_REPEAT: [2015-01-16 Fri 18:41]
 :END:
 ** TODO make bed                                              :home:bedroom:
 SCHEDULED: <2015-01-17 Sat .+1d>
@@ -5332,7 +5334,8 @@ SCHEDULED: <2014-10-06 Mon>
 :ID:       4ecb492b-4f55-4bee-816f-67cc3073afde
 :END:
 ** TODO update books doc                                          :computer:
-SCHEDULED: <2015-01-16 Fri .+2d/4d>
+SCHEDULED: <2015-01-18 Sun .+2d/4d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 18:42]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:50]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:04]
 - State "DONE"       from "TODO"       [2015-01-09 Fri 19:23]
@@ -5373,10 +5376,11 @@ SCHEDULED: <2015-01-16 Fri .+2d/4d>
 :PROPERTIES:
 :ID:       ba57072f-afda-4ee6-a30e-6c666b2b5fec
 :STYLE:    habit
-:LAST_REPEAT: [2015-01-14 Wed 16:50]
+:LAST_REPEAT: [2015-01-16 Fri 18:42]
 :END:
 ** TODO update movies doc                                         :computer:
-SCHEDULED: <2015-01-16 Fri .+2d/4d>
+SCHEDULED: <2015-01-18 Sun .+2d/4d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 18:42]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:50]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:04]
 - State "DONE"       from "TODO"       [2015-01-09 Fri 19:23]
@@ -5419,7 +5423,7 @@ SCHEDULED: <2015-01-16 Fri .+2d/4d>
 :ID:       1503f13c-baaa-4ed7-b144-ea547a84291c
 :BECAUSE:  
 :STYLE:    habit
-:LAST_REPEAT: [2015-01-14 Wed 16:50]
+:LAST_REPEAT: [2015-01-16 Fri 18:42]
 :END:
 ** DONE [#A] set up recycling                                         :home:
 - State "DONE"       from "TODO"       [2014-08-27 Wed 19:18]
@@ -5874,7 +5878,8 @@ DEADLINE: <2014-09-30 Tue>
 :END:
 ** JESSE driver's license for car insurance :computer:
 ** TODO process notebook                                          :computer:
-SCHEDULED: <2015-01-15 Thu .+3d/5d>
+SCHEDULED: <2015-01-19 Mon .+3d/5d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 18:39]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:04]
 - State "DONE"       from "TODO"       [2015-01-08 Thu 14:48]
 - State "DONE"       from "TODO"       [2015-01-05 Mon 21:59]
@@ -5894,7 +5899,7 @@ SCHEDULED: <2015-01-15 Thu .+3d/5d>
 :PROPERTIES:
 :ID:       37292058-e425-4b4c-9e43-569e276b7fae
 :STYLE:    habit
-:LAST_REPEAT: [2015-01-12 Mon 14:04]
+:LAST_REPEAT: [2015-01-16 Fri 18:39]
 :END:
 ** DONE [#A] register for LL63                                    :computer:
 - State "DONE"       from "TODO"       [2014-10-15 Wed 18:04]
@@ -6023,7 +6028,8 @@ SCHEDULED: <2014-10-17 Fri>
 :ID:       25067f92-9891-46e0-b565-3e13b253e2eb
 :END:
 ** TODO 20 min writing                                    :computer:writing:
-SCHEDULED: <2015-01-15 Thu .+3d/5d>
+SCHEDULED: <2015-01-19 Mon .+3d/5d>
+- State "DONE"       from "TODO"       [2015-01-16 Fri 17:09]
 - State "DONE"       from "TODO"       [2015-01-12 Mon 14:05]
 - State "DONE"       from "TODO"       [2014-12-24 Wed 17:08]
 - State "DONE"       from "TODO"       [2014-12-13 Sat 19:26]
@@ -6036,7 +6042,7 @@ SCHEDULED: <2015-01-15 Thu .+3d/5d>
 - State "DONE"       from "TODO"       [2014-10-28 Tue 16:01]
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2015-01-12 Mon 14:05]
+:LAST_REPEAT: [2015-01-16 Fri 17:09]
 :ID:       3a379cfe-4a0d-4db2-b604-4908cdac3dbd
 :END:
 ** DONE [#A] learn marceline's song                                   :home:
@@ -6154,7 +6160,7 @@ SCHEDULED: <2014-11-28 Fri>
 :PROPERTIES:
 :ID:       b1144a10-cb0b-4c5b-9b90-897c060400bf
 :END:
-** WAITING [#B] clean tachyon filenames                      :home:computer:
+** CANCELLED [#B] clean tachyon filenames                    :home:computer:
 :PROPERTIES:
 :ID:       7888e05a-7997-4ae0-a4db-342dd3350880
 :END:
@@ -6215,7 +6221,7 @@ g
 :PROPERTIES:
 :ID:       85f4f548-ed42-4b49-8948-4f387c1aa190
 :END:
-** WAITING [#B] crunchbang                                        :computer:
+** TODO [#B] crunchbang                                           :computer:
 :PROPERTIES:
 :ID:       0ac58b9e-ce71-48af-ac50-32f5677c0b01
 :END:
@@ -6239,7 +6245,8 @@ SCHEDULED: <2014-12-03 Wed>
 :PROPERTIES:
 :ID:       6457becd-5fe8-46c2-820a-3b27d0964fdf
 :END:
-** TODO [#A] use demo of MakeSomeTime                                 :para:
+** DONE [#A] use demo of MakeSomeTime                                 :para:
+- State "DONE"       from "TODO"       [2015-01-16 Fri 16:39]
 :PROPERTIES:
 :ID:       8c767d00-7134-44c6-b5a3-70bc37f83367
 :END:
@@ -12300,7 +12307,7 @@ k
 :ID:       95e044a3-a502-43fd-a6df-a4b636cd40ca
 :END:
 ** CANCELLED [#A] RailsBridge                                     :computer:
-** TODO [#A] RailsBridge suggestions                      :computer:writing:
+** WAITING [#A] RailsBridge suggestions                   :computer:writing:
 :PROPERTIES:
 :ID:       0a7e369d-cb20-4cd6-b7cc-ac1c1c1aade2
 :END:
@@ -12324,7 +12331,8 @@ k
 :PROPERTIES:
 :ID:       0354c418-0a6f-4c1b-b481-b0eeecb4765a
 :END:
-** TODO set deadline for moojo                               :computer:moojo:
+** DONE set deadline for moojo                              :computer:moojo:
+- State "DONE"       from "TODO"       [2015-01-16 Fri 18:42]
 :PROPERTIES:
 :ID:       9343dfc4-1649-4c5b-b192-1fb074f04f6b
 :END:
@@ -12383,6 +12391,9 @@ k
 
 :END:
 ** TODO buy flowers                                                      :hp:
+:PROPERTIES:
+:ID:       61c78bb0-ddc4-4705-afdb-e85270f81f75
+:END:
 ** TODO fix printer                                                    :home:
 :PROPERTIES:
 :ID:       f522b155-4d01-4e24-af29-58d480acb59a
@@ -13276,3 +13287,4 @@ k
 :PROPERTIES::ID: 27c69dad-d5c6-4348-b64b-52bacaba334e
 
 :END:
+** TODO craigslist couch                               :home:office:computer:
