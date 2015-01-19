@@ -235,20 +235,20 @@ If the new path's directories does not exist, create them."
 ;; (setq org-agenda-property-position 'next-line)
 
 
-(setq enable-recursive-minibuffers t)
+;;(setq enable-recursive-minibuffers t)
 
-(defun org-completing-read (&rest args)
-  "Completing-read with SPACE being a normal character."
-  (let ((minibuffer-local-completion-map
-         (copy-keymap minibuffer-local-completion-map)))
-    (org-defkey minibuffer-local-completion-map " " 'self-insert-command)
-    (org-defkey minibuffer-local-completion-map "?" 'self-insert-command)
-    (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
-    (apply 'org-icompleting-read args)))
+;; (defun org-completing-read (&rest args)
+;;   "Completing-read with SPACE being a normal character."
+;;   (let ((minibuffer-local-completion-map
+;;          (copy-keymap minibuffer-local-completion-map)))
+;;     (org-defkey minibuffer-local-completion-map " " 'self-insert-command)
+;;     (org-defkey minibuffer-local-completion-map "?" 'self-insert-command)
+;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
+;;     (apply 'org-icompleting-read args)))
 
 (setq org-agenda-sorting-strategy '(tag-up time-up priority-down))
 (setq org-agenda-include-all-todo t)
-(setq org-mobile-agendas '("p"))
+(setq org-mobile-agendas '("p" "h" "d"))
 (setq org-habit-show-habits-only-for-today t)
 (setq org-agenda-span 2)
 (setq org-agenda-sticky nil)
@@ -260,7 +260,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-tags-todo-honor-ignore-options t)
 (setq org-agenda-custom-commands
       '(
-        ;; wow such agenda
+        ;; wow such 
         ("p" "wow such agenda"
          ( (tags-todo "+PRIORITY=\"A\""
                       ( (org-agenda-overriding-header "")
