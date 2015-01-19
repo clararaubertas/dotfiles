@@ -222,7 +222,7 @@ If the new path's directories does not exist, create them."
 (setq org-mobile-inbox-for-pull "~/Text/orgmob")
 (require 'org-mobile-sync)
 (org-mobile-sync-mode 1)
-(setq org-agenda-files (quote ("~/Text/para" "~/Text/shopping.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org")))
+(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/para" "~/Text/shopping.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org")))
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 
