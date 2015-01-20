@@ -9,7 +9,7 @@
  (position . 151846))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO craigsli")
- (rear-context-string . "caba334e\n\n:END:\n")
- (position . 490211))
+ (front-context-string . "** TODO pay dent")
+ (rear-context-string . "        :phone:\n")
+ (position . 162596))
 )
