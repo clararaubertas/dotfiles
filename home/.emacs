@@ -255,9 +255,10 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-show-log t)
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
-(setq  org-habit-show-all-today nil)
+(setq org-habit-show-all-today nil)
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
+(setq org-agenda-prefix-format "[ ] ")
 (setq org-agenda-custom-commands
       '(
         ;; wow such 
@@ -281,14 +282,18 @@ If the new path's directories does not exist, create them."
                  ( (org-agenda-overriding-header nil)
                    ) )
            (tags-todo "+PRIORITY=\"C\""
-                      ( (org-agenda-overriding-header nil)
+                      ( (org-agenda-overriding-header nil)  
     ;;                    (org-agenda-sorting-strategy '(tag-up))
                         ))
            )
          ((org-agenda-compact-blocks t)
 ;;          (org-agenda-sorting-strategy '(priority-down time-up tag-down habit-down))
-          (org-agenda-prefix-format "  ")
-          (org-agenda-skip-entry-if 'scheduled)
+	  (org-agenda-prefix-format "  %-10T%?-16t% s")
+	  (org-agenda-todo-keyword-format "%-11s")
+	  (org-agenda-show-inherited-tags nil)
+	  (org-agenda-remove-tags 'prefix)
+	  (org-agenda-tags-column 70)
+	  (org-agenda-skip-entry-if 'scheduled)
           (org-fast-tag-selection-single-key (quote expert))
           (org-habit-following-days 5)
           (org-habit-preceding-days 10)
@@ -375,7 +380,7 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
 (set-face-attribute 'org-done nil :strike-through t  )
 
-(org-agenda-prefix-format "[ ] %T: ")
+
 
 (set-face-attribute 'org-habit-alert-face nil :background "#b58900" :bold t :strike-through nil :foreground "#073652")
 (set-face-attribute 'org-habit-alert-future-face nil :background "#b58900" :strike-through nil :foreground "#073642")
