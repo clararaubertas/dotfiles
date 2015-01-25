@@ -389,9 +389,10 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-habit-clear-future-face nil :background "#073642" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#d33682" :bold t :strike-through nil :foreground "#073642")
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#073642" :strike-through nil :underline nil)
-(set-face-attribute 'org-habit-ready-face nil :background "#2aa198" :foreground "#073642")
+(set-face-attribute 'org-habit-ready-face nil :background "#002b36" :foreground "#859900")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
 (setq org-habit-show-done-always-green t)
+(setq org-habit-today-glyph ?#)
 
 ;; ;; make a face
 ;; (make-face 'agenda-face)
