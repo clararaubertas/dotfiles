@@ -389,7 +389,7 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-habit-clear-future-face nil :background "#073642" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#d33682" :bold t :strike-through nil :foreground "#073642")
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#073642" :strike-through nil :underline nil)
-(set-face-attribute 'org-habit-ready-face nil :background "#268bd2" :foreground "#073642")
+(set-face-attribute 'org-habit-ready-face nil :background "#2aa198" :foreground "#073642")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
 (setq org-habit-show-done-always-green t)
 
@@ -406,9 +406,9 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#268bd2"  )
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-priority-faces
-      (("A" :foreground "#E01B4C" :weight bold)
-       ("B" :foreground "#1739BF")
-       ("#C" :foreground "#575757")) )
+      '(( ?A . (:foreground "#d33682" :weight bold))
+	( ?B . ( :foreground "#268bd2"))
+	( ?C . ( :foreground "#575757"))) )
 
 
 
