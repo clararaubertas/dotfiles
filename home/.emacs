@@ -375,7 +375,7 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
 (set-face-attribute 'org-done nil :strike-through t  )
 
-
+(org-agenda-prefix-format "[ ] %T: ")
 
 (set-face-attribute 'org-habit-alert-face nil :background "#b58900" :bold t :strike-through nil :foreground "#073652")
 (set-face-attribute 'org-habit-alert-future-face nil :background "#b58900" :strike-through nil :foreground "#073642")
@@ -385,7 +385,8 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#073642" :strike-through nil :underline nil)
 (set-face-attribute 'org-habit-ready-face nil :background "#268bd2" :foreground "#073642")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
- nn
+(setq org-habit-show-done-always-green t)
+
 ;; ;; make a face
 ;; (make-face 'agenda-face)
 ;; (set-face-attribute 'agenda-face nil :height 1.5) 
