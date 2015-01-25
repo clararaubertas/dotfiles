@@ -384,16 +384,16 @@ If the new path's directories does not exist, create them."
 
 
 (set-face-attribute 'org-habit-alert-face nil :background "#073642" :bold t :strike-through nil :foreground "#b58900")
-(set-face-attribute 'org-habit-alert-future-face nil :background "#073642" :strike-through t :foreground "#b58900")
+(set-face-attribute 'org-habit-alert-future-face nil :background "#002b36" :strike-through t :foreground "#cb4b16")
 (set-face-attribute 'org-habit-clear-face nil :background "#073642"  :strike-through nil)
-(set-face-attribute 'org-habit-clear-future-face nil :background "#073642" )
-(set-face-attribute 'org-habit-overdue-face nil :background "#073642" :bold t :strike-through t :foreground "#d33682")
-(set-face-attribute 'org-habit-overdue-future-face nil :background "#073642" :strike-through nil :underline nil)
+(set-face-attribute 'org-habit-clear-future-face nil :background "#002b36" )
+(set-face-attribute 'org-habit-overdue-face nil :background "#002b36" :bold t :strike-through t :foreground "#d33682")
+(set-face-attribute 'org-habit-overdue-future-face nil :background "#002b36" :strike-through t :underline nil :foreground "#b58900")
 (set-face-attribute 'org-habit-ready-face nil :background "#002b36" :foreground "#859900")
-(set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
+(set-face-attribute 'org-habit-ready-future-face nil :background "#002b36")
 (setq org-habit-show-done-always-green t)
 (setq org-habit-today-glyph ?*)
-(setq org-habit-completed-glyph ?!)
+(setq org-habit-completed-glyph ?+)
 
 ;; ;; make a face
 ;; (make-face 'agenda-face)
