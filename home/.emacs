@@ -263,31 +263,32 @@ If the new path's directories does not exist, create them."
       '(
         ;; wow such 
         ("p" "wow such agenda"
-         ( (tags-todo "+PRIORITY=\"A\""
-                      ( (org-agenda-overriding-header "")
+         ( (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"A\""
+                      ( (org-agenda-overriding-header "%d")
 ;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
                         ))
            (agenda "" 
                    (
-;;		    (org-agenda-overriding-header " - - ")
+		    (org-agenda-overriding-header " - - ")
 		    (org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlinesrp
                     ))
            (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
                        ( (org-agenda-overriding-header "")
+			 (org-agenda-skip-entry-if 'scheduled 'deadline)
                          ))
            (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
                       ( (org-agenda-overriding-header "")
                         (org-agenda-sorting-strategy '(todo-state-down tag-down))
                         ))
            (todo "WAITING"
-                 ( (org-agenda-overriding-header "WAITING")
+                 ( (org-agenda-overriding-header "[WAITING]")
                    ) )
 	   (todo "JESSE"
-                 ( (org-agenda-overriding-header "JESSE")
+                 ( (org-agenda-overriding-header "[JESSE]")
                    ) )
            (tags-todo "+PRIORITY=\"C\""
-                      ( (org-agenda-overriding-header " ")  
+                      ( (org-agenda-overriding-header " --- ")  
                         (org-agenda-sorting-strategy '(tag-up))
                         ))
            )
@@ -296,7 +297,7 @@ If the new path's directories does not exist, create them."
 	  (org-agenda-prefix-format " ")
 	  (org-agenda-show-inherited-tags nil)
 ;;	  (org-agenda-remove-tags 'prefix)
-	  (org-agenda-tags-column 70)
+	  (org-agenda-tags-column 55)
 	  (org-agenda-skip-entry-if 'scheduled)
           (org-fast-tag-selection-single-key (quote expert))
           (org-habit-following-days 5)
