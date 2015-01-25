@@ -380,7 +380,7 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-habit-clear-face nil :background "#073642"  :strike-through nil)
 (set-face-attribute 'org-habit-clear-future-face nil :background "#073642" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#d33682" :bold t :strike-through nil :foreground "#073642")
-(set-face-attribute 'org-habit-overdue-future-face nil :background "#859900" :strike-through nil :underline nil)
+(set-face-attribute 'org-habit-overdue-future-face nil :background "#2aa198" :strike-through nil :underline nil)
 (set-face-attribute 'org-habit-ready-face nil :background "#268bd2" :foreground "#073642")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#073642")
  
