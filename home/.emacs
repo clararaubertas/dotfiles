@@ -264,20 +264,20 @@ If the new path's directories does not exist, create them."
         ;; wow such 
         ("p" "wow such agenda"
          ( (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"A\""
-                      ( (org-agenda-overriding-header "%d")
+                      ( (org-agenda-overriding-header " -TODAY-")
 ;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
                         ))
            (agenda "" 
                    (
-		    (org-agenda-overriding-header " - - ")
+		    (org-agenda-overriding-header " -today - ")
 		    (org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlinesrp
                     ))
            (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
-                       ( (org-agenda-overriding-header "")
-			 (org-agenda-skip-entry-if 'scheduled 'deadline)
-                         ))
-           (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
+                       (
+			(org-agenda-overriding-header " -today - ")
+			
+			   						  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
                       ( (org-agenda-overriding-header "")
                         (org-agenda-sorting-strategy '(todo-state-down tag-down))
                         ))
@@ -290,8 +290,7 @@ If the new path's directories does not exist, create them."
            (tags-todo "+PRIORITY=\"C\""
                       ( (org-agenda-overriding-header " --- ")  
                         (org-agenda-sorting-strategy '(tag-up))
-                        ))
-           )
+                        )))
          ((org-agenda-compact-blocks t)
 ;;          (org-agenda-sorting-strategy '(priority-down time-up tag-down habit-down))
 	  (org-agenda-prefix-format " ")
