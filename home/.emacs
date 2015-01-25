@@ -275,9 +275,9 @@ If the new path's directories does not exist, create them."
                     ))
            (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
                        (
-			(org-agenda-overriding-header " -today - ")
-			
-			   						  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
+			(org-agenda-overriding-header "today -")
+			)) 
+	   (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
                       ( (org-agenda-overriding-header "")
                         (org-agenda-sorting-strategy '(todo-state-down tag-down))
                         ))
@@ -290,7 +290,7 @@ If the new path's directories does not exist, create them."
            (tags-todo "+PRIORITY=\"C\""
                       ( (org-agenda-overriding-header " --- ")  
                         (org-agenda-sorting-strategy '(tag-up))
-                        )))
+                        ))
          ((org-agenda-compact-blocks t)
 ;;          (org-agenda-sorting-strategy '(priority-down time-up tag-down habit-down))
 	  (org-agenda-prefix-format " ")
@@ -304,8 +304,7 @@ If the new path's directories does not exist, create them."
 	  (org-agenda-todo-keyword-format " ")
 	  (org-agenda-scheduled-leaders '("" ""))
           (org-agenda-time-grid nil)
-          )
-         )      
+          ))      
         
         ;; wow such home tasks
         ("h" "wow such home tasks"
