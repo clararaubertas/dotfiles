@@ -288,15 +288,16 @@ If the new path's directories does not exist, create them."
            )
          ((org-agenda-compact-blocks t)
 ;;          (org-agenda-sorting-strategy '(priority-down time-up tag-down habit-down))
-	  (org-agenda-prefix-format "  %-10T%?-16t% s")
-	  (org-agenda-todo-keyword-format "%-11s")
+	  (org-agenda-prefix-format " ")
 	  (org-agenda-show-inherited-tags nil)
-	  (org-agenda-remove-tags 'prefix)
+;;	  (org-agenda-remove-tags 'prefix)
 	  (org-agenda-tags-column 70)
 	  (org-agenda-skip-entry-if 'scheduled)
           (org-fast-tag-selection-single-key (quote expert))
           (org-habit-following-days 5)
           (org-habit-preceding-days 10)
+	  (org-agenda-todo-keyword-format " ")
+	  (org-agenda-scheduled-leaders '("" ""))
           (org-agenda-time-grid nil)
           )
          )      
@@ -373,8 +374,8 @@ If the new path's directories does not exist, create them."
 	))
 
 
-(set-face-attribute 'org-agenda-date nil :background "#073642"  :foreground "#859900" :underline t)
-(set-face-attribute 'org-agenda-date-weekend nil :foreground "#859900" :background "#073642" :underline t)
+(set-face-attribute 'org-agenda-date nil  :foreground "#859900" :underline t)
+(set-face-attribute 'org-agenda-date-weekend nil :foreground "#859900" :underline t)
 (set-face-attribute 'org-agenda-date-today nil :background "#262626")
 (set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
@@ -400,8 +401,8 @@ If the new path's directories does not exist, create them."
 
 (setq org-habit-graph-column 35)
 
-(set-face-attribute 'org-scheduled-previously nil :foreground "#d33682" :bold t :background "#073642")
-(set-face-attribute 'org-scheduled-today nil :background "#073642"  :foreground "#fdf6e3")
+(set-face-attribute 'org-scheduled-previously nil :foreground "#d33682" :bold t )
+(set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e3")
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#b85990"  )
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 
