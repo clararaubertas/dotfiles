@@ -258,7 +258,7 @@ If the new path's directories does not exist, create them."
 (setq org-habit-show-all-today nil)
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
-(setq org-agenda-prefix-format "[ ] ")
+(setq org-agenda-prefix-format " - ")
 
 (setq org-agenda-custom-commands
       '(
@@ -280,9 +280,10 @@ If the new path's directories does not exist, create them."
 	  (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
 		      (
 		       (org-agenda-overriding-header " -")
+		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled))
 		       )
 		      ) 
-	  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
+	  (tags-todo "-TODO=\"JESSE\"-TODO=\"WAITING\"+PRIORITY=\"B\""
 		     (
 		      (org-agenda-overriding-header "")
 		      (org-agenda-sorting-strategy '(todo-state-down tag-down))
