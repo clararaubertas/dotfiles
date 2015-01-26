@@ -259,6 +259,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
 (setq org-agenda-prefix-format "[ ] ")
+
 (setq org-agenda-custom-commands
       '(
         ;; wow such 
@@ -270,57 +271,58 @@ If the new path's directories does not exist, create them."
 			;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
 		      )
 		     )
-           (agenda "" 
+	  (agenda "" 
                    (
 		    (org-agenda-overriding-header " -today - ")
 		    (org-agenda-ndays 1)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlinesrp
                     ))
-           (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
-                       (
-			(org-agenda-overriding-header "today -")
-			)
-		       ) 
-	   (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
-                      (
-		       (org-agenda-overriding-header "")
-		       (org-agenda-sorting-strategy '(todo-state-down tag-down))
+	  (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
+		      (
+		       (org-agenda-overriding-header " -")
 		       )
+		      ) 
+	  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"B\""
+		     (
+		      (org-agenda-overriding-header "")
+		      (org-agenda-sorting-strategy '(todo-state-down tag-down))
 		      )
-           (todo "WAITING"
-                 (
-		  (org-agenda-overriding-header "[WAITING]")
-		  )
+		     )
+	  (todo "WAITING"
+		(
+		 (org-agenda-overriding-header "[WAITING]")
 		 )
-	   (todo "JESSE"
-                 ( (org-agenda-overriding-header "[JESSE]")
-                   ) )
-           (tags-todo "+PRIORITY=\"C\""
-                      (
-		       (org-agenda-overriding-header " --- ")  
-                        (org-agenda-sorting-strategy '(tag-up))
-                        )
+		)
+	  (todo "JESSE"
+		( (org-agenda-overriding-header "[JESSE]")
+		  ) )
+	  (tags-todo "+PRIORITY=\"C\""
+		     (
+		      (org-agenda-overriding-header " --- ")  
+		      (org-agenda-sorting-strategy '(tag-up))
 		      )
-	   ((org-agenda-compact-blocks t)
-;;	    (org-agenda-prefix-format " ")
-	    (org-agenda-show-inherited-tags nil)
-	    (org-agenda-tags-column 55)
-;	    (org-agenda-skip-entry-if 'scheduled)
-	    (org-fast-tag-selection-single-key (quote expert))
-	    (org-habit-following-days 5)
-	    (org-habit-preceding-days 10) 
-	    (org-agenda-todo-keyword-format " ")
-	    (org-agenda-scheduled-leaders '("" ""))
-	    (org-agenda-time-grid nil)
-	    )
+		     )		       
+	  	   )
+	  
+	  (
+	   (org-agenda-compact-blocks t)
+	   (org-agenda-show-inherited-tags nil)
+	   (org-agenda-tags-column 55)
+	   (org-agenda-skip-entry-if 'scheduled)
+	   (org-fast-tag-selection-single-key (quote expert))
+	   (org-habit-following-days 5)
+	   (org-habit-preceding-days 10) 
+	   (org-agenda-todo-keyword-format " ")
+	   (org-agenda-scheduled-leaders '("" ""))
+	   (org-agenda-time-grid nil)
 	   )
-	 ) 
-	
+	  )
+	 )
 	)
-      )
+      
 
-	 (add-hook 'org-agenda-mode-hook
-		;; Always hilight the current agenda line
+(add-hook 'org-agenda-mode-hook
+	  ;; Always hilight the current agenda line
           '(lambda () (hl-line-mode 1))
           'append)
 
