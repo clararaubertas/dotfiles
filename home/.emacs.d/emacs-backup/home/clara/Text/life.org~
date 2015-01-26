@@ -1821,7 +1821,7 @@ SCHEDULED: <2015-02-03 Tue .+12d/14d>
 :LAST_REPEAT: [2015-01-22 Thu 21:13]
 :ID:       5a31bd6e-e9df-433d-a534-76bdebb94f64
 :END:
-** JESSE [#B] life insurance                                      :computer:
+** JESSE [#C] life insurance                                      :computer:
 :PROPERTIES:
 :ID:       7283cffa-593e-426d-a33b-1b581896a9eb
 :BECAUSE:  
@@ -1863,7 +1863,7 @@ SCHEDULED: <2015-02-02 Mon .+15d/18d>
 :STYLE:    habit
 :LAST_REPEAT: [2015-01-19 Mon 12:20]
 :END:
-** JESSE [#B] clean suit                                                :hp:
+** JESSE [#C] clean suit                                                :hp:
 :PROPERTIES:
 :ID:       d85d946b-9cb4-4c0c-90e0-9888b0526aae
 :END:
@@ -3101,11 +3101,11 @@ g
 :PROPERTIES:
 :ID:       287d374f-0405-41fd-9ae2-a8243042c328
 :END:
-** TODO [#B] moojo addresses                                         :moojo:
+** TODO [#B] moojo addresses                                :moojo:computer:
 :PROPERTIES:
 :ID:       3caa85d5-7d6f-4364-8aae-e8a99e6ed966
 :END:
-** TODO [#B] moojo backissues                                        :moojo:
+** TODO [#B] moojo backissues                          :moojo:computer:home:
 :PROPERTIES:
 :ID:       e77a2acb-2f8c-4263-bf95-e30fb5113c90
 :END:
@@ -3143,7 +3143,8 @@ g
 :PROPERTIES::ID: d740aecc-2da6-403a-90d8-8fa4fdb81e09
 
 :END:
-** TODO [#B] buy flowers                                                :hp:
+** DONE [#B] buy flowers                                                :hp:
+- State "DONE"       from "TODO"       [2015-01-25 Sun 19:35]
 :PROPERTIES:
 :ID:       61c78bb0-ddc4-4705-afdb-e85270f81f75
 :END:
@@ -4118,3 +4119,10 @@ SCHEDULED: <2015-01-25 Sun .+2d/5d>
 :PROPERTIES:
 :ID:       1287903a-896a-4aca-9087-951434bda716
 :END:
+** TODO listen to saltpants                                        :computer:
+DEADLINE: <2015-01-27 Tue>
+:PROPERTIES::ID: cc834ea6-c977-426d-af33-b80081a8972c
+
+:END:
+** TODO Railsbridge roles draft                                    :computer:
+SCHEDULED: <2015-01-30 Fri>
