@@ -9,7 +9,7 @@
  (position . 151846))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO [#A] fix")
- (rear-context-string . "ae0f094c5\n:END:\n")
- (position . 172976))
+ (front-context-string . "** TODO Railsbri")
+ (rear-context-string . "2015-01-27 Tue>\n")
+ (position . 173783))
 )
