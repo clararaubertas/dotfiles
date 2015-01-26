@@ -280,7 +280,7 @@ If the new path's directories does not exist, create them."
 	  (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
 		      (
 		       (org-agenda-overriding-header " -")
-		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled))
+		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
 		       )
 		      ) 
 	  (tags-todo "-TODO=\"JESSE\"-TODO=\"WAITING\"+PRIORITY=\"B\""
