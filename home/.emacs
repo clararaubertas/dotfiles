@@ -296,85 +296,30 @@ If the new path's directories does not exist, create them."
                  ( (org-agenda-overriding-header "[JESSE]")
                    ) )
            (tags-todo "+PRIORITY=\"C\""
-                      ( (org-agenda-overriding-header " --- ")  
+                      (
+		       (org-agenda-overriding-header " --- ")  
                         (org-agenda-sorting-strategy '(tag-up))
-                        ))
+                        )
+		      )
 	   ((org-agenda-compact-blocks t)
-	    (org-agenda-prefix-format " ")
+;;	    (org-agenda-prefix-format " ")
 	    (org-agenda-show-inherited-tags nil)
 	    (org-agenda-tags-column 55)
-	    (org-agenda-skip-entry-if 'scheduled)
+;	    (org-agenda-skip-entry-if 'scheduled)
 	    (org-fast-tag-selection-single-key (quote expert))
 	    (org-habit-following-days 5)
-	    (org-habit-preceding-days 10)
+	    (org-habit-preceding-days 10) 
 	    (org-agenda-todo-keyword-format " ")
 	    (org-agenda-scheduled-leaders '("" ""))
 	    (org-agenda-time-grid nil)
 	    )
 	   )
 	 ) 
-	    
-        ;; wow such home tasks
-        ("h" "wow such home tasks"
-         ((tags-todo "home"))
-         ((org-agenda-sorting-strategy '(time-up todo-state-up priority-down)))         
-         )
-        ;; wow such today
-        ("d" "wow such today"
-         ((agenda "" ((org-agenda-ndays 1)                      ;; daily agenda
-                      (org-deadline-warning-days 7)             ;; 7 day advanced 
-	    ))      
-        
-	 ;; wow such home tasks
-	 ("h" "wow such home tasks"
-	  ((tags-todo "home"))
-	  ((org-agenda-sorting-strategy '(time-up todo-state-up priority-down)))         
-	  )
-	 ;; wow such today
-	 ("d" "wow such today"
-	  ((agenda "" ((org-agenda-ndays 1)                      ;; daily agenda
-		       (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
-		       (org-agenda-scheduled-leaders '("" ""))
-		       ))
-	   (todo "TODO"
-		 (
-		  (org-agenda-todo-ignore-scheduled t)
-		  (org-agenda-sorting-strategy '(priority-down tag-down))
-		  ) )
-	   
-	   (todo "JESSE"               
-		 ((org-agenda-todo-keyword-format "%-8s "))) 
-	   )
-	  ) 
-	 ;; very context
-	 ("l" "very context"      
-	  ((agenda "week upcoming" ((org-agenda-ndays 7)                      ;; overview of appointments
-				    (org-agenda-start-on-weekday nil)         ;; calendar begins today
-				    (org-agenda-repeating-timestamp-show-all t)
-				    (org-agenda-entry-types '(:timestamp :sexp))
-				    (org-agenda-time-grid nil)
-				    (org-agenda-use-time-grid nil)
-				    ))
-	   ;; today's accomplishments
-	   (agenda "done today" (
-				 (org-agenda-ndays 1)
-				 (org-agenda-log-items '(closed state))
-				 (org-agenda-repeating-timestamp-show-all t)
-				 (org-agenda-show-log t)
-				 (org-agenda-todo-keyword-format "")
-				 (org-agenda-remove-tags t)
-				 (org-agenda-entry-types '(:timestamp))
-				 (org-agenda-time-grid nil)
-				 (org-agenda-show-diary nil)
-				 ))
-	   
-	   (todo "WAITING"
-		 ((org-agenda-todo-keyword-format "%-8s "))) 
-	   )
-	  
-	  )))
-      
-      (add-hook 'org-agenda-mode-hook
+	
+	)
+      )
+
+	 (add-hook 'org-agenda-mode-hook
 		;; Always hilight the current agenda line
           '(lambda () (hl-line-mode 1))
           'append)
