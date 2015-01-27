@@ -375,9 +375,10 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-habit-ready-face nil :background "#001b26"
 		    :foreground "#859900" :bold t :height 150
 		    )
-(set-face-attribute 'org-habit-ready-future-face nil :background "#002b36")
+(set-face-attribute 'org-habit-ready-future-face nil :background
+		    "#002b36" :height 150)
 (setq org-habit-show-done-always-green t)
-(setq org-habit-today-glyph ?!)
+(setq org-habit-today-glyph ?-)
 (setq org-habit-completed-glyph ?+)
 
 ;; ;; make a face
@@ -388,10 +389,12 @@ If the new path's directories does not exist, create them."
 
 (setq org-habit-graph-column 35)
 
-(set-face-attribute 'org-scheduled-previously nil :foreground "#d33682" :bold t )
-(set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e5" :bold t )
-(set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198" :bold t )
-
+(set-face-attribute 'org-scheduled-previously nil :foreground "#d33682"
+		    :bold t :height 150)
+(set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e5"
+		    :bold nil :height 150)
+(set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198"
+		    :bold t :height 140)
 
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-deadline-faces
