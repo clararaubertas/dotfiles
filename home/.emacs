@@ -258,7 +258,8 @@ If the new path's directories does not exist, create them."
 (setq org-habit-show-all-today nil)
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
-(setq org-agenda-prefix-format "[ - ]")
+(setq org-agenda-prefix-format "-")
+
 
 (setq org-agenda-custom-commands
       '(
@@ -314,8 +315,10 @@ If the new path's directories does not exist, create them."
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
 	   (org-agenda-todo-keyword-format "---")
-	   (org-agenda-scheduled-leaders '("" ""))
+	   (org-agenda-scheduled-leaders '("%sd" "%s"))
+	   (org-agenda-deadline-leaders '("%sx" "%s"))
 	   (org-agenda-time-grid nil)
+
 	   )
 	  )
 	 )
