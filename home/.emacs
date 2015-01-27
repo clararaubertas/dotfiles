@@ -258,7 +258,7 @@ If the new path's directories does not exist, create them."
 (setq org-habit-show-all-today nil)
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
-(setq org-agenda-prefix-format "-%-5s")
+(setq org-agenda-prefix-format "%-4s")
 
 
 (setq org-agenda-custom-commands
@@ -314,7 +314,7 @@ If the new path's directories does not exist, create them."
 	   (org-fast-tag-selection-single-key (quote expert))
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
-	   (org-agenda-todo-keyword-format "---")
+	   (org-agenda-todo-keyword-format " + ")
 	   (org-agenda-scheduled-leaders '("%sx" "%sx"))
 	   (org-agenda-deadline-leaders '("%sd" "%sd"))
 	   (org-agenda-time-grid nil)
@@ -348,7 +348,7 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-agenda-date nil  :foreground "#268bd2" :underline t)
 (set-face-attribute 'org-agenda-date-weekend nil :foreground "#268bd2" :underline t)
-(set-face-attribute 'org-agenda-date-today nil :background "#fdf6e3")
+(set-face-attribute 'org-agenda-date-today nil :bold t )
 (set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
 (set-face-attribute 'org-done nil :strike-through t  )
@@ -394,17 +394,18 @@ If the new path's directories does not exist, create them."
 	))
 (setq org-tag-faces
       '(
-	("home" . (:foreground "#b58900"))
-	("computer" . (:background "#586e75"))
+	("home" . (:background "#b58900"))
+	("computer" . (:background "#575757"))
 	("bedroom" . (:foreground "#2aa198"))
-	("kitchen" . (:foreground "#859900"))
+	("kitchen" . (:foreground "#b58900"))
 	("diningroom" . (:foreground "#6c71c4"))
 	("frontroom" . (:foreground "#cb4b16"))
-	("office" . (:foreground "#268bd2"))
+	("office" . (:foreground "#859900"))
 	("malka". (:weight bold))
 	("hp" . (:foreground "#d33682"))
 	("phone" . (:foreground "#d33682"))
-	("para". (:weight bold))
+	("para". (:weight bold :background "#073642"))
+	("bathroom" . (:foreground "#268bd2"))
 	))
 
 
