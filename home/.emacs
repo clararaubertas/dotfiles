@@ -381,7 +381,14 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-scheduled-previously nil :foreground "#d33682" :bold t )
 (set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e5" :bold t )
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198" :bold t )
+
+
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
+(setq org-deadline-faces
+      '((1.0 . org-upcoming-deadline)
+	(0.5 . org-upcoming-deadline)
+	(0.0 . org-upcoming-deadline)
+	))
 (setq org-priority-faces
       '(( ?A . (:foreground "#d33682" :weight bold))
 	( ?B . ( :foreground "#2aa198" :weight bold ))
