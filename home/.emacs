@@ -258,7 +258,7 @@ If the new path's directories does not exist, create them."
 (setq org-habit-show-all-today nil)
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
-(setq org-agenda-prefix-format "%-4s")
+(setq org-agenda-prefix-format "-%-5s")
 
 
 (setq org-agenda-custom-commands
@@ -281,7 +281,7 @@ If the new path's directories does not exist, create them."
 	  (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
 		      (
 		       (org-agenda-overriding-header " -")
-;;		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
+		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
 		       )
 		      ) 
 	  (tags-todo "-TODO=\"JESSE\"-TODO=\"WAITING\"+PRIORITY=\"B\""
@@ -310,7 +310,7 @@ If the new path's directories does not exist, create them."
 	   (org-agenda-compact-blocks t)
 	   (org-agenda-show-inherited-tags nil)
 	   (org-agenda-tags-column 55)
-;;	   (org-agenda-skip-entry-if 'scheduled)
+	   (org-agenda-skip-entry-if 'scheduled)
 	   (org-fast-tag-selection-single-key (quote expert))
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
@@ -396,6 +396,8 @@ If the new path's directories does not exist, create them."
       '(
 	("home" . (:foreground "#b58900"))
 	("computer" . (:foreground "#268bd2"))
+	("bedroom" . (:foreground "#2aa198"))
+	
       ))
 
 
