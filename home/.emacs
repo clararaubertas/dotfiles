@@ -348,20 +348,21 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-agenda-date nil  :foreground "#268bd2" :underline t)
 (set-face-attribute 'org-agenda-date-weekend nil :foreground "#268bd2" :underline t)
-(set-face-attribute 'org-agenda-date-today nil :background "#262626")
-(set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
+(set-face-attribute 'org-agenda-date-today nil :background "#fdf6e3")
+(Set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
 (set-face-attribute 'org-done nil :strike-through t  )
 
 
+(setq 'org-tag-faces ('(:home (:foreground "#b58900"))))
 
-(set-face-attribute 'org-habit-alert-face nil :background "#073642" :bold t :strike-through nil :foreground "#b58900")
+(set-face-attribute 'org-habit-alert-face nil :background "#" :bold t :strike-through nil :foreground "#b58900")
 (set-face-attribute 'org-habit-alert-future-face nil :background "#002b36" :strike-through t :foreground "#cb4b16")
 (set-face-attribute 'org-habit-clear-face nil :background "#073642"  :strike-through nil)
 (set-face-attribute 'org-habit-clear-future-face nil :background "#002b36" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#002b36" :bold t :strike-through t :foreground "#d33682")
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#002b36" :strike-through t :underline nil :foreground "#b58900")
-(set-face-attribute 'org-habit-ready-face nil :background "#002b36" :foreground "#859900")
+(set-face-attribute 'org-habit-ready-face nil :background "#262626" :foreground "#859900")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#002b36")
 (setq org-habit-show-done-always-green t)
 (setq org-habit-today-glyph ?!)
