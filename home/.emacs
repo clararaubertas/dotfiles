@@ -281,7 +281,7 @@ If the new path's directories does not exist, create them."
 	  (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
 		      (
 		       (org-agenda-overriding-header " -")
-		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
+;;		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
 		       )
 		      ) 
 	  (tags-todo "-TODO=\"JESSE\"-TODO=\"WAITING\"+PRIORITY=\"B\""
@@ -310,7 +310,7 @@ If the new path's directories does not exist, create them."
 	   (org-agenda-compact-blocks t)
 	   (org-agenda-show-inherited-tags nil)
 	   (org-agenda-tags-column 55)
-	   (org-agenda-skip-entry-if 'scheduled)
+;;	   (org-agenda-skip-entry-if 'scheduled)
 	   (org-fast-tag-selection-single-key (quote expert))
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
@@ -355,7 +355,7 @@ If the new path's directories does not exist, create them."
 
 
 
-(set-face-attribute 'org-tag nil :bold nil :foreground: "#eee8d5" )
+(set-face-attribute 'org-tag nil :bold nil :foreground "#eee8d5" )
 
 (set-face-attribute 'org-habit-alert-face nil :background "#002b36" :bold t :strike-through nil :foreground "#b58900")
 (set-face-attribute 'org-habit-alert-future-face nil :background "#002b36" :strike-through t :foreground "#cb4b16")
@@ -394,10 +394,9 @@ If the new path's directories does not exist, create them."
 	( ?C . ( :foreground "#575757"))) )
 (setq org-tag-faces
       '(
-	(("home") . ((:foreground "#b58900")))
-	("computer") . ((:foreground "#268bd2")))
+	("home" . (:foreground "#b58900"))
+	("computer" . (:foreground "#268bd2"))
       ))
-
 
 
 (defun org-todo-toggle-yesterday ()
