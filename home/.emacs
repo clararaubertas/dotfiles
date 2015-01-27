@@ -354,7 +354,6 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-done nil :strike-through t  )
 
 
-
 (set-face-attribute 'org-tag nil :bold nil :foreground "#eee8d5" )
 
 (set-face-attribute 'org-habit-alert-face nil :background "#002b36" :bold t :strike-through nil :foreground "#b58900")
@@ -396,10 +395,16 @@ If the new path's directories does not exist, create them."
 (setq org-tag-faces
       '(
 	("home" . (:foreground "#b58900"))
-	("computer" . (:foreground "#268bd2"))
+	("computer" . (:background "#586e75"))
 	("bedroom" . (:foreground "#2aa198"))
 	("kitchen" . (:foreground "#859900"))
 	("diningroom" . (:foreground "#6c71c4"))
+	("frontroom" . (:foreground "#cb4b16"))
+	("office" . (:foreground "#268bd2"))
+	("malka". (:weight bold))
+	("hp" . (:foreground "#d33682"))
+	("phone" . (:foreground "#d33682"))
+	("para". (:weight bold))
 	))
 
 
