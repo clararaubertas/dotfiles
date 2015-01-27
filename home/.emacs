@@ -258,7 +258,7 @@ If the new path's directories does not exist, create them."
 (setq org-habit-show-all-today nil)
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
-(setq org-agenda-prefix-format "-")
+(setq org-agenda-prefix-format "%-4s")
 
 
 (setq org-agenda-custom-commands
@@ -268,7 +268,7 @@ If the new path's directories does not exist, create them."
          (
 	  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"A\""
 		     (
-		      (org-agenda-overriding-header " -TODAY-")
+		      (org-agenda-overriding-header " -&NOW:-")
 			;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
 		      )
 		     )
@@ -276,7 +276,7 @@ If the new path's directories does not exist, create them."
                    (
 		    (org-agenda-overriding-header " -today - ")
 		    (org-agenda-ndays 1)                      ;; daily agenda
-                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlinesrp
+                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                     ))
 	  (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
 		      (
@@ -315,8 +315,8 @@ If the new path's directories does not exist, create them."
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
 	   (org-agenda-todo-keyword-format "---")
-	   (org-agenda-scheduled-leaders '("%sd" "%s"))
-	   (org-agenda-deadline-leaders '("%sx" "%s"))
+	   (org-agenda-scheduled-leaders '("%sx" "%sx"))
+	   (org-agenda-deadline-leaders '("%sd" "%sd"))
 	   (org-agenda-time-grid nil)
 
 	   )
@@ -376,12 +376,12 @@ If the new path's directories does not exist, create them."
 (setq org-habit-graph-column 35)
 
 (set-face-attribute 'org-scheduled-previously nil :foreground "#d33682" :bold t )
-(set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e3" :bold t )
-(set-face-attribute 'org-upcoming-deadline nil :foreground "#268bd2"  )
+(set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e5" :bold t )
+(set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198" :bold t )
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-priority-faces
       '(( ?A . (:foreground "#d33682" :weight bold))
-	( ?B . ( :foreground "#268bd2"))
+	( ?B . ( :foreground "#2aa198" :weight bold ))
 	( ?C . ( :foreground "#575757"))) )
 
 
