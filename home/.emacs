@@ -272,7 +272,7 @@ If the new path's directories does not exist, create them."
 			;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
 		      )
 		     )
-	  (agenda "" 
+	  (agenda "-TODO=\"WAITING\"" 
                    (
 		    (org-agenda-overriding-header " -today - ")
 		    (org-agenda-ndays 1)                      ;; daily agenda
@@ -354,15 +354,17 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-done nil :strike-through t  )
 
 
-(setq 'org-tag-faces ('(:home (:foreground "#b58900"))))
+(setq 'org-tag-faces ('(:home (:foreground "#b58900")) '(:computer (:foreground "#268bd2"))))
 
-(set-face-attribute 'org-habit-alert-face nil :background "#" :bold t :strike-through nil :foreground "#b58900")
+(set-face-attribute 'org-tag nil :bold nil :foreground: "#eee8d5" )
+
+(set-face-attribute 'org-habit-alert-face nil :background "#002b36" :bold t :strike-through nil :foreground "#b58900")
 (set-face-attribute 'org-habit-alert-future-face nil :background "#002b36" :strike-through t :foreground "#cb4b16")
-(set-face-attribute 'org-habit-clear-face nil :background "#073642"  :strike-through nil)
+(set-face-attribute 'org-habit-clear-face nil :background "#002b36"  :strike-through nil)
 (set-face-attribute 'org-habit-clear-future-face nil :background "#002b36" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#002b36" :bold t :strike-through t :foreground "#d33682")
 (set-face-attribute 'org-habit-overdue-future-face nil :background "#002b36" :strike-through t :underline nil :foreground "#b58900")
-(set-face-attribute 'org-habit-ready-face nil :background "#262626" :foreground "#859900")
+(set-face-attribute 'org-habit-ready-face nil :background "#001b26" :foreground "#859900")
 (set-face-attribute 'org-habit-ready-future-face nil :background "#002b36")
 (setq org-habit-show-done-always-green t)
 (setq org-habit-today-glyph ?!)
