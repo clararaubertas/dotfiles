@@ -384,21 +384,23 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-deadline-faces
-      '((1.0 . org-upcoming-deadline)
-	(0.5 . org-upcoming-deadline)
-	(0.0 . org-upcoming-deadline)
+      '((1.0 . (:foreground "#b58900"))
+	(0.5 . (:foreground "#2aa198"))
+	(0.0 . (:foreground "#2aa198"))
 	))
 (setq org-priority-faces
       '(( ?A . (:foreground "#d33682" :weight bold))
 	( ?B . ( :foreground "#2aa198" :weight bold ))
-	( ?C . ( :foreground "#575757"))) )
+	( ?C . ( :foreground "#575757"))
+	))
 (setq org-tag-faces
       '(
 	("home" . (:foreground "#b58900"))
 	("computer" . (:foreground "#268bd2"))
 	("bedroom" . (:foreground "#2aa198"))
-	
-      ))
+	("kitchen" . (:foreground "#859900"))
+	("diningroom" . (:foreground "#6c71c4"))
+	))
 
 
 (defun org-todo-toggle-yesterday ()
