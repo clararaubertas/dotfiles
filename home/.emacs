@@ -349,12 +349,11 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-agenda-date nil  :foreground "#268bd2" :underline t)
 (set-face-attribute 'org-agenda-date-weekend nil :foreground "#268bd2" :underline t)
 (set-face-attribute 'org-agenda-date-today nil :background "#fdf6e3")
-(Set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
+(set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
 (set-face-attribute 'org-done nil :strike-through t  )
 
 
-(setq 'org-tag-faces ('(:home (:foreground "#b58900")) '(:computer (:foreground "#268bd2"))))
 
 (set-face-attribute 'org-tag nil :bold nil :foreground: "#eee8d5" )
 
@@ -393,6 +392,11 @@ If the new path's directories does not exist, create them."
       '(( ?A . (:foreground "#d33682" :weight bold))
 	( ?B . ( :foreground "#2aa198" :weight bold ))
 	( ?C . ( :foreground "#575757"))) )
+(setq org-tag-faces
+      '(
+	(("home") . ((:foreground "#b58900")))
+	("computer") . ((:foreground "#268bd2")))
+      ))
 
 
 
