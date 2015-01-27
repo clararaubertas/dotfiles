@@ -358,43 +358,43 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-habit-alert-face nil :background "#002b36"
 		    :bold t :strike-through nil :foreground "#b58900"
-		    :height 150)
+		    )
 (set-face-attribute 'org-habit-alert-future-face nil :background
 		    "#002b36" :strike-through t :foreground "#cb4b16"
-		    :bold t :height 150)
+		    :bold t )
 (set-face-attribute 'org-habit-clear-face nil :background "#002b36"
-		    :strike-through nil :bold t :height 150)
+		    :strike-through nil :bold t )
 (set-face-attribute 'org-habit-clear-future-face nil :background
-		    "#002b36" :height 150)
+		    "#002b36" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#002b36"
 		    :strike-through t :foreground
-		    "#d33682" :bold t :height 150)
+		    "#d33682" :bold t )
 (set-face-attribute 'org-habit-overdue-future-face nil :background
 		    "#002b36" :strike-through t :underline nil
-		    :foreground "#b58900" :bold t :height 150)
+		    :foreground "#b58900" :bold t )
 (set-face-attribute 'org-habit-ready-face nil :background "#001b26"
-		    :foreground "#859900" :bold t :height 150
+		    :foreground "#859900" :bold t 
 		    )
 (set-face-attribute 'org-habit-ready-future-face nil :background
-		    "#002b36" :height 150)
+		    "#002b36" )
 (setq org-habit-show-done-always-green t)
 (setq org-habit-today-glyph ?-)
 (setq org-habit-completed-glyph ?+)
 
 ;; ;; make a face
 ;; (make-face 'agenda-face)
-;; (set-face-attribute 'agenda-face nil :height 1.5) 
+;;(set-face-attribute 'agenda-face nil :height 1.5) 
 
 ;; (add-hook 'org-finalize-agenda-hook (lambda ()  (buffer-face-set 'agenda-face)))
 
 (setq org-habit-graph-column 35)
 
 (set-face-attribute 'org-scheduled-previously nil :foreground "#d33682"
-		    :bold t :height 150)
+		    :bold t )
 (set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e5"
-		    :bold nil :height 150)
+		    :bold nil )
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198"
-		    :bold t :height 140)
+		    :bold t)
 
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-deadline-faces
