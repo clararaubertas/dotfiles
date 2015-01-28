@@ -212,7 +212,8 @@ SCHEDULED: <2015-01-27 Tue .+1d>
 :STYLE:    habit
 :END:
 ** TODO buy coffee beans                                                :hp:
-SCHEDULED: <2015-01-26 Mon .+6d/9d>
+SCHEDULED: <2015-02-02 Mon .+6d/9d>
+- State "DONE"       from "TODO"       [2015-01-27 Tue 17:30]
 - State "DONE"       from "TODO"       [2015-01-20 Tue 13:06]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:51]
 - State "DONE"       from "TODO"       [2015-01-08 Thu 15:58]
@@ -260,7 +261,7 @@ SCHEDULED: <2015-01-26 Mon .+6d/9d>
 :PROPERTIES:
 :ID:       51d4db79-f6ef-49f0-972d-0a0e658b889c
 :STYLE: habit
-:LAST_REPEAT: [2015-01-20 Tue 13:06]
+:LAST_REPEAT: [2015-01-27 Tue 17:30]
 :END:
 ** TODO charge Roomba                                                 :home:
 SCHEDULED: <2015-01-27 Tue .+1d/3d>
@@ -708,7 +709,8 @@ SCHEDULED: <2015-01-27 Tue .+1d>
 :STYLE:    habit
 :END:
 ** TODO take meds                                             :home:bedroom:
-SCHEDULED: <2015-01-27 Tue .+1d>
+SCHEDULED: <2015-01-28 Wed .+1d>
+- State "DONE"       from "TODO"       [2015-01-27 Tue 17:30]
 - State "DONE"       from "TODO"       [2015-01-26 Mon 12:52]
 - State "DONE"       from "TODO"       [2015-01-25 Sun 16:59]
 - State "DONE"       from "TODO"       [2015-01-24 Sat 12:44]
@@ -731,11 +733,12 @@ SCHEDULED: <2015-01-27 Tue .+1d>
 - State "DONE"       from "TODO"       [2014-12-14 Sun 18:44]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-01-26 Mon 12:52]
+:LAST_REPEAT: [2015-01-27 Tue 17:30]
 :STYLE:    habit
 :END:
 ** TODO drink water                                                   :home:
-SCHEDULED: <2015-01-27 Tue .+1d>
+SCHEDULED: <2015-01-28 Wed .+1d>
+- State "DONE"       from "TODO"       [2015-01-27 Tue 17:30]
 - State "DONE"       from "TODO"       [2015-01-26 Mon 12:53]
 - State "DONE"       from "TODO"       [2015-01-25 Sun 13:17]
 - State "DONE"       from "TODO"       [2015-01-22 Thu 19:27]
@@ -754,7 +757,7 @@ SCHEDULED: <2015-01-27 Tue .+1d>
 - State "DONE"       from "TODO"       [2014-12-06 Sat 13:49]
 :PROPERTIES:
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
-:LAST_REPEAT: [2015-01-26 Mon 12:53]
+:LAST_REPEAT: [2015-01-27 Tue 17:30]
 :STYLE:    habit
 :END:
 ** TODO water Malka                                             :malka:home:
@@ -1131,7 +1134,8 @@ SCHEDULED: <2015-01-27 Tue .+1d/3d>n
 :LAST_REPEAT: [2015-01-26 Mon 12:53]
 :END:
 ** TODO walk Malka                                                :malka:hp:
-SCHEDULED: <2015-01-24 Sat .+4d/8d>
+SCHEDULED: <2015-01-31 Sat .+4d/8d>
+- State "DONE"       from "TODO"       [2015-01-27 Tue 17:30]
 - State "DONE"       from "TODO"       [2015-01-20 Tue 17:35]
 - State "DONE"       from "TODO"       [2015-01-14 Wed 16:51]
 - State "DONE"       from "TODO"       [2015-01-09 Fri 19:23]
@@ -1199,7 +1203,7 @@ SCHEDULED: <2015-01-24 Sat .+4d/8d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       4b7fc6dc-97bf-4c1f-a820-cfb95c44cc0d
-:LAST_REPEAT: [2015-01-20 Tue 17:35]
+:LAST_REPEAT: [2015-01-27 Tue 17:30]
 :END:
 
 ** TODO water plants                                          :home:allhome:
@@ -4160,8 +4164,9 @@ SCHEDULED: <2015-01-25 Sun .+2d/5d>
 :PROPERTIES:
 :ID:       1287903a-896a-4aca-9087-951434bda716
 :END:
-** TODO listen to saltpants                                        :computer:
+** DONE listen to saltpants                                       :computer:
 DEADLINE: <2015-01-27 Tue>
+- State "DONE"       from "TODO"       [2015-01-27 Tue 17:30]
 :PROPERTIES:
 :ID:       324bff75-3591-40ea-9f5b-3a273a6bcd30
 :END:
@@ -4191,7 +4196,7 @@ DEADLINE: <2015-01-30 Fri>
 :ID:       e00cc653-278c-4cf2-9c91-f141c4e626b0
 :END:
 ** TODO draft skeleton code                                        :computer:
-DEADLINE: <2015-01-29 Thu>
+SCHEDULED: <2015-01-30 Fri> DEADLINE: <2015-01-30 Fri>
 :PROPERTIES:
 :ID:       264499d5-7eb1-45cd-be04-7214474a417a
 :END:
@@ -4213,6 +4218,9 @@ DEADLINE: <2015-01-28 Wed>
 :ID:       c1851e32-5816-451a-acd5-95f1d9b94957
 :END:
 ** TODO [#A] buy speakers                                          :computer:
+:PROPERTIES:
+:ID:       ffadfaf0-3307-4b0a-b630-47d28fb2d24e
+:END:
 ** TODO [#B] get bag of lake rocks                                       :hp:
 :PROPERTIES:
 :ID:       c073cd27-012b-45e8-a559-2b44bf78575f
@@ -4901,3 +4909,9 @@ DEADLINE: <2015-01-28 Wed>
 :PROPERTIES:
 :ID:       28c668e0-666f-42e9-8cac-d3e409ac0981
 :END:
+** TODO draft IssueLab proposal                               :para:computer:
+DEADLINE: <2015-02-03 Tue> SCHEDULED: <2015-02-03 Tue>
+:PROPERTIES:
+:ID:       960c11d3-abcd-4af1-9b83-2df03cf634d1
+:END:
+** TODO [#A] cancel stamps.com account 1-855-608-2677                 :phone:
