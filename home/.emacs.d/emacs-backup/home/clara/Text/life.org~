@@ -290,7 +290,8 @@ SCHEDULED: <2015-01-28 Wed .+1d/3d>
 :BECAUSE:  
 :END:
 ** TODO charge computer                                               :home:
-SCHEDULED: <2015-01-29 Thu .+1d/2d>
+SCHEDULED: <2015-01-30 Fri .+1d/2d>
+- State "DONE"       from "TODO"       [2015-01-29 Thu 11:54]
 - State "DONE"       from "TODO"       [2015-01-28 Wed 11:22]
 - State "DONE"       from "TODO"       [2015-01-27 Tue 13:26]
 - State "DONE"       from "TODO"       [2015-01-26 Mon 12:53]
@@ -318,10 +319,11 @@ SCHEDULED: <2015-01-29 Thu .+1d/2d>
 :PROPERTIES:
 :ID:       6bb85b33-e7fe-4b41-bb74-34770b90290e
 :STYLE: habit
-:LAST_REPEAT: [2015-01-28 Wed 11:22]
+:LAST_REPEAT: [2015-01-29 Thu 11:54]
 :END:
 ** TODO charge phone                                                  :home:
-SCHEDULED: <2015-01-29 Thu .+1d/2d>
+SCHEDULED: <2015-01-30 Fri .+1d/2d>
+- State "DONE"       from "TODO"       [2015-01-29 Thu 11:54]
 - State "DONE"       from "TODO"       [2015-01-28 Wed 11:22]
 - State "DONE"       from "TODO"       [2015-01-27 Tue 11:10]
 - State "DONE"       from "TODO"       [2015-01-25 Sun 13:35]
@@ -350,7 +352,7 @@ SCHEDULED: <2015-01-29 Thu .+1d/2d>
 :PROPERTIES:
 :ID:       2df301ab-286c-4ee2-9f32-1a72c93b419e
 :STYLE: habit
-:LAST_REPEAT: [2015-01-28 Wed 11:22]
+:LAST_REPEAT: [2015-01-29 Thu 11:54]
 :END:
 ** TODO charge tablet                                         :home:bedroom:
 SCHEDULED: <2015-01-29 Thu .+1d/2d>
@@ -754,7 +756,8 @@ SCHEDULED: <2015-01-28 Wed .+1d>
 :STYLE:    habit
 :END:
 ** TODO drink water                                                   :home:
-SCHEDULED: <2015-01-29 Thu .+1d>
+SCHEDULED: <2015-01-30 Fri .+1d>
+- State "DONE"       from "TODO"       [2015-01-29 Thu 11:55]
 - State "DONE"       from "TODO"       [2015-01-28 Wed 19:05]
 - State "DONE"       from "TODO"       [2015-01-27 Tue 17:30]
 - State "DONE"       from "TODO"       [2015-01-26 Mon 12:53]
@@ -775,7 +778,7 @@ SCHEDULED: <2015-01-29 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-12-06 Sat 13:49]
 :PROPERTIES:
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
-:LAST_REPEAT: [2015-01-28 Wed 19:05]
+:LAST_REPEAT: [2015-01-29 Thu 11:55]
 :STYLE:    habit
 :END:
 ** TODO water Malka                                             :malka:home:
@@ -835,7 +838,8 @@ SCHEDULED: <2015-01-29 Thu .+1d>
 :END:
 [2014-01-16 Thu 00:01]
 ** TODO Yard malk                                                 :malka:hp:
-SCHEDULED: <2015-01-29 Thu .+1d>
+SCHEDULED: <2015-01-30 Fri .+1d>
+- State "DONE"       from "TODO"       [2015-01-29 Thu 11:54]
 - State "DONE"       from "TODO"       [2015-01-28 Wed 11:22]
 - State "DONE"       from "TODO"       [2015-01-27 Tue 11:10]
 - State "DONE"       from "TODO"       [2015-01-26 Mon 17:52]
@@ -865,7 +869,7 @@ SCHEDULED: <2015-01-29 Thu .+1d>
 - State "DONE"       from "TODO"       [2014-12-02 Tue 14:04]
 :PROPERTIES:
 :ID:       a29db4aa-8fab-401d-959f-8c6e6075dc24
-:LAST_REPEAT: [2015-01-28 Wed 11:22]
+:LAST_REPEAT: [2015-01-29 Thu 11:54]
 :END:
 [2014-01-16 Thu 00:00]
 ** TODO collect dishes                                        :home:allhome:
@@ -1076,7 +1080,8 @@ SCHEDULED: <2015-02-03 Tue .+5d/8d>
 :END:
 
 ** TODO take out trash                                     :home:downstairs:
-SCHEDULED: <2015-01-28 Wed .+1d/3d>
+SCHEDULED: <2015-01-30 Fri .+1d/3d>
+- State "DONE"       from "TODO"       [2015-01-29 Thu 11:54]
 - State "DONE"       from "TODO"       [2015-01-27 Tue 11:10]
 - State "DONE"       from "TODO"       [2015-01-26 Mon 12:52]
 - State "DONE"       from "TODO"       [2015-01-25 Sun 12:43]
@@ -1118,7 +1123,7 @@ SCHEDULED: <2015-01-28 Wed .+1d/3d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       9fb70ef8-8e46-4fcc-a990-8edf7aa618aa
-:LAST_REPEAT: [2015-01-27 Tue 11:10]
+:LAST_REPEAT: [2015-01-29 Thu 11:54]
 :END:
 ** WAITING [#B] take stuff to goodwill                         :majorouting:
 :PROPERTIES:
@@ -4952,7 +4957,8 @@ DEADLINE: <2015-02-03 Tue> SCHEDULED: <2015-02-03 Tue>
 :PROPERTIES:
 :ID:       960c11d3-abcd-4af1-9b83-2df03cf634d1
 :END:
-** TODO [#A] cancel stamps.com account 1-855-608-2677                 :phone:
+** DONE [#A] cancel stamps.com account 1-855-608-2677                :phone:
+- State "DONE"       from "TODO"       [2015-01-29 Thu 11:54]
 :PROPERTIES:
 :ID:       2204ddc6-9f57-4508-94a1-88bf0270310b
 :END:
