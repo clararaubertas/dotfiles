@@ -378,7 +378,7 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-habit-ready-future-face nil :background
 		    "#002b36" )
 (setq org-habit-show-done-always-green t)
-(setq org-habit-today-glyph ?-)
+(setq org-habit-today-glyph ?!)
 (setq org-habit-completed-glyph ?+)
 
 ;; ;; make a face
