@@ -9,7 +9,7 @@
  (position . 151846))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO [#B] PIR")
- (rear-context-string . "     :computer:\n")
- (position . 165970))
+ (front-context-string . "** TODO [#A] sen")
+ (rear-context-string . "1e4ff2c13\n:END:\n")
+ (position . 166241))
 )
