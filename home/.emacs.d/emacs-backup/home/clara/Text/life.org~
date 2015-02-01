@@ -571,7 +571,8 @@ SCHEDULED: <2015-02-01 Sun .+5d/8d>
 :LAST_REPEAT: [2015-01-27 Tue 19:10]
 :END:
 ** TODO clear personal inbox                                      :computer:
-SCHEDULED:  <2015-02-01 Sun .+1d/2d>
+SCHEDULED:  <2015-02-02 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2015-02-01 Sun 14:42]
 - State "DONE"       from "TODO"       [2015-01-31 Sat 13:33]
 - State "DONE"       from "TODO"       [2015-01-30 Fri 16:29]
 - State "DONE"       from "TODO"       [2015-01-29 Thu 11:00]
@@ -596,7 +597,7 @@ SCHEDULED:  <2015-02-01 Sun .+1d/2d>
 :PROPERTIES:
 :ID:       51a1ddc5-78d7-4635-b696-13d0e9bc6b1d
 :STYLE: habit
-:LAST_REPEAT: [2015-01-31 Sat 13:33]
+:LAST_REPEAT: [2015-02-01 Sun 14:42]
 :END:
 ** TODO clear up bag                                                  :home:
 SCHEDULED: <2015-01-31 Sat .+2d/4d>
@@ -693,7 +694,9 @@ SCHEDULED: <2015-01-31 Sat .+2d/4d>
 :STYLE: habit
 :LAST_REPEAT: [2015-01-29 Thu 23:52]
 :END:
-** TODO clear work inbox                                          :computer:
+** DONE clear work inbox                                          :computer:
+- State "DONE"       from "DONE"       [2015-02-01 Sun 14:42]
+- State "DONE"       from "TODO"       [2015-02-01 Sun 14:42]
 SCHEDULED: <2015-02-01 Sun .+1d/2d>
 - State "DONE"       from "TODO"       [2015-01-31 Sat 13:33]
 - State "DONE"       from "TODO"       [2015-01-29 Thu 11:41]
@@ -3434,7 +3437,7 @@ DEADLINE: <2015-02-03 Tue> SCHEDULED: <2015-02-03 Tue>
 :PROPERTIES:
 :ID:       a84ad32f-0b92-43b9-a082-64f6cb2efd3a
 :END:
-** TODO [#A] put recordings on drive                    :computer:saltpants:
+** TODO [#A] put recordings on drive              :computer:saltpants:phone:
 :PROPERTIES:
 :ID:       b717b1fb-c4cf-431b-a194-d3b3723032af
 :END:
@@ -3447,7 +3450,7 @@ DEADLINE: <2015-02-10 Tue>
 :PROPERTIES:
 :ID:       ac71d583-5654-43cb-b797-b0efe718f43d
 :END:
-** TODO [#A] stitchfix checkout                               :computer:home:
+** TODO [#A] stitchfix checkout                                       :home:
 :PROPERTIES:
 :ID:       2d5ad866-ea79-47ad-91e7-250853358c8b
 :END:
@@ -3477,7 +3480,8 @@ DEADLINE: <2015-02-10 Tue>
 :END:
 :ID:       891460ba-32ed-49a6-a6ab-bd3af50c6e12
 :END:
-** TODO [#A] photograph earrings/necklace                       :phone:home:
+** DONE [#A] photograph earrings/necklace                       :phone:home:
+- State "DONE"       from "TODO"       [2015-02-01 Sun 14:41]
 :PROPERTIES:
 :ID:       1111df89-5a3a-463e-9240-6b8c852ee9e9
 :END:
@@ -3488,4 +3492,11 @@ SCHEDULED: <2015-02-01 Sun .+4d/8d>
 :ID:       5060708a-190b-4d7e-a194-30c4932b2955
 :END:
 ** TODO plan valentine's day                                       :computer:
+:PROPERTIES:
+:ID:       101fb9df-41e4-4df0-a1a7-30f4ac4eece9
+:END:
 ** TODO [#B] PIRG                                                    :phone:
+:PROPERTIES:
+:ID:       37809a4d-8ddf-4533-bd45-ef51e4ff2c13
+:END:
+** TODO [#A] send thank-you email                                 :computer:
