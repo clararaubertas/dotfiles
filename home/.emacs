@@ -315,7 +315,7 @@ If the new path's directories does not exist, create them."
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
 	   (org-agenda-todo-keyword-format " + ")
-	   (org-agenda-scheduled-leaders '("" "%2dx"))
+	   (org-agenda-scheduled-leaders '("0d" "%dx"))
 	   (org-agenda-deadline-leaders '("%sd" "%sd"))
 	   (org-agenda-time-grid nil)
 
@@ -398,8 +398,8 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-deadline-faces
-      '((1.0 . (:foreground "#b58900"))
-	(0.5 . (:foreground "#2aa198"))
+      '((1.0 . (:foreground "#d33682"))
+	(0.5 . (:foreground "#b58900"))
 	(0.0 . (:foreground "#2aa198"))
 	))
 (setq org-priority-faces
