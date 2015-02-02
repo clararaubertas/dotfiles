@@ -2705,8 +2705,8 @@ DEADLINE: <2015-01-28 Wed>
 :PROPERTIES:
 :ID:       ffadfaf0-3307-4b0a-b630-47d28fb2d24e
 :END:
-** TODO draft IssueLab proposal                               :para:computer:
-DEADLINE: <2015-02-03 Tue> SCHEDULED: <2015-02-03 Tue>
+** TODO  IssueLab proposal                                    :para:computer:
+DEADLINE: <2015-02-13 Fri -14d> SCHEDULED: <2015-02-03 Tue>
 :PROPERTIES:
 :ID:       960c11d3-abcd-4af1-9b83-2df03cf634d1
 :END:
@@ -2738,11 +2738,11 @@ DEADLINE: <2015-02-10 Tue>
 :PROPERTIES:
 :ID:       e9801722-ab9a-4990-9682-80944cf86449
 :END:
-** TODO [#A] return shoes                                             :home:
+** TODO [#A] return shoes                                               :hp:
 :PROPERTIES:
 :ID:       ac71d583-5654-43cb-b797-b0efe718f43d
 :END:
-** TODO [#A] stitchfix checkout                                       :home:
+** TODO [#A] stitchfix checkout                                         :hp:
 :PROPERTIES:
 :ID:       2d5ad866-ea79-47ad-91e7-250853358c8b
 :END:
@@ -2808,3 +2808,5 @@ DEADLINE: <2015-02-03 Tue>
 :END:
 ** TODO put out laundry                                                :home:
 SCHEDULED: <2015-02-01 Sun +1w>
+** TODO review IssueLab stuff                                      :computer:
+DEADLINE: <2015-02-02 Mon>
