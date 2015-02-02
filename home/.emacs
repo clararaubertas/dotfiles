@@ -396,10 +396,11 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198"
 		    :bold t)
 
+
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
-(setq org-deadline-faces
+(setq org-agenda-deadline-faces
       '((1.0 . (:foreground "#d33682"))
-	(0.5 . (:foreground "#b58900"))
+	(0.7 . (:foreground "#b58900"))
 	(0.0 . (:foreground "#2aa198"))
 	))
 (setq org-priority-faces
