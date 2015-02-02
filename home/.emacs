@@ -315,7 +315,7 @@ If the new path's directories does not exist, create them."
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
 	   (org-agenda-todo-keyword-format " + ")
-	   (org-agenda-scheduled-leaders '("%sx" "%sx"))
+	   (org-agenda-scheduled-leaders '("" "%2dx"))
 	   (org-agenda-deadline-leaders '("%sd" "%sd"))
 	   (org-agenda-time-grid nil)
 
