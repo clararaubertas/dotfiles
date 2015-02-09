@@ -9,7 +9,7 @@
  (position . 151846))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO review I")
- (rear-context-string . "-02-01 Sun +1w>\n")
- (position . 150431))
+ (front-context-string . "** TODO [#B] sta")
+ (rear-context-string . "     :computer:\n")
+ (position . 163692))
 )
