@@ -1,6 +1,7 @@
 #+LAST_MOBILE_CHANGE: 2014-11-17 17:52:29
 * Everys Thang
-** TODO [#C] Field museum                               :majorouting:social:
+** TODO Field museum                                    :majorouting:social:
+DEADLINE: <2015-02-28 Sat -20d>
 :PROPERTIES:
 :ID:       aaeab271-2b00-4941-90cc-2a4a395ec7fd
 :END:
@@ -3032,4 +3033,4 @@ DEADLINE: <2015-02-27 Fri -21d>
 :ID:       31c91cb9-a7a0-4403-a213-93b9a8dc4cf7
 :END:
 ** TODO [#A] send condolence email                                :computer:
-
+** TODO [#B] start moo archive                                    :computer:
