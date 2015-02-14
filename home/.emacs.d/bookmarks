@@ -9,7 +9,7 @@
  (position . 151846))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO vegas sh")
+ (front-context-string . "** TODO MA car t")
  (rear-context-string . "     :computer:\n")
- (position . 168050))
+ (position . 172664))
 )
