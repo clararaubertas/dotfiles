@@ -29,14 +29,14 @@
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
-(require 'rainbow-delimiters )
+
 (global-rainbow-delimiters-mode)
 
 (global-font-lock-mode t)
 (add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
 (add-hook 'ruby-mode-hook (lambda () (rainbow-mode 1)))
 (add-hook 'emacs-lisp-mode-hook (lambda () (rainbow-mode 1)))
-;;(global-rainbow-delimiters-mode)
+
 (global-pretty-mode)
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
