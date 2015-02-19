@@ -91,6 +91,13 @@ If the new path's directories does not exist, create them."
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 ;;;;;;;;;; ;;;;;;;;;;
 
+
+
+ (autoload 'scpaste "scpaste" "Paste the current buffer." t nil)
+ (setq scpaste-http-destination "http://clararaubertas.net"
+       scpaste-scp-destination "clara@kumquat:/var/www/clararaubertas/")
+
+
 ;; git
 (require 'magit)
 

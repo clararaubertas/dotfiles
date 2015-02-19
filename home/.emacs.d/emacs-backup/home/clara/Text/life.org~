@@ -529,7 +529,7 @@ SCHEDULED: <2015-02-20 Fri .+6d/10d>
 :STYLE: habit
 :LAST_REPEAT: [2015-02-14 Sat 13:16]
 :END:
-** TODO clean computer                                            :computer:
+** TODO clean computer                                       :computer:home:
 SCHEDULED: <2015-02-08 Sun .+1w/3w>
 - State "DONE"       from "TODO"       [2015-02-01 Sun 14:43]
 - State "DONE"       from "TODO"       [2015-01-19 Mon 21:59]
@@ -622,7 +622,8 @@ SCHEDULED: <2015-02-20 Fri .+5d/10d>
 :LAST_REPEAT: [2015-02-15 Sun 20:00]
 :END:
 ** TODO clean toilet                                         :home:bathroom:
-SCHEDULED: <2015-02-18 Wed .+5d/8d>
+SCHEDULED: <2015-02-23 Mon .+5d/8d>
+- State "DONE"       from "TODO"       [2015-02-18 Wed 21:26]
 - State "DONE"       from "TODO"       [2015-02-13 Fri 21:41]
 - State "CANCELLED"  from "TODO"       [2015-02-04 Wed 14:55]
 - State "DONE"       from "TODO"       [2015-01-27 Tue 19:10]
@@ -660,7 +661,7 @@ SCHEDULED: <2015-02-18 Wed .+5d/8d>
 :PROPERTIES:
 :ID:       58c84353-051c-41c9-919c-25d8019eb12e
 :STYLE: habit
-:LAST_REPEAT: [2015-02-13 Fri 21:41]
+:LAST_REPEAT: [2015-02-18 Wed 21:26]
 :END:
 ** TODO clear personal inbox                                      :computer:
 SCHEDULED:  <2015-02-18 Wed .+1d/2d>
@@ -1940,7 +1941,8 @@ SCHEDULED: <2015-02-28 Sat .+10d/14d>
 :ID:       b741e6c1-13c4-4e18-b805-264ac5c4f9df
 :END:
 ** TODO wipe down bathroom                                   :home:bathroom:
-SCHEDULED: <2015-02-18 Wed .+5d/10d>
+SCHEDULED: <2015-02-23 Mon .+5d/10d>
+- State "DONE"       from "TODO"       [2015-02-18 Wed 21:26]
 - State "DONE"       from "TODO"       [2015-02-13 Fri 22:34]
 - State "CANCELLED"  from "TODO"       [2015-02-04 Wed 14:55]
 - State "DONE"       from "TODO"       [2015-01-25 Sun 15:34]
@@ -1971,7 +1973,7 @@ SCHEDULED: <2015-02-18 Wed .+5d/10d>
 :PROPERTIES:
 :ID:       482d92fc-889f-4f8f-8b23-02d20826a682
 :STYLE: habit
-:LAST_REPEAT: [2015-02-13 Fri 22:34]
+:LAST_REPEAT: [2015-02-18 Wed 21:26]
 :END:
 ** TODO wipe down living room                               :home:frontroom:
 SCHEDULED: <2015-02-14 Sat .+10d/15d>
@@ -2309,7 +2311,7 @@ SCHEDULED: <2015-03-04 Wed .+15d/18d>
 :PROPERTIES:
 :ID:       d85d946b-9cb4-4c0c-90e0-9888b0526aae
 :END:
-** TODO [#B] get dentist for Jesse                                   :phone:
+** TODO [#B] get dentist for Jesse                          :phone:computer:
 :PROPERTIES:
 :ID:       31ddeac1-ae46-4116-b4cd-3f5354226903
 :BECAUSE:  $
@@ -3210,7 +3212,7 @@ SCHEDULED: <2015-02-19 Thu .+4d/8d>
 :PROPERTIES:
 :ID:       101fb9df-41e4-4df0-a1a7-30f4ac4eece9
 :END:
-** TODO [#B] PIRG                                                    :phone:
+** TODO [#B] PIRG                                           :phone:computer:
 :PROPERTIES:
 :ID:       37809a4d-8ddf-4533-bd45-ef51e4ff2c13
 :END:
@@ -3405,5 +3407,16 @@ DEADLINE: <2015-02-20 Fri>
 :END:
 ** TODO clean up drums                                       :home:frontroom:
 DEADLINE: <2015-02-20 Fri>
+:PROPERTIES:
+:ID:       2ba96bc6-fc42-42c5-82ce-c3586508b88b
+:END:
 ** TODO Moomers Journal draft                                :computer:moojo:
 DEADLINE: <2015-02-24 Tue -14d>
+:PROPERTIES:
+:ID:       ec8fb85e-e48f-4d6d-b894-80a73273af40
+:END:
+** TODO finish up Sebastian stuff                                  :computer:
+DEADLINE: <2015-02-19 Thu> 
+:PROPERTIES:
+:ID:       1a0beae6-8aec-41db-bd01-2139d31026fb
+:END:
