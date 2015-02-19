@@ -3266,7 +3266,8 @@ DEADLINE: <2015-02-27 Fri -21d>
 :PROPERTIES:
 :ID:       39ab350c-bbc6-4559-8e8b-bc0238dd1952
 :END:
-** TODO [#B] replace office light                               :home:office:
+** DONE [#B] replace office light                              :home:office:
+- State "DONE"       from "TODO"       [2015-02-18 Wed 22:05]
 :PROPERTIES:
 :ID:       46b2c978-998d-4868-8cfc-874cfcabbeba
 :END:
