@@ -14,7 +14,7 @@
 (add-to-list 'package-archives
                '("org" . "http://orgmode.org/elpa/"))
 
-
+(add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/*")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/org-sync")
@@ -24,14 +24,14 @@
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
 (require 'android-mode)
-(require 'ruby-electric-addon)
+;;(require 'ruby-electric-addon)
 (custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
 ;; (require 'starter-kit)
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
-(global-rainbow-delimiters-mode)
 
 (global-font-lock-mode t)
 (add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
