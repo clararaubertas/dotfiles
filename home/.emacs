@@ -24,6 +24,7 @@
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
 (require 'android-mode)
+(require 'ruby-electric-addon)
 (custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
 ;; (require 'starter-kit)
 ;;;;;;;;;; ;;;;;;;;;;
