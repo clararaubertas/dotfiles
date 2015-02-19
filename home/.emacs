@@ -50,10 +50,6 @@
 (setq idle-highlight-idle-time 0
 )
 
-(set-face-background 'hl-line "#073642")
-(set-face-foreground 'highlight nil)
-(set-face-background 'idle-highlight "#859900")
-(set-face-foreground 'idle-highlight nil)
 
 (global-font-lock-mode t)
 (global-prettify-symbols-mode)
@@ -64,6 +60,11 @@
 (set-face-foreground 'default "#fdf6e3") ; Normal
 (set-face-foreground 'mode-line "#859900")
 (set-face-foreground 'mode-line-inactive "#2aa198")
+(set-face-background 'highlight "#073642")
+(set-face-foreground 'highlight nil)
+(set-face-background 'idle-highlight "#859900")
+(set-face-foreground 'idle-highlight nil)
+
 
 (setq default-frame-alist
       '((background-color . "#002b36")))
