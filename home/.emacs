@@ -24,9 +24,10 @@
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
 (require 'android-mode)
-;;(require 'ruby-electric-addon)
+
 (custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
-;; (require 'starter-kit)
+(projectile-global-mode)
+
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
@@ -124,13 +125,13 @@ If the new path's directories does not exist, create them."
 ;; (require 'rsense)
 (add-to-list 'load-path "~/.emacs.d/rinari")
 (require 'rinari)
-(require 'ruby-electric)
-(defun ruby-insert-end () 
-  "Insert \"end\" at point and reindent current line." 
-  (interactive) 
-  (insert "end") 
-  (ruby-indent-line t) 
-  (end-of-line))
+
+;; (defun ruby-insert-end () 
+;;   "Insert \"end\" at point and reindent current line." 
+;;   (interactive) 
+;;   (insert "end") 
+;;   (ruby-indent-line t) 
+;;   (end-of-line))
 
 (require 'yaml-mode)
 (add-to-list 'load-path "~/.emacs.d/rhtml")
@@ -150,12 +151,12 @@ If the new path's directories does not exist, create them."
 (add-hook 'ruby-mode-hook '(lambda ()
                                (setq ruby-deep-arglist t)
                                (setq ruby-deep-indent-paren nil)
-                               (global-rinari-mode)
                                (esk-paredit-nonlisp)
                                (ruby-electric-mode)
                                (rspec-mode)
                                (rubocop-mode)
                                (ruby-tools-mode)
+                               (ruby-end-mode)
                                (local-set-key [S-f7] 'ruby-compilation-this-buffer)
                                (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
                                (define-key ruby-mode-map (kbd "TAB") 'indent-for-tab-command)
@@ -165,7 +166,7 @@ If the new path's directories does not exist, create them."
                                (add-to-list 'ac-sources 'ac-source-rsense-method)
                                (add-to-list 'ac-sources 'ac-source-rsense-constant)
                                ))
-(projectile-global-mode)
+
 ;;;;;;;;;; end RUBY section ;;;;;;;;;;
 
 ;;;;;;;;;; V. ORG MODE ;;;;;;;;;;
