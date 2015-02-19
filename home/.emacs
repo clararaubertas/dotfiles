@@ -47,11 +47,13 @@
   (lambda () (idle-highlight-mode 1)))
 (my-global-idle-highlight-mode 1)
 
-(defcustom idle-highlight-idle-time 0
-"Time after which to highlight the word at point."
-:group 'idle-highlight
-:type 'float)
+(setq idle-highlight-idle-time 0
+)
 
+(set-face-background 'hl-line "#073642")
+(set-face-foreground 'highlight nil)
+(set-face-background 'idle-highlight "#859900")
+(set-face-foreground 'idle-highlight nil)
 
 (global-font-lock-mode t)
 (global-prettify-symbols-mode)
@@ -62,6 +64,7 @@
 (set-face-foreground 'default "#fdf6e3") ; Normal
 (set-face-foreground 'mode-line "#859900")
 (set-face-foreground 'mode-line-inactive "#2aa198")
+
 (setq default-frame-alist
       '((background-color . "#002b36")))
 
