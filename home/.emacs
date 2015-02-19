@@ -39,6 +39,15 @@
   (lambda () (rainbow-delimiters-mode 1)))
 (my-global-rainbow-delim-mode 1)
 
+(define-globalized-minor-mode my-global-ido-ubiquitous-mode ido-ubiquitous-mode
+  (lambda () (ido-ubiquitous-mode 1)))
+(my-global-ido-ubiquitous-mode 1)
+
+(define-globalized-minor-mode my-global-rainbow-delim-mode idle-highlight-mode
+  (lambda () (idle-highlight-mode 1)))
+(my-global-idle-highlight-mode 1)
+
+
 (global-font-lock-mode t)
 (global-prettify-symbols-mode)
 
@@ -92,10 +101,15 @@ If the new path's directories does not exist, create them."
 ;;;;;;;;;; ;;;;;;;;;;
 
 
+(autoload 'scpaste "scpaste" "Paste the current buffer." t nil)
+(setq scpaste-http-destination "http://clararaubertas.net"
+      scpaste-scp-destination "clara@kumquat:/var/www/clararaubertas/")
 
- (autoload 'scpaste "scpaste" "Paste the current buffer." t nil)
- (setq scpaste-http-destination "http://clararaubertas.net"
-       scpaste-scp-destination "clara@kumquat:/var/www/clararaubertas/")
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
 
 
 ;; git
