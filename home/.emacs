@@ -1,6 +1,7 @@
 ;; it's clara's .emacs
 
 ;;;;;;;;;; I. Package Management ;;;;;;;;;;
+
 (package-initialize)
 (add-to-list 'package-archives
              '("ELPA" . "http://tromey.com/elpa/")) 
@@ -29,7 +30,7 @@
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
 (require 'rainbow-delimiters )
-
+(global-rainbow-delimiters-mode)
 
 (global-font-lock-mode t)
 (add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
@@ -160,28 +161,6 @@ If the new path's directories does not exist, create them."
                                ))
 (projectile-global-mode)
 ;;;;;;;;;; end RUBY section ;;;;;;;;;;
-
-;; (setq tab-always-indent 'complete)  ;; use 't when auto-complete is disabled
-;; (add-to-list 'completion-styles 'initials t)
-
-;; ;; hook AC into completion-at-point
-;; (defun set-auto-complete-as-completion-at-point-function ()
-;;   (setq completion-at-point-functions '(auto-complete)))
-;; (add-hook 'auto-complete-mode-hook 'set-auto-complete-as-completion-at-point-function)
-;; (set-default 'ac-sources
-;;              '(ac-source-dictionary
-;;                ac-source-words-in-buffer
-;;                ac-source-words-in-same-mode-buffers
-;;                ac-source-words-in-all-buffer))
-
-;; (dolist (mode '(magit-log-edit-mode log-edit-mode org-mode text-mode haml-mode
-;;                 sass-mode yaml-mode csv-mode espresso-mode haskell-mode
-;;                 html-mode nxml-mode sh-mode smarty-mode clojure-mode
-;;                 lisp-mode textile-mode markdown-mode tuareg-mode
-;;                 ruby-mode
-;;                 js3-mode css-mode less-css-mode sql-mode))
-;;   (add-to-list 'ac-modes mode))
-
 
 ;;;;;;;;;; V. ORG MODE ;;;;;;;;;;
 (setq-default major-mode 'org-mode)
