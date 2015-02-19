@@ -43,9 +43,14 @@
   (lambda () (ido-ubiquitous-mode 1)))
 (my-global-ido-ubiquitous-mode 1)
 
-(define-globalized-minor-mode my-global-rainbow-delim-mode idle-highlight-mode
+(define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
   (lambda () (idle-highlight-mode 1)))
 (my-global-idle-highlight-mode 1)
+
+(defcustom idle-highlight-idle-time 0
+"Time after which to highlight the word at point."
+:group 'idle-highlight
+:type 'float)
 
 
 (global-font-lock-mode t)
