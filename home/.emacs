@@ -30,15 +30,17 @@
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+(define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
+  (lambda () (rainbow-mode 1)))
+(my-global-rainbow-mode 1)
 
+(define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
+  (lambda () (rainbow-delimiters-mode 1)))
+(my-global-rainbow-delim-mode 1)
 
 (global-font-lock-mode t)
-(add-hook 'css-mode-hook (lambda () (rainbow-mode 1)))
-(add-hook 'ruby-mode-hook (lambda () (rainbow-mode 1)))
-(add-hook 'emacs-lisp-mode-hook (lambda () (rainbow-mode 1)))
+(global-prettify-symbols-mode)
 
-(global-pretty-mode)
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
 (set-face-foreground 'mode-line "#859900")
