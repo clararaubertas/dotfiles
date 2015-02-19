@@ -41,12 +41,15 @@
 (global-font-lock-mode t)
 (global-prettify-symbols-mode)
 
+(add-hook 'prog-mode-hook 'paredit-mode)
+
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
 (set-face-foreground 'mode-line "#859900")
 (set-face-foreground 'mode-line-inactive "#2aa198")
 (setq default-frame-alist
       '((background-color . "#002b36")))
+
 (defvar blink-cursor-colors (list "#b58900" "#859900" "#268bd2")
   "On each blink the cursor will cycle to the next color in this list.")
 (setq blink-cursor-count 0)
