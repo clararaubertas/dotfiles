@@ -58,8 +58,8 @@
 
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
-(set-face-foreground 'mode-line "#859900")
-(set-face-foreground 'mode-line-inactive "#2aa198")
+;;(set-face-foreground 'mode-line "#859900")
+;;(set-face-foreground 'mode-line-inactive "#2aa198")
 (set-face-background 'highlight "#073642")
 (set-face-foreground 'highlight nil)
 (set-face-background 'idle-highlight "#859900")
@@ -246,6 +246,7 @@ If the new path's directories does not exist, create them."
 (add-hook 'org-agenda-mode-hook
           (lambda ()
             (visual-line-mode -1)
+            (linum-mode -1)
             (toggle-truncate-lines 1)))
 
 ;; (setq org-agenda-property-list '("BECAUSE" "LASTCONTACT"))
@@ -363,8 +364,8 @@ If the new path's directories does not exist, create them."
 	))
 
 
-(set-face-attribute 'org-agenda-date nil  :foreground "#268bd2" :underline t)
-(set-face-attribute 'org-agenda-date-weekend nil :foreground "#268bd2" :underline t)
+(set-face-attribute 'org-agenda-date nil  :foreground "#859900" :underline t)
+(set-face-attribute 'org-agenda-date-weekend nil :foreground "#859900" :underline t)
 (set-face-attribute 'org-agenda-date-today nil :bold t )
 (set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
@@ -427,7 +428,7 @@ If the new path's directories does not exist, create them."
 	))
 (setq org-tag-faces
       '(
-	("home" . (:background "#b58900"))
+	("home" . (:background "#2aa198"))
 	("computer" . (:background "#575757"))
 	("bedroom" . (:foreground "#2aa198"))
 	("kitchen" . (:foreground "#b58900"))
