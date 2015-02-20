@@ -85,6 +85,7 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
   (internal-show-cursor nil (not (internal-show-cursor-p)))
   )
 
+(powerline-default-theme)
 
 ;;;;;;;;;; END Colors ;;;;;;;;;;
 
