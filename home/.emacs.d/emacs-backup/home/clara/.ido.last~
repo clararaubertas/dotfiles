@@ -142,13 +142,13 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/"
  "/home/clara/Text/"
  "/home/clara/Software/chicago-neighborhood-map/"
  "/home/clara/Software/chicago-neighborhood-map/src/com/parallactic/chicagomap/"
  "/home/clara/Software/chicago-neighborhood-map/res/values/"
  "/home/clara/Software/chicago-neighborhood-map/res/raw/"
  "/home/clara/Software/chicago-neighborhood-map/src/com/example/myandroid/"
- "/home/clara/"
  "/home/clara/Software/bridge_troll/app/models/"
  "/home/clara/Software/bridgedev/content/themes/better/"
  "/home/clara/Software/bridgedev/"
@@ -196,6 +196,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".emacs"
  "railsbridgedogs2.org"
  "AndroidManifest.xml"
  "ChicagoNeighborhoodMap.java"
@@ -205,12 +206,11 @@
  "project.properties"
  "neighbs.json"
  "MyAndroidAppActivity.java"
- "ant.properties"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/" (21734 47264 189527 57000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".~lock.moojolabels8.odt#" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".htaccess" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".heroku/" ".applications/" "Text/" ".profile" ".cinnamon/" ".gphoto/" "#diary#" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".FontForge/" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".xine/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".netrc" ".lesshst" ".dropbox/" ".emacs.d/" ".bzr.log" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" ".gitconfig" ".gconf/" ".AndroidStudioBeta/" ".wireshark/" ".bash_logout" ".bazaar/" ".gemrc" "DSpace Diagram_0.pdf" ".emerald/" ".huludesktop" ".gradle/" ".macromedia/" ".selected_editor" ".gem/" ".android/" ".gitk" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".wine/" ".thunderbird/" ".gdfuse/" ".pki/" "Pictures/" ".gksu.lock" ".synaptic/" ".exercism" ".xinputrc" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" "PlateReturnReceipt.pdf" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".npm/" ".fonts.conf" ".bash_profile" ".wync2/" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" "dspacehowtoguide.pdf" ".appdata/" ".zshrc" "opt/" ".pry_history" "Software/")
+ ("/home/clara/" (21734 47508 553514 426000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".~lock.moojolabels8.odt#" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".htaccess" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".heroku/" ".applications/" "Text/" ".profile" ".cinnamon/" ".gphoto/" "#diary#" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".FontForge/" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".xine/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".netrc" ".lesshst" ".dropbox/" ".emacs.d/" ".bzr.log" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" ".gitconfig" ".gconf/" ".AndroidStudioBeta/" ".wireshark/" ".bash_logout" ".bazaar/" ".gemrc" "DSpace Diagram_0.pdf" ".emerald/" ".huludesktop" ".gradle/" ".macromedia/" ".selected_editor" ".gem/" ".android/" ".gitk" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" ".gstreamer-0.10/" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".wine/" ".thunderbird/" ".gdfuse/" ".pki/" "Pictures/" ".gksu.lock" ".synaptic/" ".exercism" ".xinputrc" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" "PlateReturnReceipt.pdf" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".npm/" ".fonts.conf" ".bash_profile" ".wync2/" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" "dspacehowtoguide.pdf" ".appdata/" ".zshrc" "opt/" ".pry_history" "Software/")
 
  ("/home/clara/Text/" (21734 16002 379710 109000) "jobless" "reem-0604" "coats.org" "story" "para" "emails.txt" "resourcebarn2.txt" "notes.org" "stories/" "drive" "chaos2" "polarvortex.or" "moojo5.org" "toread.org" "agendas.org" "scrib.html" "issuelab.org" "shopping.org" "fotc" "foo" "bi2.org" "hat.org" "rincewitch" "steve-case" "chaos" "wed.txt" "readinglist" "tools.org" "moojo9.org" "desoto.org" "railsbridge.org" "badmachine" "para0306.org" "lsq-notes-0401" "./" "railsbridgedogs2.html" "lsq-bar-notifications" "_TZ_8527-meson.tex" "lsq-0626" "contraceptives" "movies.org" "friends.org" "movingvan" "mechturk" "treasure-hunt-instructions.txt" "stuff.org" "test.asc" "bildungsroman" "_TZ_8527-meson.log" "moojo8.org" "bi3.org" "hat-0520" "issuelab.out" "issuelab.pdf" "list.txt" "intro" "foobar" "Text/" "movie-diary" "ladystuck" "mauge" "lsq-draft3-notes" "railsbridgedogs2.org" "move-schedule_archive" "insurance" "fotc.org" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "orgmob" "trash.txt" "fotc-meeting" "para_archive" "week" "setlist" "../" ".#reem" "rincewitch-ii" "videos.org" "new" "timeloop" "lsq-bar-notifications-2" "railsbridgedogs.html" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "bi4.org" "timetravel2" "lendsquare-actionables" "sebastian-map-app" "blurb" "read.org" "issuelab.aux" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "issuelab.log" "bi.org" "stuff.txt" "cinnamon" "railsbridgedogs.org" "timandsarah" "nastygram.txt" "issuelab.tex" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "action-verbs" "ladystuck.html" "index.org" "letter" "leavitt.org" "moltables" "clothes.org" "packing.org" "logo.png" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "fraud" "good-movies")
 
