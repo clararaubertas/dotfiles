@@ -2,6 +2,10 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/clara/Software/treasure-hunt/config/" . "initializers/")
+ ("/home/clara/Software/treasure-hunt/spec/" . "models/")
+ ("/home/clara/Software/treasure-hunt/app/" . "controllers/")
+ ("/home/clara/Software/treasure-hunt/" . "app/")
  ("/home/clara/Software/chicago-neighborhood-map/src/com/parallactic/" . "chicagomap/")
  ("/home/clara/Software/chicago-neighborhood-map/res/" . "values/")
  ("/home/clara/Software/chicago-neighborhood-map/src/com/example/" . "myandroid/")
@@ -118,21 +122,21 @@
  ("/home/clara/Software/lendsquare/spec/" . "models/")
  ("/home/clara/Software/lendsquare/db/" . "migrate/")
  ("/home/clara/.config/" . "variety/")
- ("/home/clara/Software/flyoverthecity/spec/" . "models/")
+ ("/home/clara/Software/flyoverthecity/spec/" . "factories/")
  ("/home/clara/Software/lendsquare/app/views/loans/" . "build/")
  ("/home/clara/Software/flyoverthecity/app/assets/" . "javascripts/")
  ("/home/clara/Software/lendsquare/app/views/devise/" . "registrations/")
  ("/home/clara/Software/lendsquare/app/views/admin/" . "loans/")
  ("/home/clara/Software/flyoverthecity/app/views/" . "messengers/")
  ("/home/clara/Software/flyoverthecity/app/" . "views/")
- ("/home/clara/Software/flyoverthecity/" . "app/")
+ ("/home/clara/Software/flyoverthecity/" . "spec/")
  ("/home/clara/Software/lendsquare/app/assets/" . "javascripts/")
  ("/home/" . "clara/")
  ("/home/clara/Software/lendsquare/" . "app/")
- ("/home/clara/Software/" . "desoto/")
+ ("/home/clara/Software/" . "flyoverthecity/")
  ("/home/clara/Software/lendsquare/app/views/" . "notifier/")
  ("/home/clara/Software/lendsquare/app/" . "models/")
- ("/home/clara/" . "Text/")
+ ("/home/clara/" . "Software/")
  ("/home/clara/.emacs.d/elpa/" . "org-20140310/")
  ("/home/clara/.emacs.d/" . "lawlist-org/")
  ("/usr/share/" . "vlc/")
@@ -142,7 +146,14 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/flyoverthecity/"
+ "/home/clara/Software/flyoverthecity/config/"
  "/home/clara/Text/"
+ "/home/clara/Software/treasure-hunt/app/admin/"
+ "/home/clara/Software/treasure-hunt/"
+ "/home/clara/Software/treasure-hunt/config/initializers/"
+ "/home/clara/Software/treasure-hunt/app/models/"
+ "/home/clara/Software/treasure-hunt/spec/models/"
  "/home/clara/Software/desoto/app/views/questions/"
  "/home/clara/Software/desoto/app/controllers/"
  "/home/clara/Software/desoto/app/views/application/"
@@ -185,32 +196,53 @@
  "/home/clara/Software/leavitt/spec/models/"
  "/home/clara/Software/leavitt/test/factories/"
  "/home/clara/Software/flyoverthecity/spec/models/"
- "/home/clara/Software/flyoverthecity/spec/controllers/"
- "/home/clara/Software/leavitt/spec/controllers/"
- "/home/clara/Software/leavitt/app/assets/javascripts/"
- "/home/clara/Software/leavitt/app/assets/stylesheets/"
- "/home/clara/Software/desoto/app/views/layouts/"
- "/home/clara/.emacs.d/elpa/org-20140310/"
- "/home/clara/Software/flyoverthecity/app/views/layouts/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "todayjobs.sql"
+ "application.rb"
+ "Gemfile"
+ "temp_db.modified.sql"
+ "movie-diary"
+ "read.org"
  "books.org"
- "ask.html.erb"
- "sample.html.erb"
- "questions_controller.rb"
- "placeholder.html.erb"
- "results.html.erb"
- "finished.html.erb"
- "_recent_jobs.html.erb"
- "home.html.erb"
- "moojo9.org"
+ "survey_answer.rb"
+ "admin_user.rb"
+ "run.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Text/" (21740 56137 141448 455000) "jobless" "reem-0604" "coats.org" "story" "para" "emails.txt" "resourcebarn2.txt" "notes.org" "stories/" "drive" "chaos2" "polarvortex.or" "moojo5.org" "toread.org" "agendas.org" "scrib.html" "issuelab.org" "shopping.org" "fotc" "foo" "bi2.org" "hat.org" "rincewitch" "steve-case" "chaos" "wed.txt" "readinglist" "tools.org" "moojo9.org" "desoto.org" "railsbridge.org" "badmachine" "para0306.org" "lsq-notes-0401" "./" "railsbridgedogs2.html" "lsq-bar-notifications" "_TZ_8527-meson.tex" "lsq-0626" "contraceptives" "movies.org" "friends.org" "movingvan" "mechturk" "treasure-hunt-instructions.txt" "stuff.org" "test.asc" "bildungsroman" "_TZ_8527-meson.log" "moojo8.org" "bi3.org" "hat-0520" "issuelab.out" "issuelab.pdf" "list.txt" "intro" "foobar" "Text/" "movie-diary" "ladystuck" "mauge" "lsq-draft3-notes" "railsbridgedogs2.org" "move-schedule_archive" "insurance" "fotc.org" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "orgmob" "trash.txt" "fotc-meeting" "para_archive" "week" "setlist" "../" ".#reem" "rincewitch-ii" "videos.org" "new" "timeloop" "lsq-bar-notifications-2" "railsbridgedogs.html" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "bi4.org" "timetravel2" "lendsquare-actionables" "sebastian-map-app" "blurb" "read.org" "issuelab.aux" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "issuelab.log" "bi.org" "stuff.txt" "cinnamon" "railsbridgedogs.org" "timandsarah" "nastygram.txt" "issuelab.tex" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "action-verbs" "ladystuck.html" "index.org" "letter" "leavitt.org" "moltables" "clothes.org" "packing.org" "logo.png" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "fraud" "good-movies")
+ ("/home/clara/Software/flyoverthecity/" (21744 47395 947179 412000) "fotc_production" "generate" "./" "coverage/" "dev.sql" "public/" "Gemfile" ".watchr" "script/" "GRTAGS" "Rakefile" "log/" "todayjobs.sql" ".gitignore" "vendor/" "tmp/" "config/" ".git/" "README" "Capfile" "GPATH" "../" "temp_db.modified.sql" ".bundle/" ".rspec" "doc/" "config.ru" "bundle/" "Gemfile.lock" "GSYMS" "db/" "GTAGS" "spec/" "lib/" "app/")
+
+ ("/home/clara/Software/flyoverthecity/spec/factories/" (21381 1025 348200 392000) "categories.rb" "saved_companies.rb" "./" "messengers.rb" "pages.rb" "work_phones.rb" "markets.rb" "recurrences.rb" "admins.rb" "invoices.rb" "../" "job_attachments.rb" "weekdays.rb" "jobs.rb" "dispatching_users.rb" "photos.rb" "clients.rb" "saved_emails.rb" "users.rb" "notes.rb" "service_levels.rb")
+
+ ("/home/clara/Software/flyoverthecity/spec/fixtures/" (21381 1025 348200 392000) "./" ".~lock.manifest.xls#" "../" "manifest.xls" "file.png")
+
+ ("/home/clara/Software/flyoverthecity/spec/" (21381 1025 352200 392000) "controllers/" "./" "fixtures/" "../" "requests/" "spec_helper.rb" "models/" "factories/")
+
+ ("/home/clara/" (21744 44750 595290 661000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".~lock.moojolabels8.odt#" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" "WireframeSketcher/" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".eclipse/" ".xbindkeysrc" ".face" ".freerdp/" ".htaccess" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".heroku/" ".applications/" "Text/" ".profile" ".cinnamon/" ".gphoto/" "#diary#" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".FontForge/" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".xine/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".netrc" ".lesshst" ".dropbox/" ".emacs.d/" ".bzr.log" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" ".gitconfig" ".gconf/" ".AndroidStudioBeta/" ".wireshark/" ".bash_logout" ".bazaar/" ".gemrc" "DSpace Diagram_0.pdf" ".emerald/" ".huludesktop" ".gradle/" ".macromedia/" ".selected_editor" ".gem/" ".android/" ".gitk" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" "MyMomOwnsYourMom1.jpg" ".gstreamer-0.10/" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".wine/" ".thunderbird/" ".gdfuse/" ".pki/" "Pictures/" ".gksu.lock" ".synaptic/" ".exercism" ".xinputrc" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" "PlateReturnReceipt.pdf" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".npm/" ".fonts.conf" ".bash_profile" ".wync2/" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" "dspacehowtoguide.pdf" ".appdata/" ".zshrc" "opt/" ".pry_history" "Software/")
+
+ ("/home/clara/Text/" (21743 48045 739731 202000) "jobless" "reem-0604" "coats.org" "story" "para" "emails.txt" "resourcebarn2.txt" "notes.org" "stories/" "drive" "chaos2" "polarvortex.or" "moojo5.org" "toread.org" "agendas.org" "scrib.html" "issuelab.org" "shopping.org" "fotc" "foo" "bi2.org" "hat.org" "rincewitch" "steve-case" "chaos" "wed.txt" "readinglist" "tools.org" "moojo9.org" "desoto.org" "railsbridge.org" "badmachine" "para0306.org" "lsq-notes-0401" "./" "railsbridgedogs2.html" "lsq-bar-notifications" "_TZ_8527-meson.tex" "lsq-0626" "contraceptives" "movies.org" "friends.org" "movingvan" "mechturk" "treasure-hunt-instructions.txt" "stuff.org" "test.asc" "bildungsroman" "_TZ_8527-meson.log" ".#life.org" "moojo8.org" "bi3.org" "hat-0520" "issuelab.out" "issuelab.pdf" "list.txt" "intro" "foobar" "Text/" "movie-diary" "ladystuck" "mauge" "lsq-draft3-notes" "railsbridgedogs2.org" "move-schedule_archive" "insurance" "fotc.org" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "orgmob" "trash.txt" "fotc-meeting" "para_archive" "week" "setlist" "../" ".#reem" "rincewitch-ii" "videos.org" "new" "timeloop" "lsq-bar-notifications-2" "railsbridgedogs.html" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "bi4.org" "timetravel2" "lendsquare-actionables" "sebastian-map-app" "blurb" "read.org" "issuelab.aux" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "issuelab.log" "bi.org" "stuff.txt" "cinnamon" "railsbridgedogs.org" "timandsarah" "nastygram.txt" "issuelab.tex" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "action-verbs" "ladystuck.html" "index.org" "letter" "leavitt.org" "moltables" "clothes.org" "packing.org" "logo.png" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "fraud" "good-movies")
+
+ ("/home/clara/Software/treasure-hunt/app/controllers/" (21717 14148 539553 591000) "survey_questions_controller.rb" "runs_controller.rb" "rooms_controller.rb" "./" "../" "application_controller.rb" "games_controller.rb" "shapes_controller.rb" "colors_controller.rb")
+
+ ("/home/clara/Software/treasure-hunt/app/admin/" (21743 42426 95967 533000) "admin_user.rb" "answer_choice.rb" "settings.rb" "dashboard.rb" "./" "game.rb" "user_session.rb" "shapes.rb" "../" "colors.rb" "question_group.rb" "rooms.rb" "run.rb" "survey_answer.rb" "map.rb" "survey_question.rb")
+
+ ("/home/clara/Software/treasure-hunt/" (21743 42134 251979 806000) "./" "coverage/" "public/" "Gemfile" "README.rdoc" "script/" "Rakefile" "autotest/" "log/" ".gitignore" "vendor/" "tmp/" "config/" ".git/" "Capfile" "../" ".rspec" "doc/" "config.ru" "Gemfile.lock" "db/" "spec/" "lib/" "app/")
+
+ ("/home/clara/Software/treasure-hunt/config/initializers/" (21743 41062 920024 860000) "./" "session_store.rb" "secret_token.rb" "active_admin.rb" "active_record_logger.rb" "backtrace_silencers.rb" "wrap_parameters.rb" "../" "devise.rb" "mime_types.rb" "inflections.rb")
+
+ ("/home/clara/Software/treasure-hunt/config/" (21704 10349 942525 224000) "activeadmin_settings.yml" "environments/" "./" "#deploy.rb#" "routes.rb" "boot.rb" "initializers/" "database.yml" "locales/" "deploy/" "../" "deploy.rb" "environment.rb" "application.rb")
+
+ ("/home/clara/Software/treasure-hunt/app/models/" (21743 39354 576096 704000) "admin_user.rb" "answer_choice.rb" ".gitkeep" "./" "game.rb" "user_session.rb" "../" "room.rb" "question_group.rb" "shape.rb" "run.rb" "survey_answer.rb" "map.rb" "survey_question.rb" "color.rb")
+
+ ("/home/clara/Software/treasure-hunt/spec/models/" (21743 38913 152115 268000) "answer_choice_spec.rb" "./" "survey_question_spec.rb" "game_spec.rb" "../" "room_spec.rb" "map_spec.rb" "run_spec.rb" "shape_spec.rb" "color_spec.rb" "question_group_spec.rb" "survey_answer_spec.rb" "user_session_spec.rb")
+
+ ("/home/clara/Software/treasure-hunt/spec/" (21485 4808 87599 509000) "controllers/" "./" "fixtures/" "rails_helper.rb" "../" "spec_helper.rb" "models/" "factories/")
+
+ ("/home/clara/Software/treasure-hunt/app/" (21485 3890 711623 599000) "controllers/" "views/" "./" "admin/" "helpers/" "../" "assets/" "mailers/" "models/")
 
  ("/home/clara/Software/desoto/app/views/questions/" (21740 54845 565515 213000) "log.csv.erb" "./" "../" "log.html.erb" "ask.html.erb" "sample.html.erb" "placeholder.html.erb")
 
@@ -225,10 +257,6 @@
  ("/home/clara/Software/flyoverthecity/app/views/" (21574 55316 927531 491000) "confirmation/" "layouts/" "login/" "photos/" "./" "invoices/" "application/" "homepage_image/" "users/" "weekdays/" "clients/" "messengers/" "dispatching_users/" "jobs/" "saved_companies/" "work_phones/" "recurrences/" "riders-old/" "notes/" "admins/" "../" "categories/" "markets/" "backgrounds/" "pages/")
 
  ("/home/clara/Software/flyoverthecity/app/" (21632 49071 556860 562000) "controllers/" "views/" "./" "helpers/" "../" "assets/" "mailers/" "models/")
-
- ("/home/clara/Software/flyoverthecity/" (21577 14449 55061 630000) "fotc_production" "generate" "./" "coverage/" "dev.sql" "public/" "Gemfile" ".watchr" "script/" "GRTAGS" "Rakefile" "log/" ".gitignore" "vendor/" "tmp/" "config/" ".git/" "README" "Capfile" "GPATH" "../" ".bundle/" ".rspec" "doc/" "config.ru" "bundle/" "Gemfile.lock" "GSYMS" "db/" "GTAGS" "spec/" "lib/" "app/")
-
- ("/home/clara/" (21739 63710 390185 660000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".~lock.moojolabels8.odt#" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" ".ssh/" ".icons/" ".indicator-sysmonitor.json" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".xbindkeysrc" ".face" ".freerdp/" ".htaccess" ".dmrc" ".hplip/" ".emacs" ".ido.last" "iPod/" ".heroku/" ".applications/" "Text/" ".profile" ".cinnamon/" ".gphoto/" "#diary#" ".sane/" ".wine-browser/" ".Xauthority" ".recentf" ".FontForge/" ".Skype/" ".mysql_history" ".iscan_preference" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" ".xine/" ".apport-ignore.xml" "../" ".checkgmail/" ".local/" "Downloads/" ".netrc" ".lesshst" ".dropbox/" ".emacs.d/" ".bzr.log" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "Dropbox/" ".wine-pipelight/" ".freckle_cli/" ".openoffice/" ".cheat/" ".gitconfig" ".gconf/" ".AndroidStudioBeta/" ".wireshark/" ".bash_logout" ".bazaar/" ".gemrc" "DSpace Diagram_0.pdf" ".emerald/" ".huludesktop" ".gradle/" ".macromedia/" ".selected_editor" ".gem/" ".android/" ".gitk" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" ".rsense" ".rnd" "MyMomOwnsYourMom1.jpg" ".gstreamer-0.10/" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".wine/" ".thunderbird/" ".gdfuse/" ".pki/" "Pictures/" ".gksu.lock" ".synaptic/" ".exercism" ".xinputrc" ".steam/" ".Xauthority.TNT00W" ".xdvirc" ".adobe/" ".yafc/" ".gmail-indicator-rc" ".config/" "Documents/" "PlateReturnReceipt.pdf" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".npm/" ".fonts.conf" ".bash_profile" ".wync2/" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" "dspacehowtoguide.pdf" ".appdata/" ".zshrc" "opt/" ".pry_history" "Software/")
 
  ("/etc/" (21737 2361 239871 992000) "libnl-3/" "LatexMk" "subgid" "group" "brlapi.key" "foomatic/" "wildmidi/" "group-" "fstab" "gai.conf" "emacs24/" "sensors3.conf" "obex-data-server/" "ethertypes" "shadow.org" "crontab" "mime.types" "newt/" "fop.conf.d/" "dnsmasq.d/" "mail/" "passwd.org" "php5/" "rc1.d/" "debian_version" "chatscripts/" "esound/" "cron.weekly/" "ifplugd/" "ts.conf" "services" "apache2/" "ImageMagick/" "doc-base/" "kbd/" "cron.monthly/" "environment" "drirc" "speech-dispatcher/" "polkit-1/" "ufw/" "insserv.conf" "pnm2ppa.conf" "dictd/" "python2.7/" "pcmcia/" "init.d/" "shells" "updatedb.conf" "netscsid.conf" "pam.conf" "gnome-app-install/" "issue.net" "host.conf" "grub.d/" "mtools.conf" "smartmontools/" "groovy/" "timezone" "samba/" "bindresvport.blacklist" "apm/" "hdparm.conf" "groff/" "rcS.d/" "depmod.d/" "cowpoke.conf" "acpi/" "group.org" "X11/" "debconf.conf" "cracklib/" "gnome-settings-daemon/" "aptdaemon/" "signon-ui/" "logrotate.d/" "ld.so.conf.d/" "dbus-1/" "apparmor.d/" "bash.bashrc" "update-motd.d/" "rpc" "snmp/" "vmbuilder/" "at.deny" "resolv.conf" "rsyslog.conf" "pam.d/" "magic.mime" "ca-certificates.conf" "dhcp/" "fuse.conf" "pki/" "udev/" "xml/" "nanorc" "ODBCDataSources/" "skel/" "libpaper.d/" "python3.3/" "xdg/" "vim/" "rc2.d/" "gtk-2.0/" "mplayer/" "init/" "qemu-ifdown" "thunderbird/" "sysctl.d/" "update-notifier/" "sasl2/" "smartd_warning.sh" "sgml/" "click/" "update-manager/" "calendar/" "manpath.config" "gconf/" "compizconfig/" "network/" "ca-certificates.conf.dpkg-old" "mysql/" "hp/" "cupshelpers/" "popularity-contest.conf" "cron.daily/" "nsswitch.conf" "localtime" "openal/" "colord.conf" "cups/" "blkid.conf" "UPower/" "mke2fs.conf" "at-spi2/" "odbcinst.ini" "ghostscript/" "xul-ext/" "gnome/" "gimp/" "subuid" "devscripts.conf" "protocols" "adjtime" "magic" "systemd/" "kernel-img.conf" "ConsoleKit/" "firefox/" "libaudit.conf" "java-7-openjdk/" "bash_completion.d/" "legal" "selinux/" "system-image/" "shadow" "sensors.d/" "ucf.conf" "python/" "modules" "odbc.ini" "ax25/" "fstab.d/" "rc6.d/" "wpa_supplicant/" "avahi/" "rmt" "kernel/" "libvirt/" "python3.4/" "ppp/" "printcap" "logrotate.conf" "libreoffice/" "udisks2/" "securetty" "java/" "brltty.conf" "gshadow" "chromium-browser/" "chktexrc" "alternatives/" "resolvconf/" "profile.d/" ".java/" "hosts" "qemu-ifup" "blkid.tab" "sane.d/" "sudoers" "passwd" "iproute2/" "checkbox.d/" "wodim.conf" "texmf/" "emacs/" "mtab" "signond.conf" "gshadow-" "gromit/" "brltty/" "python3/" "locale.alias" "lightdm/" "smartd.conf" "remote-login-service.conf" "rc5.d/" "vdpau_wrapper.cfg" "console-setup/" "lighttpd/" "rc.local" "perl/" "networks" "insserv/" "pkcs11/" "ld.so.conf" "sudoers.d/" "libao.conf" "rc4.d/" "tex4ht/" "gdb/" "terminfo/" "gtk-3.0/" "timidity/" "ldap/" "dconf/" "vtrgb" "purple/" "logcheck/" "fonts/" "inputrc" "upstart-xsessions" "dput.cf" "maven/" "bluetooth/" "bash_completion" "apparmor/" "hostname" "ssh/" "aliases" "papersize" "lintianrc" "initramfs-tools/" "kerneloops.conf" "hosts.deny" "ld.so.cache" "insserv.conf.d/" "ltrace.conf" "dpkg/" "sysctl.conf" "apport/" "lsb-release" "issue" "zsh_command_not_found" "checkinstallrc" "sound/" "nail.rc" "wgetrc" "profile" ".pwd.lock" "opt/" "shadow-" "modules-load.d/" "adduser.conf" "gnome-vfs-2.0/" "inetd.conf" "rc0.d/" "apg.conf" "rsyslog.d/" "default/" "usb_modeswitch.d/" "anacrontab" "modprobe.d/" "dictionaries-common/" "cron.d/" "mtab.fuselock" "apt/" "yafcrc" "ca-certificates/" "rc3.d/" "os-release" "passwd-" "ssl/" "mailcap.order" "deluser.conf" "NetworkManager/" "hotplug/" "security/" "dnsmasq.d-available/" "pulse/" "bonobo-activation/" "pm/" "mailcap" "vga/" "emacs-snapshot/" "usb_modeswitch.conf" "cron.hourly/" "hosts.allow" "qemu/" "login.defs" "../" "./")
 
@@ -385,30 +413,6 @@
  ("/home/clara/Software/leavitt/app/models/" (21456 1102 946862 345000) "ability.rb" "admin.rb" ".gitkeep" "pattern.rb" "./" "guess.rb" "edge.rb" "user.rb" "position.rb" "../" "question.rb" "shape.rb" "message.rb" "questionnaire.rb" "answer.rb" "position_shape.rb" "run.rb" "trial.rb")
 
  ("/home/clara/Software/leavitt/db/" (21456 707 686842 573000) "./" "development.sqlite3" "migrate/" "../" "schema.rb" "test.sqlite3" "seeds.rb")
-
- ("/home/clara/Software/leavitt/db/migrate/" (21456 1086 306861 513000) "20140114232326_add_turn_order.rb" "20131017221618_create_edges.rb" "20131022222714_create_shapes_trials.rb" "20140716184728_add_expires_at.rb" "./" "20131112222543_create_questions.rb" "20140312205533_add_devise_to_users.rb" "20131017221110_create_guesses.rb" "20131114170630_add_questionnaire_id_to_questions.rb" "20131017222030_create_runs.rb" "20131023193442_add_content_to_message.rb" "20131114194857_change_questionnaires_name.rb" "20140723182755_add_position_shape_timestamp.rb" "20131022225139_create_position_shapes.rb" "20131017220859_create_positions.rb" "20131017231211_create_edges_patterns.rb" "20140716181758_create_delayed_jobs.rb" "20131212223905_add_attachment_image_monochrome_to_shapes.rb" "../" "20131017221747_create_trials.rb" "20131017223716_create_patterns.rb" "20131114195731_add_question_id_to_answers.rb" "20131017231147_create_runs_users.rb" "20131112222615_create_answers.rb" "20140521213911_fix_turn_order.rb" "20131114170436_create_questionnaires.rb" "20131017220836_create_users.rb" "20131108230446_add_attachment_image_to_shapes.rb" "20131017221325_create_messages.rb" "20140717185015_add_timer_set_at.rb" "20131114205652_add_questionnaire_to_run.rb" "20131017220958_create_shapes.rb")
-
- ("/home/clara/Software/leavitt/" (21455 65442 586802 499000) "./" "coverage/" "public/" "Gemfile" "README.rdoc" "script/" "Rakefile" "log/" ".gitignore" "vendor/" "config/" ".git/" "Capfile" "../" ".rspec" "doc/" "config.ru" "test/" "Gemfile.lock" "db/" "spec/" "lib/" "app/")
-
- ("/home/clara/Software/leavitt/test/" (21449 40656 554361 802000) "./" "unit/" "fixtures/" "test_helper.rb" "../" "integration/" "factories/" "performance/" "functional/")
-
- ("/home/clara/Software/leavitt/spec/support/" (21371 54827 164129 807000) "./" "../" "devise.rb")
-
- ("/home/clara/Software/leavitt/spec/fixtures/" (21371 54827 164129 807000) "./" "position_shapes.yml" "../" "patterns.yml")
-
- ("/home/clara/Software/leavitt/spec/" (21449 40071 762382 798000) "controllers/" "./" "fixtures/" "../" "spec_helper.rb" "support/" "models/")
-
- ("/home/clara/Software/Inform/" (21221 58864 0 0) "./" "valentine/" "helpfulman/" "../" "wetlands/")
-
- ("/home/clara/Software/leavitt/app/assets/javascripts/" (21378 29280 877939 77000) "analytics.js.coffee" "jquery.mission_timer.js" "./" "questionnaires.js.coffee" "../" "jquery.countdown.js" "jquery.nested_attributes.js" "application.js" "questions.js.coffee")
-
- ("/home/clara/.homesick/repos/dotfiles/home/.emacs.d/elpa/org-20140310/" (21443 8171 785042 112000) "ox-html.elc" "ob-eval.el" "org-version.el" "org-attach.elc" "org.el" "org-w3m.elc" "org-element.elc" "ob-R.elc" "ob-js.el" "ob-js.elc" "org-timer.elc" "org-feed.elc" "ob-ocaml.elc" "org-colview.elc" "ob-table.elc" "ob-emacs-lisp.elc" "ob-tangle.elc" "ob-dot.el" "org-footnote.elc" "ob-shen.elc" "ob-lisp.el" "ob-ref.elc" "ob-java.elc" "ob-ledger.el" "org-autoloads.el" "ob-screen.el" "ob-haskell.el" "org-inlinetask.elc" "ob-shen.el" "ob-maxima.el" "org-capture.el" "ob-screen.elc" "ob-clojure.elc" "ob-latex.el" "org-mobile.elc" "ob-matlab.el" "ob-keys.elc" "org-bbdb.elc" "ob-C.el" "ob-table.el" "org-clock.el" "README_ELPA" "ob-scheme.el" "ob-matlab.elc" "ob-fortran.elc" "ob-gnuplot.el" "ob-exp.el" "ob-haskell.elc" "ob-octave.elc" "ob-core.el" "ob-eval.elc" "ox.el" "ob-sql.el" "org-crypt.el" "org-mouse.el" "ob-ruby.el" "etc/" "ob-comint.el" "org-macro.el" "ox-latex.elc" "ob-picolisp.el" "ob-lob.elc" "ob-sh.el" "org-faces.el" "ob-lob.el" "ob-octave.el" "org-footnote.el" "org-mhe.elc" "org-macro.elc" "org-element.el" "ob-comint.elc" "org-macs.el" "ob-perl.el" ".#org-habit.el" "ox-md.el" "org-colview.el" "ob-org.elc" "ox-org.elc" "org-docview.elc" "ob-sqlite.elc" "ox-latex.el" "org-src.elc" "ox-org.el" "ob-sh.elc" "ob-gnuplot.elc" "ob-awk.el" "ox-odt.elc" "ox-html.el" "org-macs.elc" "ob.el" "ob-css.el" "ob-maxima.elc" "ox.elc" "org-rmail.el" "org-list.elc" "org-gnus.elc" "ob-mscgen.elc" "org-plot.elc" "ox-man.el" "ox-publish.elc" "org-table.el" "ob-ledger.elc" "ob-exp.elc" "org-bibtex.el" "org-habit.el" "org-protocol.elc" "org-eshell.el" "ox-man.elc" "ob-calc.elc" "ob-tangle.el" "ob-lisp.elc" "ox-texinfo.elc" "org-table.elc" "ob-clojure.el" "ob-scala.elc" "ox-texinfo.el" "ox-beamer.el" "org-compat.elc" "org-pcomplete.elc" "ob-ditaa.el" "org-eshell.elc" "ob-picolisp.elc" "ob.elc" "org-archive.elc" "COPYING" "org-inlinetask.el" "ob-ruby.elc" "ob-java.el" "org-capture.elc" "org-archive.el" "ob-awk.elc" "ob-makefile.elc" "ob-ocaml.el" "org" "org-id.el" "org-install.el" "org-info.el" "org-ctags.elc" "ob-python.elc" "ob-keys.el" "org-entities.el" "ob-fortran.el" "ob-plantuml.el" "org-info.elc" "ox-beamer.elc" "ob-dot.elc" "org-w3m.el" "org-gnus.el" "ob-sass.elc" "org-list.el" "ob-sass.el" "ob-scheme.elc" "ob-lilypond.elc" "org-pkg.el" "org-mouse.elc" "org-datetree.el" "ox-ascii.el" "org-agenda.el" "ob-ditaa.elc" "org-bibtex.elc" "ox-md.elc" "ob-asymptote.el" "org-bbdb.el" "org-mhe.el" "org-clock.elc" "ob-C.elc" "org-indent.elc" "ob-R.el" "ob-org.el" "org-irc.elc" "org-faces.elc" "ob-io.elc" "org-protocol.el" "org-docview.el" "ob-python.el" "ob-scala.el" "org-compat.el" "ob-core.elc" "org-feed.el" "ox-publish.el" "ob-mscgen.el" "ob-latex.elc" "orgcard.pdf" "org-datetree.elc" "org-agenda.elc" "ob-sqlite.el" "org-habit.elc" "ox-odt.el" "org-pkg.elc" "org-loaddefs.el" "org-timer.el" "org-rmail.elc" "ob-emacs-lisp.el" "ob-css.elc" "org-pcomplete.el" "org-indent.el" "ob-plantuml.elc" "org-irc.el" "ox-icalendar.elc" "ox-icalendar.el" "ob-sql.elc" "org-mobile.el" "org-ctags.el" "org-attach.el" "org-crypt.elc" "ob-ref.el" "dir" "org.elc" "ob-lilypond.el" "org-id.elc" "org-plot.el" "ob-asymptote.elc" "ox-ascii.elc" "ob-calc.el" "ob-io.el" "ob-perl.elc" "ob-makefile.el" "org-src.el" "org-entities.elc" "../" "./")
-
- ("/home/clara/.emacs.d/elpa/org-20140310/" (21286 19586 0 0) "ox-html.elc" "ob-eval.el" "org-version.el" "org-attach.elc" "org.el" "org-w3m.elc" "org-element.elc" "ob-R.elc" "ob-js.el" "ob-js.elc" "org-timer.elc" "org-feed.elc" "ob-ocaml.elc" "org-colview.elc" "ob-table.elc" "ob-emacs-lisp.elc" "ob-tangle.elc" "ob-dot.el" "org-footnote.elc" "ob-shen.elc" "ob-lisp.el" "ob-ref.elc" "ob-java.elc" "ob-ledger.el" "org-autoloads.el" "ob-screen.el" "ob-haskell.el" "org-inlinetask.elc" "ob-shen.el" "ob-maxima.el" "org-capture.el" "ob-screen.elc" "ob-clojure.elc" "ob-latex.el" "org-mobile.elc" "ob-matlab.el" "ob-keys.elc" "org-bbdb.elc" "ob-C.el" "ob-table.el" "org-clock.el" "README_ELPA" "ob-scheme.el" "ob-matlab.elc" "ob-fortran.elc" "ob-gnuplot.el" "ob-exp.el" "ob-haskell.elc" "ob-octave.elc" "ob-core.el" "ob-eval.elc" "ox.el" "ob-sql.el" "org-crypt.el" "org-mouse.el" "ob-ruby.el" "etc/" "ob-comint.el" "org-macro.el" "ox-latex.elc" "ob-picolisp.el" "ob-lob.elc" "ob-sh.el" "org-faces.el" "ob-lob.el" "ob-octave.el" "org-footnote.el" "org-mhe.elc" "org-macro.elc" "org-element.el" "ob-comint.elc" "org-macs.el" "ob-perl.el" "ox-md.el" "org-colview.el" "ob-org.elc" "ox-org.elc" "org-docview.elc" "ob-sqlite.elc" "ox-latex.el" "org-src.elc" "ox-org.el" "ob-sh.elc" "ob-gnuplot.elc" "ob-awk.el" "ox-odt.elc" "ox-html.el" "org-macs.elc" "ob.el" "ob-css.el" "ob-maxima.elc" "ox.elc" "org-rmail.el" "org-list.elc" "org-gnus.elc" "ob-mscgen.elc" "org-plot.elc" "ox-man.el" "ox-publish.elc" "org-table.el" "ob-ledger.elc" "ob-exp.elc" "org-bibtex.el" "org-habit.el" "org-protocol.elc" "org-eshell.el" "ox-man.elc" "ob-calc.elc" "ob-tangle.el" "ob-lisp.elc" "ox-texinfo.elc" "org-table.elc" "ob-clojure.el" "ob-scala.elc" "ox-texinfo.el" "ox-beamer.el" "org-compat.elc" "org-pcomplete.elc" "ob-ditaa.el" "org-eshell.elc" "ob-picolisp.elc" "ob.elc" "org-archive.elc" "COPYING" "org-inlinetask.el" "ob-ruby.elc" "ob-java.el" "org-capture.elc" "org-archive.el" "ob-awk.elc" "ob-makefile.elc" "ob-ocaml.el" "org" "org-id.el" "org-install.el" "org-info.el" "org-ctags.elc" "ob-python.elc" "ob-keys.el" "org-entities.el" "ob-fortran.el" "ob-plantuml.el" "org-info.elc" "ox-beamer.elc" "ob-dot.elc" "org-w3m.el" "org-gnus.el" "ob-sass.elc" "org-list.el" "ob-sass.el" "ob-scheme.elc" "ob-lilypond.elc" "org-pkg.el" "org-mouse.elc" "org-datetree.el" "ox-ascii.el" "org-agenda.el" "ob-ditaa.elc" "org-bibtex.elc" "ox-md.elc" "ob-asymptote.el" "org-bbdb.el" "org-mhe.el" "org-clock.elc" "ob-C.elc" "org-indent.elc" "ob-R.el" "ob-org.el" "org-irc.elc" "org-faces.elc" "ob-io.elc" "org-protocol.el" "org-docview.el" "ob-python.el" "ob-scala.el" "org-compat.el" "ob-core.elc" "org-feed.el" "ox-publish.el" "ob-mscgen.el" "ob-latex.elc" "orgcard.pdf" "org-datetree.elc" "org-agenda.elc" "ob-sqlite.el" "org-habit.elc" "ox-odt.el" "org-pkg.elc" "org-loaddefs.el" "org-timer.el" "org-rmail.elc" "ob-emacs-lisp.el" "ob-css.elc" "org-pcomplete.el" "org-indent.el" "ob-plantuml.elc" "org-irc.el" "ox-icalendar.elc" "ox-icalendar.el" "ob-sql.elc" "org-mobile.el" "org-ctags.el" "org-attach.el" "org-crypt.elc" "ob-ref.el" "dir" "org.elc" "ob-lilypond.el" "org-id.elc" "org-plot.el" "ob-asymptote.elc" "ox-ascii.elc" "ob-calc.el" "ob-io.el" "ob-perl.elc" "ob-makefile.el" "org-src.el" "org-entities.elc" "../" "./")
-
- ("/home/clara/.emacs.d/elpa/" (21443 7995 805049 513000) "undo-tree-0.6.5/" "jump-2.3/" "cl-lib-0.5/" "ibuffer-vc-0.7/" "flycheck-0.17/" "anything-1.287/" "unfill-0.1/" "inflections-1.1/" "f-0.11.0/" "scss-mode-0.5.0/" "drag-stuff-0.0.4/" "./" "projectile-0.10.0/" "haml-mode-3.1.5/" "crontab-mode-1.2/" "paredit-22/" "archives/" "org-20130930/" "tabbar-2.0.1/" "dash-2.2.0/" "expand-region-0.10.0/" "pkg-info-0.4/" "zencoding-mode-0.5.1/" "mwe-log-commands-20041106/" "textmate-5/" "dash-2.5.0/" "starter-kit-eshell-2.0.3/" "rubocop-0.3/" "ggtags-0.7.12/" "magit-1.2.0/" "highline-7.2.2/" "android-mode-0.2.5/" "elisp-slime-nav-0.7/" "../" "starter-kit-bindings-2.0.2/" "inf-ruby-2.3.2/" "org-20130506/" "starter-kit-2.0.3/" "closure-template-html-mode-0.1/" "feature-mode-0.4/" "flymake-ruby-0.8/" "smex-3.0/" "yaml-mode-0.0.9/" "flymake-haml-0.7/" "ace-jump-mode-2.0.0.0/" "apache-mode-2.0/" "mic-paren-3.8/" "auto-complete-1.4/" "csv-mode-1.50/" "rspec-mode-1.7/" "popup-0.5/" "flymake-easy-0.9/" "cursor-chg-20.1/" "ruby-tools-0.1.0/" "findr-0.7/" "multi-term-0.8.8/" "find-file-in-project-3.2/" "regex-tool-1.2/" "yasnippet-bundle-0.6.1/" "switch-window-0.9/" "org-20140310/" "ido-ubiquitous-2.10/" "s-1.9.0/" "idle-highlight-mode-1.1.2/" "epl-0.5/" "rvm-1.3.0/" "company-0.7/" "coffee-mode-0.4.1.1/" "unbound-0.1/" "anything-exuberant-ctags-0.1.2/" "dired-details-1.3.1/")
-
- ("/home/clara/.emacs.d/elpa/android-mode-0.2.5/" (21443 7995 805049 513000) "android-mode.elc" "./" "android-mode.el" "../" "android-mode-pkg.elc" "android-mode-pkg.el" "android-mode-autoloads.el")
 )
 
 ;; ----- ido-unc-hosts-cache -----
