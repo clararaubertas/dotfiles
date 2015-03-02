@@ -1972,7 +1972,7 @@ SCHEDULED: <2015-03-13 Fri +1m>
 :ID:       c8b04311-67d1-46c7-b786-9a9453a63267
 :LAST_REPEAT: [2015-02-20 Fri 12:38]
 :END:
-** TODO [#B] wash sheets                                                :hp:
+** TODO [#B] wash sheets                                              :home:
 SCHEDULED: <2015-02-25 Wed .+1m>
 - State "DONE"       from "TODO"       [2015-01-25 Sun 13:35]
 - State "DONE"       from "TODO"       [2014-12-17 Wed 19:40]
@@ -3127,7 +3127,8 @@ SCHEDULED: <2015-03-05 Thu .+3d/5d>
 :ID:       e45f56d0-1b2c-4610-9d61-b470effcf29d
 :END:
 ** TODO 20 min writing                                    :computer:writing:
-SCHEDULED: <2015-02-22 Sun .+3d/5d>
+SCHEDULED: <2015-03-05 Thu .+3d/5d>
+- State "DONE"       from "TODO"       [2015-03-02 Mon 01:39]
 - State "DONE"       from "TODO"       [2015-02-19 Thu 16:37]
 - State "DONE"       from "TODO"       [2015-02-08 Sun 15:22]
 - State "DONE"       from "TODO"       [2015-02-04 Wed 14:57]
@@ -3146,7 +3147,7 @@ SCHEDULED: <2015-02-22 Sun .+3d/5d>
 - State "DONE"       from "TODO"       [2014-10-28 Tue 16:01]
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2015-02-19 Thu 16:37]
+:LAST_REPEAT: [2015-03-02 Mon 01:39]
 :ID:       3a379cfe-4a0d-4db2-b604-4908cdac3dbd
 :END:
 ** TODO [#C] Siskel draft for Becca                          :para:computer:
@@ -3462,7 +3463,7 @@ DEADLINE: <2015-02-02 Mon>
 :ID:       9c029d29-e6b1-498d-98f8-16ba1d16f032
 :END:
 ** TODO wireframes for Unpage                                 :computer:para:
-DEADLINE: <2015-02-27 Fri -21d>
+DEADLINE: <2015-03-06 Fri -21d>
 :PROPERTIES:
 :ID:       31c91cb9-a7a0-4403-a213-93b9a8dc4cf7
 :END:
@@ -3625,7 +3626,7 @@ DEADLINE: <2015-02-20 Fri>
 :ID:       2ba96bc6-fc42-42c5-82ce-c3586508b88b
 :END:
 ** TODO Moomers Journal draft                                :computer:moojo:
-DEADLINE: <2015-03-02 Mon -14d>
+DEADLINE: <2015-03-04 Wed -14d>
 :PROPERTIES:
 :ID:       ec8fb85e-e48f-4d6d-b894-80a73273af40
 :END:
@@ -3697,4 +3698,25 @@ SCHEDULED: <2015-03-06 Fri .+1w>
 :PROPERTIES:
 :ID:       c3fca3a3-2484-41a2-8efa-44b712153be8
 :END:
-** TODO [#A] get picture of RSO moomers symbol                          :hp:
+** TODO [#A] get picture of RSO moomers symbol                    :hp:moojo:
+:PROPERTIES:
+:ID:       b0823f08-a017-4346-a722-896e9ae5295e
+:END:
+** TODO [#C] list museums in chicago                  :parallactic:computer:
+** TODO [#B] sponsorship?                                    :computer:para:
+** TODO [#A] Railsbridge landing page                 :railsbridge:computer:
+** TODO [#B] fix blazer                                               :home:
+** TODO [#B] look at food options                      :railsbridge:computer:
+** TODO [#A] bridgetroll                              :railsbridge:computer:
+** TODO [#B] put new curriculum into boston format     :railsbridge:computer:
+** TODO [#B] get tiny amps                   :computer:saltpants:majorouting:
+** TODO [#C] shows!                                               :saltpants:
+** TODO [#C] write music!                                         :saltpants:
+** TODO [#A] write to mailing list                     :computer:polarvortex:
+** TODO [#A] make list of script to-dos                :computer:polarvortex:
+** TODO [#A] post to facebook                         :computer:polarvortex:
+** TODO [#A] edit Becca interview                            :computer:moojo:
+** TODO [#A] put professor cartoons together                 :computer:moojo:
+** TODO put map on phone                                :computer:para:phone:
+DEADLINE: <2015-03-02 Mon>
+** TODO [#C] scan dnd watercolors                      :computer:home:office:
