@@ -921,7 +921,8 @@ SCHEDULED: <2015-03-11 Wed .+2d/4d>
 :LAST_REPEAT: [2015-03-09 Mon 11:26]
 :END:
 ** TODO clear work inbox                                          :computer:
-SCHEDULED: <2015-03-06 Fri .+1d/2d>
+SCHEDULED: <2015-03-10 Tue .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-09 Mon 15:00]
 - State "DONE"       from "TODO"       [2015-03-05 Thu 12:50]
 - State "DONE"       from "TODO"       [2015-03-03 Tue 16:53]
 - State "DONE"       from "TODO"       [2015-03-02 Mon 12:35]
@@ -971,7 +972,7 @@ SCHEDULED: <2015-03-06 Fri .+1d/2d>
 :PROPERTIES:
 :ID:       2636e99f-c430-4342-80e1-4b86fcaf4896
 :STYLE: habit
-:LAST_REPEAT: [2015-03-05 Thu 12:50]
+:LAST_REPEAT: [2015-03-09 Mon 15:00]
 :END:
 ** TODO make bed                                              :home:bedroom:
 SCHEDULED: <2015-03-10 Tue .+1d>
@@ -3105,7 +3106,8 @@ SCHEDULED: <2015-03-11 Wed .+3d/5d>
 :LAST_REPEAT: [2015-03-08 Sun 17:49]
 :END:
 ** TODO meditate                                                      :home:
-SCHEDULED: <2015-03-07 Sat .+5d/8d>
+SCHEDULED: <2015-03-14 Sat .+5d/8d>
+- State "DONE"       from "TODO"       [2015-03-09 Mon 16:55]
 - State "DONE"       from "TODO"       [2015-03-02 Mon 11:27]
 - State "CANCELLED"  from "TODO"       [2015-02-15 Sun 20:58]
 - State "DONE"       from "TODO"       [2014-11-12 Wed 17:23]
@@ -3122,7 +3124,7 @@ SCHEDULED: <2015-03-07 Sat .+5d/8d>
 :PROPERTIES:
 :ID:       0a9160bf-d363-4d0b-98fd-9969d22f4488
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-02 Mon 11:27]
+:LAST_REPEAT: [2015-03-09 Mon 16:55]
 :END:
 ** TODO malka heartworm                                               :home:
 SCHEDULED: <2015-04-05 Sun .+1m>
@@ -10254,5 +10256,11 @@ DEADLINE: <2015-03-16 Mon>
 :END:
 ** TODO pack for vegas                                                 :home:
 DEADLINE: <2015-03-10 Tue>
+:PROPERTIES:
+:ID:       9d973cd5-276c-4e19-9f91-4ff25e921cd8
+:END:
 ** TODO review/edit wireframes                                :computer:para:
 DEADLINE: <2015-03-10 Tue>
+:PROPERTIES:
+:ID:       59f6830a-516d-408f-97f1-05ff23211d2d
+:END:
