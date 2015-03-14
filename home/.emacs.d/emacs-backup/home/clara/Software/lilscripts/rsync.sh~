@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 while [ 1 ]
 do
     rsync -arvzPhe ssh /home/clara/Videos/ tachyon:/home/clara/Videos/
