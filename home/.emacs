@@ -264,7 +264,7 @@ If the new path's directories does not exist, create them."
 ;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
 ;;     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(tag-up time-up priority-down))
+(setq org-agenda-sorting-strategy '(priority-down tag-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
@@ -305,7 +305,7 @@ If the new path's directories does not exist, create them."
 	  (tags-todo "-TODO=\"JESSE\"-TODO=\"WAITING\"+PRIORITY=\"B\""
 		     (
 		      (org-agenda-overriding-header "")
-		      (org-agenda-sorting-strategy '(todo-state-down tag-down))
+		      (org-agenda-sorting-strategy '(todo-state-down priority-down tag-down))
 		      )
 		     )
 	  (todo "WAITING"
@@ -428,7 +428,7 @@ If the new path's directories does not exist, create them."
 	))
 (setq org-tag-faces
       '(
-	("home" . (:background "#2aa198"))
+	("home" . (:background "#2aa198u"))
 	("computer" . (:background "#575757"))
 	("bedroom" . (:foreground "#2aa198"))
 	("kitchen" . (:foreground "#b58900"))
