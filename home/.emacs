@@ -264,7 +264,7 @@ If the new path's directories does not exist, create them."
 ;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
 ;;     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(priority-down tag-down))
+(setq org-agenda-sorting-strategy '(tag-up priority-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
