@@ -3005,7 +3005,8 @@ SCHEDULED: <2015-03-23 Mon .+7d/9d>
 :LAST_REPEAT: [2015-03-16 Mon 18:09]
 :END:
 ** TODO update books doc                                          :computer:
-SCHEDULED: <2015-03-16 Mon .+2d/4d>
+SCHEDULED: <2015-03-18 Wed .+2d/4d>
+- State "DONE"       from "TODO"       [2015-03-16 Mon 22:11]
 - State "DONE"       from "TODO"       [2015-03-14 Sat 17:47]
 - State "DONE"       from "TODO"       [2015-03-08 Sun 19:41]
 - State "DONE"       from "TODO"       [2015-03-05 Thu 12:50]
@@ -3069,10 +3070,11 @@ SCHEDULED: <2015-03-16 Mon .+2d/4d>
 :PROPERTIES:
 :ID:       ba57072f-afda-4ee6-a30e-6c666b2b5fec
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-14 Sat 17:47]
+:LAST_REPEAT: [2015-03-16 Mon 22:11]
 :END:
 ** TODO update movies doc                                         :computer:
-SCHEDULED: <2015-03-16 Mon .+2d/4d>
+SCHEDULED: <2015-03-18 Wed .+2d/4d>
+- State "DONE"       from "TODO"       [2015-03-16 Mon 22:11]
 - State "DONE"       from "TODO"       [2015-03-14 Sat 17:26]
 - State "DONE"       from "TODO"       [2015-03-08 Sun 19:40]
 - State "DONE"       from "TODO"       [2015-03-05 Thu 12:50]
@@ -3138,7 +3140,7 @@ SCHEDULED: <2015-03-16 Mon .+2d/4d>
 :ID:       1503f13c-baaa-4ed7-b144-ea547a84291c
 :BECAUSE:  
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-14 Sat 17:26]
+:LAST_REPEAT: [2015-03-16 Mon 22:11]
 :END:
 ** TODO [#C] repaint in bathroom                             :home:bathroom:
 :PROPERTIES:
@@ -3267,7 +3269,7 @@ SCHEDULED: <2015-03-23 Mon .+1w>
 :ID:       0c9eabea-f25a-4f74-aa24-91a297ccfa2a
 :BECAUSE:  $
 :END:
-** TODO [#C] Update para website                                  :computer:
+** TODO [#B] Update para website                                  :computer:
 :PROPERTIES:
 :ID:       a288715f-6415-4e1f-93c2-5ea4f739520e
 :END:
@@ -3628,7 +3630,7 @@ DEADLINE: <2015-02-13 Fri -14d>
 :END:
 :ID:       033a9473-96df-45a0-bc97-c56bad8606f4
 :END:
-** TODO [#C] dinner party                                           :social:
+** TODO [#B] dinner party                                           :social:
 :PROPERTIES:
 :ID:       ab2395b6-2d81-4506-8fee-75b49e112338
 :END:
@@ -10368,8 +10370,20 @@ DEADLINE: <2015-03-10 Tue>
 :END:
 ** TODO desoto issues                                         :computer:para:
 DEADLINE: <2015-03-23 Mon>
+:PROPERTIES:
+:ID:       09c79169-0e7a-4bf9-be0c-8465728a549c
+:END:
 ** TODO [#A] odesk profile                                   :computer:para:
+:PROPERTIES:
+:ID:       e6c0bcea-62ce-4f2f-b770-72cf219c420c
+:END:
 ** TODO [#B] neighborhood map                                :computer:para:
+:PROPERTIES:
+:ID:       7a0f81ec-e57c-4ea2-bcb0-2203fdb654e6
+:END:
 ** TODO neighborhood map                                      :computer:para:
 DEADLINE: <2015-04-06 Mon>
 ** TODO [#A] get rug                                           :majorouting:
+:PROPERTIES:
+:ID:       1965a9ab-d6bb-44d5-a2a7-26cec6b9e14e
+:END:
