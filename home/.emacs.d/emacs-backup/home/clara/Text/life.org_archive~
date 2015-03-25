@@ -14915,3 +14915,875 @@ SCHEDULED: <2014-10-01 Wed>
 :ARCHIVE_TODO: CANCELLED
 :END:
 [2014-01-16 Thu 00:06]
+
+* DONE [#B] Put books away                                             :home:
+- State "DONE"       from "JESSE"      [2015-01-31 Sat 20:38]
+:PROPERTIES:
+:ID:       ea58af21-a399-4e68-9bdc-09d6e0edf691
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+[2014-07-06 Sun 16:53]
+
+* DONE map 2nd draft for Sebas                                :para:computer:
+DEADLINE: <2015-01-30 Fri>
+- State "DONE"       from "TODO"       [2015-02-18 Wed 18:01]
+:PROPERTIES:
+:ID:       b06a028e-6438-4ca2-a25c-7637cbd70789
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#B] fix elliptical                                             :home:
+- State "DONE"       from "TODO"       [2015-01-29 Thu 23:33]
+:PROPERTIES:
+:ID:       1287903a-896a-4aca-9087-951434bda716
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Railsbridge roles draft                                     :computer:
+SCHEDULED: <2015-01-30 Fri>
+- State "DONE"       from "TODO"       [2015-01-30 Fri 15:18]
+:PROPERTIES:
+:ID:       d51a0fe9-bbd0-40da-92bc-4988df8b4c26
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+:ID:       2faa5b42-3643-46dc-999a-77c329943bea
+:END:
+
+* DONE draft roles in org doc                                      :computer:
+- State "DONE"       from "TODO"       [2015-01-30 Fri 15:18]
+:PROPERTIES:
+:ID:       78a4f5e1-7088-49d1-b531-e2ba97d7f7d2
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+DEADLINE: <2015-01-30 Fri>
+
+* DONE draft skeleton code                                         :computer:
+SCHEDULED: <2015-01-30 Fri> DEADLINE: <2015-01-30 Fri>
+- State "DONE"       from "TODO"       [2015-01-28 Wed 14:45]
+:PROPERTIES:
+:ID:       264499d5-7eb1-45cd-be04-7214474a417a
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] fix netflix                                            :computer:
+- State "DONE"       from "TODO"       [2015-01-29 Thu 18:09]
+:PROPERTIES:
+:ID:       05471066-889d-4e81-b135-cbce02706ef8
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#B] put movies on hard drive                          :home:computer:
+- State "DONE"       from "TODO"       [2015-03-16 Mon 13:21]
+:PROPERTIES:
+:ID:       c1851e32-5816-451a-acd5-95f1d9b94957
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE IssueLab proposal                                      :para:computer:
+DEADLINE: <2015-02-13 Fri -14d>
+- State "DONE"       from "TODO"       [2015-02-13 Fri 12:16]
+:PROPERTIES:
+:ID:       960c11d3-abcd-4af1-9b83-2df03cf634d1
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] put recordings on drive                :computer:saltpants:phone:
+- State "DONE"       from "TODO"       [2015-02-02 Mon 18:22]
+:PROPERTIES:
+:ID:       b717b1fb-c4cf-431b-a194-d3b3723032af
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] return shoes                                                 :hp:
+- State "DONE"       from "TODO"       [2015-02-02 Mon 12:25]
+:PROPERTIES:
+:ID:       ac71d583-5654-43cb-b797-b0efe718f43d
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] get rid of couch                                  :computer:home:
+- State "DONE"       from "WAITING"    [2015-02-19 Thu 17:47]
+:PROPERTIES:
+:ID:       10babebe-cd37-4b2e-9078-bdd1d74e221d
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] photograph earrings/necklace                         :phone:home:
+- State "DONE"       from "TODO"       [2015-02-01 Sun 14:41]
+:PROPERTIES:
+:ID:       1111df89-5a3a-463e-9240-6b8c852ee9e9
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] plan valentine's day                                   :computer:
+- State "DONE"       from "TODO"       [2015-02-02 Mon 17:23]
+:PROPERTIES:
+:ID:       101fb9df-41e4-4df0-a1a7-30f4ac4eece9
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] clean up office boxes                               :home:office:
+- State "DONE"       from "TODO"       [2015-02-10 Tue 12:10]
+:PROPERTIES:
+:ID:       30c24134-fc1c-4130-a716-322e94d4554e
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE review IssueLab stuff                                       :computer:
+DEADLINE: <2015-02-02 Mon>
+- State "DONE"       from "TODO"       [2015-02-02 Mon 17:23]
+:PROPERTIES:
+:ID:       e41a32e7-8d88-4c51-b80a-127ffa58a675
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] send condolence email                                  :computer:
+- State "DONE"       from "TODO"       [2015-02-10 Tue 12:42]
+:PROPERTIES:
+:ID:       b18f0deb-a855-4d4a-a7e3-2f3b80f61cf7
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#B] replace office light                                :home:office:
+- State "DONE"       from "TODO"       [2015-02-18 Wed 22:05]
+:PROPERTIES:
+:ID:       46b2c978-998d-4868-8cfc-874cfcabbeba
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] vegas dogs                                                :phone:
+- State "DONE"       from "TODO"       [2015-02-27 Fri 14:43]
+:PROPERTIES:
+:ID:       ea85e560-504c-474b-8876-e2b99a8318ff
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+:PROPERTIES::ID: 75c57acc-ba52-4895-b112-9cd149834f08
+
+:END:
+:PROPERTIES::ID: 81e2667e-e65c-44a0-b798-f33facab674d
+
+:END:
+:PROPERTIES::ID: fa94b6a8-5159-4ccc-a123-5f5f79663ebf
+
+:END:
+:PROPERTIES::ID: c8f36f06-5322-43e1-8e0f-9e36c1712d0a
+
+:END:
+:PROPERTIES::ID: 8d47e8c5-21c2-4803-b614-17b3536197c7
+
+:END:
+:PROPERTIES::ID: 5fb41c34-01f3-4b88-9b89-e2aaad0079de
+
+:END:
+:PROPERTIES::ID: 7970fc98-8063-412a-844e-0ffcbf023b59
+
+:END:
+:PROPERTIES::ID: de975747-1138-4165-998d-e88323ea4797
+
+:END:
+:PROPERTIES::ID: dfc0b68d-9201-47f5-b06b-e7d547db2846
+
+:END:
+:PROPERTIES::ID: 34807111-4aef-4b47-babd-7e0d3e67a62b
+
+:END:
+:PROPERTIES::ID: 82761ed7-0085-41de-a828-5dec682cb43c
+
+:END:
+:PROPERTIES::ID: 48d9ea67-7666-4660-b3b7-632826a107ab
+
+:END:
+:PROPERTIES::ID: 3ba47c2e-fad0-4053-a5c0-4b35cb9d6c11
+
+:END:
+:PROPERTIES::ID: ea6a0909-db64-476e-9f49-0e29dc4caf13
+
+:END:
+:PROPERTIES::ID: 1fcde2ec-07f7-496f-9c13-148d1df87e34
+
+:END:
+:PROPERTIES::ID: df09fe3c-408b-4351-8f20-ba2e86de28e1
+
+:END:
+:PROPERTIES::ID: e78bff0c-61d8-4156-b18b-1df930f2288c
+
+:END:
+:PROPERTIES::ID: f12012d4-126c-4ba9-9e86-ed999cd92aff
+
+:END:
+:PROPERTIES::ID: 524c8365-4718-4d26-a67f-22a0eca60b30
+
+:END:
+:PROPERTIES::ID: 8a2b3322-de64-496f-9932-c0b25d544af7
+
+:END:
+:PROPERTIES::ID: 51acfff3-5164-436e-9ef9-c664de527a7f
+
+:END:
+:PROPERTIES::ID: b8b80e74-1a2e-4404-bcee-4370a80237c0
+
+:END:
+:PROPERTIES::ID: ecb145cf-8479-4fe9-8547-1e6be2f9def2
+
+:END:
+:PROPERTIES::ID: 4c39634b-919c-4495-b448-bdc79bcbb596
+
+:END:
+:PROPERTIES::ID: 52571386-e4f0-4ee6-a533-8c60cbc61a3b
+
+:END:
+:PROPERTIES::ID: deac0656-b1e6-41db-9042-7b011056e825
+
+:END:
+:PROPERTIES::ID: 2336a52a-c753-460f-973e-3b011b94a149
+
+:END:
+:PROPERTIES::ID: f41c82bc-6f87-4939-a65f-e3f13f9d93c2
+
+:END:
+:PROPERTIES::ID: 72c5a8a0-4e6a-4e33-978a-226bb49c8d65
+
+:END:
+:PROPERTIES::ID: 504ddfe3-adce-4e52-913f-fcdaba3b2234
+
+:END:
+:PROPERTIES::ID: 322b36e9-cea6-4490-abed-0b99e8a0df4e
+
+:END:
+:PROPERTIES::ID: d53a7bb7-ad74-4f11-aec4-867bf26b14f3
+
+:END:
+:PROPERTIES::ID: d308b418-c9b5-4a23-b55e-0866c0c86d85
+
+:END:
+
+* DONE city sticker                                                :computer:
+- State "DONE"       from "TODO"       [2015-02-14 Sat 12:56]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] process Railsbridge tasks                              :computer:
+- State "DONE"       from "TODO"       [2015-02-16 Mon 18:30]
+:PROPERTIES:
+:ID:       d23305fb-dc7a-4904-b4d3-4bbd63fce3c3
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE clean up drums                                        :home:frontroom:
+DEADLINE: <2015-02-20 Fri>
+- State "DONE"       from "TODO"       [2015-02-19 Thu 22:31]
+:PROPERTIES:
+:ID:       2ba96bc6-fc42-42c5-82ce-c3586508b88b
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE finish up Sebastian stuff                                   :computer:
+DEADLINE: <2015-02-19 Thu> 
+- State "DONE"       from "TODO"       [2015-02-19 Thu 16:37]
+:PROPERTIES:
+:ID:       1a0beae6-8aec-41db-bd01-2139d31026fb
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE prepare office                                           :home:office:
+DEADLINE: <2015-02-20 Fri>
+- State "DONE"       from "TODO"       [2015-02-19 Thu 23:12]
+:PROPERTIES:
+:ID:       15ff3d7d-3991-4b38-a99d-0bab7cc6a432
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] fix phone                                              :phone:hp:
+- State "DONE"       from "TODO"       [2015-02-24 Tue 18:30]
+:PROPERTIES:
+:ID:       26ab74d0-e143-4a10-a4d2-bdb0825f2ed5
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE draft array module                              :computer:railsbridge:
+DEADLINE: <2015-03-06 Fri>
+- State "DONE"       from "TODO"       [2015-03-14 Sat 17:25]
+:PROPERTIES:
+:ID:       7f2d4ceb-6828-4ff8-891e-97faa63930d4
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE interview Becca                                             :computer:
+SCHEDULED: <2015-02-27 Fri>
+- State "DONE"       from "TODO"       [2015-02-28 Sat 17:28]
+:PROPERTIES:
+:ID:       06b31e7d-7000-4569-9cbd-417e5d04ba8c
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+:PROPERTIES::ID: cb962e5e-2b96-4096-9650-27d9848b3c9e
+
+:END:
+
+* DONE [#A] return ModCloth jacket                                       :hp:
+- State "DONE"       from "TODO"       [2015-03-03 Tue 13:10]
+:PROPERTIES:
+:ID:       c3fca3a3-2484-41a2-8efa-44b712153be8
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] Railsbridge landing page                   :railsbridge:computer:
+- State "DONE"       from "WAITING"    [2015-03-08 Sun 15:08]
+:PROPERTIES:
+:ID:       d4fa4533-a1b6-4fee-a46e-92f42c9aa12d
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+:PROPERTIES::ID: 0bb9004a-5b7c-407f-af3b-526b31c82d2f
+
+:END:
+:PROPERTIES::ID: b9834045-1597-4c3d-b7f3-22eb04f0fb7b
+
+:END:
+:PROPERTIES::ID: 8fdc5c3d-de4e-4d4f-ba35-54c38c4765b8
+
+:END:
+:PROPERTIES::ID: c7ab40b0-eb14-459e-a28b-4953371c4bdc
+
+:END:
+:PROPERTIES::ID: 619f607c-0c93-410f-8ec6-943d2a1c49d9
+
+:END:
+:PROPERTIES::ID: d43c2b2c-95cf-4b9e-9352-7ce3ccd93654
+
+:END:
+:PROPERTIES::ID: e32e6e81-558c-4d25-a1f8-43b2501dce09
+
+:END:
+:PROPERTIES::ID: 26c5ecdc-ccf2-4e8a-89b3-6714c79d027d
+
+:END:
+
+* DONE bridgetroll                                     :railsbridge:computer:
+DEADLINE: <2015-03-09 Mon>
+- State "DONE"       from "TODO"       [2015-03-03 Tue 16:46]
+:PROPERTIES:
+:ID:       9f4f3669-14fb-42ca-8ee5-d05c68cbab17
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] write to mailing list                      :computer:polarvortex:
+- State "DONE"       from "TODO"       [2015-03-02 Mon 16:51]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] post to facebook                           :computer:polarvortex:
+- State "DONE"       from "TODO"       [2015-03-02 Mon 16:39]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] put professor cartoons together                  :computer:moojo:
+- State "DONE"       from "TODO"       [2015-03-02 Mon 17:08]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE pack for vegas                                                  :home:
+DEADLINE: <2015-03-10 Tue>
+- State "DONE"       from "TODO"       [2015-03-14 Sat 17:25]
+:PROPERTIES:
+:ID:       9d973cd5-276c-4e19-9f91-4ff25e921cd8
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] odesk profile                                     :computer:para:
+- State "DONE"       from "TODO"       [2015-03-18 Wed 11:12]
+:PROPERTIES:
+:ID:       e6c0bcea-62ce-4f2f-b770-72cf219c420c
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] get rug                                             :majorouting:
+- State "DONE"       from "TODO"       [2015-03-17 Tue 13:43]
+:PROPERTIES:
+:ID:       1965a9ab-d6bb-44d5-a2a7-26cec6b9e14e
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* CANCELLED [#C] org moojo                                         :computer:
+:PROPERTIES:
+:ID:       49bf59a7-f380-4232-8a6d-adf2d0326e8f
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+
+* CANCELLED MAPS, SCHOOL, SEX
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED [#C] clean suit                                              :hp:
+:PROPERTIES:
+:ID:       d85d946b-9cb4-4c0c-90e0-9888b0526aae
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED [#C] Dog health updates                              :phone:home:
+:PROPERTIES:
+:ID:       f36ce24d-7736-43a2-b9e3-2736648a7037
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+[2014-06-13 Fri 12:55]
+
+
+* CANCELLED mixer/amp
+:PROPERTIES:
+:ID:       a84ad32f-0b92-43b9-a082-64f6cb2efd3a
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED [#A] Camp house dinner                                 :computer:
+:PROPERTIES:
+:ID:       015812f3-81cb-4027-82a8-a375dc36c4b0
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED SF woods day?                                          :computer:
+:PROPERTIES:
+:ID:       da5fbc12-dbec-44bc-adc3-e835664c8b82
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED [#A] PIRG                                        :phone:computer:
+:PROPERTIES:
+:ID:       37809a4d-8ddf-4533-bd45-ef51e4ff2c13
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED [#A] CCbill                                               :phone:
+:PROPERTIES:
+:ID:       78c6a9a3-d65d-4eeb-88d2-689382e688ac
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED [#B] sponsorship?                                 :computer:para:
+:PROPERTIES:
+:ID:       70014289-6467-41b2-95f0-329b0492c639
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED put map on phone                            :computer:para:phone:
+DEADLINE: <2015-03-02 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-03-19 Thu 14:25
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED SF bar night                                           :computer:
+:PROPERTIES:
+:ID:       87374db6-513d-4a8c-bfc8-52e99a47f2d2
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* CANCELLED [#A] take pictures for thank-you email                    :phone:
+:PROPERTIES:
+:ID:       464317bb-0e08-4141-bd0a-57fe319c2df5
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: CANCELLED
+:END:
+
+* DONE [#A] rewire network                                      :home:office:
+- State "DONE"       from "TODO"       [2015-01-31 Sat 21:32]
+:PROPERTIES:
+:ID:       e092fca6-1abf-4dee-8427-3c3cf01bfa92
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE listen to saltpants                                         :computer:
+DEADLINE: <2015-01-27 Tue>
+- State "DONE"       from "TODO"       [2015-01-27 Tue 17:30]
+:PROPERTIES:
+:ID:       324bff75-3591-40ea-9f5b-3a273a6bcd30
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+:PROPERTIES::ID: cc834ea6-c977-426d-af33-b80081a8972c
+
+:END:
+
+* DONE draft budget categories                                     :computer:
+DEADLINE: <2015-01-30 Fri>
+- State "DONE"       from "TODO"       [2015-01-27 Tue 13:16]
+:PROPERTIES:
+:ID:       e00cc653-278c-4cf2-9c91-f141c4e626b0
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#B] fix chromecast                                   :home:frontroom:
+- State "DONE"       from "TODO"       [2015-01-31 Sat 22:20]
+:PROPERTIES:
+:ID:       4fc1afbd-54da-4904-912b-1b46d0e56269
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] cancel stamps.com account 1-855-608-2677                  :phone:
+- State "DONE"       from "TODO"       [2015-01-29 Thu 11:54]
+:PROPERTIES:
+:ID:       2204ddc6-9f57-4508-94a1-88bf0270310b
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+:ID:       033a9473-96df-45a0-bc97-c56bad8606f4
+:END:
+
+* DONE get mixer or amp                                            :shopping:
+DEADLINE: <2015-02-10 Tue>
+- State "DONE"       from "TODO"       [2015-02-09 Mon 12:49]
+:PROPERTIES:
+:ID:       e9801722-ab9a-4990-9682-80944cf86449
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE pack for SF                                                     :home:
+DEADLINE: <2015-02-03 Tue>
+- State "DONE"       from "TODO"       [2015-02-03 Tue 20:30]
+:PROPERTIES:
+:ID:       ba264d1b-4893-47c7-819a-db092c293bfc
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] fix printer                                         :home:office:
+- State "DONE"       from "TODO"       [2015-02-01 Sun 20:34]
+:PROPERTIES:
+:ID:       9c029d29-e6b1-498d-98f8-16ba1d16f032
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+- State "DONE"       from "TODO"       [2015-03-09 Mon 14:54]** DONE wireframes for Unpage                                :computer:para:
+DEADLINE: <2015-03-06 Fri -21d>
+:PROPERTIES:
+:ID:       31c91cb9-a7a0-4403-a213-93b9a8dc4cf7
+:END:
+
+* DONE upload saltpants songs                                :phone:computer:
+DEADLINE: <2015-02-16 Mon>
+- State "DONE"       from "TODO"       [2015-02-15 Sun 14:04]
+:PROPERTIES:
+:ID:       c40c8e0e-07d5-402f-890f-c66464d182a4
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] MA car tax                                             :computer:
+- State "DONE"       from "TODO"       [2015-02-16 Mon 13:05]
+:PROPERTIES:
+:ID:       05879568-6478-489a-9da4-924e7498ced6
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Moomers Journal draft                                 :computer:moojo:
+DEADLINE: <2015-03-04 Wed -14d>
+- State "DONE"       from "TODO"       [2015-03-09 Mon 12:52]
+:PROPERTIES:
+:ID:       ec8fb85e-e48f-4d6d-b894-80a73273af40
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE draft pictures module                           :computer:railsbridge:
+DEADLINE: <2015-03-04 Wed>
+- State "DONE"       from "TODO"       [2015-03-03 Tue 16:46]
+:PROPERTIES:
+:ID:       4936d2e7-5f38-4095-800e-01f2f4b431ae
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] scan MooJo items                           :computer:home:office:
+- State "DONE"       from "TODO"       [2015-03-02 Mon 01:36]
+:PROPERTIES:
+:ID:       6a033da6-d7c7-4559-8563-6d1f398e5507
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] get picture of RSO moomers symbol                      :hp:moojo:
+- State "DONE"       from "TODO"       [2015-03-06 Fri 15:33]
+:PROPERTIES:
+:ID:       b0823f08-a017-4346-a722-896e9ae5295e
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE put new curriculum into step format             :computer:railsbridge:
+DEADLINE: <2015-03-19 Thu>
+- State "DONE"       from "TODO"       [2015-03-18 Wed 18:45]
+:PROPERTIES:
+:ID:       4922c5c6-ba16-464c-9ab0-be4e941d7d7d
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE [#A] make list of script to-dos                 :computer:polarvortex:
+- State "DONE"       from "TODO"       [2015-03-02 Mon 18:32]
+:PROPERTIES:
+:ID:       b359e5ca-0562-4524-908a-e0e76e69070c
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE review/edit wireframes                                 :computer:para:
+DEADLINE: <2015-03-10 Tue>
+- State "DONE"       from "TODO"       [2015-03-14 Sat 14:17]
+:PROPERTIES:
+:ID:       59f6830a-516d-408f-97f1-05ff23211d2d
+:ARCHIVE_TIME: 2015-03-19 Thu 14:31
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: DONE
+:END:
