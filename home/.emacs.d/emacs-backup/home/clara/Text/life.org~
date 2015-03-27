@@ -1017,7 +1017,8 @@ SCHEDULED: <2015-03-27 Fri .+2d/4d>
 :LAST_REPEAT: [2015-03-25 Wed 13:58]
 :END:
 ** TODO clear work inbox                                          :computer:
-SCHEDULED: <2015-03-27 Fri .+1d/2d>
+SCHEDULED: <2015-03-28 Sat .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-27 Fri 15:54]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 17:59]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 14:46]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 18:03]
@@ -1076,7 +1077,7 @@ SCHEDULED: <2015-03-27 Fri .+1d/2d>
 :PROPERTIES:
 :ID:       2636e99f-c430-4342-80e1-4b86fcaf4896
 :STYLE: habit
-:LAST_REPEAT: [2015-03-26 Thu 17:59]
+:LAST_REPEAT: [2015-03-27 Fri 15:54]
 :END:
 ** TODO make bed                                              :home:bedroom:
 SCHEDULED: <2015-03-28 Sat .+1d>
@@ -2748,7 +2749,7 @@ SCHEDULED: <2015-04-07 Tue .+15d/18d>
 :STYLE:    habit
 :LAST_REPEAT: [2015-03-23 Mon 14:34]
 :END:
-** TODO [#B] get dentist for Jesse                          :phone:computer:
+** TODO [#C] get dentist for Jesse                          :phone:computer:
 :PROPERTIES:
 :ID:       31ddeac1-ae46-4116-b4cd-3f5354226903
 :BECAUSE:  $
@@ -3299,7 +3300,8 @@ SCHEDULED: <2015-03-29 Sun .+3d/5d>
 :ID:       e45f56d0-1b2c-4610-9d61-b470effcf29d
 :END:
 ** TODO 20 min writing                                    :computer:writing:
-SCHEDULED: <2015-03-26 Thu .+3d/5d>
+SCHEDULED: <2015-03-30 Mon .+3d/5d>
+- State "DONE"       from "TODO"       [2015-03-27 Fri 17:46]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 00:14]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 17:19]
 - State "DONE"       from "TODO"       [2015-03-14 Sat 17:25]
@@ -3322,7 +3324,7 @@ SCHEDULED: <2015-03-26 Thu .+3d/5d>
 - State "DONE"       from "TODO"       [2014-10-28 Tue 16:01]
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-23 Mon 00:14]
+:LAST_REPEAT: [2015-03-27 Fri 17:46]
 :ID:       3a379cfe-4a0d-4db2-b604-4908cdac3dbd
 :END:
 ** TODO [#C] Siskel draft for Becca                          :computer:para:
@@ -3495,7 +3497,7 @@ SCHEDULED: <2015-04-01 Wed +1w>
 :PROPERTIES:
 :ID:       7d63da29-513d-4c29-9a2d-54d8b37a2665
 :END:
-** TODO [#B] look at food options                     :computer:railsbridge:
+** CANCELLED [#B] look at food options                :computer:railsbridge:
 :PROPERTIES:
 :ID:       295c83a6-8559-43ee-b2a0-f36996f2189f
 :END:
@@ -3540,24 +3542,23 @@ DEADLINE: <2015-03-25 Wed>
 :PROPERTIES:
 :ID:       b42adad6-d829-47bf-a5a5-211d8e7450b8
 :END:
-** TODO format array module                           :computer:railsbridge:
+** DONE format array module                           :computer:railsbridge:
 DEADLINE: <2015-03-25 Wed>
-:PROPERTIES:
+
+- State "DONE"       from "TODO"       [2015-03-27 Fri 17:46]:PROPERTIES:
 :ID:       b1ab178e-2ac1-44ed-b13e-f05bf0685ba1
 :END:
-** TODO [#A] MooJo format tweaks                                  :computer:
-:PROPERTIES:
-:ID:       bfb201fe-e305-43c6-b25c-cf2857a3f3a5
-:END:
+** DONE [#A] MooJo format tweaks                                  :computer:
 ** TODO [#C] update MooJo website                                 :computer:
 :PROPERTIES:
 :ID:       21905e87-5107-4e40-978a-b57a92ce0752
 :END:
+
 ** TODO [#C] scan moojo covers                                        :home:
 :PROPERTIES:
 :ID:       ce703afe-43ba-4759-aed1-e2912540d74c
 :END:
-** TODO [#B] tax stuff                                       :computer:home:
+** TODO [#A] tax stuff                                :computer:home:office:
 :PROPERTIES:
 :ID:       c919c75f-df3a-41db-9123-3600ae7f936f
 :END:
@@ -3573,31 +3574,52 @@ DEADLINE: <2015-03-26 Thu>
 :PROPERTIES:
 :ID:       654aa053-97c4-4a03-aeea-66ed2ddbabda
 :END:
-** TODO [#B] chromecast from hard drive                      :home:computer:
+** TODO [#C] chromecast from hard drive                      :home:computer:
 :PROPERTIES:
 :ID:       6b531efe-1ab4-4586-b4c0-7eb67a820e2d
 :END:
-** TODO [#A] call scarf place                                :phone:computer:
+** DONE [#A] call scarf place                   :phone:computer:railsbridge:
+- State "DONE"       from "TODO"       [2015-03-27 Fri 16:30]
 :PROPERTIES:
 :ID:       3a67993e-7909-4281-b601-78b7c00fa919
 :END:
-** TODO [#A] finish wireframe draft 2                              :computer:
+** TODO [#A] finish wireframe draft 2                        :computer:para:
 :PROPERTIES:
 :ID:       885cda31-24f9-4abe-940f-e3235b855e5e
 :END:
-** TODO [#A] desoto changes                                       :computer:
+** TODO [#A] desoto changes                                  :computer:para:
 :PROPERTIES:
 :ID:       82a02602-c807-4208-85ff-b27953316bf6
 :END:
-** TODO [#A] email Greg                                           :computer:
+** DONE [#A] email Greg                                           :computer:
+- State "DONE"       from "TODO"       [2015-03-27 Fri 15:54]
 :PROPERTIES:
 :ID:       4cc03298-5b18-4f94-a110-2de2b7248890
 :END:
-** TODO [#A] pay health insurance                                 :computer:
+** DONE [#A] pay health insurance                                 :computer:
+- State "DONE"       from "TODO"       [2015-03-27 Fri 16:30]
 :PROPERTIES:
 :ID:       463de986-0c2c-439c-a9fc-f77748c1a6a6
 :END:
-** TODO [#A] mauge changes                                         :computer:
+** TODO [#A] mauge changes                                   :computer:para:
 :PROPERTIES:
 :ID:       0480f468-6f97-478a-9691-3f45c0300ae9
 :END:
+** TODO vote                                                             :hp:
+:PROPERTIES:
+:ID:       86cdc291-d717-4708-807d-d756b7268883
+:END:
+** TODO [#B] make house spreadsheet                               :computer:
+:PROPERTIES:
+:ID:       a2db8a7b-c537-4a7f-aea3-8df29103a389
+:END:
+** DONE [#B] contact Larry Pitkowski                              :computer:
+- State "DONE"       from "TODO"       [2015-03-27 Fri 16:08]
+:PROPERTIES:
+:ID:       07993f4e-b736-41c6-bea0-11b8ff5c952b
+:END:
+** TODO [#A] proofread MooJo                          :computer:home:office:
+:PROPERTIES:
+:ID:       a85f303f-d40c-4c63-94dd-ebc9779d1431
+:END:
+** TODO [#B] mockup guest form for fotc                       :computer:para:
