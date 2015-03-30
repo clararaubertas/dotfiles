@@ -7,7 +7,8 @@
 [2014-07-06 Sun 13:53]
 
 ** TODO Pay the rent                                                    :hp:
-SCHEDULED: <2015-03-28 Sat +1m>
+SCHEDULED: <2015-04-28 Tue +1m>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:38]
 - State "DONE"       from "TODO"       [2015-03-02 Mon 13:40]
 - State "DONE"       from "TODO"       [2015-02-02 Mon 12:28]
 - State "DONE"       from "TODO"       [2015-01-05 Mon 22:00]
@@ -26,11 +27,14 @@ SCHEDULED: <2015-03-28 Sat +1m>
 - State "DONE"       from "TODO"       [2013-11-01 Fri 15:39]
 :PROPERTIES:
 :ID:       c4e05332-19e6-43b4-91df-b01c963f23be
-:LAST_REPEAT: [2015-03-02 Mon 13:40]
+:LAST_REPEAT: [2015-03-29 Sun 18:38]
 :END:
 *
 ** TODO brush teeth                                          :home:bathroom:
-SCHEDULED: <2015-03-27 Fri .+1d>
+SCHEDULED: <2015-03-31 Tue .+1d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 11:20]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:07]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 18:14]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 11:39]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 19:59]
@@ -230,11 +234,14 @@ SCHEDULED: <2015-03-27 Fri .+1d>
 - State "DONE"       from "TODO"       [2013-10-05 Sat 15:09]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-03-26 Thu 18:14]
+:LAST_REPEAT: [2015-03-30 Mon 11:20]
 :STYLE:    habit
 :END:
 ** TODO wash face                                            :home:bathroom:
-SCHEDULED: <2015-03-27 Fri .+1d>
+SCHEDULED: <2015-03-31 Tue .+1d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 11:20]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:07]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 18:14]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 11:39]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 19:59]
@@ -291,12 +298,13 @@ SCHEDULED: <2015-03-27 Fri .+1d>
 - State "DONE"       from "TODO"       [2015-01-06 Tue 12:52]
 - State "DONE"       from "TODO"       [2014-12-27 Sat 18:22]
 :PROPERTIES:
-:LAST_REPEAT: [2015-03-26 Thu 18:14]
+:LAST_REPEAT: [2015-03-30 Mon 11:20]
 :ID:       ea91157e-cb13-4e92-b6b5-0e2d0e537de5
 :STYLE:    habit
 :END:
 ** TODO buy coffee beans                                                :hp:
-SCHEDULED: <2015-03-28 Sat .+6d/9d>
+SCHEDULED: <2015-04-05 Sun .+6d/9d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 14:50]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 16:21]
 - State "DONE"       from "TODO"       [2015-03-08 Sun 15:08]
 - State "DONE"       from "TODO"       [2015-02-26 Thu 15:22]
@@ -351,10 +359,12 @@ SCHEDULED: <2015-03-28 Sat .+6d/9d>
 :PROPERTIES:
 :ID:       51d4db79-f6ef-49f0-972d-0a0e658b889c
 :STYLE: habit
-:LAST_REPEAT: [2015-03-22 Sun 16:21]
+:LAST_REPEAT: [2015-03-30 Mon 14:50]
 :END:
 ** TODO charge Roomba                                                 :home:
-SCHEDULED: <2015-03-28 Sat .+1d/3d>
+SCHEDULED: <2015-03-30 Mon .+1d/3d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:28]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 14:01]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 14:58]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 00:03]
@@ -413,11 +423,14 @@ SCHEDULED: <2015-03-28 Sat .+1d/3d>
 :PROPERTIES:
 :ID:       ac7178f7-3b0e-4ce1-a9c4-e32c618bd6a6
 :STYLE: habit
-:LAST_REPEAT: [2015-03-27 Fri 14:01]
+:LAST_REPEAT: [2015-03-29 Sun 14:28]
 :BECAUSE:  
 :END:
 ** TODO charge computer                                               :home:
-SCHEDULED: <2015-03-28 Sat .+1d/2d>
+SCHEDULED: <2015-03-31 Tue .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 11:21]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:28]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 12:03]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 14:01]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 12:57]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 00:03]
@@ -493,10 +506,14 @@ SCHEDULED: <2015-03-28 Sat .+1d/2d>
 :PROPERTIES:
 :ID:       6bb85b33-e7fe-4b41-bb74-34770b90290e
 :STYLE: habit
-:LAST_REPEAT: [2015-03-27 Fri 14:01]
+:LAST_REPEAT: [2015-03-30 Mon 11:21]
 :END:
 ** TODO charge phone                                                  :home:
-SCHEDULED: <2015-03-27 Fri .+1d/2d>
+SCHEDULED: <2015-03-31 Tue .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 11:21]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:39]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 12:03]
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:16]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 14:58]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 00:03]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 19:59]
@@ -569,10 +586,12 @@ SCHEDULED: <2015-03-27 Fri .+1d/2d>
 :PROPERTIES:
 :ID:       2df301ab-286c-4ee2-9f32-1a72c93b419e
 :STYLE: habit
-:LAST_REPEAT: [2015-03-26 Thu 14:58]
+:LAST_REPEAT: [2015-03-30 Mon 11:21]
 :END:
 ** TODO charge tablet                                         :home:bedroom:
-SCHEDULED: <2015-03-28 Sat .+1d/2d>
+SCHEDULED: <2015-03-30 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:26]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 12:03]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 14:01]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 18:14]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 10:39]
@@ -651,7 +670,7 @@ SCHEDULED: <2015-03-28 Sat .+1d/2d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       bd40d909-f4f5-4a51-8ee7-0f3eab91c9c6
-:LAST_REPEAT: [2015-03-27 Fri 14:01]
+:LAST_REPEAT: [2015-03-29 Sun 14:26]
 :END:
 ** TODO clean bathtub                                        :home:bathroom:
 SCHEDULED: <2015-03-25 Wed .+6d/10d>
@@ -754,7 +773,8 @@ SCHEDULED: <2015-03-29 Sun .+1w/2w>
 :LAST_REPEAT: [2015-03-22 Sun 21:17]
 :END:
 ** TODO clean out fridge                                      :home:kitchen:
-SCHEDULED: <2015-03-20 Fri .+5d/10d>
+SCHEDULED: <2015-04-02 Thu .+5d/10d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 18:48]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 20:27]
 - State "DONE"       from "TODO"       [2015-03-07 Sat 17:34]
 - State "DONE"       from "TODO"       [2015-02-27 Fri 21:02]
@@ -792,7 +812,7 @@ SCHEDULED: <2015-03-20 Fri .+5d/10d>
 :PROPERTIES:
 :ID:       8d6cf735-a1ff-461d-bfd7-6bcdba15f853
 :STYLE: habit
-:LAST_REPEAT: [2015-03-15 Sun 20:27]
+:LAST_REPEAT: [2015-03-28 Sat 18:48]
 :END:
 ** TODO clean toilet                                         :home:bathroom:
 SCHEDULED: <2015-03-28 Sat .+5d/8d>
@@ -841,7 +861,8 @@ SCHEDULED: <2015-03-28 Sat .+5d/8d>
 :LAST_REPEAT: [2015-03-23 Mon 18:30]
 :END:
 ** TODO clear personal inbox                                      :computer:
-SCHEDULED:  <2015-03-28 Sat .+1d/2d>
+SCHEDULED:  <2015-03-30 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:06]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 14:02]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 17:59]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 15:48]
@@ -898,10 +919,11 @@ SCHEDULED:  <2015-03-28 Sat .+1d/2d>
 :PROPERTIES:
 :ID:       51a1ddc5-78d7-4635-b696-13d0e9bc6b1d
 :STYLE: habit
-:LAST_REPEAT: [2015-03-27 Fri 14:02]
+:LAST_REPEAT: [2015-03-29 Sun 18:06]
 :END:
 ** TODO clear up bag                                                  :home:
-SCHEDULED: <2015-03-27 Fri .+2d/4d>
+SCHEDULED: <2015-03-29 Sun .+2d/4d>
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:16]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 13:58]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 23:24]
 - State "DONE"       from "TODO"       [2015-03-20 Fri 16:26]
@@ -1014,10 +1036,11 @@ SCHEDULED: <2015-03-27 Fri .+2d/4d>
 :PROPERTIES:
 :ID:       e1e3eea1-c20c-4844-b5d9-fe7d07a1378d
 :STYLE: habit
-:LAST_REPEAT: [2015-03-25 Wed 13:58]
+:LAST_REPEAT: [2015-03-27 Fri 20:16]
 :END:
 ** TODO clear work inbox                                          :computer:
-SCHEDULED: <2015-03-28 Sat .+1d/2d>
+SCHEDULED: <2015-03-30 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:36]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 15:54]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 17:59]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 14:46]
@@ -1077,10 +1100,12 @@ SCHEDULED: <2015-03-28 Sat .+1d/2d>
 :PROPERTIES:
 :ID:       2636e99f-c430-4342-80e1-4b86fcaf4896
 :STYLE: habit
-:LAST_REPEAT: [2015-03-27 Fri 15:54]
+:LAST_REPEAT: [2015-03-29 Sun 14:36]
 :END:
 ** TODO make bed                                              :home:bedroom:
-SCHEDULED: <2015-03-28 Sat .+1d>
+SCHEDULED: <2015-03-30 Mon .+1d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:07]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 12:03]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 14:01]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 18:14]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 10:39]
@@ -1154,11 +1179,13 @@ SCHEDULED: <2015-03-28 Sat .+1d>
 - State "DONE"       from "TODO"       [2014-12-17 Wed 15:16]
 :PROPERTIES:
 :ID:       0c4ffe26-1cc3-433a-8de0-27266f66589c
-:LAST_REPEAT: [2015-03-27 Fri 14:01]
+:LAST_REPEAT: [2015-03-29 Sun 18:07]
 :STYLE:    habit
 :END:
 ** TODO take meds                                             :home:bedroom:
-SCHEDULED: <2015-03-28 Sat .+1d>
+SCHEDULED: <2015-03-30 Mon .+1d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:33]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 14:01]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 18:14]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 10:39]
@@ -1228,11 +1255,13 @@ SCHEDULED: <2015-03-28 Sat .+1d>
 - State "DONE"       from "TODO"       [2014-12-14 Sun 18:44]
 :PROPERTIES:
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-03-27 Fri 14:01]
+:LAST_REPEAT: [2015-03-29 Sun 14:33]
 :STYLE:    habit
 :END:
 ** TODO drink water                                                   :home:
-SCHEDULED: <2015-03-28 Sat .+1d>
+SCHEDULED: <2015-03-30 Mon .+1d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:07]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 17:33]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 14:01]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 17:20]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 20:28]
@@ -1293,11 +1322,15 @@ SCHEDULED: <2015-03-28 Sat .+1d>
 - State "DONE"       from "TODO"       [2014-12-06 Sat 13:49]
 :PROPERTIES:
 :ID:       53ee1d86-2959-458c-96d7-3df66b8aa865
-:LAST_REPEAT: [2015-03-27 Fri 14:01]
+:LAST_REPEAT: [2015-03-29 Sun 18:07]
 :STYLE:    habit
 :END:
 ** TODO water Malka                                             :malka:home:
-SCHEDULED: <2015-03-27 Fri .+1d>
+SCHEDULED: <2015-03-31 Tue .+1d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 11:20]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:26]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:16]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 14:58]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 12:06]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 14:34]
@@ -1357,11 +1390,15 @@ SCHEDULED: <2015-03-27 Fri .+1d>
 - State "DONE"       from "TODO"       [2014-12-09 Tue 19:04]
 :PROPERTIES:
 :ID:       0b590040-fc21-451a-a39f-8d060feeae27
-:LAST_REPEAT: [2015-03-26 Thu 14:58]
+:LAST_REPEAT: [2015-03-30 Mon 11:20]
 :STYLE:    habit
 :END:
 ** TODO Malk breakfast                                          :malka:home:
-SCHEDULED: <2015-03-27 Fri .+1d>
+SCHEDULED: <2015-03-31 Tue .+1d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 11:20]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:26]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:16]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 14:58]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 10:39]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 12:06]
@@ -1438,12 +1475,14 @@ SCHEDULED: <2015-03-27 Fri .+1d>
 - State "DONE"       from "TODO"       [2014-12-11 Thu 18:45]
 - State "DONE"       from "TODO"       [2014-12-09 Tue 19:04]
 :PROPERTIES:
-:LAST_REPEAT: [2015-03-26 Thu 14:58]
+:LAST_REPEAT: [2015-03-30 Mon 11:20]
 :ID:       7ce09717-8596-4573-9028-26739304e79d
 :END:
 [2014-01-16 Thu 00:01]
 ** TODO Yard malk                                                 :malka:hp:
-SCHEDULED: <2015-03-27 Fri .+1d>
+SCHEDULED: <2015-03-31 Tue .+1d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 11:20]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:26]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 14:58]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 10:39]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 12:06]
@@ -1522,11 +1561,14 @@ SCHEDULED: <2015-03-27 Fri .+1d>
 - State "DONE"       from "TODO"       [2014-12-02 Tue 14:04]
 :PROPERTIES:
 :ID:       a29db4aa-8fab-401d-959f-8c6e6075dc24
-:LAST_REPEAT: [2015-03-26 Thu 14:58]
+:LAST_REPEAT: [2015-03-30 Mon 11:20]
 :END:
 [2014-01-16 Thu 00:00]
 ** TODO collect dishes                                        :home:allhome:
-SCHEDULED: <2015-03-25 Wed .+1d/2d>
+SCHEDULED: <2015-03-30 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:28]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 17:33]
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:46]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 19:59]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 18:25]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 16:55]
@@ -1583,7 +1625,7 @@ SCHEDULED: <2015-03-25 Wed .+1d/2d>
 :PROPERTIES:
 :STYLE: habit    
 :ID:       26625b5a-2f11-4d13-8aeb-35ef2fcdaee3
-:LAST_REPEAT: [2015-03-24 Tue 19:59]
+:LAST_REPEAT: [2015-03-29 Sun 18:28]
 :END:
 ** TODO get mail                                           :home:downstairs:
 SCHEDULED: <2015-03-29 Sun .+2d/4d>
@@ -1709,7 +1751,10 @@ SCHEDULED: <2015-03-28 Sat .+5d/10d>
 :LAST_REPEAT: [2015-03-23 Mon 19:01]
 :END:
 ** TODO run Roomba                                                    :home:
-SCHEDULED: <2015-03-28 Sat .+1d/3d>
+SCHEDULED: <2015-03-31 Tue .+1d/3d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 14:50]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:39]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
 - State "DONE"       from "TODO"       [2015-03-27 Fri 14:01]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 14:58]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 11:38]
@@ -1777,7 +1822,7 @@ SCHEDULED: <2015-03-28 Sat .+1d/3d>
 :PROPERTIES:
 :ID:       2e9e2dc8-8e95-4c80-bba4-08ce1f11f46f
 :STYLE: habit
-:LAST_REPEAT: [2015-03-27 Fri 14:01]
+:LAST_REPEAT: [2015-03-30 Mon 14:50]
 :BECAUSE:  
 :END:
 - State "DONE"       from "TODO"       [2015-01-29 Thu 11:47]
@@ -1833,7 +1878,10 @@ SCHEDULED: <2015-03-27 Fri .+5d/8d>
 :END:
 
 ** TODO take out trash                                     :home:downstairs:
-SCHEDULED: <2015-03-27 Fri .+1d/3d>
+SCHEDULED: <2015-03-31 Tue .+1d/3d>
+- State "DONE"       from "TODO"       [2015-03-30 Mon 11:20]
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:26]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 14:58]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 13:58]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 12:06]
@@ -1853,14 +1901,15 @@ SCHEDULED: <2015-03-27 Fri .+1d/3d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       9fb70ef8-8e46-4fcc-a990-8edf7aa618aa
-:LAST_REPEAT: [2015-03-26 Thu 14:58]
+:LAST_REPEAT: [2015-03-30 Mon 11:20]
 :END:
 ** WAITING [#B] take stuff to goodwill                         :majorouting:
 :PROPERTIES:
 :ID:       2b7068ac-99c8-4b87-9c98-21a58ed7ac5b
 :END:
 ** TODO shower                                               :home:bathroom:
-SCHEDULED: <2015-03-26 Thu .+1d/3d>n
+SCHEDULED: <2015-03-29 Sun .+1d/3d>n
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:14]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 11:39]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 14:34]
 - State "DONE"       from "TODO"       [2015-03-19 Thu 14:12]
@@ -1909,7 +1958,7 @@ SCHEDULED: <2015-03-26 Thu .+1d/3d>n
 :PROPERTIES:
 :STYLE: habit
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-03-25 Wed 11:39]
+:LAST_REPEAT: [2015-03-28 Sat 13:14]
 :END:
 ** TODO walk Malka                                                :malka:hp:
 SCHEDULED: <2015-03-31 Tue .+4d/8d>
@@ -1994,7 +2043,8 @@ SCHEDULED: <2015-03-31 Tue .+4d/8d>
 :END:
 
 ** TODO water plants                                          :home:allhome:
-SCHEDULED: <2015-03-25 Wed .+3d/4d>
+SCHEDULED: <2015-03-30 Mon .+3d/4d>
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:55]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 16:55]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 23:26]
 - State "DONE"       from "TODO"       [2015-03-14 Sat 18:42]
@@ -2075,10 +2125,11 @@ SCHEDULED: <2015-03-25 Wed .+3d/4d>
 :PROPERTIES:
 :STYLE: habit
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-03-22 Sun 16:55]
+:LAST_REPEAT: [2015-03-27 Fri 20:55]
 :END:
 ** TODO wipe down stove                                       :home:kitchen:
-SCHEDULED: <2015-03-25 Wed .+3d/4d>
+SCHEDULED: <2015-03-31 Tue .+3d/4d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 17:33]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 18:40]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 18:45]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 20:27]
@@ -2149,10 +2200,11 @@ SCHEDULED: <2015-03-25 Wed .+3d/4d>
 :PROPERTIES:
 :STYLE: habit
 :ID:       e07da29f-0dbd-4bc2-bf7c-669ef276ca48
-:LAST_REPEAT: [2015-03-22 Sun 18:40]
+:LAST_REPEAT: [2015-03-28 Sat 17:33]
 :END:
 ** TODO yoga/workout                                               :home:hp:
-SCHEDULED: <2015-03-26 Thu .+1d/5d>
+SCHEDULED: <2015-03-29 Sun .+1d/5d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:15]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 11:38]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 21:07]
 - State "DONE"       from "TODO"       [2015-03-19 Thu 14:13]
@@ -2213,7 +2265,7 @@ SCHEDULED: <2015-03-26 Thu .+1d/5d>
 :PROPERTIES:
 :STYLE: habit
 :ID: 5aa20f00-759c-4ba6-9045-e8ead5c177cb
-:LAST_REPEAT: [2015-03-25 Wed 11:38]
+:LAST_REPEAT: [2015-03-28 Sat 13:15]
 :END:
 ** WAITING buy pot                                                   :phone:
 SCHEDULED: <2015-04-09 Thu .+2w/4w>
@@ -2292,7 +2344,8 @@ SCHEDULED: <2015-04-02 Thu .+1m>
 :ID:       b470d840-81c0-4700-bf5d-e7862217f4d9
 :END:
 ** TODO wipe down kitchen                                     :home:kitchen:
-SCHEDULED: <2015-03-25 Wed .+3d/4d>
+SCHEDULED: <2015-03-31 Tue .+3d/4d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 18:48]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 18:40]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 18:45]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 20:27]
@@ -2344,7 +2397,7 @@ SCHEDULED: <2015-03-25 Wed .+3d/4d>
 :PROPERTIES:
 :ID:       91f93c47-4a10-4531-aa09-09832635c598
 :STYLE: habit
-:LAST_REPEAT: [2015-03-22 Sun 18:40]
+:LAST_REPEAT: [2015-03-28 Sat 18:48]
 :END:
 ** TODO wipe down butler pantry                            :home:diningroom:
 SCHEDULED: <2015-03-28 Sat .+8d/12d>
@@ -2525,7 +2578,8 @@ SCHEDULED: <2015-03-25 Wed .+10d/14d>
 :LAST_REPEAT: [2015-03-15 Sun 21:28]
 :END:
 ** TODO wipe down hallways                                    :home:allhome:
-SCHEDULED: <2015-03-26 Thu .+8d/15d>
+SCHEDULED: <2015-04-04 Sat .+8d/15d>
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:55]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 19:49]
 - State "DONE"       from "TODO"       [2015-03-02 Mon 21:09]
 - State "DONE"       from "TODO"       [2015-02-15 Sun 21:35]
@@ -2556,7 +2610,7 @@ SCHEDULED: <2015-03-26 Thu .+8d/15d>
 :PROPERTIES:
 :ID:       8629401d-6301-46fa-bac7-0cceeaf22137
 :STYLE: habit
-:LAST_REPEAT: [2015-03-18 Wed 19:49]
+:LAST_REPEAT: [2015-03-27 Fri 20:55]
 :END:
 ** TODO [#A] gather laundry                                           :home:
 SCHEDULED: <2015-04-06 Mon .+2w>
@@ -2644,7 +2698,9 @@ SCHEDULED: <2015-04-06 Mon .+21d/28d>
 :ID:       c4d76f13-3216-40f8-8350-357ede19148e
 :END:
 ** TODO clear off dining table                             :home:diningroom:
-SCHEDULED: <2015-03-25 Wed .+1d/3d>
+SCHEDULED: <2015-03-30 Mon .+1d/3d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:28]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 17:33]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 23:53]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 19:01]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 17:40]
@@ -2668,7 +2724,7 @@ SCHEDULED: <2015-03-25 Wed .+1d/3d>
 - State "DONE"       from "TODO"       [2014-02-15 Sat 22:29]
 :PROPERTIES:
 :STYLE: habit
-:LAST_REPEAT: [2015-03-24 Tue 23:53]
+:LAST_REPEAT: [2015-03-29 Sun 18:28]
 :ID:       5e1f9dde-93fd-4b26-aaee-2fa33106b880
 :END:
 ** TODO wipe down elliptical room                          :home:elliptical:
@@ -2755,7 +2811,8 @@ SCHEDULED: <2015-04-07 Tue .+15d/18d>
 :BECAUSE:  $
 :END:
 ** TODO put away jewelry                                      :home:bedroom:
-SCHEDULED: <2015-03-28 Sat .+3d/5d>
+SCHEDULED: <2015-03-31 Tue .+3d/5d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 17:33]
 - State "DONE"       from "TODO"       [2015-03-25 Wed 00:02]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 17:39]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 20:35]
@@ -2798,9 +2855,9 @@ SCHEDULED: <2015-03-28 Sat .+3d/5d>
 :PROPERTIES:
 :ID:       1664c5b3-62bd-4ab5-b5f6-d8885a2a0e37
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-25 Wed 00:02]
+:LAST_REPEAT: [2015-03-28 Sat 17:33]
 :END:
-** TODO [#B] Will                                            :computer:home:
+** TODO [#B] Will                                     :computer:home:office:
 :PROPERTIES:
 :ID:       0f9c10d6-0d3b-4582-bb6d-4c835fe620dd
 :END:
@@ -2812,7 +2869,8 @@ SCHEDULED: <2015-03-28 Sat .+3d/5d>
 :END:
 [2014-07-06 Sun 16:53]
 ** TODO Staging area                                        :home:frontroom:
-SCHEDULED: <2015-03-25 Wed .+3d/5d>
+SCHEDULED: <2015-03-30 Mon .+3d/5d>
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:16]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 21:05]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 18:21]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 19:48]
@@ -2854,11 +2912,12 @@ SCHEDULED: <2015-03-25 Wed .+3d/5d>
 :PROPERTIES:
 :ID:       a8a46c1a-c9f6-407c-b074-316ec1014172
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-22 Sun 21:05]
+:LAST_REPEAT: [2015-03-27 Fri 20:16]
 :END:
 [2014-07-06 Sun 16:55]
 ** TODO Clean porch                                             :home:porch:
-SCHEDULED: <2015-03-25 Wed .+2d/4d>
+SCHEDULED: <2015-03-30 Mon .+2d/4d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 19:33]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 00:14]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 18:45]
 - State "DONE"       from "TODO"       [2015-03-14 Sat 17:25]
@@ -2879,12 +2938,14 @@ SCHEDULED: <2015-03-25 Wed .+2d/4d>
 :PROPERTIES:
 :ID:       8ca6d4bc-a807-4646-bcb0-a5cc768ce4a3
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-23 Mon 00:14]
+:LAST_REPEAT: [2015-03-28 Sat 19:33]
 :END:
 [2014-07-06 Sun 16:56]
 
 ** TODO clear/wipe counters                                   :home:kitchen:
-SCHEDULED: <2015-03-23 Mon .+1d/3d>
+SCHEDULED: <2015-03-30 Mon .+1d/3d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:28]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 17:33]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 18:40]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 17:43]
 - State "DONE"       from "TODO"       [2015-03-16 Mon 21:46]
@@ -2949,7 +3010,7 @@ SCHEDULED: <2015-03-23 Mon .+1d/3d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       cbfbdd59-9b41-4178-aa2a-cdda977e01ad
-:LAST_REPEAT: [2015-03-22 Sun 18:40]
+:LAST_REPEAT: [2015-03-29 Sun 18:28]
 :END:
 ** TODO clean up pantry                                       :home:kitchen:
 SCHEDULED: <2015-04-03 Fri .+10d/15d>
@@ -2975,7 +3036,8 @@ SCHEDULED: <2015-04-03 Fri .+10d/15d>
 :END:
 
 ** TODO Clear lr table                                      :home:frontroom:
-SCHEDULED: <2015-03-25 Wed .+3d/5d>
+SCHEDULED: <2015-03-30 Mon .+3d/5d>
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:46]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 18:40]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 18:21]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 19:23]
@@ -3025,7 +3087,7 @@ SCHEDULED: <2015-03-25 Wed .+3d/5d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       873effa2-21d8-4d92-a140-6bab68bf7489
-:LAST_REPEAT: [2015-03-22 Sun 18:40]
+:LAST_REPEAT: [2015-03-27 Fri 20:46]
 :END:
 [2014-07-13 Sun 20:02]
 ** TODO clean toaster oven                                    :home:kitchen:
@@ -3057,7 +3119,8 @@ SCHEDULED: <2015-03-31 Tue .+7d/9d>
 :LAST_REPEAT: [2015-03-24 Tue 20:00]
 :END:
 ** TODO update books doc                                          :computer:
-SCHEDULED: <2015-03-28 Sat .+2d/4d>
+SCHEDULED: <2015-03-31 Tue .+2d/4d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:02]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 12:58]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 14:46]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 16:21]
@@ -3077,10 +3140,11 @@ SCHEDULED: <2015-03-28 Sat .+2d/4d>
 :PROPERTIES:
 :ID:       ba57072f-afda-4ee6-a30e-6c666b2b5fec
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-26 Thu 12:58]
+:LAST_REPEAT: [2015-03-29 Sun 18:02]
 :END:
 ** TODO update movies doc                                         :computer:
-SCHEDULED: <2015-03-28 Sat .+2d/4d>
+SCHEDULED: <2015-03-31 Tue .+2d/4d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:04]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 12:58]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 14:46]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 16:21]
@@ -3090,7 +3154,7 @@ SCHEDULED: <2015-03-28 Sat .+2d/4d>
 :ID:       1503f13c-baaa-4ed7-b144-ea547a84291c
 :BECAUSE:  
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-26 Thu 12:58]
+:LAST_REPEAT: [2015-03-29 Sun 18:04]
 :END:
 ** TODO [#C] repaint in bathroom                             :home:bathroom:
 :PROPERTIES:
@@ -3105,7 +3169,8 @@ SCHEDULED: <2015-03-28 Sat .+2d/4d>
 :ID:       810a2251-e045-4af7-b4ce-4eb6d7adc0e2
 :END:
 ** TODO training                                                :malka:home:
-SCHEDULED: <2015-03-25 Wed .+3d/5d>
+SCHEDULED: <2015-03-30 Mon .+3d/5d>
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:39]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 18:40]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 19:48]
 - State "DONE"       from "TODO"       [2015-03-08 Sun 17:49]
@@ -3140,7 +3205,7 @@ SCHEDULED: <2015-03-25 Wed .+3d/5d>
 :PROPERTIES:
 :ID:       62239a29-27fa-4120-8579-80fde0ec8da0
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-22 Sun 18:40]
+:LAST_REPEAT: [2015-03-27 Fri 20:39]
 :END:
 ** TODO meditate                                                      :home:
 SCHEDULED: <2015-03-30 Mon .+5d/8d>
@@ -3211,7 +3276,10 @@ SCHEDULED: <2015-03-31 Tue .+1w>
 :ID:       6c2928b6-2a72-4c19-b8ee-bed9688bc401
 :END:
 ** TODO pick out clothes                                      :home:bedroom:
-SCHEDULED: <2015-03-27 Fri .+1d>
+SCHEDULED: <2015-03-30 Mon .+1d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:49]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 17:33]
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:39]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 18:14]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 22:02]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 19:04]
@@ -3222,7 +3290,7 @@ SCHEDULED: <2015-03-27 Fri .+1d>
 - State "DONE"       from "TODO"       [2015-03-09 Mon 19:23]
 :PROPERTIES:
 :ID:       91577749-c12a-4083-a671-cd8be32f4f77
-:LAST_REPEAT: [2015-03-26 Thu 18:14]
+:LAST_REPEAT: [2015-03-29 Sun 18:49]
 :STYLE:    habit
 :END:
 ** TODO month money                                                :home:hp:
@@ -3242,7 +3310,8 @@ SCHEDULED: <2015-04-05 Sun .+1m>
 :ID:       b3df2ccc-be7e-4b73-940f-7512697d6b64
 :END:
 ** TODO process notebook                                          :computer:
-SCHEDULED: <2015-03-29 Sun .+3d/5d>
+SCHEDULED: <2015-04-01 Wed .+3d/5d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:02]
 - State "DONE"       from "TODO"       [2015-03-26 Thu 17:59]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 16:21]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 11:12]
@@ -3277,7 +3346,7 @@ SCHEDULED: <2015-03-29 Sun .+3d/5d>
 :PROPERTIES:
 :ID:       37292058-e425-4b4c-9e43-569e276b7fae
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-26 Thu 17:59]
+:LAST_REPEAT: [2015-03-29 Sun 18:02]
 :END:
 ** TODO [#C] karaoke                                                :social:
 :PROPERTIES:
@@ -3348,7 +3417,8 @@ SCHEDULED: <2015-03-29 Sun .+5d/8d>
 :LAST_REPEAT: [2015-03-24 Tue 21:46]
 :END:
 ** TODO vacuum office                                          :home:office:
-SCHEDULED: <2015-03-27 Fri .+5d/8d>
+SCHEDULED: <2015-04-02 Thu .+5d/8d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 18:21]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 20:41]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 20:46]
 - State "DONE"       from "TODO"       [2015-03-08 Sun 17:00]
@@ -3360,10 +3430,11 @@ SCHEDULED: <2015-03-27 Fri .+5d/8d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       56c6b728-69e4-4aee-89c0-ca869f9ad4f7
-:LAST_REPEAT: [2015-03-22 Sun 20:41]
+:LAST_REPEAT: [2015-03-28 Sat 18:21]
 :END:
 ** TODO vacuum bedroom                                        :home:bedroom:
-SCHEDULED: <2015-03-26 Thu .+8d/10d>
+SCHEDULED: <2015-04-05 Sun .+8d/10d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 18:48]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 18:21]
 - State "DONE"       from "TODO"       [2015-03-08 Sun 16:59]
 - State "DONE"       from "TODO"       [2015-02-27 Fri 20:25]
@@ -3373,10 +3444,13 @@ SCHEDULED: <2015-03-26 Thu .+8d/10d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       27736535-df4e-4d7e-b6ec-af8644012758
-:LAST_REPEAT: [2015-03-18 Wed 18:21]
+:LAST_REPEAT: [2015-03-28 Sat 18:48]
 :END:
 ** TODO collect shoes                                         :home:allhome:
-SCHEDULED: <2015-03-25 Wed .+1d/2d>
+SCHEDULED: <2015-03-30 Mon .+1d/2d>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:28]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 18:22]
+- State "DONE"       from "TODO"       [2015-03-27 Fri 20:16]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 19:59]
 - State "DONE"       from "TODO"       [2015-03-23 Mon 19:04]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 16:55]
@@ -3390,10 +3464,11 @@ SCHEDULED: <2015-03-25 Wed .+1d/2d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       a1ffa03f-2991-48f9-8dbc-ec72523b7831
-:LAST_REPEAT: [2015-03-24 Tue 19:59]
+:LAST_REPEAT: [2015-03-29 Sun 18:28]
 :END:
 ** TODO vacuum dining room                                 :home:diningroom:
-SCHEDULED: <2015-03-27 Fri .+5d/8d>
+SCHEDULED: <2015-04-02 Thu .+5d/8d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 18:21]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 20:41]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 21:06]
 - State "DONE"       from "TODO"       [2015-03-08 Sun 16:59]
@@ -3406,10 +3481,11 @@ SCHEDULED: <2015-03-27 Fri .+5d/8d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       a9e06d52-3a36-437c-aade-30f93b8e7080
-:LAST_REPEAT: [2015-03-22 Sun 20:41]
+:LAST_REPEAT: [2015-03-28 Sat 18:21]
 :END:
 ** TODO vacuum kitchen                                        :home:kitchen:
-SCHEDULED: <2015-03-26 Thu .+2d/5d>
+SCHEDULED: <2015-03-30 Mon .+2d/5d>
+- State "DONE"       from "TODO"       [2015-03-28 Sat 18:21]
 - State "DONE"       from "TODO"       [2015-03-24 Tue 21:46]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 20:40]
 - State "DONE"       from "TODO"       [2015-03-16 Mon 18:04]
@@ -3425,7 +3501,7 @@ SCHEDULED: <2015-03-26 Thu .+2d/5d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       91c54e66-dce6-4238-b66c-02bae0f094c5
-:LAST_REPEAT: [2015-03-24 Tue 21:46]
+:LAST_REPEAT: [2015-03-28 Sat 18:21]
 :END:
 ** TODO [#B] dinner party                                           :social:
 :PROPERTIES:
@@ -3445,7 +3521,7 @@ SCHEDULED: <2015-03-26 Thu .+2d/5d>
 :END:
 :ID:       891460ba-32ed-49a6-a6ab-bd3af50c6e12
 :END:
-** TODO file papers                                            :home:office:
+** TODO file papers                                   :computer:home:office:
 SCHEDULED: <2015-03-26 Thu .+4d/8d>
 - State "DONE"       from "TODO"       [2015-03-22 Sun 23:31]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 17:20]
@@ -3462,7 +3538,8 @@ SCHEDULED: <2015-03-26 Thu .+4d/8d>
 :LAST_REPEAT: [2015-03-22 Sun 23:31]
 :END:
 ** TODO put out laundry                                               :home:
-SCHEDULED: <2015-03-29 Sun +1w>
+SCHEDULED: <2015-04-05 Sun +1w>
+- State "DONE"       from "TODO"       [2015-03-29 Sun 22:35]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 18:40]
 - State "DONE"       from "TODO"       [2015-03-15 Sun 20:27]
 - State "DONE"       from "TODO"       [2015-03-08 Sun 17:49]
@@ -3473,7 +3550,7 @@ SCHEDULED: <2015-03-29 Sun +1w>
 - State "DONE"       from "TODO"       [2015-02-01 Sun 23:21]
 :PROPERTIES:
 :ID:       ce58074e-88a0-48e2-b334-247f48894518
-:LAST_REPEAT: [2015-03-22 Sun 18:40]
+:LAST_REPEAT: [2015-03-29 Sun 22:35]
 :END:
 ** TODO [#C] agora                                                :computer:
 :PROPERTIES:
@@ -3570,7 +3647,8 @@ DEADLINE: <2015-03-26 Thu>
 :PROPERTIES:
 :ID:       dee933a6-c2de-4d36-9715-9ac5e862fb01
 :END:
-** TODO [#B] fix dog gate                                       :home:porch:
+** DONE [#B] fix dog gate                                       :home:porch:
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:28]
 :PROPERTIES:
 :ID:       654aa053-97c4-4a03-aeea-66ed2ddbabda
 :END:
@@ -3583,11 +3661,13 @@ DEADLINE: <2015-03-26 Thu>
 :PROPERTIES:
 :ID:       3a67993e-7909-4281-b601-78b7c00fa919
 :END:
-** TODO [#A] finish wireframe draft 2                        :computer:para:
+** DONE [#A] finish wireframe draft 2                        :computer:para:
+- State "DONE"       from "TODO"       [2015-03-29 Sun 18:01]
 :PROPERTIES:
 :ID:       885cda31-24f9-4abe-940f-e3235b855e5e
 :END:
-** TODO [#A] desoto changes                                  :computer:para:
+** DONE [#A] desoto changes                                  :computer:para:
+- State "DONE"       from "TODO"       [2015-03-27 Fri 19:08]
 :PROPERTIES:
 :ID:       82a02602-c807-4208-85ff-b27953316bf6
 :END:
@@ -3623,3 +3703,69 @@ DEADLINE: <2015-03-26 Thu>
 :ID:       a85f303f-d40c-4c63-94dd-ebc9779d1431
 :END:
 ** TODO [#B] mockup guest form for fotc                       :computer:para:
+:PROPERTIES:
+:ID:       dbb9cc1e-6d56-4635-8682-972bb2b18170
+:END:
+:PROPERTIES::ID: 97129d9b-6ba9-4f5a-af62-3a71f380a88f
+
+:END:
+:PROPERTIES::ID: 0d79b5d5-b534-4ff4-8ed2-0c8afc5b7714
+
+:END:
+:PROPERTIES::ID: aa456d1a-d706-43d0-bbcc-81060407e0ad
+
+:END:
+:PROPERTIES::ID: 10136224-43c2-4681-b4e2-7a4b2e46f8cd
+
+:END:
+:PROPERTIES::ID: 3d64101b-e24e-43bc-9493-3cd28a9ba8dd
+
+:END:
+:PROPERTIES::ID: 716a72af-0167-4ab8-b482-895534df7c91
+
+:END:
+:PROPERTIES::ID: 9f47948d-edde-4717-b0d9-c27d14f06d5e
+
+:END:
+:PROPERTIES::ID: 8224ebde-865f-450a-a906-265b08b667be
+
+:END:
+:PROPERTIES::ID: d381d859-dde0-4c6c-8d60-60583296a39e
+
+:END:
+:PROPERTIES::ID: 6303e3a3-b114-40e5-9ca8-8b71eff46bad
+
+:END:
+:PROPERTIES::ID: 7c8c114c-5bcd-4ed7-87b7-b411bf5a18e4
+
+:END:
+:PROPERTIES::ID: 18f33a0d-0093-4d08-b9ca-4bff764d0703
+
+:END:
+** TODO [#A] poll for themes                                :computer:moojo:
+:PROPERTIES:
+:ID:       21c14efa-032e-49e1-a071-d13f155e53fa
+:END:
+:ID:       0c83eccc-a4a8-4926-bdad-306242376519
+:END:
+** DONE [#A] print house info                         :computer:home:office:
+- State "DONE"       from "TODO"       [2015-03-28 Sat 13:15]
+:PROPERTIES:
+:ID:       4c641ec4-7004-497b-ba39-43c39c1a8944
+:END:
+** DONE [#A] transfer money                                       :computer:
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:28]
+:PROPERTIES:
+:ID:       489c535a-1c01-49ba-a294-dc5874e2dffe
+:END:
+** TODO [#A] proofread ruby curriculum                 :computer:home:office:
+:PROPERTIES:
+:ID:       dc5203d4-14ae-4b52-a786-520e8e1e9e44
+:END:
+:ID:       dcf4c3ec-2818-4c57-9090-eeb3614f6ec8
+:END:
+- State "DONE"       from "TODO"       [2015-03-29 Sun 14:43]** DONE [#A] email re: childcare                      :computer:railsbridge:
+:PROPERTIES:
+:ID:       ffafcbd0-d470-465c-bdcf-44c6bbbb9a35
+:END:
+
