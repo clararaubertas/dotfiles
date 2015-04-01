@@ -3550,7 +3550,8 @@ SCHEDULED: <2015-03-30 Mon .+2d/5d>
 :ID:       891460ba-32ed-49a6-a6ab-bd3af50c6e12
 :END:
 ** TODO file papers                                   :computer:home:office:
-SCHEDULED: <2015-03-26 Thu .+4d/8d>
+SCHEDULED: <2015-04-04 Sat .+4d/8d>
+- State "DONE"       from "TODO"       [2015-03-31 Tue 19:00]
 - State "DONE"       from "TODO"       [2015-03-22 Sun 23:31]
 - State "DONE"       from "TODO"       [2015-03-18 Wed 17:20]
 - State "DONE"       from "TODO"       [2015-03-09 Mon 19:28]
@@ -3563,7 +3564,7 @@ SCHEDULED: <2015-03-26 Thu .+4d/8d>
 :PROPERTIES:
 :ID:       8cba0f43-630b-465e-bfc5-add30f637345
 :STYLE:    habit
-:LAST_REPEAT: [2015-03-22 Sun 23:31]
+:LAST_REPEAT: [2015-03-31 Tue 19:00]
 :END:
 ** TODO put out laundry                                               :home:
 SCHEDULED: <2015-04-05 Sun +1w>
@@ -3804,3 +3805,5 @@ DEADLINE: <2015-04-02 Thu>
 :ID:       e1ef2b6c-94c4-4e0a-8360-7e10fb877eda
 :END:
 ** TODO [#B] contest parking tix                      :home:computer:office:
+** TODO pack for Passover                                      :home:bedroom:
+DEADLINE: <2015-04-01 Wed>
