@@ -16,7 +16,7 @@
  ("/home/clara/Software/ballotready/" . "app/")
  ("/home/clara/Software/docs/sites/en/" . "intro-to-rails/")
  ("/home/clara/Software/docs/sites/" . "en/")
- ("/home/clara/Software/docs/" . "sites/")
+ ("/home/clara/Software/docs/" . "lib/")
  ("/home/clara/Software/curriculum-docs/sites/en/" . "intro-to-rails/")
  ("/home/clara/Software/curriculum-docs/sites/" . "en/")
  ("/home/clara/Software/curriculum-docs/" . "sites/")
@@ -47,7 +47,7 @@
  ("/home/clara/Software/desoto/spec/" . "models/")
  ("/home/clara/Software/leavitt/test/" . "factories/")
  ("/home/clara/Software/leavitt/spec/" . "models/")
- ("/home/clara/Software/desoto/app/views/" . "questions/")
+ ("/home/clara/Software/desoto/app/views/" . "application/")
  ("/home/clara/Software/desoto/config/" . "deploy/")
  ("/home/clara/Software/desoto/app/assets/" . "stylesheets/")
  ("/home/clara/.homesick/repos/dotfiles/home/.emacs.d/" . "org-sync/")
@@ -158,7 +158,7 @@
  ("/home/clara/Software/" . "docs/")
  ("/home/clara/Software/lendsquare/app/views/" . "notifier/")
  ("/home/clara/Software/lendsquare/app/" . "models/")
- ("/home/clara/" . "Software/")
+ ("/home/clara/" . "Text/")
  ("/home/clara/.emacs.d/elpa/" . "org-20140310/")
  ("/home/clara/.emacs.d/" . "lawlist-org/")
  ("/usr/share/" . "vlc/")
@@ -169,21 +169,21 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/clara/Software/docs/sites/en/intro-to-rails/"
- "/home/clara/Software/public_html/wp-content/themes/better/"
- "/home/clara/Text/"
- "/home/clara/Software/lilscripts/"
+ "/home/clara/Software/docs/lib/"
+ "/home/clara/Software/desoto/app/views/application/"
  "/home/clara/Software/desoto/app/controllers/"
+ "/home/clara/Software/desoto/app/views/questions/"
+ "/home/clara/Text/"
+ "/home/clara/Software/public_html/wp-content/themes/better/"
+ "/home/clara/Software/lilscripts/"
  "/home/clara/Software/desoto/app/models/"
  "/home/clara/Software/desoto/"
- "/home/clara/Software/desoto/app/views/questions/"
  "/home/clara/Software/desoto/db/migrate/"
  "/home/clara/Software/docs/sites/en/docs/"
- "/home/clara/Software/docs/lib/"
  "/home/clara/Software/docs/"
  "/home/clara/Software/railsbridge_dogs/config/"
  "/home/clara/Software/railsbridge_dogs/"
  "/home/clara/Software/ballotready/"
- "/home/clara/Software/desoto/app/views/application/"
  "/home/clara/Software/railsbridge_dogs/app/controllers/"
  "/home/clara/Software/desoto/app/views/layouts/"
  "/home/clara/Software/desoto/config/"
@@ -222,23 +222,31 @@
 
 ;; ----- ido-work-file-list -----
 (
- "getting_started.step"
- "intro-to-rails.step"
- "content.php"
- "template-blog.php"
- "single-portfolio.php"
- "wireframe-draft2-change.org"
- "pagination.rb"
- "questions_controller.rb"
- "runs_controller.rb"
- "run.rb"
+ "sorting.step"
+ "pictures.step"
+ "doc_page.rb"
+ "site.rb"
+ "datatypes.step"
+ "hello.html.erb"
+ "application_controller.rb"
+ "placeholder.html.erb"
+ "read.org"
+ "movie-diary"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/docs/sites/en/intro-to-rails/" (21792 23118 322163 307000) "_working_effectively_and_efficiently.md" "./" "img/" "_switch_to_home_directory.step" "deploying_to_heroku.step" "_consider_deploying.step" "datatypes.step" "setting_the_default_page.step" "../" "sorting.step" "ruby_language.step" "add_the_project_to_a_git_repo.step" "getting_started.step" "dog_scaffold.step" "pictures.step" "intro-to-rails.step" "rails_architecture.step")
+ ("/home/clara/Software/docs/sites/en/intro-to-rails/" (21793 37872 404501 479000) "_working_effectively_and_efficiently.md" "./" "img/" "_switch_to_home_directory.step" "deploying_to_heroku.step" "_consider_deploying.step" "datatypes.step" "setting_the_default_page.step" "../" "sorting.step" "ruby_language.step" "add_the_project_to_a_git_repo.step" "getting_started.step" "dog_scaffold.step" "pictures.step" "intro-to-rails.step" "rails_architecture.step")
 
- ("/home/clara/Text/" (21792 18243 73835 860000) "jobless" "reem-0604" "coats.org" "story" "para" "emails.txt" "resourcebarn2.txt" "notes.org" "stories/" "drive" "chaos2" "polarvortex.or" "moojo5.org" "toread.org" "agendas.org" "scrib.html" "issuelab.org" "shopping.org" "fotc" "foo" "bi2.org" "hat.org" "rincewitch" "steve-case" "chaos" "wed.txt" "readinglist" "tools.org" "moojo9.org" "desoto.org" "railsbridge.org" "badmachine" "para0306.org" "lsq-notes-0401" "./" "railsbridgedogs2.html" "lsq-bar-notifications" "_TZ_8527-meson.tex" "lsq-0626" "contraceptives" "movies.org" "friends.org" "movingvan" "mechturk" "railsbridgedogs3.org" "treasure-hunt-instructions.txt" "stuff.org" "test.asc" "bildungsroman" "_TZ_8527-meson.log" "moojo8.org" "bi3.org" "hat-0520" "issuelab.out" "issuelab.pdf" "list.txt" "intro" "foobar" "Text/" "movie-diary" "ladystuck" "mauge" "lsq-draft3-notes" "railsbridgedogs2.org" "unpage.org" "move-schedule_archive" "insurance" "fotc.org" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "orgmob" "trash.txt" "fotc-meeting" "para_archive" "week" "setlist" "../" ".#reem" "rincewitch-ii" "videos.org" "new" "timeloop" "lsq-bar-notifications-2" "railsbridgedogs.html" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "bi4.org" "timetravel2" "lendsquare-actionables" "sebastian-map-app" "railsbridgedogs4.html" "blurb" "read.org" "issuelab.aux" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "issuelab.log" "wireframe-draft2-change.org" "bi.org" "stuff.txt" "cinnamon" "railsbridgedogs.org" "timandsarah" "nastygram.txt" "railsbridgedogs4.org" "issuelab.tex" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "action-verbs" "ladystuck.html" "index.org" "letter" "leavitt.org" "moltables" "clothes.org" "packing.org" "logo.png" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "fraud" "good-movies")
+ ("/home/clara/Software/docs/lib/" (21793 36627 233156 159000) "media_wiki.rb" "doc_page.rb" "./" "html5_page.rb" "markdown_renderer.rb" "site_index.rb" "step_page.rb" "step.rb" "../" "titleizer.rb" "contents.rb" "media_wiki_page.rb" "raw_page.rb" "site.rb" "big_checkbox.rb" "markdown_page.rb" "erector_scss.rb" "flags.rb")
+
+ ("/home/clara/Software/desoto/app/views/questions/" (21793 34199 772468 717000) "log.csv.erb" "./" "../" "log.html.erb" "ask.html.erb" "sample.html.erb" "placeholder.html.erb")
+
+ ("/home/clara/Software/desoto/app/controllers/" (21781 58769 471917 342000) "runs_controller.rb" "./" "../" "application_controller.rb" "questions_controller.rb")
+
+ ("/home/clara/Text/" (21792 25984 354577 49000) "jobless" "reem-0604" "coats.org" "story" "para" "emails.txt" "resourcebarn2.txt" "notes.org" "stories/" "drive" "chaos2" "polarvortex.or" "moojo5.org" "toread.org" "agendas.org" "scrib.html" "issuelab.org" "shopping.org" "fotc" "foo" "bi2.org" "hat.org" "rincewitch" "steve-case" "chaos" "wed.txt" "readinglist" "tools.org" "moojo9.org" "desoto.org" "railsbridge.org" "badmachine" "para0306.org" "lsq-notes-0401" "./" "railsbridgedogs2.html" "lsq-bar-notifications" "_TZ_8527-meson.tex" "lsq-0626" "contraceptives" "movies.org" "friends.org" "movingvan" "mechturk" "railsbridgedogs3.org" "treasure-hunt-instructions.txt" "stuff.org" "test.asc" "bildungsroman" "_TZ_8527-meson.log" "moojo8.org" "bi3.org" "hat-0520" "issuelab.out" "issuelab.pdf" "list.txt" "intro" "foobar" "Text/" "movie-diary" "ladystuck" "mauge" "lsq-draft3-notes" "railsbridgedogs2.org" "unpage.org" "move-schedule_archive" "insurance" "fotc.org" "lsq-root-pwd" "seder-menu" "parallactic" "thanksgiving-list" "orgmob" "trash.txt" "fotc-meeting" "para_archive" "week" "setlist" "../" ".#reem" "rincewitch-ii" "videos.org" "new" "timeloop" "lsq-bar-notifications-2" "railsbridgedogs.html" "lendsquare-launch" "homestuck" "books.org" "checksums.dat" "lsq-notes" "bi4.org" "timetravel2" "lendsquare-actionables" "sebastian-map-app" "railsbridgedogs4.html" "blurb" "read.org" "issuelab.aux" "quaker.txt" "coastal.txt" "reem" "leah" "timetravel" "life.org_archive" "gilman" "resourcebarn.txt" "waiting" "email" "moojo-theme-ideas" "meadowse" "invite" "greg" "lsq-final-draft-response" "issuelab.log" "wireframe-draft2-change.org" "bi.org" "stuff.txt" "cinnamon" "railsbridgedogs.org" "timandsarah" "nastygram.txt" "railsbridgedogs4.org" "issuelab.tex" "truisms.txt" "mochabugs.org" "mobileorg.org" "reem2" "tv.org" "orb" "action-verbs" "ladystuck.html" "index.org" "letter" "leavitt.org" "moltables" "clothes.org" "packing.org" "logo.png" "move-schedule.org" "old" "hazards-0422" "camping.org" "life.org" "ron-burt" "lendsquare-design-items" "fraud" "good-movies")
+
+ ("/home/clara/" (21792 25283 695414 488000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".~lock.moojolabels8.odt#" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" "logo/" "2014 taxes.zip" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" ".gvfs/" "moomersjournal9-nup.pdf" ".ssh/" ".icons/" ".indicator-sysmonitor.json" "Scanned Document.pdf" "dropdowns.pdf" "WireframeSketcher/" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".eclipse/" ".xbindkeysrc" ".face" "2014 taxes/" ".freerdp/" ".htaccess" ".dmrc" ".hplip/" "files/" ".emacs" ".ido.last" "iPod/" "9 - prior year championships.pdf" ".heroku/" ".applications/" "Text/" ".profile" ".cinnamon/" "6 - region by year.pdf" ".gphoto/" "#diary#" "1 - home.pdf" ".sane/" ".wine-browser/" ".Xauthority" "network_config.xml" "11 - boxscore.pdf" ".recentf" ".FontForge/" ".qws/" ".Skype/" ".mysql_history" ".iscan_preference" "resources.properties" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" "XpressConnect-x86" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" "4 - state by year.pdf" ".xine/" ".apport-ignore.xml" "../" ".checkgmail/" "10 - prior champions.pdf" ".local/" "Downloads/" ".netrc" ".lesshst" ".dropbox/" ".emacs.d/" ".bzr.log" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "favicon.ico" "Dropbox/" ".wine-pipelight/" "wireframes-draft2.zip" ".freckle_cli/" ".openoffice/" ".cheat/" "road-to-williamsport/" ".gitconfig" ".gconf/" ".AndroidStudioBeta/" ".wireshark/" "5 - state by year.pdf" ".bash_logout" ".bazaar/" "assets/" ".gemrc" "DSpace Diagram_0.pdf" "texput.log" ".emerald/" ".huludesktop" ".gradle/" ".macromedia/" ".selected_editor" ".gem/" ".android/" ".gitk" "Inform/" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" "health-insurance.odt" ".rsense" ".rnd" "2 - region.pdf" "MyMomOwnsYourMom1.jpg" ".gstreamer-0.10/" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".wine/" ".thunderbird/" ".gdfuse/" ".pki/" "Pictures/" "8 - prior year qualifiers.pdf" ".gksu.lock" ".synaptic/" ".exercism" ".xinputrc" ".steam/" "12 - road to williamsport.pdf" ".Xauthority.TNT00W" "road-to-williamsport.zip" ".xdvirc" ".adobe/" ".yafc/" "3 - leagues and links.pdf" ".gmail-indicator-rc" ".config/" "Documents/" "PlateReturnReceipt.pdf" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".npm/" ".fonts.conf" "7 - district tournaments.pdf" ".bash_profile" "moomersjournal9-pages-nup.pdf" ".wync2/" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" "dspacehowtoguide.pdf" ".appdata/" ".zshrc" "opt/" ".pry_history" "Software/")
 
  ("/home/clara/Software/public_html/wp-content/themes/better/" (21792 19568 895392 986000) "footer.php" "content.php" "wpml-config.xml" "functions.php" "template-portfolio.php" "./" "attachment.php" "template-contact.php" "changelog.txt" "pixelentity-theme-update/" "lang/" "js/" "404.php" "../" "page.php" "includes/" "images/" "template-slider.php" "archive.php" "template-blog.php" "template-archives.php" "header.php" "single-portfolio.php" "css/" "index.php" "font/" "comments.php" "screenshot.png" "search.php" "bridge-grid-background.jpg" "option-tree/" "editor-style.css" "style.css" "error_log" "template-sitemap.php" "single.php")
 
@@ -249,8 +257,6 @@
  ("/home/clara/Software/public_html/" (21792 18917 433492 879000) "wp-trackback.php" "wp-config.php" "wp-settings.php" "wp-admin/" "wp-comments-post.php" "./" "wp-cron.php" "2014/" "wp-links-opml.php" ".htaccess" "cgi-bin/" "404.shtml" "test.html" "shared/" ".git/" "revisions.log" "wp-signup.php" "../" "home.html" "favicon.ico" "wp-activate.php" "wp-load.php" "wp-content/" "wp-config-sample.php" "cache/" "wp-mail.php" "index.php" "wp-login.php" "readme.html" "js_composer/" "wp-includes/" "layout-styles.css" "style.css" "wp-blog-header.php" "logo.png" "license.txt" "2013/" "xmlrpc.php")
 
  ("/home/clara/Software/lilscripts/" (21790 43602 965018 704000) "fb.rb" "./" "old-plan.rb" "ipsum.rb" "iching.rb" "wumpus.rb" "../" "y.rb" "whaa-nup.pdf" "graph.rb" "fractal.rb" "sleepsort.bash" "pagination.rb" "oldplan.rb" "crossword.rb" "plan/" "rsync.sh" "test.rb" "logisticmap.rb")
-
- ("/home/clara/" (21790 44152 254601 461000) ".bashrc" ".i7rc" ".homesick/" ".psensor/" "Games/" ".~lock.moojolabels8.odt#" ".gimp-2.8/" ".gkrellm2/" "Public/" ".eyrc" "logo/" "2014 taxes.zip" ".dropbox-dist/" ".gnome2_private/" ".gnome2/" ".gvfs/" "moomersjournal9-nup.pdf" ".ssh/" ".icons/" ".indicator-sysmonitor.json" "Scanned Document.pdf" "dropdowns.pdf" "WireframeSketcher/" ".speech-dispatcher/" ".gnome-color-chooser/" "./" "diary" ".java/" ".fonts/" ".gtkrc-2.0" ".eclipse/" ".xbindkeysrc" ".face" "2014 taxes/" ".freerdp/" ".htaccess" ".dmrc" ".hplip/" "files/" ".emacs" ".ido.last" "iPod/" "9 - prior year championships.pdf" ".heroku/" ".applications/" "Text/" ".profile" ".cinnamon/" "6 - region by year.pdf" ".gphoto/" "#diary#" "1 - home.pdf" ".sane/" ".wine-browser/" ".Xauthority" "network_config.xml" "11 - boxscore.pdf" ".recentf" ".FontForge/" ".qws/" ".Skype/" ".mysql_history" ".iscan_preference" "resources.properties" ".renpy/" ".mozilla/" ".bash_history" ".rvm/" "XpressConnect-x86" ".ssr/" ".esd_auth" ".remmina/" "Videos/" ".vnc/" "4 - state by year.pdf" ".xine/" ".apport-ignore.xml" "../" ".checkgmail/" "10 - prior champions.pdf" ".local/" "Downloads/" ".netrc" ".lesshst" ".dropbox/" ".emacs.d/" ".bzr.log" ".audacity-data/" ".xchat2/" ".gnupg/" ".gtk-bookmarks" "favicon.ico" "Dropbox/" ".wine-pipelight/" "wireframes-draft2.zip" ".freckle_cli/" ".openoffice/" ".cheat/" "road-to-williamsport/" ".gitconfig" ".gconf/" ".AndroidStudioBeta/" ".wireshark/" "5 - state by year.pdf" ".bash_logout" ".bazaar/" "assets/" ".gemrc" "DSpace Diagram_0.pdf" "texput.log" ".emerald/" ".huludesktop" ".gradle/" ".macromedia/" ".selected_editor" ".gem/" ".android/" ".gitk" "Inform/" ".slime-history.eld" ".xsession-errors" ".dbus/" ".scribus/" "health-insurance.odt" ".rsense" ".rnd" "2 - region.pdf" "MyMomOwnsYourMom1.jpg" ".gstreamer-0.10/" ".xsession-errors.old" ".compiz/" ".ICEauthority" ".wine/" ".thunderbird/" ".gdfuse/" ".pki/" "Pictures/" "8 - prior year qualifiers.pdf" ".gksu.lock" ".synaptic/" ".exercism" ".xinputrc" ".steam/" "12 - road to williamsport.pdf" ".Xauthority.TNT00W" "road-to-williamsport.zip" ".xdvirc" ".adobe/" ".yafc/" "3 - leagues and links.pdf" ".gmail-indicator-rc" ".config/" "Documents/" "PlateReturnReceipt.pdf" ".gnome/" ".bash_aliases" ".cache/" ".zprofile" ".bundler/" ".npm/" ".fonts.conf" "7 - district tournaments.pdf" ".bash_profile" ".wync2/" ".passenger/" ".thumbnails/" ".gtkrc-2.0-gnome-color-chooser" "dspacehowtoguide.pdf" ".appdata/" ".zshrc" "opt/" ".pry_history" "Software/")
 
  ("/home/clara/Software/" (21785 44420 43183 865000) "concordance/" "dioptrice/" "rummagemarketplace/" "lilscripts/" "railsbridge_dogs/" "hat/" "public_html/" "tools/" "desoto/" "./" "burt-screenshots/" "siskel/" "lisp/" "25020/" "Harlequin.materials/" "treasure-hunt/" "leavitt/" "index.html" "RailsBridgeChi.github.io/" "scraper.zip" "Harlequin.inform/" "../" "freeman-scraper/" "mame/" "ballotready/" "Inform/" "map.html" "mobileorg-android/" "chicago-neighborhood-map/" "go-mocha/" "thesaurus" "bridge_troll/" "network/" "docs/" "flyoverthecity/" "dotfiles/")
 
@@ -286,15 +292,9 @@
 
  ("/home/clara/Software/desoto/app/views/application/" (21781 57095 95995 782000) "./" "results.html.erb" "../" "index.html.erb" "finished.html.erb" "hello.html.erb" "instructions.html.erb")
 
- ("/home/clara/Software/docs/lib/" (21780 34268 404190 767000) "media_wiki.rb" "doc_page.rb" "./" "html5_page.rb" "markdown_renderer.rb" "site_index.rb" "step_page.rb" "step.rb" "../" "titleizer.rb" "contents.rb" "media_wiki_page.rb" "raw_page.rb" "site.rb" "big_checkbox.rb" "markdown_page.rb" "erector_scss.rb" "flags.rb")
-
  ("/home/clara/Software/desoto/app/models/" (21781 57082 7408 572000) ".gitkeep" "./" "game.rb" "user.rb" "design.rb" "../" "question.rb" "line.rb" "run.rb")
 
  ("/home/clara/Software/desoto/" (21781 57061 774498 607000) "./" "coverage/" "public/" "Gemfile" "README.rdoc" "script/" "Rakefile" "log/" ".capistrano/" ".gitignore" "vendor/" "tmp/" "config/" ".git/" "Capfile" "../" ".rspec" "doc/" "config.ru" "test/" "Gemfile.lock" "db/" "spec/" "lib/" "app/")
-
- ("/home/clara/Software/desoto/app/views/questions/" (21781 57053 774138 44000) "log.csv.erb" "./" "../" "log.html.erb" "ask.html.erb" "sample.html.erb" "placeholder.html.erb")
-
- ("/home/clara/Software/desoto/app/controllers/" (21781 56725 70933 470000) "runs_controller.rb" "./" "../" "application_controller.rb" "questions_controller.rb")
 
  ("/home/clara/Software/desoto/db/" (21781 55580 103727 112000) "./" "development.sqlite3" "migrate/" "../" "schema.rb" "test.sqlite3" "seeds.rb")
 
