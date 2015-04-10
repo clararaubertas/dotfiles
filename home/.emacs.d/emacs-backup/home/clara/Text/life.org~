@@ -2859,7 +2859,8 @@ SCHEDULED: <2015-04-06 Mon .+21d/28d>
 :ID:       c4d76f13-3216-40f8-8350-357ede19148e
 :END:
 ** TODO clear off dining table                             :home:diningroom:
-SCHEDULED: <2015-04-06 Mon .+1d/3d>
+SCHEDULED: <2015-04-10 Fri .+1d/3d>
+- State "DONE"       from "TODO"       [2015-04-09 Thu 18:12]
 - State "CANCELLED"  from "TODO"       [2015-04-05 Sun 10:45]
 - State "CANCELLED"  from "TODO"       [2015-04-04 Sat 15:18]
 - State "CANCELLED"  from "TODO"       [2015-04-03 Fri 10:19]
@@ -2888,7 +2889,7 @@ SCHEDULED: <2015-04-06 Mon .+1d/3d>
 - State "DONE"       from "TODO"       [2014-02-15 Sat 22:29]
 :PROPERTIES:
 :STYLE: habit
-:LAST_REPEAT: [2015-04-05 Sun 10:45]
+:LAST_REPEAT: [2015-04-09 Thu 18:12]
 :ID:       5e1f9dde-93fd-4b26-aaee-2fa33106b880
 :END:
 ** TODO wipe down elliptical room                          :home:elliptical:
