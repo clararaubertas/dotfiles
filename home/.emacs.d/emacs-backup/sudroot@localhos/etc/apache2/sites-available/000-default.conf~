@@ -34,9 +34,9 @@
 </VirtualHost>
 
 <VirtualHost *:80>
-    ServerName bridgedevlocal
-    DocumentRoot /home/clara/Software/bridgedev
-    <Directory /home/clara/Software/bridgedev>
+    ServerName siskellocal
+    DocumentRoot /home/clara/Software/siskel
+    <Directory /home/clara/Software/siskel>
         AllowOverride All
         Require all granted
     </directory>
