@@ -9,7 +9,7 @@
  (position . 151846))
 ("org-capture-last-stored"
  (filename . "~/Text/life.org")
- (front-context-string . "** TODO [#A] sli")
- (rear-context-string . "29c91a810\n:END:\n")
- (position . 231413))
+ (front-context-string . "** TODO [#B] the")
+ (rear-context-string . "er:railsbridge:\n")
+ (position . 231800))
 )
