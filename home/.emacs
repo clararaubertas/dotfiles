@@ -278,11 +278,12 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-tags-todo-honor-ignore-options t)
 
 (setq org-agenda-prefix-format
-      '( (agenda . "%-3e: %-12:t% s")
-        (timeline . "  % s")
-        (todo . "%e %-12:s")
-        (search . " %e %-12:s")
-        (tags . " %i %-12:s")))
+'((agenda . " %e %-8:i% s")
+ (timeline . "  % s")
+ (todo . " %e %-12:s")
+ (search . " %e %-12:s")
+ (tags . " %i %-12:s"))
+)
 
 
 

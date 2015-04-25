@@ -228,13 +228,13 @@ PROMPT_COMMAND='echo -ne "\033];${USER}@${HOSTNAME}: ${PWD}\007"'
 
 PS1="\n" # newline
 PS1+="$userStyle\u" # username
-PS1+="$white@"
+PS1+="$black@"
 PS1+="$hostStyle\h" # host
-PS1+="$white: "
+PS1+="$black: "
 PS1+="\[$green\]\w" # working directory
-PS1+="\$(prompt_git \"$white on $cyan\")" # git repository details
+PS1+="\$(prompt_git \"$black on $cyan\")" # git repository details
 PS1+="\n"
-PS1+="\[$white\]\$ \[$reset\]" # $ (and reset color)
+PS1+="\[$black\]\$ \[$reset\]" # $ (and reset color)
 export PS1
 }
 set_prompts
