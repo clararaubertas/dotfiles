@@ -276,7 +276,14 @@ If the new path's directories does not exist, create them."
 (setq org-habit-show-all-today nil)
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
-(setq org-agenda-prefix-format "%-4s")
+
+(setq org-agenda-prefix-format
+      '( (agenda . " %e %-12:c%?-12t% s")
+        (timeline . "  % s")
+        (todo . " %i %-12:c")
+        (search . " %i %-12:c")
+        (tags . " %i %-12:c")))
+
 
 
 (setq org-agenda-custom-commands
