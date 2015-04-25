@@ -264,7 +264,7 @@ If the new path's directories does not exist, create them."
 ;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
 ;;     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(priority-down tag-up))
+(setq org-agenda-sorting-strategy '(tag-up priority-down effort-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
@@ -277,7 +277,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
 
-(setq org-agenda-prefix-format "%-10%t / %-10s")
+(setq org-agenda-prefix-format "%-5e %-3s")
 
 
 
@@ -335,8 +335,8 @@ If the new path's directories does not exist, create them."
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
 	   (org-agenda-todo-keyword-format " + ")
-;;	   (org-agenda-scheduled-leaders '("0d" "%dx"))
-;;	   (org-agenda-deadline-leaders '("0d" "%dd"))
+	   (org-agenda-scheduled-leaders '("0d" "%dx"))
+	   (org-agenda-deadline-leaders '("0d" "%dd"))
 	   (org-agenda-time-grid nil)
 
 	   )
