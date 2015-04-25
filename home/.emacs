@@ -47,6 +47,15 @@
   (lambda () (idle-highlight-mode 1)))
 (my-global-idle-highlight-mode 1)
 
+(define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
+  (lambda () (blink-cursor-mode 1)))
+(my-global-blink-cursor-mode 1)
+
+(define-globalized-minor-mode my-global-smart-cursor-color-mode smart-cursor-color-mode
+  (lambda () (smart-cursor-color-mode 1)))
+(blink-cursor-color-mode 1)
+
+
 (setq idle-highlight-idle-time 0
 )
 
@@ -58,8 +67,8 @@
 
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
-;;(set-face-foreground 'mode-line "#859900")
-;;(set-face-foreground 'mode-line-inactive "#2aa198")
+(set-face-foreground 'mode-line "#859900")
+(set-face-foreground 'mode-line-inactive "#2aa198")
 (set-face-background 'highlight "#073642")
 (set-face-foreground 'highlight nil)
 (set-face-background 'idle-highlight "#859900")
@@ -69,23 +78,7 @@
 (setq default-frame-alist
       '((background-color . "#002b36")))
 
-(defvar blink-cursor-colors (list "#b58900" "#859900" "#268bd2")
-  "On each blink the cursor will cycle to the next color in this list.")
-(setq blink-cursor-count 0)
-(defun blink-cursor-timer-function ()
-  "Cyberpunk variant of timer `blink-cursor-timer'. OVERWRITES original version in `frame.el'.
 
-This one changes the cursor color on each blink. Define colors in `blink-cursor-colors'."
-  (when (not (internal-show-cursor-p))
-    (when (>= blink-cursor-count (length blink-cursor-colors))
-      (setq blink-cursor-count 0))
-    (set-cursor-color (nth blink-cursor-count blink-cursor-colors))
-    (setq blink-cursor-count (+ 1 blink-cursor-count))
-    )
-  (internal-show-cursor nil (not (internal-show-cursor-p)))
-  )
-
-(powerline-default-theme)
 
 ;;;;;;;;;; END Colors ;;;;;;;;;;
 
@@ -264,7 +257,7 @@ If the new path's directories does not exist, create them."
 ;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
 ;;     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(tag-up effort-down priority-down))
+(setq org-agenda-sorting-strategy '(priority-down effort-down tag-up))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
