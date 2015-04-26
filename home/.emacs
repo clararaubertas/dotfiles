@@ -138,17 +138,17 @@ If the new path's directories does not exist, create them."
 
 ;; (require 'auto-complete)
 ;; (require 'auto-complete-config)
-;; (global-auto-complete-mode t)
+(global-auto-complete-mode t)
 ;; (setq ac-expand-on-auto-complete nil)
 ;; (setq ac-auto-start nil)
 ;; (setq ac-dwim nil) ; To get pop-ups with docs even if a word is uniquely completed
 ;; (define-key ac-completing-map (kbd "C-n") 'ac-next)
 ;; (define-key ac-completing-map (kbd "C-p") 'ac-previous)
 
-;; (require 'ido)
-;; (ido-mode t)
+(require 'ido)
+(ido-mode t)
 ;; (setq ido-enable-flex-matching t)
-
+(allout-mode)
 ;; buffrs
 ;; set up ibuffer
 ;; (autoload 'ibuffer "ibuffer" "List buffers." t)
