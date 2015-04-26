@@ -149,10 +149,17 @@ If the new path's directories does not exist, create them."
 (ido-mode t)
 ;; (setq ido-enable-flex-matching t)
 (allout-mode)
+
+(global-set-key [(control .)] 'goto-last-change)
+; M-. can conflict with etags tag search. But C-. can get overwritten
+; by flyspell-auto-correct-word. And goto-last-change needs a really
+; fast key.
+(global-set-key [(meta .)] 'goto-last-change)
 ;; buffrs
 ;; set up ibuffer
 ;; (autoload 'ibuffer "ibuffer" "List buffers." t)
 ;; (setq ibuffer-default-sorting-mode 'major-mode)
+
 
 ;; ;; uniquify
 ;; (require 'uniquify)
