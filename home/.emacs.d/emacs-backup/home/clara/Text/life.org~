@@ -279,6 +279,7 @@ SCHEDULED: <2015-04-25 Sat .+1d/3d>
 :STYLE: habit
 :LAST_REPEAT: [2015-04-24 Fri 13:26]
 :BECAUSE:  
+:Effort:   1
 :END:
 ** TODO charge computer                                               :home:
 SCHEDULED: <2015-04-26 Sun .+1d/2d>
@@ -418,6 +419,7 @@ SCHEDULED: <2015-04-21 Tue .+1w/3w>
 :ID:       090a2795-f3de-4b23-b4f4-05cc1beb8e35
 :STYLE: habit
 :LAST_REPEAT: [2015-04-14 Tue 19:03]
+:Effort:   5
 :END:
 ** TODO clean other toilet                                 :home:elliptical:
 SCHEDULED: <2015-04-10 Fri .+1w/2w>
@@ -496,6 +498,7 @@ SCHEDULED: <2015-04-20 Mon .+5d/10d>
 :ID:       8d6cf735-a1ff-461d-bfd7-6bcdba15f853
 :STYLE: habit
 :LAST_REPEAT: [2015-04-15 Wed 19:16]
+:Effort:   20
 :END:
 ** TODO clean toilet                                         :home:bathroom:
 SCHEDULED: <2015-04-28 Tue .+5d/8d>
@@ -731,6 +734,7 @@ SCHEDULED: <2015-04-24 Fri .+1d/2d>
 :ID:       2636e99f-c430-4342-80e1-4b86fcaf4896
 :STYLE: habit
 :LAST_REPEAT: [2015-04-23 Thu 17:21]
+:Effort:   30
 :END:
 ** TODO make bed                                              :home:bedroom:
 SCHEDULED: <2015-04-26 Sun .+1d>
@@ -1052,6 +1056,7 @@ SCHEDULED: <2015-04-23 Thu .+1d/2d>
 :PROPERTIES:
 :ID:       b6243ac7-85eb-4162-a9de-0133fec52bc5
 :STYLE:    habit
+:Effort:   10
 :END:
 ** TODO put laundry away                                      :home:bedroom:
 SCHEDULED: <2015-05-05 Tue +2w>
@@ -1145,6 +1150,7 @@ SCHEDULED: <2015-04-23 Thu .+1d/3d>
 :STYLE: habit
 :LAST_REPEAT: [2015-04-22 Wed 19:12]
 :ID:       5e1f9dde-93fd-4b26-aaee-2fa33106b880
+:Effort:   20
 :END:
 ** TODO wipe down elliptical room                          :home:elliptical:
 SCHEDULED: <2015-04-15 Wed .+12d/14d>
@@ -1375,6 +1381,7 @@ SCHEDULED: <2015-04-22 Wed .+2d/4d>
 :ID:       8ca6d4bc-a807-4646-bcb0-a5cc768ce4a3
 :STYLE:    habit
 :LAST_REPEAT: [2015-04-20 Mon 15:28]
+:Effort:   10
 :END:
 [2014-07-06 Sun 16:56]
 
@@ -1454,6 +1461,7 @@ SCHEDULED: <2015-04-16 Thu .+1d/3d>
 :STYLE:    habit
 :ID:       cbfbdd59-9b41-4178-aa2a-cdda977e01ad
 :LAST_REPEAT: [2015-04-15 Wed 12:28]
+:Effort:   10
 :END:
 ** TODO clean up pantry                                       :home:kitchen:
 SCHEDULED: <2015-04-25 Sat .+10d/15d>
@@ -1478,6 +1486,7 @@ SCHEDULED: <2015-04-25 Sat .+10d/15d>
 :STYLE:    habit
 :ID:       32ee83c7-71dc-48f2-9ae6-bd3dc037a38d
 :LAST_REPEAT: [2015-04-15 Wed 19:16]
+:Effort:   10
 :END:
 
 ** TODO Clear lr table                                      :home:frontroom:
@@ -1567,6 +1576,7 @@ SCHEDULED: <2015-04-22 Wed .+7d/9d>
 :ID:       e31bb940-7513-47fa-a7fa-f8333d5cb2ae
 :STYLE:    habit
 :LAST_REPEAT: [2015-04-15 Wed 12:28]
+:Effort:   10
 :END:
 ** TODO update books doc                                          :computer:
 SCHEDULED: <2015-04-26 Sun .+2d/4d>
@@ -1688,6 +1698,7 @@ SCHEDULED: <2015-04-17 Fri .+3d/5d>
 :ID:       62239a29-27fa-4120-8579-80fde0ec8da0
 :STYLE:    habit
 :LAST_REPEAT: [2015-04-14 Tue 19:44]
+:Effort:   15
 :END:
 ** TODO meditate                                                      :home:
 SCHEDULED: <2015-04-27 Mon .+5d/8d>
@@ -1923,6 +1934,7 @@ SCHEDULED: <2015-04-25 Sat .+3d/5d>
 :STYLE:    habit
 :LAST_REPEAT: [2015-04-22 Wed 17:51]
 :ID:       3a379cfe-4a0d-4db2-b604-4908cdac3dbd
+:Effort:   30
 :END:
 ** TODO [#C] Siskel draft for Becca                          :computer:para:
 :PROPERTIES:
@@ -1945,6 +1957,7 @@ SCHEDULED: <2015-04-18 Sat .+5d/8d>
 :STYLE:    habit
 :ID:       8f29c678-993a-4af0-bad4-3a4d4a4a12b3
 :LAST_REPEAT: [2015-04-13 Mon 19:34]
+:Effort:   15
 :END:
 ** TODO vacuum office                                          :home:office:
 SCHEDULED: <2015-04-18 Sat .+5d/8d>
@@ -1963,6 +1976,7 @@ SCHEDULED: <2015-04-18 Sat .+5d/8d>
 :STYLE:    habit
 :ID:       56c6b728-69e4-4aee-89c0-ca869f9ad4f7
 :LAST_REPEAT: [2015-04-13 Mon 20:38]
+:Effort:   10
 :END:
 ** TODO vacuum bedroom                                        :home:bedroom:
 SCHEDULED: <2015-04-28 Tue .+8d/10d>
@@ -2028,6 +2042,7 @@ SCHEDULED: <2015-04-19 Sun .+5d/8d>
 :STYLE:    habit
 :ID:       a9e06d52-3a36-437c-aade-30f93b8e7080
 :LAST_REPEAT: [2015-04-14 Tue 12:31]
+:Effort:   10
 :END:
 ** TODO vacuum kitchen                                        :home:kitchen:
 SCHEDULED: <2015-04-16 Thu .+2d/5d>
@@ -2051,6 +2066,7 @@ SCHEDULED: <2015-04-16 Thu .+2d/5d>
 :STYLE:    habit
 :ID:       91c54e66-dce6-4238-b66c-02bae0f094c5
 :LAST_REPEAT: [2015-04-14 Tue 12:31]
+:Effort:   10
 :END:
 ** TODO [#B] dinner party                                           :social:
 :PROPERTIES:
@@ -2121,6 +2137,7 @@ SCHEDULED: <2015-04-08 Wed +1w>
 :PROPERTIES:
 :LAST_REPEAT: [2015-04-03 Fri 10:19]
 :ID:       ee69ed6a-9857-4d56-9880-e1ac7a2e0f93
+:Effort:   5
 :END:
 ** TODO run Roomba                                                    :home:
 SCHEDULED: <2015-04-26 Sun .+1d/3d>
@@ -2177,6 +2194,7 @@ SCHEDULED: <2015-04-18 Sat .+5d/8d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       7c9e189d-be5a-4844-b315-2369c4e1b059
+:Effort:   15
 :END:
 ** TODO shower                                                :home:bathroom:
 SCHEDULED: <2015-04-23 Thu .+1d/3d>n
@@ -2190,6 +2208,7 @@ SCHEDULED: <2015-04-23 Thu .+1d/3d>n
 :PROPERTIES:
 :STYLE:    habit
 :ID:       65030644-93b9-4198-9056-302afce5f794
+:Effort:   15
 :END:
 ** TODO walk Malka                                                :malka:hp:
 SCHEDULED: <2015-04-18 Sat .+4d/8d>
@@ -2200,6 +2219,7 @@ SCHEDULED: <2015-04-18 Sat .+4d/8d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       fb5e2f65-a07f-4138-847d-2d57a0b35180
+:Effort:   60
 :END:
 ** TODO [#C] write music!                                         :saltpants:
 :PROPERTIES:
@@ -2218,6 +2238,7 @@ SCHEDULED: <2015-04-17 Fri .+3d/4d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       095baaf0-49a6-4fa3-acb4-309dfd4c579d
+:Effort:   10
 :END:
 ** TODO wipe down stove                                       :home:kitchen:
 SCHEDULED: <2015-04-18 Sat .+3d/4d>
@@ -2228,6 +2249,7 @@ SCHEDULED: <2015-04-18 Sat .+3d/4d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       2d3fec1d-d015-438a-8c73-92f07e05b5a3
+:Effort:   10
 :END:
 ** TODO [#C] fix floor                                        :home:bedroom:
 :PROPERTIES:
@@ -2329,6 +2351,7 @@ SCHEDULED: <2015-04-23 Thu .+1d/5d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       2c2c3bf7-e0d2-4c5a-a0d2-6bdde2b7f994
+:Effort:   30
 :END:
 ** TODO buy pot                                                       :phone:
 SCHEDULED: <2015-04-29 Wed .+2w/4w>
@@ -2399,6 +2422,7 @@ SCHEDULED: <2015-04-17 Fri .+3d/4d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       d0424b8d-55a2-4fb1-acc8-14ebf6ed4fbd
+:Effort:   15
 :END:
 ** TODO wipe down butler pantry                            :home:diningroom:
 SCHEDULED: <2015-04-30 Thu .+8d/12d>
@@ -2501,4 +2525,5 @@ SCHEDULED: <2015-04-12 Sun .+8d/15d>
 :PROPERTIES:
 :STYLE:    habit
 :ID:       83208a9b-29ef-4aba-a2bf-f298254eeda3
+:Effort:   5
 :END:
