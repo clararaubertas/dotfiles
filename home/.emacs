@@ -448,8 +448,8 @@ If the new path's directories does not exist, create them."
 	))
 (setq org-tag-faces
       '(
-	("home" . (:background "#2aa198u"))
-	("computer" . (:background "#575757"))
+	("home" . (:background "#2aa198"))
+	("computer" . (:background "#fdf6e3" :foreground "#073642"))
 	("bedroom" . (:foreground "#2aa198"))
 	("kitchen" . (:foreground "#b58900"))
 	("diningroom" . (:foreground "#6c71c4"))
