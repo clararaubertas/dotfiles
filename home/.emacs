@@ -300,7 +300,7 @@ If the new path's directories does not exist, create them."
          (
 	  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"A\""
 		     (
-		      (org-agenda-overriding-header " -&NOW:-")
+		      (org-agenda-overriding-header " -everys thang:-")
 			;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
 		      )
 		     )
@@ -431,7 +431,8 @@ If the new path's directories does not exist, create them."
 	))
 
 (custom-set-faces
- '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3" :family "Accanthis ADF Std" :italic nil))) t)
+ '(org-agenda-date ((t (:weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3" :family "Inconsolata" :italic nil))) t)
+ '(org-agenda-structure ((t (:weight normal :height 1.5 :background "#002b36" :foreground "#eee8d5" :family "Accanthis ADF Std" :italic true :underline nil :weight semibold))) t)
  '(org-agenda-date ((t (:weight normal :height 1.1 :background "#002b36" :foreground "#eee8d5" :family "Accanthis ADF Std" :italic true :underline t))) t)
  '(org-agenda-date-today ((t (:inherit org-agenda-date :height 1.2 :italic t :family "Accanthis ADF Std" :foreground "#002b36" :background "#eee8d5" ))))
  '(org-scheduled-previously ((t (:foreground "#dc322f" :weight bold))))
