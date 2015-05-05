@@ -373,17 +373,6 @@ If the new path's directories does not exist, create them."
 
 	))
 
-
-(set-face-attribute 'org-agenda-date nil  :foreground "#eee8d5" :underline t)
-(set-face-attribute 'org-agenda-date-weekend nil :foreground "#859900" :underline t)
-(set-face-attribute 'org-agenda-date-today nil :underline t :background "#073642" :foreground "#eee8d5")
-(set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
-(set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
-(set-face-attribute 'org-done nil :strike-through t  )
-
-
-(set-face-attribute 'org-tag nil :bold nil :foreground "#eee8d5" )
-
 (set-face-attribute 'org-habit-alert-face nil :background "#b58900"
 		    :bold t :strike-through nil :foreground "#002b36"
 		    )
@@ -409,9 +398,7 @@ If the new path's directories does not exist, create them."
 (setq org-habit-today-glyph ?!)
 (setq org-habit-completed-glyph ?+)
 
-;; ;; make a face
-;; (make-face 'agenda-face)
-;;(set-face-attribute 'agenda-face nil :height 1.5) 
+
 
 (add-hook 'org-finalize-agenda-hook
           (lambda ()  (setq line-spacing '0.2)))
@@ -456,19 +443,19 @@ If the new path's directories does not exist, create them."
 
 (custom-set-faces
  '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3"))) t)
-'(org-date ((t (:foreground "Purple" :underline t :height 0.8 :family "Helvetica Neue"))))
+'(org-date ((t (:foreground "Purple" :underline t :height 0.8 :family "Fira Sans Bold"))))
 '(org-done ((t (:foreground "gray57" :weight light))))
-'(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Helvetica Neue"))))
+'(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Fira Sans Light"))))
 '(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1))))
-'(org-level-3 ((t (:inherit outline-3 :weight bold :family "Helvetica Neue"))))
-'(org-level-5 ((t (:inherit outline-5 :family "Helvetica Neue"))))
+'(org-level-3 ((t (:inherit outline-3 :weight bold :family "Fira Sans Light"))))
+'(org-level-5 ((t (:inherit outline-5 :family "Fira Sans Light"))))
 '(org-link ((t (:inherit link :weight normal))))
 '(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
-'(org-property-value ((t (:height 0.9 :family "Helvetica Neue"))) t)
-'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Helvetica Neue"))))
+'(org-property-value ((t (:height 0.9 :family "Fira Sans Light"))) t)
+'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Fira Sans Light"))))
 '(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
-'(org-tag ((t (:foreground "dark gray" :weight bold :height 0.8))))
-'(org-todo ((t (:foreground "#e67e22" :weight bold)))))
+'(org-tag ((t (:foreground "dark gray" :weight bold :height 0.9 :family "Fira Sans Bold"))))
+'(org-todo ((t (:weight bold)))))
 
 (defun org-todo-toggle-yesterday ()
   ;; this function is interactive, meaning a "command" that we call
