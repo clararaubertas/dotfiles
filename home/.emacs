@@ -301,6 +301,7 @@ If the new path's directories does not exist, create them."
 	  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"A\"-STYLE=\"habit\""
 		     (
 		      (org-agenda-overriding-header " -everys thang:-")
+                         (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
 			;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
 		      )
 		     )
@@ -320,17 +321,19 @@ If the new path's directories does not exist, create them."
 		     (
 		      (org-agenda-overriding-header "")
 		      (org-agenda-sorting-strategy '(todo-state-down priority-down tag-down))
+                         (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
 		      )
 		     )
 	  (todo "WAITING"
 		(
 		 (org-agenda-overriding-header "[WAITING]")
+                    (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
 		 )
 		)
 	  (todo "JESSE"
 		( (org-agenda-overriding-header "[JESSE]")
 		  ) )
-	  (tags-todo "+PRIORITY=\"C\"-STYLE=\"habit\""
+	  (tags-todo "+PRIORITY=\"C\"-STYLE=\"habit\"-TODO=\"WAITING\""
 		     (
 		      (org-agenda-overriding-header " --- ")  
 		      (org-agenda-sorting-strategy '(tag-up))
