@@ -25,7 +25,13 @@
 (require 'org-agenda-property)
 (require 'android-mode)
 
-(custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(android-mode-sdk-dir "~/opt/android")
+)
 (projectile-global-mode)
 
 ;;;;;;;;;; ;;;;;;;;;;
@@ -215,6 +221,9 @@ If the new path's directories does not exist, create them."
 ;;;;;;;;;; V. ORG MODE ;;;;;;;;;;
 (setq-default major-mode 'org-mode)
 (setq org-startup-indented t)
+
+(add-to-list 'org-modules 'org-habit)
+(require 'org-habit)
 
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "|" "DONE(d!)")
@@ -454,7 +463,8 @@ If the new path's directories does not exist, create them."
 	("phone" . (:foreground "#d33682"))
 	("para". (:weight bold :background "#073642"))
 	("bathroom" . (:foreground "#268bd2"))
-	))
+	)
+      )
 
 
 (defun org-todo-toggle-yesterday ()
@@ -570,3 +580,9 @@ With argument ARG, do this that many times."
 (message "You're doing a great job!")
 ;;;;;;;;;; END ;;;;;;;;;;
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
