@@ -33,18 +33,18 @@
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
 
 
- ;; (define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
- ;;   (lambda () (rainbow-delimiters-mode 1)))
- ;; (my-global-rainbow-delim-mode 1)
+ (define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
+   (lambda () (rainbow-delimiters-mode 1)))
+ (my-global-rainbow-delim-mode 1)
 
 
- ;; (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
- ;;   (lambda () (idle-highlight-mode 1)))
- ;; (my-global-idle-highlight-mode 1)
+ (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
+   (lambda () (idle-highlight-mode 1)))
+ (my-global-idle-highlight-mode 1)
 
-;; (define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
-;;   (lambda () (blink-cursor-mode 1)))
-;; (my-global-blink-cursor-mode 1)
+(define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
+  (lambda () (blink-cursor-mode 1)))
+(my-global-blink-cursor-mode 1)
 
 
 
@@ -388,24 +388,24 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-tag nil :bold nil :foreground "#eee8d5" )
 
-(set-face-attribute 'org-habit-alert-face nil :background "#002b36"
+(set-face-attribute 'org-habit-alert-face nil :background "#b58900"
 		    :bold t :strike-through nil :foreground "#b58900"
 		    )
 (set-face-attribute 'org-habit-alert-future-face nil :background
-		    "#002b36" :strike-through t :foreground "#cb4b16"
+		    "#002b36" :strike-through nil :foreground "#cb4b16"
 		    :bold t )
 (set-face-attribute 'org-habit-clear-face nil :background "#002b36"
 		    :strike-through nil :bold t )
 (set-face-attribute 'org-habit-clear-future-face nil :background
 		    "#002b36" )
-(set-face-attribute 'org-habit-overdue-face nil :background "#002b36"
+(set-face-attribute 'org-habit-overdue-face nil :background "#d33682"
 		    :strike-through t :foreground
 		    "#d33682" :bold t )
 (set-face-attribute 'org-habit-overdue-future-face nil :background
-		    "#002b36" :strike-through t :underline nil
+		    "#eee8d5" :strike-through t :underline nil
 		    :foreground "#b58900" :bold t )
-(set-face-attribute 'org-habit-ready-face nil :background "#001b26"
-		    :foreground "#859900" :bold t 
+(set-face-attribute 'org-habit-ready-face nil :background "#859900"
+		    :foreground "#002b36" :bold t 
 		    )
 (set-face-attribute 'org-habit-ready-future-face nil :background
 		    "#002b36" )
