@@ -682,7 +682,8 @@ SCHEDULED:  <2015-05-05 Tue .+1d/2d>
 :Effort:   30
 :END:
 ** TODO clear up bag                                                  :home:
-SCHEDULED: <2015-05-03 Sun .+2d/4d>
+SCHEDULED: <2015-05-06 Wed .+2d/4d>
+- State "DONE"       from "TODO"       [2015-05-04 Mon 18:42]
 - State "DONE"       from "TODO"       [2015-05-01 Fri 11:31]
 - State "DONE"       from "TODO"       [2015-04-29 Wed 16:59]
 - State "DONE"       from "TODO"       [2015-04-27 Mon 14:07]
@@ -725,7 +726,7 @@ SCHEDULED: <2015-05-03 Sun .+2d/4d>
 :PROPERTIES:
 :ID:       e1e3eea1-c20c-4844-b5d9-fe7d07a1378d
 :STYLE: habit
-:LAST_REPEAT: [2015-05-01 Fri 11:31]
+:LAST_REPEAT: [2015-05-04 Mon 18:42]
 :Effort:   5
 :END:
 ** TODO clear work inbox                                          :computer:
@@ -2773,7 +2774,7 @@ SCHEDULED: <2015-05-08 Fri .+8d/15d>
 :ID:       2b329710-06e8-4a4c-8654-4b1d08a41958
 :Effort:   60
 :END:
-** TODO                                                    :computer:para:
+** CANCELLED :computer:para:
 :PROPERTIES:
 :ID:       152cb229-e4d5-4198-a786-a5cdb6077f90
 :END:

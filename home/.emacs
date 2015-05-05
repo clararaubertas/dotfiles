@@ -397,36 +397,31 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-tag nil :bold nil :foreground "#eee8d5" )
 
-(set-face-attribute 'org-habit-alert-face nil :background "#002b36"
-		    :bold t :strike-through nil :foreground "#b58900"
-		    )
-(set-face-attribute 'org-habit-alert-future-face nil :background
-		    "#002b36" :strike-through t :foreground "#cb4b16"
-		    :bold t )
-(set-face-attribute 'org-habit-clear-face nil :background "#002b36"
-		    :strike-through nil :bold t )
-(set-face-attribute 'org-habit-clear-future-face nil :background
-		    "#002b36" )
-(set-face-attribute 'org-habit-overdue-face nil :background "#002b36"
-		    :strike-through t :foreground
-		    "#d33682" :bold t )
-(set-face-attribute 'org-habit-overdue-future-face nil :background
-		    "#002b36" :strike-through t :underline nil
-		    :foreground "#b58900" :bold t )
-(set-face-attribute 'org-habit-ready-face nil :background "#001b26"
-		    :foreground "#859900" :bold t 
-		    )
-(set-face-attribute 'org-habit-ready-future-face nil :background
-		    "#002b36" )
-(setq org-habit-show-done-always-green t)
-(setq org-habit-today-glyph ?!)
-(setq org-habit-completed-glyph ?+)
+;; (set-face-attribute 'org-habit-alert-face nil :background "#002b36"
+;; 		    :bold t :strike-through nil :foreground "#b58900"
+;; 		    )
+;; (set-face-attribute 'org-habit-alert-future-face nil :background
+;; 		    "#002b36" :strike-through t :foreground "#cb4b16"
+;; 		    :bold t )
+;; (set-face-attribute 'org-habit-clear-face nil :background "#002b36"
+;; 		    :strike-through nil :bold t )
+;; (set-face-attribute 'org-habit-clear-future-face nil :background
+;; 		    "#002b36" )
+;; (set-face-attribute 'org-habit-overdue-face nil :background "#002b36"
+;; 		    :strike-through t :foreground
+;; 		    "#d33682" :bold t )
+;; (set-face-attribute 'org-habit-overdue-future-face nil :background
+;; 		    "#002b36" :strike-through t :underline nil
+;; 		    :foreground "#b58900" :bold t )
+;; (set-face-attribute 'org-habit-ready-face nil :background "#001b26"
+;; 		    :foreground "#859900" :bold t 
+;; 		    )
+;; (set-face-attribute 'org-habit-ready-future-face nil :background
+;; 		    "#002b36" )
+;; (setq org-habit-show-done-always-green t)
+;; (setq org-habit-today-glyph ?!)
+;; (setq org-habit-completed-glyph ?+)
 
-;; ;; make a face
-;; (make-face 'agenda-face)
-;;(set-face-attribute 'agenda-face nil :height 1.5) 
-
-;; (add-hook 'org-finalize-agenda-hook (lambda ()  (buffer-face-set 'agenda-face)))
 
 (setq org-habit-graph-column 35)
 
@@ -449,6 +444,7 @@ If the new path's directories does not exist, create them."
 	( ?B . ( :foreground "#2aa198" :weight bold ))
 	( ?C . ( :foreground "#575757"))
 	))
+
 (setq org-tag-faces
       '(
 	("home" . (:background "#2aa198"))
@@ -488,29 +484,6 @@ If the new path's directories does not exist, create them."
       (org-todo)
       ;; toggles the todo heading
       )))
-
-;; (setq mark-diary-entries-in-calendar t)
-;; (defun getcal (url)
-;;   "Download ics file and add to diary"
-;;   (let ((tmpfile (url-file-local-copy url)))
-;;     (icalendar-import-file tmpfile "~/diary" t)
-;;     (kill-buffer (car (last (split-string tmpfile "/"))))
-;;     )
-;;   )
-;; (setq google-calendars '(
-;;                      "https://www.google.com/calendar/ical/clara.raubertas%40gmail.com/private-89f852a8af2420a9afcf0b88b36658eb/basic.ics"
-;;                          "https://www.google.com/calendar/ical/qefiaa27cig1mlij5v44e0orfo%40group.calendar.google.com/private-3c956aa9fec9c60483ee639b701d9408/basic.ics"
-;;                          ))
-;; (defun getcals ()
-;;   (find-file "~/diary")
-;;   (flush-lines "^[& ]")
-;;   (dolist (url google-calendars) (getcal url))
-;;   (kill-buffer "diary"))
-;; (getcals)
-;; (setq org-agenda-include-diary t)
-;;;;;;;;;; ;;;;;;;;;; 
-
-
 
 
 (defun sudo-edit (&optional arg)
@@ -566,19 +539,7 @@ With argument ARG, do this that many times."
 (add-hook 'text-mode-hook 'flyspell-mode)
 ;;;;;;;;;; ;;;;;;;;;;
 
-;;;;;;;;;; X. Remove annoying defaults, provide encouragement ;;;;;;;;;;
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-(setq inhibit-startup-screen t)   
-(setq inhibit-splash-screen t)
-(setq transient-mark-mode t)
-(fset 'yes-or-no-p 'y-or-n-p)
-(setq debug-on-error nil)
-(setq inhibit-startup-echo-area-message "clara") 
-(setq initial-scratch-message nil)
-(message "You're doing a great job!")
-;;;;;;;;;; END ;;;;;;;;;;
+
 
 
 (custom-set-faces
@@ -599,3 +560,19 @@ With argument ARG, do this that many times."
 '(org-todo ((t (:foreground "#e67e22" :weight bold))))
 
  )
+
+
+
+;;;;;;;;;; X. Remove annoying defaults, provide encouragement ;;;;;;;;;;
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(setq inhibit-startup-screen t)   
+(setq inhibit-splash-screen t)
+(setq transient-mark-mode t)
+(fset 'yes-or-no-p 'y-or-n-p)
+(setq debug-on-error nil)
+(setq inhibit-startup-echo-area-message "clara") 
+(setq initial-scratch-message nil)
+(message "You're doing a great job!")
+;;;;;;;;;; END ;;;;;;;;;;
