@@ -413,14 +413,14 @@ If the new path's directories does not exist, create them."
 ;; (make-face 'agenda-face)
 ;;(set-face-attribute 'agenda-face nil :height 1.5) 
 
-;; (add-hook 'org-finalize-agenda-hook (lambda ()  (buffer-face-set 'agenda-face)))
+(add-hook 'org-finalize-agenda-hook (lambda ()  (-face)))
 
 (setq org-habit-graph-column 45)
-
+(setq line-spacing '0.1)
 (set-face-attribute 'org-scheduled-previously nil :foreground "#dc322f"
 		    :bold t )
 (set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e3p"
-		    :bold nil )
+		    :bold nil :underline nil :line-height 13)
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198"
 		    :bold t)
 (set-face-attribute 'org-tag nil :bold t :background "#002b36" :foreground "#839496")
