@@ -307,7 +307,7 @@ If the new path's directories does not exist, create them."
 	  (agenda "-TODO=\"WAITING\"" 
                    (
 		    (org-agenda-overriding-header " -today - ")
-		    (org-agenda-ndays 1)                      ;; daily agenda
+		    (org-agenda-ndays 3)                      ;; daily agenda
                     (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
                     ))
 	  (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
@@ -357,10 +357,6 @@ If the new path's directories does not exist, create them."
 	)
       
 
-(add-hook 'org-agenda-mode-hook
-	  ;; Always hilight the current agenda line
-          '(lambda () (hl-line-mode 1))
-          'append)
 
 ;; We gonna log stuff here.
 (setq org-log-repeat 'time)
@@ -380,7 +376,7 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-agenda-date nil  :foreground "#859900" :underline t)
 (set-face-attribute 'org-agenda-date-weekend nil :foreground "#859900" :underline t)
-(set-face-attribute 'org-agenda-date-today nil :bold t )
+(set-face-attribute 'org-agenda-date-today nil :underline t :background "#073642" :foreground "#eee8d5")
 (set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
 (set-face-attribute 'org-agenda-done nil :foreground "#93a1a1"  :strike-through t)
 (set-face-attribute 'org-done nil :strike-through t  )
@@ -545,7 +541,7 @@ With argument ARG, do this that many times."
 
 ;;;;;;;;;; VIII. Line Behaviors ;;;;;;;;;;
 ;; desired default behaviors for lines & line breaks, visually & behind-the-scenes
-(global-hl-line-mode 1)
+
 (global-visual-line-mode 1)
 (auto-fill-mode nil)
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
