@@ -374,7 +374,7 @@ If the new path's directories does not exist, create them."
 	))
 
 
-(set-face-attribute 'org-agenda-date nil  :foreground "#859900" :underline t)
+(set-face-attribute 'org-agenda-date nil  :foreground "#eee8d5" :underline t)
 (set-face-attribute 'org-agenda-date-weekend nil :foreground "#859900" :underline t)
 (set-face-attribute 'org-agenda-date-today nil :underline t :background "#073642" :foreground "#eee8d5")
 (set-face-attribute 'org-agenda-diary nil :foreground "#fdf6e3" )
@@ -393,10 +393,10 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-habit-clear-face nil :background "#002b36"
 		    :strike-through nil :bold t )
 (set-face-attribute 'org-habit-clear-future-face nil :background
-		    "#002b36" )
+		    "#268bd2" )
 (set-face-attribute 'org-habit-overdue-face nil :background "#d33682"
-		    :strike-through t :foreground
-		    "#d33682" :bold t )
+		    :strike-through nil :foreground
+		    "#073642" :bold t )
 (set-face-attribute 'org-habit-overdue-future-face nil :background
 		    "#073642" :strike-through nil :underline nil
 		     )
@@ -404,7 +404,7 @@ If the new path's directories does not exist, create them."
 		    :foreground "#002b36" :bold nil 
 		    )
 (set-face-attribute 'org-habit-ready-future-face nil :background
-		    "#002b36" )
+		    "#6c71c4" )
 (setq org-habit-show-done-always-green t)
 (setq org-habit-today-glyph ?!)
 (setq org-habit-completed-glyph ?+)
