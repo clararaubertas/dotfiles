@@ -402,10 +402,10 @@ If the new path's directories does not exist, create them."
 		    :strike-through t :foreground
 		    "#d33682" :bold t )
 (set-face-attribute 'org-habit-overdue-future-face nil :background
-		    "#eee8d5" :strike-through t :underline nil
-		    :foreground "#b58900" :bold t )
+		    "#073642" :strike-through nil :underline nil
+		     )
 (set-face-attribute 'org-habit-ready-face nil :background "#859900"
-		    :foreground "#002b36" :bold t 
+		    :foreground "#002b36" :bold nil 
 		    )
 (set-face-attribute 'org-habit-ready-future-face nil :background
 		    "#002b36" )
@@ -433,7 +433,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-deadline-faces
       '((1.0 . (:foreground "#d33682"))
 	(0.7 . (:foreground "#b58900"))
-	(0.0 . (:foreground "#2aa198"))
+	(0.0 . (:foreground "#268bd2"))
 	))
 (setq org-priority-faces
       '(( ?A . (:foreground "#d33682" :weight bold))
