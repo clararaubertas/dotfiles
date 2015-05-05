@@ -47,6 +47,15 @@
   (lambda () (idle-highlight-mode 1)))
 (my-global-idle-highlight-mode 1)
 
+(define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
+  (lambda () (blink-cursor-mode 1)))
+(my-global-blink-cursor-mode 1)
+
+(define-globalized-minor-mode my-global-smart-cursor-color-mode smart-cursor-color-mode
+  (lambda () (smart-cursor-color-mode 1)))
+(blink-cursor-color-mode 1)
+
+
 (setq idle-highlight-idle-time 0
 )
 
@@ -58,14 +67,12 @@
 
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
-;;(set-face-foreground 'mode-line "#859900")
-;;(set-face-foreground 'mode-line-inactive "#2aa198")
+(set-face-foreground 'mode-line "#859900")
+(set-face-foreground 'mode-line-inactive "#2aa198")
 (set-face-background 'highlight "#073642")
 (set-face-foreground 'highlight nil)
 (set-face-background 'idle-highlight "#859900")
 (set-face-foreground 'idle-highlight nil)
-
-
 (setq default-frame-alist
       '((background-color . "#002b36")))
 
@@ -85,7 +92,11 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
   (internal-show-cursor nil (not (internal-show-cursor-p)))
   )
 
-(powerline-default-theme)
+
+(setq default-frame-alist
+      '((background-color . "#002b36")))
+
+
 
 ;;;;;;;;;; END Colors ;;;;;;;;;;
 
@@ -127,21 +138,28 @@ If the new path's directories does not exist, create them."
 
 ;; (require 'auto-complete)
 ;; (require 'auto-complete-config)
-;; (global-auto-complete-mode t)
+(global-auto-complete-mode t)
 ;; (setq ac-expand-on-auto-complete nil)
 ;; (setq ac-auto-start nil)
 ;; (setq ac-dwim nil) ; To get pop-ups with docs even if a word is uniquely completed
 ;; (define-key ac-completing-map (kbd "C-n") 'ac-next)
 ;; (define-key ac-completing-map (kbd "C-p") 'ac-previous)
 
-;; (require 'ido)
-;; (ido-mode t)
+(require 'ido)
+(ido-mode t)
 ;; (setq ido-enable-flex-matching t)
+(allout-mode)
 
+(global-set-key [(control .)] 'goto-last-change)
+; M-. can conflict with etags tag search. But C-. can get overwritten
+; by flyspell-auto-correct-word. And goto-last-change needs a really
+; fast key.
+(global-set-key [(meta .)] 'goto-last-change)
 ;; buffrs
 ;; set up ibuffer
 ;; (autoload 'ibuffer "ibuffer" "List buffers." t)
 ;; (setq ibuffer-default-sorting-mode 'major-mode)
+
 
 ;; ;; uniquify
 ;; (require 'uniquify)
@@ -264,7 +282,7 @@ If the new path's directories does not exist, create them."
 ;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
 ;;     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(priority-down tag-up))
+(setq org-agenda-sorting-strategy '(tag-up priority-down effort-down))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
@@ -277,12 +295,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
 
-(setq org-agenda-prefix-format
-      '( (agenda . " %e %-12:t% s")
-        (timeline . "  % s")
-        (todo . " %e %-12:s")
-        (search . " %e %-12:s")
-        (tags . " %i %-12:s")))
+(setq org-agenda-prefix-format "%-5e %-3s")
 
 
 
@@ -340,8 +353,8 @@ If the new path's directories does not exist, create them."
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
 	   (org-agenda-todo-keyword-format " + ")
-;;	   (org-agenda-scheduled-leaders '("0d" "%dx"))
-;;	   (org-agenda-deadline-leaders '("0d" "%dd"))
+	   (org-agenda-scheduled-leaders '("0d" "%dx"))
+	   (org-agenda-deadline-leaders '("0d" "%dd"))
 	   (org-agenda-time-grid nil)
 
 	   )
