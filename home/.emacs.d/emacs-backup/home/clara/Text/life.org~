@@ -398,7 +398,7 @@ SCHEDULED: <2015-05-05 Tue .+1d/2d>
 :Effort:   2
 :END:
 ** TODO clean bathtub                                        :home:bathroom:
-SCHEDULED: <2015-04-29 Wed .+6d/10d>
+SCHEDULED: <2015-04-29 Wed .+8d/12d>
 - State "DONE"       from "TODO"       [2015-04-23 Thu 16:57]
 - State "DONE"       from "TODO"       [2015-04-14 Tue 13:54]
 - State "DONE"       from "TODO"       [2015-04-14 Tue 13:54]
@@ -556,7 +556,8 @@ SCHEDULED: <2015-05-08 Fri .+5d/10d>
 :Effort:   20
 :END:
 ** TODO clean toilet                                         :home:bathroom:
-SCHEDULED: <2015-04-28 Tue .+5d/8d>
+SCHEDULED: <2015-05-10 Sun .+5d/8d>
+- State "DONE"       from "TODO"       [2015-05-05 Tue 00:20]
 - State "DONE"       from "TODO"       [2015-04-23 Thu 16:56]
 - State "DONE"       from "TODO"       [2015-04-13 Mon 20:38]
 - State "CANCELLED"  from "TODO"       [2015-04-03 Fri 10:18]
@@ -602,7 +603,7 @@ SCHEDULED: <2015-04-28 Tue .+5d/8d>
 :PROPERTIES:
 :ID:       58c84353-051c-41c9-919c-25d8019eb12e
 :STYLE: habit
-:LAST_REPEAT: [2015-04-23 Thu 16:56]
+:LAST_REPEAT: [2015-05-05 Tue 00:20]
 :Effort:   10
 :END:
 ** TODO clear personal inbox                                      :computer:
@@ -1941,7 +1942,8 @@ SCHEDULED: <2015-05-08 Fri .+1w>
 :ID:       6c2928b6-2a72-4c19-b8ee-bed9688bc401
 :END:
 ** TODO pick out clothes                                      :home:bedroom:
-SCHEDULED: <2015-05-04 Mon .+1d>
+SCHEDULED: <2015-05-05 Tue .+1d>
+- State "DONE"       from "TODO"       <2015-05-04 Mon 00:26>
 - State "DONE"       from "TODO"       [2015-05-03 Sun 19:51]
 - State "DONE"       from "TODO"       [2015-05-01 Fri 11:53]
 - State "DONE"       from "TODO"       [2015-04-30 Thu 15:44]
@@ -1965,7 +1967,7 @@ SCHEDULED: <2015-05-04 Mon .+1d>
 - State "DONE"       from "TODO"       [2015-03-09 Mon 19:23]
 :PROPERTIES:
 :ID:       91577749-c12a-4083-a671-cd8be32f4f77
-:LAST_REPEAT: [2015-05-03 Sun 19:51]
+:LAST_REPEAT: [2015-05-05 Tue 00:26]
 :STYLE:    habit
 :Effort:   5
 :END:
@@ -2133,7 +2135,7 @@ SCHEDULED: <2015-05-08 Fri .+5d/8d>
 :Effort:   10
 :END:
 ** TODO vacuum bedroom                                        :home:bedroom:
-SCHEDULED: <2015-05-01 Fri .+5d/8d>
+SCHEDULED: <2015-05-01 Fri .+5d/10d>
 - State "DONE"       from "TODO"       [2015-04-26 Sun 12:56]
 - State "DONE"       from "TODO"       [2015-04-20 Mon 15:37]
 - State "CANCELLED"  from "TODO"       [2015-04-05 Sun 10:45]
@@ -2371,7 +2373,7 @@ SCHEDULED: <2015-05-05 Tue .+1d/3d>
 :Effort:   5
 :END:
 ** TODO shelve books                                        :home:frontroom:
-SCHEDULED: <2015-05-05 Tue .+5d/8d>
+SCHEDULED: <2015-05-05 Tue .+7d/14d>
 - State "DONE"       from "TODO"       [2015-04-30 Thu 15:50]
 - State "DONE"       from "TODO"       [2015-04-13 Mon 21:04]
 - State "CANCELLED"  from "TODO"       [2015-04-03 Fri 10:19]
@@ -2425,7 +2427,7 @@ SCHEDULED: <2015-05-02 Sat .+4d/8d>
 :ID:       b6648e24-c81a-42c0-8496-f64637e57be0
 :END:
 ** TODO water plants                                          :home:allhome:
-SCHEDULED: <2015-05-03 Sun .+3d/4d>
+SCHEDULED: <2015-05-03 Sun .+4d/6d>
 - State "DONE"       from "TODO"       [2015-04-30 Thu 15:44]
 - State "DONE"       from "TODO"       [2015-04-26 Sun 17:38]
 - State "DONE"       from "TODO"       [2015-04-14 Tue 19:44]
@@ -2819,3 +2821,13 @@ DEADLINE: <2015-05-08 Fri>
 :END:
 ** TODO one-to-many module with iterators              :computer:railsbridge:
 DEADLINE: <2015-05-18 Mon>
+** TODO [#A] shoes for jesse                                      :computer:
+:PROPERTIES:
+:ID:       563f7950-caa4-4f6d-970c-656ca3d65740
+:END:
+:PROPERTIES::ID: f0eae63b-b5a0-42a3-b185-52ce8bde90e8
+:END:
+** TODO [#B] pants for jesse                                       :computer:
+:PROPERTIES:
+:ID:       b19ecad3-5485-4d94-b086-3a3ca1492ef7
+:END:
