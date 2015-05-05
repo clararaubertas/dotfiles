@@ -14,7 +14,7 @@
 (add-to-list 'package-archives
                '("org" . "http://orgmode.org/elpa/"))
 
-
+(add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/*")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/org-sync")
@@ -25,13 +25,7 @@
 (require 'org-agenda-property)
 (require 'android-mode)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(android-mode-sdk-dir "~/opt/android")
- '(org-habit-graph-column 35))
+(custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
 (projectile-global-mode)
 
 ;;;;;;;;;; ;;;;;;;;;;
@@ -45,16 +39,13 @@
   (lambda () (rainbow-delimiters-mode 1)))
 (my-global-rainbow-delim-mode 1)
 
-
+(define-globalized-minor-mode my-global-ido-ubiquitous-mode ido-ubiquitous-mode
+  (lambda () (ido-ubiquitous-mode 1)))
+(my-global-ido-ubiquitous-mode 1)
 
 (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
   (lambda () (idle-highlight-mode 1)))
 (my-global-idle-highlight-mode 1)
-
-(define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
-  (lambda () (blink-cursor-mode 1)))
-(my-global-blink-cursor-mode 1)
-
 
 (setq idle-highlight-idle-time 0
 )
@@ -67,12 +58,14 @@
 
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
-(set-face-foreground 'mode-line "#859900")
-(set-face-foreground 'mode-line-inactive "#2aa198")
+;;(set-face-foreground 'mode-line "#859900")
+;;(set-face-foreground 'mode-line-inactive "#2aa198")
 (set-face-background 'highlight "#073642")
 (set-face-foreground 'highlight nil)
 (set-face-background 'idle-highlight "#859900")
 (set-face-foreground 'idle-highlight nil)
+
+
 (setq default-frame-alist
       '((background-color . "#002b36")))
 
@@ -92,11 +85,7 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
   (internal-show-cursor nil (not (internal-show-cursor-p)))
   )
 
-
-(setq default-frame-alist
-      '((background-color . "#002b36")))
-
-
+(powerline-default-theme)
 
 ;;;;;;;;;; END Colors ;;;;;;;;;;
 
@@ -138,28 +127,21 @@ If the new path's directories does not exist, create them."
 
 ;; (require 'auto-complete)
 ;; (require 'auto-complete-config)
-(global-auto-complete-mode t)
+;; (global-auto-complete-mode t)
 ;; (setq ac-expand-on-auto-complete nil)
 ;; (setq ac-auto-start nil)
 ;; (setq ac-dwim nil) ; To get pop-ups with docs even if a word is uniquely completed
 ;; (define-key ac-completing-map (kbd "C-n") 'ac-next)
 ;; (define-key ac-completing-map (kbd "C-p") 'ac-previous)
 
-(require 'ido)
-(ido-mode t)
+;; (require 'ido)
+;; (ido-mode t)
 ;; (setq ido-enable-flex-matching t)
-(allout-mode)
 
-(global-set-key [(control .)] 'goto-last-change)
-; M-. can conflict with etags tag search. But C-. can get overwritten
-; by flyspell-auto-correct-word. And goto-last-change needs a really
-; fast key.
-(global-set-key [(meta .)] 'goto-last-change)
 ;; buffrs
 ;; set up ibuffer
 ;; (autoload 'ibuffer "ibuffer" "List buffers." t)
 ;; (setq ibuffer-default-sorting-mode 'major-mode)
-
 
 ;; ;; uniquify
 ;; (require 'uniquify)
@@ -222,9 +204,6 @@ If the new path's directories does not exist, create them."
 (setq-default major-mode 'org-mode)
 (setq org-startup-indented t)
 
-(add-to-list 'org-modules 'org-habit)
-(require 'org-habit)
-
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "|" "DONE(d!)")
               (sequence "WAITING(w)" "SOMEDAY/MAYBE(m)" "JESSE(j)" "PROJECT(p)" "|" "CANCELLED(c)")
@@ -285,7 +264,7 @@ If the new path's directories does not exist, create them."
 ;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
 ;;     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(priority-down effort-down tag-down))
+(setq org-agenda-sorting-strategy '(priority-down tag-up))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
@@ -298,7 +277,12 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-tags-todo-honor-ignore-options t)
 
-(setq org-agenda-prefix-format "%-5e %-3s")
+(setq org-agenda-prefix-format
+      '( (agenda . " %e %-12:t% s")
+        (timeline . "  % s")
+        (todo . " %e %-12:s")
+        (search . " %e %-12:s")
+        (tags . " %i %-12:s")))
 
 
 
@@ -356,8 +340,8 @@ If the new path's directories does not exist, create them."
 	   (org-habit-following-days 5)
 	   (org-habit-preceding-days 10) 
 	   (org-agenda-todo-keyword-format " + ")
-	   (org-agenda-scheduled-leaders '("0d" "%dx"))
-	   (org-agenda-deadline-leaders '("0d" "%dd"))
+;;	   (org-agenda-scheduled-leaders '("0d" "%dx"))
+;;	   (org-agenda-deadline-leaders '("0d" "%dd"))
 	   (org-agenda-time-grid nil)
 
 	   )
@@ -397,31 +381,36 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-tag nil :bold nil :foreground "#eee8d5" )
 
-;; (set-face-attribute 'org-habit-alert-face nil :background "#002b36"
-;; 		    :bold t :strike-through nil :foreground "#b58900"
-;; 		    )
-;; (set-face-attribute 'org-habit-alert-future-face nil :background
-;; 		    "#002b36" :strike-through t :foreground "#cb4b16"
-;; 		    :bold t )
-;; (set-face-attribute 'org-habit-clear-face nil :background "#002b36"
-;; 		    :strike-through nil :bold t )
-;; (set-face-attribute 'org-habit-clear-future-face nil :background
-;; 		    "#002b36" )
-;; (set-face-attribute 'org-habit-overdue-face nil :background "#002b36"
-;; 		    :strike-through t :foreground
-;; 		    "#d33682" :bold t )
-;; (set-face-attribute 'org-habit-overdue-future-face nil :background
-;; 		    "#002b36" :strike-through t :underline nil
-;; 		    :foreground "#b58900" :bold t )
-;; (set-face-attribute 'org-habit-ready-face nil :background "#001b26"
-;; 		    :foreground "#859900" :bold t 
-;; 		    )
-;; (set-face-attribute 'org-habit-ready-future-face nil :background
-;; 		    "#002b36" )
-;; (setq org-habit-show-done-always-green t)
-;; (setq org-habit-today-glyph ?!)
-;; (setq org-habit-completed-glyph ?+)
+(set-face-attribute 'org-habit-alert-face nil :background "#002b36"
+		    :bold t :strike-through nil :foreground "#b58900"
+		    )
+(set-face-attribute 'org-habit-alert-future-face nil :background
+		    "#002b36" :strike-through t :foreground "#cb4b16"
+		    :bold t )
+(set-face-attribute 'org-habit-clear-face nil :background "#002b36"
+		    :strike-through nil :bold t )
+(set-face-attribute 'org-habit-clear-future-face nil :background
+		    "#002b36" )
+(set-face-attribute 'org-habit-overdue-face nil :background "#002b36"
+		    :strike-through t :foreground
+		    "#d33682" :bold t )
+(set-face-attribute 'org-habit-overdue-future-face nil :background
+		    "#002b36" :strike-through t :underline nil
+		    :foreground "#b58900" :bold t )
+(set-face-attribute 'org-habit-ready-face nil :background "#001b26"
+		    :foreground "#859900" :bold t 
+		    )
+(set-face-attribute 'org-habit-ready-future-face nil :background
+		    "#002b36" )
+(setq org-habit-show-done-always-green t)
+(setq org-habit-today-glyph ?!)
+(setq org-habit-completed-glyph ?+)
 
+;; ;; make a face
+;; (make-face 'agenda-face)
+;;(set-face-attribute 'agenda-face nil :height 1.5) 
+
+;; (add-hook 'org-finalize-agenda-hook (lambda ()  (buffer-face-set 'agenda-face)))
 
 (setq org-habit-graph-column 35)
 
@@ -437,18 +426,17 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-deadline-faces
       '((1.0 . (:foreground "#d33682"))
 	(0.7 . (:foreground "#b58900"))
-	(0.0 . (:fevoreground "#2aa198"))
+	(0.0 . (:foreground "#2aa198"))
 	))
 (setq org-priority-faces
       '(( ?A . (:foreground "#d33682" :weight bold))
 	( ?B . ( :foreground "#2aa198" :weight bold ))
 	( ?C . ( :foreground "#575757"))
 	))
-
 (setq org-tag-faces
       '(
-	("home" . (:background "#2aa198"))
-	("computer" . (:background "#fdf6e3" :foreground "#073642"))
+	("home" . (:background "#2aa198u"))
+	("computer" . (:background "#575757"))
 	("bedroom" . (:foreground "#2aa198"))
 	("kitchen" . (:foreground "#b58900"))
 	("diningroom" . (:foreground "#6c71c4"))
@@ -459,8 +447,7 @@ If the new path's directories does not exist, create them."
 	("phone" . (:foreground "#d33682"))
 	("para". (:weight bold :background "#073642"))
 	("bathroom" . (:foreground "#268bd2"))
-	)
-      )
+	))
 
 
 (defun org-todo-toggle-yesterday ()
@@ -484,6 +471,29 @@ If the new path's directories does not exist, create them."
       (org-todo)
       ;; toggles the todo heading
       )))
+
+;; (setq mark-diary-entries-in-calendar t)
+;; (defun getcal (url)
+;;   "Download ics file and add to diary"
+;;   (let ((tmpfile (url-file-local-copy url)))
+;;     (icalendar-import-file tmpfile "~/diary" t)
+;;     (kill-buffer (car (last (split-string tmpfile "/"))))
+;;     )
+;;   )
+;; (setq google-calendars '(
+;;                      "https://www.google.com/calendar/ical/clara.raubertas%40gmail.com/private-89f852a8af2420a9afcf0b88b36658eb/basic.ics"
+;;                          "https://www.google.com/calendar/ical/qefiaa27cig1mlij5v44e0orfo%40group.calendar.google.com/private-3c956aa9fec9c60483ee639b701d9408/basic.ics"
+;;                          ))
+;; (defun getcals ()
+;;   (find-file "~/diary")
+;;   (flush-lines "^[& ]")
+;;   (dolist (url google-calendars) (getcal url))
+;;   (kill-buffer "diary"))
+;; (getcals)
+;; (setq org-agenda-include-diary t)
+;;;;;;;;;; ;;;;;;;;;; 
+
+
 
 
 (defun sudo-edit (&optional arg)
@@ -539,31 +549,6 @@ With argument ARG, do this that many times."
 (add-hook 'text-mode-hook 'flyspell-mode)
 ;;;;;;;;;; ;;;;;;;;;;
 
-
-
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2))) t)
- '(org-date ((t (:foreground "Purple" :underline t :height 0.8 :family "Helvetica Neue"))))
- '(org-done ((t (:foreground "gray57" :weight light))))
- '(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Helvetica Neue"))))
- '(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1))))
- '(org-level-3 ((t (:inherit outline-3 :weight bold :family "Helvetica Neue"))))
- '(org-level-5 ((t (:inherit outline-5 :family "Helvetica Neue"))))
- '(org-link ((t (:inherit link :weight normal))))
- '(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
- '(org-property-value ((t (:height 0.9 :family "Helvetica Neue"))) t)
- '(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Helvetica Neue"))))
- '(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
- '(org-tag ((t (:foreground "dark gray" :weight bold :height 0.8))))
- '(org-todo ((t (:foreground "#e67e22" :weight bold)))))
-
-
-
 ;;;;;;;;;; X. Remove annoying defaults, provide encouragement ;;;;;;;;;;
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -577,3 +562,4 @@ With argument ARG, do this that many times."
 (setq initial-scratch-message nil)
 (message "You're doing a great job!")
 ;;;;;;;;;; END ;;;;;;;;;;
+

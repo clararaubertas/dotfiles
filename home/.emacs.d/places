@@ -1,10 +1,10 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/clara/Text/orgmob" . 1364)
- ("/home/clara/.homesick/repos/dotfiles/home/.emacs" . 550)
- ("/home/clara/Text/read.org" . 3279)
+(("/home/clara/Text/read.org" . 3279)
  ("/home/clara/Text/books.org" . 489)
  ("/home/clara/Text/movie-diary" . 5172)
  ("/home/clara/Text/life.org" . 69638)
+ ("/home/clara/Text/orgmob" . 1364)
+ ("/home/clara/.homesick/repos/dotfiles/home/.emacs" . 550)
  ("/home/clara/.emacs.d/elpa/archives/gnu/archive-contents" . 20595)
  ("/home/clara/.emacs.d/elpa/archives/ELPA/archive-contents" . 11669)
  ("/home/clara/.emacs.d/elpa/archives/marmalade/archive-contents" . 112829)
