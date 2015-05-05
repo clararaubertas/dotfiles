@@ -448,7 +448,7 @@ If the new path's directories does not exist, create them."
 '(org-level-5 ((t (:inherit outline-5 :family "Accanthis ADF Std "))))
 '(org-link ((t (:inherit link :weight normal))))
 '(org-scheduled-today ((t (:foreground "#fdf6e3" :weight semi-bold :family "Inconsolata"))))
-  '(org-scheduled ((t (:foreground "#fdf6e3" :weight semi-bold :family "Inconsolata"))))
+  '(org-scheduled ((t (:foreground "#fdf6e3" :weight bold :family "Inconsolata"))))
 '(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
 '(org-property-value ((t (:height 0.9 :family "Accanthis ADF Std"))) t)
 '(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Accanthis ADF Std"))))
