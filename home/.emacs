@@ -316,7 +316,7 @@ If the new path's directories does not exist, create them."
 		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
 		       )
 		      ) 
-	  (tags-todo "-TODO=\"JESSE\"-TODO=\"WAITING\"+PRIORITY=\"B\""
+	  (tags-todo "-TODO=\"JESSE\"-TODO=\"WAITING\"+PRIORITY=\"B\"-STYLE=\"habit\""
 		     (
 		      (org-agenda-overriding-header "")
 		      (org-agenda-sorting-strategy '(todo-state-down priority-down tag-down))
@@ -330,7 +330,7 @@ If the new path's directories does not exist, create them."
 	  (todo "JESSE"
 		( (org-agenda-overriding-header "[JESSE]")
 		  ) )
-	  (tags-todo "+PRIORITY=\"C\""
+	  (tags-todo "+PRIORITY=\"C\"-STYLE=\"habit\""
 		     (
 		      (org-agenda-overriding-header " --- ")  
 		      (org-agenda-sorting-strategy '(tag-up))
@@ -410,9 +410,9 @@ If the new path's directories does not exist, create them."
 	(0.0 . (:foreground "#268bd2"))
 	))
 (setq org-priority-faces
-      '(( ?A . (:foreground "#dc322f" :weight demibold :family "Accanthis ADF Std" :height 1.1))
-	( ?B . ( :foreground "#b58900" :weight demibold :family "Accanthis ADF Std" :height 1.1))
-	( ?C . ( :foreground "#eee8d5":weight demibold :family "Accanthis ADF Std" :height 1.1))
+      '(( ?A . (:foreground "#dc322f" :weight demibold :family "Accanthis ADF Std" :height .9))
+	( ?B . ( :foreground "#b58900" :weight demibold :family "Accanthis ADF Std" :height .9))
+	( ?C . ( :foreground "#eee8d5":weight demibold :family "Accanthis ADF Std" :height .9))
 	))
 (setq org-tag-faces
       '(
