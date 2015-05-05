@@ -1,0 +1,38 @@
+
+;; ----- smex-history -----
+(
+ magit-status
+ describe-face
+ eval-defun
+ hl-line-mode
+ eval-buffer
+ customize-variable
+ list-packages
+)
+
+;; ----- smex-data -----
+(
+ (eval-region . 4)
+ (package-install . 4)
+ (eval-defun . 47)
+ (describe-char . 2)
+ (describe-face . 14)
+ (android-ant . 40)
+ (linum-mode . 2)
+ (replace-regexp . 6)
+ (rename-file . 5)
+ (rename-buffer . 1)
+ (delete-file . 1)
+ (ruby-mode . 15)
+ (my-org-archive-done-tasks . 4)
+ (my-org-archive-cancelled-tasks . 4)
+ (sudo-edit . 2)
+ (recover-this-file . 1)
+ (replace-string . 2)
+ (list-packages . 4)
+ (toggle-debug-on-error . 1)
+ (eval-buffer . 3)
+ (customize-variable . 2)
+ (hl-line-mode . 1)
+ (magit-status . 1)
+)

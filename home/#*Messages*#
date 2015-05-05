@@ -1,0 +1,53 @@
+
+Mark saved where search started
+Saving file /home/clara/.homesick/repos/dotfiles/home/.emacs...
+Wrote /home/clara/.homesick/repos/dotfiles/home/.emacs
+Loading os...done
+Loading os-github...done
+Starting new Ispell process [/usr/bin/aspell::default] ...
+No new items
+You're doing a great job!
+Press key for agenda command:
+Truncate long lines enabled
+org-agenda-skip: Wrong type argument: stringp, nil
+Mark saved where search started
+Saving file /home/clara/.homesick/repos/dotfiles/home/.emacs...
+Wrote /home/clara/.homesick/repos/dotfiles/home/.emacs
+Mark saved where search started
+Saving file /home/clara/.homesick/repos/dotfiles/home/.emacs...
+Wrote /home/clara/.homesick/repos/dotfiles/home/.emacs
+Quit
+(No changes need to be saved)
+Loading os...done
+Loading os-github...done
+No new items
+You're doing a great job!
+Press key for agenda command:
+Truncate long lines enabled
+org-agenda-skip: Wrong type argument: stringp, nil
+Saving file /home/clara/.homesick/repos/dotfiles/home/.emacs...
+Wrote /home/clara/.homesick/repos/dotfiles/home/.emacs
+Quit
+End of buffer [4 times]
+Beginning of buffer [18 times]
+End of buffer [3 times]
+completing-read-default: Command attempted to use minibuffer while in minibuffer
+Wrote /home/clara/.homesick/repos/dotfiles/home/*Messages*
+Press key for agenda command:
+Truncate long lines enabled
+org-agenda-skip: Wrong type argument: stringp, nil
+Mark set
+Beginning of buffer
+d is undefined
+e is undefined
+g is undefined
+Type "q" in help window to restore its previous buffer, C-M-v to scroll help.
+a is undefined
+b is undefined
+Quit
+l is undefined
+Quit
+(No changes need to be saved)
+Saving file /home/clara/.homesick/repos/dotfiles/home/.emacs...
+Wrote /home/clara/.homesick/repos/dotfiles/home/.emacs
+(No changes need to be saved)
