@@ -276,7 +276,7 @@ If the new path's directories does not exist, create them."
 ;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
 ;;     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(tag-up priority-down effort-down))
+(setq org-agenda-sorting-strategy '(priority-down effort-down tag-up))
 (setq org-agenda-include-all-todo t)
 (setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
@@ -419,17 +419,17 @@ If the new path's directories does not exist, create them."
 	))
 (setq org-tag-faces
       '(
-	("home" . "#eee8d5")
-	("computer" . "#859900")
+	("home" . (:inherit org-tag :foreground "#eee8d5" :weight demibold))
+	("computer" . (:inherit org-tag :foreground "#859900" :weight demibold))
 	("bedroom" . "#586e75")
 	("kitchen" . "#8394a6")
 	("diningroom" . "#93a1a1")
 	("frontroom" . "#657b83")
 	("office" .  "#586e75")
 	("malka".  "#fdf6e3")
-	("hp" .  "#b58900")
-	("phone" .  "#268bd2")
-	("para". "#073642")
+	("hp" .  (:inherit org-tag :foreground  "#b58900" :weight black))
+	("phone" .  "#d33682")
+	("para". "#268bd2")
 	("bathroom" .  "#93a1a1")
 	))
 
@@ -453,7 +453,7 @@ If the new path's directories does not exist, create them."
 '(org-property-value ((t (:height 0.9 :family "Accanthis ADF Std"))) t)
 '(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Accanthis ADF Std"))))
 '(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
-'(org-tag ((t (:foreground "dark gray" :weight normal :italic t :overline nil :height 0.95 :family "Accanthis ADF Std No3"))))
+'(org-tag ((t (:foreground "#eee8d5" :weight normal :italic t :overline nil :height 0.95 :family "Accanthis ADF Std No3" :width expanded))))
 '(org-todo ((t (:weight bold)))))
 
 (defun org-todo-toggle-yesterday ()
