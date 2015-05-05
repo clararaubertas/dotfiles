@@ -7,7 +7,8 @@
 [2014-07-06 Sun 13:53]
 
 ** TODO Pay the rent                                                    :hp:
-SCHEDULED: ;<2015-04-28 Tue +1m>
+SCHEDULED: <2015-05-28 Thu +1m>
+- State "DONE"       from "TODO"       [2015-05-04 Mon 23:01]
 - State "DONE"       from "TODO"       [2015-03-29 Sun 18:38]
 - State "DONE"       from "TODO"       [2015-03-02 Mon 13:40]
 - State "DONE"       from "TODO"       [2015-02-02 Mon 12:28]
@@ -27,7 +28,7 @@ SCHEDULED: ;<2015-04-28 Tue +1m>
 - State "DONE"       from "TODO"       [2013-11-01 Fri 15:39]
 :PROPERTIES:
 :ID:       c4e05332-19e6-43b4-91df-b01c963f23be
-:LAST_REPEAT: [2015-03-29 Sun 18:38]
+:LAST_REPEAT: [2015-05-04 Mon 23:01]
 :END:
 *
 ** TODO brush teeth                                          :home:bathroom:
