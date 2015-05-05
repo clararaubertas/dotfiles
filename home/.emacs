@@ -39,9 +39,7 @@
   (lambda () (rainbow-delimiters-mode 1)))
 (my-global-rainbow-delim-mode 1)
 
-(define-globalized-minor-mode my-global-ido-ubiquitous-mode ido-ubiquitous-mode
-  (lambda () (ido-ubiquitous-mode 1)))
-(my-global-ido-ubiquitous-mode 1)
+
 
 (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
   (lambda () (idle-highlight-mode 1)))
