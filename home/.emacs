@@ -449,7 +449,7 @@ If the new path's directories does not exist, create them."
 '(org-property-value ((t (:height 0.9 :family "Accanthis ADF Std"))) t)
 '(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Accanthis ADF Std"))))
 '(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
-'(org-tag ((t (:foreground "dark gray" :weight bold :height 0.9 :family "Accanthis ADF Std"))))
+'(org-tag ((t (:foreground "dark gray" :weight light :spacing 300 :italic t :height 0.9 :family "Accanthis ADF Std"))))
 '(org-todo ((t (:weight bold)))))
 
 (defun org-todo-toggle-yesterday ()
