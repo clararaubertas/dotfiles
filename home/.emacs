@@ -385,7 +385,7 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-tag nil :bold nil :foreground "#eee8d5" )
 
 (set-face-attribute 'org-habit-alert-face nil :background "#b58900"
-		    :bold t :strike-through nil :foreground "#b58900"
+		    :bold t :strike-through nil :foreground "#002b36"
 		    )
 (set-face-attribute 'org-habit-alert-future-face nil :background
 		    "#002b36" :strike-through nil :foreground "#cb4b16"
@@ -393,18 +393,18 @@ If the new path's directories does not exist, create them."
 (set-face-attribute 'org-habit-clear-face nil :background "#002b36"
 		    :strike-through nil :bold t )
 (set-face-attribute 'org-habit-clear-future-face nil :background
-		    "#268bd2" )
-(set-face-attribute 'org-habit-overdue-face nil :background "#d33682"
+		    "#839496" )
+(set-face-attribute 'org-habit-overdue-face nil :background "#dc322f"
 		    :strike-through nil :foreground
 		    "#073642" :bold t )
 (set-face-attribute 'org-habit-overdue-future-face nil :background
 		    "#073642" :strike-through nil :underline nil
 		     )
-(set-face-attribute 'org-habit-ready-face nil :background "#859900"
+(set-face-attribute 'org-habit-ready-face nil :background "#eee8d5"
 		    :foreground "#002b36" :bold nil 
 		    )
 (set-face-attribute 'org-habit-ready-future-face nil :background
-		    "#6c71c4" )
+		    "#586e75" )
 (setq org-habit-show-done-always-green t)
 (setq org-habit-today-glyph ?!)
 (setq org-habit-completed-glyph ?+)
@@ -417,9 +417,9 @@ If the new path's directories does not exist, create them."
 
 (setq org-habit-graph-column 35)
 
-(set-face-attribute 'org-scheduled-previously nil :foreground "#d33682"
+(set-face-attribute 'org-scheduled-previously nil :foreground "#dc322f"
 		    :bold t )
-(set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e5"
+(set-face-attribute 'org-scheduled-today nil    :foreground "#859900"
 		    :bold nil )
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198"
 		    :bold t)
@@ -433,12 +433,12 @@ If the new path's directories does not exist, create them."
 	))
 (setq org-priority-faces
       '(( ?A . (:foreground "#d33682" :weight bold))
-	( ?B . ( :foreground "#2aa198" :weight bold ))
+	( ?B . ( :foreground "#268bd2" :weight bold ))
 	( ?C . ( :foreground "#575757"))
 	))
 (setq org-tag-faces
       '(
-	("home" . (:background "#2aa198u"))
+	("home" . (:background "#2aa198"))
 	("computer" . (:background "#575757"))
 	("bedroom" . (:foreground "#2aa198"))
 	("kitchen" . (:foreground "#b58900"))
