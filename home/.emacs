@@ -412,9 +412,9 @@ If the new path's directories does not exist, create them."
 	(0.0 . (:foreground "#268bd2"))
 	))
 (setq org-priority-faces
-      '(( ?A . (:foreground "#d33682" :weight light :family "Accanthis ADF Std"))
-	( ?B . ( :foreground "#268bd2" :weight bold ))
-	( ?C . ( :foreground "#575757"))
+      '(( ?A . (:foreground "#dc322f" :weight demibold :family "Accanthis ADF Std"))
+	( ?B . ( :foreground "#b58900" :weight demibold :family "Accanthis ADF Std" ))
+	( ?C . ( :foreground "#eee8d5":weight demibold :family "Accanthis ADF Std"))
 	))
 (setq org-tag-faces
       '(
@@ -434,22 +434,24 @@ If the new path's directories does not exist, create them."
 
 (custom-set-faces
  '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3" :family "Accanthis ADF Std" :italic nil))) t)
+ '(org-agenda-date-today ((t (:weight semi-bold :height 1.2 :foreground "#073642" :background "#fdf6e3" :family "Accanthis ADF Std" :italic true))) t)
  '(org-date ((t ( :underline t :height 0.8 :family "Accanthis ADF Std "))))
  '(org-scheduled-previously ((t (:foreground "#dc322f" :bold t))))
-  '(org-scheduled-today ((t (:foreground "#eee8d5" :bold nil :family "Accanthis ADF Std "))))
+
 '(org-done ((t (:foreground "gray57" :weight light))))
-'(org-level-1 ((t (:weight semi-bold :height 1.1))))
-'(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1))))
+'(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Accanthis ADF Std "))))
+'(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :family "Accanthis ADF Std "))))
 '(org-warning-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :foreground "#b58900"))))
-'(org-level-3 ((t (:inherit outline-3 :weight bold))))
+'(org-level-3 ((t (:inherit outline-3 :weight bold :family "Accanthis ADF Std "))))
 '(org-upcoming-deadline ((t (:inherit outline-3 :weight semi-bold))))
-'(org-level-5 ((t (:inherit outline-5 ))))
+'(org-level-5 ((t (:inherit outline-5 :family "Accanthis ADF Std "))))
 '(org-link ((t (:inherit link :weight normal))))
+  '(org-scheduled-today ((t (:foreground "#eee8d5" :bold nil :family "Inconsolata"))))
 '(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
 '(org-property-value ((t (:height 0.9 :family "Accanthis ADF Std"))) t)
 '(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Accanthis ADF Std"))))
 '(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
-'(org-tag ((t (:foreground "dark gray" :weight light :spacing 300 :italic t :height 0.9 :family "Accanthis ADF Std"))))
+'(org-tag ((t (:foreground "dark gray" :weight semibold :italic t :overline nil :height 0.95 :family "Accanthis ADF Std"))))
 '(org-todo ((t (:weight bold)))))
 
 (defun org-todo-toggle-yesterday ()
