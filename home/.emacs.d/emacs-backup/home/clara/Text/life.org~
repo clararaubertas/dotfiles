@@ -2611,7 +2611,7 @@ SCHEDULED: <2015-05-13 Wed +1m>
 :ID:       de19a508-00c8-4d78-bc8c-cfcf12a95625
 :END:
 ** TODO [#B] wash sheets                                              :home:
-SCHEDULED: <2015-05-03 Sun .+1m>
+SCHEDULED: <2015-05-19 Tue>
 - State "CANCELLED"  from "TODO"       [2015-04-03 Fri 10:19]
 - State "DONE"       from "TODO"       [2015-03-02 Mon 22:55]
 - State "DONE"       from "TODO"       [2015-01-25 Sun 13:35]

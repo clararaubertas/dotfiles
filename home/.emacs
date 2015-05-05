@@ -298,7 +298,7 @@ If the new path's directories does not exist, create them."
         ;; wow such 
         ("p" "wow such agenda"
          (
-	  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"A\""
+	  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"A\"-STYLE=\"habit\""
 		     (
 		      (org-agenda-overriding-header " -everys thang:-")
 			;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
