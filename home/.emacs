@@ -49,10 +49,6 @@
   (lambda () (blink-cursor-mode 1)))
 (my-global-blink-cursor-mode 1)
 
-(define-globalized-minor-mode my-global-smart-cursor-color-mode smart-cursor-color-mode
-  (lambda () (smart-cursor-color-mode 1)))
-(my-global-smart-cursor-color-mode 1)
-
 
 (setq idle-highlight-idle-time 0
 )
