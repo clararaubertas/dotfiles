@@ -405,15 +405,7 @@ If the new path's directories does not exist, create them."
 
 (setq org-habit-graph-column 45)
 (setq line-spacing '0.1)
-(set-face-attribute 'org-scheduled-previously nil :foreground "#dc322f"
-		    :bold t )
-(set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e3p"
-		    :bold nil :underline nil :line-height 13)
-(set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198"
-		    :bold t)
-(set-face-attribute 'org-tag nil :bold t :background "#002b36" :foreground "#839496")
 
-(set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-agenda-deadline-faces
       '((1.0 . (:foreground "#d33682"))
 	(0.7 . (:foreground "#b58900"))
@@ -439,20 +431,23 @@ If the new path's directories does not exist, create them."
 	("para". "#073642")
 	("bathroom" .  "#93a1a1")
 	))
-(add-hook 'org-mode-hook (lambda () (variable-pitch-mode t)))
 
 (custom-set-faces
- '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3"))) t)
-'(org-date ((t (:foreground "Purple" :underline t :height 0.8 :family "Fira Sans Bold"))))
+ '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3" :family "Fira Sans" :italic nil))) t)
+ '(org-date ((t (:foreground "Purple" :underline t :height 0.8 :family "Fira Sans "))))
+ '(org-scheduled-previously ((t (:foreground "#dc322f" :bold t))))
+  '(org-scheduled-today ((t (:foreground "#eee8d5" :bold nil :family "Fira Sans "))))
 '(org-done ((t (:foreground "gray57" :weight light))))
-'(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Fira Sans Light"))))
+'(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Fira Sans"))))
 '(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1))))
-'(org-level-3 ((t (:inherit outline-3 :weight bold :family "Fira Sans Light"))))
-'(org-level-5 ((t (:inherit outline-5 :family "Fira Sans Light"))))
+'(org-warning-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :foreground "#b58900"))))
+'(org-level-3 ((t (:inherit outline-3 :weight bold :family "Fira Sans"))))
+'(org-upcoming-deadline ((t (:inherit outline-3 :weight bold :family "Fira Sans "))))
+'(org-level-5 ((t (:inherit outline-5 :family "Fira Sans"))))
 '(org-link ((t (:inherit link :weight normal))))
 '(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
-'(org-property-value ((t (:height 0.9 :family "Fira Sans Light"))) t)
-'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Fira Sans Light"))))
+'(org-property-value ((t (:height 0.9 :family "Fira Sans"))) t)
+'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Fira Sans"))))
 '(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
 '(org-tag ((t (:foreground "dark gray" :weight bold :height 0.9 :family "Fira Sans Bold"))))
 '(org-todo ((t (:weight bold)))))
