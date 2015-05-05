@@ -413,7 +413,8 @@ If the new path's directories does not exist, create them."
 ;; (make-face 'agenda-face)
 ;;(set-face-attribute 'agenda-face nil :height 1.5) 
 
-(add-hook 'org-finalize-agenda-hook (lambda ()  (-face)))
+(add-hook 'org-finalize-agenda-hook
+          (lambda ()  (setq line-spacing '0.2)))
 
 (setq org-habit-graph-column 45)
 (setq line-spacing '0.1)
@@ -438,8 +439,8 @@ If the new path's directories does not exist, create them."
 	))
 (setq org-tag-faces
       '(
-	("home" . (:background "#586e75" :bold t :foreground "#fdf6e3"))
-	("computer" . (:background "#575757"))
+	("home" . "purple")
+	("computer" . "grey57")
 	("bedroom" . (:foreground "#2aa198"))
 	("kitchen" . (:foreground "#b58900"))
 	("diningroom" . (:foreground "#6c71c4"))
@@ -451,7 +452,23 @@ If the new path's directories does not exist, create them."
 	("para". (:weight bold :background "#073642"))
 	("bathroom" . (:foreground "#859900"))
 	))
+(add-hook 'org-mode-hook (lambda () (variable-pitch-mode t)))
 
+(custom-set-faces
+ '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3"))) t)
+'(org-date ((t (:foreground "Purple" :underline t :height 0.8 :family "Helvetica Neue"))))
+'(org-done ((t (:foreground "gray57" :weight light))))
+'(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Helvetica Neue"))))
+'(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1))))
+'(org-level-3 ((t (:inherit outline-3 :weight bold :family "Helvetica Neue"))))
+'(org-level-5 ((t (:inherit outline-5 :family "Helvetica Neue"))))
+'(org-link ((t (:inherit link :weight normal))))
+'(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
+'(org-property-value ((t (:height 0.9 :family "Helvetica Neue"))) t)
+'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Helvetica Neue"))))
+'(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
+'(org-tag ((t (:foreground "dark gray" :weight bold :height 0.8))))
+'(org-todo ((t (:foreground "#e67e22" :weight bold)))))
 
 (defun org-todo-toggle-yesterday ()
   ;; this function is interactive, meaning a "command" that we call
