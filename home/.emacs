@@ -25,7 +25,7 @@
 (require 'org-agenda-property)
 (require 'android-mode)
 
-(custom-set-variables '(android-mode-sdk-dir "~/opt/android"))
+
 (projectile-global-mode)
 
 ;;;;;;;;;; ;;;;;;;;;;
@@ -241,6 +241,9 @@ If the new path's directories does not exist, create them."
 (defun my-org-archive-cancelled-tasks ()
   (interactive)
   (org-map-entries 'org-archive-subtree "/CANCELLED" 'file))
+
+
+(require 'org-install)
 
 (require 'org-habit)
 
