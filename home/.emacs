@@ -31,28 +31,26 @@
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
-(define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
-  (lambda () (rainbow-mode 1)))
-(my-global-rainbow-mode 1)
+ (define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
+   (lambda () (rainbow-mode 1)))
+ (my-global-rainbow-mode 1)
 
-(define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
-  (lambda () (rainbow-delimiters-mode 1)))
-(my-global-rainbow-delim-mode 1)
-
-
-
-(define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
-  (lambda () (idle-highlight-mode 1)))
-(my-global-idle-highlight-mode 1)
-
-(define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
-  (lambda () (blink-cursor-mode 1)))
-(my-global-blink-cursor-mode 1)
+ (define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
+   (lambda () (rainbow-delimiters-mode 1)))
+ (my-global-rainbow-delim-mode 1)
 
 
+ (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
+   (lambda () (idle-highlight-mode 1)))
+ (my-global-idle-highlight-mode 1)
 
-(setq idle-highlight-idle-time 0
-)
+;; (define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
+;;   (lambda () (blink-cursor-mode 1)))
+;; (my-global-blink-cursor-mode 1)
+
+
+
+(setq idle-highlight-idle-time 0)
 
 
 (global-font-lock-mode t)
