@@ -419,11 +419,11 @@ If the new path's directories does not exist, create them."
 
 (set-face-attribute 'org-scheduled-previously nil :foreground "#dc322f"
 		    :bold t )
-(set-face-attribute 'org-scheduled-today nil    :foreground "#859900"
+(set-face-attribute 'org-scheduled-today nil    :foreground "#fdf6e3p"
 		    :bold nil )
 (set-face-attribute 'org-upcoming-deadline nil :foreground "#2aa198"
 		    :bold t)
-
+(set-face-attribute 'org-tag nil :bold t :background "#002b36" :foreground "#839496")
 
 (set-face-attribute 'org-warning nil :foreground "#b58900"  )
 (setq org-agenda-deadline-faces
@@ -438,13 +438,13 @@ If the new path's directories does not exist, create them."
 	))
 (setq org-tag-faces
       '(
-	("home" . (:background "#2aa198"))
+	("home" . (:background "#586e75" :bold t :foreground "#fdf6e3"))
 	("computer" . (:background "#575757"))
 	("bedroom" . (:foreground "#2aa198"))
 	("kitchen" . (:foreground "#b58900"))
 	("diningroom" . (:foreground "#6c71c4"))
 	("frontroom" . (:foreground "#cb4b16"))
-	("office" . (:foreground "#859900"))
+	("office" . (:foreground "#859900"))p
 	("malka". (:weight bold))
 	("hp" . (:foreground "#d33682"))
 	("phone" . (:foreground "#d33682"))
