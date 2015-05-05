@@ -398,10 +398,8 @@ If the new path's directories does not exist, create them."
 (setq org-habit-today-glyph ?!)
 (setq org-habit-completed-glyph ?+)
 
-
-
 (add-hook 'org-finalize-agenda-hook
-          (lambda ()  (setq line-spacing '0.2)))
+          (lambda ()  (setq line-spacing '0.1)))
 
 (setq org-habit-graph-column 45)
 (setq line-spacing '0.1)
@@ -412,9 +410,9 @@ If the new path's directories does not exist, create them."
 	(0.0 . (:foreground "#268bd2"))
 	))
 (setq org-priority-faces
-      '(( ?A . (:foreground "#dc322f" :weight demibold :family "Accanthis ADF Std"))
-	( ?B . ( :foreground "#b58900" :weight demibold :family "Accanthis ADF Std" ))
-	( ?C . ( :foreground "#eee8d5":weight demibold :family "Accanthis ADF Std"))
+      '(( ?A . (:foreground "#dc322f" :weight demibold :family "Accanthis ADF Std" :height 1.1))
+	( ?B . ( :foreground "#b58900" :weight demibold :family "Accanthis ADF Std" :height 1.1))
+	( ?C . ( :foreground "#eee8d5":weight demibold :family "Accanthis ADF Std" :height 1.1))
 	))
 (setq org-tag-faces
       '(
@@ -434,10 +432,11 @@ If the new path's directories does not exist, create them."
 
 (custom-set-faces
  '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3" :family "Accanthis ADF Std" :italic nil))) t)
- '(org-agenda-date ((t (:weight normal :height 1.1 :background "#002b36" :foreground "#fdf6e3" :family "Accanthis ADF Std" :italic true :underline t))) t)
+ '(org-agenda-date ((t (:weight normal :height 1.1 :background "#002b36" :foreground "#eee8d5" :family "Accanthis ADF Std" :italic true :underline t))) t)
  '(org-agenda-date-today ((t (:inherit org-agenda-date :height 1.2 :italic t :family "Accanthis ADF Std" :foreground "#002b36" :background "#eee8d5" ))))
  '(org-scheduled-previously ((t (:foreground "#dc322f" :bold t))))
-'(org-done ((t (:foreground "gray57" :weight light))))
+
+'(org-done ((t (:foreground "gray57" :weight lightn))))
 '(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Accanthis ADF Std "))))
 '(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :family "Accanthis ADF Std "))))
 '(org-warning-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :foreground "#b58900"))))
@@ -445,12 +444,13 @@ If the new path's directories does not exist, create them."
 '(org-upcoming-deadline ((t (:inherit outline-3 :weight semi-bold))))
 '(org-level-5 ((t (:inherit outline-5 :family "Accanthis ADF Std "))))
 '(org-link ((t (:inherit link :weight normal))))
-  '(org-scheduled-today ((t (:foreground "#fdf6e3" :weight semi-bold :family "Inconsolata"))))
+'(org-scheduled-today ((t (:foreground "#fdf6e3" :weight semi-bold :family "Inconsolata"))))
+  '(org-todo ((t (:foreground "#fdf6e3" :weight semi-bold :family "Inconsolata"))))
 '(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
 '(org-property-value ((t (:height 0.9 :family "Accanthis ADF Std"))) t)
 '(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Accanthis ADF Std"))))
 '(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
-'(org-tag ((t (:foreground "dark gray" :weight semibold :italic t :overline nil :height 0.95 :family "Accanthis ADF Std"))))
+'(org-tag ((t (:foreground "dark gray" :weight normal :italic t :overline nil :height 0.95 :family "Accanthis ADF Std No3"))))
 '(org-todo ((t (:weight bold)))))
 
 (defun org-todo-toggle-yesterday ()
