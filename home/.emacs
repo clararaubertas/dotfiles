@@ -14,7 +14,7 @@
 (add-to-list 'package-archives
                '("org" . "http://orgmode.org/elpa/"))
 
-(add-to-list 'load-path "~/.emacs.d/")
+
 (add-to-list 'load-path "~/.emacs.d/*")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/org-sync")
@@ -31,7 +31,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(android-mode-sdk-dir "~/opt/android")
-)
+ '(org-habit-graph-column 35))
 (projectile-global-mode)
 
 ;;;;;;;;;; ;;;;;;;;;;
@@ -543,23 +543,24 @@ With argument ARG, do this that many times."
 
 
 (custom-set-faces
-
-'(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2))) t)
-'(org-date ((t (:foreground "Purple" :underline t :height 0.8 :family "Helvetica Neue"))))
-'(org-done ((t (:foreground "gray57" :weight light))))
-'(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Helvetica Neue"))))
-'(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1))))
-'(org-level-3 ((t (:inherit outline-3 :weight bold :family "Helvetica Neue"))))
-'(org-level-5 ((t (:inherit outline-5 :family "Helvetica Neue"))))
-'(org-link ((t (:inherit link :weight normal))))
-'(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
-'(org-property-value ((t (:height 0.9 :family "Helvetica Neue"))) t)
-'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Helvetica Neue"))))
-'(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
-'(org-tag ((t (:foreground "dark gray" :weight bold :height 0.8))))
-'(org-todo ((t (:foreground "#e67e22" :weight bold))))
-
- )
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-date ((t (:inherit org-agenda-structure :weight semi-bold :height 1.2))) t)
+ '(org-date ((t (:foreground "Purple" :underline t :height 0.8 :family "Helvetica Neue"))))
+ '(org-done ((t (:foreground "gray57" :weight light))))
+ '(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Helvetica Neue"))))
+ '(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1))))
+ '(org-level-3 ((t (:inherit outline-3 :weight bold :family "Helvetica Neue"))))
+ '(org-level-5 ((t (:inherit outline-5 :family "Helvetica Neue"))))
+ '(org-link ((t (:inherit link :weight normal))))
+ '(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
+ '(org-property-value ((t (:height 0.9 :family "Helvetica Neue"))) t)
+ '(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Helvetica Neue"))))
+ '(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
+ '(org-tag ((t (:foreground "dark gray" :weight bold :height 0.8))))
+ '(org-todo ((t (:foreground "#e67e22" :weight bold)))))
 
 
 
