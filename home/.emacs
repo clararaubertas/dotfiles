@@ -439,7 +439,7 @@ If the new path's directories does not exist, create them."
 (setq org-agenda-deadline-faces
       '((1.0 . (:foreground "#d33682"))
 	(0.7 . (:foreground "#b58900"))
-	(0.0 . (:foreground "#2aa198"))
+	(0.0 . (:fevoreground "#2aa198"))
 	))
 (setq org-priority-faces
       '(( ?A . (:foreground "#d33682" :weight bold))
