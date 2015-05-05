@@ -341,11 +341,11 @@ If the new path's directories does not exist, create them."
 	  (
 	   (org-agenda-compact-blocks t)
 	   (org-agenda-show-inherited-tags nil)
-	   (org-agenda-tags-column 55)
+	   (org-agenda-tags-column 70)
 	   (org-agenda-skip-entry-if 'scheduled)
 	   (org-fast-tag-selection-single-key (quote expert))
-	   (org-habit-following-days 5)
-	   (org-habit-preceding-days 10) 
+	   (org-habit-following-days 8)
+	   (org-habit-preceding-days 12) 
 	   (org-agenda-todo-keyword-format " + ")
 	   (org-agenda-scheduled-leaders '("0d" "%dx"))
 	   (org-agenda-deadline-leaders '("0d" "%dd"))
@@ -415,7 +415,7 @@ If the new path's directories does not exist, create them."
 
 ;; (add-hook 'org-finalize-agenda-hook (lambda ()  (buffer-face-set 'agenda-face)))
 
-(setq org-habit-graph-column 35)
+(setq org-habit-graph-column 45)
 
 (set-face-attribute 'org-scheduled-previously nil :foreground "#dc322f"
 		    :bold t )
@@ -444,12 +444,12 @@ If the new path's directories does not exist, create them."
 	("kitchen" . (:foreground "#b58900"))
 	("diningroom" . (:foreground "#6c71c4"))
 	("frontroom" . (:foreground "#cb4b16"))
-	("office" . (:foreground "#859900"))p
+	("office" . (:foreground "#268bd2"))p
 	("malka". (:weight bold))
 	("hp" . (:foreground "#d33682"))
 	("phone" . (:foreground "#d33682"))
 	("para". (:weight bold :background "#073642"))
-	("bathroom" . (:foreground "#268bd2"))
+	("bathroom" . (:foreground "#859900"))
 	))
 
 
