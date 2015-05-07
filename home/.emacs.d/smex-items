@@ -1,22 +1,22 @@
 
 ;; ----- smex-history -----
 (
- magit-status
- describe-face
+ replace-string
  eval-defun
- hl-line-mode
- eval-buffer
- customize-variable
- list-packages
+ describe-face
+ vc-dir
+ customize-face
+ rainbow-mode
+ magit-status
 )
 
 ;; ----- smex-data -----
 (
  (eval-region . 4)
  (package-install . 4)
- (eval-defun . 47)
+ (eval-defun . 107)
  (describe-char . 2)
- (describe-face . 14)
+ (describe-face . 29)
  (android-ant . 40)
  (linum-mode . 2)
  (replace-regexp . 6)
@@ -28,11 +28,14 @@
  (my-org-archive-cancelled-tasks . 4)
  (sudo-edit . 2)
  (recover-this-file . 1)
- (replace-string . 2)
+ (replace-string . 6)
  (list-packages . 4)
  (toggle-debug-on-error . 1)
  (eval-buffer . 3)
  (customize-variable . 2)
  (hl-line-mode . 1)
  (magit-status . 1)
+ (rainbow-mode . 1)
+ (customize-face . 2)
+ (vc-dir . 1)
 )
