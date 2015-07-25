@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ sudo-edit
+ org-todo-yesterday
+ copyright-fix-years
+ rename-file
  replace-string
- eval-defun
- describe-face
- vc-dir
- customize-face
- rainbow-mode
- magit-status
+ new-frame
+ copy-file
 )
 
 ;; ----- smex-data -----
@@ -20,22 +20,29 @@
  (android-ant . 40)
  (linum-mode . 2)
  (replace-regexp . 6)
- (rename-file . 5)
+ (rename-file . 6)
  (rename-buffer . 1)
  (delete-file . 1)
- (ruby-mode . 15)
+ (ruby-mode . 16)
  (my-org-archive-done-tasks . 4)
  (my-org-archive-cancelled-tasks . 4)
- (sudo-edit . 2)
- (recover-this-file . 1)
- (replace-string . 6)
+ (sudo-edit . 10)
+ (recover-this-file . 6)
+ (replace-string . 7)
  (list-packages . 4)
  (toggle-debug-on-error . 1)
- (eval-buffer . 3)
+ (eval-buffer . 5)
  (customize-variable . 2)
  (hl-line-mode . 1)
  (magit-status . 1)
- (rainbow-mode . 1)
+ (rainbow-mode . 2)
  (customize-face . 2)
  (vc-dir . 1)
+ (org-todo-toggle-yesterday . 2)
+ (org-todo-yesterday . 9)
+ (json-pretty-print . 2)
+ (json-pretty-print-buffer . 4)
+ (copy-file . 4)
+ (new-frame . 1)
+ (copyright-fix-years . 1)
 )

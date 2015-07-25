@@ -14,7 +14,7 @@
 (add-to-list 'package-archives
                '("org" . "http://orgmode.org/elpa/"))
 
-(add-to-list 'load-path "~/.emacs.d/")
+
 (add-to-list 'load-path "~/.emacs.d/*")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/org-sync")
@@ -31,7 +31,7 @@
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
-
+(set-face-attribute 'default t :font "PT Mono-13" )
 
  (define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
    (lambda () (rainbow-delimiters-mode 1)))
@@ -251,7 +251,7 @@ If the new path's directories does not exist, create them."
 (setq org-mobile-inbox-for-pull "~/Text/orgmob")
 (require 'org-mobile-sync)
 (org-mobile-sync-mode 1)
-(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/para" "~/Text/shopping.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org")))
+(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/shopping.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org")))
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 
@@ -434,26 +434,26 @@ If the new path's directories does not exist, create them."
 	))
 
 (custom-set-faces
- '(org-agenda-date ((t (:weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3" :family "Inconsolata" :italic nil))) t)
- '(org-agenda-structure ((t (:weight normal :height 1.5 :background "#002b36" :foreground "#eee8d5" :family "Accanthis ADF Std" :italic true :underline nil :weight semibold))) t)
- '(org-agenda-date ((t (:weight normal :height 1.1 :background "#002b36" :foreground "#eee8d5" :family "Accanthis ADF Std" :italic true :underline t))) t)
- '(org-agenda-date-today ((t (:inherit org-agenda-date :height 1.2 :italic t :family "Accanthis ADF Std" :foreground "#002b36" :background "#eee8d5" ))))
+ '(org-agenda-date ((t (:weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3" :italic nil))) t)
+ '(org-agenda-structure ((t (:weight normal :height 1.5 :background "#002b36" :foreground "#eee8d5"   :italic true :underline nil :weight semibold))) t)
+ '(org-agenda-date ((t (:weight normal :height 1.1 :background "#002b36" :foreground "#eee8d5"   :italic true :underline t))) t)
+ '(org-agenda-date-today ((t (:inherit org-agenda-date :height 1.2 :italic t   :foreground "#002b36" :background "#eee8d5" ))))
  '(org-scheduled-previously ((t (:foreground "#dc322f" :weight bold))))
 '(org-done ((t (:foreground "gray57" :weight light))))
-'(org-level-1 ((t (:weight semi-bold :height 1.1 :family "Accanthis ADF Std "))))
+'(org-level-1 ((t (:weight semi-bold :height 1.1 ))))
 '(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :family "Accanthis ADF Std "))))
 '(org-warning-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :foreground "#b58900"))))
-'(org-level-3 ((t (:inherit outline-3 :weight bold :family "Accanthis ADF Std "))))
+'(org-level-3 ((t (:inherit outline-3 :weight bold))))
 '(org-upcoming-deadline ((t (:inherit outline-3 :weight semi-bold))))
-'(org-level-5 ((t (:inherit outline-5 :family "Accanthis ADF Std "))))
+'(org-level-5 ((t (:inherit outline-5 :family ))))
 '(org-link ((t (:inherit link :weight normal))))
-'(org-scheduled-today ((t (:foreground "#fdf6e3" :weight semi-bold :family "Inconsolata"))))
-  '(org-scheduled ((t (:foreground "#fdf6e3" :weight bold :family "Inconsolata"))))
+'(org-scheduled-today ((t (:foreground "#fdf6e3" :weight semi-bold ))))
+  '(org-scheduled ((t (:foreground "#fdf6e3" :weight bold ))))
 '(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
-'(org-property-value ((t (:height 0.9 :family "Accanthis ADF Std"))) t)
-'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8 :family "Accanthis ADF Std"))))
-'(org-table ((t (:foreground "dim gray" :height 0.9 :family "Menlo"))))
-'(org-tag ((t (:foreground "#eee8d5" :weight normal :italic t :overline nil :height 0.95 :family "Accanthis ADF Std No3" :width expanded))))
+'(org-property-value ((t (:height 0.9 ))) t)
+'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8))))
+'(org-table ((t (:foreground "dim gray" :height 0.9 ))))
+'(org-tag ((t (:foreground "#eee8d5" :weight normal :italic t :overline nil :height 0.95   :width expanded))))
 '(org-todo ((t (:weight bold)))))
 
 (defun org-todo-toggle-yesterday ()
@@ -554,6 +554,9 @@ With argument ARG, do this that many times."
 ;;;;;;;;;; IX. Text Mode ;;;;;;;;;;
 (add-hook 'text-mode-hook 'flyspell-mode)
 ;;;;;;;;;; ;;;;;;;;;;
+
+(setq magit-last-seen-setup-instructions "1.4.0")
+
 
 ;;;;;;;;;; X. Remove annoying defaults, provide encouragement ;;;;;;;;;;
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
