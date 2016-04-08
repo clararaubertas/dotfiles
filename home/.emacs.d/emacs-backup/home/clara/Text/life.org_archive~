@@ -16469,3 +16469,51 @@ SCHEDULED: <2015-04-10 Fri>
 :ARCHIVE_CATEGORY: life
 :ARCHIVE_TODO: DONE
 :END:
+
+* TODO charge tablet                                           :home:bedroom:
+SCHEDULED: <2015-04-27 Mon .+1d/2d>
+- State "CANCELLED"  from "TODO"       [2015-04-26 Sun 11:52]
+- State "DONE"       from "TODO"       [2015-04-25 Sat 16:24]
+- State "DONE"       from "TODO"       [2015-04-24 Fri 13:25]
+- State "DONE"       from "TODO"       [2015-04-22 Wed 12:29]
+- State "DONE"       from "TODO"       [2015-04-21 Tue 11:35]
+- State "DONE"       from "TODO"       [2015-04-20 Mon 13:42]
+- State "DONE"       from "TODO"       [2015-04-17 Fri 12:02]
+- State "DONE"       from "TODO"       [2015-04-15 Wed 10:58]
+- State "DONE"       from "TODO"       [2015-04-14 Tue 12:43]
+- State "DONE"       from "TODO"       [2015-04-13 Mon 13:33]
+- State "DONE"       from "TODO"       [2015-04-11 Sat 19:38]
+- State "DONE"       from "TODO"       [2015-04-10 Fri 15:26]
+- State "DONE"       from "TODO"       [2015-04-09 Thu 11:12]
+- State "DONE"       from "TODO"       [2015-04-08 Wed 23:10]
+- State "DONE"       from "TODO"       [2015-04-07 Tue 12:02]
+- State "DONE"       from "TODO"       [2015-04-05 Sun 10:45]
+- State "DONE"       from "TODO"       [2015-04-03 Fri 10:18]
+:PROPERTIES:
+:ID:       022385a2-4009-4e86-921f-e2ba0f1a9344
+:LAST_REPEAT: [2015-04-26 Sun 11:52]
+:Effort:   2
+:ARCHIVE_TIME: 2015-04-27 Mon 12:09
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: TODO
+:END:
+
+* TODO wipe down kitchen                                       :home:kitchen:
+SCHEDULED: <2015-04-27 Mon .+3d/4d>
+- State "CANCELLED"  from "TODO"       [2015-04-24 Fri 18:38]
+- State "DONE"       from "TODO"       [2015-04-14 Tue 13:55]
+- State "CANCELLED"  from "TODO"       [2015-04-03 Fri 10:19]
+- State "DONE"       from "TODO"       [2015-03-28 Sat 18:48]
+:PROPERTIES:
+:ID:       6fc1e42f-a261-4530-a930-0d9ff59ea03e
+:LAST_REPEAT: [2015-04-24 Fri 18:38]
+:STYLE:    habit
+:Effort:   10
+:ARCHIVE_TIME: 2015-05-03 Sun 18:52
+:ARCHIVE_FILE: ~/Text/life.org
+:ARCHIVE_OLPATH: Everys Thang
+:ARCHIVE_CATEGORY: life
+:ARCHIVE_TODO: TODO
+:END:

@@ -3,27 +3,45 @@
 ;;;;;;;;;; I. Package Management ;;;;;;;;;;
 
 (package-initialize)
+(require 'org)
 (add-to-list 'package-archives
              '("ELPA" . "http://tromey.com/elpa/")) 
 (add-to-list 'package-archives
-               '("gnu" . "http://elpa.gnu.org/packages/"))
+             '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives
-               '("marmalade" . "http://marmalade-repo.org/packages/"))
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives
-               '("melpa" . "http://melpa.milkbox.net/packages/"))
+             '("melpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives
-               '("org" . "http://orgmode.org/elpa/"))
+             '("org" . "http://orgmode.org/elpa/"))
 
 
 (add-to-list 'load-path "~/.emacs.d/*")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
+
 (add-to-list 'load-path "~/.emacs.d/org-sync")
 
+(load "~/.emacs.d/filenotify.el")
+
+
+(setq solarized-use-variable-pitch nil)
+
+(setq tex-command "pdflatex")
+(defun tex-view ()
+  (interactive)
+  (tex-send-command "evince" (tex-append tex-print-file ".pdf")))
+
 (mapc 'load
-       '("os" "os-github"))
+      '("os" "os-github"))
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
 (require 'android-mode)
+(setq android-mode-builder 'gradle)
+
+
+(defun android-tool-path (name)
+  (concat "/home/clara/android-sdk-linux/tools/" name)
+  )
 
 
 (projectile-global-mode)
@@ -31,16 +49,17 @@
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
-(set-face-attribute 'default t :font "PT Mono-13" )
-
- (define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
-   (lambda () (rainbow-delimiters-mode 1)))
- (my-global-rainbow-delim-mode 1)
+(set-frame-font "Input Mono Light-14" )
 
 
- (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
-   (lambda () (idle-highlight-mode 1)))
- (my-global-idle-highlight-mode 1)
+(define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
+  (lambda () (rainbow-delimiters-mode 1)))
+(my-global-rainbow-delim-mode 1)
+
+
+(define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
+  (lambda () (idle-highlight-mode 1)))
+(my-global-idle-highlight-mode 1)
 
 (define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
   (lambda () (blink-cursor-mode 1)))
@@ -56,16 +75,17 @@
 
 (add-hook 'prog-mode-hook 'paredit-mode)
 
-(load-theme 'solarized-dark t)
-(set-face-foreground 'default "#fdf6e3") ; Normal
-(set-face-foreground 'mode-line "#859900")
-(set-face-foreground 'mode-line-inactive "#2aa198")
-(set-face-background 'highlight "#073642")
-(set-face-foreground 'highlight nil)
-(set-face-background 'idle-highlight "#859900")
-(set-face-foreground 'idle-highlight nil)
+
+(load-theme 'solarized-light t)
+(set-face-foreground 'default "#002b36") ; Normal
+                                        ; (set-face-foreground 'mode-line "#859900")
+                                        ; (set-face-foreground 'mode-line-inactive "#2aa198")
+                                        ; (set-face-background 'highlight "#073642")
+                                        ; (set-face-foreground 'highlight nil)
+                                        ; (set-face-background 'idle-highlight "#859900")
+                                        ; (set-face-foreground 'idle-highlight nil)
 (setq default-frame-alist
-      '((background-color . "#002b36")))
+      '((background-color . "#fdf6e3")))
 
 (defvar blink-cursor-colors (list "#b58900" "#859900" "#268bd2")
   "On each blink the cursor will cycle to the next color in this list.")
@@ -87,45 +107,146 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
 (setq default-frame-alist
       '((background-color . "#002b36")))
 
+;; some fun stuff
+(require 'zone)
+;;(setq zone-programs [zone-pgm-rotate])
+(setq zone-programs [zone-pgm-putz-with-case zone-pgm-drip-fretfully zone-pgm-random-life])
+(zone-when-idle 120)
+(highlight-tail-mode)
+;;(require 'smooth-scrolling)
+
+
+;; some modeline stuff
+(set-face-attribute 'mode-line nil :font "Input Mono Light-12")
+(setq nyan-bar-length 12)
+(nyan-mode)
+
+(set-face-background 'mode-line "#073642")
+(set-face-foreground 'mode-line "#eee8d5")
+
+(defun shorten-directory (dir max-length)
+  "Show up to `max-length' characters of a directory name `dir'."
+  (let ((path (reverse (split-string (abbreviate-file-name dir) "/")))
+        (output ""))
+    (when (and path (equal "" (car path)))
+      (setq path (cdr path)))
+    (while (and path (< (length output) (- max-length 4)))
+      (setq output (concat (car path) "/" output))
+      (setq path (cdr path)))
+    (when path
+      (setq output (concat "…/" output)))
+    output))
+
+(defun shorten-modes (modelist max-length)
+  "Show up to `max-length' characters of a mode list `modelist'."
+  (let ((path (reverse (split-string modelist " ")))
+        (output ""))
+    (when (and path (equal "" (car path)))
+      (setq path (cdr path)))
+    (while (and path (< (length output) (- max-length 4)))
+      (setq output (concat (car path) " " output))
+      (setq path (cdr path)))
+    (when path
+      (setq output (concat "…" output "…")))
+    output))
+
+(require 'battery)
+(defun battery-level ()
+  (string-to-number (shell-command-to-string "echo \"$(acpi | perl -pe 's/.*?,//' | perl -pe 's/%//')
+\"")))
+
+(defvar battery-status-function 'battery-level)
+
+
+(setq-default mode-line-format
+	      '("%e"
+                (:eval
+                 (let* (
+                        (bat (funcall 'battery-level))
+                        (index (cl-position-if (lambda (e) (> bat e)) '(87 75 62 50 37 25 12 7 -1)))
+                        (str (nth index '(" █ " " ▇ " " ▆ " " ▅ " " ▄ " " ▃ " " ▂ " " ▁ " " ! ")))
+                        (color (nth index '("#859900" "#909900" "#aa9900" "#b09000" "#b58900" "#c17a23" "#c96841" "#cb4b16" "#dc322f")))
+                        )
+                   (propertize str 'face (list :foreground color :box (if (<= bat 7) color nil)))
+                   )
+                 )
+                
+		(:eval (if (buffer-modified-p)
+			   (propertize "⚠" 'face 'error)
+                          " "
+                         )
+                       )
+                (:eval (if buffer-read-only
+			   (propertize "✘" 'face 'error)
+                          " "
+                           ))
+                " "
+                (:propertize (:eval (shorten-directory default-directory 20) )
+                             face (:foreground "#268bd2" :weight bold))
+                (:propertize "%b"
+                             face (:foreground "#859900" :weight bold))
+		(:propertize (vc-mode vc-mode)
+                             face (:foreground "#2aa198" )) 
+                " %n "
+                "%I"
+                (:eval (when nyan-mode (list (nyan-create))))
+                "| "
+                (:propertize mode-name
+                             face (:foreground "#b58900"))
+                " "
+                (:propertize (:eval (shorten-modes (format-mode-line minor-mode-alist) 20 ) ) 
+                             face (:foreground "#6c71c4"))
+                " "
+                (:eval (format-time-string "%a %b %d %H:%M")) 
+		mode-line-misc-info
+
+                ))
+
+
+(setq weather-metno-location-name "Chicago, IL"
+      weather-metno-location-latitude 41
+      weather-metno-location-longitude 87
+      weather-metno-format "{symbol|:symbol}  {temperature-min}–{temperature-max} ℃ ({temperature-min-time|:time}–{temperature-max-time|:time}) {precipitation-min}–{precipitation-max} ㎜ ({precipitation-min-time|:time}–{precipitation-max-time|:time})"
+      )
 
 
 ;;;;;;;;;; END Colors ;;;;;;;;;;
 
 
 ;;;;;;;;;; IV. Saving & Permissions ;;;;;;;;;;
-;; Put autosave files (ie #foo#) and backup files (ie foo~) in
-;; ~/.emacs.d/.
-(defun my-backup-file-name (fpath)
-  "Return a new file path of a given file path.
+ ;; Put autosave files (ie #foo#) and backup files (ie foo~) in
+ ;; ~/.emacs.d/.
+ (defun my-backup-file-name (fpath)
+   "Return a new file path of a given file path.
 If the new path's directories does not exist, create them."
-  (let* (
-        (backupRootDir "~/.emacs.d/emacs-backup/")
-        (filePath (replace-regexp-in-string "[A-Za-z]:" "" fpath ))         (backupFilePath (replace-regexp-in-string "//" "/" (concat backupRootDir filePath "~") ))
-        )
-    (make-directory (file-name-directory backupFilePath) (file-name-directory backupFilePath))
-    backupFilePath
-  )
-)
-(setq make-backup-file-name-function 'my-backup-file-name)
+   (let* (
+          (backupRootDir "~/.emacs.d/emacs-backup/")
+          (filePath (replace-regexp-in-string "[A-Za-z]:" "" fpath ))         (backupFilePath (replace-regexp-in-string "//" "/" (concat backupRootDir filePath "~") ))
+          )
+     (make-directory (file-name-directory backupFilePath) (file-name-directory backupFilePath))
+     backupFilePath
+     )
+   )
+ (setq make-backup-file-name-function 'my-backup-file-name)
 
-;;when saving files, set execute permission if #! is in first line.
-(add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
+ ;;when saving files, set execute permission if #! is in first line.
+ (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 ;;;;;;;;;; ;;;;;;;;;;
 
 
-(autoload 'scpaste "scpaste" "Paste the current buffer." t nil)
-(setq scpaste-http-destination "http://clararaubertas.net"
-      scpaste-scp-destination "clara@kumquat:/var/www/clararaubertas/")
+ (autoload 'scpaste "scpaste" "Paste the current buffer." t nil)
+ (setq scpaste-http-destination "http://clararaubertas.net"
+       scpaste-scp-destination "clara@kumquat:/var/www/clararaubertas/")
 
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+ (global-set-key (kbd "M-x") 'smex)
+ (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+ ;; This is your old M-x.
+ (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 
 
 ;; git
-(require 'magit)
+;;(require 'magit)
 
 ;; (require 'auto-complete)
 ;; (require 'auto-complete-config)
@@ -137,14 +258,15 @@ If the new path's directories does not exist, create them."
 ;; (define-key ac-completing-map (kbd "C-p") 'ac-previous)
 
 (require 'ido)
-(ido-mode t)
-;; (setq ido-enable-flex-matching t)
-(allout-mode)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+;; (allout-mode)
 
 (global-set-key [(control .)] 'goto-last-change)
-; M-. can conflict with etags tag search. But C-. can get overwritten
-; by flyspell-auto-correct-word. And goto-last-change needs a really
-; fast key.
+                                        ; M-. can conflict with etags tag search. But C-. can get overwritten
+                                        ; by flyspell-auto-correct-word. And goto-last-change needs a really
+                                        ; fast key.
 (global-set-key [(meta .)] 'goto-last-change)
 ;; buffrs
 ;; set up ibuffer
@@ -175,6 +297,7 @@ If the new path's directories does not exist, create them."
 
 (require 'yaml-mode)
 (add-to-list 'load-path "~/.emacs.d/rhtml")
+
 (require 'rhtml-mode)
 (add-hook 'haml-mode-hook
           (lambda ()
@@ -189,23 +312,23 @@ If the new path's directories does not exist, create them."
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 (add-hook 'ruby-mode-hook '(lambda ()
-                               (setq ruby-deep-arglist t)
-                               (setq ruby-deep-indent-paren nil)
-                               (esk-paredit-nonlisp)
-                               (ruby-electric-mode)
-                               (rspec-mode)
-                               (rubocop-mode)
-                               (ruby-tools-mode)
-                               (ruby-end-mode)
-                               (local-set-key [S-f7] 'ruby-compilation-this-buffer)
-                               (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
-                               (define-key ruby-mode-map (kbd "TAB") 'indent-for-tab-command)
-                               (local-set-key [f7] 'ruby-compilation-this-test)
-                               (local-set-key [f6] 'recompile)
-                               (local-set-key (kbd "C-c .") 'rsense-complete)
-                               (add-to-list 'ac-sources 'ac-source-rsense-method)
-                               (add-to-list 'ac-sources 'ac-source-rsense-constant)
-                               ))
+                             (setq ruby-deep-arglist t)
+                             (setq ruby-deep-indent-paren nil)
+                             (esk-paredit-nonlisp)
+                             (ruby-electric-mode)
+                             (rspec-mode)
+                             (rubocop-mode)
+                             (ruby-tools-mode)
+                             (ruby-end-mode)
+                             (local-set-key [S-f7] 'ruby-compilation-this-buffer)
+                             (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
+                             (define-key ruby-mode-map (kbd "TAB") 'indent-for-tab-command)
+                             (local-set-key [f7] 'ruby-compilation-this-test)
+                             (local-set-key [f6] 'recompile)
+                             (local-set-key (kbd "C-c .") 'rsense-complete)
+                             (add-to-list 'ac-sources 'ac-source-rsense-method)
+                             (add-to-list 'ac-sources 'ac-source-rsense-constant)
+                             ))
 
 ;;;;;;;;;; end RUBY section ;;;;;;;;;;
 
@@ -213,19 +336,24 @@ If the new path's directories does not exist, create them."
 (setq-default major-mode 'org-mode)
 (setq org-startup-indented t)
 
+(setq org-bullets-bullet-list
+      '("◉" "◎" "￼" "○" "►" "◇"))
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
 (setq org-todo-keywords
+      
       (quote ((sequence "TODO(t)" "|" "DONE(d!)")
               (sequence "WAITING(w)" "SOMEDAY/MAYBE(m)" "JESSE(j)" "PROJECT(p)" "|" "CANCELLED(c)")
-)))
+              )))
 (setq org-todo-keyword-faces      (quote (
-                    ("TODO" ( :background "#859900" :weight bold :foreground "#002b36"))
-                    ("WAITING" (  :weight bold :foreground "#fdf6e3"))
-                    ("SOMEDAY/MAYBE" (  :weight bold :foreground "#2aa198"))
-                    ("DONE" (  :weight bold :foreground "#859900"))
-                    ("PROJECT" ( :background "#2aa198" :weight bold  :foreground "#002b36"))
-                    ("JESSE" ( :weight bold :foreground "#fdf6e3"))
-                    ("CANCELLED" (  :weight bold :foreground "#2aa198"))
-                    )))
+                                          ("TODO" ( :background "#859900" :weight bold :foreground "#002b36"))
+                                          ("WAITING" (  :weight bold :foreground "#fdf6e3"))
+                                          ("SOMEDAY/MAYBE" (  :weight bold :foreground "#2aa198"))
+                                          ("DONE" (  :weight bold :foreground "#859900"))
+                                          ("PROJECT" ( :background "#2aa198" :weight bold  :foreground "#002b36"))
+                                          ("JESSE" ( :weight bold :foreground "#fdf6e3"))
+                                          ("CANCELLED" (  :weight bold :foreground "#2aa198"))
+                                          )))
 (define-key global-map "\C-ca" 'org-agenda)
 (define-key global-map "\C-cc" 'org-capture)
 ;; NOTE: the 2 below have a bug where they only do half at a time so
@@ -241,17 +369,25 @@ If the new path's directories does not exist, create them."
 
 (require 'org-install)
 
-(require 'org-habit)
+
+(add-to-list 'org-modules 'org-habit)
+
+
 
 
 
 (setq org-directory "~/Text/")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
-(setq org-mobile-directory "~/Dropbox/MobileOrg")
+
+(setq org-mobile-directory "/pepper.parallactic.com:MobileOrg")
+(setq tramp-terminal-type "dumb")
 (setq org-mobile-inbox-for-pull "~/Text/orgmob")
 (require 'org-mobile-sync)
 (org-mobile-sync-mode 1)
-(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/shopping.org" "~/Text/movie-diary" "~/Text/books.org" "~/Text/read.org" "~/Text/movies.org")))
+(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/shopping.org"
+                               "~/Text/movie-diary" "~/Text/books.org"
+                               "~/Text/read.org" "~/Text/movies.org"
+                               "~/schedule.org" "~/schedule2.org" "~/schedule3.org")))
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
 
@@ -261,8 +397,11 @@ If the new path's directories does not exist, create them."
             (linum-mode -1)
             (toggle-truncate-lines 1)))
 
-;; (setq org-agenda-property-list '("BECAUSE" "LASTCONTACT"))
-;; (setq org-agenda-property-position 'next-line)
+(require 'multicolumn)
+(multicolumn-global-mode 1)
+
+(setq org-agenda-property-list '("BECAUSE" "LASTCONTACT"))
+;;(setq org-agenda-property-position 'next-line)
 
 
 ;;(setq enable-recursive-minibuffers t)
@@ -276,185 +415,151 @@ If the new path's directories does not exist, create them."
 ;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
 ;;     (apply 'org-icompleting-read args)))
 
-(setq org-agenda-sorting-strategy '(priority-down effort-down tag-up))
+(setq org-agenda-sorting-strategy '(priority-down tag-up effort-down))
 (setq org-agenda-include-all-todo t)
-(setq org-mobile-agendas '("p"))
 (setq org-habit-show-habits-only-for-today t)
-(setq org-agenda-span 2)
+(setq org-agenda-start-day "+0d")
+(setq org-agenda-span 10)
 (setq org-agenda-sticky nil)
 (setq org-agenda-show-log t)
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
-(setq org-habit-show-all-today nil)
-(setq org-agenda-todo-ignore-scheduled 'future)
-(setq org-agenda-tags-todo-honor-ignore-options t)
-
-(setq org-agenda-prefix-format "%-5e %-3s")
-
-
-
-(setq org-agenda-custom-commands
-      '(
-        ;; wow such 
-        ("p" "wow such agenda"
-         (
-	  (tags-todo "-TODO=\"WAITING\"+PRIORITY=\"A\"-STYLE=\"habit\""
-		     (
-		      (org-agenda-overriding-header " -everys thang:-")
-                         (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
-			;;                        (org-agenda-sorting-strategy '(todo-state-down tag-up))
-		      )
-		     )
-	  (agenda "-TODO=\"WAITING\"" 
-                   (
-		    (org-agenda-overriding-header " -today - ")
-		    (org-agenda-ndays 3)                      ;; daily agenda
-                    (org-deadline-warning-days 7)             ;; 7 day advanced warning for deadlines
-                    ))
-	  (tags-todo  "+TODO=\"TODO\"-STYLE=\"habit\"+PRIORITY=\"\""
-		      (
-		       (org-agenda-overriding-header " -")
-		       (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
-		       )
-		      ) 
-	  (tags-todo "-TODO=\"JESSE\"-TODO=\"WAITING\"+PRIORITY=\"B\"-STYLE=\"habit\""
-		     (
-		      (org-agenda-overriding-header "")
-		      (org-agenda-sorting-strategy '(todo-state-down priority-down tag-down))
-                         (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
-		      )
-		     )
-	  (todo "WAITING"
-		(
-		 (org-agenda-overriding-header "[WAITING]")
-                    (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline))
-		 )
-		)
-	  (todo "JESSE"
-		( (org-agenda-overriding-header "[JESSE]")
-		  ) )
-	  (tags-todo "+PRIORITY=\"C\"-STYLE=\"habit\"-TODO=\"WAITING\""
-		     (
-		      (org-agenda-overriding-header " --- ")  
-		      (org-agenda-sorting-strategy '(tag-up))
-		      )
-		     )		       
-	  	   )
-	  
-	  (
-	   (org-agenda-compact-blocks t)
-	   (org-agenda-show-inherited-tags nil)
-	   (org-agenda-tags-column 70)
-	   (org-agenda-skip-entry-if 'scheduled)
-	   (org-fast-tag-selection-single-key (quote expert))
-	   (org-habit-following-days 8)
-	   (org-habit-preceding-days 12) 
-	   (org-agenda-todo-keyword-format " + ")
-	   (org-agenda-scheduled-leaders '("0d" "%dx"))
-	   (org-agenda-deadline-leaders '("0d" "%dd"))
-	   (org-agenda-time-grid nil)
-
-	   )
-	  )
-	 )
-	)
-      
-
+(setq org-agenda-use-time-grid nil)
 
 ;; We gonna log stuff here.
 (setq org-log-repeat 'time)
 ;; DONT LOG ORG-MODE-DONE IT FUX U
 (setq org-log-done nil)
+(require 'calendar)
+(require 'org-gcal)
+(setq org-gcal-client-id
+      "824910591921-p3itqqfsatf78d58srtmq6uap1sm8107.apps.googleusercontent.com"
+      org-gcal-client-secret "S6u-13T7HXv3WvfvUWs-yftw"
+      org-gcal-file-alist '(
+                            ("qefiaa27cig1mlij5v44e0orfo@group.calendar.google.com"
+                             . "~/schedule2.org")
+                            ("clara.raubertas@gmail.com" . "~/schedule.org")
+                            ("n6ip1nkjfpdkkmdb3fhprujms4@group.calendar.google.com" . "~/schedule3.org")
+                            ))
+
+(org-gcal-fetch)
+
+(defun org-gcal--notify (title mes) (let ((file (expand-file-name (concat (file-name-directory (locate-library "org-gcal")) org-gcal-logo))) (mes mes) (title title)) (if (eq system-type 'gnu/linux) (progn (if (not (file-exists-p file)) (deferred:$ (deferred:url-retrieve (concat " https://raw.githubusercontent.com/myuhe/org-gcal.el/master/" org-gcal-logo)) (deferred:nextc it (lambda (buf) (with-current-buffer buf (let ((tmp (substring (buffer-string) (+ (string-match "\n\n" (buffer-string)) 2)))) (erase-buffer) (fundamental-mode) (insert tmp) (write-file file))) (kill-buffer buf))))) (alert mes :title title :icon file)) (alert mes :title title)) ))
+
+(setq org-agenda-prefix-format "%-2s")
+(setq org-agenda-todo-keyword-format "")
+(setq org-agenda-remove-tags 'prefix)
+(setq org-agenda-show-all-dates t)
+
+;; (setq org-agenda-custom-commands
+;;       '(("h" "Daily habits" 
+;;          ((agenda ""))
+;;          ((org-agenda-show-log t)
+;;           (org-agenda-ndays 7)
+;;           (org-agenda-log-mode-items '(state))
+;;           (org-agenda-skip-function '(org-agenda-skip-entry-if 'notregexp ":habit:"))))
+;;         ;; other commands here
+
+;;         ("n" "upcoming things that aren't habits/scheduled"
+;;          ((tags-todo "-STYLE=\"habit\"-TODO=\"GETIT\""))
+;;          ((org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline)
+;;                                     )
+;;           (org-agenda-todo-keyword-format "%-5s")
+;;           )
+;;          )))
+
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/Text/life.org" "Everys Thang")
-             "* TODO %? %i %^g")
+         "* TODO %? %i %^g")
         ("j" "Jesse" entry (file+headline "~/Text/life.org" "Everys Thang")
-             "* JESSE %? %i %^g")
-        ("s" "Shopping" entry (file+headline "~/Text/shopping.org" "Buy It")
-             "* %? %i %^g")
+         "* JESSE %? %i %^g")
+        ("m" "Someday" entry (file+headline "~/Text/life.org" "Everys Thang")
+         "* SOMEDAY/MAYBE %? %i %^g")
+        ("w" "Waiting" entry (file+headline "~/Text/life.org" "Everys Thang")
+         "* WAITING %? %i %^g")
 
 	))
 
-(set-face-attribute 'org-habit-alert-face nil :background "#b58900"
-		    :bold t :strike-through nil :foreground "#002b36"
+
+(set-face-attribute 'org-habit-alert-face nil :background "#fdf6e3"
+		    :bold t :strike-through nil :foreground "#073642" :background "#eee8d5" 
 		    )
 (set-face-attribute 'org-habit-alert-future-face nil :background
-		    "#002b36" :strike-through nil :foreground "#cb4b16"
-		    :bold t )
-(set-face-attribute 'org-habit-clear-face nil :background "#002b36"
-		    :strike-through nil :bold t )
+		    "#fdf6e3" :strike-through nil :foreground "#2aa198"
+		    :bold nil )
+(set-face-attribute 'org-habit-clear-face nil :background "#fdf6e3"
+		    :strike-through nil :bold nil :foreground "#2aa198")
 (set-face-attribute 'org-habit-clear-future-face nil :background
-		    "#839496" )
-(set-face-attribute 'org-habit-overdue-face nil :background "#dc322f"
+		    "#fdf6e3" )
+(set-face-attribute 'org-habit-overdue-face nil :background "#eee8d5"
 		    :strike-through nil :foreground
-		    "#073642" :bold t )
+		    "#b58900" :bold t )
 (set-face-attribute 'org-habit-overdue-future-face nil :background
-		    "#073642" :strike-through nil :underline nil
-		     )
-(set-face-attribute 'org-habit-ready-face nil :background "#eee8d5"
-		    :foreground "#002b36" :bold nil 
+		    "#eee8d5" :strike-through nil :underline nil
+                    )
+(set-face-attribute 'org-habit-ready-face nil :background "#fdf6e3"
+		    :foreground "#2aa198" :bold t 
 		    )
+(set-face-attribute 'org-warning nil :background "#fdf6e3"
+		    :foreground "#b58900" :bold t 
+		    )
+(set-face-attribute 'org-upcoming-deadline nil :background "#fdf6e3"
+		    :foreground "#268bd2" :bold t 
+		    )
+
 (set-face-attribute 'org-habit-ready-future-face nil :background
-		    "#586e75" )
+		    "#fdf6e3" )
+(set-face-attribute 'org-level-1 nil :foreground "#073642" :height 120)
+(set-face-attribute 'org-level-2 nil :foreground "#586e75" :height 100)
+(set-face-attribute 'org-agenda-structure nil :foreground "#073642" :height 140 :background "#fdf6e3")
 (setq org-habit-show-done-always-green t)
-(setq org-habit-today-glyph ?!)
-(setq org-habit-completed-glyph ?+)
+(setq org-habit-today-glyph ?★)
+(setq org-habit-completed-glyph ?✓)
 
-(add-hook 'org-finalize-agenda-hook
-          (lambda ()  (setq line-spacing '0.1)))
+(setq org-habit-graph-column 28)
 
-(setq org-habit-graph-column 45)
-(setq line-spacing '0.1)
+(setq org-columns-default-format "%40ITEM(Task) %5Effort(Effort){:} %6CLOCKSUM")
+(setq org-agenda-tags-column 42)
+(setq org-habit-preceding-days 8)
+(setq org-habit-following-days 4)
 
-(setq org-agenda-deadline-faces
-      '((1.0 . (:foreground "#d33682"))
-	(0.7 . (:foreground "#b58900"))
-	(0.0 . (:foreground "#268bd2"))
-	))
-(setq org-priority-faces
-      '(( ?A . (:foreground "#dc322f" :weight demibold :family "Accanthis ADF Std" :height .9))
-	( ?B . ( :foreground "#b58900" :weight demibold :family "Accanthis ADF Std" :height .9))
-	( ?C . ( :foreground "#eee8d5":weight demibold :family "Accanthis ADF Std" :height .9))
-	))
+
 (setq org-tag-faces
       '(
-	("home" . (:inherit org-tag :foreground "#eee8d5" :weight demibold))
-	("computer" . (:inherit org-tag :foreground "#859900" :weight demibold))
-	("bedroom" . "#586e75")
-	("kitchen" . "#8394a6")
-	("diningroom" . "#93a1a1")
-	("frontroom" . "#657b83")
-	("office" .  "#586e75")
-	("malka".  "#fdf6e3")
-	("hp" .  (:inherit org-tag :foreground  "#b58900" :weight black))
-	("phone" .  "#d33682")
-	("para". "#268bd2")
-	("bathroom" .  "#93a1a1")
+	("home" . (:inherit org-tag :foreground "#93a1a1" ))
+	("computer" . (:inherit org-tag :foreground "#93a1a1" :weight demibold))
+	("phone" .  (:inherit org-tag :foreground "#002b36" :weight bold) )
+        ("malka" . (:inherit org-tag :foreground "#859900" :weight bold))
+        ("hp" . (:inherit org-tag :foreground "#859900" :weight bold) )
+        ("bathroom" . (:inherit org-tag :foreground "#2aa198" :weight demibold) )
+        ("kitchen" . (:inherit org-tag :foreground "#268db2" :weight demibold) )
+        ("frontroom" . (:inherit org-tag :foreground "#2aa198" :weight demibold))
+        ("bedroom" . (:inherit org-tag :foreground "#2aa198" :weight demibold) )
+        ("porch" .  (:inherit org-tag :foreground "#268db2" :weight demibold) )
+        ("social" . "#6c71c4")
+        ("railsbridge" . "#dc322f")
+        ("para" . "#002b36")
 	))
 
 (custom-set-faces
- '(org-agenda-date ((t (:weight semi-bold :height 1.2 :background "#073642" :foreground "#fdf6e3" :italic nil))) t)
- '(org-agenda-structure ((t (:weight normal :height 1.5 :background "#002b36" :foreground "#eee8d5"   :italic true :underline nil :weight semibold))) t)
- '(org-agenda-date ((t (:weight normal :height 1.1 :background "#002b36" :foreground "#eee8d5"   :italic true :underline t))) t)
- '(org-agenda-date-today ((t (:inherit org-agenda-date :height 1.2 :italic t   :foreground "#002b36" :background "#eee8d5" ))))
- '(org-scheduled-previously ((t (:foreground "#dc322f" :weight bold))))
-'(org-done ((t (:foreground "gray57" :weight light))))
-'(org-level-1 ((t (:weight semi-bold :height 1.1 ))))
-'(org-level-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :family "Accanthis ADF Std "))))
-'(org-warning-2 ((t (:inherit outline-2 :weight semi-bold :height 1.1 :foreground "#b58900"))))
-'(org-level-3 ((t (:inherit outline-3 :weight bold))))
-'(org-upcoming-deadline ((t (:inherit outline-3 :weight semi-bold))))
-'(org-level-5 ((t (:inherit outline-5 :family ))))
-'(org-link ((t (:inherit link :weight normal))))
-'(org-scheduled-today ((t (:foreground "#fdf6e3" :weight semi-bold ))))
-  '(org-scheduled ((t (:foreground "#fdf6e3" :weight bold ))))
-'(org-meta-line ((t (:inherit font-lock-comment-face :height 0.8))))
-'(org-property-value ((t (:height 0.9 ))) t)
-'(org-special-keyword ((t (:inherit font-lock-keyword-face :height 0.8))))
-'(org-table ((t (:foreground "dim gray" :height 0.9 ))))
-'(org-tag ((t (:foreground "#eee8d5" :weight normal :italic t :overline nil :height 0.95   :width expanded))))
-'(org-todo ((t (:weight bold)))))
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-calendar-event ((t (:foreground "#073642" :weight bold))))
+ '(org-agenda-date ((t (:weight semi-bold :height 120 :foreground "#2aa198"))))
+ '(org-agenda-date-today ((t (:weight bold :height 180 :foreground "#fdf6e3" :background "#2aa198"))))
+ '(org-level-1 ((t nil)))
+ '(org-scheduled ((t (:foreground "#2aa198" :weight bold :background "#fdf6e3"))))
+ '(org-scheduled-previously ((t (:foreground "#d336a2" :weight bold :background "#fdf6e3"))))
+ '(org-scheduled-today ((t (:foreground "#002b363" :bold nil :weight light ))))
+ '(org-tag ((t ( :weight ultralight :height 100)))))
+
+
+(setq org-priority-faces '((?A . (:foreground "#859900" :weight semibold))
+                           (?B . (:foreground "#657b83" :weight ultralight))
+                           (?C . (:foreground "#eee8d5" :weight ultralight))))
 
 (defun org-todo-toggle-yesterday ()
   ;; this function is interactive, meaning a "command" that we call
@@ -497,10 +602,33 @@ If the new path's directories does not exist, create them."
 ;;   (kill-buffer "diary"))
 ;; (getcals)
 ;; (setq org-agenda-include-diary t)
+
+
+(setq org-agenda-custom-commands
+      '(("o" "Office block agenda"
+         (
+
+          (agenda "" ((org-agenda-ndays 2)))
+                    (tags-todo "+PRIORITY=\"A\"+TODO=\"TODO\""
+                     ((org-agenda-overriding-header "⭒⭒⭒⭒⭸")
+                      (org-agenda-skip-entry-if 'scheduled)
+                      (org-agenda-sorting-strategy '(tag-up effort-down))
+                      ) )
+          (tags-todo "-PRIORITY=\"A\"-STYLE=\"habit\"+TODO=\"TODO\""
+                     ( (org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline)) 
+;;                      (org-agenda-skip-entry-if 'deadline)
+                      (org-agenda-overriding-header "⭬⭬⭬⭬"))
+                     )
+;;          (tags "review" ((org-agenda-files '("~/org/circuspeanuts.org"))))
+                          ;; limits the tag search to the file circuspeanuts.org
+          (todo "WAITING"          ((org-agenda-overriding-header "⏳䷄…")))
+          (todo "SOMEDAY/MAYBE" ((org-agenda-overriding-header "☁䷏…")))
+          )
+         ((org-agenda-compact-blocks t)) ;; options set here apply to the entire block
+        ;; ...other commands here
+        )))
+
 ;;;;;;;;;; ;;;;;;;;;; 
-
-
-
 
 (defun sudo-edit (&optional arg)
   "Edit currently visited file as root.
@@ -515,10 +643,13 @@ buffer is not visiting a file."
     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
 
-
 ;;;;;;;;;; VI. Lisp & Scheme ;;;;;;;;;;
 (add-hook 'scheme-mode-hook 'paredit-mode)
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+(add-hook 'emacs-lisp-mode-hook 'rainbow-mode)
+
+(add-hook 'css-mode-hook 'rainbow-mode)
+
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;; ;; Exclude very large buffers from dabbrev
@@ -552,10 +683,33 @@ With argument ARG, do this that many times."
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; IX. Text Mode ;;;;;;;;;;
-(add-hook 'text-mode-hook 'flyspell-mode)
 ;;;;;;;;;; ;;;;;;;;;;
 
 (setq magit-last-seen-setup-instructions "1.4.0")
+
+
+(push "<path-to-this-file>" load-path)
+
+
+
+
+
+;; Useful key bindings for org-mode
+(add-hook 'org-mode-hook
+       (lambda ()
+         (local-unset-key "\C-o")
+         (local-set-key "\C-od" 'org-toodledo-mark-task-deleted)
+         (local-set-key "\C-os" 'org-toodledo-sync)
+         )
+       )
+(add-hook 'org-agenda-mode-hook
+       (lambda ()
+         (local-unset-key "\C-o")
+         (local-set-key "\C-od" 'org-toodledo-agenda-mark-task-deleted)
+         )
+       )
+
+
 
 
 ;;;;;;;;;; X. Remove annoying defaults, provide encouragement ;;;;;;;;;;
@@ -572,3 +726,15 @@ With argument ARG, do this that many times."
 (message "You're doing a great job!")
 ;;;;;;;;;; END ;;;;;;;;;;
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("79a3f477ac0cb4a106f78b6109614e991564a5c2467c36e6e854d4bc1102e178" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
+ '(magit-use-overlays nil)
+ '(rainbow-html-colors-major-mode-list
+   (quote
+    (html-mode css-mode php-mode nxml-mode xml-mode lisp-mode emacs-lisp-mode))))

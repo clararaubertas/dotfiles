@@ -1,14 +1,263 @@
-127.0.0.1	localhost
-127.0.1.1	baryon
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-# The following lines are desirable for IPv6 capable hosts
-::1     ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="MainFiles/styles/timelinz.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<div id='content'>
+        <!-- Add your site or application content here -->
+        <h1>Clara Raubertas</h1>
+        
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+                <h2 id="point-title" class="inline-block underline"></h2>
+            <p id="point-desc"></p>
+
+<div id="main"></div>
+
+</div>
+    <!-- jQuery -->
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+
+    <!-- Timelinz -->
+    <script src="MainFiles/scripts/timelinz.min.js"></script>
+
+    <!-- Create Timelinz -->
+    <script>
+    // Get the container element
+    var container = $('#main')[0];
+
+    var lineAnimationDelay = 0;
+    var pointAnimationDelay = 0;
+
+    // Define the options
+    var options = {
+        onLineRender: function (lineElem, lineData)
+        {
+            var $elem = $(lineElem);
+
+            // add animate.css classes
+            $elem.addClass('animated bounceInUp');
+
+            // set animation delay
+            $elem.css({animationDelay: lineAnimationDelay + 's'});
+
+            // calc next animation delay
+            lineAnimationDelay += 0.2;
+        },
+
+        onLineRendered: function (lineElem, lineData, filledLineList)
+        {
+            // animate filled lines
+            $(filledLineList).each(function () {
+                $(this)
+                    // add animate.css classes
+                    .addClass('animated fadeIn')
+
+                    // set animation delay
+                    .css({animationDelay: lineAnimationDelay + 0.6 + 's'});
+            });
+        },
+
+        onPointRendered: function (pointElem, pointData)
+        {
+            var $elem = $(pointElem);
+
+            // set animation delay
+            $elem.css({animationDelay: pointAnimationDelay + 's'});
+
+            // calc next animation delay
+            pointAnimationDelay += 0.08;
+
+            // add animate.css classes
+            if (pointData.img) {
+                $elem.addClass('animated bounceInUp');
+            } else {
+                $elem.addClass('animated fadeInUpBig');
+            }
+        }
+    };
+
+    // Define the data
+    var data = [
+        {
+            name: 'The Moral Hazards',
+            points: [
+                {
+                    filled: true,
+    img: 'http://f0.bcbits.com/img/a0336687060_2.jpg',
+    link: 'http://themoralhazards.bandcamp.com/album/jobless-recovery',
+    time: '2013-03-28T20:12:14.000Z',
+    desc: 'Jobless Recovery'
+                },
+                {
+                    filled: false,
+    img: 'http://f1.bcbits.com/img/a3956716026_2.jpg',
+        link: 'http://themoralhazards.bandcamp.com/album/too-big-to-fail',
+    time: '2011-01-01T21:12:14.000Z',
+    desc: 'Too Big to Fail'
+    
+                },
+
+            ]
+        },
+        {
+            name: 'Timeline 2',
+            points: [
+                {
+                    filled: true,
+                    time: '2011-01-28T21:12:14.000Z'
+                },
+                {
+                    filled: true,
+                    time: '2015-06-29T21:15:12.000Z'
+                },
+                {
+                    filled: true,
+                    img: 'http://ifdb.tads.org/viewgame?coverart&id=3d4jyitc5a5l5i3m&thumbnail=250x250',
+                    link: 'http://example.com',
+                    time: '2011-10-19T21:15:12.000Z'
+                }
+            ]
+        },
+        {
+            name: 'The Moomers Journal',
+            points: [
+    {
+    img: 'http://journal.moomers.org/1.jpg',
+                    filled: true,
+    time: '2012-02-28T21:12:14.000Z',
+    desc: "Issue 1: YEAR OF FEAR"
+                },
+    {
+        img: 'http://journal.moomers.org/2.jpg',
+                    filled: true,
+    time: '2012-06-29T21:15:12.000Z',
+    desc: "Issue 2: HOME"
+                },
+    {
+        img: 'http://journal.moomers.org/3.jpg',
+                    filled: true,
+    time: '2012-12-29T21:15:12.000Z',
+    desc: "Issue 3: SURVIVING"
+    },
+        {
+        img: 'http://journal.moomers.org/4.jpg',
+                    filled: true,
+    time: '2013-04-29T21:15:12.000Z',
+    desc: "Issue 4: ORDER"
+                },
+    {
+        img: 'http://journal.moomers.org/5.jpg',
+                    filled: true,
+    time: '2013-12-29T21:15:12.000Z',
+    desc: "Issue 5: COMPLEXITY"
+                },
 
 
-173.236.34.122  purr
-162.216.17.116  kumquat
-66.175.209.206  pepper
+            ]
+        }
+    ];
+
+
+    var selectPoint = function (pointData, timelineData) {
+    // Set point title
+    var $pointTitleElem = $('#point-title');
+    var title = '';
+    if (pointData.title) {
+      title += pointData.title + ' at ';
+    }
+    //title += dateFormat(new Date(pointData.time)) + ' - ' + timelineData.name;
+    $pointTitleElem.text(title);
+
+    // Set point description
+    $('#point-desc').text(pointData.desc);
+
+    // Set speakers
+    var $speakersTitleElem = $('#speakers-title');
+    var $speakersElem = $('#speakers');
+    $speakersElem.empty();
+    if (pointData.speaker) {
+      $speakersTitleElem.removeClass('hidden');
+
+      var template = speakerTmpl.replace('{img}', pointData.speaker.img)
+        .replace('{name}', pointData.speaker.name)
+        .replace('{job}', pointData.speaker.job);
+      $speakersElem.append(template);
+    } else {
+      $speakersTitleElem.addClass('hidden');
+    }
+  };
+
+    // Create new Timelinz
+    var timelinz = new Timelinz(data, {
+        intervalUnit: 'year',
+    reverseOrder: true,
+    marginBetweenLines: 30,
+      onLineRendered: function (lineElem, lineData) {
+      // Add timeline title
+      var template = '<h4 class="timelinz__line-title">{name}</h4>'.replace('{name}', lineData.name);
+      $(lineElem).prepend(template);
+    },
+        onPointRendered: function (pointElem, pointData, timelineData) {
+      var $pointElem = $(pointElem);
+      // Set tooltip
+      var tooltip = pointData.desc;
+      if (pointData.title) {
+        tooltip += ' - ' + pointData.title;
+      } else {
+        tooltip += pointData.speaker ? ' - ' + pointData.speaker.name : '';
+      }
+      $pointElem.addClass('tooltip-left')
+        .attr('data-tooltip', tooltip);
+
+      // Append <span> to normal points
+      if (!pointData.img) {
+        $pointElem.append(document.createElement('span'));
+      }
+        },
+        onPointClicked: function (e, pointData, timelineData) {
+      e.preventDefault();
+      selectPoint(pointData, timelineData);
+        }
+        }
+    );
+
+    // Render Timelinz element
+    timelinz.render(container);
+    </script>
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
