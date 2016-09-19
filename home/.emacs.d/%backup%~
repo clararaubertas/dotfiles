@@ -1,263 +1,151 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+#! /usr/bin/lua
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
+local usage = [[
+Usage: convert.lua old_conkyrc [new_conkyrc]
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="MainFiles/styles/timelinz.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-<div id='content'>
-        <!-- Add your site or application content here -->
-        <h1>Clara Raubertas</h1>
-        
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-                <h2 id="point-title" class="inline-block underline"></h2>
-            <p id="point-desc"></p>
+Tries to convert conkyrc from the old v1.x format to the new, lua-based format.
 
-<div id="main"></div>
+Keep in mind that there is no guarantee that the output will work correctly
+with conky, or that it will be able to convert every conkyrc. However, it
+should provide a good starting point.
 
-</div>
-    <!-- jQuery -->
-    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+Altough you can use this script with only 1 arg and let it overwrite the old
+config, it's suggested to use 2 args so that the new config is written in a new
+file (so that you have backup if something went wrong).
 
-    <!-- Timelinz -->
-    <script src="MainFiles/scripts/timelinz.min.js"></script>
+For more information about the new format, read the wiki page
+<http://wiki.conky.be/index.php?title=conky2rc_format>
+]];
 
-    <!-- Create Timelinz -->
-    <script>
-    // Get the container element
-    var container = $('#main')[0];
+local function quote(s)
+    if not s:find("[\n'\\]") then
+        return "'" .. s .. "'";
+    end;
+    local q = '';
+    while s:find(']' .. q .. ']', 1, true) do
+        q = q .. '=';
+    end;
+    return string.format('[%s[\n%s]%s]', q, s, q);
+end;
 
-    var lineAnimationDelay = 0;
-    var pointAnimationDelay = 0;
+local bool_setting = {
+    background = true, disable_auto_reload = true, double_buffer = true, draw_borders = true,
+    draw_graph_borders = true, draw_outline = true, draw_shades = true, extra_newline = true,
+    format_human_readable = true, no_buffers = true, out_to_console = true,
+    out_to_ncurses = true, out_to_stderr = true, out_to_x = true, override_utf8_locale = true,
+    own_window = true, own_window_argb_visual = true, own_window_transparent = true,
+    short_units = true, show_graph_range = true, show_graph_scale = true,
+    times_in_seconds = true, top_cpu_separate = true, uppercase = true, use_xft = true
+};
 
-    // Define the options
-    var options = {
-        onLineRender: function (lineElem, lineData)
-        {
-            var $elem = $(lineElem);
+local num_setting = {
+    border_inner_margin = true, border_outer_margin = true, border_width = true,
+    cpu_avg_samples = true, diskio_avg_samples = true, gap_x = true, gap_y = true,
+    imlib_cache_flush_interval = true, imlib_cache_size = true,
+    max_port_monitor_connections = true, max_text_width = true, max_user_text = true,
+    maximum_width = true, mpd_port = true, music_player_interval = true, net_avg_samples = true,
+    own_window_argb_value = true, pad_percents = true, stippled_borders = true,
+    text_buffer_size = true, top_name_width = true, total_run_times = true,
+    update_interval = true, update_interval_on_battery = true, xftalpha = true
+};
 
-            // add animate.css classes
-            $elem.addClass('animated bounceInUp');
+local split_setting = {
+    default_bar_size = true, default_gauge_size = true, default_graph_size = true,
+    minimum_size = true
+};
 
-            // set animation delay
-            $elem.css({animationDelay: lineAnimationDelay + 's'});
+local colour_setting = {
+    color0 = true, color1 = true, color2 = true, color3 = true, color4 = true, color5 = true,
+    color6 = true, color7 = true, color8 = true, color9 = true, default_color = true,
+    default_outline_color = true, default_shade_color = true, own_window_colour = true
+};
 
-            // calc next animation delay
-            lineAnimationDelay += 0.2;
-        },
+local function alignment_map(value)
+    local map = { m = 'middle', t = 'top', b = 'bottom', r = 'right', l = 'left' };
+    if map[value] == nil then
+        return value;
+    else
+        return map[value];
+    end;
+end;
 
-        onLineRendered: function (lineElem, lineData, filledLineList)
-        {
-            // animate filled lines
-            $(filledLineList).each(function () {
-                $(this)
-                    // add animate.css classes
-                    .addClass('animated fadeIn')
+local function handle(setting, value)
+    setting = setting:lower();
+    if setting == '' then
+        return '';
+    end;
+    if split_setting[setting] then
+        local x, y = value:match('^(%S+)%s*(%S*)$');
+        local ret = setting:gsub('_size', '_width = ') .. x .. ',';
+        if y ~= '' then
+            ret = ret .. ' ' .. setting:gsub('_size', '_height = ') .. y .. ',';
+        end;
+        return '\t' .. ret;
+    end;
+    if bool_setting[setting] then
+        value = value:lower();
+        if value == 'yes' or value == 'true' or value == '1' or value == '' then
+            value = 'true';
+        else
+            value = 'false';
+        end;
+    elseif not num_setting[setting] then
+        if setting == 'alignment' and value:len() == 2 then
+            value = alignment_map(value:sub(1,1)) .. '_' .. alignment_map(value:sub(2,2));
+        elseif colour_setting[setting] and value:match('^[0-9a-fA-F]+$') then
+            value = '#' .. value;
+        elseif setting == 'xftfont' then
+            setting = 'font';
+        end;
+        value = quote(value);
+    end;
+    return '\t' .. setting .. ' = ' .. value .. ',';
+end;
 
-                    // set animation delay
-                    .css({animationDelay: lineAnimationDelay + 0.6 + 's'});
-            });
-        },
+local function convert(s)
+    local setting, comment = s:match('^([^#]*)#?(.*)\n$');
+    if comment ~= '' then
+        comment = '--' .. comment;
+    end;
+    comment = comment .. '\n';
+    return handle(setting:match('^%s*(%S*)%s*(.-)%s*$')) ..  comment;
+end;
 
-        onPointRendered: function (pointElem, pointData)
-        {
-            var $elem = $(pointElem);
+local input;
+local output;
 
-            // set animation delay
-            $elem.css({animationDelay: pointAnimationDelay + 's'});
-
-            // calc next animation delay
-            pointAnimationDelay += 0.08;
-
-            // add animate.css classes
-            if (pointData.img) {
-                $elem.addClass('animated bounceInUp');
-            } else {
-                $elem.addClass('animated fadeInUpBig');
-            }
-        }
-    };
-
-    // Define the data
-    var data = [
-        {
-            name: 'The Moral Hazards',
-            points: [
-                {
-                    filled: true,
-    img: 'http://f0.bcbits.com/img/a0336687060_2.jpg',
-    link: 'http://themoralhazards.bandcamp.com/album/jobless-recovery',
-    time: '2013-03-28T20:12:14.000Z',
-    desc: 'Jobless Recovery'
-                },
-                {
-                    filled: false,
-    img: 'http://f1.bcbits.com/img/a3956716026_2.jpg',
-        link: 'http://themoralhazards.bandcamp.com/album/too-big-to-fail',
-    time: '2011-01-01T21:12:14.000Z',
-    desc: 'Too Big to Fail'
-    
-                },
-
-            ]
-        },
-        {
-            name: 'Timeline 2',
-            points: [
-                {
-                    filled: true,
-                    time: '2011-01-28T21:12:14.000Z'
-                },
-                {
-                    filled: true,
-                    time: '2015-06-29T21:15:12.000Z'
-                },
-                {
-                    filled: true,
-                    img: 'http://ifdb.tads.org/viewgame?coverart&id=3d4jyitc5a5l5i3m&thumbnail=250x250',
-                    link: 'http://example.com',
-                    time: '2011-10-19T21:15:12.000Z'
-                }
-            ]
-        },
-        {
-            name: 'The Moomers Journal',
-            points: [
-    {
-    img: 'http://journal.moomers.org/1.jpg',
-                    filled: true,
-    time: '2012-02-28T21:12:14.000Z',
-    desc: "Issue 1: YEAR OF FEAR"
-                },
-    {
-        img: 'http://journal.moomers.org/2.jpg',
-                    filled: true,
-    time: '2012-06-29T21:15:12.000Z',
-    desc: "Issue 2: HOME"
-                },
-    {
-        img: 'http://journal.moomers.org/3.jpg',
-                    filled: true,
-    time: '2012-12-29T21:15:12.000Z',
-    desc: "Issue 3: SURVIVING"
-    },
-        {
-        img: 'http://journal.moomers.org/4.jpg',
-                    filled: true,
-    time: '2013-04-29T21:15:12.000Z',
-    desc: "Issue 4: ORDER"
-                },
-    {
-        img: 'http://journal.moomers.org/5.jpg',
-                    filled: true,
-    time: '2013-12-29T21:15:12.000Z',
-    desc: "Issue 5: COMPLEXITY"
-                },
+if conky == nil then --> standalone program
+    -- 1 arg: arg is input and outputfile
+    -- 2 args: 1st is inputfile, 2nd is outputfile
+    -- 0, 3 or more args: print usage to STDERR and quit
+    if #arg == 1 or #arg == 2 then
+        input = io.input(arg[1]);
+    else
+        io.stderr:write(usage);
+        return;
+    end;
+else
+    -- we are called from conky, the filename is the first argument
+    input = io.open(..., 'r');
+end;
 
 
-            ]
-        }
-    ];
+local config = input:read('*a');
+input:close();
 
+local settings, text = config:match('^(.-)TEXT\n(.*)$');
 
-    var selectPoint = function (pointData, timelineData) {
-    // Set point title
-    var $pointTitleElem = $('#point-title');
-    var title = '';
-    if (pointData.title) {
-      title += pointData.title + ' at ';
-    }
-    //title += dateFormat(new Date(pointData.time)) + ' - ' + timelineData.name;
-    $pointTitleElem.text(title);
+local converted = 'conky.config = {\n' .. settings:gsub('.-\n', convert) .. '};\n\nconky.text = ' ..
+                quote(text) .. ';\n';
 
-    // Set point description
-    $('#point-desc').text(pointData.desc);
-
-    // Set speakers
-    var $speakersTitleElem = $('#speakers-title');
-    var $speakersElem = $('#speakers');
-    $speakersElem.empty();
-    if (pointData.speaker) {
-      $speakersTitleElem.removeClass('hidden');
-
-      var template = speakerTmpl.replace('{img}', pointData.speaker.img)
-        .replace('{name}', pointData.speaker.name)
-        .replace('{job}', pointData.speaker.job);
-      $speakersElem.append(template);
-    } else {
-      $speakersTitleElem.addClass('hidden');
-    }
-  };
-
-    // Create new Timelinz
-    var timelinz = new Timelinz(data, {
-        intervalUnit: 'year',
-    reverseOrder: true,
-    marginBetweenLines: 30,
-      onLineRendered: function (lineElem, lineData) {
-      // Add timeline title
-      var template = '<h4 class="timelinz__line-title">{name}</h4>'.replace('{name}', lineData.name);
-      $(lineElem).prepend(template);
-    },
-        onPointRendered: function (pointElem, pointData, timelineData) {
-      var $pointElem = $(pointElem);
-      // Set tooltip
-      var tooltip = pointData.desc;
-      if (pointData.title) {
-        tooltip += ' - ' + pointData.title;
-      } else {
-        tooltip += pointData.speaker ? ' - ' + pointData.speaker.name : '';
-      }
-      $pointElem.addClass('tooltip-left')
-        .attr('data-tooltip', tooltip);
-
-      // Append <span> to normal points
-      if (!pointData.img) {
-        $pointElem.append(document.createElement('span'));
-      }
-        },
-        onPointClicked: function (e, pointData, timelineData) {
-      e.preventDefault();
-      selectPoint(pointData, timelineData);
-        }
-        }
-    );
-
-    // Render Timelinz element
-    timelinz.render(container);
-    </script>
-
-
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
-</html>
+if conky == nil then
+    if #arg == 2 then
+        output = io.output(arg[2]);
+    else
+        output = io.output(arg[1]);
+    end
+    output:write(converted);
+    output:close();
+else
+    return assert(loadstring(converted, 'converted config'));
+end;

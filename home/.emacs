@@ -33,9 +33,9 @@
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
 
-(set-face-attribute 'default t :font "Inconsolata-13" )
+(set-face-attribute 'default t :font "Input Mono Light-14" )
 
-(set-frame-font "Input Mono Light-14" )
+(set-frame-font "Input Mono Light-15" )
 
  (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
    (lambda () (idle-highlight-mode 1)))
