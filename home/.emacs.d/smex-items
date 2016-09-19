@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
- sudo-edit
+ eval-buffer
+ eval-region
  org-todo-yesterday
  copyright-fix-years
  rename-file
  replace-string
  new-frame
- copy-file
 )
 
 ;; ----- smex-data -----
 (
- (eval-region . 4)
+ (eval-region . 5)
  (package-install . 4)
  (eval-defun . 107)
  (describe-char . 2)
@@ -31,7 +31,7 @@
  (replace-string . 7)
  (list-packages . 4)
  (toggle-debug-on-error . 1)
- (eval-buffer . 5)
+ (eval-buffer . 6)
  (customize-variable . 2)
  (hl-line-mode . 1)
  (magit-status . 1)
