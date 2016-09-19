@@ -2,6 +2,7 @@
 
 ;;;;;;;;;; I. Package Management ;;;;;;;;;;
 
+<<<<<<< HEAD
  (package-initialize)
  (add-to-list 'package-archives
               '("ELPA" . "http://tromey.com/elpa/")) 
@@ -13,6 +14,20 @@
                 '("melpa" . "http://melpa.milkbox.net/packages/"))
  (add-to-list 'package-archives
                 '("org" . "http://orgmode.org/elpa/"))
+=======
+(package-initialize)
+(require 'org)
+(add-to-list 'package-archives
+             '("ELPA" . "http://tromey.com/elpa/")) 
+(add-to-list 'package-archives
+             '("gnu" . "http://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives
+             '("org" . "http://orgmode.org/elpa/"))
+>>>>>>> 3ea8bbfdbf95747d7654e02a3a7a8a0f824eeae1
 
 
 (add-to-list 'load-path "~/.emacs.d/*")
@@ -31,11 +46,12 @@
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
+<<<<<<< HEAD
 (set-face-attribute 'default t :font "Inconsolata-13" )
+=======
+(set-frame-font "Input Mono Light-14" )
 
- (define-globalized-minor-mode my-global-rainbow-delim-mode rainbow-delimiters-mode
-   (lambda () (rainbow-delimiters-mode 1)))
- (my-global-rainbow-delim-mode 1)
+>>>>>>> 3ea8bbfdbf95747d7654e02a3a7a8a0f824eeae1
 
 
  (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
@@ -209,6 +225,7 @@ If the new path's directories does not exist, create them."
 
 ;;;;;;;;;; end RUBY section ;;;;;;;;;;
 
+<<<<<<< HEAD
 ;; ;;;;;;;;;; V. ORG MODE ;;;;;;;;;;
 ;; (setq-default major-mode 'org-mode)
 ;; (setq org-startup-indented t)
@@ -530,6 +547,276 @@ If the new path's directories does not exist, create them."
 ;; ;;   (flush-lines "^[& ]")
 ;; ;;   (dolist (url google-calendars) (getcal url))
 ;; ;;   (kill-buffer "diary"))
+=======
+;;;;;;;;;; V. ORG MODE ;;;;;;;;;;
+(setq-default major-mode 'org-mode)
+(setq org-startup-indented t)
+
+(setq org-bullets-bullet-list
+      '("◉" "◎" "￼" "○" "►" "◇"))
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+(setq org-todo-keywords
+      
+      (quote ((sequence "TODO(t)" "|" "DONE(d!)")
+              (sequence "WAITING(w)" "SOMEDAY/MAYBE(m)" "JESSE(j)" "PROJECT(p)" "|" "CANCELLED(c)")
+              )))
+(setq org-todo-keyword-faces      (quote (
+                                          ("TODO" ( :background "#859900" :weight bold :foreground "#002b36"))
+                                          ("WAITING" (  :weight bold :foreground "#fdf6e3"))
+                                          ("SOMEDAY/MAYBE" (  :weight bold :foreground "#2aa198"))
+                                          ("DONE" (  :weight bold :foreground "#859900"))
+                                          ("PROJECT" ( :background "#2aa198" :weight bold  :foreground "#002b36"))
+                                          ("JESSE" ( :weight bold :foreground "#fdf6e3"))
+                                          ("CANCELLED" (  :weight bold :foreground "#2aa198"))
+                                          )))
+(define-key global-map "\C-ca" 'org-agenda)
+(define-key global-map "\C-cc" 'org-capture)
+;; NOTE: the 2 below have a bug where they only do half at a time so
+;; it takes YOU, the USER, log(n) time instead of constant time.
+;; see http://stackoverflow.com/questions/6997387
+(defun my-org-archive-done-tasks ()
+  (interactive)
+  (org-map-entries 'org-archive-subtree "/DONE" 'file))
+(defun my-org-archive-cancelled-tasks ()
+  (interactive)
+  (org-map-entries 'org-archive-subtree "/CANCELLED" 'file))
+
+
+(require 'org-install)
+
+
+(add-to-list 'org-modules 'org-habit)
+
+
+
+
+
+(setq org-directory "~/Text/")
+(setq org-default-notes-file (concat org-directory "/notes.org"))
+
+(setq org-mobile-directory "/pepper.parallactic.com:MobileOrg")
+(setq tramp-terminal-type "dumb")
+(setq org-mobile-inbox-for-pull "~/Text/orgmob")
+(require 'org-mobile-sync)
+(org-mobile-sync-mode 1)
+(setq org-agenda-files (quote ("~/Text/life.org" "~/Text/shopping.org"
+                               "~/Text/movie-diary" "~/Text/books.org"
+                               "~/Text/read.org" "~/Text/movies.org"
+                               "~/schedule.org" "~/schedule2.org" "~/schedule3.org")))
+
+(setq org-refile-targets '((org-agenda-files :maxlevel . 2)))
+
+(add-hook 'org-agenda-mode-hook
+          (lambda ()
+            (visual-line-mode -1)
+            (linum-mode -1)
+            (toggle-truncate-lines 1)))
+
+(require 'multicolumn)
+(multicolumn-global-mode 1)
+
+(setq org-agenda-property-list '("BECAUSE" "LASTCONTACT"))
+;;(setq org-agenda-property-position 'next-line)
+
+
+;;(setq enable-recursive-minibuffers t)
+
+;; (defun org-completing-read (&rest args)
+;;   "Completing-read with SPACE being a normal character."
+;;   (let ((minibuffer-local-completion-map
+;;          (copy-keymap minibuffer-local-completion-map)))
+;;     (org-defkey minibuffer-local-completion-map " " 'self-insert-command)
+;;     (org-defkey minibuffer-local-completion-map "?" 'self-insert-command)
+;;     (org-defkey minibuffer-local-completion-map "!" 'org-time-stamp-inactive)
+;;     (apply 'org-icompleting-read args)))
+
+(setq org-agenda-sorting-strategy '(priority-down tag-up effort-down))
+(setq org-agenda-include-all-todo t)
+(setq org-habit-show-habits-only-for-today t)
+(setq org-agenda-start-day "+0d")
+(setq org-agenda-span 10)
+(setq org-agenda-sticky nil)
+(setq org-agenda-show-log t)
+(setq org-agenda-skip-scheduled-if-done t)
+(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-use-time-grid nil)
+
+;; We gonna log stuff here.
+(setq org-log-repeat 'time)
+;; DONT LOG ORG-MODE-DONE IT FUX U
+(setq org-log-done nil)
+(require 'calendar)
+(require 'org-gcal)
+(setq org-gcal-client-id
+      "824910591921-p3itqqfsatf78d58srtmq6uap1sm8107.apps.googleusercontent.com"
+      org-gcal-client-secret "S6u-13T7HXv3WvfvUWs-yftw"
+      org-gcal-file-alist '(
+                            ("qefiaa27cig1mlij5v44e0orfo@group.calendar.google.com"
+                             . "~/schedule2.org")
+                            ("clara.raubertas@gmail.com" . "~/schedule.org")
+                            ("n6ip1nkjfpdkkmdb3fhprujms4@group.calendar.google.com" . "~/schedule3.org")
+                            ))
+
+(org-gcal-fetch)
+
+(defun org-gcal--notify (title mes) (let ((file (expand-file-name (concat (file-name-directory (locate-library "org-gcal")) org-gcal-logo))) (mes mes) (title title)) (if (eq system-type 'gnu/linux) (progn (if (not (file-exists-p file)) (deferred:$ (deferred:url-retrieve (concat " https://raw.githubusercontent.com/myuhe/org-gcal.el/master/" org-gcal-logo)) (deferred:nextc it (lambda (buf) (with-current-buffer buf (let ((tmp (substring (buffer-string) (+ (string-match "\n\n" (buffer-string)) 2)))) (erase-buffer) (fundamental-mode) (insert tmp) (write-file file))) (kill-buffer buf))))) (alert mes :title title :icon file)) (alert mes :title title)) ))
+
+(setq org-agenda-prefix-format "%-2s")
+(setq org-agenda-todo-keyword-format "")
+(setq org-agenda-remove-tags 'prefix)
+(setq org-agenda-show-all-dates t)
+
+;; (setq org-agenda-custom-commands
+;;       '(("h" "Daily habits" 
+;;          ((agenda ""))
+;;          ((org-agenda-show-log t)
+;;           (org-agenda-ndays 7)
+;;           (org-agenda-log-mode-items '(state))
+;;           (org-agenda-skip-function '(org-agenda-skip-entry-if 'notregexp ":habit:"))))
+;;         ;; other commands here
+
+;;         ("n" "upcoming things that aren't habits/scheduled"
+;;          ((tags-todo "-STYLE=\"habit\"-TODO=\"GETIT\""))
+;;          ((org-agenda-skip-function '(org-agenda-skip-entry-if 'scheduled 'deadline)
+;;                                     )
+;;           (org-agenda-todo-keyword-format "%-5s")
+;;           )
+;;          )))
+
+
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/Text/life.org" "Everys Thang")
+         "* TODO %? %i %^g")
+        ("j" "Jesse" entry (file+headline "~/Text/life.org" "Everys Thang")
+         "* JESSE %? %i %^g")
+        ("m" "Someday" entry (file+headline "~/Text/life.org" "Everys Thang")
+         "* SOMEDAY/MAYBE %? %i %^g")
+        ("w" "Waiting" entry (file+headline "~/Text/life.org" "Everys Thang")
+         "* WAITING %? %i %^g")
+
+	))
+
+
+(set-face-attribute 'org-habit-alert-face nil :background "#fdf6e3"
+		    :bold t :strike-through nil :foreground "#073642" :background "#eee8d5" 
+		    )
+(set-face-attribute 'org-habit-alert-future-face nil :background
+		    "#fdf6e3" :strike-through nil :foreground "#2aa198"
+		    :bold nil )
+(set-face-attribute 'org-habit-clear-face nil :background "#fdf6e3"
+		    :strike-through nil :bold nil :foreground "#2aa198")
+(set-face-attribute 'org-habit-clear-future-face nil :background
+		    "#fdf6e3" )
+(set-face-attribute 'org-habit-overdue-face nil :background "#eee8d5"
+		    :strike-through nil :foreground
+		    "#b58900" :bold t )
+(set-face-attribute 'org-habit-overdue-future-face nil :background
+		    "#eee8d5" :strike-through nil :underline nil
+                    )
+(set-face-attribute 'org-habit-ready-face nil :background "#fdf6e3"
+		    :foreground "#2aa198" :bold t 
+		    )
+(set-face-attribute 'org-warning nil :background "#fdf6e3"
+		    :foreground "#b58900" :bold t 
+		    )
+(set-face-attribute 'org-upcoming-deadline nil :background "#fdf6e3"
+		    :foreground "#268bd2" :bold t 
+		    )
+
+(set-face-attribute 'org-habit-ready-future-face nil :background
+		    "#fdf6e3" )
+(set-face-attribute 'org-level-1 nil :foreground "#073642" :height 120)
+(set-face-attribute 'org-level-2 nil :foreground "#586e75" :height 100)
+(set-face-attribute 'org-agenda-structure nil :foreground "#073642" :height 140 :background "#fdf6e3")
+(setq org-habit-show-done-always-green t)
+(setq org-habit-today-glyph ?★)
+(setq org-habit-completed-glyph ?✓)
+
+(setq org-habit-graph-column 28)
+
+(setq org-columns-default-format "%40ITEM(Task) %5Effort(Effort){:} %6CLOCKSUM")
+(setq org-agenda-tags-column 42)
+(setq org-habit-preceding-days 8)
+(setq org-habit-following-days 4)
+
+
+(setq org-tag-faces
+      '(
+	("home" . (:inherit org-tag :foreground "#93a1a1" ))
+	("computer" . (:inherit org-tag :foreground "#93a1a1" :weight demibold))
+	("phone" .  (:inherit org-tag :foreground "#002b36" :weight bold) )
+        ("malka" . (:inherit org-tag :foreground "#859900" :weight bold))
+        ("hp" . (:inherit org-tag :foreground "#859900" :weight bold) )
+        ("bathroom" . (:inherit org-tag :foreground "#2aa198" :weight demibold) )
+        ("kitchen" . (:inherit org-tag :foreground "#268db2" :weight demibold) )
+        ("frontroom" . (:inherit org-tag :foreground "#2aa198" :weight demibold))
+        ("bedroom" . (:inherit org-tag :foreground "#2aa198" :weight demibold) )
+        ("porch" .  (:inherit org-tag :foreground "#268db2" :weight demibold) )
+        ("social" . "#6c71c4")
+        ("railsbridge" . "#dc322f")
+        ("para" . "#002b36")
+	))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-calendar-event ((t (:foreground "#073642" :weight bold))))
+ '(org-agenda-date ((t (:weight semi-bold :height 120 :foreground "#2aa198"))))
+ '(org-agenda-date-today ((t (:weight bold :height 180 :foreground "#fdf6e3" :background "#2aa198"))))
+ '(org-level-1 ((t nil)))
+ '(org-scheduled ((t (:foreground "#2aa198" :weight bold :background "#fdf6e3"))))
+ '(org-scheduled-previously ((t (:foreground "#d336a2" :weight bold :background "#fdf6e3"))))
+ '(org-scheduled-today ((t (:foreground "#002b363" :bold nil :weight light ))))
+ '(org-tag ((t ( :weight ultralight :height 100)))))
+
+
+(setq org-priority-faces '((?A . (:foreground "#859900" :weight semibold))
+                           (?B . (:foreground "#657b83" :weight ultralight))
+                           (?C . (:foreground "#eee8d5" :weight ultralight))))
+
+(defun org-todo-toggle-yesterday ()
+  ;; this function is interactive, meaning a "command" that we call
+  ;; as an emacs user (allows us to do "M-x org-todo-toggle-yesterday")
+  (interactive)
+
+  (let ((time-in-question (decode-time))) 
+    ;; time-in-question is the current time, decoded into convenient fields
+
+    ;; decrease the field by one which represents the day -- make it "yesterday"
+    (decf (nth 3 time-in-question))
+
+    ;; now, re-encode that time
+    (setq time-in-question (apply 'encode-time time-in-question))
+
+    (cl-flet ((current-time () time-in-question))
+      ;; flet temporarily binds current-time to this version, which
+      ;; returns the time from yesterday 
+
+      (org-todo)
+      ;; toggles the todo heading
+      )))
+
+;; (setq mark-diary-entries-in-calendar t)
+;; (defun getcal (url)
+;;   "Download ics file and add to diary"
+;;   (let ((tmpfile (url-file-local-copy url)))
+;;     (icalendar-import-file tmpfile "~/diary" t)
+;;     (kill-buffer (car (last (split-string tmpfile "/"))))
+;;     )
+;;   )
+;; (setq google-calendars '(
+;;                      "https://www.google.com/calendar/ical/clara.raubertas%40gmail.com/private-89f852a8af2420a9afcf0b88b36658eb/basic.ics"
+;;                          "https://www.google.com/calendar/ical/qefiaa27cig1mlij5v44e0orfo%40group.calendar.google.com/private-3c956aa9fec9c60483ee639b701d9408/basic.ics"
+;;                          ))
+;; (defun getcals ()
+;;   (find-file "~/diary")
+;;   (flush-lines "^[& ]")
+;;   (dolist (url google-calendars) (getcal url))
+;;   (kill-buffer "diary"))
+>>>>>>> 3ea8bbfdbf95747d7654e02a3a7a8a0f824eeae1
 ;; (getcals)
 ;; (setq org-agenda-include-diary t)
 ;;;;;;;;;; ;;;;;;;;;; 
@@ -555,6 +842,10 @@ buffer is not visiting a file."
 (add-hook 'scheme-mode-hook 'paredit-mode)
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
 (add-hook 'emacs-lisp-mode-hook 'rainbow-mode)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ea8bbfdbf95747d7654e02a3a7a8a0f824eeae1
 (add-hook 'css-mode-hook 'rainbow-mode)
 
 ;;;;;;;;;; ;;;;;;;;;;
