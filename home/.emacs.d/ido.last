@@ -30,14 +30,15 @@
  ("/home/clara/Software/fotc/config/" . "initializers/")
  ("/home/clara/Software/fotc/" . "app/")
  ("/home/clara/Software/" . "dioptrice/")
- ("/home/clara/" . "Software/")
+ ("/home/clara/" . ".conky/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/clara/Software/dioptrice/"
- "/home/clara/Software/dioptrice/config/"
  "/home/clara/.conky/Conky Seamod/"
+ "/home/clara/Software/dioptrice/config/"
+ "/home/clara/Software/dioptrice/solr/"
+ "/home/clara/Software/dioptrice/"
  "/home/clara/"
  "/home/clara/Software/fotc/app/assets/stylesheets/"
  "/home/clara/Software/fotc/app/models/"
@@ -82,27 +83,29 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "conky_seamod"
+ "deploy.rb"
+ "solr.xml"
  ".gitignore"
  "sunspot.yml"
- "conky_seamod"
  "seamod_rings.lua"
  "revamp2.css"
  "job.rb"
  "jobs_controller_spec.rb"
  "report.html.erb"
- "jobs_controller.rb"
- "note.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/dioptrice/config/" (22505 35066 917792 907000) "routes.rb.rails2" "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "database.yml.rails2" "sunspot.yml" "boot.rb" "../" "environments/" "environment.rb.rails2" "application.rb" "locales/" "database.yml" "initializers/")
+ ("/home/clara/.conky/Conky Seamod/" (22505 37814 185290 778000) "./" "seamod_rings.lua" "../" "conky_seamod.jpg" "source.txt" "conky_seamod")
 
- ("/home/clara/Software/dioptrice/" (22505 34792 173330 716000) "log/" ".gitignore" "vendor/" "resources/" "agents/" ".gitignore.rails2" "telescopes/" "bin/" "NEWS" "in/" "config/" "man/" "bothsources-utf8-objectivesmunged.sql" "README" "tmp/" "./" "Gemfile.lock" "debian/" "helper-scripts/" "by/" "dev/" "Gemfile" "public/" "collections/" "spec/" "../" "PACKAGING.TXT" "app/" "source1plusmunging.sql" "LICENSE" "coverage/" ".rspec" "lib/" "db/" "includes/" "INSTALL" "Capfile" "source1only.sql" "config.ru" "Rakefile" "DEVELOPERS.TXT" "script/" "passenger-standalone/" ".git/")
+ ("/home/clara/Software/dioptrice/config/" (22505 37708 761351 450000) "routes.rb.rails2" "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "database.yml.rails2" "sunspot.yml" "boot.rb" "../" "environments/" "environment.rb.rails2" "application.rb" "locales/" "database.yml" "initializers/")
+
+ ("/home/clara/Software/dioptrice/solr/" (22505 36325 370954 998000) "solr.xml" "default/" "configsets/" "pids/" "./" "test/" "../" "development/")
+
+ ("/home/clara/Software/dioptrice/" (22505 36325 370954 998000) "log/" ".gitignore" "vendor/" "resources/" "agents/" ".gitignore.rails2" "telescopes/" "bin/" "NEWS" "in/" "config/" "man/" "bothsources-utf8-objectivesmunged.sql" "README" "tmp/" "solr/" "./" "Gemfile.lock" "debian/" "helper-scripts/" "by/" "dev/" "Gemfile" "public/" "collections/" "spec/" "../" "PACKAGING.TXT" "app/" "source1plusmunging.sql" "LICENSE" "coverage/" ".rspec" "lib/" "db/" "includes/" "INSTALL" "Capfile" "source1only.sql" "config.ru" "Rakefile" "DEVELOPERS.TXT" "script/" "passenger-standalone/" ".git/")
 
  ("/home/clara/" (22505 35704 509417 473000) "mysql-init" ".cinnamon/" ".gnupg/" ".thunderbird/" ".texmf-var/" ".icons/" ".cache/" "draw-bg.lua" ".xsession-errors" "Desktop/" "Text/" ".selected_editor" ".gnome2/" ".wget-hsts" ".bashrc" "letter.odt" "seamod_rings.lua~" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".dbus/" ".sane/" "parallactic.png" "secretariat.svg" ".gksu.lock" "missfont.log" "#So#" "Pictures/" ".bash_profile" ".xdvirc" "LizLemon.jpg" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" ".sudo_as_admin_successful" "permission.pdf" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "nmap.txt" "../" ".mozilla/" "secretariat.svg-text3336-546.png" ".scribus/" ".emacs" ".config/" "Videos/" "Templates/" "liz-lemon.jpg" ".themes/" "conky-weather/" ".linuxmint/" "parker.jpg" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".bash_logout" ".ssh/" "#*Messages*#" ".fonts.conf" ".gconf/" "conky-weather.git" ".homesick/" "myabuy.zip" ".ICEauthority" "Software/" "Music/" ".fonts/" "op-supplies.pdf" ".wine/" ".gnome/")
-
- ("/home/clara/.conky/Conky Seamod/" (22496 44506 808102 29000) "./" "seamod_rings.lua" "../" "conky_seamod.jpg" "source.txt" "conky_seamod")
 
  ("/home/clara/.conky/" (22495 29216 446948 13000) "TeejeeTech/" "Conky Seamod/" "./" ".themepacks" "Green Apple Desktop/" "../" "Gotham/" "fonts/" "conky-startup.sh" "Conky MIUI/")
 
