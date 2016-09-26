@@ -21,7 +21,7 @@
  ("/var/" . "www/")
  ("/" . "etc/")
  ("/home/clara/Software/dioptrice/app/" . "helpers/")
- ("/home/clara/Software/dioptrice/" . "app/")
+ ("/home/clara/Software/dioptrice/" . "config/")
  ("/home/clara/Software/fotc/app/views/" . "jobs/")
  ("/home/clara/Software/fotc/app/assets/" . "stylesheets/")
  ("/home/clara/Software/fotc/app/" . "assets/")
@@ -29,12 +29,14 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "initializers/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "fotc/")
- ("/home/clara/" . ".conky/")
+ ("/home/clara/Software/" . "dioptrice/")
+ ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/dioptrice/"
+ "/home/clara/Software/dioptrice/config/"
  "/home/clara/.conky/Conky Seamod/"
  "/home/clara/"
  "/home/clara/Software/fotc/app/assets/stylesheets/"
@@ -50,7 +52,6 @@
  "/home/clara/Software/dioptrice/app/helpers/"
  "/home/clara/Software/dioptrice/app/views/telescopes/"
  "/home/clara/Software/dioptrice/app/models/"
- "/home/clara/Software/dioptrice/config/"
  "/home/clara/Software/dioptrice/db/migrate/"
  "/home/clara/Software/fotc/config/"
  "/home/clara/Software/fotc/app/views/login/"
@@ -59,7 +60,6 @@
  "/home/clara/Software/dioptrice/app/controllers/"
  "/home/clara/Software/fotc/config/initializers/"
  "/home/clara/Text/dumbfight/"
- "/home/clara/Software/dioptrice/"
  "/home/clara/Documents/Parallactic/"
  "/home/clara/Software/dioptrice/app/views/layouts/"
  "/home/clara/Software/dioptrice/spec/models/"
@@ -82,6 +82,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".gitignore"
+ "sunspot.yml"
  "conky_seamod"
  "seamod_rings.lua"
  "revamp2.css"
@@ -90,15 +92,17 @@
  "report.html.erb"
  "jobs_controller.rb"
  "note.rb"
- "_note.html.erb"
- "application.html.erb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/.conky/Conky Seamod/" (22496 44506 808102 29000) "./" "seamod_rings.lua" "../" "conky_seamod.jpg" "source.txt" "conky_seamod")
+ ("/home/clara/Software/dioptrice/config/" (22505 35066 917792 907000) "routes.rb.rails2" "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "database.yml.rails2" "sunspot.yml" "boot.rb" "../" "environments/" "environment.rb.rails2" "application.rb" "locales/" "database.yml" "initializers/")
 
- ("/home/clara/" (22498 51221 268702 597000) "mysql-init" ".cinnamon/" ".gnupg/" ".thunderbird/" ".texmf-var/" ".icons/" ".cache/" "draw-bg.lua" ".xsession-errors" "Desktop/" "Text/" ".selected_editor" ".gnome2/" ".wget-hsts" ".bashrc" "letter.odt" "seamod_rings.lua~" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".dbus/" ".sane/" "secretariat.svg" ".gksu.lock" "missfont.log" "#So#" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" ".sudo_as_admin_successful" "permission.pdf" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "nmap.txt" "../" ".mozilla/" "secretariat.svg-text3336-546.png" ".scribus/" ".emacs" ".config/" "Videos/" "Templates/" ".themes/" "conky-weather/" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".bash_logout" ".ssh/" "#*Messages*#" ".fonts.conf" ".gconf/" "conky-weather.git" ".homesick/" "myabuy.zip" ".ICEauthority" "Software/" "Music/" ".fonts/" "op-supplies.pdf" ".wine/" ".gnome/")
+ ("/home/clara/Software/dioptrice/" (22505 34792 173330 716000) "log/" ".gitignore" "vendor/" "resources/" "agents/" ".gitignore.rails2" "telescopes/" "bin/" "NEWS" "in/" "config/" "man/" "bothsources-utf8-objectivesmunged.sql" "README" "tmp/" "./" "Gemfile.lock" "debian/" "helper-scripts/" "by/" "dev/" "Gemfile" "public/" "collections/" "spec/" "../" "PACKAGING.TXT" "app/" "source1plusmunging.sql" "LICENSE" "coverage/" ".rspec" "lib/" "db/" "includes/" "INSTALL" "Capfile" "source1only.sql" "config.ru" "Rakefile" "DEVELOPERS.TXT" "script/" "passenger-standalone/" ".git/")
+
+ ("/home/clara/" (22505 35704 509417 473000) "mysql-init" ".cinnamon/" ".gnupg/" ".thunderbird/" ".texmf-var/" ".icons/" ".cache/" "draw-bg.lua" ".xsession-errors" "Desktop/" "Text/" ".selected_editor" ".gnome2/" ".wget-hsts" ".bashrc" "letter.odt" "seamod_rings.lua~" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".dbus/" ".sane/" "parallactic.png" "secretariat.svg" ".gksu.lock" "missfont.log" "#So#" "Pictures/" ".bash_profile" ".xdvirc" "LizLemon.jpg" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" ".sudo_as_admin_successful" "permission.pdf" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "nmap.txt" "../" ".mozilla/" "secretariat.svg-text3336-546.png" ".scribus/" ".emacs" ".config/" "Videos/" "Templates/" "liz-lemon.jpg" ".themes/" "conky-weather/" ".linuxmint/" "parker.jpg" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".bash_logout" ".ssh/" "#*Messages*#" ".fonts.conf" ".gconf/" "conky-weather.git" ".homesick/" "myabuy.zip" ".ICEauthority" "Software/" "Music/" ".fonts/" "op-supplies.pdf" ".wine/" ".gnome/")
+
+ ("/home/clara/.conky/Conky Seamod/" (22496 44506 808102 29000) "./" "seamod_rings.lua" "../" "conky_seamod.jpg" "source.txt" "conky_seamod")
 
  ("/home/clara/.conky/" (22495 29216 446948 13000) "TeejeeTech/" "Conky Seamod/" "./" ".themepacks" "Green Apple Desktop/" "../" "Gotham/" "fonts/" "conky-startup.sh" "Conky MIUI/")
 
@@ -142,8 +146,6 @@
 
  ("/home/clara/Software/fotc/config/" (22492 23191 807564 917000) "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "boot.rb" "../" "environments/" "schedule.rb" "application.rb" "locales/" "database.yml" "initializers/")
 
- ("/home/clara/Software/dioptrice/config/" (22469 48860 637007 173000) "routes.rb.rails2" "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "database.yml.rails2" "sunspot.yml" "boot.rb" "../" "environments/" "environment.rb.rails2" "application.rb" "locales/" "database.yml" "initializers/")
-
  ("/home/clara/Software/dioptrice/app/helpers/" (22469 54257 778282 205000) "./" "application_helper.rb" "../")
 
  ("/home/clara/.homesick/repos/dotfiles/" (22495 26015 221545 678000) ".gitignore" "home/" "./" "../" ".gitmodules" ".git/")
@@ -155,8 +157,6 @@
  ("/home/clara/Software/dioptrice/db/" (22469 49170 677786 325000) "./" "add_private_category_to_photo_categories.sql" "../" "development.sqlite3" "seeds.rb" "migrate/" "add_illustration_types.sql" "schema.rb" "test.sqlite3")
 
  ("/home/clara/Software/dioptrice/db/migrate/" (22469 48934 989178 892000) "20110406143914_create_objectives.rb" "20110406143818_create_optical_styles.rb" "20130426212700_add_photo_category_id_to_assets.rb" "20110907181518_add_is_refractor_to_objective_types.rb" "20120727210311_add_entry_status_id_to_telescopes.rb" "20151208194115_add_signature_notes_to_telescopes.rb" "20110727143409_create_eyepiece_completes.rb" "20110421160258_add_name_to_collections.rb" "20111116225918_add_table_data_sources.rb" "20110421185308_add_length_open_to_telescopes.rb" "20110815161811_create_photos.rb" "20130320041438_create_illustration_types.rb" "20150526173807_add_number_of_drawtubes.rb" "20110406143908_create_objective_lenses.rb" "20130125211901_rename_entry_status_id_column.rb" "20150526175423_add_full_aperture.rb" "20160620162129_add_year_notes.rb" "20131101182003_create_categories.rb" "20110526163132_add_private_to_collection.rb" "20110406145046_create_functional_styles.rb" "20160205195447_create_wallpapers.rb" "20151208195010_add_reversible_to_telescopes.rb" "20160205195645_add_attachment_image_to_wallpapers.rb" "20150609192750_add_flags_to_scopes.rb" "20110711222706_add_number_of_eyepieces.rb" "20130425042951_add_marv_seen_marv_approved_to_telescopes.rb" "20151208194958_add_complete_eyepiece_to_telescopes.rb" "20160815194616_add_order_number_to_assets.rb" "20111116234441_create_material_types.rb" "20110815172705_add_fields_to_photos.rb" "20120322191001_add_main_photo_id.rb" "20110815172630_create_photo_categories.rb" "20110823182222_create_data_points.rb" "20110421184846_add_year_b_to_telescopes.rb" "20111116230107_drop_table_eyepiece_completes.rb" "20160815195413_update_assets.rb" "20160429183523_add_full_to_eyepiece.rb" "20160815192157_add_order_field_to_images.rb" "20130425211533_create_assets.rb" "20160830171117_adjust_aperture.rb" "20130425173809_add_best_knowledge_basic_best_knowledge_optical_basic_best_knowledge_optical_lab_best_knowledge_image_to_telescopes.rb" "20140107193115_devise_create_users.rb" "20120727210002_create_entry_statuses.rb" "20140124211045_add_attachment_image_to_categories.rb" "20160623205418_change_thickness.rb" "20131105205911_change_to_mediumtext.rb" "20111117013825_remove_style_id_fields_from_telescopes.rb" "20110421180108_add_telescope_id_to_objectives.rb" "20110406143825_create_collections.rb" "20151208194904_add_drawtube_notes_to_telescopes.rb" "20110406145036_create_physical_styles.rb" "20111116230319_add_column_datasource_id_to_telescopes.rb" "20110601163550_add_objective_id_to_lenses.rb" "20130320045410_add_is_illustration_illustration_type_id_illustration_title_to_telescopes.rb" "20151208193733_add_provenance_to_telescopes.rb" "20140124211321_add_attachment_image_to_collections.rb" "20131101181412_create_categories_collections.rb" "20130528004835_create_reports.rb" "20160311205006_add_f_ratio_and_exit_pupil.rb" "20110406143924_create_eyepieces.rb" "20110406145204_create_materials_telescopes.rb" "20150609192409_add_flags_to_images.rb" "20110405225745_create_telescopes.rb" "20110718180956_create_sessions.rb" "20160311210536_add_thickness_to_eyepieces.rb" "20160219194829_add_data_status_to_lenses.rb" "20130512202115_create_admin_notes.rb" "20110406143808_create_objective_types.rb" "20111116225337_add_table_completenesses.rb" "20111116225313_create_completenesses.rb" "20110718165049_add_habtm_tables.rb" "20111116225612_remove_telescope_id_from_objective_lenses.rb" "20160125194536_add_notes_to_eyepiece.rb" "20110907182151_add_is_refractor_to_telescopes.rb" "20130125210943_rename_entry_status_to_object_status.rb" "20151208194128_add_inscriptions_to_telescopes.rb" "20110406143930_create_eyepiece_lenses.rb" "20160311212056_add_drawtube_data.rb" "20160125194230_add_notes_to_objective_lenses.rb" "20110406145055_create_materials.rb" "../" "./")
-
- ("/home/clara/Software/dioptrice/" (22469 47013 579567 2000) "log/" ".gitignore" "vendor/" "resources/" "agents/" ".gitignore.rails2" "telescopes/" "bin/" "NEWS" "in/" "config/" "man/" "bothsources-utf8-objectivesmunged.sql" "README" "tmp/" "solr/" "./" "Gemfile.lock" "debian/" "helper-scripts/" "by/" "dev/" "Gemfile" "public/" "collections/" "spec/" "../" "PACKAGING.TXT" "app/" "source1plusmunging.sql" "LICENSE" "coverage/" ".rspec" "lib/" "db/" "includes/" "INSTALL" "Capfile" "source1only.sql" "config.ru" "Rakefile" "DEVELOPERS.TXT" "script/" "passenger-standalone/" ".git/")
 
  ("/etc/default/" (22459 9365 479117 111000) "../" "useradd" "google-chrome" "cryptdisks" "add-apt-key" "ufw" "grub.d/" "keyboard" "rcS" "im-config" "speech-dispatcher" "intel-microcode" "ntpdate" "grub" "apache-htcacheclean" "rsyslog" "nss" "anacron" "ntp" "alsa" "rsync" "crda" "dbus" "console-setup" "avahi-daemon" "cacerts" "openvpn" "devpts" "./" "bsdmainutils" "halt" "acpi-support" "acpid" "irqbalance" "cron" "hddtemp" "locale" "saned" "networking" "kerneloops" "brltty")
 
