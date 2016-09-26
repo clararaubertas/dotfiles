@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/clara/.conky/" . "Conky Seamod/")
  ("/home/clara/Software/fotc/spec/" . "controllers/")
  ("/home/clara/Software/dioptrice/db/" . "migrate/")
  ("/etc/" . "default/")
@@ -29,11 +30,13 @@
  ("/home/clara/Software/fotc/config/" . "initializers/")
  ("/home/clara/Software/fotc/" . "app/")
  ("/home/clara/Software/" . "fotc/")
- ("/home/clara/" . "Software/")
+ ("/home/clara/" . ".conky/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/.conky/Conky Seamod/"
+ "/home/clara/"
  "/home/clara/Software/fotc/app/assets/stylesheets/"
  "/home/clara/Software/fotc/app/models/"
  "/home/clara/Software/fotc/spec/controllers/"
@@ -44,7 +47,6 @@
  "/home/clara/Software/fotc/spec/helpers/"
  "/home/clara/Software/fotc/"
  "/home/clara/Software/fotc/spec/models/"
- "/home/clara/"
  "/home/clara/Software/dioptrice/app/helpers/"
  "/home/clara/Software/dioptrice/app/views/telescopes/"
  "/home/clara/Software/dioptrice/app/models/"
@@ -80,6 +82,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "conky_seamod"
+ "seamod_rings.lua"
  "revamp2.css"
  "job.rb"
  "jobs_controller_spec.rb"
@@ -88,12 +92,16 @@
  "note.rb"
  "_note.html.erb"
  "application.html.erb"
- "application_helper_spec.rb"
- "Gemfile"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/.conky/Conky Seamod/" (22496 44506 808102 29000) "./" "seamod_rings.lua" "../" "conky_seamod.jpg" "source.txt" "conky_seamod")
+
+ ("/home/clara/" (22498 51221 268702 597000) "mysql-init" ".cinnamon/" ".gnupg/" ".thunderbird/" ".texmf-var/" ".icons/" ".cache/" "draw-bg.lua" ".xsession-errors" "Desktop/" "Text/" ".selected_editor" ".gnome2/" ".wget-hsts" ".bashrc" "letter.odt" "seamod_rings.lua~" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".dbus/" ".sane/" "secretariat.svg" ".gksu.lock" "missfont.log" "#So#" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" ".sudo_as_admin_successful" "permission.pdf" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "nmap.txt" "../" ".mozilla/" "secretariat.svg-text3336-546.png" ".scribus/" ".emacs" ".config/" "Videos/" "Templates/" ".themes/" "conky-weather/" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".bash_logout" ".ssh/" "#*Messages*#" ".fonts.conf" ".gconf/" "conky-weather.git" ".homesick/" "myabuy.zip" ".ICEauthority" "Software/" "Music/" ".fonts/" "op-supplies.pdf" ".wine/" ".gnome/")
+
+ ("/home/clara/.conky/" (22495 29216 446948 13000) "TeejeeTech/" "Conky Seamod/" "./" ".themepacks" "Green Apple Desktop/" "../" "Gotham/" "fonts/" "conky-startup.sh" "Conky MIUI/")
+
  ("/home/clara/Software/fotc/app/assets/" (22491 7168 884111 691000) "./" "javascripts/" "../" "stylesheets/" "fonts/" "images/")
 
  ("/home/clara/Software/fotc/" (22497 47925 93546 783000) "attachments-15457" "attachments-65" "attachments-32" "attachments-73" "attachments-76" "attachments-26" "attachments-66" "log/" ".gitignore" "attachments-120" "attachments-102" "attachments-23" "attachments-92" "attachments-95" "attachments-45" "attachments-16741" "attachments-51" "attachments-15176" "attachments-17256" "attachments-7" "attachments-15315" "attachments-77" "attachments-94" "attachments-20" "attachments-91" "attachments-115" "attachments-93" "attachments-21" "attachments-55" "attachments-83" "attachments-87" "attachments-80" "attachments-44" "config/" "attachments-8" "attachments-46" "attachments-13" "attachments-18" "attachments-16312" "attachments-98" "attachments-14" "attachments-16169" "attachments-37" "attachments-47" ".watchr" "attachments-79" "attachments-43" "attachments-105" "tmp/" "attachments-74" "attachments-16026" "attachments-53" "attachments-67" "attachments-114" "attachments-119" "attachments-33" "attachments-15" "attachments-103" "./" "attachments-108" "Gemfile.lock" "attachments-86" "attachments-39" "attachments-99" "attachments-25" "attachments-82" "attachments-16455" "attachments-4" "attachments-71" "attachments-84" "Gemfile" "attachments-88" "attachments-52" "attachments-56" "attachments-122" "attachments-48" "attachments-107" "attachments-42" "attachments-11" "attachments-61" "public/" "attachments-12" "attachments-101" "attachments-63" "attachments-19" "attachments-15883" "attachments-118" "attachments-34" "attachments-29" "attachments-70" "spec/" "attachments-116" "attachments-106" "attachments-41" "attachments-96" "attachments-9" "attachments-75" "attachments-123" "attachments-85" "attachments-36" "attachments-24" "../" "attachments-6" "app/" "attachments-64" "attachments-62" "attachments-50" "attachments-68" "attachments-117" "attachments-15599" "coverage/" "attachments-5" "attachments-22" ".rspec" "attachments-111" "attachments-49" "attachments-15740" "attachments-27" "attachments-89" "attachments-100" "lib/" "attachments-10" "attachments-78" "attachments-104" "attachments-38" "attachments-40" "attachments-69" "db/" "attachments-16" "attachments-121" "attachments-54" "attachments-3" "Capfile" "config.ru" "attachments-110" "attachments-35" "Rakefile" "attachments-17111" "script/" "attachments-31" "attachments-81" "attachments-109" "attachments-17" "attachments-30" "attachments-16598" "attachments-16885" "attachments-2" ".git/" "attachments-72")
@@ -113,8 +121,6 @@
  ("/home/clara/Software/fotc/spec/models/" (22496 4549 202487 148000) "invoice_spec.rb" "market_spec.rb" "./" "photo_spec.rb" "saved_company_spec.rb" "recurrence_spec.rb" "category_spec.rb" "job_attachment_spec.rb" "client_spec.rb" "user_spec.rb" "saved_email_spec.rb" "../" "messenger_spec.rb" "weekday_spec.rb" "work_phone_spec.rb" "#admin_spec.rb#" "link_spec.rb" "job_spec.rb" ".#admin_spec.rb" "admin_spec.rb" "page_spec.rb")
 
  ("/home/clara/Software/fotc/spec/" (22496 8557 196312 12000) "models/" "factories/" "controllers/" "twilio_helper.rb" "./" "spec_helper.rb" "helpers/" "../" "rails_helper.rb" "mailers/" "requests/" "fixtures/")
-
- ("/home/clara/" (22497 43576 224337 772000) "mysql-init" ".cinnamon/" ".gnupg/" ".thunderbird/" ".texmf-var/" ".icons/" ".cache/" "draw-bg.lua" ".xsession-errors" "Desktop/" "Text/" ".selected_editor" ".gnome2/" ".wget-hsts" ".bashrc" "letter.odt" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".dbus/" ".sane/" "secretariat.svg" ".gksu.lock" "missfont.log" "#So#" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" ".sudo_as_admin_successful" "permission.pdf" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "nmap.txt" "../" ".mozilla/" "secretariat.svg-text3336-546.png" ".scribus/" ".emacs" ".config/" "Videos/" "Templates/" ".themes/" "conky-weather/" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".bash_logout" ".ssh/" "#*Messages*#" ".fonts.conf" ".gconf/" "conky-weather.git" ".homesick/" "myabuy.zip" ".ICEauthority" "Software/" "Music/" ".fonts/" "op-supplies.pdf" ".wine/" ".gnome/")
 
  ("/home/clara/.homesick/" (22397 17076 496622 327000) "./" "../" "repos/")
 
