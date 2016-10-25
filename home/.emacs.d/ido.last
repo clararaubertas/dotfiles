@@ -10,7 +10,7 @@
  ("/home/clara/Software/chicago-neighborhood-map/src/" . "main/")
  ("/home/clara/Software/chicago-neighborhood-map/" . "src/")
  ("/home/clara/.conky/" . "Conky Seamod/")
- ("/home/clara/Software/fotc/spec/" . "controllers/")
+ ("/home/clara/Software/fotc/spec/" . "requests/")
  ("/home/clara/Software/dioptrice/db/" . "migrate/")
  ("/etc/" . "default/")
  ("/home/clara/Text/" . "dumbfight/")
@@ -29,37 +29,39 @@
  ("/" . "etc/")
  ("/home/clara/Software/dioptrice/app/" . "helpers/")
  ("/home/clara/Software/dioptrice/" . "config/")
- ("/home/clara/Software/fotc/app/views/" . "users/")
+ ("/home/clara/Software/fotc/app/views/" . "jobs/")
  ("/home/clara/Software/fotc/app/assets/" . "stylesheets/")
- ("/home/clara/Software/fotc/app/" . "controllers/")
+ ("/home/clara/Software/fotc/app/" . "views/")
  ("/home/clara/Documents/" . "Parallactic/")
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "initializers/")
- ("/home/clara/Software/fotc/" . "config/")
- ("/home/clara/Software/" . "chicago-neighborhood-map/")
+ ("/home/clara/Software/fotc/" . "app/")
+ ("/home/clara/Software/" . "fotc/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/fotc/app/views/jobs/"
+ "/home/clara/Software/fotc/app/assets/stylesheets/"
+ "/home/clara/Software/fotc/app/views/layouts/"
+ "/home/clara/Software/fotc/app/views/pages/"
+ "/home/clara/Software/fotc/config/"
+ "/home/clara/Software/fotc/spec/requests/"
  "/home/clara/Software/chicago-neighborhood-map/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/"
  "/home/clara/Software/fotc/app/controllers/"
  "/home/clara/Software/fotc/app/helpers/"
  "/home/clara/Software/fotc/app/views/users/"
- "/home/clara/Software/fotc/config/"
  "/home/clara/Software/fotc/app/views/messengers/"
  "/home/clara/Software/fotc/app/models/"
  "/home/clara/Software/fotc/app/views/photos/"
  "/home/clara/Software/fotc/app/views/recurrences/"
- "/home/clara/Software/fotc/app/views/jobs/"
  "/home/clara/Software/fotc/app/views/clients/"
- "/home/clara/Software/fotc/app/assets/stylesheets/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/res/values/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/"
  "/home/clara/Software/fotc/app/assets/javascripts/"
  "/home/clara/Software/fotc/"
- "/home/clara/Software/fotc/app/views/layouts/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/res/raw/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/"
  "/home/clara/"
@@ -90,29 +92,39 @@
  "/home/clara/Software/rummagemarketplace/config/"
  "/home/clara/Software/rummagemarketplace/script/"
  "/home/clara/Software/rummagemarketplace/config/initializers/"
- "/home/clara/Software/rummagemarketplace/config/environments/"
- "/home/clara/Software/rummagemarketplace/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "build.gradle"
- "AndroidManifest.xml"
- "jobs_controller.rb"
- "calendar_helper.rb"
+ "_guestform.html.erb"
  "_form.html.erb"
- "new.html.erb"
+ "_sizes.html.erb"
+ "_clientform.html.erb"
+ "application.css"
+ "application.html.erb"
+ "services.html.erb"
+ "_ny.html.erb"
+ "_boston.html.erb"
  "routes.rb"
- "index.html.erb"
- "user.rb"
- "cancel.html.erb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/" (22536 63583 748483 260000) ".cinnamon/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "Club-MateOrderingInstructions.pdf" ".icons/" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" ".gnome2/" ".wget-hsts" "android-sdk_r24.2-linux.tgz" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".dbus/" ".sane/" ".gksu.lock" "opt/" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" ".sudo_as_admin_successful" ".thumbnails/" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" ".scribus/" ".emacs" ".config/" "Videos/" ".themes/" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
+ ("/home/clara/Software/fotc/app/views/jobs/" (22542 8218 432005 800000) "calendar.html.erb" "report.html.erb" "show.html.erb" "cancel.html.erb" "_list.html.erb" "csv_import.html.erb" "edit.html.erb" "_guestform.html.erb" "_job_attachment.html.erb" "total.html.erb" "_form.html.erb" "./" "new.html.erb" "_job.html.erb" "_clientform.html.erb" "label.html.erb" "../" "uncomplete.html.erb" "_sizes.html.erb" "show.pdf.prawn" "index.html.erb" "incomplete.html.erb" "assign.html.erb" "confirmation.html.erb" "completable.html.erb" "cancelled.html.erb")
 
- ("/home/clara/Software/fotc/" (22527 50085 381164 683000) "log/" "attachments-128" ".gitignore" "attachments-120" "config/" "attachments-16169" ".watchr" "attachments-105" "tmp/" "attachments-16026" "attachments-119" "attachments-103" "./" "Gemfile.lock" "Gemfile" "public/" "attachments-15883" "attachments-118" "spec/" "attachments-106" "attachments-127" "../" "attachments-125" "app/" "attachments-117" "coverage/" "attachments-126" ".rspec" "attachments-15740" "lib/" "attachments-104" "db/" "attachments-3" "Capfile" "config.ru" "Rakefile" "script/" "attachments-2" ".git/")
+ ("/home/clara/Software/fotc/app/assets/stylesheets/" (22542 7796 933063 562000) "jquery.mobile.custom.structure.css" "jquery.mobile.custom.structure.min.css" "mobile.css" "./" "jquery.mobile.custom.theme.css" "../" "jquery.mobile.custom.theme.min.css" "application.css" "event_calendar.css")
+
+ ("/home/clara/Software/fotc/app/views/layouts/" (22542 7636 253603 368000) "./" "../" "application.html.erb")
+
+ ("/home/clara/Software/fotc/app/views/pages/" (22542 7514 873986 622000) "pdf.html.erb" "_send_or_login.html.erb" "_ny.html.erb" "zones.html.erb" "./" "../" "services.html.erb" "_boston.html.erb" "contact.html.erb")
+
+ ("/home/clara/Software/fotc/spec/requests/" (22542 6614 843864 274000) "clients_spec.rb" "invoices_spec.rb" "messengers_spec.rb" "photos_spec.rb" "./" "jobs_spec.rb" "../" "admins_spec.rb" "users_spec.rb" "pages_spec.rb" "recurrences_spec.rb" "notes_spec.rb" "markets_spec.rb")
+
+ ("/home/clara/Software/fotc/app/views/" (22537 8339 845216 419000) "invoice_mailer/" "saved_companies/" "work_phones/" "clients/" "messengers/" "invoices/" "admins/" "./" "photos/" "users/" "markets/" "jobs/" "confirmation/" "../" "dispatching_users/" "login/" "pages/" "notes/" "layouts/" "recurrences/" "categories/")
+
+ ("/home/clara/Software/fotc/" (22542 5619 136613 510000) "log/" "attachments-128" ".gitignore" "attachments-120" "attachments-133" "attachments-130" "attachments-7" "attachments-135" "config/" "attachments-8" "attachments-16169" ".watchr" "attachments-105" "tmp/" "attachments-16026" "attachments-119" "attachments-103" "./" "Gemfile.lock" "attachments-136" "attachments-132" "attachments-4" "attachments-131" "Gemfile" "_clientform.html.erb" "public/" "attachments-15883" "attachments-118" "spec/" "attachments-106" "attachments-127" "attachments-9" "../" "attachments-6" "attachments-125" "app/" "attachments-117" "coverage/" "attachments-126" "attachments-5" "attachments-129" ".rspec" "attachments-15740" "lib/" "attachments-10" "attachments-104" "db/" "attachments-3" "Capfile" "config.ru" "attachments-134" "Rakefile" "script/" "attachments-2" ".git/")
+
+ ("/home/clara/" (22541 24851 990857 316000) ".cinnamon/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "Club-MateOrderingInstructions.pdf" ".icons/" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" ".gnome2/" ".wget-hsts" "android-sdk_r24.2-linux.tgz" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".dbus/" ".sane/" ".gksu.lock" "opt/" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" ".gimp-2.8/" "The Descent.2005.mp4" ".bash_history" ".emacs.d/" ".sudo_as_admin_successful" ".thumbnails/" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" "lpr" "horror.txt" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" ".scribus/" ".emacs" ".config/" "Videos/" ".themes/" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
 
  ("/home/clara/Software/fotc/app/controllers/" (22527 50065 45176 606000) "photos_controller.rb" "login_controller.rb" "categories_controller.rb" "dispatching_users_controller.rb" "users_controller.rb" "recurrences_controller.rb" "markets_controller.rb" "pages_controller.rb" "./" "application_controller.rb" "jobs_controller.rb" "clients_controller.rb" "../" "invoices_controller.rb" "admins_controller.rb" "notes_controller.rb" "messengers_controller.rb")
 
@@ -138,8 +150,6 @@
 
  ("/home/clara/Software/fotc/spec/models/" (22497 47662 397620 473000) "invoice_spec.rb" "market_spec.rb" "./" "photo_spec.rb" "saved_company_spec.rb" "recurrence_spec.rb" "category_spec.rb" "job_attachment_spec.rb" "client_spec.rb" "user_spec.rb" "saved_email_spec.rb" "../" "messenger_spec.rb" "weekday_spec.rb" "work_phone_spec.rb" "link_spec.rb" "job_spec.rb" ".#admin_spec.rb" "admin_spec.rb" "page_spec.rb")
 
- ("/home/clara/Software/fotc/app/views/layouts/" (22526 28034 868685 9000) "./" "../" "application.html.erb")
-
  ("/home/clara/Software/chicago-neighborhood-map/src/main/res/values/" (22527 46705 376575 173000) "strings.xml" "themes.xml" "./" "colors.xml" "../")
 
  ("/home/clara/Software/fotc/app/views/clients/" (22527 48858 369840 706000) "pdf.html.erb" "_recent_jobs.html.erb" "pdf.pdf.prawn" "show.html.erb" "./" "invoice.pdf.prawn" "admin_list.html.erb" "../" "admin_list.pdf.prawn" "rates.html.erb" "home.html.erb" "prefs.html.erb")
@@ -151,10 +161,6 @@
  ("/home/clara/Software/fotc/app/views/photos/" (22527 49492 577428 490000) "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb")
 
  ("/home/clara/Software/fotc/app/views/recurrences/" (22527 49446 949439 999000) "jobs.html.erb" "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb")
-
- ("/home/clara/Software/fotc/app/views/jobs/" (22527 49420 421445 979000) "calendar.html.erb" "report.html.erb" "show.html.erb" "cancel.html.erb" "_list.html.erb" "csv_import.html.erb" "edit.html.erb" "_guestform.html.erb" "_job_attachment.html.erb" "total.html.erb" "_form.html.erb" "./" "new.html.erb" "_job.html.erb" "_clientform.html.erb" "label.html.erb" "../" "uncomplete.html.erb" "show.pdf.prawn" "index.html.erb" "incomplete.html.erb" "assign.html.erb" "confirmation.html.erb" "completable.html.erb" "cancelled.html.erb")
-
- ("/home/clara/Software/fotc/app/assets/stylesheets/" (22527 49002 205689 4000) "jquery.mobile.custom.structure.css" "jquery.mobile.custom.structure.min.css" "mobile.css" "./" "jquery.mobile.custom.theme.css" "../" "jquery.mobile.custom.theme.min.css" "application.css" "event_calendar.css")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/" (22527 46673 92606 177000) "./" "main.xml" "../")
 
@@ -198,8 +204,6 @@
 
  ("/home/clara/Software/fotc/app/views/notes/" (22497 47465 349611 470000) "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "_note.html.erb" "../" "index.html.erb")
 
- ("/home/clara/Software/fotc/app/views/" (22491 7168 880111 697000) "invoice_mailer/" "work_phones/" "clients/" "messengers/" "invoices/" "admins/" "./" "photos/" "users/" "markets/" "jobs/" "confirmation/" "../" "dispatching_users/" "login/" "pages/" "notes/" "layouts/" "recurrences/" "categories/")
-
  ("/home/clara/Software/fotc/spec/helpers/" (22497 45680 766041 295000) "./" "calendar_helper_spec.rb" "../" "application_helper_spec.rb")
 
  ("/home/clara/Software/fotc/spec/" (22496 8557 196312 12000) "models/" "factories/" "controllers/" "twilio_helper.rb" "./" "spec_helper.rb" "helpers/" "../" "rails_helper.rb" "mailers/" "requests/" "fixtures/")
@@ -209,8 +213,6 @@
  ("/home/clara/.homesick/repos/" (22397 17076 496622 327000) "dotfiles/" "./" "../")
 
  ("/home/clara/Software/fotc/db/migrate/" (22492 21332 317859 389000) "016_add_cancelled.rb" "20120306182943_add_archived_to_users.rb" "20120502185217_add_calendar_fields.rb" "20150720161303_add_origin_name.rb" "20130208191710_add_personal_email.rb" "20150723183932_change_time_due.rb" "20130513160022_create_job_attachments.rb" "20120819202425_create_weekdays.rb" "20130918192714_add_service_levels.rb" "20130805160803_add_old_messenger_id.rb" "20160205214933_add_billing_email_to_client.rb" "20130208174213_add_fields_to_invoices.rb" "20160513212454_add_time_in_words.rb" "20120120172941_create_photos.rb" "20120305230108_add_notes_to_recurrence.rb" "20120821201343_change_rider_id.rb" "20150528164504_add_payment_to_invoices.rb" "014_modify_overnight.rb" "20130909233809_messenger_cut.rb" "20141008203443_add_billing_info.rb" "20140527214217_add_second_payment_amount.rb" "008_create_background.rb" "20150702161552_approve_guest_jobs.rb" "20160202200925_add_attachment_pdf_to_invoices.rb" "20130219211142_change_page_layouts.rb" "009_new_recurrence_fields.rb" "20160916201658_add_tracking_number_to_invoice.rb" "20111209190819_add_backgrounds.rb" "20150708171207_add_guest_to_jobs.rb" "012_add_links.rb" "20111230232527_create_saved_companies.rb" "20130208181950_add_physical_signature.rb" "20130212205827_add_job_id_to_invoice.rb" "20130219215349_archive_categories.rb" "017_add_timestamps.rb" "20140505201003_add_second_messenger.rb" "20111209185234_create_pages.rb" "20130806210550_add_old_messenger_id_to_users.rb" "20130926172254_add_rush_details.rb" "20120306232044_create_saved_emails.rb" "20120814202134_add_type_to_users.rb" "20130131192802_add_attachment_avatar_to_users.rb" "20130321144737_add_fields_to_jobs.rb" "011_create_information.rb" "20130214214421_create_dispatching_users.rb" "20131216225554_add_second_client_to_invoice.rb" "20120910182620_change_recurrence_messenger.rb" "20120124153114_create_invoices.rb" "20150903204808_add_fields_to_recurrence.rb" "20130131200107_acts_as_taggable_on_migration.rb" "20130208193546_add_profile_to_messenger.rb" "20130205185345_add_check_box_fields_to_job.rb" "20141130184011_add_partial_payment_to_invoice.rb" "20150723194455_time_due_okay.rb" "20130321213749_recommendations.rb" "001_create_jobs.rb" "20120815010614_change_rider_id_to_messenger_id.rb" "20130910220521_store_invoice_total.rb" "20130612014306_add_tracking_number.rb" "20130329011302_add_market_fields.rb" "004_create_work_phones.rb" "013_add_client_notes.rb" "015_add_time.rb" "007_create_users.rb" "20130217170852_create_markets.rb" "20131212194846_create_notes.rb" "20150519210434_add_recipient_phone_to_jobs.rb" "20130217171539_add_ids_to_jobs_and_dispatcher.rb" "20121019172406_add_payment_scale.rb" "20151029205340_ordered_by.rb" "20141001192909_add_sender_contact.rb" "20130731193335_add_attachment_image_to_homepage_images.rb" "20130731192934_create_homepage_image.rb" "20141209184028_add_stored_balance.rb" "20100819200932_add_new_fields_to_client.rb" "20150714165122_add_guest_phone_and_email_to_jobs.rb" "006_create_recurrences.rb" "003_create_riders.rb" "20131021182434_add_time_ready.rb" "20120220162102_add_confirmation_email_to_job.rb" "018_add_email_to_job.rb" "20150520184959_add_notes_to_invoice.rb" "20130530205100_add_fields.rb" "20130217171248_create_categories.rb" "20111230204909_add_background_fields_to_clients.rb" "010_add_notes.rb" "20150908192147_add_booleans_to_recurrence.rb" "20130208193757_add_rates_to_client.rb" "20131021234450_change_time_ready.rb" "20130513160257_add_attachment_data_to_job_attachments.rb" "20130329163214_add_links_page.rb" "20140616160410_add_time_ready_text.rb" "20120726205749_add_attachment_image_to_pages.rb" "20150702164357_guest_id.rb" "20130802163613_homepage_bottom_images.rb" "../" "./")
-
- ("/home/clara/Software/fotc/app/views/pages/" (22491 8364 186830 368000) "pdf.html.erb" "_ny.html.erb" "zones.html.erb" "./" "../" "services.html.erb" "_boston.html.erb" "contact.html.erb")
 
  ("/home/clara/.homesick/repos/dotfiles/" (22495 26015 221545 678000) ".gitignore" "home/" "./" "../" ".gitmodules" ".git/")
 
