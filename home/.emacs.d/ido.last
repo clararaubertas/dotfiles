@@ -2,6 +2,11 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/clara/Software/calling-congress/app/views/devise/" . "shared/")
+ ("/home/clara/Software/calling-congress/app/assets/" . "stylesheets/")
+ ("/home/clara/Software/calling-congress/app/views/" . "calling_scripts/")
+ ("/home/clara/Software/calling-congress/app/" . "views/")
+ ("/home/clara/Software/calling-congress/" . "app/")
  ("/home/clara/Software/fotc/app/views_mobile/" . "messengers/")
  ("/home/clara/Software/chicago-neighborhood-map/src/main/res/" . "values/")
  ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/" . "chicagomap/")
@@ -37,12 +42,19 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "initializers/")
  ("/home/clara/Software/fotc/" . "config/")
- ("/home/clara/Software/" . "fotc/")
+ ("/home/clara/Software/" . "calling-congress/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/calling-congress/app/views/calling_scripts/"
+ "/home/clara/Software/calling-congress/app/models/"
+ "/home/clara/Software/calling-congress/app/views/devise/shared/"
+ "/home/clara/Software/calling-congress/app/views/layouts/"
+ "/home/clara/Software/calling-congress/app/assets/stylesheets/"
+ "/home/clara/Software/calling-congress/app/controllers/"
+ "/home/clara/Software/calling-congress/app/assets/javascripts/"
  "/home/clara/Software/fotc/app/views/login/"
  "/home/clara/Software/fotc/app/assets/stylesheets/"
  "/home/clara/Software/fotc/config/"
@@ -86,31 +98,52 @@
  "/home/clara/Software/dioptrice/db/migrate/"
  "/home/clara/Software/dioptrice/app/views/application/"
  "/home/clara/Text/dumbfight/"
- "/home/clara/Documents/Parallactic/"
- "/home/clara/Software/dioptrice/app/views/layouts/"
- "/home/clara/Software/dioptrice/spec/models/"
- "/home/clara/Software/dioptrice/app/views/wallpapers/"
- "/home/clara/Software/dioptrice/app/views/categories/"
- "/home/clara/Software/dioptrice/app/assets/stylesheets/"
- "/home/clara/Software/rummagemarketplace/config/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "_login.html.erb"
+ "_script.html.erb"
+ "index.html.erb"
+ "_show_script.html.erb"
+ "user.rb"
+ "show.html.erb"
+ "_links.html.erb"
+ "_navbar.html.erb"
  "application.css"
- "login.html.erb"
- "routes.rb"
- "application.html.erb"
- "import.html.erb"
- "telescope.rb"
- "telescopes_controller.rb"
- "category_spec.rb"
- "invoice_spec.rb"
+ "bootstrap-generators.scss"
+ "bootstrap-variables.scss"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/Software/calling-congress/app/views/calling_scripts/" (22576 55310 208297 341000) "_user_locator.html.erb" "_rep_chooser.html.erb" "show.html.erb" "_view.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "_calling_info.html.erb" "_script.html.erb" "index.html.erb" "_show_script.html.erb")
+
+ ("/home/clara/Software/calling-congress/app/models/" (22576 55058 708843 223000) "./" "../" "ability.rb" "call.rb" ".keep" "user.rb" "calling_script.rb" "concerns/")
+
+ ("/home/clara/Software/calling-congress/app/assets/stylesheets/" (22576 54114 326866 603000) "./" "../" "bootstrap-generators.scss" "bootstrap-variables.scss" "application.css")
+
+ ("/home/clara/Software/calling-congress/app/views/devise/shared/" (22575 16301 358410 232000) "_links.html.erb" "./" "../")
+
+ ("/home/clara/Software/calling-congress/app/views/devise/" (22574 18143 946868 262000) "unlocks/" "sessions/" "./" "../" "shared/" "passwords/" "registrations/" "confirmations/")
+
+ ("/home/clara/Software/calling-congress/app/views/layouts/" (22576 52304 190967 609000) "_navbar.html.erb" "./" "_footer.html.erb" "../" "application.html.erb")
+
+ ("/home/clara/Software/calling-congress/app/controllers/" (22575 31675 432242 431000) "./" "users/" "application_controller.rb" "calling_scripts_controller.rb" "../" "concerns/")
+
+ ("/home/clara/Software/calling-congress/app/assets/javascripts/" (22575 11197 978211 819000) "application.js" "./" "../" "calling_scripts.coffee")
+
+ ("/home/clara/Software/calling-congress/app/assets/" (22572 49483 501113 396000) "./" "javascripts/" "../" "stylesheets/" "images/")
+
+ ("/home/clara/Software/calling-congress/app/views/" (22575 22810 642354 792000) "./" "calling_scripts/" "../" "devise/" "layouts/")
+
+ ("/home/clara/Software/calling-congress/app/" (22572 49483 501113 396000) "models/" "controllers/" "./" "helpers/" "views/" "../" "assets/" "mailers/")
+
+ ("/home/clara/Software/calling-congress/" (22575 31349 596905 316000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "README.rdoc" "../" "app/" "LICENSE" "coverage/" ".rspec" "lib/" "db/" "config.ru" "Rakefile" ".git/")
+
+ ("/home/clara/Software/" (22572 49465 205121 955000) "gilbertandsullivan/" "HiWorld/" "html5-boilerplate/" "noti" "fotc/" "lilscripts/" "coursera-android-labs/" "docs/" "color.pl" "conky_start" "showoff_test/" "android-samples/" "chicktech/" "ballot_ready/" "calling-congress/" "link-up-illinois/" "celluloid-chicago-script/" "wordpress/" "Sunshine-Version-2/" "shepherdstownfriends/" "cryptic-beyond-4569/" "desoto/" "./" "LinkUp-Server/" "NeighborhoodMap/" "my_preso/" "2015-website/" "scripts/" "roadtowilliamsport-pages/" "arcane-mountain-3734/" "mobileorg-android/" "calendar.sh" "dioptrice/" "treasure-hunt/" "slidedown-skeleton/" "../" "rummagemarketplace/" "modernart/" "bridgedev/" "RailsBridgeChi.github.io/" "dog_test/" "test.rb" ".gradle/" "railsbridge_dogs/" "mame/" "marzipan-prep/" "dual_display.sh" "chicago-neighborhood-map/" "25020/" "sample-data/")
+
+ ("/home/clara/" (22576 32778 84466 494000) ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "Club-MateOrderingInstructions.pdf" ".icons/" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" ".gnome2/" "transfer.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" ".sane/" ".gksu.lock" "opt/" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" "wget-log" ".sudo_as_admin_successful" ".thumbnails/" ".~lock.congress.odt#" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" "lpr" "horror.txt" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" ".scribus/" ".emacs" ".config/" "Videos/" "congressletter.odt" "WireframeSketcher/" ".themes/" "default.pdf" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" "tiptree.pdf" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" "congress.odt" "2017_Iolanthe.jpg" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" ".~lock.homeaddress.odt#" ".wine/" ".gnome/" "homeaddress.odt")
+
  ("/home/clara/Software/fotc/app/assets/stylesheets/" (22566 13199 210934 115000) "jquery.mobile.custom.structure.css" "jquery.mobile.custom.structure.min.css" "mobile.css" "./" "jquery.mobile.custom.theme.css" "../" "jquery.mobile.custom.theme.min.css" "application.css" "event_calendar.css")
 
  ("/home/clara/Software/fotc/app/assets/" (22566 13198 894934 735000) "./" "javascripts/" "../" "stylesheets/" "fonts/" "images/")
@@ -152,10 +185,6 @@
  ("/home/clara/Software/fotc/app/views/notes/" (22564 64920 108554 346000) "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "_note.html.erb" "../" "index.html.erb")
 
  ("/home/clara/Software/fotc/config/initializers/" (22564 62814 550110 593000) "inflections.rb" "session_store.rb" "wrap_parameters.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "mysql.rb" "../" "or_scopes.rb" "secret_token.rb")
-
- ("/home/clara/Software/" (22552 55397 109542 786000) "gilbertandsullivan/" "HiWorld/" "html5-boilerplate/" "noti" "fotc/" "lilscripts/" "coursera-android-labs/" "docs/" "color.pl" "conky_start" "showoff_test/" "android-samples/" "chicktech/" "ballot_ready/" "link-up-illinois/" "celluloid-chicago-script/" "wordpress/" "Sunshine-Version-2/" "shepherdstownfriends/" "cryptic-beyond-4569/" "desoto/" "./" "LinkUp-Server/" "NeighborhoodMap/" "my_preso/" "2015-website/" "scripts/" "roadtowilliamsport-pages/" "arcane-mountain-3734/" "mobileorg-android/" "calendar.sh" "dioptrice/" "treasure-hunt/" "slidedown-skeleton/" "../" "rummagemarketplace/" "modernart/" "bridgedev/" "RailsBridgeChi.github.io/" "dog_test/" "test.rb" ".gradle/" "railsbridge_dogs/" "mame/" "marzipan-prep/" "dual_display.sh" "chicago-neighborhood-map/" "25020/" "sample-data/")
-
- ("/home/clara/" (22563 59327 351723 10000) ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "Club-MateOrderingInstructions.pdf" ".icons/" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" ".gnome2/" "transfer.pdf" ".wget-hsts" "android-sdk_r24.2-linux.tgz" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" "ALLEYCAT_Logo_Color_web.jpg" ".dbus/" ".sane/" ".gksu.lock" "zoom_amd64.deb" "opt/" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" "wget-log" ".sudo_as_admin_successful" ".thumbnails/" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" "lpr" "horror.txt" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" ".scribus/" ".emacs" ".config/" "Videos/" ".themes/" "default.pdf" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" "tiptree.pdf" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
 
  ("/home/clara/Software/gilbertandsullivan/" (22552 53947 825063 774000) "wordpress/" "./" "wp-config.php" "../" ".gitmodules" "index.php" "wp-content/" ".git/")
 
@@ -286,20 +315,6 @@
  ("/home/clara/Downloads/" (22400 5537 349672 596000) "simple-parallax-effect-source.zip" "FINAL_FOTC_Assets_May_4_2016.zip" "Carolyna Pro Black.otf" "FINAL_FOTC_Assets_May_4_2016/" "google-earth-view-2112.jpg" "TWS boxes to add page 1.pdf" "__MACOSX/" "FINAL_Our_Services_May_23.jpg" "webfontkit-20160708-170411/" "bbd_icons_updated_27_08_2011_by_leblanck-d3e7rca.zip" "./" "Client_Page_New_Shipment_June_6.jpg" "FINAL_FOTC_Assets_June_7_2016.zip" "../" "Scripts/" "webfontkit-20160708-170411.zip" "ubo-icon-theme_0.1alpha-0pub1_all.deb")
 
  ("/var/www/html/" (22400 5247 734115 389000) "../" "simple-parallax-effect-source/" "./" "index.html")
-
- ("/var/www/" (22400 5247 734115 389000) "../" "html/" "./")
-
- ("/var/" (22400 5033 234441 237000) "run/" "lib/" "../" "lock/" "cache/" "tmp/" "spool/" "backups/" "log/" "./" "local/" "opt/" "mail/" "www/")
-
- ("/home/" (22397 14817 711479 801000) "clara/" "lost+found/" "./" "../")
-
- ("/home/clara/Software/fotc/app/views/application/" (21851 37597 551964 0) "pdf.html.erb" "./" "../")
-
- ("/home/clara/Software/dioptrice/app/" (21988 37970 504338 0) "models/" "controllers/" "./" "helpers/" "views/" "../" "assets/" "mailers/")
-
- ("/home/clara/Software/fotc/app/" (22008 34607 908021 0) "models/" "views_mobile/" "controllers/" "./" "helpers/" "views/" "../" "assets/" "mailers/")
-
- ("/home/clara/Software/fotc/db/" (21937 17264 565323 0) "./" "../" "migrate/" "schema.rb")
 )
 
 ;; ----- ido-unc-hosts-cache -----
