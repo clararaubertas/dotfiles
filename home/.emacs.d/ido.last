@@ -51,11 +51,13 @@
  ("/home/clara/Software/fotc/config/" . "initializers/")
  ("/home/clara/Software/fotc/" . "app/")
  ("/home/clara/Software/" . "calling-congress/")
- ("/home/clara/" . "Software/")
+ ("/home/clara/" . ".conky/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/"
+ "/home/clara/.conky/Conky Seamod/"
  "/home/clara/Software/calling-congress/app/views/calling_scripts/"
  "/home/clara/Software/calling-congress/app/views/layouts/"
  "/home/clara/Software/calling-congress/app/assets/stylesheets/"
@@ -98,8 +100,6 @@
  "/home/clara/Text/"
  "/home/clara/Software/fotc/app/views/users/"
  "/home/clara/Software/fotc/app/views/pages/"
- "/home/clara/"
- "/home/clara/.conky/Conky Seamod/"
  "/home/clara/Software/chicago-neighborhood-map/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/"
  "/home/clara/Software/fotc/app/views/photos/"
@@ -110,6 +110,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "seamod_rings.lua"
+ "conky_seamod"
  "_scripts.html.erb"
  "_show_script.html.erb"
  "index.html.erb"
@@ -118,15 +120,15 @@
  "Gemfile"
  "user.rb"
  "production.rb"
- "edit.html.erb"
- "_script.html.erb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/calling-congress/app/views/calling_scripts/" (22591 1556 624910 639000) "_user_locator.html.erb" "_scripts.html.erb" "_rep_chooser.html.erb" "show.html.erb" "_view.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "_calling_info.html.erb" "_script.html.erb" "index.html.erb" "_show_script.html.erb" "buttons/")
+ ("/home/clara/.conky/Conky Seamod/" (22592 27744 224313 409000) "./" "seamod_rings.lua" "../" "conky_seamod.jpg" "source.txt" "conky_seamod")
 
- ("/home/clara/" (22590 63853 475361 196000) ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "Club-MateOrderingInstructions.pdf" ".icons/" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" ".gnome2/" "transfer.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" ".pki/" "GSOC-FirstFiftyCover-2011-03-04.110w x 142h.jpg" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" "2014PinaforePhotobar2.jpg" ".sane/" ".gksu.lock" "opt/" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" "2012GondoliersPhotobar456.JPG" ".gimp-2.8/" ".bash_history" ".emacs.d/" "wget-log" ".sudo_as_admin_successful" ".thumbnails/" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" "lpr" "horror.txt" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" "princessida3.jpg" ".scribus/" ".emacs" ".config/" "Videos/" "congressletter.odt" "WireframeSketcher/" ".themes/" "default.pdf" ".linuxmint/" "2015YeomenPhotoBar1.jpg" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" "tiptree.pdf" "2016IdaPhotoBar2.jpg" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" "congress.odt" "2017_Iolanthe.jpg" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" "2013Pirates-PhotoBar123v2.jpg" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/" "homeaddress.odt")
+ ("/home/clara/" (22592 27071 551251 695000) ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "Club-MateOrderingInstructions.pdf" ".icons/" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" ".gnome2/" "transfer.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" ".pki/" "GSOC-FirstFiftyCover-2011-03-04.110w x 142h.jpg" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" "2014PinaforePhotobar2.jpg" ".sane/" ".gksu.lock" "opt/" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" "2012GondoliersPhotobar456.JPG" ".gimp-2.8/" ".bash_history" ".emacs.d/" "wget-log" ".sudo_as_admin_successful" ".thumbnails/" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "*Messages*" "seamod_rings.lua" ".mysql_history" "lpr" "horror.txt" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" "princessida3.jpg" ".scribus/" ".emacs" ".config/" "Videos/" "congressletter.odt" "WireframeSketcher/" ".themes/" "default.pdf" ".linuxmint/" "2015YeomenPhotoBar1.jpg" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" "tiptree.pdf" "2016IdaPhotoBar2.jpg" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" "congress.odt" "2017_Iolanthe.jpg" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" "2013Pirates-PhotoBar123v2.jpg" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/" "homeaddress.odt")
+
+ ("/home/clara/Software/calling-congress/app/views/calling_scripts/" (22591 1556 624910 639000) "_user_locator.html.erb" "_scripts.html.erb" "_rep_chooser.html.erb" "show.html.erb" "_view.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "_calling_info.html.erb" "_script.html.erb" "index.html.erb" "_show_script.html.erb" "buttons/")
 
  ("/home/clara/Software/calling-congress/app/models/" (22588 54496 795011 333000) "legislator.rb" "./" "../" "ability.rb" "call.rb" ".keep" "user.rb" "calling_script.rb" "concerns/" "district.rb")
 
@@ -259,8 +261,6 @@
  ("/home/clara/Text/" (22551 27364 602998 374000) "polarvortex.or" "steve-case" "op-supplies.dvi" "storage-spec.txt" "lsq-root-pwd" "issuelab.aux" "railsbridge.org" "letter.txt" "desoto.org" "op-supplies.aux" "fotc-meeting" "life.org_archive_archive" "ical.org" "friends.org" "meadowse" "leah" "dioptrice-changes" "badmachine" "timetravel2" "moojo-theme-ideas" "greg" "lsq-bar-notifications-2" "#treasure-hunt-instructions.txt#" "issuelab.org" "Text/" "quaker.txt" "_TZ_8527-meson.log" "read.org" "#ladystuck#" "fotc" "#moojo9.org#" "issuelab.log" "bi.org" "timesheet.txt" "movie-diary" "hazards-0422" "#resourcebarn2.txt#" "lsq-notes" "readinglist" "#wireframe-draft2-change.org#" "#friends.org#" "railsbridgedogs4.html" "#rincewitch#" "waiting" "#contraceptives#" "videos.org" "lsq-final-draft-response" "test.asc" "bi4.org" "story" "mighty-pages.org" "coastal.txt" "railsbridgedogs3.org" "setlist" "invite" "email" "bojack.org" "#unpage.org#" "action-verbs" "moojo5.org" "life.org_archive" "blurb" "missfont.log" "mauge" "bildungsroman" "ladystuck" "ron-burt" "jobless" "#railsbridgedogs2.org#" "tv.org" "resourcebarn2.txt" "issuelab.out" "#para#" "move-schedule_archive" "chaos2" "contraceptives" "railsbridgedogs2.html" "#issuelab.tex#" "coats.org" "motorola" "mechturk" "list.txt" "statement.txt" "timeloop" "lendsquare-launch" "old" "homestuck" "#railsbridgedogs4.org#" "lendsquare-actionables" "agendas.org" "#drow.org#" "emails.txt" "gitissues.org" "thanksgiving-list" "railsbridgedogs.html" "mighty-pages.tex" "new" "railsbridgedogs2.org" "nastygram.txt" "rincewitch-ii" "hat-0520" "fotc.org" "para" "#reem#" "chaos" "reem2" "op-supplies.log" "resourcebarn.txt" "phone.org" "movingvan" "clothes.org" "#railsbridgedogs.org#" "lsq-bar-notifications" "packing.org" "mobileorg.org" "good-movies" "#greg#" "stories/" "lendsquare-design-items" "drow.org" "leavitt.org" "scrib.html" "ladystuck.html" "statement.txt~" "shopping.org" "issuelab.tex" "trash.txt" "parallactic" "life.org" "treasure-hunt-instructions.txt" "seder-menu" "op-supplies.tex" "orgmob" "house.org" "camping.org" "insurance" "hat.org" "timetravel" "intro" "#guestjobs#" "lsq-notes-0401" "mighty-pages.pdf" "lsq-draft3-notes" "railsbridgedogs4.org" "truisms.txt" "wed.txt" "rincewitch" "week" "move-schedule.org" "unpage.org" "cinnamon" "para_archive" "logo.png" "#timeloop#" "tools.org" "checksums.dat" "notes.org" "stuff.org" "Agenda Views" "para0306.org" "moltables" "stuff.txt" "lsq-0626" "orb" "_TZ_8527-meson.tex" "moojo9.org" "fraud" "bi2.org" "sebastian-map-app" "foo" "country.txt" "bi3.org" "issuelab.pdf" "wireframe-draft2-change.org" "foobar" "books.org" "drive" "#Captures#" "mochabugs.org" "reem-0604" "op-supplies.pdf" "science" "toread.org" "moojo8.org" "timandsarah" "reem" "guestjobs" "movies.org" "index.org" "railsbridgedogs.org" "band-dates.org" "gilman" "../" "./")
 
  ("/home/clara/Documents/" (22523 52274 297922 374000) "sell-out.md" "Moomers Journal/" "Archives/" "malka/" "Parallactic/" "./" "dd/" "../" "fambly/" "Admin/" "Securities Fraud Litigation.docx" "Other/")
-
- ("/home/clara/.conky/Conky Seamod/" (22544 63392 397368 550000) "./" "seamod_rings.lua" "../" "conky_seamod.jpg" "source.txt" "conky_seamod")
 
  ("/home/clara/Software/dioptrice/spec/models/" (22507 63826 865763 972000) "asset_spec.rb" "completeness_spec.rb" "telescope_spec.rb" "objective_type_spec.rb" "material_spec.rb" "report_spec.rb" "physical_style_spec.rb" "wallpaper_spec.rb" "material_type_spec.rb" "./" "photo_spec.rb" "category_spec.rb" "optical_style_spec.rb" "user_spec.rb" "../" "objective_lens_spec.rb" "eyepiece_lens_spec.rb" "data_point_spec.rb" "collection_spec.rb" "admin_user_spec.rb" "objective_spec.rb" "eyepiece_spec.rb")
 
