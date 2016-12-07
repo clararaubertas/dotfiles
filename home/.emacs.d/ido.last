@@ -29,8 +29,8 @@
  ("/etc/" . "default/")
  ("/home/clara/Text/" . "dumbfight/")
  ("/home/clara/Software/dioptrice/app/assets/" . "stylesheets/")
- ("/home/clara/Software/dioptrice/app/views/" . "telescopes/")
- ("/home/clara/Software/dioptrice/spec/" . "factories/")
+ ("/home/clara/Software/dioptrice/app/views/" . "application/")
+ ("/home/clara/Software/dioptrice/spec/" . "controllers/")
  ("/home/clara/Software/rummagemarketplace/config/" . "initializers/")
  ("/home/clara/Software/rummagemarketplace/app/" . "models/")
  ("/home/clara/Software/rummagemarketplace/" . "script/")
@@ -45,24 +45,28 @@
  ("/home/clara/Software/dioptrice/" . "app/")
  ("/home/clara/Software/fotc/app/views/" . "invoices/")
  ("/home/clara/Software/fotc/app/assets/" . "stylesheets/")
- ("/home/clara/Software/fotc/app/" . "views/")
+ ("/home/clara/Software/fotc/app/" . "models/")
  ("/home/clara/Documents/" . "Parallactic/")
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "initializers/")
- ("/home/clara/Software/fotc/" . "app/")
+ ("/home/clara/Software/fotc/" . "spec/")
  ("/home/clara/Software/" . "dioptrice/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/clara/Software/dioptrice/app/views/telescopes/"
- "/home/clara/Software/dioptrice/app/models/"
+ "/home/clara/Software/dioptrice/app/views/application/"
  "/home/clara/Software/dioptrice/app/controllers/"
+ "/home/clara/Software/dioptrice/spec/controllers/"
+ "/home/clara/Software/dioptrice/app/models/"
+ "/home/clara/Software/dioptrice/spec/models/"
+ "/home/clara/Software/fotc/spec/models/"
+ "/home/clara/Software/fotc/app/models/"
+ "/home/clara/Text/"
+ "/home/clara/Software/dioptrice/app/views/telescopes/"
  "/home/clara/Software/dioptrice/app/helpers/"
  "/home/clara/Software/dioptrice/spec/factories/"
- "/home/clara/Software/dioptrice/spec/controllers/"
- "/home/clara/Software/dioptrice/spec/models/"
  "/home/clara/Software/calling-congress/app/views/calling_scripts/"
  "/home/clara/Software/calling-congress/app/views/layouts/"
  "/home/clara/Software/calling-congress/app/assets/stylesheets/"
@@ -75,8 +79,6 @@
  "/home/clara/Software/fotc/app/models/.well-known/acme-challenge/"
  ".well-known/acme-challenge/"
  "/home/clara/Software/calling-congress/config/initializers/"
- "/home/clara/Software/fotc/app/models/"
- "/home/clara/Software/fotc/spec/models/"
  "/home/clara/.rvm/gems/ruby-2.1.8/gems/prawn-1.0.0/lib/"
  "/home/clara/.rvm/gems/ruby-2.1.8/gems/prawn-1.0.0/lib/prawn/"
  "/home/clara/Software/fotc/app/views/invoices/"
@@ -99,52 +101,54 @@
  "/home/clara/Software/gilbertandsullivan/"
  "/home/clara/Software/fotc/app/views/messengers/"
  "/home/clara/Software/fotc/app/views_mobile/messengers/"
- "/home/clara/Text/"
  "/home/clara/Software/fotc/app/views/users/"
  "/home/clara/Software/fotc/app/views/pages/"
  "/home/clara/"
  "/home/clara/.conky/Conky Seamod/"
  "/home/clara/Software/chicago-neighborhood-map/"
- "/home/clara/Software/chicago-neighborhood-map/src/main/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "show.html.erb"
- "telescope.rb"
- "index.html.erb"
- "telescopes_controller.rb"
- "collection.rb"
- "objective_lens.rb"
- "objective.rb"
- "application_helper.rb"
+ "_search.html.erb"
  "application_controller.rb"
- "asset.rb"
+ "telescopes_controller.rb"
+ "telescopes_controller_spec.rb"
+ "telescope.rb"
+ "telescope_spec.rb"
+ "objective.rb"
+ "job_spec.rb"
+ "job.rb"
+ "books.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/dioptrice/app/controllers/" (22597 41154 694705 751000) "photos_controller.rb" "categories_controller.rb" "telescopes_controller.rb" "wallpapers_controller.rb" "./" "application_controller.rb" "../" "passenger.3000.pid.lock" "collections_controller.rb")
+ ("/home/clara/Software/dioptrice/app/views/application/" (22592 44498 419950 935000) "_menu.html.erb" "_search.html.erb" "./" "../" "about.html.erb" "index.html.erb" "_user_menu.html.erb")
+
+ ("/home/clara/Software/dioptrice/spec/controllers/" (22600 30652 886630 977000) "categories_controller_spec.rb" "./" "telescopes_controller_spec.rb" "wallpapers_controller_spec.rb" "../" "photos_controller_spec.rb" "collection_controller_spec.rb")
+
+ ("/home/clara/Software/dioptrice/spec/models/" (22600 29782 536804 426000) "asset_spec.rb" "completeness_spec.rb" "telescope_spec.rb" "objective_type_spec.rb" "material_spec.rb" "illustration_type_spec.rb" "physical_style_spec.rb" "material_type_spec.rb" "./" "photo_spec.rb" "optical_style_spec.rb" "../" "objective_lens_spec.rb" "eyepiece_lens_spec.rb" "data_point_spec.rb" "collection_spec.rb" "objective_spec.rb" "eyepiece_spec.rb")
+
+ ("/home/clara/Software/dioptrice/app/controllers/" (22597 41356 122206 864000) "photos_controller.rb" "categories_controller.rb" "telescopes_controller.rb" "wallpapers_controller.rb" "./" "application_controller.rb" "../" "passenger.3000.pid.lock" "collections_controller.rb")
+
+ ("/home/clara/Software/dioptrice/app/models/" (22597 41148 738720 369000) "admin_user.rb" "category.rb" "object_status.rb" "objective.rb" "eyepiece_lens.rb" "illustration_type.rb" "optical_style.rb" "photo_category.rb" "./" "data_point.rb" "material.rb" "functional_style.rb" "wallpaper.rb" "../" "collection.rb" "physical_style.rb" ".gitkeep" "user.rb" "objective_type.rb" "objective_lens.rb" "eyepiece.rb" "material_type.rb" "photo.rb" "telescope.rb" "asset.rb" "completeness.rb")
+
+ ("/home/clara/Software/fotc/" (22599 26525 183492 727000) "log/" ".gitignore" "config.reek" "attachments-60" "config/" ".watchr" "tmp/" "attachments-57" "./" "Gemfile.lock" "Gemfile" "attachments-61" "public/" "spec/" "../" "app/" "attachments-62" "coverage/" ".rspec" "attachments-59" "lib/" "db/" "attachments-58" "Capfile" "config.ru" "Rakefile" "script/" ".git/")
+
+ ("/home/clara/" (22599 14614 72777 579000) "2014PinaforePhotobar1.jpg" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" ".icons/" "Securities Fraud Litigation (1).docx" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" ".gnome2/" "Carolyna Pro Black.otf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" ".sane/" ".gksu.lock" "opt/" "pinaforebar.jpg" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" "2012GondoliersPhotobar456.JPG" ".gimp-2.8/" ".bash_history" ".emacs.d/" "wget-log" ".sudo_as_admin_successful" ".thumbnails/" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "seamod_rings.lua" ".mysql_history" ".gitkraken/" ".Xauthority" "ruddigorebar.jpg" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" ".scribus/" ".emacs" ".config/" "Videos/" "WireframeSketcher/" ".themes/" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
 
  ("/home/clara/Software/dioptrice/app/views/telescopes/" (22592 42415 68282 640000) "_next_prev_links.html.erb" "_old_prev_next" "_telescope.html.erb" "index.csv.erb" "show.html.erb" "_objectives.html.erb" "_objective_types.html.erb" "_eyepiece_lens.html.erb" "_user_actions.html.erb" "_data_point_fields.html.erb" "./" "new.html.erb" "_eyepiece.html.erb" "../" "import.html.erb" "_prev_next.html.erb" "_sort_links.html.erb" "index.html.erb" "_eyepiece_complete.html.erb" "_objective_lens_fields.html.erb")
 
  ("/home/clara/Software/dioptrice/app/views/" (22196 65031 839525 0) "telescopes/" "./" "photos/" "collections/" "application/" "../" "devise/" "wallpapers/" "layouts/" "categories/")
 
- ("/home/clara/Software/dioptrice/app/models/" (22597 40995 903092 508000) "admin_user.rb" "category.rb" "object_status.rb" "objective.rb" "eyepiece_lens.rb" "illustration_type.rb" "optical_style.rb" "photo_category.rb" "./" "data_point.rb" "material.rb" "functional_style.rb" "wallpaper.rb" "../" "collection.rb" "physical_style.rb" ".gitkeep" "user.rb" "objective_type.rb" "objective_lens.rb" "eyepiece.rb" "material_type.rb" "photo.rb" "telescope.rb" "asset.rb" "completeness.rb")
-
  ("/home/clara/Software/dioptrice/app/helpers/" (22597 40478 312299 531000) "./" "application_helper.rb" "../")
-
- ("/home/clara/Software/dioptrice/spec/controllers/" (22597 39242 402544 811000) "categories_controller_spec.rb" "./" "telescopes_controller_spec.rb" "wallpapers_controller_spec.rb" "#telescopes_controller_spec.rb#" "../" "photos_controller_spec.rb" "collection_controller_spec.rb")
-
- ("/home/clara/Software/dioptrice/spec/models/" (22597 38859 38796 825000) "asset_spec.rb" "completeness_spec.rb" "telescope_spec.rb" "objective_type_spec.rb" "material_spec.rb" "illustration_type_spec.rb" "physical_style_spec.rb" "material_type_spec.rb" "./" "photo_spec.rb" "optical_style_spec.rb" "../" "objective_lens_spec.rb" "eyepiece_lens_spec.rb" "data_point_spec.rb" "collection_spec.rb" "objective_spec.rb" "eyepiece_spec.rb")
 
  ("/home/clara/Software/dioptrice/spec/factories/" (22597 37801 56384 867000) "objectives.rb" "collections.rb" "eyepiece_lenses.rb" "categories.rb" "./" "photo_categories.rb" "materials.rb" "reports.rb" "illustration_types.rb" "../" "objective_types.rb" "eyepieces.rb" "photos.rb" "objective_lenses.rb" "completenesses.rb" "telescopes.rb" "users.rb" "admin_users.rb" "assets.rb" "material_types.rb" "wallpapers.rb")
 
  ("/home/clara/Software/dioptrice/spec/" (22507 64393 104191 276000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "../" "rails_helper.rb" "requests/" "examples.txt" "fixtures/")
 
  ("/home/clara/Software/dioptrice/app/" (21988 37970 504338 0) "models/" "controllers/" "./" "helpers/" "views/" "../" "assets/" "mailers/")
-
- ("/home/clara/" (22596 51527 689666 468000) ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" ".icons/" "Securities Fraud Litigation (1).docx" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" ".gnome2/" "Carolyna Pro Black.otf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" ".sane/" ".gksu.lock" "opt/" "Pictures/" ".bash_profile" ".xdvirc" "./" ".yafc/" ".gimp-2.8/" ".bash_history" ".emacs.d/" "wget-log" ".sudo_as_admin_successful" ".thumbnails/" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "seamod_rings.lua" ".mysql_history" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" ".scribus/" ".emacs" ".config/" "Videos/" "WireframeSketcher/" ".themes/" ".linuxmint/" ".local/" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
 
  ("/home/clara/Software/calling-congress/app/views/calling_scripts/" (22591 1556 624910 639000) "_user_locator.html.erb" "_scripts.html.erb" "_rep_chooser.html.erb" "show.html.erb" "_view.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "_calling_info.html.erb" "_script.html.erb" "index.html.erb" "_show_script.html.erb" "buttons/")
 
@@ -185,8 +189,6 @@
  ("/home/clara/Software/calling-congress/public/" (22585 4197 155073 523000) "favicon.ico" "robots.txt" "./" "404.html" "../" "assets/" "422.html" "500.html")
 
  ("/home/clara/Software/calling-congress/app/" (22585 714 892976 803000) "models/" "controllers/" "./" "views/" "../" "assets/" "mailers/")
-
- ("/home/clara/Software/fotc/" (22588 44960 901929 713000) "log/" ".gitignore" "config.reek" "attachments-60" "config/" ".watchr" "tmp/" "attachments-57" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "attachments-59" "lib/" "db/" "attachments-58" "Capfile" "config.ru" "Rakefile" "script/" ".git/")
 
  ("/home/clara/Software/fotc/spec/models/" (22588 44070 102334 154000) "invoice_spec.rb" "market_spec.rb" "./" "photo_spec.rb" "saved_company_spec.rb" "recurrence_spec.rb" "category_spec.rb" "job_attachment_spec.rb" "client_spec.rb" "user_spec.rb" "saved_email_spec.rb" "../" "messenger_spec.rb" "weekday_spec.rb" "work_phone_spec.rb" "link_spec.rb" "job_spec.rb" ".#admin_spec.rb" "admin_spec.rb" "page_spec.rb")
 
@@ -321,8 +323,6 @@
  ("/etc/default/" (22459 9365 479117 111000) "../" "useradd" "google-chrome" "cryptdisks" "add-apt-key" "ufw" "grub.d/" "keyboard" "rcS" "im-config" "speech-dispatcher" "intel-microcode" "ntpdate" "grub" "apache-htcacheclean" "rsyslog" "nss" "anacron" "ntp" "alsa" "rsync" "crda" "dbus" "console-setup" "avahi-daemon" "cacerts" "openvpn" "devpts" "./" "bsdmainutils" "halt" "acpi-support" "acpid" "irqbalance" "cron" "hddtemp" "locale" "saned" "networking" "kerneloops" "brltty")
 
  ("/etc/" (22468 53609 646850 483000) "ODBCDataSources/" "upstart-xsessions" "issue.net" "binfmt.d/" "nsswitch.conf" "cupshelpers/" "udev/" "groff/" "odbcinst.ini" "ghostscript/" "fstab" "hosts.deny" "adduser.conf" "rc.local" "ssl/" "doc-base/" "nanorc" "pam.conf" "dhcp/" "apt/" "rc2.d/" "logrotate.conf" "group-" "localtime" "gtk-2.0/" "magic.mime" "passwd" "odbc.ini" "os-release" "usb_modeswitch.d/" "bindresvport.blacklist" "fuse.conf" "mono/" "environment" "debconf.conf" "hostname" "locale.gen" "sensors.d/" "lintianrc" "modules-load.d/" "crontab" "rc1.d/" "linuxmint/" "gshadow-" "gimp/" "signond.conf" "emacs/" "pulse/" "wildmidi/" "tex4ht/" "gufw/" "cinnamon/" "mtools.conf" "ufw/" "icedtea-web/" "adjtime" "ltrace.conf" "X11/" "grub.d/" "apg.conf" "systemd/" "hosts.allow" "pm/" "machine-id" "vtrgb" "pam.d/" "dbus-1/" "terminfo/" "profile" "udisks2/" "cracklib/" "locale.alias" "zsh_command_not_found" "thunderbird/" "avahi/" "shadow-" "dpkg/" "brlapi.key" "login.defs" "ldap/" "speech-dispatcher/" "ssh/" "security/" "xdg/" "bash_completion" "calendar/" "subuid-" "sysctl.conf" "ifplugd/" "insserv/" "apm/" ".java/" "fwupd.conf" "ld.so.conf.d/" "rsyslog.d/" "securetty" "pnm2ppa.conf" "newt/" "timezone" "ca-certificates.conf" "python3/" "hdparm.conf" "sudoers.d/" "anacrontab" "fonts/" "legal" "manpath.config" "cron.monthly/" "bluetooth/" "ld.so.conf" "inxi.conf" "lsb-release" "polkit-1/" "tmpfiles.d/" "sysctl.d/" "dkms/" "libpaper.d/" "iproute2/" "logcheck/" "gnome-vfs-2.0/" "default/" ".pwd.lock" "papersize" "printcap" "sgml/" "init/" "iftab" "purple/" "vim/" "pki/" "ntp.conf" "brltty.conf" "services" "subuid" "ucf.conf" "cups/" "subgid" "rc5.d/" "issue" "chktexrc" "wodim.conf" "apparmor.d/" "bash_completion.d/" "bash.bashrc" "hddtemp.db" "kerneloops.conf" "chromium-browser/" "xml/" "network/" "alternatives/" "networks" "apparmor/" "gtk-3.0/" "initramfs-tools/" "java-8-openjdk/" "gss/" "chatscripts/" "emacs24/" "cron.d/" "rsyslog.conf" "sudoers" "console-setup/" "thermald/" "LatexMk" "libao.conf" "gshadow" "dictionaries-common/" "mke2fs.conf" "NetworkManager/" "kernel/" "openvpn/" "texmf/" "libreoffice/" "python3.5/" "usb_modeswitch.conf" "rpc" "shells" "yafcrc" "hp/" "firefox/" "rc0.d/" "modprobe.d/" "mdm/" "insserv.conf.d/" "hosts" "dnsmasq.d/" "pcmcia/" "gai.conf" "inputrc" "rc3.d/" "samba/" "gconf/" "kbd/" "cron.daily/" "gdb/" "perl/" "passwd-" "modules" "apache2/" "skel/" "python/" "libnl-3/" "insserv.conf" "protocols" "depmod.d/" "sane.d/" "ca-certificates/" "magic" "wgetrc" "apport/" "netscsid.conf" "request-key.d/" "openal/" "rc4.d/" "kernel-img.conf" "deluser.conf" "ConsoleKit/" "debian_version" "resolvconf/" "sensors3.conf" "ppp/" "ImageMagick-6/" "dm/" "rcS.d/" "mailcap" "upstream-release/" "group" "drirc" "logrotate.d/" "gnome/" "ld.so.cache" "rmt" "obex-data-server/" "shadow" "rc6.d/" "update-motd.d/" "acpi/" "esound/" "opt/" "subgid-" "resolv.conf" "profile.d/" "wpa_supplicant/" "gnome-app-install/" "cron.weekly/" "mime.types" "mailcap.order" "mtab" "at-spi2/" "request-key.conf" "selinux/" "python2.7/" "UPower/" "libaudit.conf" "init.d/" "cron.hourly/" "brltty/" "host.conf" "mysql/" "casper.conf" "lvm/" "updatedb.conf" "../" "./")
-
- ("/home/clara/Software/dioptrice/app/assets/stylesheets/" (22459 21144 233580 572000) "wallpapers.scss" "scaffolds.css.scss" "dioptrice.css" "scaffold.css" "./" "categories.scss" "categories.css.scss" "../" "scaffolds.scss" "application.css")
 )
 
 ;; ----- ido-unc-hosts-cache -----
