@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/clara/.config/" . "autostart/")
  ("/home/clara/Software/calling-congress/spec/" . "requests/")
  ("/home/clara/Software/calling-congress/config/" . "environments/")
  ("/home/clara/.rvm/gems/ruby-2.1.8/gems/prawn-1.0.0/lib/prawn/" . "table/")
@@ -40,7 +41,7 @@
  ("/var/www/html/" . "simple-parallax-effect-source/")
  ("/var/www/" . "html/")
  ("/var/" . "www/")
- ("/" . "etc/")
+ ("/" . "home/")
  ("/home/clara/Software/dioptrice/app/" . "assets/")
  ("/home/clara/Software/dioptrice/" . "spec/")
  ("/home/clara/Software/fotc/app/views/" . "layouts/")
@@ -51,11 +52,12 @@
  ("/home/clara/Software/fotc/config/" . "initializers/")
  ("/home/clara/Software/fotc/" . "app/")
  ("/home/clara/Software/" . "dioptrice/")
- ("/home/clara/" . "Software/")
+ ("/home/clara/" . ".config/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/.config/autostart/"
  "/home/clara/Software/dioptrice/spec/controllers/"
  "/home/clara/Software/dioptrice/spec/requests/"
  "/home/clara/Software/dioptrice/app/assets/stylesheets/"
@@ -105,11 +107,12 @@
  "/home/clara/Software/dioptrice/config/"
  "/home/clara/Software/fotc/app/views/notes/"
  "/home/clara/Software/fotc/config/initializers/"
- "/home/clara/Software/gilbertandsullivan/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "conky.desktop"
+ "746DB86F89E87503CAA4DA4BB7AB5559A4C4BC75.google-chrome-service.desktop"
  "collection_controller_spec.rb"
  "sign_in.rb"
  "telescopes_controller_spec.rb"
@@ -118,12 +121,18 @@
  "collections_controller.rb"
  "categories_controller.rb"
  "categories_spec.rb"
- "categories_controller_spec.rb"
- "application_helper.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/.config/autostart/" (22625 46959 688478 248000) "dropbox.desktop" "redshift-gtk.desktop" "variety.desktop" "./" "746DB86F89E87503CAA4DA4BB7AB5559A4C4BC75.google-chrome-service.desktop" "../")
+
+ ("/home/clara/.config/" (22625 47003 472381 133000) "xplayer/" "zoomus.conf" "conky-manager.json" "xviewer/" "autostart/" "conkywx/" "chromium/" "hexchat/" "xreader/" "libreoffice/" "QtProject.conf" "gtk-3.0/" "yelp/" "user-dirs.dirs" "fontgroups.xml" "vlc/" "./" "xed/" "heroku/" "google-chrome/" "GitKraken/" "dconf/" "mimeapps.list" "variety/" "user-dirs.locale" "meld/" "caja/" "Trolltech.conf" "../" "cinnamon-session/" "nemo/" "spotify/" "cef_user_data/" "menus/" "inkscape/" "RescueTime.com/" "enchant/" "gtk-2.0/" "transmission/" "font-manager/" "pulse/" "monitors.xml")
+
+ ("/home/" (22397 14817 711479 801000) "clara/" "lost+found/" "./" "../")
+
+ ("/home/clara/" (22625 45916 842791 309000) "2014PinaforePhotobar1.jpg" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "lablpdf.odt" ".icons/" ".~lock.lalalabl.odt#" "Securities Fraud Litigation (1).docx" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" "lalalabl.odt" "washpo.odt" ".gnome2/" "books 2 read - TickTick.pdf" "Carolyna Pro Black.otf" "favicon.ico" "labls.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" "untitled_0.odt" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" ".sane/" "labl2.pdf" ".gksu.lock" "opt/" "pinaforebar.jpg" "Pictures/" "uninstaller_HLL2340D" ".bash_profile" ".xdvirc" ".npm/" "shopsmith.odt" "./" ".yafc/" "2012GondoliersPhotobar456.JPG" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "wget-log" ".~lock.labls.odt#" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "seamod_rings.lua" ".mysql_history" ".gitkraken/" ".Xauthority" "ruddigorebar.jpg" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" "20161207-invoice-2059.pdf" "ancestry.odt" ".scribus/" ".emacs" ".config/" "Videos/" "WireframeSketcher/" "labl3.pdf" ".themes/" ".lastpass/" ".linuxmint/" ".local/" "labl.pdf" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" "why-does-he-do-that.pdf" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
+
  ("/home/clara/Software/dioptrice/spec/requests/" (22625 16008 354208 349000) "sign_in.rb" "./" "../" "categories_spec.rb")
 
  ("/home/clara/Software/dioptrice/spec/controllers/" (22625 15720 950695 492000) "categories_controller_spec.rb" "./" "telescopes_controller_spec.rb" "wallpapers_controller_spec.rb" "../" "photos_controller_spec.rb" "collection_controller_spec.rb")
@@ -161,8 +170,6 @@
  ("/home/clara/Software/fotc/app/views/clients/" (22618 63008 665697 34000) "pdf.html.erb" "_recent_jobs.html.erb" "pdf.pdf.prawn" "show.html.erb" "./" "invoice.pdf.prawn" "admin_list.html.erb" "../" "admin_list.pdf.prawn" "rates.html.erb" "home.html.erb" "prefs.html.erb")
 
  ("/home/clara/Software/fotc/app/models/" (22620 3873 640716 839000) "messenger.rb" "work_phone.rb" "category.rb" "note.rb" "homepage_bottom_image.rb" "recommendation.rb" "client.rb" "./" "job_attachment.rb" "weekday.rb" "service_level.rb" "job.rb" "admin.rb" "dispatching_user.rb" "../" "homepage_image.rb" "saved_email.rb" "page.rb" ".gitkeep" "user.rb" "invoice.rb" "saved_company.rb" "market.rb" "link.rb" "recurrence.rb" "photo.rb")
-
- ("/home/clara/" (22620 1776 759249 227000) "2014PinaforePhotobar1.jpg" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "lablpdf.odt" ".icons/" ".~lock.lalalabl.odt#" "Securities Fraud Litigation (1).docx" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" "lalalabl.odt" ".gnome2/" "books 2 read - TickTick.pdf" "Carolyna Pro Black.otf" "favicon.ico" "labls.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" "untitled_0.odt" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" ".sane/" "labl2.pdf" ".gksu.lock" "opt/" "pinaforebar.jpg" "Pictures/" "uninstaller_HLL2340D" ".bash_profile" ".xdvirc" ".npm/" "./" ".yafc/" "2012GondoliersPhotobar456.JPG" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "wget-log" ".~lock.labls.odt#" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "seamod_rings.lua" ".mysql_history" ".gitkraken/" ".Xauthority" "ruddigorebar.jpg" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" "20161207-invoice-2059.pdf" ".scribus/" ".emacs" ".config/" "Videos/" "WireframeSketcher/" "labl3.pdf" ".themes/" ".lastpass/" ".linuxmint/" ".local/" "labl.pdf" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" "why-does-he-do-that.pdf" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
 
  ("/home/clara/Software/fotc/app/views/pages/" (22609 40460 302381 369000) "pdf.html.erb" "_send_or_login.html.erb" "_ny.html.erb" "zones.html.erb" "./" "../" "about.html.erb" "services.html.erb" "_boston.html.erb" "contact.html.erb")
 
@@ -317,12 +324,6 @@
  ("/home/clara/.conky/" (22523 50946 91297 384000) "TeejeeTech/" "Conky Seamod/" "./" ".themepacks" "Green Apple Desktop/" "../" "Gotham/" "icons/" "fonts/" "conky-startup.sh" "Conky MIUI/")
 
  ("/home/clara/.homesick/" (22397 17076 496622 327000) "./" "../" "repos/")
-
- ("/home/clara/.homesick/repos/" (22397 17076 496622 327000) "dotfiles/" "./" "../")
-
- ("/home/clara/Software/fotc/db/migrate/" (22492 21332 317859 389000) "016_add_cancelled.rb" "20120306182943_add_archived_to_users.rb" "20120502185217_add_calendar_fields.rb" "20150720161303_add_origin_name.rb" "20130208191710_add_personal_email.rb" "20150723183932_change_time_due.rb" "20130513160022_create_job_attachments.rb" "20120819202425_create_weekdays.rb" "20130918192714_add_service_levels.rb" "20130805160803_add_old_messenger_id.rb" "20160205214933_add_billing_email_to_client.rb" "20130208174213_add_fields_to_invoices.rb" "20160513212454_add_time_in_words.rb" "20120120172941_create_photos.rb" "20120305230108_add_notes_to_recurrence.rb" "20120821201343_change_rider_id.rb" "20150528164504_add_payment_to_invoices.rb" "014_modify_overnight.rb" "20130909233809_messenger_cut.rb" "20141008203443_add_billing_info.rb" "20140527214217_add_second_payment_amount.rb" "008_create_background.rb" "20150702161552_approve_guest_jobs.rb" "20160202200925_add_attachment_pdf_to_invoices.rb" "20130219211142_change_page_layouts.rb" "009_new_recurrence_fields.rb" "20160916201658_add_tracking_number_to_invoice.rb" "20111209190819_add_backgrounds.rb" "20150708171207_add_guest_to_jobs.rb" "012_add_links.rb" "20111230232527_create_saved_companies.rb" "20130208181950_add_physical_signature.rb" "20130212205827_add_job_id_to_invoice.rb" "20130219215349_archive_categories.rb" "017_add_timestamps.rb" "20140505201003_add_second_messenger.rb" "20111209185234_create_pages.rb" "20130806210550_add_old_messenger_id_to_users.rb" "20130926172254_add_rush_details.rb" "20120306232044_create_saved_emails.rb" "20120814202134_add_type_to_users.rb" "20130131192802_add_attachment_avatar_to_users.rb" "20130321144737_add_fields_to_jobs.rb" "011_create_information.rb" "20130214214421_create_dispatching_users.rb" "20131216225554_add_second_client_to_invoice.rb" "20120910182620_change_recurrence_messenger.rb" "20120124153114_create_invoices.rb" "20150903204808_add_fields_to_recurrence.rb" "20130131200107_acts_as_taggable_on_migration.rb" "20130208193546_add_profile_to_messenger.rb" "20130205185345_add_check_box_fields_to_job.rb" "20141130184011_add_partial_payment_to_invoice.rb" "20150723194455_time_due_okay.rb" "20130321213749_recommendations.rb" "001_create_jobs.rb" "20120815010614_change_rider_id_to_messenger_id.rb" "20130910220521_store_invoice_total.rb" "20130612014306_add_tracking_number.rb" "20130329011302_add_market_fields.rb" "004_create_work_phones.rb" "013_add_client_notes.rb" "015_add_time.rb" "007_create_users.rb" "20130217170852_create_markets.rb" "20131212194846_create_notes.rb" "20150519210434_add_recipient_phone_to_jobs.rb" "20130217171539_add_ids_to_jobs_and_dispatcher.rb" "20121019172406_add_payment_scale.rb" "20151029205340_ordered_by.rb" "20141001192909_add_sender_contact.rb" "20130731193335_add_attachment_image_to_homepage_images.rb" "20130731192934_create_homepage_image.rb" "20141209184028_add_stored_balance.rb" "20100819200932_add_new_fields_to_client.rb" "20150714165122_add_guest_phone_and_email_to_jobs.rb" "006_create_recurrences.rb" "003_create_riders.rb" "20131021182434_add_time_ready.rb" "20120220162102_add_confirmation_email_to_job.rb" "018_add_email_to_job.rb" "20150520184959_add_notes_to_invoice.rb" "20130530205100_add_fields.rb" "20130217171248_create_categories.rb" "20111230204909_add_background_fields_to_clients.rb" "010_add_notes.rb" "20150908192147_add_booleans_to_recurrence.rb" "20130208193757_add_rates_to_client.rb" "20131021234450_change_time_ready.rb" "20130513160257_add_attachment_data_to_job_attachments.rb" "20130329163214_add_links_page.rb" "20140616160410_add_time_ready_text.rb" "20120726205749_add_attachment_image_to_pages.rb" "20150702164357_guest_id.rb" "20130802163613_homepage_bottom_images.rb" "../" "./")
-
- ("/home/clara/.homesick/repos/dotfiles/" (22495 26015 221545 678000) ".gitignore" "home/" "./" "../" ".gitmodules" ".git/")
 )
 
 ;; ----- ido-unc-hosts-cache -----
