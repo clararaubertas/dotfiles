@@ -29,9 +29,9 @@
  ("/home/clara/Software/dioptrice/db/" . "migrate/")
  ("/etc/" . "default/")
  ("/home/clara/Text/" . "dumbfight/")
- ("/home/clara/Software/dioptrice/app/assets/" . "javascripts/")
- ("/home/clara/Software/dioptrice/app/views/" . "application/")
- ("/home/clara/Software/dioptrice/spec/" . "models/")
+ ("/home/clara/Software/dioptrice/app/assets/" . "stylesheets/")
+ ("/home/clara/Software/dioptrice/app/views/" . "telescopes/")
+ ("/home/clara/Software/dioptrice/spec/" . "controllers/")
  ("/home/clara/Software/rummagemarketplace/config/" . "initializers/")
  ("/home/clara/Software/rummagemarketplace/app/" . "models/")
  ("/home/clara/Software/rummagemarketplace/" . "script/")
@@ -42,7 +42,7 @@
  ("/var/www/" . "html/")
  ("/var/" . "www/")
  ("/" . "home/")
- ("/home/clara/Software/dioptrice/app/" . "views/")
+ ("/home/clara/Software/dioptrice/app/" . "assets/")
  ("/home/clara/Software/dioptrice/" . "app/")
  ("/home/clara/Software/fotc/app/views/" . "layouts/")
  ("/home/clara/Software/fotc/app/assets/" . "stylesheets/")
@@ -51,25 +51,26 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "initializers/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "chicago-neighborhood-map/")
+ ("/home/clara/Software/" . "dioptrice/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/"
+ "/home/clara/Software/dioptrice/app/assets/stylesheets/"
+ "/home/clara/Software/dioptrice/app/views/telescopes/"
  "/home/clara/Software/dioptrice/app/views/application/"
  "/home/clara/Software/dioptrice/app/views/layouts/"
- "/home/clara/Software/dioptrice/app/controllers/"
- "/home/clara/Software/dioptrice/app/helpers/"
- "/home/clara/Software/dioptrice/app/views/telescopes/"
- "/home/clara/Software/dioptrice/app/assets/javascripts/"
- "/home/clara/Software/dioptrice/app/models/"
- "/home/clara/Software/dioptrice/app/assets/stylesheets/"
- "/home/clara/Software/dioptrice/spec/models/"
- "/home/clara/Software/dioptrice/app/views/collections/"
- "/home/clara/Software/dioptrice/lib/"
  "/home/clara/Software/dioptrice/"
+ "/home/clara/Software/dioptrice/spec/controllers/"
+ "/home/clara/Software/dioptrice/spec/models/"
+ "/home/clara/Software/dioptrice/app/models/"
+ "/home/clara/Software/dioptrice/app/controllers/"
+ "/home/clara/Software/dioptrice/app/views/collections/"
+ "/home/clara/Software/dioptrice/app/helpers/"
+ "/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/"
+ "/home/clara/Software/dioptrice/app/assets/javascripts/"
+ "/home/clara/Software/dioptrice/lib/"
  "/home/clara/Software/fotc/app/views/layouts/"
  "/home/clara/Software/fotc/app/assets/stylesheets/"
  "/home/clara/Software/fotc/app/controllers/"
@@ -79,7 +80,6 @@
  "/home/clara/Software/fotc/config/"
  "/home/clara/Software/fotc/app/models/"
  "/home/clara/Software/fotc/app/helpers/"
- "/home/clara/Software/dioptrice/spec/controllers/"
  "/home/clara/Software/dioptrice/spec/requests/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/res/values/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/"
@@ -111,21 +111,39 @@
 
 ;; ----- ido-work-file-list -----
 (
- "main.xml"
- "_user_menu.html.erb"
+ "dioptrice.css"
+ "application.css"
+ "show.html.erb"
+ "_search.html.erb"
  "application.html.erb"
- "application_controller.rb"
- "application_helper.rb"
- "new.html.erb"
- "telescopes_controller.rb"
- "application.js"
- "objective.rb"
- "objective_lens.rb"
+ "Gemfile"
+ "telescopes_controller_spec.rb"
+ "telescope_spec.rb"
+ "index.html.erb"
+ "collection.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/dioptrice/app/views/application/" (22634 48677 873529 515000) "_menu.html.erb" "_search.html.erb" "./" "../" "about.html.erb" "index.html.erb" "_user_menu.html.erb")
+ ("/home/clara/Software/dioptrice/app/views/telescopes/" (22637 35726 93891 205000) "_next_prev_links.html.erb" "_old_prev_next" "_telescope.html.erb" "index.csv.erb" "show.html.erb" "_objectives.html.erb" "_objective_types.html.erb" "_eyepiece_lens.html.erb" "_user_actions.html.erb" "_data_point_fields.html.erb" "./" "new.html.erb" "_eyepiece.html.erb" "../" "import.html.erb" "_prev_next.html.erb" "_sort_links.html.erb" "index.html.erb" "_eyepiece_complete.html.erb" "_objective_lens_fields.html.erb")
+
+ ("/home/clara/Software/dioptrice/app/views/application/" (22637 35407 946025 546000) "_menu.html.erb" "_search.html.erb" "./" "../" "about.html.erb" "index.html.erb" "_user_menu.html.erb")
+
+ ("/home/clara/Software/dioptrice/app/views/layouts/" (22637 35366 178025 239000) "listing.html" "about.html" "./" "index.html" "../" "application.html.erb" "search.html" "browse.html")
+
+ ("/home/clara/Software/dioptrice/app/controllers/" (22637 34434 810276 176000) "photos_controller.rb" "categories_controller.rb" "telescopes_controller.rb" "wallpapers_controller.rb" "./" "application_controller.rb" "../" "passenger.3000.pid.lock" "collections_controller.rb")
+
+ ("/home/clara/Software/dioptrice/spec/controllers/" (22637 34107 558860 325000) "categories_controller_spec.rb" "./" "telescopes_controller_spec.rb" "wallpapers_controller_spec.rb" "../" "photos_controller_spec.rb" "collection_controller_spec.rb")
+
+ ("/home/clara/Software/dioptrice/spec/models/" (22637 20244 610195 872000) "asset_spec.rb" "completeness_spec.rb" "telescope_spec.rb" "objective_type_spec.rb" "material_spec.rb" "illustration_type_spec.rb" "physical_style_spec.rb" "material_type_spec.rb" "object_status_spec.rb" "./" "photo_spec.rb" "optical_style_spec.rb" "../" "objective_lens_spec.rb" "eyepiece_lens_spec.rb" "data_point_spec.rb" "collection_spec.rb" "objective_spec.rb" "eyepiece_spec.rb")
+
+ ("/home/clara/Software/dioptrice/app/models/" (22637 33255 652460 799000) "admin_user.rb" "category.rb" "object_status.rb" "objective.rb" "eyepiece_lens.rb" "illustration_type.rb" "optical_style.rb" "photo_category.rb" "./" "data_point.rb" "material.rb" "functional_style.rb" "wallpaper.rb" "../" "collection.rb" "physical_style.rb" ".gitkeep" "user.rb" "objective_type.rb" "objective_lens.rb" "eyepiece.rb" "material_type.rb" "photo.rb" "telescope.rb" "asset.rb" "completeness.rb")
+
+ ("/home/clara/Software/dioptrice/app/helpers/" (22637 19751 940284 195000) "./" "application_helper.rb" "../")
+
+ ("/home/clara/Software/dioptrice/app/views/collections/" (22637 17969 952544 235000) "show.html.erb" "edit.html.erb" "./" "new.html.erb" "numbers.html.erb" "../" "_sort_links.html.erb" "index.html.erb")
+
+ ("/home/clara/" (22637 4094 94472 34000) "2014PinaforePhotobar1.jpg" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "lablpdf.odt" ".icons/" ".~lock.lalalabl.odt#" "Securities Fraud Litigation (1).docx" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" "lalalabl.odt" "washpo.odt" ".gnome2/" "books 2 read - TickTick.pdf" "Carolyna Pro Black.otf" "favicon.ico" "labls.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" "untitled_0.odt" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" ".sane/" "labl2.pdf" ".gksu.lock" "opt/" "pinaforebar.jpg" "Pictures/" "uninstaller_HLL2340D" ".bash_profile" ".xdvirc" ".npm/" "shopsmith.odt" "./" ".yafc/" "2012GondoliersPhotobar456.JPG" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "wget-log" ".~lock.labls.odt#" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "seamod_rings.lua" ".mysql_history" ".gitkraken/" ".Xauthority" "ruddigorebar.jpg" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" "20161207-invoice-2059.pdf" "ancestry.odt" ".scribus/" ".emacs" ".config/" "Videos/" "WireframeSketcher/" "labl3.pdf" ".themes/" ".lastpass/" ".linuxmint/" ".local/" "labl.pdf" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" "why-does-he-do-that.pdf" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
 
  ("/home/clara/Software/fotc/spec/helpers/" (22620 4272 861788 0) "./" "calendar_helper_spec.rb" "../" "application_helper_spec.rb")
 
@@ -151,23 +169,9 @@
 
  ("/home/clara/Software/fotc/app/views/layouts/" (22629 34058 754 36000) "./" "../" "application.html.erb")
 
- ("/home/clara/Software/dioptrice/app/views/layouts/" (22422 26078 311646 379000) "listing.html" "about.html" "./" "index.html" "../" "application.html.erb" "search.html" "browse.html")
-
- ("/home/clara/Software/dioptrice/app/controllers/" (22634 47327 530778 642000) "photos_controller.rb" "categories_controller.rb" "telescopes_controller.rb" "wallpapers_controller.rb" "./" "application_controller.rb" "../" "passenger.3000.pid.lock" "collections_controller.rb")
-
- ("/home/clara/Software/dioptrice/app/helpers/" (22634 47261 846847 145000) "./" "application_helper.rb" "../")
-
- ("/home/clara/Software/dioptrice/app/views/telescopes/" (22634 46799 187218 954000) "_next_prev_links.html.erb" "_old_prev_next" "_telescope.html.erb" "index.csv.erb" "show.html.erb" "_objectives.html.erb" "_objective_types.html.erb" "_eyepiece_lens.html.erb" "_user_actions.html.erb" "_data_point_fields.html.erb" "./" "new.html.erb" "_eyepiece.html.erb" "../" "import.html.erb" "_prev_next.html.erb" "_sort_links.html.erb" "index.html.erb" "_eyepiece_complete.html.erb" "_objective_lens_fields.html.erb")
-
  ("/home/clara/Software/dioptrice/app/assets/javascripts/" (22634 46299 327566 675000) "application.js" "./" "categories.coffee" "wallpapers.coffee" "../" "categories.js.coffee")
 
- ("/home/clara/Software/dioptrice/app/models/" (22634 45925 692024 253000) "admin_user.rb" "category.rb" "object_status.rb" "objective.rb" "eyepiece_lens.rb" "illustration_type.rb" "optical_style.rb" "photo_category.rb" "./" "data_point.rb" "material.rb" "functional_style.rb" "wallpaper.rb" "../" "collection.rb" "physical_style.rb" ".gitkeep" "user.rb" "objective_type.rb" "objective_lens.rb" "eyepiece.rb" "material_type.rb" "photo.rb" "telescope.rb" "asset.rb" "completeness.rb")
-
  ("/home/clara/Software/dioptrice/app/assets/stylesheets/" (22634 43777 262326 651000) "wallpapers.scss" "scaffolds.css.scss" "dioptrice.css" "scaffold.css" "./" "categories.scss" "categories.css.scss" "../" "scaffolds.scss" "application.css")
-
- ("/home/clara/Software/dioptrice/spec/models/" (22634 43757 138435 620000) "asset_spec.rb" "completeness_spec.rb" "telescope_spec.rb" "objective_type_spec.rb" "material_spec.rb" "illustration_type_spec.rb" "physical_style_spec.rb" "material_type_spec.rb" "object_status_spec.rb" "./" "photo_spec.rb" "optical_style_spec.rb" "../" "objective_lens_spec.rb" "eyepiece_lens_spec.rb" "data_point_spec.rb" "collection_spec.rb" "objective_spec.rb" "eyepiece_spec.rb")
-
- ("/home/clara/Software/dioptrice/app/views/collections/" (22634 43649 214802 492000) "show.html.erb" "edit.html.erb" "./" "new.html.erb" "numbers.html.erb" "../" "_sort_links.html.erb" "index.html.erb")
 
  ("/home/clara/Software/dioptrice/lib/" (22631 60447 286764 373000) "custom_failure.rb" "./" "../" "capistrano/" "assets/" "tasks/")
 
@@ -189,15 +193,11 @@
 
  ("/home/clara/Software/fotc/spec/" (22620 4272 861788 0) "models/" "factories/" "controllers/" "twilio_helper.rb" "./" "spec_helper.rb" "helpers/" "../" "rails_helper.rb" "mailers/" "requests/" "fixtures/")
 
- ("/home/clara/Software/dioptrice/spec/controllers/" (22629 24602 79305 750000) "categories_controller_spec.rb" "./" "telescopes_controller_spec.rb" "wallpapers_controller_spec.rb" "../" "photos_controller_spec.rb" "collection_controller_spec.rb")
-
  ("/home/clara/Software/dioptrice/spec/requests/" (22629 23621 67868 581000) "./" "../" "sign_in_spec.rb")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/" (22625 32354 46648 341000) "AndroidManifest.xml" "./" "java/" "../" "res/")
 
  ("/home/clara/Software/chicago-neighborhood-map/" (22625 39822 740308 200000) "google-play-services_lib/" "bin/" "proguard-project.txt" "project.properties" "src/" "./" "google_play_services/" "../" "assets/" "app/" "build.gradle" "neighbs/" "libs/" "parts/" ".gradle/" "build/" "local.properties" "gen/" ".git/")
-
- ("/home/clara/" (22625 47260 694840 956000) "2014PinaforePhotobar1.jpg" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "lablpdf.odt" ".icons/" ".~lock.lalalabl.odt#" "Securities Fraud Litigation (1).docx" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" "lalalabl.odt" "washpo.odt" ".gnome2/" "books 2 read - TickTick.pdf" "Carolyna Pro Black.otf" "favicon.ico" "labls.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".irb-history" "untitled_0.odt" ".pki/" ".dmrc" ".conky/" ".cxoffice/" ".eclipse/" ".dbus/" ".sane/" "labl2.pdf" ".gksu.lock" "opt/" "pinaforebar.jpg" "Pictures/" "uninstaller_HLL2340D" ".bash_profile" ".xdvirc" ".npm/" "shopsmith.odt" "./" ".yafc/" "2012GondoliersPhotobar456.JPG" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "wget-log" ".~lock.labls.odt#" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "Documents/" "seamod_rings.lua" ".mysql_history" ".gitkraken/" ".Xauthority" "ruddigorebar.jpg" ".gitconfig" "Dropbox/" "Downloads/" "../" ".mozilla/" "20161207-invoice-2059.pdf" "ancestry.odt" ".scribus/" ".emacs" ".config/" "Videos/" "WireframeSketcher/" "labl3.pdf" ".themes/" ".lastpass/" ".linuxmint/" ".local/" "labl.pdf" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" "why-does-he-do-that.pdf" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
 
  ("/home/clara/.config/" (22625 47003 472381 133000) "xplayer/" "zoomus.conf" "conky-manager.json" "xviewer/" "autostart/" "conkywx/" "chromium/" "hexchat/" "xreader/" "libreoffice/" "QtProject.conf" "gtk-3.0/" "yelp/" "user-dirs.dirs" "fontgroups.xml" "vlc/" "./" "xed/" "heroku/" "google-chrome/" "GitKraken/" "dconf/" "mimeapps.list" "variety/" "user-dirs.locale" "meld/" "caja/" "Trolltech.conf" "../" "cinnamon-session/" "nemo/" "spotify/" "cef_user_data/" "menus/" "inkscape/" "RescueTime.com/" "enchant/" "gtk-2.0/" "transmission/" "font-manager/" "pulse/" "monitors.xml")
 
