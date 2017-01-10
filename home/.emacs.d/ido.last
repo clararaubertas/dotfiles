@@ -25,7 +25,7 @@
  ("/home/clara/Software/chicago-neighborhood-map/src/" . "main/")
  ("/home/clara/Software/chicago-neighborhood-map/" . "src/")
  ("/home/clara/.conky/" . "Conky Seamod/")
- ("/home/clara/Software/fotc/spec/" . "models/")
+ ("/home/clara/Software/fotc/spec/" . "helpers/")
  ("/home/clara/Software/dioptrice/db/" . "migrate/")
  ("/etc/" . "default/")
  ("/home/clara/Text/" . "dumbfight/")
@@ -46,17 +46,19 @@
  ("/home/clara/Software/dioptrice/" . "app/")
  ("/home/clara/Software/fotc/app/views/" . "invoices/")
  ("/home/clara/Software/fotc/app/assets/" . "javascripts/")
- ("/home/clara/Software/fotc/app/" . "controllers/")
+ ("/home/clara/Software/fotc/app/" . "helpers/")
  ("/home/clara/Documents/" . "Parallactic/")
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
- ("/home/clara/Software/fotc/" . "app/")
+ ("/home/clara/Software/fotc/" . "spec/")
  ("/home/clara/Software/" . "fotc/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/fotc/spec/helpers/"
+ "/home/clara/Software/fotc/app/helpers/"
  "/home/clara/Software/fotc/app/controllers/"
  "/home/clara/Software/fotc/app/views/invoices/"
  "/home/clara/Software/fotc/app/views/jobs/"
@@ -69,7 +71,6 @@
  "/home/clara/Software/fotc/app/views/messengers/"
  "/home/clara/Software/fotc/spec/requests/"
  "/home/clara/Software/fotc/app/assets/javascripts/"
- "/home/clara/Software/fotc/app/helpers/"
  "/home/clara/Software/fotc/config/environments/"
  "/home/clara/Software/fotc/app/assets/stylesheets/"
  "/home/clara/Software/dioptrice/app/assets/stylesheets/"
@@ -95,7 +96,6 @@
  "/home/clara/Software/fotc/app/views/login/"
  "/home/clara/Text/"
  "/home/clara/Software/fotc/app/views/pages/"
- "/home/clara/Software/fotc/spec/helpers/"
  "/home/clara/Software/fotc/spec/factories/"
  "/home/clara/Software/dioptrice/spec/factories/"
  "/home/clara/Software/calling-congress/app/views/calling_scripts/"
@@ -111,6 +111,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "application_helper_spec.rb"
+ "application_helper.rb"
  "invoices_controller.rb"
  "index.html.erb"
  "report.html.erb"
@@ -119,19 +121,19 @@
  "_form.html.erb"
  "assign.html.erb"
  "job.rb"
- "job_spec.rb"
- "invoice.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/Software/fotc/app/helpers/" (22644 14090 428608 704000) "calendar_helper.rb" "./" "application_helper.rb" "../")
+
+ ("/home/clara/Software/fotc/" (22644 12877 233164 275000) "log/" ".gitignore" "config.reek" "config/" ".watchr" "tmp/" "./" "Gemfile.lock" "Gemfile" "attachments-122" "public/" "spec/" "attachments-123" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" "script/" ".git/")
+
  ("/home/clara/Software/fotc/app/controllers/" (22644 12450 518709 151000) "photos_controller.rb" "login_controller.rb" "categories_controller.rb" "dispatching_users_controller.rb" "users_controller.rb" "recurrences_controller.rb" "markets_controller.rb" "pages_controller.rb" "./" "application_controller.rb" "jobs_controller.rb" "clients_controller.rb" "../" "saved_companies_controller.rb" "invoices_controller.rb" "admins_controller.rb" "notes_controller.rb" "messengers_controller.rb")
 
  ("/home/clara/Software/fotc/app/views/invoices/" (22644 12395 623931 78000) "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "show.csv.erb" "../" "show.pdf.prawn" "index.html.erb")
 
  ("/home/clara/Software/fotc/app/views/recurrences/" (22644 12302 646520 341000) ".#_form.html.erb" "jobs.html.erb" "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb")
-
- ("/home/clara/Software/fotc/" (22644 11604 339083 331000) "log/" ".gitignore" "config.reek" "config/" ".watchr" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" "script/" ".git/")
 
  ("/home/clara/Software/fotc/spec/models/" (22644 11498 655206 182000) "invoice_spec.rb" "market_spec.rb" "./" "photo_spec.rb" "saved_company_spec.rb" "recurrence_spec.rb" "category_spec.rb" "job_attachment_spec.rb" "client_spec.rb" "user_spec.rb" "saved_email_spec.rb" "../" "messenger_spec.rb" "weekday_spec.rb" "work_phone_spec.rb" "link_spec.rb" "job_spec.rb" ".#admin_spec.rb" "admin_spec.rb")
 
@@ -190,8 +192,6 @@
  ("/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/" (22625 51773 548898 467000) "./" "main.xml" "../")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/res/values/" (22625 51824 16749 941000) "strings.xml" "themes.xml" "./" "colors.xml" "../")
-
- ("/home/clara/Software/fotc/app/helpers/" (22629 27446 244066 854000) "calendar_helper.rb" "./" "application_helper.rb" "../")
 
  ("/home/clara/Software/dioptrice/app/assets/javascripts/" (22634 46299 327566 675000) "application.js" "./" "categories.coffee" "wallpapers.coffee" "../" "categories.js.coffee")
 
