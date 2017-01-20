@@ -2,7 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/clara/Software/mighty/spec/" . "models/")
+ ("/home/clara/Software/mighty/spec/" . "helpers/")
  ("/home/clara/Software/bss/wp-content/themes/twentysixteen/" . "template-parts/")
  ("/home/clara/Software/bss/wp-content/themes/" . "twentysixteen/")
  ("/home/clara/Software/bss/wp-content/" . "themes/")
@@ -13,7 +13,7 @@
  ("/home/clara/Software/mighty/db/" . "migrate/")
  ("/home/clara/Software/mighty/app/views/" . "pages/")
  ("/home/clara/Software/mighty/app/assets/" . "javascripts/")
- ("/home/clara/Software/mighty/app/" . "controllers/")
+ ("/home/clara/Software/mighty/app/" . "models/")
  ("/home/clara/Software/mighty/" . "app/")
  ("/home/clara/.config/" . "autostart/")
  ("/home/clara/Software/calling-congress/spec/" . "requests/")
@@ -70,24 +70,26 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/clara/Software/mighty/app/controllers/"
  "/home/clara/Software/mighty/app/models/"
- "/home/clara/Software/mighty/app/assets/javascripts/"
  "/home/clara/Software/mighty/app/views/pages/"
+ "/home/clara/Software/mighty/app/assets/javascripts/"
+ "/home/clara/Software/mighty/app/views/layouts/"
+ "/home/clara/Software/mighty/app/assets/stylesheets/"
+ "/home/clara/Software/mighty/app/controllers/"
+ "/home/clara/Software/mighty/app/views/banks/"
+ "/home/clara/Software/mighty/spec/helpers/"
+ "/home/clara/Software/mighty/spec/requests/"
+ "/home/clara/Software/mighty/spec/"
  "/home/clara/Software/mighty/spec/models/"
  "/home/clara/Software/mighty/spec/controllers/"
  "/home/clara/Software/mighty/config/"
- "/home/clara/Software/mighty/spec/requests/"
  "/home/clara/Software/bss/wp-content/themes/twentysixteen/template-parts/"
  "/home/clara/Software/bss/wp-content/themes/twentysixteen/"
  "/home/clara/Software/bss/"
  "/home/clara/Software/wordpress/"
  "/sudo:root@localhost:/etc/apache2/mods-enabled/"
  "/sudo:root@localhost:/etc/apache2/sites-available/"
- "/home/clara/Software/mighty/app/assets/stylesheets/"
- "/home/clara/Software/mighty/app/views/layouts/"
  "/home/clara/Software/mighty/app/views/regions/"
- "/home/clara/Software/mighty/app/views/banks/"
  "/home/clara/.conky/Conky Seamod/"
  "/usr/share/icons/Mint-X/"
  "/home/clara/Software/mighty/db/migrate/"
@@ -118,41 +120,45 @@
  "/home/clara/Software/dioptrice/"
  "/home/clara/Software/dioptrice/spec/controllers/"
  "/home/clara/Software/dioptrice/spec/models/"
- "/home/clara/Software/dioptrice/app/models/"
- "/home/clara/Software/dioptrice/app/controllers/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "banks_controller.rb"
  "bank.rb"
- "bubble.js"
  "distribution.rb"
  "graph.html.erb"
- "sector_spec.rb"
- "region_spec.rb"
- "distribution_spec.rb"
- "certification_spec.rb"
- "cause_spec.rb"
+ "bubble.js"
+ "application.html.erb"
+ "index.html.erb"
+ "application.scss"
+ "banks_controller.rb"
+ "new.html.erb"
+ "_form.html.erb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/mighty/app/assets/javascripts/" (22657 17559 577493 255000) "application.js" "./" "../" "bubble.js")
+ ("/home/clara/Software/mighty/app/models/" (22658 24480 588213 587000) "sector.rb" "distribution.rb" "./" "bank.rb" "../" "region.rb" ".keep" "concerns/" "cause.rb" "certification.rb")
 
- ("/home/clara/Software/mighty/app/controllers/" (22657 17127 358682 734000) "regions_controller.rb" "pages_controller.rb" "./" "application_controller.rb" "banks_controller.rb" "../" "causes_controller.rb" "concerns/" "sectors_controller.rb")
+ ("/home/clara/Software/mighty/app/assets/javascripts/" (22658 24414 352458 208000) "application.js" "./" "../" "bubble.js")
 
- ("/home/clara/Software/mighty/app/models/" (22657 16354 601035 308000) "sector.rb" "distribution.rb" "./" "bank.rb" "../" "region.rb" ".keep" "concerns/" "cause.rb" "certification.rb")
+ ("/home/clara/Software/mighty/app/views/pages/" (22658 22974 690448 942000) "./" "../" "index.html.erb" "graph.html.erb")
 
- ("/home/clara/Software/mighty/app/views/pages/" (22657 16035 730083 975000) "./" "../" "index.html.erb" "graph.html.erb")
+ ("/home/clara/Software/mighty/app/assets/stylesheets/" (22658 23079 526012 866000) "./" "../" "application.scss")
+
+ ("/home/clara/Software/mighty/app/controllers/" (22658 20023 326967 392000) "regions_controller.rb" "pages_controller.rb" "./" "application_controller.rb" "banks_controller.rb" "../" "causes_controller.rb" "concerns/" "sectors_controller.rb")
+
+ ("/home/clara/Software/mighty/app/views/banks/" (22658 19952 967259 305000) "index.json.jbuilder" "show.html.erb" "_bank.json.jbuilder" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb" "_certification_fields.html.erb" "show.json.jbuilder" "_distribution_fields.html.erb")
+
+ ("/home/clara/Software/mighty/spec/helpers/" (22658 19409 181435 468000) "./" "../")
+
+ ("/home/clara/Software/mighty/spec/requests/" (22658 19319 597786 662000) "sectors_spec.rb" "./" "regions_spec.rb" "banks_spec.rb" "causes_spec.rb" "../")
 
  ("/home/clara/Software/mighty/spec/models/" (22657 15930 742426 415000) "certification_spec.rb" "bank_spec.rb" "region_spec.rb" "cause_spec.rb" "./" "../" "sector_spec.rb" "distribution_spec.rb")
 
  ("/home/clara/Software/mighty/spec/controllers/" (22657 15900 170525 746000) "banks_controller_spec.rb" "regions_controller_spec.rb" "sectors_controller_spec.rb" "./" "pages_controller_spec.rb" "../" "causes_controller_spec.rb")
 
  ("/home/clara/Software/mighty/config/" (22646 26800 773823 89000) "routes.rb" "environment.rb" "./" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
-
- ("/home/clara/Software/mighty/spec/requests/" (22657 14307 767540 867000) "sectors_spec.rb" ".#banks_spec.rb" "./" "regions_spec.rb" "banks_spec.rb" "causes_spec.rb" "../")
 
  ("/home/clara/Software/mighty/spec/" (22655 64057 630098 805000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "views/" "../" "rails_helper.rb" "requests/" "routing/")
 
@@ -165,8 +171,6 @@
  ("/home/clara/.conky/Conky Seamod/" (22654 31799 209603 725000) "./" "seamod_rings.lua" "../" "conky_seamod.jpg" "source.txt" "conky_seamod")
 
  ("/home/clara/Software/mighty/app/views/regions/" (22654 32219 224242 696000) "index.json.jbuilder" "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "_region.json.jbuilder" "../" "index.html.erb" "show.json.jbuilder")
-
- ("/home/clara/Software/mighty/app/assets/stylesheets/" (22654 33400 619043 392000) "./" "../" "application.scss")
 
  ("/home/clara/Software/bss/wp-content/themes/" (22646 31265 0 0) "twentyseventeen/" "twentyfifteen/" "./" "twentysixteen/" "../" "index.php")
 
@@ -219,8 +223,6 @@
  ("/home/clara/Software/fotc/spec/helpers/" (22644 14204 536788 989000) "./" "calendar_helper_spec.rb" "../" "application_helper_spec.rb")
 
  ("/home/clara/Software/mighty/public/" (22651 52059 574153 848000) "favicon.ico" "robots.txt" "./" "404.html" "../" "422.html" "system/" "500.html")
-
- ("/home/clara/Software/mighty/app/views/banks/" (22651 55101 599453 269000) "index.json.jbuilder" "show.html.erb" "_bank.json.jbuilder" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb" "_certification_fields.html.erb" "show.json.jbuilder" "_distribution_fields.html.erb")
 
  ("/usr/share/icons/Mint-X/" (22496 1750 0 0) "../" "places/" "emblems/" "animations/" "categories/" "apps/" "stock/" "index.theme" "icon-theme.cache" "devices/" "./" "actions/" "mimetypes/" "status/")
 
@@ -335,8 +337,6 @@
  ("/home/clara/Software/calling-congress/spec/requests/" (22585 714 892976 803000) "./" "../" "calling_scripts_spec.rb")
 
  ("/home/clara/Software/calling-congress/spec/" (22585 1422 736722 451000) "features/" "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "support/" "../" "rails_helper.rb" "requests/")
-
- ("/home/clara/Software/calling-congress/app/controllers/" (22588 49444 487230 790000) "pages_controller.rb" "./" "users/" "application_controller.rb" "calling_scripts_controller.rb" "../" "concerns/")
 )
 
 ;; ----- ido-unc-hosts-cache -----
