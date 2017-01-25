@@ -12,10 +12,10 @@
  ("/usr/share/icons/" . "Mint-X/")
  ("/usr/share/" . "icons/")
  ("/home/clara/Software/mighty/db/" . "migrate/")
- ("/home/clara/Software/mighty/app/views/" . "layouts/")
+ ("/home/clara/Software/mighty/app/views/" . "pages/")
  ("/home/clara/Software/mighty/app/assets/" . "javascripts/")
- ("/home/clara/Software/mighty/app/" . "controllers/")
- ("/home/clara/Software/mighty/" . "spec/")
+ ("/home/clara/Software/mighty/app/" . "views/")
+ ("/home/clara/Software/mighty/" . "app/")
  ("/home/clara/.config/" . "autostart/")
  ("/home/clara/Software/calling-congress/spec/" . "requests/")
  ("/home/clara/Software/calling-congress/config/" . "environments/")
@@ -71,6 +71,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/mighty/app/views/pages/"
  "/home/clara/Software/mighty/spec/controllers/"
  "/home/clara/Software/mighty/spec/views/banks/"
  "/home/clara/Software/mighty/"
@@ -79,7 +80,6 @@
  "/home/clara/Software/mighty/app/controllers/"
  "/home/clara/Software/mighty/app/assets/javascripts/"
  "/home/clara/Software/mighty/app/views/layouts/"
- "/home/clara/Software/mighty/app/views/pages/"
  "/home/clara/Software/mighty/app/views/banks/"
  "/home/clara/Software/mighty/app/assets/stylesheets/"
  "/home/clara/Software/mighty/app/views/regions/"
@@ -125,6 +125,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "graph.html.erb"
  "pages_controller_spec.rb"
  "index.html.erb_spec.rb"
  "sectors_controller_spec.rb"
@@ -134,18 +135,19 @@
  "regions_controller.rb"
  "sectors_controller.rb"
  "application.js"
- "application.html.erb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/Software/mighty/app/views/pages/" (22662 21315 599918 730000) "./" "../" "index.html.erb" "graph.html.erb")
+
+ ("/home/clara/Software/mighty/" (22663 54836 579488 575000) "log/" ".gitignore" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" ".gitignore.orig" "spec/" "README.rdoc" "test/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
+
  ("/home/clara/Software/mighty/spec/views/banks/" (22662 19861 172934 115000) "new.html.erb_spec.rb" "./" "edit.html.erb_spec.rb" "../" "index.html.erb_spec.rb")
 
  ("/home/clara/Software/mighty/spec/controllers/" (22662 19802 88977 612000) "banks_controller_spec.rb" "regions_controller_spec.rb" "sectors_controller_spec.rb" "./" "pages_controller_spec.rb" "../" "causes_controller_spec.rb")
 
  ("/home/clara/Software/mighty/spec/views/sectors/" (22662 19765 845004 393000) "new.html.erb_spec.rb" "./" "edit.html.erb_spec.rb" "../" "index.html.erb_spec.rb")
-
- ("/home/clara/Software/mighty/" (22662 19624 253109 745000) "log/" ".gitignore" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" ".gitignore.orig" "spec/" "README.rdoc" "test/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "config.ru" "Rakefile" ".git/")
 
  ("/home/clara/Software/mighty/spec/views/" (22646 29278 65413 545000) "./" "sectors/" "../" "banks/" "causes/" "regions/")
 
@@ -156,8 +158,6 @@
  ("/home/clara/Software/mighty/app/views/layouts/" (22662 18876 801456 608000) "./" "../" "application.html.erb")
 
  ("/home/clara/Software/mighty/app/assets/stylesheets/" (22662 19015 561394 305000) "./" "../" "application.scss")
-
- ("/home/clara/Software/mighty/app/views/pages/" (22662 19464 997190 916000) "./" "../" "index.html.erb" "graph.html.erb")
 
  ("/home/clara/Software/mighty/app/views/banks/" (22662 19028 977388 269000) "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb" "_certification_fields.html.erb" "_distribution_fields.html.erb")
 
