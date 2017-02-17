@@ -2,12 +2,12 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/clara/Software/bss/config/" . "initializers/")
+ ("/home/clara/Software/bss/config/" . "deploy/")
  ("/home/clara/Software/bss/app/assets/" . "stylesheets/")
  ("/home/clara/Software/bss/spec/" . "controllers/")
  ("/home/clara/Software/bss/db/" . "migrate/")
  ("/home/clara/Software/bss/app/views/" . "layouts/")
- ("/home/clara/Software/bss/app/" . "controllers/")
+ ("/home/clara/Software/bss/app/" . "helpers/")
  ("/home/clara/Software/gilbertandsullivan/wp-content/themes/" . "gs-theme/")
  ("/home/clara/Software/gilbertandsullivan/wp-content/" . "themes/")
  ("/home/clara/Software/gilbertandsullivan/" . "wp-content/")
@@ -16,7 +16,7 @@
  ("/home/clara/Software/bss/wp-content/themes/twentysixteen/" . "template-parts/")
  ("/home/clara/Software/bss/wp-content/themes/" . "twentysixteen/")
  ("/home/clara/Software/bss/wp-content/" . "themes/")
- ("/home/clara/Software/bss/" . "spec/")
+ ("/home/clara/Software/bss/" . "config/")
  ("/sudo:root@localhost:/etc/apache2/" . "mods-enabled/")
  ("/usr/share/icons/" . "Mint-X/")
  ("/usr/share/" . "icons/")
@@ -80,18 +80,19 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/clara/Software/bss/spec/controllers/"
- "/home/clara/Software/bss/spec/factories/"
  "/home/clara/Software/bss/"
  "/home/clara/Software/bss/config/"
- "/home/clara/Software/bss/config/initializers/"
- "/home/clara/Software/bss/app/controllers/"
+ "/home/clara/Software/bss/config/deploy/"
+ "/home/clara/Software/bss/spec/controllers/"
+ "/home/clara/Software/bss/app/helpers/"
  "/home/clara/Software/bss/app/models/"
+ "/home/clara/Software/bss/app/controllers/"
+ "/home/clara/Software/bss/spec/factories/"
+ "/home/clara/Software/bss/config/initializers/"
  "/home/clara/Software/bss/spec/models/"
  "/home/clara/Software/bss/app/views/layouts/"
  "/home/clara/Software/bss/app/assets/stylesheets/"
  "/home/clara/Software/bss/app/views/resources/"
- "/home/clara/Software/bss/app/helpers/"
  "/home/clara/Software/calling-congress/"
  "/home/clara/Software/calling-congress/app/views/layouts/"
  "/home/clara/Software/bss/app/assets/javascripts/"
@@ -129,40 +130,83 @@
  "/home/clara/Software/mighty/config/"
  "/home/clara/Software/bss/wp-content/themes/twentysixteen/template-parts/"
  "/home/clara/Software/bss/wp-content/themes/twentysixteen/"
- "/home/clara/Software/wordpress/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "resources_controller_spec.rb"
- "filters.rb"
- "categories.rb"
+ ".ruby-version"
  "Gemfile"
- "application.rb"
- "hashie.rb"
- "resources_controller.rb"
+ "Capfile"
+ "Gemfile.lock"
+ "deploy.rb"
+ "database.yml"
+ "staging.rb"
+ "resources_controller_spec.rb"
+ "application_helper.rb"
  "resource.rb"
- "category_spec.rb"
- "filter_spec.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/bss/spec/controllers/" (22694 7800 508009 128000) "application_controller_spec.rb" "./" "../" "resources_controller_spec.rb")
+ ("/home/clara/Software/mighty/spec/controllers/" (22671 53732 601204 321000) "banks_controller_spec.rb" "regions_controller_spec.rb" "sectors_controller_spec.rb" "./" "pages_controller_spec.rb" "../" "causes_controller_spec.rb")
 
- ("/home/clara/Software/bss/spec/factories/" (22695 11050 469925 219000) "categories.rb" "./" "../" "resources.rb" "filters.rb")
+ ("/home/clara/Software/mighty/app/assets/javascripts/" (22671 53627 169344 234000) "application.js" "./" "../" "bubble.js")
+
+ ("/home/clara/Software/mighty/app/assets/stylesheets/" (22671 53902 904982 788000) "./" "../" "application.scss")
+
+ ("/home/clara/Software/mighty/app/views/pages/" (22671 52749 14352 187000) "./" "../" "index.html.erb" "graph.html.erb")
+
+ ("/home/clara/Software/mighty/app/controllers/" (22671 48572 915570 337000) "regions_controller.rb" "pages_controller.rb" "./" "application_controller.rb" "banks_controller.rb" "../" "causes_controller.rb" "concerns/" "sectors_controller.rb")
+
+ ("/home/clara/Software/mighty/app/views/banks/" (22666 28081 804352 396000) "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb" "_certification_fields.html.erb" "_info.html.erb" "_distribution_fields.html.erb")
+
+ ("/home/clara/Software/mighty/app/views/layouts/" (22671 52873 562262 867000) "./" "../" "application.html.erb")
+
+ ("/home/clara/Text/" (22680 57298 116727 733000) "polarvortex.or" "steve-case" "op-supplies.dvi" "storage-spec.txt" "lsq-root-pwd" "issuelab.aux" "railsbridge.org" "letter.txt" "desoto.org" "op-supplies.aux" "fotc-meeting" "life.org_archive_archive" "ical.org" "friends.org" "meadowse" "leah" "dioptrice-changes" "badmachine" "timetravel2" "moojo-theme-ideas" "greg" "lsq-bar-notifications-2" "#treasure-hunt-instructions.txt#" "issuelab.org" "Text/" "quaker.txt" "_TZ_8527-meson.log" "read.org" "#ladystuck#" "fotc" "#moojo9.org#" "issuelab.log" "bi.org" "callgov-press" "timesheet.txt" "movie-diary" "hazards-0422" "#resourcebarn2.txt#" "lsq-notes" "readinglist" "#wireframe-draft2-change.org#" "#friends.org#" "railsbridgedogs4.html" "#rincewitch#" "waiting" "#contraceptives#" "videos.org" "lsq-final-draft-response" "test.asc" "bi4.org" "story" "mighty-pages.org" "coastal.txt" "railsbridgedogs3.org" "setlist" "invite" "email" "bojack.org" "#unpage.org#" "action-verbs" "moojo5.org" "life.org_archive" "blurb" "missfont.log" "mauge" "bildungsroman" "ladystuck" "ron-burt" "jobless" "#railsbridgedogs2.org#" "tv.org" "resourcebarn2.txt" "issuelab.out" "#para#" "move-schedule_archive" "chaos2" "contraceptives" "railsbridgedogs2.html" "#issuelab.tex#" "coats.org" "motorola" "mechturk" "list.txt" "statement.txt" "timeloop" "lendsquare-launch" "old" "gsoc-instructions.pdf" "homestuck" "#railsbridgedogs4.org#" "lendsquare-actionables" "agendas.org" "#drow.org#" "emails.txt" "gitissues.org" "thanksgiving-list" "railsbridgedogs.html" "mighty-pages.tex" "new" "railsbridgedogs2.org" "nastygram.txt" "rincewitch-ii" "hat-0520" "fotc.org" "para" "#reem#" "chaos" "reem2" "op-supplies.log" "resourcebarn.txt" "phone.org" "movingvan" "clothes.org" "#railsbridgedogs.org#" "lsq-bar-notifications" "packing.org" "mobileorg.org" "good-movies" "#greg#" "stories/" "lendsquare-design-items" "drow.org" "names" "leavitt.org" "scrib.html" "ladystuck.html" "statement.txt~" "shopping.org" "issuelab.tex" "trash.txt" "parallactic" "gsoc-instructions.odt" "life.org" "treasure-hunt-instructions.txt" "seder-menu" "op-supplies.tex" "orgmob" "house.org" "camping.org" "insurance" "hat.org" "timetravel" "intro" "#guestjobs#" "lsq-notes-0401" "mighty-pages.pdf" "lsq-draft3-notes" "railsbridgedogs4.org" "truisms.txt" "wed.txt" "rincewitch" "week" "move-schedule.org" "unpage.org" "gsoc-instructions.tex" "cinnamon" "para_archive" "logo.png" "#timeloop#" "tools.org" "checksums.dat" "seed.txt" "notes.org" "stuff.org" "Agenda Views" "para0306.org" "moltables" "stuff.txt" "lsq-0626" "orb" "_TZ_8527-meson.tex" "moojo9.org" "fraud" "bi2.org" "sebastian-map-app" "foo" "country.txt" "bi3.org" "issuelab.pdf" "wireframe-draft2-change.org" "foobar" "books.org" "matt-questions" "drive" "#Captures#" "mochabugs.org" "reem-0604" "op-supplies.pdf" "science" "toread.org" "moojo8.org" "timandsarah" "reem" "guestjobs" "movies.org" "index.org" "railsbridgedogs.org" "band-dates.org" "gilman" "../" "./")
+
+ ("/home/clara/Software/dioptrice/spec/models/" (22682 14977 212613 299000) "asset_spec.rb" "completeness_spec.rb" "telescope_spec.rb" "objective_type_spec.rb" "material_spec.rb" "illustration_type_spec.rb" "physical_style_spec.rb" "material_type_spec.rb" "object_status_spec.rb" "./" "photo_spec.rb" "optical_style_spec.rb" "../" "objective_lens_spec.rb" "eyepiece_lens_spec.rb" "data_point_spec.rb" "collection_spec.rb" "objective_spec.rb" "eyepiece_spec.rb")
+
+ ("/home/clara/Software/dioptrice/spec/factories/" (22679 7466 104688 395000) "objectives.rb" "collections.rb" "eyepiece_lenses.rb" "categories.rb" "object_statuses.rb" "./" "photo_categories.rb" "materials.rb" "reports.rb" "illustration_types.rb" "../" "objective_types.rb" "eyepieces.rb" "photos.rb" "objective_lenses.rb" "completenesses.rb" "telescopes.rb" "users.rb" "admin_users.rb" "assets.rb" "material_types.rb" "wallpapers.rb")
+
+ ("/home/clara/Software/dioptrice/app/views/telescopes/" (22679 31635 280102 795000) "_next_prev_links.html.erb" "_old_prev_next" "_telescope.html.erb" "index.csv.erb" "show.html.erb" "_objectives.html.erb" "_objective_types.html.erb" "_eyepiece_lens.html.erb" "_user_actions.html.erb" "_data_point_fields.html.erb" "./" "new.html.erb" "_eyepiece.html.erb" "../" "import.html.erb" "_prev_next.html.erb" "_sort_links.html.erb" "index.html.erb" "_eyepiece_complete.html.erb" "_objective_lens_fields.html.erb")
+
+ ("/home/clara/Software/dioptrice/app/views/layouts/" (22637 35366 178025 239000) "listing.html" "about.html" "./" "index.html" "../" "application.html.erb" "search.html" "browse.html")
+
+ ("/home/clara/Software/dioptrice/app/views/application/" (22637 35407 946025 546000) "_menu.html.erb" "_search.html.erb" "./" "../" "about.html.erb" "index.html.erb" "_user_menu.html.erb")
+
+ ("/home/clara/Software/dioptrice/app/controllers/" (22689 61006 372209 627000) "photos_controller.rb" "categories_controller.rb" "telescopes_controller.rb" "wallpapers_controller.rb" "./" "application_controller.rb" "../" "passenger.3000.pid.lock" "collections_controller.rb")
+
+ ("/home/clara/Software/dioptrice/app/helpers/" (22689 58008 933525 447000) "./" "application_helper.rb" "../")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/" (22691 30234 386767 637000) "./" "main.xml" "../")
+
+ ("/home/clara/Software/bss/db/migrate/" (22694 7795 776023 271000) "20170216194424_create_filters.rb" "20170215234649_create_resources.rb" "20170216194409_create_categories.rb" "20170216214926_add_path_to_resource.rb" "./" "../")
+
+ ("/home/clara/Software/calling-congress/" (22695 8562 128201 190000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "README.rdoc" "../" "app/" "LICENSE" "coverage/" ".rspec" "lib/" "db/" "config.ru" "Rakefile" ".git/")
+
+ ("/home/clara/Software/bss/app/views/resources/" (22695 9497 486035 460000) "./" "../" "index.html.erb")
+
+ ("/home/clara/Software/bss/spec/factories/" (22695 11612 844742 876000) "categories.rb" "./" "../" "resources.rb" "filters.rb")
+
+ ("/home/clara/Software/bss/app/helpers/" (22695 14065 605098 215000) "./" "application_helper.rb" "../")
+
+ ("/home/clara/Software/bss/spec/controllers/" (22695 14196 489056 78000) "application_controller_spec.rb" "./" "../" "resources_controller_spec.rb")
+
+ ("/home/clara/Software/bss/config/" (22695 19706 35199 915000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
+
+ ("/home/clara/Software/bss/" (22695 23435 84027 12000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
+
+ ("/home/clara/Software/bss/config/deploy/" (22695 16950 416374 528000) "./" "../" "staging.rb" "production.rb")
+
+ ("/home/clara/Software/bss/app/models/" (22695 16215 965959 688000) "category.rb" "./" "../" "filter.rb" "resource.rb" "application_record.rb" "concerns/")
+
+ ("/home/clara/Software/bss/app/controllers/" (22695 13994 701122 47000) "./" "application_controller.rb" "../" "concerns/" "resources_controller.rb")
+
+ ("/home/clara/" (22695 11228 745502 735000) ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "lablpdf.odt" ".icons/" ".~lock.lalalabl.odt#" "Securities Fraud Litigation (1).docx" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" "lalalabl.odt" ".face" ".gnome2/" "books 2 read - TickTick.pdf" "Carolyna Pro Black.otf" "favicon.ico" "labls.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" ".pki/" ".dmrc" ".conky/" "milo.odt" ".cxoffice/" ".eclipse/" ".dbus/" ".java/" ".sane/" "labl2.pdf" ".gksu.lock" "opt/" "Pictures/" ".bash_profile" ".xdvirc" ".npm/" "shopsmith.odt" "./" ".yafc/" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "wget-log" ".~lock.labls.odt#" ".install4j" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "puzzle.odt" "Documents/" "seamod_rings.lua" ".MultiBitHD/" ".mysql_history" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".electrum/" ".mozilla/" "20161207-invoice-2059.pdf" "ancestry.odt" ".scribus/" ".emacs" ".config/" "Videos/" "WireframeSketcher/" "labl3.pdf" ".themes/" "terry.odt" ".lastpass/" "default.pdf" ".m2/" ".linuxmint/" ".local/" "labl.pdf" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
 
  ("/home/clara/Software/bss/spec/" (22695 11025 17985 345000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "../" "rails_helper.rb")
 
- ("/home/clara/Software/bss/" (22695 11004 586033 576000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "config.ru" "Rakefile" ".git/")
-
- ("/home/clara/Software/bss/config/" (22695 10971 438111 758000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "puma.rb" "./" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
-
  ("/home/clara/Software/bss/config/initializers/" (22695 10682 150893 388000) "inflections.rb" "session_store.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "hashie.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "new_framework_defaults.rb" "../" "cookies_serializer.rb" "application_controller_renderer.rb" "assets.rb")
-
- ("/home/clara/Software/bss/app/controllers/" (22695 9934 208992 590000) "./" "application_controller.rb" "../" "concerns/" "resources_controller.rb")
-
- ("/home/clara/Software/bss/app/models/" (22695 10522 39341 272000) "category.rb" "./" "../" "filter.rb" "resource.rb" "application_record.rb" "concerns/")
 
  ("/home/clara/Software/bss/spec/models/" (22695 10071 976604 545000) "resource_spec.rb" "./" "category_spec.rb" "../" "filter_spec.rb")
 
@@ -170,23 +214,15 @@
 
  ("/home/clara/Software/bss/app/assets/stylesheets/" (22695 9974 948877 771000) "./" "../" "application.scss")
 
- ("/home/clara/Software/bss/app/views/resources/" (22695 9329 578412 924000) "./" "../" "index.html.erb")
-
- ("/home/clara/Software/bss/app/helpers/" (22695 9200 374701 358000) "./" "application_helper.rb" "../")
-
  ("/home/clara/Software/calling-congress/app/views/layouts/" (22686 1096 71149 992000) "_navbar.html.erb" "./" "_footer.html.erb" "../" "application.html.erb")
 
  ("/home/clara/Software/calling-congress/app/views/" (22676 58674 196316 217000) "./" "smart_listing/" "calling_scripts/" "../" "devise/" "pages/" "layouts/")
 
  ("/home/clara/Software/calling-congress/app/" (22585 714 892976 803000) "models/" "controllers/" "./" "views/" "../" "assets/" "mailers/")
 
- ("/home/clara/Software/calling-congress/" (22686 20383 288071 219000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "README.rdoc" "../" "app/" "LICENSE" "coverage/" ".rspec" "lib/" "db/" "config.ru" "Rakefile" ".git/")
-
  ("/home/clara/Software/bss/app/assets/javascripts/" (22694 10135 67076 458000) "cable.js" "bootstrap.js" "application.js" "channels/" "./" "../")
 
  ("/home/clara/Software/bss/app/assets/" (22692 58817 641752 651000) "config/" "./" "javascripts/" "../" "stylesheets/" "images/")
-
- ("/home/clara/Software/bss/db/migrate/" (22694 7782 928062 71000) "20170216194424_create_filters.rb" "20170215234649_create_resources.rb" "20170216194409_create_categories.rb" "20170216214926_add_path_to_resource.rb" "./" "../")
 
  ("/home/clara/Software/chicago-neighborhood-map/" (22625 39822 740308 200000) "google-play-services_lib/" "bin/" "proguard-project.txt" "project.properties" "src/" "./" "google_play_services/" "../" "assets/" "app/" "build.gradle" "neighbs/" "libs/" "parts/" ".gradle/" "build/" "local.properties" "gen/" ".git/")
 
@@ -196,15 +232,11 @@
 
  ("/home/clara/Software/bss/app/views/" (22693 61670 710674 352000) "resources/" "./" "../" "layouts/")
 
- ("/home/clara/" (22693 60646 851263 229000) ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "lablpdf.odt" ".icons/" ".~lock.lalalabl.odt#" "Securities Fraud Litigation (1).docx" ".cache/" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" "lalalabl.odt" ".face" ".gnome2/" "books 2 read - TickTick.pdf" "Carolyna Pro Black.otf" "favicon.ico" "labls.pdf" ".wget-hsts" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" ".pki/" ".dmrc" ".conky/" "milo.odt" ".cxoffice/" ".eclipse/" ".dbus/" ".java/" ".sane/" "labl2.pdf" ".gksu.lock" "opt/" "Pictures/" ".bash_profile" ".xdvirc" ".npm/" "shopsmith.odt" "./" ".yafc/" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" ".~lock.labls.odt#" ".install4j" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" ".hplip/" ".gem/" ".lesshst" "Public/" ".profile" "puzzle.odt" "Documents/" "seamod_rings.lua" ".MultiBitHD/" ".mysql_history" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "Downloads/" "../" ".electrum/" ".mozilla/" "20161207-invoice-2059.pdf" "ancestry.odt" ".scribus/" ".emacs" ".config/" "Videos/" "WireframeSketcher/" "labl3.pdf" ".themes/" "terry.odt" ".lastpass/" "default.pdf" ".m2/" ".linuxmint/" ".local/" "labl.pdf" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" ".ssh/" ".fonts.conf" ".gconf/" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" ".wine/" ".gnome/")
-
  ("/home/clara/Software/" (22692 58817 637752 657000) "gilbertandsullivan/" "HiWorld/" "html5-boilerplate/" "polynumeral-wp/" "mighty/" "fotc/" "lilscripts/" "coursera-android-labs/" "docs/" "color.pl" "conky_start" "showoff_test/" "android-samples/" "chicktech/" "ballot_ready/" "calling-congress/" "polynumeral.com/" "link-up-illinois/" "celluloid-chicago-script/" "wordpress/" "Sunshine-Version-2/" "shepherdstownfriends/" "polynumeral/" "cryptic-beyond-4569/" "desoto/" "./" "LinkUp-Server/" "NeighborhoodMap/" "my_preso/" "2015-website/" "scripts/" "roadtowilliamsport-pages/" "arcane-mountain-3734/" "mobileorg-android/" "calendar.sh" "dioptrice/" "bss-old/" "treasure-hunt/" "slidedown-skeleton/" "../" "rummagemarketplace/" "modernart/" "bridgedev/" "bss/" "RailsBridgeChi.github.io/" "dog_test/" "test.rb" ".gradle/" "railsbridge_dogs/" "mame/" "marzipan-prep/" "dual_display.sh" "chicago-neighborhood-map/" "25020/" "sample-data/")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/" (22691 32820 540594 476000) "PermissionUtils.java" "./" "../" "ChicagoNeighborhoodMap.java")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/res/" (22287 56401 28933 0) "drawable-ldpi/" "drawable-mdpi/" "raw/" "./" "drawable-hdpi/" "../" "values/" "drawable-xhdpi/" "layout/")
-
- ("/home/clara/Software/dioptrice/app/controllers/" (22689 57790 21732 866000) "photos_controller.rb" "categories_controller.rb" "telescopes_controller.rb" "wallpapers_controller.rb" "./" "application_controller.rb" "../" "passenger.3000.pid.lock" "collections_controller.rb")
 
  ("/home/clara/Software/dioptrice/app/views/" (22196 65031 839525 0) "telescopes/" "./" "photos/" "collections/" "application/" "../" "devise/" "wallpapers/" "layouts/" "categories/")
 
@@ -220,31 +252,15 @@
 
  ("/home/clara/Software/chicago-neighborhood-map/src/" (22523 57993 301629 708000) "debug/" "./" "../" "main/" ".gradle/")
 
- ("/home/clara/Software/dioptrice/app/views/telescopes/" (22679 31595 360117 751000) "_next_prev_links.html.erb" "_old_prev_next" "_telescope.html.erb" "index.csv.erb" "show.html.erb" "_objectives.html.erb" "_objective_types.html.erb" "_eyepiece_lens.html.erb" "_user_actions.html.erb" "_data_point_fields.html.erb" "./" "new.html.erb" "_eyepiece.html.erb" "../" "import.html.erb" "_prev_next.html.erb" "_sort_links.html.erb" "index.html.erb" "_eyepiece_complete.html.erb" "_objective_lens_fields.html.erb")
-
- ("/home/clara/Software/dioptrice/app/helpers/" (22675 28920 704657 718000) "./" "application_helper.rb" "../")
-
- ("/home/clara/Software/dioptrice/spec/models/" (22679 6552 153302 743000) "asset_spec.rb" "completeness_spec.rb" "telescope_spec.rb" "objective_type_spec.rb" "material_spec.rb" "illustration_type_spec.rb" "physical_style_spec.rb" "material_type_spec.rb" "object_status_spec.rb" "./" "photo_spec.rb" "optical_style_spec.rb" "../" "objective_lens_spec.rb" "eyepiece_lens_spec.rb" "data_point_spec.rb" "collection_spec.rb" "objective_spec.rb" "eyepiece_spec.rb")
-
- ("/home/clara/Software/dioptrice/spec/factories/" (22679 1721 658773 200000) "objectives.rb" "collections.rb" "eyepiece_lenses.rb" "categories.rb" "object_statuses.rb" "./" "photo_categories.rb" "materials.rb" "reports.rb" "illustration_types.rb" "../" "objective_types.rb" "eyepieces.rb" "photos.rb" "objective_lenses.rb" "completenesses.rb" "telescopes.rb" "users.rb" "admin_users.rb" "assets.rb" "material_types.rb" "wallpapers.rb")
-
  ("/home/clara/Software/dioptrice/spec/" (22675 23914 955225 54000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "../" "rails_helper.rb" "requests/" "examples.txt" "fixtures/")
 
  ("/home/clara/Software/dioptrice/" (22675 24264 271045 926000) "log/" ".gitignore" "vendor/" ".gitignore.rails2" "bin/" "config/" "bothsources-utf8-objectivesmunged.sql" "tmp/" "solr/" "./" "Gemfile.lock" "helper-scripts/" "Gemfile" "public/" "spec/" "../" "app/" "source1plusmunging.sql" "coverage/" ".rspec" "lib/" "db/" "includes/" "Capfile" "source1only.sql" "config.ru" "Rakefile" "script/" ".git/")
 
  ("/home/clara/Desktop/" (22671 47075 444438 485000) "2FE5D3_0_0.ttf" "Reference/" "Mighty Prototype Jan 30_1980.pdf" "Licenses/" "2FE5D3_1_0.eot" "2FE5D3_2_0.woff2" "2FE5D3_1_0.woff" "./" "2FE5D3_2_0.woff" "2FE5D3_2_0.ttf" "2FE5D3_0_0.woff" "Mighty_MuseoSlabFonts.css" "2FE5D3_2_0.eot" "../" "folder/" "2FE5D3_1_0.woff2" "2FE5D3_0_0.woff2" "2FE5D3_0_0.eot" "2FE5D3_1_0.ttf" "Webfonts/")
 
- ("/home/clara/Software/mighty/app/controllers/" (22666 28240 692189 216000) "regions_controller.rb" "pages_controller.rb" "./" "application_controller.rb" "banks_controller.rb" "../" "causes_controller.rb" "concerns/" "sectors_controller.rb")
-
  ("/home/clara/Software/mighty/" (22666 27009 545500 374000) "log/" ".gitignore" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" ".gitignore.orig" "spec/" "README.rdoc" "test/" "../" "app/" "coverage/" ".rspec" "lib/" "import.rb" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
 
- ("/home/clara/Software/mighty/app/assets/javascripts/" (22666 27325 961152 497000) "application.js" "./" "../" "bubble.js")
-
- ("/home/clara/Software/mighty/app/assets/stylesheets/" (22666 26786 761740 202000) "./" "../" "application.scss")
-
  ("/home/clara/Software/mighty/app/models/" (22666 24937 871492 995000) "sector.rb" "distribution.rb" "./" "bank.rb" "../" "region.rb" ".keep" "concerns/" "cause.rb" "certification.rb")
-
- ("/home/clara/Text/" (22666 21004 750613 495000) "polarvortex.or" "steve-case" "op-supplies.dvi" "storage-spec.txt" "lsq-root-pwd" "issuelab.aux" "railsbridge.org" "letter.txt" "desoto.org" "op-supplies.aux" "fotc-meeting" "life.org_archive_archive" "ical.org" "friends.org" "meadowse" "leah" "dioptrice-changes" "badmachine" "timetravel2" "moojo-theme-ideas" "greg" "lsq-bar-notifications-2" "#treasure-hunt-instructions.txt#" "issuelab.org" "Text/" "quaker.txt" "_TZ_8527-meson.log" "read.org" "#ladystuck#" "fotc" "#moojo9.org#" "issuelab.log" "bi.org" "timesheet.txt" "movie-diary" "hazards-0422" "#resourcebarn2.txt#" "lsq-notes" "readinglist" "#wireframe-draft2-change.org#" "#friends.org#" "railsbridgedogs4.html" "#rincewitch#" "waiting" "#contraceptives#" "videos.org" "lsq-final-draft-response" "test.asc" "bi4.org" "story" "mighty-pages.org" "coastal.txt" "railsbridgedogs3.org" "setlist" "invite" "email" "bojack.org" "#unpage.org#" "action-verbs" "moojo5.org" "life.org_archive" "blurb" "missfont.log" "mauge" "bildungsroman" "ladystuck" "ron-burt" "jobless" "#railsbridgedogs2.org#" "tv.org" "resourcebarn2.txt" "issuelab.out" "#para#" "move-schedule_archive" "chaos2" "contraceptives" "railsbridgedogs2.html" "#issuelab.tex#" "coats.org" "motorola" "mechturk" "list.txt" "statement.txt" "timeloop" "lendsquare-launch" "old" "homestuck" "#railsbridgedogs4.org#" "lendsquare-actionables" "agendas.org" "#drow.org#" "emails.txt" "gitissues.org" "thanksgiving-list" "railsbridgedogs.html" "mighty-pages.tex" "new" "railsbridgedogs2.org" "nastygram.txt" "rincewitch-ii" "hat-0520" "fotc.org" "para" "#reem#" "chaos" "reem2" "op-supplies.log" "resourcebarn.txt" "phone.org" "movingvan" "clothes.org" "#railsbridgedogs.org#" "lsq-bar-notifications" "packing.org" "mobileorg.org" "good-movies" "#greg#" "stories/" "lendsquare-design-items" "drow.org" "names" "leavitt.org" "scrib.html" "ladystuck.html" "statement.txt~" "shopping.org" "issuelab.tex" "trash.txt" "parallactic" "life.org" "treasure-hunt-instructions.txt" "seder-menu" "op-supplies.tex" "orgmob" "house.org" "camping.org" "insurance" "hat.org" "timetravel" "intro" "#guestjobs#" "lsq-notes-0401" "mighty-pages.pdf" "lsq-draft3-notes" "railsbridgedogs4.org" "truisms.txt" "wed.txt" "rincewitch" "week" "move-schedule.org" "unpage.org" "gsoc-instructions.tex" "cinnamon" "para_archive" "logo.png" "#timeloop#" "tools.org" "checksums.dat" "seed.txt" "notes.org" "stuff.org" "Agenda Views" "para0306.org" "moltables" "stuff.txt" "lsq-0626" "orb" "_TZ_8527-meson.tex" "moojo9.org" "fraud" "bi2.org" "sebastian-map-app" "foo" "country.txt" "bi3.org" "issuelab.pdf" "wireframe-draft2-change.org" "foobar" "books.org" "matt-questions" "drive" "#Captures#" "mochabugs.org" "reem-0604" "op-supplies.pdf" "science" "toread.org" "moojo8.org" "timandsarah" "reem" "guestjobs" "movies.org" "index.org" "railsbridgedogs.org" "band-dates.org" "gilman" "../" "./")
 
  ("/home/clara/Software/mighty/db/migrate/" (22663 55116 863422 81000) "20170111173154_create_regions.rb" "20170111180443_create_banks.rb" "20170111173232_add_attachment_image_to_regions.rb" "./" "20170123171928_add_attachment_image_to_sectors.rb" "../" "20170111175854_create_sectors.rb" "20170111180400_create_certifications.rb" "20170111175849_create_causes.rb" "20170111180351_create_distributions.rb")
 
@@ -253,12 +269,6 @@
  ("/home/clara/Software/bss/wp-content/themes/twentysixteen/template-parts/" (22657 13602 998324 113000) "content.php" "content-resource.php" "resource.php" "./" "biography.php" "content-single.php" "../" "content-none.php" "content-search.php" "content-page.php")
 
  ("/home/clara/Software/mighty/config/" (22663 54708 223512 942000) "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
-
- ("/home/clara/Software/mighty/spec/controllers/" (22662 21425 627845 710000) "banks_controller_spec.rb" "regions_controller_spec.rb" "sectors_controller_spec.rb" "./" "pages_controller_spec.rb" "../" "causes_controller_spec.rb")
-
- ("/home/clara/Software/mighty/app/views/layouts/" (22664 65073 48548 115000) "./" "../" "application.html.erb")
-
- ("/home/clara/Software/mighty/app/views/pages/" (22664 65176 431963 905000) "./" "../" "index.html.erb" "graph.html.erb")
 
  ("/home/clara/Software/gilbertandsullivan/wp-content/themes/gs-theme/" (22666 20754 138784 267000) "attachment.php" "nav-below-single.php" "tag.php" "entry-footer.php" "entry-content.php" "./" "entry-summary.php" "category.php" "style.css" "screenshot.png" "../" "404.php" "archive.php" "footer.php" "sidebar.php" "comments.php" "author.php" "page.php" "entry.php" "entry-meta.php" "header.php" "functions.php" "index.php" "nav-below.php" "search.php" "single.php")
 
@@ -273,8 +283,6 @@
  ("/home/clara/Software/mighty/spec/views/sectors/" (22662 19765 845004 393000) "new.html.erb_spec.rb" "./" "edit.html.erb_spec.rb" "../" "index.html.erb_spec.rb")
 
  ("/home/clara/Software/mighty/spec/views/" (22646 29278 65413 545000) "./" "sectors/" "../" "banks/" "causes/" "regions/")
-
- ("/home/clara/Software/mighty/app/views/banks/" (22662 19028 977388 269000) "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb" "_certification_fields.html.erb" "_distribution_fields.html.erb")
 
  ("/home/clara/Software/mighty/app/views/sectors/" (22662 17919 709702 349000) "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb")
 
@@ -305,8 +313,6 @@
  ("/home/clara/Software/fotc/app/views/pages/" (22636 617 839051 331000) "pdf.html.erb" "_send_or_login.html.erb" "_ny.html.erb" "zones.html.erb" "./" "../" "about.html.erb" "services.html.erb" "_boston.html.erb" "contact.html.erb")
 
  ("/home/clara/Software/fotc/spec/controllers/" (22645 23810 454819 8000) "messengers_controller_spec.rb" "saved_companies_controller_spec.rb" "recurrences_controller_spec.rb" "categories_controller_spec.rb" "jobs_controller_spec.rb" "users_controller_spec.rb" "application_controller_spec.rb" "markets_controller_spec.rb" "./" "pages_controller_spec.rb" "login_controller_spec.rb" "clients_controller_spec.rb" "dispatching_users_controller_spec.rb" "../" "photos_controller_spec.rb" "notes_controller_spec.rb" "admins_controller_spec.rb" "invoices_controller_spec.rb")
-
- ("/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/" (22634 52087 413144 137000) "./" "main.xml" "../")
 
  ("/home/clara/Software/dioptrice/spec/controllers/" (22637 34326 950513 341000) "categories_controller_spec.rb" "./" "telescopes_controller_spec.rb" "wallpapers_controller_spec.rb" "../" "photos_controller_spec.rb" "collection_controller_spec.rb")
 
@@ -341,12 +347,6 @@
  ("/usr/share/icons/ubo/" (22397 19039 0 0) "../" "24x24/" "32x32/" "index.theme" "icon-theme.cache" "64x64/" "48x48/" "22x22/" "./" "128x128/" "256x256/" "16x16/")
 
  ("/home/clara/Software/mighty/db/" (22649 13248 588771 934000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
-
- ("/home/clara/Software/mighty/app/views/" (22646 29278 45413 526000) "./" "sectors/" "../" "banks/" "pages/" "layouts/" "causes/" "regions/")
-
- ("/home/clara/Software/mighty/app/assets/" (22646 26172 730916 843000) "./" "javascripts/" "../" "stylesheets/" "images/")
-
- ("/home/clara/Software/mighty/app/" (22646 26172 730916 843000) "models/" "controllers/" "./" "helpers/" "views/" "../" "assets/" "mailers/")
 )
 
 ;; ----- ido-unc-hosts-cache -----
