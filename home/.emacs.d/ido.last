@@ -75,18 +75,18 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "spec/")
- ("/home/clara/Software/" . "calling-congress/")
+ ("/home/clara/Software/" . "bss/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/bss/config/"
+ "/home/clara/Software/bss/"
+ "/home/clara/Software/bss/config/deploy/"
  "/home/clara/Software/calling-congress/app/assets/stylesheets/"
  "/home/clara/Software/calling-congress/app/views/calling_scripts/buttons/"
  "/home/clara/Software/calling-congress/app/views/calling_scripts/"
- "/home/clara/Software/bss/"
- "/home/clara/Software/bss/config/"
- "/home/clara/Software/bss/config/deploy/"
  "/home/clara/Software/bss/spec/controllers/"
  "/home/clara/Software/bss/app/helpers/"
  "/home/clara/Software/bss/app/models/"
@@ -135,25 +135,29 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "database.yml"
+ "Gemfile"
+ "Capfile"
+ "deploy.rb"
+ "staging.rb"
  "application.scss"
  "_called.html.erb"
  "_script.html.erb"
  "index.html.erb"
  ".ruby-version"
- "Gemfile"
- "Capfile"
- "Gemfile.lock"
- "deploy.rb"
- "database.yml"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/Software/calling-congress/app/views/calling_scripts/buttons/" (22696 39540 336973 146000) "./" "../" "_called.html.erb")
+
+ ("/home/clara/Software/calling-congress/app/assets/stylesheets/" (22696 40239 895630 425000) "./" "../" "bootstrap-generators.scss" "bootstrap-variables.scss" "application.scss")
+
+ ("/home/clara/Software/bss/" (22699 19876 629349 777000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" ".ruby-version" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
+
+ ("/home/clara/Software/bss/config/" (22699 20183 956097 900000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
+
  ("/home/clara/Software/calling-congress/app/views/calling_scripts/" (22696 40477 739181 621000) "_user_locator.html.erb" "_scripts.html.erb" "_rep_chooser.html.erb" "show.html.erb" "_view.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "_calling_info.html.erb" "_script.html.erb" "index.html.erb" "_show_script.html.erb" "buttons/")
-
- ("/home/clara/Software/calling-congress/app/assets/stylesheets/" (22696 40119 751823 897000) "./" "../" "bootstrap-generators.scss" "bootstrap-variables.scss" "application.scss")
-
- ("/home/clara/Software/calling-congress/app/views/calling_scripts/buttons/" (22676 60171 18499 152000) "./" "../" "_called.html.erb")
 
  ("/home/clara/Software/calling-congress/app/assets/" (22572 49483 501113 396000) "./" "javascripts/" "../" "stylesheets/" "images/")
 
@@ -200,10 +204,6 @@
  ("/home/clara/Software/bss/app/helpers/" (22695 14065 605098 215000) "./" "application_helper.rb" "../")
 
  ("/home/clara/Software/bss/spec/controllers/" (22695 14196 489056 78000) "application_controller_spec.rb" "./" "../" "resources_controller_spec.rb")
-
- ("/home/clara/Software/bss/config/" (22695 19706 35199 915000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
-
- ("/home/clara/Software/bss/" (22695 23435 84027 12000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
 
  ("/home/clara/Software/bss/config/deploy/" (22695 16950 416374 528000) "./" "../" "staging.rb" "production.rb")
 
