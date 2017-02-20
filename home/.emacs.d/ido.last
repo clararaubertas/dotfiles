@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/clara/Software/calling-congress/app/views/calling_scripts/" . "buttons/")
  ("/home/clara/Software/bss/config/" . "deploy/")
  ("/home/clara/Software/bss/app/assets/" . "stylesheets/")
  ("/home/clara/Software/bss/spec/" . "controllers/")
@@ -36,7 +37,7 @@
  ("/home/clara/.rvm/" . "gems/")
  ("/home/clara/Software/calling-congress/app/views/devise/" . "shared/")
  ("/home/clara/Software/calling-congress/app/assets/" . "stylesheets/")
- ("/home/clara/Software/calling-congress/app/views/" . "layouts/")
+ ("/home/clara/Software/calling-congress/app/views/" . "calling_scripts/")
  ("/home/clara/Software/calling-congress/app/" . "views/")
  ("/home/clara/Software/calling-congress/" . "app/")
  ("/home/clara/Software/fotc/app/views_mobile/" . "jobs/")
@@ -74,12 +75,15 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "spec/")
- ("/home/clara/Software/" . "bss/")
+ ("/home/clara/Software/" . "calling-congress/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/calling-congress/app/assets/stylesheets/"
+ "/home/clara/Software/calling-congress/app/views/calling_scripts/buttons/"
+ "/home/clara/Software/calling-congress/app/views/calling_scripts/"
  "/home/clara/Software/bss/"
  "/home/clara/Software/bss/config/"
  "/home/clara/Software/bss/config/deploy/"
@@ -127,27 +131,32 @@
  "/home/clara/Software/mighty/spec/helpers/"
  "/home/clara/Software/mighty/spec/"
  "/home/clara/Software/mighty/spec/models/"
- "/home/clara/Software/mighty/config/"
- "/home/clara/Software/bss/wp-content/themes/twentysixteen/template-parts/"
- "/home/clara/Software/bss/wp-content/themes/twentysixteen/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "application.scss"
+ "_called.html.erb"
+ "_script.html.erb"
+ "index.html.erb"
  ".ruby-version"
  "Gemfile"
  "Capfile"
  "Gemfile.lock"
  "deploy.rb"
  "database.yml"
- "staging.rb"
- "resources_controller_spec.rb"
- "application_helper.rb"
- "resource.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/Software/calling-congress/app/views/calling_scripts/" (22696 40477 739181 621000) "_user_locator.html.erb" "_scripts.html.erb" "_rep_chooser.html.erb" "show.html.erb" "_view.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "_calling_info.html.erb" "_script.html.erb" "index.html.erb" "_show_script.html.erb" "buttons/")
+
+ ("/home/clara/Software/calling-congress/app/assets/stylesheets/" (22696 40119 751823 897000) "./" "../" "bootstrap-generators.scss" "bootstrap-variables.scss" "application.scss")
+
+ ("/home/clara/Software/calling-congress/app/views/calling_scripts/buttons/" (22676 60171 18499 152000) "./" "../" "_called.html.erb")
+
+ ("/home/clara/Software/calling-congress/app/assets/" (22572 49483 501113 396000) "./" "javascripts/" "../" "stylesheets/" "images/")
+
  ("/home/clara/Software/mighty/spec/controllers/" (22671 53732 601204 321000) "banks_controller_spec.rb" "regions_controller_spec.rb" "sectors_controller_spec.rb" "./" "pages_controller_spec.rb" "../" "causes_controller_spec.rb")
 
  ("/home/clara/Software/mighty/app/assets/javascripts/" (22671 53627 169344 234000) "application.js" "./" "../" "bubble.js")
@@ -339,14 +348,6 @@
  ("/home/clara/Software/mighty/public/" (22651 52059 574153 848000) "favicon.ico" "robots.txt" "./" "404.html" "../" "422.html" "system/" "500.html")
 
  ("/usr/share/icons/Mint-X/" (22496 1750 0 0) "../" "places/" "emblems/" "animations/" "categories/" "apps/" "stock/" "index.theme" "icon-theme.cache" "devices/" "./" "actions/" "mimetypes/" "status/")
-
- ("/usr/share/" (22649 33669 822829 543000) "maven-repo/" "GConf/" "nemo-preview/" "ubuntu-system-adjustments/" "menu/" "mobile-broadband-provider-info/" "metacity/" "gcr-3/" "latex-cjk-common/" "groff/" "mibs/" "ghostscript/" "software-center/" "gnome-panel/" "blueman/" "gnome-background-properties/" "weather-util/" "grub-gfxpayload-lists/" "foo2zjs/" "doc-base/" "metainfo/" "dict/" "cowsay/" "man/" "common-licenses/" "librevenge/" "augeas/" "skype/" "debconf/" "gnome-online-accounts/" "consoletrans/" "jetty/" "zenity/" "librarian/" "telepathy/" "nm-applet/" "linux-sound-base/" "webkitgtk-3.0/" "doc/" "icons/" "mono/" "mimelnk/" "xplayer/" "backgrounds/" "meld/" "ant/" "lupin-support/" "conky-manager/" "muffin/" "man-db/" "hardening-includes/" "linuxmint/" "orca/" "thumbnailers/" "pkg-config-crosswrapper" "gimp/" "emacs/" "gcc-5/" "gnupg2/" "unity/" "keyutils/" "pixmaps/" "unity-control-center/" "zoneinfo/" "wallpapers/" "gksu/" "gettext/" "ssl-cert/" "GeoIP/" "android/" "app-info/" "update-notifier/" "mintsources/" "info/" "gufw/" "libc-bin/" "pulseaudio/" "cinnamon/" "tomboy/" "gstreamer-0.10/" "snmp/" "maven/" "font-manager/" "appdata/" "file/" "python-apt/" "ufw/" "node-mime/" "python-wheels/" "session-migration/" "icedtea-web/" "xapian-core/" "X11/" "postgresql-common/" "dotnet/" "poppler/" "systemd/" "libtool/" "nux/" "xml-core/" "cli-common/" "bash-completion/" "dbus-1/" "sysv-rc/" "cinnamon-session/" "seahorse/" "terminfo/" "im-config/" "npm/" "caja/" "rubygems-integration/" "automake-1.15/" "avahi/" "cinnamon-control-center/" "dpkg/" "media-player-info/" "liblouis/" "cinnamon-screensaver/" "fontconfig/" "speech-dispatcher/" "gnupg/" "git-core/" "hwdata/" "locale-langpack/" "nemo/" "keyrings/" "calendar/" "gnome-control-center/" "nano/" "insserv/" "gtksourceview-3.0/" "awk/" "xsessions/" "mousetweaks/" "nodejs/" "Thunar/" "gvfs/" "unattended-upgrades/" "grub/" "simple-scan/" "python3/" "nautilus-dropbox/" "adduser/" ".mono/" "gnome-vpn-properties/" "sounds/" "fonts/" "command-not-found/" "omf/" "i18n/" "pkgconfig/" "apps/" "libnma/" "polkit-1/" "sgml-data/" "nemo-share/" "rsyslog/" "aptitude/" "cinnamon-background-properties/" "iptables/" "hfsprogs/" "base-files/" "gdebi/" "sgml/" "rescuetime/" "variety/" "texlive/" "dnsmasq-base/" "dns/" "gtk-engines/" "libnm-gtk/" "yelp-xsl/" "autoconf/" "icu/" "bison/" "purple/" "cinnamon-settings-daemon/" "vim/" "sane/" "gutenprint/" "enchant/" "cups/" "pam/" "gitweb/" "system-tools-backends-2.0/" "perl5/" "ntp/" "gnome-bluetooth/" "liblangtag/" "ubuntu-drivers-common/" "alsa-base/" "scribus/" "alsa/" "apturl/" "gdm/" "help-langpack/" "pygtk/" "casper/" "virtualbox/" "libvisual-plugins-0.4/" "xml/" "p11-kit/" "file-roller/" "localechooser/" "themes/" "indicators/" "hplip/" "qt4/" "apparmor/" "xreader/" "gstreamer-1.0/" "libthai/" "initramfs-tools/" "webkitgtk-1.0/" "gettext-0.19.7/" "lua/" "vte/" "kde4/" "yelp/" "emacs24/" "hal/" "debhelper/" "sgml-base/" "xviewer/" "consolefonts/" "console-setup/" "libaudio2/" "node-gyp/" "locales/" "nemo-python/" "libtimezonemap/" "dictionaries-common/" "banshee/" "mintstick/" "apt-xapian-index/" "pam-configs/" "readline/" "openvpn/" "texmf/" "xed/" "guile/" "libreoffice/" "netpbm/" "os-prober/" "upstart/" "vino/" "mime-info/" "scribus-ng/" "libexttextcat/" "libgphoto2/" "libgnomekbd/" "m17n/" "brasero/" "systemtap/" "nmap/" "mdm/" "hosts/" "libparse-debianchangelog-perl/" "xsane/" "plymouth/" "mint-upgrade-info/" "xscreensaver/" "language-tools/" "inkscape/" "gst-plugins-base/" "gnome-settings-daemon/" "samba/" "xine-lib/" "gconf/" "application-registry/" "gdb/" "binfmts/" "libquvi-scripts/" "gitkraken/" "perl/" "transmission/" "apache2/" "mate-background-properties/" "python/" "farstream/" "gdal/" "spotify/" "aclocal-1.15/" "libgweather/" "et/" "intel-gpu-tools/" "ca-certificates/" "ecryptfs-utils/" "mono-2.0/" "aspell/" "zsh/" "mysql-common/" "build-essential/" "acpi-support/" "apport/" "color/" "faces/" "gtksourceview-2.0/" "help/" "postgresql/" "gnome-session/" "openal/" "pavucontrol/" "gnome-shell/" "iscan-data/" "lintian/" "resolvconf/" "app-install/" "gnome-settings-daemon-3.0/" "mint-mirrors/" "ppp/" "qtchooser/" "intltool-debian/" "base-passwd/" "ImageMagick-6/" "pstoedit/" "pkg-config-dpkghook" "djvu/" "javascript/" "pnm2ppa/" "tabset/" "locale/" "distro-info/" "synaptic/" "ca-certificates-java/" "tex-common/" "colord/" "gnome/" "libsensors4/" "pyshared/" "misc/" "usb_modeswitch/" "games/" "applications/" "libgksu/" "oneconf/" "directfb-1.2.10/" "caribou/" "java/" "foo2qpdl/" "libwacom/" "cogl/" "pix/" "hunspell/" "proj/" "esci/" "GraphicsMagick-1.3.23/" "mint-artwork-cinnamon/" "vlc/" "mime/" "system-config-printer/" "gtk-doc/" "xfce4/" "desktop-directories/" "filezilla/" "arp-scan/" "aclocal/" "xawtv/" "debianutils/" "evolution-data-server/" "ppd/" "geoclue-providers/" "brltty/" "tcltk/" "mysql/" "glib-2.0/" "conkywx/" "dh-python/" "bug/" "../" "./")
-
- ("/usr/share/icons/" (22652 18447 48785 446000) "Mint-X-Sand/" "Mint-X-Aqua/" "pixelfun3/" "../" "Mint-X/" "Mint-X-Yellow/" "Mint-X-Blue/" "DMZ-Black/" "cab_extract.png" "ubuntu-mono-light/" "Mint-X-Dark/" "cab_view.png" "Adwaita/" "Mint-X-Purple/" "locolor/" "default/" "Mint-X-Grey/" "ubo/" "Mint-X-Orange/" "./" "Mint-X-Pink/" "DMZ-White/" "hicolor/" "Mint-X-Red/" "gnome/" "Mint-Y/" "Mint-X-Teal/" "HighContrast/" "Mint-X-Brown/" "ubuntu-mono-dark/")
-
- ("/usr/share/icons/ubo/" (22397 19039 0 0) "../" "24x24/" "32x32/" "index.theme" "icon-theme.cache" "64x64/" "48x48/" "22x22/" "./" "128x128/" "256x256/" "16x16/")
-
- ("/home/clara/Software/mighty/db/" (22649 13248 588771 934000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
 )
 
 ;; ----- ido-unc-hosts-cache -----
