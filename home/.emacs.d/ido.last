@@ -6,10 +6,10 @@
  ("/home/clara/Software/calling-congress/app/views/calling_scripts/" . "buttons/")
  ("/home/clara/Software/bss/config/" . "environments/")
  ("/home/clara/Software/bss/app/assets/" . "stylesheets/")
- ("/home/clara/Software/bss/spec/" . "factories/")
+ ("/home/clara/Software/bss/spec/" . "controllers/")
  ("/home/clara/Software/bss/db/" . "migrate/")
- ("/home/clara/Software/bss/app/views/" . "resources/")
- ("/home/clara/Software/bss/app/" . "models/")
+ ("/home/clara/Software/bss/app/views/" . "events/")
+ ("/home/clara/Software/bss/app/" . "helpers/")
  ("/home/clara/Software/gilbertandsullivan/wp-content/themes/" . "gs-theme/")
  ("/home/clara/Software/gilbertandsullivan/wp-content/" . "themes/")
  ("/home/clara/Software/gilbertandsullivan/" . "wp-content/")
@@ -18,7 +18,7 @@
  ("/home/clara/Software/bss/wp-content/themes/twentysixteen/" . "template-parts/")
  ("/home/clara/Software/bss/wp-content/themes/" . "twentysixteen/")
  ("/home/clara/Software/bss/wp-content/" . "themes/")
- ("/home/clara/Software/bss/" . "db/")
+ ("/home/clara/Software/bss/" . "app/")
  ("/sudo:root@localhost:/etc/apache2/" . "mods-enabled/")
  ("/usr/share/icons/" . "Mint-X/")
  ("/usr/share/" . "icons/")
@@ -82,16 +82,16 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/clara/Software/bss/db/migrate/"
- "/home/clara/Software/bss/spec/factories/"
- "/home/clara/Software/bss/spec/models/"
- "/home/clara/Software/bss/app/models/"
- "/home/clara/Software/bss/app/controllers/"
- "/home/clara/Software/bss/app/views/resources/"
- "/home/clara/Software/bss/app/views/events/"
- "/home/clara/Software/bss/config/"
- "/home/clara/Software/bss/spec/controllers/"
  "/home/clara/Software/bss/app/helpers/"
+ "/home/clara/Software/bss/app/views/events/"
+ "/home/clara/Software/bss/app/models/"
+ "/home/clara/Software/bss/app/views/resources/"
+ "/home/clara/Software/bss/spec/controllers/"
+ "/home/clara/Software/bss/app/controllers/"
+ "/home/clara/Software/bss/spec/factories/"
+ "/home/clara/Software/bss/db/migrate/"
+ "/home/clara/Software/bss/spec/models/"
+ "/home/clara/Software/bss/config/"
  "/home/clara/Software/calling-congress/app/controllers/"
  "/home/clara/Software/calling-congress/app/models/"
  "/home/clara/Software/calling-congress/db/migrate/"
@@ -136,31 +136,35 @@
 
 ;; ----- ido-work-file-list -----
 (
- "20170309180945_add_type_to_resources.rb"
- "resources.rb"
- "resource_spec.rb"
- "resource.rb"
- "resources_controller.rb"
+ "application_helper.rb"
  "index.html.erb"
- "_events.html.erb"
  "category.rb"
- "event.rb"
- "events_controller.rb"
+ "resources_controller_spec.rb"
+ "categories_controller_spec.rb"
+ "categories_controller.rb"
+ "resource.rb"
+ "how_tos.rb"
+ "what_is.rb"
+ "how_to.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/bss/db/migrate/" (22721 39529 554067 689000) "20170307202717_create_how_tos.rb" "20170227230341_add_publish_date.rb" "20170302135609_add_path_to_communities.rb" "20170305193754_add_path_to_events.rb" "20170223190460_add_missing_taggable_index.acts_as_taggable_on_engine.rb" "20170216194424_create_filters.rb" "20170302133626_add_path_to_categories.rb" "20170215234649_create_resources.rb" "20170216194409_create_categories.rb" "20170302135355_create_communities.rb" "20170228195032_allow_multiple_parents.rb" "20170307202957_create_what_is.rb" "20170216214926_add_path_to_resource.rb" "20170223190458_add_missing_unique_indices.acts_as_taggable_on_engine.rb" "20170303005615_add_slugs.rb" "20170223190461_change_collation_for_tag_names.acts_as_taggable_on_engine.rb" "20170223165134_add_parent_to_resources.rb" "./" "20170307203347_add_paths_to_what_is_and_how_tos.rb" "20170305193412_create_events.rb" "20170223181509_add_category_id_to_filters.rb" "20170309161835_add_basics_to_category.rb" "20170223190459_add_taggings_counter_cache_to_tags.acts_as_taggable_on_engine.rb" "20170309180945_add_type_to_resources.rb" "20170223180801_add_title_to_resource.rb" "../" "20170307191402_add_organizers_to_event.rb" "20170223190457_acts_as_taggable_on_migration.acts_as_taggable_on_engine.rb" "20170301225114_add_path_to_pages.rb" "20170302133234_add_description_to_categories.rb" "20170223190462_add_missing_indexes.acts_as_taggable_on_engine.rb" "20170228184525_multiple_categories.rb" "20170301224854_create_pages.rb" "20170303004749_create_friendly_id_slugs.rb" "20170302154827_add_overview_and_quote_to_categories.rb" "20170221192145_create_authors.rb")
+ ("/home/clara/Software/bss/app/models/" (22721 53489 759966 935000) "category.rb" "./" "community.rb" "author.rb" "../" "what_is.rb" "page.rb" "filter.rb" "resource.rb" "application_record.rb" "how_to.rb" "event.rb" "concerns/")
 
- ("/home/clara/Software/bss/db/" (22721 39470 261974 678000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
+ ("/home/clara/Software/bss/db/migrate/" (22721 52051 461710 690000) "20170307202717_create_how_tos.rb" "20170227230341_add_publish_date.rb" "20170302135609_add_path_to_communities.rb" "20170305193754_add_path_to_events.rb" "20170223190460_add_missing_taggable_index.acts_as_taggable_on_engine.rb" "20170216194424_create_filters.rb" "20170302133626_add_path_to_categories.rb" "20170215234649_create_resources.rb" "20170216194409_create_categories.rb" "20170302135355_create_communities.rb" "20170228195032_allow_multiple_parents.rb" "20170307202957_create_what_is.rb" "20170216214926_add_path_to_resource.rb" "20170223190458_add_missing_unique_indices.acts_as_taggable_on_engine.rb" "20170303005615_add_slugs.rb" "20170223190461_change_collation_for_tag_names.acts_as_taggable_on_engine.rb" "20170223165134_add_parent_to_resources.rb" "./" "20170307203347_add_paths_to_what_is_and_how_tos.rb" "20170305193412_create_events.rb" "20170223181509_add_category_id_to_filters.rb" "20170309161835_add_basics_to_category.rb" "20170223190459_add_taggings_counter_cache_to_tags.acts_as_taggable_on_engine.rb" "20170309180945_add_type_to_resources.rb" "20170309213756_clean_up_basics.rb" "20170223180801_add_title_to_resource.rb" "../" "20170307191402_add_organizers_to_event.rb" "20170223190457_acts_as_taggable_on_migration.acts_as_taggable_on_engine.rb" "20170301225114_add_path_to_pages.rb" "20170302133234_add_description_to_categories.rb" "20170223190462_add_missing_indexes.acts_as_taggable_on_engine.rb" "20170228184525_multiple_categories.rb" "20170301224854_create_pages.rb" "20170303004749_create_friendly_id_slugs.rb" "20170302154827_add_overview_and_quote_to_categories.rb" "20170221192145_create_authors.rb")
 
- ("/home/clara/Software/bss/spec/factories/" (22721 39464 265965 272000) "categories.rb" "how_tos.rb" "authors.rb" "./" "events.rb" "pages.rb" "../" "what_is.rb" "communities.rb" "resources.rb" "filters.rb")
+ ("/home/clara/Software/bss/app/views/resources/" (22721 53477 491947 690000) "show.html.erb" "_tag_cloud.html.erb" "./" "../" "index.html.erb" "_resource.html.erb")
 
- ("/home/clara/Software/bss/app/models/" (22721 39386 201842 814000) "category.rb" "./" "community.rb" "author.rb" "../" "what_is.rb" "page.rb" "filter.rb" "resource.rb" "application_record.rb" "how_to.rb" "event.rb" "concerns/")
+ ("/home/clara/Software/bss/spec/controllers/" (22721 53313 511690 457000) "categories_controller_spec.rb" "application_controller_spec.rb" "./" "pages_controller_spec.rb" "../" "events_controller_spec.rb" "resources_controller_spec.rb")
 
- ("/home/clara/Software/bss/app/controllers/" (22721 39249 481628 342000) "categories_controller.rb" "pages_controller.rb" "./" "application_controller.rb" "../" "events_controller.rb" "concerns/" "resources_controller.rb")
+ ("/home/clara/Software/bss/spec/factories/" (22721 52722 106762 724000) "categories.rb" "how_tos.rb" "authors.rb" "./" "events.rb" "pages.rb" "../" "what_is.rb" "communities.rb" "resources.rb" "filters.rb")
 
- ("/home/clara/Software/bss/app/views/resources/" (22721 38009 827683 708000) "show.html.erb" "_tag_cloud.html.erb" "./" "../" "index.html.erb" "_resource.html.erb")
+ ("/home/clara/Software/bss/db/" (22721 50953 251987 938000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
+
+ ("/home/clara/Software/bss/app/controllers/" (22721 51854 713402 53000) "categories_controller.rb" "pages_controller.rb" "./" "application_controller.rb" "../" "events_controller.rb" "concerns/" "resources_controller.rb")
+
+ ("/home/clara/Software/bss/app/helpers/" (22721 33749 200998 16000) "./" "application_helper.rb" "../")
 
  ("/home/clara/Software/bss/app/views/events/" (22721 37577 515005 543000) "show.html.erb" "./" "../" "_events.html.erb" "index.html.erb")
 
@@ -178,11 +182,7 @@
 
  ("/home/clara/Software/calling-congress/app/views/calling_scripts/" (22704 33155 969124 453000) "_user_locator.html.erb" "_scripts.html.erb" "_rep_chooser.html.erb" "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "_calling_info.html.erb" "_script.html.erb" "index.html.erb" "_show_script.html.erb" "buttons/")
 
- ("/home/clara/Software/bss/spec/controllers/" (22721 33395 184436 418000) "categories_controller_spec.rb" "application_controller_spec.rb" "./" "pages_controller_spec.rb" "../" "events_controller_spec.rb" "resources_controller_spec.rb")
-
  ("/home/clara/Software/bss/app/views/" (22721 33242 352189 841000) "resources/" "./" "events/" "../" "pages/" "layouts/" "categories/")
-
- ("/home/clara/Software/bss/app/helpers/" (22719 9783 172997 891000) "events_helper.rb" "whatis_helper.rb" "./" "application_helper.rb" "../" "howtos_helper.rb")
 
  ("/home/clara/Software/bss/app/views/categories/" (22712 31952 9168 441000) "./" "../")
 
