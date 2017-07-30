@@ -11,11 +11,11 @@
  ("/home/clara/Software/webcastplatform/app/views/admin/" . "users/")
  ("/home/clara/Software/webcastplatform/spec/" . "factories/")
  ("/home/clara/Software/webcastplatform/app/views/" . "events/")
- ("/home/clara/Software/webcastplatform/app/" . "views/")
+ ("/home/clara/Software/webcastplatform/app/" . "models/")
  ("/home/clara/Software/webcastplatform/config/" . "environments/")
  ("/home/clara/Software/polynumeral/www.polynumeral.com/" . "contact/")
  ("/home/clara/Software/polynumeral/" . "www.polynumeral.com/")
- ("/home/clara/Software/webcastplatform/" . "config/")
+ ("/home/clara/Software/webcastplatform/" . "app/")
  ("/home/clara/Software/bss/solr/configsets/sunspot/" . "conf/")
  ("/home/clara/Software/bss/solr/configsets/" . "sunspot/")
  ("/home/clara/Software/bss/solr/" . "configsets/")
@@ -99,13 +99,16 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/webcastplatform/app/models/"
+ "/home/clara/Software/webcastplatform/config/environments/"
  "/home/clara/Software/webcastplatform/config/"
+ "/home/clara/Software/webcastplatform/config/initializers/"
+ "/home/clara/Software/webcastplatform/"
  "/home/clara/Software/webcastplatform/app/views/events/"
  "/home/clara/Software/webcastplatform/app/controllers/"
  "/home/clara/Software/webcastplatform/app/assets/javascripts/"
  "/home/clara/Software/webcastplatform/spec/factories/"
  "/home/clara/Software/webcastplatform/spec/controllers/"
- "/home/clara/Software/webcastplatform/app/models/"
  "/home/clara/Software/webcastplatform/spec/requests/"
  "/home/clara/Software/webcastplatform/app/views/embeds/"
  "/home/clara/Software/webcastplatform/spec/models/"
@@ -113,9 +116,7 @@
  "/home/clara/Software/webcastplatform/app/views/layouts/"
  "/home/clara/Software/webcastplatform/app/assets/javascripts/channels/"
  "/home/clara/Software/webcastplatform/app/helpers/"
- "/home/clara/Software/webcastplatform/config/environments/"
  "/home/clara/Software/webcastplatform/app/channels/"
- "/home/clara/Software/webcastplatform/"
  "/home/clara/Software/bss/app/views/layouts/"
  "/home/clara/Software/bss/app/views/resources/"
  "/home/clara/Software/bss/app/models/"
@@ -126,7 +127,6 @@
  "/home/clara/Software/webcastplatform/db/migrate/"
  "/home/clara/Software/webcastplatform/app/views/devise/sessions/"
  "/home/clara/Software/webcastplatform/app/views/admin/users/"
- "/home/clara/Software/webcastplatform/config/initializers/"
  "/home/clara/Software/webcastplatform/app/controllers/users/"
  "/home/clara/Software/bss/app/controllers/"
  "/home/clara/Software/bss/app/views/communities/"
@@ -153,21 +153,25 @@
 
 ;; ----- ido-work-file-list -----
 (
- "deploy.rb"
+ "embed.rb"
+ "production.rb"
+ "application.rb"
+ "database.yml"
  "puma.rb"
+ "rack_timeout.rb"
+ "Gemfile"
+ "database.yml.orig"
+ "deploy.rb"
  "_message.html.slim"
- "chat_messages_controller.rb"
- "chats.coffee"
- "chat_messages.coffee"
- "chat_messages.rb"
- "embeds_controller_spec.rb"
- "chat_message.rb"
- "chat_messages_controller_spec.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/webcastplatform/config/" (22910 6906 636038 215000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/" "database.yml.orig")
+ ("/home/clara/Software/webcastplatform/" (22910 14074 468204 718000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "codecov.yml" "tmp/" "./" "Gemfile.lock" "Gemfile" ".rvmrc" "sockets/" "public/" "watch" "spec/" "Dec14Demo.mov" "test/" "../" "app/" "coverage/" ".rspec" ".travis.yml" "lib/" "db/" "schema.txt" "Capfile" "config.ru" "WebCast_Schema.png" "Rakefile" "local_users.csv" ".git/")
+
+ ("/home/clara/Software/webcastplatform/config/" (22910 11821 552329 404000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" ".#application.rb" "boot.rb" "../" "environments/" "#application.rb#" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/" "database.yml.orig")
+
+ ("/home/clara/Software/webcastplatform/config/environments/" (22910 13695 764250 314000) "./" "../" "production.rb" "test.rb" "development.rb")
 
  ("/home/clara/Software/webcastplatform/spec/controllers/" (22910 6377 187603 715000) "user_activities_controller_spec.rb" "embeds_controller_spec.rb" "users_controller_spec.rb" "./" "../" "events_controller_spec.rb" "chat_messages_controller_spec.rb" "admin_controller_spec.rb" "chats_controller_spec.rb")
 
@@ -229,13 +233,9 @@
 
  ("/home/clara/Software/webcastplatform/app/assets/javascripts/" (22907 25272 57805 231000) "cable.js" "chat_messages.coffee" "application.js" "channels/" "jquery.fontselect.min.js" "user_activities.coffee" "./" "admin/" "admin.js.coffee" "../" "chats.coffee")
 
- ("/home/clara/Software/webcastplatform/config/environments/" (22907 26543 869870 382000) "./" "../" "production.rb" "test.rb" "development.rb")
-
  ("/home/clara/Software/webcastplatform/app/channels/" (22907 25272 65805 231000) "./" "../" "chats_channel.rb" "application_cable/")
 
  ("/home/clara/Software/webcastplatform/spec/" (22907 25272 173805 225000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "views/" "../" "rails_helper.rb" "requests/" "fixtures/" "routing/")
-
- ("/home/clara/Software/webcastplatform/" (22907 25272 293805 219000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "codecov.yml" "tmp/" "./" "Gemfile.lock" "Gemfile" ".rvmrc" "public/" "spec/" "Dec14Demo.mov" "test/" "../" "app/" "coverage/" ".rspec" ".travis.yml" "lib/" "db/" "schema.txt" "Capfile" "config.ru" "WebCast_Schema.png" "Rakefile" "local_users.csv" ".git/")
 
  ("/home/clara/Software/bss/app/views/resources/" (22904 63326 459990 502000) "index.rss.builder" "show.html.erb" "authors.html.erb" "_breadcrumbs.html.erb" "_tag_cloud.html.erb" "_author.html.erb" "_show_more.html.erb" "./" "_listing.html.erb" "../" "_filter_results.html.erb" "index.js.erb" "index.html.erb" "_resources.html.erb" "_search_result.html.erb")
 
