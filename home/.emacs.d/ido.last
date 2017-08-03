@@ -6,16 +6,16 @@
  ("/home/clara/Software/webcastplatform/app/channels/" . "application_cable/")
  ("/home/clara/Software/webcastplatform/app/views/devise/" . "sessions/")
  ("/home/clara/Software/webcastplatform/db/" . "migrate/")
- ("/home/clara/Software/webcastplatform/app/controllers/" . "users/")
+ ("/home/clara/Software/webcastplatform/app/controllers/" . "concerns/")
  ("/home/clara/Software/webcastplatform/app/assets/" . "javascripts/")
  ("/home/clara/Software/webcastplatform/app/views/admin/" . "users/")
- ("/home/clara/Software/webcastplatform/spec/" . "requests/")
+ ("/home/clara/Software/webcastplatform/spec/" . "controllers/")
  ("/home/clara/Software/webcastplatform/app/views/" . "events/")
- ("/home/clara/Software/webcastplatform/app/" . "models/")
+ ("/home/clara/Software/webcastplatform/app/" . "controllers/")
  ("/home/clara/Software/webcastplatform/config/" . "environments/")
  ("/home/clara/Software/polynumeral/www.polynumeral.com/" . "contact/")
  ("/home/clara/Software/polynumeral/" . "www.polynumeral.com/")
- ("/home/clara/Software/webcastplatform/" . "config/")
+ ("/home/clara/Software/webcastplatform/" . "app/")
  ("/home/clara/Software/bss/solr/configsets/sunspot/" . "conf/")
  ("/home/clara/Software/bss/solr/configsets/" . "sunspot/")
  ("/home/clara/Software/bss/solr/" . "configsets/")
@@ -99,45 +99,45 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/clara/Software/webcastplatform/config/"
- "/home/clara/"
- "/home/clara/Software/webcastplatform/"
- "/home/clara/Software/webcastplatform/app/models/"
- "/home/clara/Software/webcastplatform/spec/requests/"
- "/home/clara/Software/webcastplatform/app/views/events/"
- "/home/clara/Software/webcastplatform/app/views/embeds/"
- "/home/clara/Software/webcastplatform/app/assets/javascripts/"
  "/home/clara/Software/webcastplatform/config/environments/"
  "/home/clara/Software/webcastplatform/app/controllers/"
- "/home/clara/Software/webcastplatform/app/controllers/users/"
+ "/home/clara/Software/webcastplatform/app/views/events/"
  "/home/clara/Software/webcastplatform/spec/controllers/"
+ "/home/clara/Software/webcastplatform/spec/requests/"
+ "/home/clara/Software/webcastplatform/app/helpers/"
+ "/home/clara/Software/webcastplatform/app/views/devise/sessions/"
+ "/home/clara/Software/webcastplatform/app/channels/application_cable/"
+ "/home/clara/Software/webcastplatform/app/channels/"
+ "/home/clara/Software/webcastplatform/app/assets/javascripts/"
+ "/home/clara/"
+ "/home/clara/Software/webcastplatform/app/models/"
+ "/home/clara/Software/webcastplatform/config/deploy/"
+ "/home/clara/Software/webcastplatform/config/"
  "/home/clara/Software/webcastplatform/config/initializers/"
+ "/home/clara/Software/webcastplatform/"
+ "/home/clara/Software/webcastplatform/app/controllers/users/"
+ "/home/clara/Software/webcastplatform/public/"
+ "/home/clara/Software/webcastplatform/app/views/embeds/"
  "/home/clara/Software/webcastplatform/spec/factories/"
  "/home/clara/Software/webcastplatform/spec/models/"
  "/home/clara/Software/webcastplatform/app/assets/stylesheets/"
  "/home/clara/Software/webcastplatform/app/views/layouts/"
  "/home/clara/Software/webcastplatform/app/assets/javascripts/channels/"
- "/home/clara/Software/webcastplatform/app/helpers/"
- "/home/clara/Software/webcastplatform/app/channels/"
  "/home/clara/Software/bss/app/views/layouts/"
  "/home/clara/Software/bss/app/views/resources/"
  "/home/clara/Software/bss/app/models/"
  "/home/clara/Software/bss/app/views/pages/"
- "/home/clara/Software/webcastplatform/app/channels/application_cable/"
  "/home/clara/Software/webcastplatform/spec/"
  "/home/clara/Software/bss/spec/controllers/"
  "/home/clara/Software/webcastplatform/db/migrate/"
- "/home/clara/Software/webcastplatform/app/views/devise/sessions/"
  "/home/clara/Software/webcastplatform/app/views/admin/users/"
  "/home/clara/Software/bss/app/controllers/"
  "/home/clara/Software/bss/app/views/communities/"
  "/home/clara/Software/bss/app/assets/javascripts/"
  "/home/clara/Software/bss/"
- "/home/clara/Software/webcastplatform/public/"
  "/home/clara/Software/webcastplatform/spec/channels/"
  "/home/clara/Software/bss/app/views/blog_posts/"
  "/home/clara/Software/bss/app/views/events/"
- "/home/clara/Software/webcastplatform/config/deploy/"
  "/home/clara/Software/webcastplatform/app/views/devise/shared/"
  "/home/clara/Software/webcastplatform/app/views/devise/passwords/"
  "/home/clara/Software/webcastplatform/app/views/devise/registrations/"
@@ -153,27 +153,53 @@
 
 ;; ----- ido-work-file-list -----
 (
- "database.yml"
- "db.txt"
- "Gemfile"
- "bandit.txt"
- "user.rb"
- "event.rb"
- "sign_in_spec.rb"
- "_form.html.slim"
- "edit.html.slim"
- "embed.rb"
+ "production.rb"
+ "events_controller.rb"
+ "_guest_view.html.erb"
+ "_host_view.html.erb"
+ "events_controller_spec.rb"
+ "embeds_spec.rb"
+ "application_helper.rb"
+ "new.html.erb"
+ "connection.rb"
+ "channel.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/webcastplatform/config/" (22912 37974 630855 295000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/" "database.yml.orig")
+ ("/home/clara/Software/webcastplatform/" (22915 41144 139742 228000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "codecov.yml" "tmp/" "./" "Gemfile.lock" "Gemfile" ".rvmrc" "sockets/" "public/" "spec/" "test/" "../" "app/" "coverage/" ".rspec" ".travis.yml" "lib/" "db/" "schema.txt" "Capfile" "config.ru" "WebCast_Schema.png" "Rakefile" "local_users.csv" ".git/")
 
- ("/home/clara/" (22912 38061 74551 310000) "fbe.sav" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" ".selected_editor" "mainstream-embedding-contract.pdf" ".face" ".gnome2/" "window.sav" ".sqlite_history" ".wget-hsts" ".gnutls/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "Pictures/" ".pry_history" ".bash_profile" ".xdvirc" ".npm/" "./" ".yafc/" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" "labbel.odt" ".netrc" ".gradle/" ".dropbox/" ".bash_logout" "bandit.txt" ".ssh/" ".fonts.conf" ".gconf/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" "nick-est.org" ".wine/" "garglk/" ".gnome/")
+ ("/home/clara/Software/webcastplatform/config/environments/" (22915 41805 375661 79000) "./" "../" "staging.rb" "production.rb" "test.rb" "development.rb")
 
- ("/home/clara/Software/webcastplatform/" (22912 38038 686624 54000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "codecov.yml" "tmp/" "./" "Gemfile.lock" "Gemfile" ".rvmrc" "sockets/" "public/" "spec/" "Dec14Demo.mov" "test/" "../" "app/" "coverage/" ".rspec" ".travis.yml" "lib/" "db/" "schema.txt" "Capfile" "config.ru" "WebCast_Schema.png" "Rakefile" "local_users.csv" ".git/")
+ ("/home/clara/Software/webcastplatform/spec/controllers/" (22915 17724 697649 269000) "user_activities_controller_spec.rb" "embeds_controller_spec.rb" "users_controller_spec.rb" "./" "../" "events_controller_spec.rb" "chat_messages_controller_spec.rb" "admin_controller_spec.rb" "chats_controller_spec.rb")
 
- ("/home/clara/Software/webcastplatform/app/models/" (22911 22168 357066 344000) "chat.rb" "question.rb" "embed.rb" "chat_message.rb" "question_follow.rb" "survey.rb" "./" "event_embed.rb" "events_user.rb" "user_activity.rb" "survey_answer.rb" "../" "ability.rb" "user.rb" "application_record.rb" "event.rb" "concerns/" "answer.rb")
+ ("/home/clara/Software/webcastplatform/app/controllers/" (22915 17661 769640 934000) "user_activities_controller.rb" "./" "users/" "application_controller.rb" "admin/" "../" "chats_controller.rb" "embeds_controller.rb" "chat_messages_controller.rb" "events_controller.rb" "concerns/")
+
+ ("/home/clara/Software/webcastplatform/app/views/devise/sessions/" (22915 17392 5605 201000) "./" "new.html.erb" "../")
+
+ ("/home/clara/Software/webcastplatform/app/helpers/" (22910 28140 10511 200000) "embeds_helper.rb" "./" "application_helper.rb" "../" "chats_helper.rb")
+
+ ("/home/clara/Software/webcastplatform/app/views/layouts/" (22910 28139 974511 203000) "mailer.html.erb" "mailer.text.erb" "./" "../" "application.html.erb")
+
+ ("/home/clara/Software/webcastplatform/app/channels/application_cable/" (22910 28140 22511 197000) "connection.rb" "./" "../" "channel.rb")
+
+ ("/home/clara/Software/webcastplatform/app/channels/" (22910 28140 26511 197000) "./" "../" "chats_channel.rb" "application_cable/")
+
+ ("/home/clara/" (22914 13243 349196 543000) "fbe.sav" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".selected_editor" "mainstream-embedding-contract.pdf" ".face" ".gnome2/" "window.sav" ".sqlite_history" ".wget-hsts" ".gnutls/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "Pictures/" ".pry_history" ".bash_profile" ".xdvirc" ".npm/" "./" "natas.txt" ".yafc/" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" ".bundle/" "labbel.odt" ".netrc" "krypton.txt" ".gradle/" ".dropbox/" ".bash_logout" "bandit.txt" ".ssh/" ".fonts.conf" ".gconf/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" "nick-est.org" ".wine/" "garglk/" ".gnome/")
+
+ ("/home/clara/Software/webcastplatform/app/models/" (22914 7925 801243 691000) "chat.rb" "question.rb" "embed.rb" "chat_message.rb" "question_follow.rb" "survey.rb" "./" "event_embed.rb" "events_user.rb" "user_activity.rb" "survey_answer.rb" "../" "ability.rb" "user.rb" "application_record.rb" "event.rb" "concerns/" "answer.rb")
+
+ ("/home/clara/Software/webcastplatform/config/" (22913 64300 175529 488000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/" "database.yml.orig")
+
+ ("/home/clara/Software/webcastplatform/config/deploy/" (22913 62519 934288 785000) "./" "../" "staging.rb" "production.rb")
+
+ ("/home/clara/Software/webcastplatform/app/controllers/concerns/" (22910 28140 14511 198000) "./" "../" ".keep")
+
+ ("/home/clara/Software/webcastplatform/app/controllers/users/" (22913 62464 550254 906000) "passwords_controller.rb" "./" "../" "sessions_controller.rb")
+
+ ("/home/clara/Software/webcastplatform/config/initializers/" (22910 28141 762510 988000) "inflections.rb" "session_store.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "rack_timeout.rb" "redis.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "new_framework_defaults.rb" "../" "warden_hooks.rb" "devise.rb" "cookies_serializer.rb" "application_controller_renderer.rb" "assets.rb")
+
+ ("/home/clara/Software/webcastplatform/public/" (22910 28140 354511 157000) "favicon.ico" "robots.txt" "./" "404.html" "../" "422.html" "apple-touch-icon-precomposed.png" "apple-touch-icon.png" "loaderio-49673a437b7cc42961f60dde4ef5d9ef.txt" "_safari_fix.html" "500.html")
 
  ("/home/clara/Software/webcastplatform/spec/requests/" (22911 21976 701145 939000) "./" "embeds_spec.rb" "../" "sign_in_spec.rb")
 
@@ -185,14 +211,6 @@
 
  ("/home/clara/Software/webcastplatform/app/assets/javascripts/" (22910 33562 185888 126000) "cable.js" "chat_messages.coffee" "application.js" "channels/" "jquery.fontselect.min.js" "user_activities.coffee" "./" "admin/" "admin.js.coffee" "../" "chats.coffee")
 
- ("/home/clara/Software/webcastplatform/config/environments/" (22910 31604 184785 676000) "./" "../" "production.rb" "test.rb" "development.rb")
-
- ("/home/clara/Software/webcastplatform/app/controllers/" (22910 28140 22511 197000) "user_activities_controller.rb" "./" "users/" "application_controller.rb" "admin/" "../" "chats_controller.rb" "embeds_controller.rb" "chat_messages_controller.rb" "events_controller.rb" "concerns/")
-
- ("/home/clara/Software/webcastplatform/app/controllers/users/" (22910 28079 654518 466000) "passwords_controller.rb" "./" "../" "sessions_controller.rb")
-
- ("/home/clara/Software/webcastplatform/spec/controllers/" (22910 27875 458543 51000) "user_activities_controller_spec.rb" "embeds_controller_spec.rb" "users_controller_spec.rb" "./" "../" "events_controller_spec.rb" "chat_messages_controller_spec.rb" "admin_controller_spec.rb" "chats_controller_spec.rb")
-
  ("/home/clara/Software/webcastplatform/config/locales/" (22907 25272 293805 219000) "en.yml" "./" "devise.en.yml" "../")
 
  ("/home/clara/Software/webcastplatform/app/views/devise/registrations/" (22907 25272 57805 231000) "edit.html.erb" "./" "new.html.erb" "../")
@@ -201,21 +219,11 @@
 
  ("/home/clara/Software/webcastplatform/app/views/devise/shared/" (22907 25272 61805 230000) "_links.html.erb" "./" "../")
 
- ("/home/clara/Software/webcastplatform/config/deploy/" (22907 25272 293805 219000) "./" "../" "staging.rb" "production.rb")
-
  ("/home/clara/Software/bss/app/views/events/" (22904 63326 459990 502000) "show.html.erb" "_show_more.html.erb" "./" "../" "_events.html.erb" "index.js.erb" "index.html.erb")
-
- ("/home/clara/Software/webcastplatform/public/" (22907 25272 177805 225000) "favicon.ico" "robots.txt" "./" "404.html" "../" "422.html" "apple-touch-icon-precomposed.png" "apple-touch-icon.png" "loaderio-49673a437b7cc42961f60dde4ef5d9ef.txt" "_safari_fix.html" "500.html")
-
- ("/home/clara/Software/webcastplatform/config/initializers/" (22907 25272 293805 219000) "inflections.rb" "session_store.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "redis.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "new_framework_defaults.rb" "../" "warden_hooks.rb" "devise.rb" "cookies_serializer.rb" "application_controller_renderer.rb" "assets.rb")
 
  ("/home/clara/Software/webcastplatform/app/views/admin/users/" (22907 25272 61805 230000) "new.html.slim" "_form.html.slim" "edit.html.slim" "index.html.slim" "./" "../")
 
- ("/home/clara/Software/webcastplatform/app/views/devise/sessions/" (22907 25272 61805 230000) "./" "new.html.erb" "../")
-
  ("/home/clara/Software/webcastplatform/db/migrate/" (22907 25272 49805 231000) "20170213074659_create_questions.rb" "20170220235035_create_question_follows.rb" "20170209150746_add_parent_id_to_chat_messages.rb" "20170113171007_add_chat_room_to_user_activities.rb" "20170128020917_add_has_ended_to_events.rb" "20170224143358_add_user_agent_to_user_activities.rb" "20170209151746_add_is_deleted_to_chat_messages.rb" "20170711161127_add_url_to_embed.rb" "20161213220928_create_events.rb" "20170607194134_add_devise_to_users.rb" "20170112001028_add_user_id_and_message_to_chat_messages.rb" "20170201163031_add_thumbnails_to_events.rb" "20170213075236_create_survey_answers.rb" "20170224151211_add_last_contacted_to_user_activities.rb" "./" "20170721152828_add_attachment_background_image_to_embeds.rb" "20170213074722_create_answers.rb" "20170213075113_create_surveys.rb" "20170112041531_create_events_users.rb" "20170112000952_create_chat_messages.rb" "20170220194522_add_event_id_to_questions.rb" "20170116192628_create_event_embeds.rb" "20170725164510_add_disable_chat.rb" "../" "20161212214927_create_users.rb" "20170127143639_add_is_admin_to_users.rb" "20170710192125_create_embeds.rb" "20170120100209_add_slug_en_to_events.rb" "20170112000935_create_chats.rb" "20170201163951_add_attachment_thumbnail_to_events.rb" "20170105060544_create_user_activities.rb" "20170127033652_add_is_moderator_to_events_user.rb" "20170113171356_add_chat_id_to_user_activities.rb")
-
- ("/home/clara/Software/webcastplatform/app/channels/application_cable/" (22907 25272 65805 231000) "connection.rb" "./" "../" "channel.rb")
 
  ("/home/clara/Software/webcastplatform/spec/factories/" (22907 25272 173805 225000) "abilities.rb" "events_users.rb" "answers.rb" "chats.rb" "./" "embeds.rb" "user_activities.rb" "events.rb" "questions.rb" "../" "surveys.rb" "event_embeds.rb" "users.rb" "chat_messages.rb" "application_records.rb" "survey_answers.rb")
 
@@ -232,12 +240,6 @@
  ("/home/clara/Software/webcastplatform/app/assets/stylesheets/" (22907 31583 742615 504000) "chat_messages.scss" "events.css" "./" "login.css" "admin/" "user_activities.scss" "../" "chats.scss" "fontselect.css" "application.scss")
 
  ("/home/clara/Software/webcastplatform/app/assets/javascripts/admin/" (22907 25272 57805 231000) "users.coffee" "./" "../")
-
- ("/home/clara/Software/webcastplatform/app/views/layouts/" (22907 25272 57805 231000) "mailer.html.erb" "mailer.text.erb" "./" "../" "application.html.erb")
-
- ("/home/clara/Software/webcastplatform/app/helpers/" (22907 25272 65805 231000) "embeds_helper.rb" "./" "application_helper.rb" "../" "chats_helper.rb")
-
- ("/home/clara/Software/webcastplatform/app/channels/" (22907 25272 65805 231000) "./" "../" "chats_channel.rb" "application_cable/")
 
  ("/home/clara/Software/bss/app/views/resources/" (22904 63326 459990 502000) "index.rss.builder" "show.html.erb" "authors.html.erb" "_breadcrumbs.html.erb" "_tag_cloud.html.erb" "_author.html.erb" "_show_more.html.erb" "./" "_listing.html.erb" "../" "_filter_results.html.erb" "index.js.erb" "index.html.erb" "_resources.html.erb" "_search_result.html.erb")
 
@@ -364,8 +366,6 @@
  ("/home/clara/Software/fotc/app/views/recurrences/" (22803 15764 634824 978000) "jobs.html.erb" "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb")
 
  ("/home/clara/Software/fotc/app/views/jobs/" (22800 53579 263457 571000) "calendar.html.erb" "report.html.erb" "show.html.erb" "cancel.html.erb" "_list.html.erb" "csv_import.html.erb" "edit.html.erb" "_guestform.html.erb" "_job_attachment.html.erb" "total.html.erb" "_form.html.erb" "./" "new.html.erb" "_hide2.html.erb" "_job.html.erb" "_clientform.html.erb" "label.html.erb" "_boston_rates.html.erb" "_date_and_time.html.erb" "../" "uncomplete.html.erb" "_sizes.html.erb" "_nyc_rates.html.erb" "show.pdf.prawn" "index.html.erb" "incomplete.html.erb" "assign.html.erb" "confirmation.html.erb" "completable.html.erb" "_roundtrip.html.erb" "cancelled.html.erb")
-
- ("/home/clara/Software/fotc/spec/models/" (22793 2716 869971 307000) "dispatching_user_spec.rb" "invoice_spec.rb" "market_spec.rb" "./" "photo_spec.rb" "saved_company_spec.rb" "recurrence_spec.rb" "category_spec.rb" "job_attachment_spec.rb" "client_spec.rb" "user_spec.rb" "saved_email_spec.rb" "../" "messenger_spec.rb" "weekday_spec.rb" "work_phone_spec.rb" "link_spec.rb" "job_spec.rb" "service_level_spec.rb" ".#admin_spec.rb" "note_spec.rb" "admin_spec.rb" "page_spec.rb")
 )
 
 ;; ----- ido-unc-hosts-cache -----
