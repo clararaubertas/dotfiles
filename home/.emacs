@@ -303,7 +303,7 @@ With argument ARG, do this that many times."
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; IX. Text Mode ;;;;;;;;;;
-(add-hook 'text-mode-hook 'flyspell-mode)
+
 ;;;;;;;;;; ;;;;;;;;;;
 
 (require 'ox-latex)
