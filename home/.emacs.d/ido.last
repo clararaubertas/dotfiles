@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/clara/Software/chicago-neighborhood-map/app/" . "build/")
  ("/etc/apt/" . "sources.list.d/")
  ("/home/clara/Software/webcastplatform/app/assets/javascripts/" . "admin/")
  ("/home/clara/Software/webcastplatform/app/channels/" . "application_cable/")
@@ -94,12 +95,16 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "bss/")
+ ("/home/clara/Software/" . "chicago-neighborhood-map/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/chicago-neighborhood-map/src/main/"
+ "/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/"
+ "/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/"
+ "/home/clara/Software/chicago-neighborhood-map/"
  "/home/clara/Software/bss/config/initializers/"
  "/home/clara/Software/bss/app/models/"
  "/home/clara/Software/bss/app/controllers/"
@@ -146,28 +151,50 @@
  "/home/clara/Software/webcastplatform/app/views/devise/passwords/"
  "/home/clara/Software/webcastplatform/app/views/devise/registrations/"
  "/home/clara/Software/bss/app/views/contacts/"
- "/home/clara/Software/bss/app/views/categories/"
- "/home/clara/Software/bss/config/"
- "/home/clara/Software/calling-congress/app/assets/javascripts/"
- "/home/clara/Software/bss/app/helpers/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "AndroidManifest.xml"
+ "main.xml"
+ "ChicagoNeighborhoodMap.java"
+ "build.gradle"
  "inflections.rb"
  "application_record.rb"
  "application_controller.rb"
  "index.html.erb"
  "blog_posts_controller.rb"
  "agency.css"
- "index.html"
- "production.rb"
- "application.rb"
- "resources_controller_spec.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/Software/chicago-neighborhood-map/app/build/" (22287 62018 306699 0) "reports/" "test-results/" "tmp/" "./" "intermediates/" "../" "generated/" "outputs/")
+
+ ("/home/clara/Software/chicago-neighborhood-map/app/" (22523 65319 955199 490000) "settings.gradle" "./" "gradlew.bat" "../" "build.gradle" ".gradle/" "build/" "local.properties")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/" (22997 15790 739188 345000) "PermissionUtils.java" "./" "../" "ChicagoNeighborhoodMap.java")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/" (22287 60121 157798 0) "chicagomap/" "./" "../")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/" (22287 60119 113744 0) "./" "../" "parallactic/")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/main/java/" (22287 60116 637679 0) "com/" "./" "../")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/" (22923 31820 894802 454000) "./" "main.xml" "../")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/main/res/" (22287 56401 28933 0) "drawable-ldpi/" "drawable-mdpi/" "raw/" "./" "drawable-hdpi/" "../" "values/" "drawable-xhdpi/" "layout/")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/main/" (22625 32354 46648 341000) "AndroidManifest.xml" "./" "java/" "../" "res/")
+
+ ("/home/clara/Software/chicago-neighborhood-map/src/" (22523 57993 301629 708000) "debug/" "./" "../" "main/" ".gradle/")
+
+ ("/home/clara/Software/chicago-neighborhood-map/" (22625 39822 740308 200000) "google-play-services_lib/" "bin/" "proguard-project.txt" "project.properties" "src/" "./" "google_play_services/" "../" "assets/" "app/" "build.gradle" "neighbs/" "libs/" "parts/" ".gradle/" "build/" "local.properties" "gen/" ".git/")
+
+ ("/home/clara/Software/" (22985 23496 560092 493000) "gilbertandsullivan/" "HiWorld/" "html5-boilerplate/" "polynumeral-wp/" "mighty/" "fotc/" "lilscripts/" "coursera-android-labs/" "docs/" "color.pl" "conky_start" "showoff_test/" "android-samples/" "chicktech/" "ballot_ready/" "calling-congress/" "polynumeral.com/" "link-up-illinois/" "celluloid-chicago-script/" "wordpress/" "Sunshine-Version-2/" "shepherdstownfriends/" "polynumeral/" "cryptic-beyond-4569/" "desoto/" "./" "LinkUp-Server/" "NeighborhoodMap/" "my_preso/" "2015-website/" "scripts/" "roadtowilliamsport-pages/" "arcane-mountain-3734/" "mobileorg-android/" "calendar.sh" "dioptrice/" "bss-old/" "treasure-hunt/" "slidedown-skeleton/" "../" "rummagemarketplace/" "modernart/" "bridgedev/" "fotc.zip" "webcastplatform/" "maya-mockup/" "bss/" "RailsBridgeChi.github.io/" "dog_test/" "test.rb" ".gradle/" "railsbridge_dogs/" "mame/" "marzipan-prep/" "dual_display.sh" "chicago-neighborhood-map/" "25020/" "sample-data/")
+
+ ("/home/clara/" (22994 55537 903336 109000) "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "2016-raubertas-raber-taxes.zip" ".face" ".gnome2/" "window.sav" ".sqlite_history" ".wget-hsts" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" ".~lock.puzzz.odt#" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" ".npm/" "./" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" ".gradle/" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "21-052219-01-01_Insurance Card Document.pdf" "baby1.jpg" "bandit.txt" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "cfs2.jpg" "garglk/" ".gnome/")
+
  ("/home/clara/Software/bss/config/initializers/" (22920 42661 540441 775000) "inflections.rb" "session_store.rb" "friendly_id.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "hashie.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "new_framework_defaults.rb" "../" "cookies_serializer.rb" "application_controller_renderer.rb" "simple_form.rb" "assets.rb")
 
  ("/home/clara/Software/bss/config/" (22922 6509 771635 579000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "sunspot.yml" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
@@ -175,8 +202,6 @@
  ("/home/clara/Software/bss/app/models/" (22970 46384 278916 321000) "acronym.rb" "category.rb" "topic.rb" "quote.rb" "contact_form.rb" "./" "community.rb" "author.rb" "announcement.rb" "../" "staff.rb" "blog_post.rb" "what_is.rb" "page.rb" "resource.rb" "application_record.rb" "how_to.rb" "event.rb" "contribute.rb")
 
  ("/home/clara/Software/bss/app/controllers/" (22970 45237 998882 316000) "communities_controller.rb" "categories_controller.rb" "blog_posts_controller.rb" "pages_controller.rb" "contributes_controller.rb" "./" "application_controller.rb" "contacts_controller.rb" "../" "events_controller.rb" "resources_controller.rb")
-
- ("/home/clara/" (22969 41066 226967 280000) "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "2016-raubertas-raber-taxes.zip" ".face" ".gnome2/" "window.sav" ".sqlite_history" ".wget-hsts" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "Pictures/" ".pry_history" ".bash_profile" ".xdvirc" "Android/" ".npm/" "./" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" ".netrc" "krypton.txt" ".gradle/" "puz.odt" ".dropbox/" ".bash_logout" "21-052219-01-01_Insurance Card Document.pdf" "bandit.txt" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" "nick-est.org" "garglk/" ".gnome/")
 
  ("/home/clara/Documents/Parallactic/" (22969 37984 142875 848000) "gs-contract.pdf" "FOTC Maps U.I..png" "parallactic-logo.eps" "Mighty Prototype Jan 30_1980.pdf" "adlerLogo.png" "mainstream-embedding.tex" "fotc/" "parallactic_futura.ai" "DRAFT_BSS_LFWF_011117 (1).pdf" "mainstream-embedding.pdf" "Keystone 600 Master Inventory Document (Autosaved).xlsx" "parallactic AWS credentials.csv" "Greenwich Musem Website Whole telescope.jpg" "agency.css" "projects/" "mainstream.dvi" "kellogg.gif" "fotc.png" "./" "FOTCLogoAlternate.png" "mainstream-embedding.log" "mighty-nda.pdf" "dioptrice/" "index.html" "shepherdstownfriends.png" "../" "mainstream.log" "uofc.png" "cmog_NewLogo.png" "mainstream.pdf" "bridgedev.png" "mainstream-embedding.aux" "mainstream - parallactic-SIGNED.pdf" "wireframes/" "mainstream-embedding-SIGNED.pdf" "Telescope WS Greenwich Cunigham.xlsx" "mit_logo.png" "marketing assets/" "FOTC HP Nov 7.png" "mainstream.tex" "FOTC HP Nov 7 (1).png" "mainstream-embedding.dvi" "gilbertandsullivan.png" "Telescope.WS.Greenwich.Cunigham.xlsx" ".~lock.betatool (copy).odt#" "g&s/" "proposals/" "DRAFT_BSS_LFWF_011117.pdf")
 
@@ -343,30 +368,6 @@
  ("/home/clara/Software/bss/spec/factories/" (22837 40938 225583 140000) "announcements.rb" "categories.rb" "how_tos.rb" "authors.rb" "./" "blog_posts.rb" "events.rb" "topics.rb" "pages.rb" "quotes.rb" "../" "what_is.rb" "communities.rb" "resources.rb")
 
  ("/home/clara/Software/bss/config/deploy/" (22837 43424 183261 557000) "./" "../" "staging.rb" "production.rb")
-
- ("/home/clara/Software/webcastplatform/app/assets/" (22821 58582 199050 540000) "config/" "./" "javascripts/" "../" "stylesheets/" "images/")
-
- ("/home/clara/Software/webcastplatform/app/views/admin/" (22821 58582 203050 538000) "./" "users/" "../")
-
- ("/home/clara/Software/bss/config/environments/" (22812 51530 794960 59000) "./" "../" "staging.rb" "production.rb" "test.rb" "development.rb")
-
- ("/home/clara/Software/bss/app/assets/" (22692 58817 641752 651000) "config/" "./" "javascripts/" "../" "stylesheets/" "images/")
-
- ("/home/clara/Downloads/" (22831 8996 214886 404000) "gs-contract.pdf" "timers-01032017-04032017 (1).csv" "DRAFT_BSSWF_033117.pdf" "Unconfirmed 609458.crdownload" "TempIdCard.pdf" "IMG_20170216_213526.jpg" "FOTC Maps U.I..png" "IMG_20161206_135839439.jpg" "Input-Font.zip" "Mighty Prototype Jan 30_1980.pdf" "Moomers.zip" "IMG_20170310_131412478.jpg" "IMG_20161210_162521454.jpg" "banks (2).csv" "1A - Home - Hero1.png" "Cryptic153.puz" "silverfake.zip" "Mighty Logo Assets/" "fotc/" "wine101.txt" "DRAFT_BSSWF_030917_SelectPgsV3.pdf" "DRAFT_BSS_LFWF_011117 (1).pdf" "Moomers Journal Subscribers (1).ods" "image1.JPG" "Rx.PDF" "wine101 (1).txt" "IMG_20161225_140419038.jpg" "Photos.zip" "Liberty Mutual Forms.pdf" "January 8 2017-20170111T155508Z.zip" "image2.JPG" "9779809_Customer Quote Document_CC5B4738-8099-4E2A-9390-60396FCE24BB_Raubertas.pdf" "20161203_114642.jpg" "__MACOSX/" "Photos (1).zip" "IMG_20170519_154247.jpg" "DRAFT_BSS_LFWF_011117 (2).pdf" "January 16 - UPDATED SET/" "breakfastproblems.doc" "IMG_20161120_110129.jpg" "timers-01032017-04032017 (2).csv" "Leverage_The_Quickstart_Job.pdf" "Museo Sans 500 Italic-Webfont.zip" "Greenwich Musem Website Whole telescope.jpg" "gotham-fonts-by-designrazzi/" "CarpenterandGeneralBuilder2005-2010.odt" "52738067_3b4f9c69a4_o.jpg" "kakcomestodinnermoojo.zip" "IMG_20161120_110535.jpg" "pix2pix.png" "timers-01032017-04032017.csv" "IMG_20161120_110129 (1).jpg" "IMG_20170310_131316449.jpg" "DRAFT_BSS_WF_01217_OffsiteLink.pdf" "Unconfirmed 681864.crdownload" "19-apples.jpg" "wpcustom-category-image.zip" "wp_polynumeral.sql" "FOTCLogoAlternate.png" "Moomers Journal Subscribers.ods" "Jesse Raber 2016 Fidelity 1099.pdf" "CallTheHalls.pdf" "Therapy Dogs International.pdf" "IMG_20161120_110535 (1).jpg" "9779809_Customer Quote Document_023D6F95-CF09-41C7-810E-7781EF5291C1_Raubertas.pdf" "January 8 2017/" "simple-taxonomy.3.5 (1).zip" "Jesse Raber 2016 Fidelity 1099 (1).pdf" "IMG_20170310_131343526.jpg" "timers-01032017-04032017 (3).csv" "banks.csv" "10603920_10100454409167210_6211883708709307819_o.jpg" "DRAFT_BSS_LFWF_010617 (1).pdf" "5214941272_c374f3a9dd_o (1).jpg" "banks (1).csv" "dioptrice/" "DRAFT_BSSWF_030917_SelectPgsV3 (1).pdf" "Unconfirmed 763386.crdownload" "Cash Cash Cash 4 your Bones!.mp3" "IMG_20170216_212833.jpg" "homes.md" "emu.txt" ".~lock.Securities Fraud Litigation.docx#" "DRAFT_BSSWF_032817D.pdf" "list-category-posts.0.71.zip" "LRShepFriends Photo 11-1-2015_  original#2.jpg" "code.zip" "DRAFT_BSS_ResourceWFs_020717.pdf" "bkgrnds/" ".~lock.Telescope.WS.Greenwich.Cunigham.xlsx#" "IMG_20170310_131438476.jpg" "ruby-2.4.0.tar.gz" "Parallactic Consulting K1 2016 2 Raubertas, Clara.PDF" "IMG_20170310_131317691.jpg" "20161203_114651.jpg" "timers-09012016-04032017.csv" "2305239829_7848668c2b_o.jpg" "5214941272_c374f3a9dd_o.jpg" "DRAFT_BSS_LFWF_010617.pdf" "lplinux/" "pancake_4/" "Unconfirmed 297931.crdownload" "kakcomestodinnermoojo (1).zip" "stylesheet.css" "IMG_2575.JPG" "IMG_20161022_212012702.jpg" "IMG_20161119_113317.jpg" "Photos (2).zip" "DRAFT_BSSWF_030917_CataPg.pdf" "IMG_20161210_162510408.jpg" "Telescope WS Greenwich Cunigham.xlsx" "DRAFT_BSS_ResourceWFs_020517.pdf" "9955 lead report.pdf" "Prototype 01-16-17/" "IMG_20161120_110535 (2).jpg" "IMG_20170310_131429866.jpg" "IMG_20161210_162503380.jpg" "FOTC HP Nov 7.png" "mainstream.tex" "IMG_20170310_131410077.jpg" "January 16/" "FOTC HP Nov 7 (1).png" "IMG_20161119_113317 (1).jpg" "IMG_20161119_113317 (2).jpg" "e1258429297559260.ics" "8428096337_74bacd9507_o.jpg" "How to Keep Houseplants Alive.docx" "Telescope.WS.Greenwich.Cunigham.xlsx" "IMG_20161205_114941710.jpg" "IMG_20160512_172519.jpg" "img_20170512_122928802_1024.jpg" "image1 (1).JPG" "IMG_20161206_135833382.jpg" "Draft 3/" "pancakeapp_V4.12.26.zip" "g&s/" "IMG_20161204_210123517.jpg" "20161203_114651 (1).jpg" "MooJo White Walls Manifesto.docx" "IMG_20160626_134442170.jpg" "DRAFT_BSSWF_041017.pdf" "22456035417_a96671da54_o.jpg" "21-geese.jpg" "DRAFT_BSS_LFWF_011117.pdf" "../" "./")
-
- ("/home/clara/Software/" (22829 56693 92328 711000) "gilbertandsullivan/" "HiWorld/" "html5-boilerplate/" "polynumeral-wp/" "mighty/" "fotc/" "lilscripts/" "coursera-android-labs/" "docs/" "color.pl" "conky_start" "showoff_test/" "android-samples/" "chicktech/" "ballot_ready/" "calling-congress/" "polynumeral.com/" "link-up-illinois/" "celluloid-chicago-script/" "wordpress/" "Sunshine-Version-2/" "shepherdstownfriends/" "polynumeral/" "cryptic-beyond-4569/" "desoto/" "./" "LinkUp-Server/" "NeighborhoodMap/" "my_preso/" "2015-website/" "scripts/" "roadtowilliamsport-pages/" "arcane-mountain-3734/" "mobileorg-android/" "calendar.sh" "dioptrice/" "bss-old/" "treasure-hunt/" "slidedown-skeleton/" "../" "rummagemarketplace/" "modernart/" "bridgedev/" "fotc.zip" "webcastplatform/" "bss/" "RailsBridgeChi.github.io/" "dog_test/" "test.rb" ".gradle/" "railsbridge_dogs/" "mame/" "marzipan-prep/" "dual_display.sh" "chicago-neighborhood-map/" "25020/" "sample-data/")
-
- ("/home/clara/Software/polynumeral/www.polynumeral.com/" (22829 54550 321586 953000) "2016/" "case_study/" "library/" "contact/" "./" "index.html" "../" "wp-json/" "favicon.html" "blog/" "our-philosophy/" "sample-blog-post/" "number-one-question-ceos-ask-us/")
-
- ("/home/clara/Software/polynumeral/" (22736 15630 162322 654000) "polynumeral.wpengine.com/" "hts-cache/" "hts-log.txt" "./" "fade.gif" "www.polynumeral.com/" "index.html" "../")
-
- ("/home/" (22397 14817 711479 801000) "clara/" "lost+found/" "./" "../")
-
- ("/home/clara/Software/bss/spec/" (22812 48595 401705 463000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "views/" "../" "rails_helper.rb" "requests/")
-
- ("/home/clara/Software/bss/spec/helpers/" (22812 46502 147960 586000) "./" "../")
-
- ("/home/clara/Software/bss/app/views/contact/" (22812 46361 52156 804000) "create.html.erb" "./" "new.html.erb" "../")
 )
 
 ;; ----- ido-unc-hosts-cache -----
