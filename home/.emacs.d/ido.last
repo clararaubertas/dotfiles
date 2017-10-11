@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/clara/Software/marzipan/" . "register/")
  ("/home/clara/Software/chicago-neighborhood-map/app/" . "build/")
  ("/etc/apt/" . "sources.list.d/")
  ("/home/clara/Software/webcastplatform/app/assets/javascripts/" . "admin/")
@@ -95,12 +96,14 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "chicago-neighborhood-map/")
+ ("/home/clara/Software/" . "marzipan/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/marzipan/register/ui/"
+ "/home/clara/Software/marzipan/register/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/"
@@ -149,26 +152,34 @@
  "/home/clara/Software/bss/app/views/events/"
  "/home/clara/Software/webcastplatform/app/views/devise/shared/"
  "/home/clara/Software/webcastplatform/app/views/devise/passwords/"
- "/home/clara/Software/webcastplatform/app/views/devise/registrations/"
- "/home/clara/Software/bss/app/views/contacts/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "dialogs.py"
+ "widgets.py"
+ "keys.py"
+ "layout.py"
+ "__init__.py"
+ "apc.py"
+ "ui.py"
+ "marzipan.py"
+ "config.py"
  "AndroidManifest.xml"
- "main.xml"
- "ChicagoNeighborhoodMap.java"
- "build.gradle"
- "inflections.rb"
- "application_record.rb"
- "application_controller.rb"
- "index.html.erb"
- "blog_posts_controller.rb"
- "agency.css"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/Software/marzipan/register/ui/" (23006 30981 740607 374000) "widgets.pyc" "font.pyc" "__init__.py" "layout.py" "colors.py" "widgets.py" "./" "keys.pyc" "dialogs.py" "../" "colors.pyc" "font.py" "__init__.pyc" "layout.pyc" "keys.py" "dialogs.pyc")
+
+ ("/home/clara/Software/marzipan/register/" (23006 30242 442987 135000) "db.pyc" ".gitignore" "match.py" "metaphone.py" "register_logging.py" "db.py" "money.py" "cc.pyc" "config.py" "tabutil.pyc" "cc.py" "python-suds-0.4.tar.gz" "./" "logo.pdf" "python-suds-0.4/" "marzipan_io.pyc" "openproduce05.svg" "postscriptbarcode/" "error.py" "match.pyc" "launch.sh" "marzipan.py" "suds/" "metaphone.pyc" "ippay_text.py" "cui.py" "unpaid_tabs.cgi" "../" "tab-history.cgi" "ui.py" "pysimplesoap-1.05a/" "register_logging.pyc" "test_script.py" "money.pyc" "tabutil.py" "straight.flf" "marzipan_io.py" "ui/" "config.py.tmpl" "logo.eps" "apc.py" "config.pyc")
+
+ ("/home/clara/Software/marzipan/" (23006 25398 711713 579000) "register/" ".gitignore" "README.md" "LICENSE.md" "./" "sample-config/" "web/" "scripts/" "INSTALL.md" "../" "sample-data/" ".git/")
+
+ ("/home/clara/Software/" (23006 25339 891689 446000) "gilbertandsullivan/" "HiWorld/" "html5-boilerplate/" "polynumeral-wp/" "mighty/" "fotc/" "lilscripts/" "coursera-android-labs/" "docs/" "color.pl" "conky_start" "showoff_test/" "android-samples/" "chicktech/" "ballot_ready/" "calling-congress/" "polynumeral.com/" "link-up-illinois/" "celluloid-chicago-script/" "wordpress/" "Sunshine-Version-2/" "shepherdstownfriends/" "polynumeral/" "cryptic-beyond-4569/" "desoto/" "./" "LinkUp-Server/" "NeighborhoodMap/" "my_preso/" "2015-website/" "scripts/" "roadtowilliamsport-pages/" "arcane-mountain-3734/" "mobileorg-android/" "calendar.sh" "dioptrice/" "bss-old/" "treasure-hunt/" "slidedown-skeleton/" "../" "rummagemarketplace/" "modernart/" "bridgedev/" "fotc.zip" "webcastplatform/" "maya-mockup/" "bss/" "RailsBridgeChi.github.io/" "dog_test/" "test.rb" ".gradle/" "railsbridge_dogs/" "mame/" "marzipan-prep/" "dual_display.sh" "chicago-neighborhood-map/" "25020/" "sample-data/" "marzipan/")
+
+ ("/home/clara/" (23005 30856 153289 315000) ".emulator_console_auth_token" "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "2016-raubertas-raber-taxes.zip" ".face" ".gnome2/" "window.sav" ".sqlite_history" ".wget-hsts" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" ".npm/" "./" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" ".gradle/" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "baby1.jpg" "bandit.txt" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "cfs2.jpg" "garglk/" ".gnome/")
+
  ("/home/clara/Software/chicago-neighborhood-map/app/build/" (22287 62018 306699 0) "reports/" "test-results/" "tmp/" "./" "intermediates/" "../" "generated/" "outputs/")
 
  ("/home/clara/Software/chicago-neighborhood-map/app/" (22523 65319 955199 490000) "settings.gradle" "./" "gradlew.bat" "../" "build.gradle" ".gradle/" "build/" "local.properties")
@@ -190,10 +201,6 @@
  ("/home/clara/Software/chicago-neighborhood-map/src/" (22523 57993 301629 708000) "debug/" "./" "../" "main/" ".gradle/")
 
  ("/home/clara/Software/chicago-neighborhood-map/" (22625 39822 740308 200000) "google-play-services_lib/" "bin/" "proguard-project.txt" "project.properties" "src/" "./" "google_play_services/" "../" "assets/" "app/" "build.gradle" "neighbs/" "libs/" "parts/" ".gradle/" "build/" "local.properties" "gen/" ".git/")
-
- ("/home/clara/Software/" (22985 23496 560092 493000) "gilbertandsullivan/" "HiWorld/" "html5-boilerplate/" "polynumeral-wp/" "mighty/" "fotc/" "lilscripts/" "coursera-android-labs/" "docs/" "color.pl" "conky_start" "showoff_test/" "android-samples/" "chicktech/" "ballot_ready/" "calling-congress/" "polynumeral.com/" "link-up-illinois/" "celluloid-chicago-script/" "wordpress/" "Sunshine-Version-2/" "shepherdstownfriends/" "polynumeral/" "cryptic-beyond-4569/" "desoto/" "./" "LinkUp-Server/" "NeighborhoodMap/" "my_preso/" "2015-website/" "scripts/" "roadtowilliamsport-pages/" "arcane-mountain-3734/" "mobileorg-android/" "calendar.sh" "dioptrice/" "bss-old/" "treasure-hunt/" "slidedown-skeleton/" "../" "rummagemarketplace/" "modernart/" "bridgedev/" "fotc.zip" "webcastplatform/" "maya-mockup/" "bss/" "RailsBridgeChi.github.io/" "dog_test/" "test.rb" ".gradle/" "railsbridge_dogs/" "mame/" "marzipan-prep/" "dual_display.sh" "chicago-neighborhood-map/" "25020/" "sample-data/")
-
- ("/home/clara/" (22994 55537 903336 109000) "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "2016-raubertas-raber-taxes.zip" ".face" ".gnome2/" "window.sav" ".sqlite_history" ".wget-hsts" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" ".~lock.puzzz.odt#" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" ".npm/" "./" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" ".gradle/" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "21-052219-01-01_Insurance Card Document.pdf" "baby1.jpg" "bandit.txt" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "cfs2.jpg" "garglk/" ".gnome/")
 
  ("/home/clara/Software/bss/config/initializers/" (22920 42661 540441 775000) "inflections.rb" "session_store.rb" "friendly_id.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "hashie.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "new_framework_defaults.rb" "../" "cookies_serializer.rb" "application_controller_renderer.rb" "simple_form.rb" "assets.rb")
 
@@ -362,12 +369,6 @@
  ("/home/clara/.cache/" (22832 26881 631343 645000) "luarocks/" "simple-scan/" "mozilla/" "obexd/" "webkit/" "qt_compose_cache_little_endian_2a5d5f96ef9147c0b35535562b32d0ff" "xreader/" "conky/" "weather-1.png" "thunderbird/" "./" "weather-3.png" "gegl-0.3/" "heroku/" "weather-2.png" "google-chrome/" "wine/" "dconf/" "gstreamer-1.0/" "wallpaper/" "cs_backgrounds/" "gnome-screenshot/" "../" "fontconfig/" "blueman-applet-1000" "pip/" "spotify/" "inkscape/" "thumbnails/" "transmission/" "font-manager/" "weather.json" "forecast.json" "event-sound-cache.tdb.2a5d5f96ef9147c0b35535562b32d0ff.x86_64-pc-linux-gnu")
 
  ("/home/clara/Software/calling-congress/app/views/calling_scripts/" (22829 48924 388771 3000) "_user_locator.html.erb" "_scripts.html.erb" "_rep_chooser.html.erb" "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "_calling_info.html.erb" "_script.html.erb" "index.html.erb" "_show_script.html.erb" "buttons/")
-
- ("/home/clara/Software/polynumeral/www.polynumeral.com/contact/" (22829 59724 862247 643000) "./" "index.html" "../")
-
- ("/home/clara/Software/bss/spec/factories/" (22837 40938 225583 140000) "announcements.rb" "categories.rb" "how_tos.rb" "authors.rb" "./" "blog_posts.rb" "events.rb" "topics.rb" "pages.rb" "quotes.rb" "../" "what_is.rb" "communities.rb" "resources.rb")
-
- ("/home/clara/Software/bss/config/deploy/" (22837 43424 183261 557000) "./" "../" "staging.rb" "production.rb")
 )
 
 ;; ----- ido-unc-hosts-cache -----
