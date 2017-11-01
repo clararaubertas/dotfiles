@@ -1,20 +1,8 @@
-#local network!
 127.0.0.1	localhost
-127.0.1.1	meson
-127.0.0.1       siskellocal
-192.168.11.117    tachyon
-192.168.11.131  froebel
-192.168.11.1    malkaspace
-
-
-#moomers/parallactic servers
-65.60.60.66     whisker
-66.175.209.206  pepper
-162.216.17.116  kumquat
-
-# nonsense
-160.153.71.101	bridgedev.com
-
+127.0.1.1	baryon
+66.175.209.206	pepper
+162.216.17.116	kumquat
+173.236.34.122	purr
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
