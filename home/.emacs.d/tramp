@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <17/11/01 11:26:15 /home/clara/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <17/11/01 14:38:58 /home/clara/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -60,6 +60,4 @@
   ("perl" "\\perl")
   ("git" "\\git")
   ("ls" "/bin/ls --color=never")
-  ("~root" "/root"))
- (["scp" nil "sudo" nil nil]
-  nil))
+  ("~root" "/root")))
