@@ -40,7 +40,7 @@
  ("/home/clara/Software/bss/wp-content/themes/twentysixteen/" . "template-parts/")
  ("/home/clara/Software/bss/wp-content/themes/" . "twentysixteen/")
  ("/home/clara/Software/bss/wp-content/" . "themes/")
- ("/home/clara/Software/bss/" . "app/")
+ ("/home/clara/Software/bss/" . "config/")
  ("/sudo:root@localhost:/etc/apache2/" . "mods-enabled/")
  ("/usr/share/icons/" . "Mint-X/")
  ("/usr/share/" . "icons/")
@@ -98,14 +98,14 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "marzipan/")
+ ("/home/clara/Software/" . "bss/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/clara/Software/marzipan/register/"
- "/home/clara/Software/marzipan/register/ui/"
+ "/home/clara/Software/bss/"
+ "/home/clara/Software/bss/config/"
  "/home/clara/Software/webcastplatform/app/views/layouts/"
  "/home/clara/Software/bss/app/models/"
  "/home/clara/Software/bss/app/views/resources/"
@@ -119,11 +119,12 @@
  "/home/clara/Software/webcastplatform/app/controllers/users/"
  "/home/clara/Software/webcastplatform/spec/requests/"
  "/home/clara/Software/bss/app/controllers/"
- "/home/clara/Software/bss/config/"
  "/home/clara/Software/bss/config/deploy/"
  "/home/clara/Software/wobsites-2017/css/"
  "/home/clara/Software/wobsites-2017/"
  "/home/clara/Software/marzipan/"
+ "/home/clara/Software/marzipan/register/"
+ "/home/clara/Software/marzipan/register/ui/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/"
  "/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/"
@@ -153,14 +154,12 @@
  "/home/clara/Software/webcastplatform/spec/"
  "/home/clara/Software/webcastplatform/db/migrate/"
  "/home/clara/Software/webcastplatform/app/views/admin/users/"
- "/home/clara/Software/bss/app/views/communities/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "marzipan_io.py"
- "dialogs.py"
- "ui.py"
+ ".gitignore"
+ "database.yml"
  "application.html.erb"
  "application_record.rb"
  "resource.rb"
@@ -168,14 +167,11 @@
  "user_activity.rb"
  "user_login.rb"
  "application_controller.rb"
+ "_host_view.html.erb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/marzipan/register/ui/" (23044 52563 689689 181000) "widgets.pyc" "font.pyc" "__init__.py" "layout.py" "colors.py" "widgets.py" "./" "keys.pyc" "dialogs.py" "../" "colors.pyc" "font.py" "__init__.pyc" "layout.pyc" "keys.py" "dialogs.pyc")
-
- ("/home/clara/Software/marzipan/register/" (23044 52466 893736 707000) "db.pyc" ".gitignore" "match.py" "metaphone.py" "register_logging.py" "db.py" "money.py" "cc.pyc" "config.py" "tabutil.pyc" "cc.py" "python-suds-0.4.tar.gz" "./" "logo.pdf" "python-suds-0.4/" "marzipan_io.pyc" "openproduce05.svg" "postscriptbarcode/" "error.py" "match.pyc" "launch.sh" "marzipan.py" "suds/" "metaphone.pyc" "ippay_text.py" "cui.py" "unpaid_tabs.cgi" "../" "tab-history.cgi" "ui.py" "pysimplesoap-1.05a/" "register_logging.pyc" "test_script.py" "money.pyc" "tabutil.py" "straight.flf" "marzipan_io.py" "ui/" "config.py.tmpl" "logo.eps" "apc.py" "config.pyc")
-
  ("/home/clara/Software/webcastplatform/app/views/layouts/" (23036 49812 393462 437000) "mailer.html.erb" "mailer.text.erb" "./" "../" "application.html.erb")
 
  ("/home/clara/Software/webcastplatform/app/" (22840 21821 371406 746000) "models/" "channels/" "controllers/" "./" "helpers/" "views/" "../" "assets/" "mailers/")
@@ -239,6 +235,10 @@
  ("/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/" (23000 64316 156635 202000) "./" "main.xml" "../")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/" (22999 55013 982700 53000) "AndroidManifest.xml" "./" "java/" "../" "res/")
+
+ ("/home/clara/Software/marzipan/register/ui/" (23018 35517 304484 623000) "widgets.pyc" "font.pyc" "__init__.py" "layout.py" "colors.py" "widgets.py" "./" "keys.pyc" "dialogs.py" "../" "colors.pyc" "font.py" "__init__.pyc" "layout.pyc" "keys.py" "dialogs.pyc")
+
+ ("/home/clara/Software/marzipan/register/" (23008 63215 251452 580000) "db.pyc" ".gitignore" "match.py" "metaphone.py" "register_logging.py" "db.py" "money.py" "cc.pyc" "config.py" "tabutil.pyc" "cc.py" "python-suds-0.4.tar.gz" "./" "logo.pdf" "python-suds-0.4/" "marzipan_io.pyc" "openproduce05.svg" "postscriptbarcode/" "error.py" "match.pyc" "launch.sh" "marzipan.py" "suds/" "metaphone.pyc" "ippay_text.py" "cui.py" "unpaid_tabs.cgi" "../" "tab-history.cgi" "ui.py" "pysimplesoap-1.05a/" "register_logging.pyc" "test_script.py" "money.pyc" "tabutil.py" "straight.flf" "marzipan_io.py" "ui/" "config.py.tmpl" "logo.eps" "apc.py" "config.pyc")
 
  ("/home/clara/Software/marzipan/" (23008 63229 283455 966000) "register/" ".gitignore" "README.md" "LICENSE.md" "error" "./" "sample-config/" "web/" "scripts/" "INSTALL.md" "../" "sale_receipt.tex" "sample-data/" ".git/")
 
