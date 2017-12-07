@@ -18,7 +18,7 @@
  ("/home/clara/Software/dilemma/" . "app/")
  ("/home/clara/Software/wobsites-2017/" . "css/")
  ("/home/clara/Software/marzipan/register/" . "ui/")
- ("/home/clara/Software/marzipan/" . "register/")
+ ("/home/clara/Software/marzipan/" . "scripts/")
  ("/home/clara/Software/chicago-neighborhood-map/app/" . "build/")
  ("/etc/apt/" . "sources.list.d/")
  ("/home/clara/Software/webcastplatform/app/assets/javascripts/" . "admin/")
@@ -44,7 +44,7 @@
  ("/home/clara/Software/bss/app/assets/" . "javascripts/")
  ("/home/clara/Software/bss/spec/" . "controllers/")
  ("/home/clara/Software/bss/db/" . "migrate/")
- ("/home/clara/Software/bss/app/views/" . "resources/")
+ ("/home/clara/Software/bss/app/views/" . "blog_posts/")
  ("/home/clara/Software/bss/app/" . "models/")
  ("/home/clara/Software/gilbertandsullivan/wp-content/themes/" . "gs-theme/")
  ("/home/clara/Software/gilbertandsullivan/wp-content/" . "themes/")
@@ -54,7 +54,7 @@
  ("/home/clara/Software/bss/wp-content/themes/twentysixteen/" . "template-parts/")
  ("/home/clara/Software/bss/wp-content/themes/" . "twentysixteen/")
  ("/home/clara/Software/bss/wp-content/" . "themes/")
- ("/home/clara/Software/bss/" . "config/")
+ ("/home/clara/Software/bss/" . "spec/")
  ("/sudo:root@localhost:/etc/apache2/" . "mods-enabled/")
  ("/usr/share/icons/" . "Mint-X/")
  ("/usr/share/" . "icons/")
@@ -107,48 +107,59 @@
  ("/home/clara/Software/dioptrice/" . "spec/")
  ("/home/clara/Software/fotc/app/views/" . "jobs/")
  ("/home/clara/Software/fotc/app/assets/" . "javascripts/")
- ("/home/clara/Software/fotc/app/" . "controllers/")
+ ("/home/clara/Software/fotc/app/" . "models/")
  ("/home/clara/Documents/" . "Parallactic/")
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "treasure-hunt/")
+ ("/home/clara/Software/" . "marzipan/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/marzipan/"
+ "/home/clara/Software/fotc/app/models/"
+ "/home/clara/Software/fotc/app/mailers/"
+ "/home/clara/Software/bss/app/models/"
+ "/home/clara/Software/bss/spec/controllers/"
+ "/home/clara/Software/bss/spec/models/"
+ "/home/clara/Software/bss/app/views/blog_posts/"
+ "/home/clara/Software/bss/app/controllers/"
+ "/home/clara/Software/bss/app/views/resources/"
+ "/home/clara/Software/bss/config/"
+ "/home/clara/Software/bss/"
+ "/home/clara/Software/bss/db/migrate/"
+ "/home/clara/Software/bss/app/views/communities/"
+ "/home/clara/Software/bss/app/views/pages/"
+ "/home/clara/Text/"
  "/home/clara/Software/dilemma/app/models/"
+ "/home/clara/Software/dilemma/app/admin/"
+ "/home/clara/Software/dilemma/config/"
+ "/home/clara/Software/dilemma/app/views/attempts/build/"
+ "/home/clara/Software/dilemma/"
+ "/home/clara/Software/dilemma/app/views/layouts/"
+ "/home/clara/Software/dilemma/db/migrate/"
+ "/home/clara/Software/dilemma/spec/"
+ "/home/clara/Software/dilemma/spec/requests/"
+ "/home/clara/Software/dilemma/app/controllers/attempts/"
+ "/home/clara/Software/dilemma/app/controllers/"
+ "/home/clara/Software/marzipan/register/"
+ "/home/clara/Software/marzipan/register/ui/"
  "/home/clara/Software/treasure-hunt/config/initializers/"
  "/home/clara/Software/treasure-hunt/app/models/"
  "/home/clara/Software/dilemma/config/initializers/"
- "/home/clara/Software/dilemma/app/controllers/"
- "/home/clara/Software/dilemma/"
- "/home/clara/Software/dilemma/spec/requests/"
  "/home/clara/Software/dilemma/spec/controllers/"
- "/home/clara/Software/dilemma/db/migrate/"
- "/home/clara/Software/dilemma/app/controllers/attempts/"
- "/home/clara/Software/dilemma/app/views/attempts/build/"
  "/home/clara/Software/dilemma/app/assets/stylesheets/"
- "/home/clara/Software/dilemma/app/views/layouts/"
  "/home/clara/Software/dilemma/spec/models/"
- "/home/clara/Software/dilemma/spec/"
  "/home/clara/Software/dilemma/spec/factories/"
  "/home/clara/Software/dilemma/app/views/attempts/"
- "/home/clara/Software/dilemma/config/"
  "/home/clara/Software/treasure-hunt/app/controllers/"
  "/home/clara/Software/treasure-hunt/app/admin/"
  "/home/clara/Software/treasure-hunt/app/views/application/"
  "/home/clara/Software/treasure-hunt/app/views/survey_questions/"
  "/home/clara/Software/treasure-hunt/app/views/rooms/"
- "/home/clara/Text/"
- "/home/clara/Software/marzipan/register/"
- "/home/clara/Software/marzipan/register/ui/"
- "/home/clara/Software/bss/"
- "/home/clara/Software/bss/config/"
  "/home/clara/Software/webcastplatform/app/views/layouts/"
- "/home/clara/Software/bss/app/models/"
- "/home/clara/Software/bss/app/views/resources/"
  "/home/clara/Software/webcastplatform/app/models/"
  "/home/clara/Software/webcastplatform/app/controllers/"
  "/home/clara/Software/webcastplatform/app/views/events/"
@@ -157,38 +168,109 @@
  "/home/clara/Software/webcastplatform/config/deploy/"
  "/home/clara/Software/webcastplatform/app/controllers/admin/"
  "/home/clara/Software/webcastplatform/app/controllers/users/"
- "/home/clara/Software/webcastplatform/spec/requests/"
- "/home/clara/Software/bss/app/controllers/"
- "/home/clara/Software/bss/config/deploy/"
- "/home/clara/Software/wobsites-2017/css/"
- "/home/clara/Software/wobsites-2017/"
- "/home/clara/Software/marzipan/"
- "/home/clara/Software/chicago-neighborhood-map/src/main/"
- "/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/"
- "/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/"
- "/home/clara/Software/chicago-neighborhood-map/"
- "/home/clara/Software/bss/config/initializers/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "attempt.rb"
- "active_admin.rb"
- "run.rb"
- "application_controller.rb"
- "user.rb"
- "ability.rb"
- "Gemfile"
- "attempts_spec.rb"
- "attempts_controller_spec.rb"
- "20171128194540_add_numbers.rb"
+ ".gitignore"
+ "INSTALL.md"
+ "job.rb"
+ "job_attachment.rb"
+ "confirmation.rb"
+ "resource.rb"
+ "resources_controller_spec.rb"
+ "community.rb"
+ "resource_spec.rb"
+ "show.html.erb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/dilemma/app/models/concerns/" (23051 21728 822645 797000) "./" "../" ".keep")
+ ("/home/clara/Software/marzipan/" (23081 48405 482654 127000) "register/" ".gitignore" "README.md" "LICENSE.md" "error" "./" "sample-config/" "web/" "scripts/" "INSTALL.md" "../" "sale_receipt.tex" "sample-data/" ".git/")
 
- ("/home/clara/Software/dilemma/config/initializers/" (23069 49724 99981 901000) "inflections.rb" "session_store.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "active_admin.rb" "../" "devise.rb" "cookies_serializer.rb" "assets.rb")
+ ("/home/clara/Software/fotc/app/mailers/" (22787 41721 810683 146000) "./" "../" "confirmation.rb" "invoice_mailer.rb" ".gitkeep")
+
+ ("/home/clara/Software/fotc/app/models/" (22817 57921 302782 904000) "messenger.rb" "work_phone.rb" "category.rb" "note.rb" "homepage_bottom_image.rb" "recommendation.rb" "client.rb" "./" "job_attachment.rb" "weekday.rb" "service_level.rb" "job.rb" "admin.rb" "dispatching_user.rb" "../" "homepage_image.rb" "saved_email.rb" "page.rb" ".gitkeep" "user.rb" "invoice.rb" "saved_company.rb" "market.rb" "link.rb" "recurrence.rb" "photo.rb")
+
+ ("/home/clara/Software/fotc/app/" (22008 34607 908021 0) "models/" "views_mobile/" "controllers/" "./" "helpers/" "views/" "../" "assets/" "mailers/")
+
+ ("/home/clara/Software/fotc/" (23056 28536 994397 203000) "attachments-268" "attachments-270" "log/" ".gitignore" "config/" "*magit: fotc*" "attachments-269" "README" ".watchr" "attachments-267" "tmp/" "dev.sql" "./" "Gemfile.lock" "GRTAGS" "GSYMS" "Gemfile" "public/" "todayjobs.sql" "*magit-commit*" "spec/" "erd.pdf" "../" "app/" ".erdconfig" "coverage/" ".rspec" "db/" "Capfile" "GPATH" "config.ru" "Rakefile" "script/" "GTAGS" ".git/")
+
+ ("/home/clara/Software/bss/app/models/" (23080 27657 612978 149000) "acronym.rb" "category.rb" "topic.rb" "quote.rb" "contact_form.rb" "./" "community.rb" "feature.rb" "author.rb" "announcement.rb" "../" "subresource_relation.rb" "staff.rb" "blog_post.rb" "what_is.rb" "page.rb" "resource.rb" "application_record.rb" "how_to.rb" "event.rb" "contribution.rb" "contribute.rb")
+
+ ("/home/clara/Software/bss/spec/models/" (23080 17138 819527 435000) "resource_spec.rb" "author_spec.rb" "blog_post_spec.rb" "quote_spec.rb" "announcement_spec.rb" "how_to_spec.rb" "./" "category_spec.rb" "what_is_spec.rb" "feature_spec.rb" "../" "subresource_relation_spec.rb" "staff_spec.rb" "contribute_spec.rb" "acronym_spec.rb" "event_spec.rb" "page_spec.rb" "contribution_spec.rb")
+
+ ("/home/clara/Software/bss/spec/requests/" (23027 34510 759481 301000) "contact_form_spec.rb" "./" "../" "contribute_form_spec.rb")
+
+ ("/home/clara/Software/bss/spec/controllers/" (23051 10152 942898 458000) "contributes_controller_spec.rb" "categories_controller_spec.rb" "application_controller_spec.rb" "./" "blog_posts_controller_spec.rb" "pages_controller_spec.rb" "communities_controller_spec.rb" "../" "events_controller_spec.rb" "resources_controller_spec.rb")
+
+ ("/home/clara/Software/dilemma/spec/models/" (23069 50727 27473 648000) "./" "ability_spec.rb" "user_spec.rb" "../" "application_record_spec.rb" "attempt_spec.rb")
+
+ ("/home/clara/Software/dilemma/app/assets/stylesheets/" (23069 63096 997551 257000) "active_admin.scss" "flatly.css" "./" "../" "bootstrap-generators.scss" "bootstrap-variables.scss" "application.scss")
+
+ ("/home/clara/Software/dilemma/config/initializers/" (23069 64006 376335 749000) "inflections.rb" "session_store.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "active_admin.rb" "../" "devise.rb" "cookies_serializer.rb" "assets.rb")
+
+ ("/home/clara/Software/marzipan/register/ui/" (23072 16548 379254 737000) "widgets.pyc" "font.pyc" "__init__.py" "layout.py" "colors.py" "widgets.py" "./" "keys.pyc" "dialogs.py" "../" "colors.pyc" "font.py" "__init__.pyc" "layout.pyc" "keys.py" "dialogs.pyc")
+
+ ("/home/clara/Software/dilemma/spec/requests/" (23073 53823 51756 154000) "./" "../" "attempts_spec.rb")
+
+ ("/home/clara/Software/dilemma/app/models/" (23073 53165 585214 810000) "./" "../" "ability.rb" ".keep" "user.rb" "attempt.rb" "application_record.rb" "concerns/")
+
+ ("/home/clara/Text/" (23073 54479 934305 640000) "polarvortex.or" "steve-case" "op-supplies.dvi" "storage-spec.txt" "lsq-root-pwd" "issuelab.aux" "railsbridge.org" "letter.txt" "desoto.org" "op-supplies.aux" "fotc-meeting" "life.org_archive_archive" "ical.org" "friends.org" "meadowse" "leah" "dioptrice-changes" "badmachine" "timetravel2" "moojo-theme-ideas" "greg" "lsq-bar-notifications-2" "#treasure-hunt-instructions.txt#" "issuelab.org" "Text/" "quaker.txt" "_TZ_8527-meson.log" "read.org" "#ladystuck#" "fotc" "#moojo9.org#" "issuelab.log" "bi.org" "callgov-press" "timesheet.txt" "movie-diary" "hazards-0422" "#resourcebarn2.txt#" "lsq-notes" "readinglist" "#wireframe-draft2-change.org#" "#friends.org#" "nonprofit.org" "railsbridgedogs4.html" "bss-updates~" "#rincewitch#" "waiting" "journals" "#contraceptives#" "videos.org" "lsq-final-draft-response" "test.asc" "bi4.org" "story" "mighty-pages.org" "coastal.txt" "railsbridgedogs3.org" "setlist" "invite" "email" "bojack.org" "#unpage.org#" "action-verbs" "moojo5.org" "life.org_archive" "blurb" "missfont.log" "mauge" "bildungsroman" "ladystuck" "ron-burt" "jobless" "#railsbridgedogs2.org#" "tv.org" "resourcebarn2.txt" "issuelab.out" "#para#" "bss-updates" "move-schedule_archive" "betterhomes.org~" "chaos2" "contraceptives" "railsbridgedogs2.html" "#issuelab.tex#" "coats.org" "motorola" "mechturk" "list.txt" "statement.txt" "timeloop" "lendsquare-launch" "old" "gsoc-instructions.pdf" "homestuck" "#railsbridgedogs4.org#" "lendsquare-actionables" "agendas.org" "#drow.org#" "emails.txt" "gitissues.org" "thanksgiving-list" "railsbridgedogs.html" "mighty-pages.tex" "new" "railsbridgedogs2.org" "nastygram.txt" "rincewitch-ii" "hat-0520" "fotc.org" "para" "#reem#" "chaos" "reem2" "op-supplies.log" "resourcebarn.txt" "phone.org" "movingvan" "clothes.org" "#railsbridgedogs.org#" "lsq-bar-notifications" "packing.org" "mobileorg.org" "good-movies" "#greg#" "stories/" "lendsquare-design-items" "drow.org" "names" "leavitt.org" "scrib.html" "ladystuck.html" "statement.txt~" "shopping.org" "issuelab.tex" "trash.txt" "parallactic" "gsoc-instructions.odt" "life.org" "treasure-hunt-instructions.txt" "seder-menu" "op-supplies.tex" "orgmob" "house.org" "camping.org" "insurance" "hat.org" "timetravel" "intro" "#guestjobs#" "lsq-notes-0401" "mighty-pages.pdf" "labor.txt" "lsq-draft3-notes" "railsbridgedogs4.org" "truisms.txt" "wed.txt" "rincewitch" "week" "move-schedule.org" "unpage.org" "gsoc-instructions.tex" "cinnamon" "para_archive" "logo.png" "#timeloop#" "tools.org" "checksums.dat" "seed.txt" "notes.org" "stuff.org" "Agenda Views" "para0306.org" "moltables" "stuff.txt" "lsq-0626" "orb" "_TZ_8527-meson.tex" "moojo9.org" "fraud" "bi2.org" "sebastian-map-app" "betterhomes.org" "foo" "country.txt" "bi3.org" "issuelab.pdf" "wireframe-draft2-change.org" "foobar" "books.org" "matt-questions" "drive" "#Captures#" "mochabugs.org" "reem-0604" "op-supplies.pdf" "science" "toread.org" "moojo8.org" "timandsarah" "reem" "guestjobs" "movies.org" "index.org" "railsbridgedogs.org" "band-dates.org" "gilman" "../" "./")
+
+ ("/home/clara/Software/bss/db/migrate/" (23079 1545 170643 520000) "20170411191310_create_quotes.rb" "20170307202717_create_how_tos.rb" "20170227230341_add_publish_date.rb" "20170302135609_add_path_to_communities.rb" "20170305193754_add_path_to_events.rb" "20170313195253_change_title_to_name.rb" "20170430203829_add_event_and_blog_ids_to_announcement.rb" "20170223190460_add_missing_taggable_index.acts_as_taggable_on_engine.rb" "20170216194424_create_filters.rb" "20170302133626_add_path_to_categories.rb" "20171205191142_create_subresource_relations.rb" "20170412231702_add_resource_id_to_announcement.rb" "20170807172433_create_acronyms.rb" "20170215234649_create_resources.rb" "20170316191614_add_overview_and_description_to_topic.rb" "20170404161035_add_slug_to_event.rb" "20170320105204_create_events_children_parents.rb" "20170216194409_create_categories.rb" "20170302135355_create_communities.rb" "20170228195032_allow_multiple_parents.rb" "20170307202957_create_what_is.rb" "20170216214926_add_path_to_resource.rb" "20170626163909_create_join_table_resource_community.rb" "20170509175248_add_order_to_categories.rb" "20170531152939_add_avatar_to_author.rb" "20170316182417_resources_topics.rb" "20170223190458_add_missing_unique_indices.acts_as_taggable_on_engine.rb" "20170303005615_add_slugs.rb" "20170223190461_change_collation_for_tag_names.acts_as_taggable_on_engine.rb" "20170404161648_add_slug_to_community.rb" "20170223165134_add_parent_to_resources.rb" "./" "20170307203347_add_paths_to_what_is_and_how_tos.rb" "20170305193412_create_events.rb" "20170517150136_add_affiliation_to_authors.rb" "20170223181509_add_category_id_to_filters.rb" "20170309161835_add_basics_to_category.rb" "20170223190459_add_taggings_counter_cache_to_tags.acts_as_taggable_on_engine.rb" "20170309180945_add_type_to_resources.rb" "20170309213756_clean_up_basics.rb" "20170223180801_add_title_to_resource.rb" "../" "20170412221226_create_announcements.rb" "20170307191402_add_organizers_to_event.rb" "20170316180616_change_filters_to_topics.rb" "20170605175421_rename_description.rb" "20170606191820_add_publish_to_community.rb" "20170223190457_acts_as_taggable_on_migration.acts_as_taggable_on_engine.rb" "20170612153950_add_description_to_category.rb" "20170404160740_add_slug_to_author.rb" "20170301225114_add_path_to_pages.rb" "20171205194716_create_features.rb" "20170302133234_add_description_to_categories.rb" "20170719195939_add_hero_image_url_to_blog_posts.rb" "20170427183735_add_publish_to_page.rb" "20170223190462_add_missing_indexes.acts_as_taggable_on_engine.rb" "20170228184525_multiple_categories.rb" "20170426205854_add_fields_to_authors.rb" "20170301224854_create_pages.rb" "20170314155417_add_aggregate_to_resources.rb" "20171205204624_add_order_fields.rb" "20170303004749_create_friendly_id_slugs.rb" "20171205193531_create_contributions.rb" "20170612173157_add_type_to_author.rb" "20170411190057_add_publish.rb" "20170302154827_add_overview_and_quote_to_categories.rb" "20170510170113_rename_order.rb" "20170221192145_create_authors.rb")
+
+ ("/home/clara/Software/bss/config/" (23079 14667 413090 571000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "sunspot.yml" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
+
+ ("/home/clara/Software/bss/app/views/blog_posts/" (23080 14599 51201 475000) "show.html.erb" "_post.html.erb" "_show_more.html.erb" "./" "../" "index.html.erb")
+
+ ("/home/clara/Software/bss/app/views/resources/" (23080 14146 727832 229000) "index.rss.builder" "show.html.erb" "authors.html.erb" "_breadcrumbs.html.erb" "_tag_cloud.html.erb" "_author.html.erb" "_show_more.html.erb" "./" "_listing.html.erb" "../" "_filter_results.html.erb" "index.js.erb" "index.html.erb" "_resources.html.erb" "_search_result.html.erb")
+
+ ("/home/clara/Software/bss/db/" (23078 63916 714500 254000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
+
+ ("/home/clara/Software/bss/app/controllers/" (23078 60734 483744 414000) "communities_controller.rb" "categories_controller.rb" "blog_posts_controller.rb" "pages_controller.rb" "contributes_controller.rb" "./" "application_controller.rb" "contacts_controller.rb" "../" "events_controller.rb" "resources_controller.rb")
+
+ ("/home/clara/Software/bss/app/views/communities/" (23077 42255 851442 207000) "show.html.erb" "./" "../")
+
+ ("/home/clara/Software/bss/app/views/pages/" (23077 41842 839573 558000) "show.html.erb" "_page.html.erb" "./" "../" "_announcements.html.erb" "_email_signup.html.erb" "_orientation_menu.html.erb")
+
+ ("/home/clara/Software/bss/app/views/contributes/" (22887 44419 191179 201000) "./" "new.html.erb" "../")
+
+ ("/home/clara/Software/bss/spec/" (22812 48595 401705 463000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "views/" "../" "rails_helper.rb" "requests/")
+
+ ("/home/clara/Software/bss/" (23077 36451 575663 885000) "log/" ".gitignore" "README.md" "vendor/" ".rstrip" "bin/" "config/" "tmp/" "solr/" "./" "Gemfile.lock" ".ruby-version" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" ".bundle/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
+
+ ("/home/clara/Software/bss/app/views/" (22841 54114 774167 60000) "resources/" "./" "events/" "blog_posts/" "communities/" "../" "contacts/" "pages/" "layouts/" "contributes/" "categories/")
+
+ ("/home/clara/Software/bss/app/" (22796 44703 672816 768000) "models/" "controllers/" "./" "helpers/" "views/" "../" "assets/")
+
+ ("/home/clara/Software/dilemma/app/admin/" (23073 52673 466327 839000) "./" "dashboard.rb" "../" "user.rb" "attempt.rb")
+
+ ("/home/clara/Software/dilemma/config/" (23073 52383 642978 852000) "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
+
+ ("/home/clara/Software/dilemma/db/" (23073 51695 236769 728000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
+
+ ("/home/clara/Software/dilemma/app/views/attempts/build/" (23073 52237 523623 421000) "first_coop.html.erb" "thanks.html.erb" "second_coop.html.erb" "results.html.erb" "./" "_payoff_table.html.erb" "../" "_form_head.html.erb" "_form_tail.html.erb" "first_intro.html.erb" "name_and_email.html.erb")
+
+ ("/home/clara/Software/dilemma/" (23073 51625 576915 357000) "log/" ".gitignore" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "README.rdoc" "test/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
+
+ ("/home/clara/Software/dilemma/app/views/layouts/" (23073 51340 341507 522000) "./" "../" "application.html.erb")
+
+ ("/home/clara/Software/dilemma/db/migrate/" (23073 50689 150832 350000) "20171114213159_add_devise_to_users.rb" "20171201211322_save_email_confirmation.rb" "20171117182205_create_attempts.rb" "./" "../" "20171128195955_create_active_admin_comments.rb" "20171117175149_add_admin_to_user.rb" "20171127220223_change_opponent_cooperate.rb" "20171114212931_create_users.rb" "20171128194540_add_numbers.rb")
+
+ ("/home/clara/Software/dilemma/spec/" (23072 36389 58730 328000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "../" "rails_helper.rb" "requests/" "routing/")
+
+ ("/home/clara/Software/dilemma/app/controllers/attempts/" (23072 34712 145735 751000) "build_controller.rb" "./" "../")
+
+ ("/home/clara/Software/dilemma/app/controllers/" (23072 33179 985191 763000) "attempts/" "./" "application_controller.rb" "../" "attempts_controller.rb" "concerns/")
+
+ ("/home/clara/Software/dilemma/spec/helpers/" (23055 10466 30373 605000) "./" "attempts_helper_spec.rb" "../")
+
+ ("/home/clara/Software/marzipan/scripts/" (23006 25398 711713 579000) "inventory_count.sh" "./" "../" "setup.sql")
+
+ ("/home/clara/" (23069 60972 891241 432000) ".emulator_console_auth_token" "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" "mat.sav" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" "key.sav" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" "cousins.png" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" "hmm.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" "glass.sav" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" ".gradle/" "watch.sav" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "baby1.jpg" "bandit.txt" "vacant.sav" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" "box.sav" ".homesick/" ".ICEauthority" "ring.sav" "Software/" ".dropbox-dist/" "mono.sav" ".heroku/" "irene.sav" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garden.sav" "cfs2.jpg" "inthepaint.sav" "garglk/" ".gnome/" "takegun.sav")
+
+ ("/home/clara/Software/dilemma/app/models/concerns/" (23051 21728 822645 797000) "./" "../" ".keep")
 
  ("/home/clara/Software/treasure-hunt/config/initializers/" (21961 2903 457033 0) "inflections.rb" "session_store.rb" "wrap_parameters.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "active_admin.rb" "../" "active_record_logger.rb" "devise.rb" "secret_token.rb")
 
@@ -196,13 +278,9 @@
 
  ("/home/clara/Documents/Parallactic/" (23051 5771 941922 211000) "mockup-article.xcf" "gs-contract.pdf" "FOTC Maps U.I..png" "parallactic-logo.eps" "mockup-homepage.jpg" "Mighty Prototype Jan 30_1980.pdf" "adlerLogo.png" "mainstream-embedding.tex" "fotc/" "parallactic_futura.ai" "DRAFT_BSS_LFWF_011117 (1).pdf" "flyer.html" "mainstream-embedding.pdf" "Keystone 600 Master Inventory Document (Autosaved).xlsx" "parallactic-postcard.xcf" "parallactic AWS credentials.csv" "Greenwich Musem Website Whole telescope.jpg" "agency.css" "mockup-individual.jpg" "projects/" "mockup-category.xcf" "mainstream.dvi" "kellogg.gif" "fotc.png" "./" "FOTCLogoAlternate.png" "mockup-category.jpg" "mockup-homepage.xcf" "mainstream-embedding.log" "mighty-nda.pdf" "dioptrice/" "index.html" "shepherdstownfriends.png" "../" "mainstream.log" "uofc.png" "cmog_NewLogo.png" "mockup-individual-continued.xcf" "mainstream.pdf" "bridgedev.png" "mainstream-embedding.aux" "mainstream - parallactic-SIGNED.pdf" "mockup-draft.zip" "wireframes/" "mainstream-embedding-SIGNED.pdf" "Telescope WS Greenwich Cunigham.xlsx" "mit_logo.png" "marketing assets/" "FOTC HP Nov 7.png" "mainstream.tex" "FOTC HP Nov 7 (1).png" "mainstream-embedding.dvi" "gilbertandsullivan.png" "Telescope.WS.Greenwich.Cunigham.xlsx" ".~lock.betatool (copy).odt#" "g&s/" "proposals/" "mockup-artifact.xcf" "DRAFT_BSS_LFWF_011117.pdf")
 
- ("/home/clara/Software/bss/app/views/blog_posts/" (23051 7492 359143 637000) "show.html.erb" "_post.html.erb" "_show_more.html.erb" "./" "../" "index.html.erb")
-
  ("/home/clara/Software/wobsites-2017/" (23051 7552 406851 666000) "index.html.1" "./" "index.html" "../" "css/" "OB" "img/")
 
  ("/home/clara/Software/wobsites-2017/css/" (23051 11667 154927 257000) "./" "../" "main.css")
-
- ("/home/clara/Software/bss/app/controllers/" (23051 9560 112526 266000) "communities_controller.rb" "categories_controller.rb" "blog_posts_controller.rb" "pages_controller.rb" "contributes_controller.rb" "./" "application_controller.rb" "contacts_controller.rb" "../" "events_controller.rb" "resources_controller.rb")
 
  ("/home/clara/Software/webcastplatform/app/controllers/users/" (23045 64645 482254 306000) "passwords_controller.rb" "./" "../" "sessions_controller.rb")
 
@@ -218,55 +296,19 @@
 
  ("/home/clara/Software/webcastplatform/app/models/" (23045 59875 315062 403000) "chat.rb" "user_login.rb" "question.rb" "embed.rb" "chat_message.rb" "question_follow.rb" "survey.rb" "./" "event_embed.rb" "events_user.rb" "user_activity.rb" "survey_answer.rb" "../" "ability.rb" "user.rb" "application_record.rb" "event.rb" "concerns/" "answer.rb")
 
- ("/home/clara/Software/bss/app/views/resources/" (23043 33860 119974 652000) "index.rss.builder" "show.html.erb" "authors.html.erb" "_breadcrumbs.html.erb" "_tag_cloud.html.erb" "_author.html.erb" "_show_more.html.erb" "./" "_listing.html.erb" "../" "_filter_results.html.erb" "index.js.erb" "index.html.erb" "_resources.html.erb" "_search_result.html.erb")
-
- ("/home/clara/Software/bss/app/models/" (23051 10166 322923 343000) "acronym.rb" "category.rb" "topic.rb" "quote.rb" "contact_form.rb" "./" "community.rb" "author.rb" "announcement.rb" "../" "staff.rb" "blog_post.rb" "what_is.rb" "page.rb" "resource.rb" "application_record.rb" "how_to.rb" "event.rb" "contribute.rb")
-
- ("/home/clara/Software/bss/" (23041 58728 914728 626000) "log/" ".gitignore" "README.md" "vendor/" ".rstrip" "bin/" "config/" "tmp/" "solr/" "./" "Gemfile.lock" ".ruby-version" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" ".bundle/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
-
- ("/home/clara/Software/marzipan/register/ui/" (23053 61974 344824 757000) "widgets.pyc" "font.pyc" "__init__.py" "layout.py" "colors.py" "widgets.py" "./" "keys.pyc" "dialogs.py" "../" "colors.pyc" "font.py" "__init__.pyc" "layout.pyc" "keys.py" "dialogs.pyc")
-
- ("/home/clara/Text/" (23068 28342 755056 141000) "polarvortex.or" "steve-case" "op-supplies.dvi" "storage-spec.txt" "lsq-root-pwd" "issuelab.aux" "railsbridge.org" "letter.txt" "desoto.org" "op-supplies.aux" "fotc-meeting" "life.org_archive_archive" "ical.org" "friends.org" "meadowse" "leah" "dioptrice-changes" "badmachine" "timetravel2" "moojo-theme-ideas" "greg" "lsq-bar-notifications-2" "#treasure-hunt-instructions.txt#" "issuelab.org" "Text/" "quaker.txt" "_TZ_8527-meson.log" "read.org" "#ladystuck#" "fotc" "#moojo9.org#" "issuelab.log" "bi.org" "callgov-press" "timesheet.txt" "movie-diary" "hazards-0422" "#resourcebarn2.txt#" "lsq-notes" "readinglist" "#wireframe-draft2-change.org#" "#friends.org#" "nonprofit.org" "railsbridgedogs4.html" "bss-updates~" "#rincewitch#" "waiting" "journals" "#contraceptives#" "videos.org" "lsq-final-draft-response" "test.asc" "bi4.org" "story" "mighty-pages.org" "coastal.txt" "railsbridgedogs3.org" "setlist" "invite" "email" "bojack.org" "#unpage.org#" "action-verbs" "moojo5.org" "life.org_archive" "blurb" "missfont.log" "mauge" "bildungsroman" "ladystuck" "ron-burt" "jobless" "#railsbridgedogs2.org#" "tv.org" "resourcebarn2.txt" "issuelab.out" "#para#" "bss-updates" "move-schedule_archive" "betterhomes.org~" "chaos2" "contraceptives" "railsbridgedogs2.html" "#issuelab.tex#" "coats.org" "motorola" "mechturk" "list.txt" "statement.txt" "timeloop" "lendsquare-launch" "old" "gsoc-instructions.pdf" "homestuck" "#railsbridgedogs4.org#" "lendsquare-actionables" "agendas.org" "#drow.org#" "emails.txt" "gitissues.org" "thanksgiving-list" "railsbridgedogs.html" "mighty-pages.tex" "new" "railsbridgedogs2.org" "nastygram.txt" "rincewitch-ii" "hat-0520" "fotc.org" "para" "#reem#" "chaos" "reem2" "op-supplies.log" "resourcebarn.txt" "phone.org" "movingvan" "clothes.org" "#railsbridgedogs.org#" "lsq-bar-notifications" "packing.org" "mobileorg.org" "good-movies" "#greg#" "stories/" "lendsquare-design-items" "drow.org" "names" "leavitt.org" "scrib.html" "ladystuck.html" "statement.txt~" "shopping.org" "issuelab.tex" "trash.txt" "parallactic" "gsoc-instructions.odt" "life.org" "treasure-hunt-instructions.txt" "seder-menu" "op-supplies.tex" "orgmob" "house.org" "camping.org" "insurance" "hat.org" "timetravel" "intro" "#guestjobs#" "lsq-notes-0401" "mighty-pages.pdf" "labor.txt" "lsq-draft3-notes" "railsbridgedogs4.org" "truisms.txt" "wed.txt" "rincewitch" "week" "move-schedule.org" "unpage.org" "gsoc-instructions.tex" "cinnamon" "para_archive" "logo.png" "#timeloop#" "tools.org" "checksums.dat" "seed.txt" "notes.org" "stuff.org" "Agenda Views" "para0306.org" "moltables" "stuff.txt" "lsq-0626" "orb" "_TZ_8527-meson.tex" "moojo9.org" "fraud" "bi2.org" "sebastian-map-app" "betterhomes.org" "foo" "country.txt" "bi3.org" "issuelab.pdf" "wireframe-draft2-change.org" "foobar" "books.org" "matt-questions" "drive" "#Captures#" "mochabugs.org" "reem-0604" "op-supplies.pdf" "science" "toread.org" "moojo8.org" "timandsarah" "reem" "guestjobs" "movies.org" "index.org" "railsbridgedogs.org" "band-dates.org" "gilman" "../" "./")
-
  ("/home/clara/Software/treasure-hunt/app/models/" (23068 34116 948270 498000) "admin_user.rb" "answer_choice.rb" "color.rb" "./" "map.rb" "game.rb" "survey_answer.rb" "../" "question_group.rb" "shape.rb" "room.rb" ".gitkeep" "user_session.rb" "survey_question.rb" "run.rb")
-
- ("/home/clara/Software/dilemma/app/assets/stylesheets/" (23069 49211 896779 365000) "active_admin.scss" "flatly.css" "./" "../" "bootstrap-generators.scss" "bootstrap-variables.scss" "application.scss")
-
- ("/home/clara/Software/dilemma/db/migrate/" (23069 49211 908779 343000) "20171114213159_add_devise_to_users.rb" "20171117182205_create_attempts.rb" "./" "../" "20171128195955_create_active_admin_comments.rb" "20171117175149_add_admin_to_user.rb" "20171127220223_change_opponent_cooperate.rb" "20171114212931_create_users.rb" "20171128194540_add_numbers.rb")
-
- ("/home/clara/Software/dilemma/app/controllers/" (23069 49550 612176 792000) "attempts/" "./" "application_controller.rb" "../" "attempts_controller.rb" "concerns/")
-
- ("/home/clara/Software/dilemma/app/models/" (23069 49446 272364 245000) "./" "../" "ability.rb" ".keep" "user.rb" "attempt.rb" "application_record.rb" "concerns/")
 
  ("/home/clara/Software/dilemma/app/" (23069 49209 952782 772000) "models/" "controllers/" "./" "helpers/" "admin/" "views/" "../" "assets/" "mailers/")
 
- ("/home/clara/Software/dilemma/" (23069 49194 368810 69000) "log/" ".gitignore" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "Gemfile" "public/" "spec/" "README.rdoc" "test/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "config.ru" "Rakefile" ".git/")
-
- ("/home/clara/Software/dilemma/spec/requests/" (23069 49157 528874 443000) "./" "../" "attempts_spec.rb")
-
- ("/home/clara/Software/dilemma/db/" (23069 48000 394775 726000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
-
- ("/home/clara/Software/dilemma/app/controllers/attempts/" (23069 48327 58264 414000) "build_controller.rb" "./" "../")
-
- ("/home/clara/Software/dilemma/app/views/attempts/build/" (23069 47996 70782 347000) "first_coop.html.erb" "second_coop.html.erb" "results.html.erb" "./" "_payoff_table.html.erb" "../" "_form_head.html.erb" "_form_tail.html.erb" "first_intro.html.erb" "name_and_email.html.erb")
-
  ("/home/clara/Software/dilemma/app/assets/" (23051 21728 822645 797000) "./" "javascripts/" "../" "stylesheets/" "images/")
 
- ("/home/clara/Software/dilemma/app/views/layouts/" (23069 45769 234531 420000) "./" "../" "application.html.erb")
-
  ("/home/clara/Software/dilemma/app/mailers/" (23051 21728 822645 797000) "./" "../" ".keep")
-
- ("/home/clara/Software/dilemma/spec/models/" (23068 31551 901158 389000) "./" "ability_spec.rb" "user_spec.rb" "../" "application_record_spec.rb" "attempt_spec.rb")
-
- ("/home/clara/Software/dilemma/spec/" (23068 31535 229192 621000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "../" "rails_helper.rb" "requests/" "routing/")
 
  ("/home/clara/Software/dilemma/spec/factories/" (23068 31442 577383 517000) "abilities.rb" "attempts.rb" "./" "../" "users.rb" "application_records.rb")
 
  ("/home/clara/Software/dilemma/spec/controllers/" (23068 31090 922118 648000) "attempts_controller_spec.rb" "./" "../")
 
  ("/home/clara/Software/dilemma/app/views/attempts/" (23068 29982 800430 592000) "show.html.erb" "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "../" "index.html.erb" "build/")
-
- ("/home/clara/Software/dilemma/config/" (23068 29464 369246 761000) "routes.rb" "environment.rb" "./" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
 
  ("/home/clara/Software/treasure-hunt/app/controllers/" (22157 41245 672665 0) "shapes_controller.rb" "rooms_controller.rb" "games_controller.rb" "./" "colors_controller.rb" "application_controller.rb" "runs_controller.rb" "../" "survey_questions_controller.rb")
 
@@ -283,8 +325,6 @@
  ("/home/clara/Software/treasure-hunt/app/" (21961 2903 457033 0) "models/" "controllers/" "./" "helpers/" "admin/" "views/" "../" "assets/" "mailers/")
 
  ("/home/clara/Software/treasure-hunt/" (22235 23014 276567 0) "log/" ".gitignore" "vendor/" "config/" "tmp/" "./" "Gemfile.lock" "doc/" "Gemfile" "public/" "spec/" "README.rdoc" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" "script/" "autotest/" ".git/")
-
- ("/home/clara/" (23059 20808 539548 720000) ".emulator_console_auth_token" "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" "mat.sav" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" "key.sav" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" "cousins.png" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" "hmm.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" "glass.sav" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" ".gradle/" "watch.sav" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "baby1.jpg" "bandit.txt" "vacant.sav" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" "box.sav" ".homesick/" ".ICEauthority" "ring.sav" "Software/" ".dropbox-dist/" "mono.sav" ".heroku/" "irene.sav" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garden.sav" "cfs2.jpg" "inthepaint.sav" "garglk/" ".gnome/" "takegun.sav")
 
  ("/home/clara/Software/dilemma/app/views/" (23055 10465 994373 669000) "attempts/" "./" "../" "devise/" "layouts/")
 
@@ -306,8 +346,6 @@
 
  ("/home/clara/Software/webcastplatform/db/migrate/" (23031 36023 158149 521000) "20170213074659_create_questions.rb" "20170220235035_create_question_follows.rb" "20170209150746_add_parent_id_to_chat_messages.rb" "20170113171007_add_chat_room_to_user_activities.rb" "20170128020917_add_has_ended_to_events.rb" "20170224143358_add_user_agent_to_user_activities.rb" "20170209151746_add_is_deleted_to_chat_messages.rb" "20170711161127_add_url_to_embed.rb" "20161213220928_create_events.rb" "20171030203359_devise_create_user_logins.rb" "20170607194134_add_devise_to_users.rb" "20170112001028_add_user_id_and_message_to_chat_messages.rb" "20170201163031_add_thumbnails_to_events.rb" "20170213075236_create_survey_answers.rb" "20170224151211_add_last_contacted_to_user_activities.rb" "./" "20170721152828_add_attachment_background_image_to_embeds.rb" "20170213074722_create_answers.rb" "20170213075113_create_surveys.rb" "20170112041531_create_events_users.rb" "20170112000952_create_chat_messages.rb" "20170220194522_add_event_id_to_questions.rb" "20170116192628_create_event_embeds.rb" "20170725164510_add_disable_chat.rb" "../" "20161212214927_create_users.rb" "20170127143639_add_is_admin_to_users.rb" "20170710192125_create_embeds.rb" "20170120100209_add_slug_en_to_events.rb" "20170112000935_create_chats.rb" "20170201163951_add_attachment_thumbnail_to_events.rb" "20170105060544_create_user_activities.rb" "20170127033652_add_is_moderator_to_events_user.rb" "20170113171356_add_chat_id_to_user_activities.rb")
 
- ("/home/clara/Software/bss/app/views/pages/" (22989 7193 108674 329000) "show.html.erb" "_page.html.erb" "./" "../" "_announcements.html.erb" "_email_signup.html.erb" "_orientation_menu.html.erb")
-
  ("/home/clara/Software/bss/app/views/layouts/" (23026 24479 788982 102000) "mailer.html.erb" "mailer.text.erb" "_navbar.html.erb" "./" "_footer.html.erb" "../" "_flash.html.erb" "application.html.erb" "_share.html.erb" "_dropdowns.html.erb")
 
  ("/home/clara/Software/webcastplatform/app/assets/javascripts/channels/" (22910 28139 970511 204000) "./" "../" ".keep" "chats.coffee")
@@ -326,10 +364,6 @@
 
  ("/home/clara/Software/webcastplatform/app/assets/javascripts/" (22915 41919 983666 918000) "cable.js" "chat_messages.coffee" "application.js" "channels/" "jquery.fontselect.min.js" "user_activities.coffee" "./" "admin/" "admin.js.coffee" "../" "chats.coffee" "#chats.coffee#")
 
- ("/home/clara/Software/bss/db/migrate/" (23027 33442 923362 73000) "20170411191310_create_quotes.rb" "20170307202717_create_how_tos.rb" "20170227230341_add_publish_date.rb" "20170302135609_add_path_to_communities.rb" "20170305193754_add_path_to_events.rb" "20170313195253_change_title_to_name.rb" "20170430203829_add_event_and_blog_ids_to_announcement.rb" "20170223190460_add_missing_taggable_index.acts_as_taggable_on_engine.rb" "20170216194424_create_filters.rb" "20170302133626_add_path_to_categories.rb" "20170412231702_add_resource_id_to_announcement.rb" "20170807172433_create_acronyms.rb" "20170215234649_create_resources.rb" "20170316191614_add_overview_and_description_to_topic.rb" "20170404161035_add_slug_to_event.rb" "20170320105204_create_events_children_parents.rb" "20170216194409_create_categories.rb" "20170302135355_create_communities.rb" "20170228195032_allow_multiple_parents.rb" "20170307202957_create_what_is.rb" "20170216214926_add_path_to_resource.rb" "20170626163909_create_join_table_resource_community.rb" "20170509175248_add_order_to_categories.rb" "20170531152939_add_avatar_to_author.rb" "20170316182417_resources_topics.rb" "20170223190458_add_missing_unique_indices.acts_as_taggable_on_engine.rb" "20170303005615_add_slugs.rb" "20170223190461_change_collation_for_tag_names.acts_as_taggable_on_engine.rb" "20170404161648_add_slug_to_community.rb" "20170223165134_add_parent_to_resources.rb" "./" "20170307203347_add_paths_to_what_is_and_how_tos.rb" "20170305193412_create_events.rb" "20170517150136_add_affiliation_to_authors.rb" "20170223181509_add_category_id_to_filters.rb" "20170309161835_add_basics_to_category.rb" "20170223190459_add_taggings_counter_cache_to_tags.acts_as_taggable_on_engine.rb" "20170309180945_add_type_to_resources.rb" "20170309213756_clean_up_basics.rb" "20170223180801_add_title_to_resource.rb" "../" "20170412221226_create_announcements.rb" "20170307191402_add_organizers_to_event.rb" "20170316180616_change_filters_to_topics.rb" "20170605175421_rename_description.rb" "20170606191820_add_publish_to_community.rb" "20170223190457_acts_as_taggable_on_migration.acts_as_taggable_on_engine.rb" "20170612153950_add_description_to_category.rb" "20170404160740_add_slug_to_author.rb" "20170301225114_add_path_to_pages.rb" "20170302133234_add_description_to_categories.rb" "20170719195939_add_hero_image_url_to_blog_posts.rb" "20170427183735_add_publish_to_page.rb" "20170223190462_add_missing_indexes.acts_as_taggable_on_engine.rb" "20170228184525_multiple_categories.rb" "20170426205854_add_fields_to_authors.rb" "20170301224854_create_pages.rb" "20170314155417_add_aggregate_to_resources.rb" "20170303004749_create_friendly_id_slugs.rb" "20170612173157_add_type_to_author.rb" "20170411190057_add_publish.rb" "20170302154827_add_overview_and_quote_to_categories.rb" "20170510170113_rename_order.rb" "20170221192145_create_authors.rb")
-
- ("/home/clara/Software/bss/spec/controllers/" (23027 34510 755481 299000) "contributes_controller_spec.rb" "categories_controller_spec.rb" "application_controller_spec.rb" "./" "blog_posts_controller_spec.rb" "pages_controller_spec.rb" "communities_controller_spec.rb" "../" "events_controller_spec.rb" "resources_controller_spec.rb")
-
  ("/home/clara/Software/chicago-neighborhood-map/" (23000 64882 464481 6000) "google-play-services_lib/" "bin/" "proguard-project.txt" ".idea/" "project.properties" "gradlew" "src/" "./" "google_play_services/" "gradle/" "gradlew.bat" "../" "assets/" "app/" "build.gradle" "neighbs/" "chicago-neighborhood-map.iml" "libs/" "parts/" ".gradle/" "build/" "local.properties" "gen/" ".git/")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/chicagomap/" (23015 34843 423901 91000) "MainActivity.java" "PermissionUtils.java" "./" "../" "ChicagoNeighborhoodMap.java")
@@ -338,13 +372,9 @@
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/" (22999 55013 982700 53000) "AndroidManifest.xml" "./" "java/" "../" "res/")
 
- ("/home/clara/Software/marzipan/" (23008 63229 283455 966000) "register/" ".gitignore" "README.md" "LICENSE.md" "error" "./" "sample-config/" "web/" "scripts/" "INSTALL.md" "../" "sale_receipt.tex" "sample-data/" ".git/")
-
  ("/home/clara/Software/webcastplatform/spec/requests/" (23031 34067 906301 25000) "./" "embeds_spec.rb" "../" "sign_in_spec.rb")
 
  ("/home/clara/Software/bss/config/deploy/" (22922 4362 102340 218000) "./" "../" "staging.rb" "production.rb")
-
- ("/home/clara/Software/bss/config/" (23027 35171 463796 165000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "sunspot.yml" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
 
  ("/home/clara/Software/chicago-neighborhood-map/app/build/" (22287 62018 306699 0) "reports/" "test-results/" "tmp/" "./" "intermediates/" "../" "generated/" "outputs/")
 
@@ -355,36 +385,6 @@
  ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/" (22287 60119 113744 0) "./" "../" "parallactic/")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/java/" (22287 60116 637679 0) "com/" "./" "../")
-
- ("/home/clara/Software/chicago-neighborhood-map/src/main/res/" (22287 56401 28933 0) "drawable-ldpi/" "drawable-mdpi/" "raw/" "./" "drawable-hdpi/" "../" "values/" "drawable-xhdpi/" "layout/")
-
- ("/home/clara/Software/chicago-neighborhood-map/src/" (22523 57993 301629 708000) "debug/" "./" "../" "main/" ".gradle/")
-
- ("/home/clara/Software/bss/config/initializers/" (22920 42661 540441 775000) "inflections.rb" "session_store.rb" "friendly_id.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "hashie.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "new_framework_defaults.rb" "../" "cookies_serializer.rb" "application_controller_renderer.rb" "simple_form.rb" "assets.rb")
-
- ("/home/clara/Documents/" (22933 63192 522796 20000) "Moomers Journal/" "Archives/" "malka/" "Parallactic/" "./" "dd/" "Screenshot from 2017-08-17 15-04-34.png" "../" "bkgrnds/" "fambly/" "Admin/" "Other/")
-
- ("/etc/apt/sources.list.d/" (22968 8918 423437 793000) "videolan-master-daily-xenial.list" "google-chrome.list" "../" "spotify.list" "ubuntu-audio-dev-alsa-daily-xenial.list" "brightbox-ruby-ng-experimental-xenial.list" "heroku.list" "teejee2008-ppa-xenial.list" "scribus-ppa-xenial.list" "bitcoin-bitcoin-xenial.list" "./" "official-package-repositories.list" "arc-theme.list" "wireframesketcher.list" "noobslab-themes-xenial.list")
-
- ("/etc/apt/" (22968 8918 423437 793000) "sources.list.d/" "preferences.d/" "trusted.gpg" "../" "trusted.gpg.d/" "apt.conf.d/" "sources.list" "./" "trusted.gpg~")
-
- ("/home/clara/Software/bss/db/" (22920 40127 405333 267000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
-
- ("/home/clara/Software/webcastplatform/config/environments/" (22916 42575 822915 808000) "./" "../" "staging.rb" "production.rb" "test.rb" "development.rb")
-
- ("/home/clara/Software/webcastplatform/spec/controllers/" (22915 17724 697649 269000) "user_activities_controller_spec.rb" "embeds_controller_spec.rb" "users_controller_spec.rb" "./" "../" "events_controller_spec.rb" "chat_messages_controller_spec.rb" "admin_controller_spec.rb" "chats_controller_spec.rb")
-
- ("/home/clara/Software/webcastplatform/app/views/devise/sessions/" (22915 17392 5605 201000) "./" "new.html.erb" "../")
-
- ("/home/clara/Software/webcastplatform/app/helpers/" (22910 28140 10511 200000) "embeds_helper.rb" "./" "application_helper.rb" "../" "chats_helper.rb")
-
- ("/home/clara/Software/webcastplatform/app/channels/application_cable/" (22910 28140 22511 197000) "connection.rb" "./" "../" "channel.rb")
-
- ("/home/clara/Software/webcastplatform/app/channels/" (22910 28140 26511 197000) "./" "../" "chats_channel.rb" "application_cable/")
-
- ("/home/clara/Software/webcastplatform/app/controllers/concerns/" (22910 28140 14511 198000) "./" "../" ".keep")
-
- ("/home/clara/Software/webcastplatform/spec/" (22910 28140 318511 162000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "views/" "../" "rails_helper.rb" "requests/" "fixtures/" "routing/")
 )
 
 ;; ----- ido-unc-hosts-cache -----
