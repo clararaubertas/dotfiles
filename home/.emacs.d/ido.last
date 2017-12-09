@@ -41,11 +41,11 @@
  ("/home/clara/Software/calling-congress/db/" . "migrate/")
  ("/home/clara/Software/calling-congress/app/views/calling_scripts/" . "buttons/")
  ("/home/clara/Software/bss/config/" . "deploy/")
- ("/home/clara/Software/bss/app/assets/" . "javascripts/")
- ("/home/clara/Software/bss/spec/" . "controllers/")
+ ("/home/clara/Software/bss/app/assets/" . "stylesheets/")
+ ("/home/clara/Software/bss/spec/" . "models/")
  ("/home/clara/Software/bss/db/" . "migrate/")
  ("/home/clara/Software/bss/app/views/" . "blog_posts/")
- ("/home/clara/Software/bss/app/" . "models/")
+ ("/home/clara/Software/bss/app/" . "assets/")
  ("/home/clara/Software/gilbertandsullivan/wp-content/themes/" . "gs-theme/")
  ("/home/clara/Software/gilbertandsullivan/wp-content/" . "themes/")
  ("/home/clara/Software/gilbertandsullivan/" . "wp-content/")
@@ -54,7 +54,7 @@
  ("/home/clara/Software/bss/wp-content/themes/twentysixteen/" . "template-parts/")
  ("/home/clara/Software/bss/wp-content/themes/" . "twentysixteen/")
  ("/home/clara/Software/bss/wp-content/" . "themes/")
- ("/home/clara/Software/bss/" . "spec/")
+ ("/home/clara/Software/bss/" . "app/")
  ("/sudo:root@localhost:/etc/apache2/" . "mods-enabled/")
  ("/usr/share/icons/" . "Mint-X/")
  ("/usr/share/" . "icons/")
@@ -112,18 +112,19 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "marzipan/")
+ ("/home/clara/Software/" . "bss/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/bss/app/assets/stylesheets/"
+ "/home/clara/Software/bss/app/models/"
+ "/home/clara/Software/bss/spec/models/"
  "/home/clara/Software/marzipan/"
  "/home/clara/Software/fotc/app/models/"
  "/home/clara/Software/fotc/app/mailers/"
- "/home/clara/Software/bss/app/models/"
  "/home/clara/Software/bss/spec/controllers/"
- "/home/clara/Software/bss/spec/models/"
  "/home/clara/Software/bss/app/views/blog_posts/"
  "/home/clara/Software/bss/app/controllers/"
  "/home/clara/Software/bss/app/views/resources/"
@@ -167,26 +168,37 @@
  "/home/clara/Software/webcastplatform/"
  "/home/clara/Software/webcastplatform/config/deploy/"
  "/home/clara/Software/webcastplatform/app/controllers/admin/"
- "/home/clara/Software/webcastplatform/app/controllers/users/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "_resources.scss"
+ "application.scss"
+ "_blog.scss"
+ "application_record.rb"
+ "resource.rb"
+ "resource_spec.rb"
  ".gitignore"
  "INSTALL.md"
  "job.rb"
  "job_attachment.rb"
- "confirmation.rb"
- "resource.rb"
- "resources_controller_spec.rb"
- "community.rb"
- "resource_spec.rb"
- "show.html.erb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/marzipan/" (23081 48405 482654 127000) "register/" ".gitignore" "README.md" "LICENSE.md" "error" "./" "sample-config/" "web/" "scripts/" "INSTALL.md" "../" "sale_receipt.tex" "sample-data/" ".git/")
+ ("/home/clara/Software/bss/app/assets/stylesheets/" (23082 60260 786496 333000) "_adaptive.scss" "_sharing.scss" "_events-communities.scss" "_blog.scss" "./" "_resources.scss" "../" "_colors.scss" "_wells.scss" "_search.scss" "_forms.scss" "index.php" "_mixins.scss" "_hero.scss" "_nav.scss" "_home.scss" "_pages.scss" "application.scss" "_global.scss")
+
+ ("/home/clara/Software/bss/app/assets/" (22692 58817 641752 651000) "config/" "./" "javascripts/" "../" "stylesheets/" "images/")
+
+ ("/home/clara/Software/bss/app/models/" (23082 59952 282913 911000) "acronym.rb" "category.rb" "topic.rb" "quote.rb" "contact_form.rb" "./" "community.rb" "feature.rb" "author.rb" "announcement.rb" "../" "subresource_relation.rb" "staff.rb" "blog_post.rb" "what_is.rb" "page.rb" "resource.rb" "application_record.rb" "how_to.rb" "event.rb" "contribution.rb" "contribute.rb")
+
+ ("/home/clara/Software/bss/spec/controllers/" (23080 23818 749734 434000) "contributes_controller_spec.rb" "categories_controller_spec.rb" "application_controller_spec.rb" "./" "blog_posts_controller_spec.rb" "pages_controller_spec.rb" "communities_controller_spec.rb" "../" "events_controller_spec.rb" "resources_controller_spec.rb")
+
+ ("/home/clara/Software/marzipan/" (23081 48593 22324 683000) "register/" ".gitignore" "README.md" "LICENSE.md" "error" "./" "sample-config/" "web/" "scripts/" "INSTALL.md" "../" "sale_receipt.tex" "sample-data/" ".git/")
+
+ ("/home/clara/Software/bss/spec/models/" (23081 51515 80498 984000) "resource_spec.rb" "author_spec.rb" "blog_post_spec.rb" "quote_spec.rb" "announcement_spec.rb" "how_to_spec.rb" "./" "category_spec.rb" "what_is_spec.rb" "feature_spec.rb" "../" "subresource_relation_spec.rb" "staff_spec.rb" "contribute_spec.rb" "acronym_spec.rb" "event_spec.rb" "page_spec.rb" "contribution_spec.rb")
+
+ ("/home/clara/" (23080 27458 789235 886000) ".emulator_console_auth_token" "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" "mat.sav" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" "key.sav" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" "cousins.png" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" "hmm.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" "glass.sav" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" ".gradle/" "watch.sav" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "baby1.jpg" "bandit.txt" "vacant.sav" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" "box.sav" ".homesick/" ".ICEauthority" "ring.sav" "Software/" ".dropbox-dist/" "mono.sav" ".heroku/" "irene.sav" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garden.sav" "cfs2.jpg" "inthepaint.sav" "garglk/" ".gnome/" "takegun.sav")
 
  ("/home/clara/Software/fotc/app/mailers/" (22787 41721 810683 146000) "./" "../" "confirmation.rb" "invoice_mailer.rb" ".gitkeep")
 
@@ -196,13 +208,7 @@
 
  ("/home/clara/Software/fotc/" (23056 28536 994397 203000) "attachments-268" "attachments-270" "log/" ".gitignore" "config/" "*magit: fotc*" "attachments-269" "README" ".watchr" "attachments-267" "tmp/" "dev.sql" "./" "Gemfile.lock" "GRTAGS" "GSYMS" "Gemfile" "public/" "todayjobs.sql" "*magit-commit*" "spec/" "erd.pdf" "../" "app/" ".erdconfig" "coverage/" ".rspec" "db/" "Capfile" "GPATH" "config.ru" "Rakefile" "script/" "GTAGS" ".git/")
 
- ("/home/clara/Software/bss/app/models/" (23080 27657 612978 149000) "acronym.rb" "category.rb" "topic.rb" "quote.rb" "contact_form.rb" "./" "community.rb" "feature.rb" "author.rb" "announcement.rb" "../" "subresource_relation.rb" "staff.rb" "blog_post.rb" "what_is.rb" "page.rb" "resource.rb" "application_record.rb" "how_to.rb" "event.rb" "contribution.rb" "contribute.rb")
-
- ("/home/clara/Software/bss/spec/models/" (23080 17138 819527 435000) "resource_spec.rb" "author_spec.rb" "blog_post_spec.rb" "quote_spec.rb" "announcement_spec.rb" "how_to_spec.rb" "./" "category_spec.rb" "what_is_spec.rb" "feature_spec.rb" "../" "subresource_relation_spec.rb" "staff_spec.rb" "contribute_spec.rb" "acronym_spec.rb" "event_spec.rb" "page_spec.rb" "contribution_spec.rb")
-
  ("/home/clara/Software/bss/spec/requests/" (23027 34510 759481 301000) "contact_form_spec.rb" "./" "../" "contribute_form_spec.rb")
-
- ("/home/clara/Software/bss/spec/controllers/" (23051 10152 942898 458000) "contributes_controller_spec.rb" "categories_controller_spec.rb" "application_controller_spec.rb" "./" "blog_posts_controller_spec.rb" "pages_controller_spec.rb" "communities_controller_spec.rb" "../" "events_controller_spec.rb" "resources_controller_spec.rb")
 
  ("/home/clara/Software/dilemma/spec/models/" (23069 50727 27473 648000) "./" "ability_spec.rb" "user_spec.rb" "../" "application_record_spec.rb" "attempt_spec.rb")
 
@@ -267,8 +273,6 @@
  ("/home/clara/Software/dilemma/spec/helpers/" (23055 10466 30373 605000) "./" "attempts_helper_spec.rb" "../")
 
  ("/home/clara/Software/marzipan/scripts/" (23006 25398 711713 579000) "inventory_count.sh" "./" "../" "setup.sql")
-
- ("/home/clara/" (23069 60972 891241 432000) ".emulator_console_auth_token" "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" "mat.sav" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" "key.sav" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" "cousins.png" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" "hmm.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" "glass.sav" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" ".gradle/" "watch.sav" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "baby1.jpg" "bandit.txt" "vacant.sav" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" "box.sav" ".homesick/" ".ICEauthority" "ring.sav" "Software/" ".dropbox-dist/" "mono.sav" ".heroku/" "irene.sav" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garden.sav" "cfs2.jpg" "inthepaint.sav" "garglk/" ".gnome/" "takegun.sav")
 
  ("/home/clara/Software/dilemma/app/models/concerns/" (23051 21728 822645 797000) "./" "../" ".keep")
 
@@ -381,10 +385,6 @@
  ("/home/clara/Software/chicago-neighborhood-map/app/" (22523 65319 955199 490000) "settings.gradle" "./" "gradlew.bat" "../" "build.gradle" ".gradle/" "build/" "local.properties")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/parallactic/" (22287 60121 157798 0) "chicagomap/" "./" "../")
-
- ("/home/clara/Software/chicago-neighborhood-map/src/main/java/com/" (22287 60119 113744 0) "./" "../" "parallactic/")
-
- ("/home/clara/Software/chicago-neighborhood-map/src/main/java/" (22287 60116 637679 0) "com/" "./" "../")
 )
 
 ;; ----- ido-unc-hosts-cache -----
