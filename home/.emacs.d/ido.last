@@ -113,11 +113,12 @@
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "app/")
  ("/home/clara/Software/" . "dilemma/")
- ("/home/clara/" . "Software/")
+ ("/home/clara/" . "Documents/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Documents/Parallactic/"
  "/home/clara/Software/dilemma/spec/features/"
  "/home/clara/Software/dilemma/spec/controllers/admin/"
  "/home/clara/Software/dilemma/app/models/"
@@ -167,11 +168,11 @@
  "/home/clara/Software/webcastplatform/app/models/"
  "/home/clara/Software/webcastplatform/app/controllers/"
  "/home/clara/Software/webcastplatform/app/views/events/"
- "/home/clara/Software/webcastplatform/config/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "mainstream-feeds.tex"
  "attempts.rb"
  "attempts_controller_spec.rb"
  "attempt.rb"
@@ -181,14 +182,17 @@
  "labor.txt"
  "_resources.scss"
  "application.scss"
- "_blog.scss"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/.local/share/MotionPro/Log/" (23101 30582 532157 688000) "MotionPro_2017_12_22.log" "./" "../")
+ ("/home/clara/Documents/Parallactic/" (23101 13695 682807 302000) "mockup-article.xcf" "gs-contract.pdf" "FOTC Maps U.I..png" "parallactic-logo.eps" "Parallactic Consulting - Chicago Web Development & Custom Programming.pdf" "mockup-homepage.jpg" "Mighty Prototype Jan 30_1980.pdf" "op.png" "adlerLogo.png" "dioptrice.png" "mainstream-embedding.tex" "fotc/" "parallactic_futura.ai" "DRAFT_BSS_LFWF_011117 (1).pdf" "PDG_screen.pptx (1).pdf" "flyer.html" "mainstream-updates-october.pdf" "dioptrice-7fefc7741724c91ba56a3e2b4d7eb9faeac11f8bfa847dafbc42910c09e8d2a4.png" "mainstream-embedding.pdf" "catalog.jpg" "fotc-scrt.png" "Keystone 600 Master Inventory Document (Autosaved).xlsx" "Screenshot from 2017-07-24 09-22-37.png" "parallactic-postcard.xcf" "Mainstream and Noah.csv" "parallactic AWS credentials.csv" "Greenwich Musem Website Whole telescope.jpg" "cailla1.png" "agency.css" "id_rsa.pub" "parallactic.pdf" "logo (1).png" "dioptrice (1).png" "mockup-individual.jpg" "projects/" "mockup-category.xcf" "mainstream.dvi" "parallactic hourly contract.pdf" "kellogg.gif" "fotc.png" "index_files/" "logo-dark.png" "mainstream-feeds.tex" "./" "FOTCLogoAlternate.png" "parallactic-flyer.jpg" "mainstream-feeds.aux" "mockup-category.jpg" "survey-screenshot (1).png" "mockup-homepage.xcf" "mainstream-embedding.log" "mainstream-feeds.pdf" "mighty-nda.pdf" "JIExm1Fq_400x400.png" "dioptrice/" "dioptrice (1) (1).png" "post-soviet-development-proposal.pdf" "index.html" "shepherdstownfriends.png" "../" "city.jpg" "mainstream.log" "crd-logo.png" "uofc.png" "cmog_NewLogo.png" "Keystone Contract.pdf" "parallactic.pem" "mockup-individual-continued.xcf" "ACIS_RFP_2017.pdf" "mainstream.pdf" "bridgedev.png" "timers-09012016-04032017.csv" "mainstream-embedding.aux" "mainstream - parallactic-SIGNED.pdf" "mockup-draft.zip" "wireframes/" "parallactic-flyer.pdf" "mainstream-embedding-SIGNED.pdf" "ballotready.png" "Telescope WS Greenwich Cunigham.xlsx" "mit_logo.png" "survey (1).png" "logo.png" "mainstream-feeds.dvi" "marketing assets/" "FOTC HP Nov 7.png" "mainstream.tex" "FOTC HP Nov 7 (1).png" "survey-screenshot.png" "PDG_screen.pptx.pdf" "mainstream-embedding.dvi" "gilbertandsullivan.png" "cailla1 (1).png" "mainstream-feeds.log" "Telescope.WS.Greenwich.Cunigham.xlsx" ".~lock.betatool (copy).odt#" "fotc-screenshot.png" "g&s/" "survey.png" "proposals/" "mockup-artifact.xcf" "cailla.png" "DRAFT_BSS_LFWF_011117.pdf")
 
- ("/home/clara/Documents/Parallactic/" (23097 27474 778810 982000) "mockup-article.xcf" "gs-contract.pdf" "FOTC Maps U.I..png" "parallactic-logo.eps" "Parallactic Consulting - Chicago Web Development & Custom Programming.pdf" "mockup-homepage.jpg" "Mighty Prototype Jan 30_1980.pdf" "op.png" "adlerLogo.png" "dioptrice.png" "mainstream-embedding.tex" "fotc/" "parallactic_futura.ai" "DRAFT_BSS_LFWF_011117 (1).pdf" "PDG_screen.pptx (1).pdf" "flyer.html" "mainstream-updates-october.pdf" "dioptrice-7fefc7741724c91ba56a3e2b4d7eb9faeac11f8bfa847dafbc42910c09e8d2a4.png" "mainstream-embedding.pdf" "catalog.jpg" "fotc-scrt.png" "Keystone 600 Master Inventory Document (Autosaved).xlsx" "Screenshot from 2017-07-24 09-22-37.png" "parallactic-postcard.xcf" "Mainstream and Noah.csv" "parallactic AWS credentials.csv" "Greenwich Musem Website Whole telescope.jpg" "cailla1.png" "agency.css" "id_rsa.pub" "parallactic.pdf" "logo (1).png" "dioptrice (1).png" "mockup-individual.jpg" "projects/" "mockup-category.xcf" "mainstream.dvi" "parallactic hourly contract.pdf" "kellogg.gif" "fotc.png" "index_files/" "logo-dark.png" "mainstream-feeds.tex" "./" "FOTCLogoAlternate.png" "parallactic-flyer.jpg" "mainstream-feeds.aux" "mockup-category.jpg" "survey-screenshot (1).png" "mockup-homepage.xcf" "mainstream-embedding.log" "mighty-nda.pdf" "JIExm1Fq_400x400.png" "dioptrice/" "dioptrice (1) (1).png" "post-soviet-development-proposal.pdf" "index.html" "shepherdstownfriends.png" "../" "city.jpg" "mainstream.log" "crd-logo.png" "uofc.png" "cmog_NewLogo.png" "Keystone Contract.pdf" "parallactic.pem" "mockup-individual-continued.xcf" "ACIS_RFP_2017.pdf" "mainstream.pdf" "bridgedev.png" "timers-09012016-04032017.csv" "mainstream-embedding.aux" "mainstream - parallactic-SIGNED.pdf" "mockup-draft.zip" "wireframes/" "parallactic-flyer.pdf" "mainstream-embedding-SIGNED.pdf" "ballotready.png" "Telescope WS Greenwich Cunigham.xlsx" "mit_logo.png" "survey (1).png" "logo.png" "mainstream-feeds.dvi" "marketing assets/" "FOTC HP Nov 7.png" "mainstream.tex" "FOTC HP Nov 7 (1).png" "survey-screenshot.png" "PDG_screen.pptx.pdf" "mainstream-embedding.dvi" "gilbertandsullivan.png" "cailla1 (1).png" "mainstream-feeds.log" "Telescope.WS.Greenwich.Cunigham.xlsx" ".~lock.betatool (copy).odt#" "fotc-screenshot.png" "g&s/" "survey.png" "proposals/" "mockup-artifact.xcf" "cailla.png" "DRAFT_BSS_LFWF_011117.pdf")
+ ("/home/clara/Documents/" (23086 63654 608924 195000) "Moomers Journal/" "Archives/" "Parallactic/" "./" "../" "fambly/" "Admin/" "Other/" "games/")
+
+ ("/home/clara/" (23104 9960 387292 435000) ".emulator_console_auth_token" "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" "mat.sav" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" "key.sav" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" "newslogo.jpg" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" "sanmartin.jpg" ".pki/" "chaptor.odt" "prayandwork.jpg" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" "cousins.png" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "typong.odt" "narnia.txt" "natas.txt" ".yafc/" "mtr.txt" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" "hmm.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" "menial.jpg" ".putty/" "farm.jpg" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" "moar typing.odt" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" "stjoseph.jpg" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" "glass.sav" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" "MotionPro_Linux_Ubuntu_x86-64_1.0.4.sh" ".gradle/" "watch.sav" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "baby1.jpg" "bandit.txt" "vacant.sav" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" "box.sav" ".homesick/" ".ICEauthority" "ring.sav" "Software/" ".dropbox-dist/" "mono.sav" ".heroku/" "irene.sav" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garden.sav" "cfs2.jpg" "inthepaint.sav" "garglk/" ".gnome/" "takegun.sav")
+
+ ("/home/clara/.local/share/MotionPro/Log/" (23101 30582 532157 688000) "MotionPro_2017_12_22.log" "./" "../")
 
  ("/home/clara/Software/dilemma/spec/controllers/" (23086 57859 880996 480000) "attempts_controller_spec.rb" "./" "admin/" "../")
 
@@ -213,8 +217,6 @@
  ("/home/clara/Software/dilemma/db/" (23073 53295 340919 858000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
 
  ("/home/clara/Software/LinkUp-Server/" (22020 23784 833589 0) ".gitignore" "README.md" "src/" "./" "../" ".project" ".classpath" ".git/")
-
- ("/home/clara/" (23084 7027 117352 613000) ".emulator_console_auth_token" "fbe.sav" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" "mat.sav" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" "key.sav" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" "newslogo.jpg" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" "sanmartin.jpg" ".pki/" "chaptor.odt" "prayandwork.jpg" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" "cousins.png" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "typong.odt" "narnia.txt" "natas.txt" ".yafc/" ".AndroidStudio2.3/" "cfs1.jpg" ".gimp-2.8/" "labl.odt" "babby-girls.pdf" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" "hmm.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "encod" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" "menial.jpg" ".putty/" "farm.jpg" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" "stjoseph.jpg" ".lastpass/" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" "glass.sav" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" "baby2.jpg" ".netrc" "krypton.txt" ".gradle/" "watch.sav" "puz.odt" "label sheet fall 2017.odt" ".dropbox/" ".bash_logout" "baby1.jpg" "bandit.txt" "vacant.sav" "nwcfs-fall.pdf" ".ssh/" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" "box.sav" ".homesick/" ".ICEauthority" "ring.sav" "Software/" ".dropbox-dist/" "mono.sav" ".heroku/" "irene.sav" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garden.sav" "cfs2.jpg" "inthepaint.sav" "garglk/" ".gnome/" "takegun.sav")
 
  ("/home/clara/Software/bss/app/assets/" (22692 58817 641752 651000) "config/" "./" "javascripts/" "../" "stylesheets/" "images/")
 
@@ -383,8 +385,6 @@
  ("/home/clara/Software/chicago-neighborhood-map/src/main/res/layout/" (23000 64316 156635 202000) "./" "main.xml" "../")
 
  ("/home/clara/Software/chicago-neighborhood-map/src/main/" (22999 55013 982700 53000) "AndroidManifest.xml" "./" "java/" "../" "res/")
-
- ("/home/clara/Software/webcastplatform/spec/requests/" (23031 34067 906301 25000) "./" "embeds_spec.rb" "../" "sign_in_spec.rb")
 )
 
 ;; ----- ido-unc-hosts-cache -----
