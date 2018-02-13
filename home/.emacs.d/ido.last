@@ -6,10 +6,10 @@
  ("/home/clara/Software/stocktickers/app/views/rails_settings_ui/" . "settings/")
  ("/home/clara/Software/stocktickers/spec/" . "models/")
  ("/home/clara/Software/stocktickers/app/views/" . "tickers/")
- ("/home/clara/Software/stocktickers/config/" . "environments/")
- ("/home/clara/Software/stocktickers/app/" . "models/")
+ ("/home/clara/Software/stocktickers/config/" . "locales/")
+ ("/home/clara/Software/stocktickers/app/" . "views/")
  ("/home/clara/Software/stocktickers/db/" . "migrate/")
- ("/home/clara/Software/stocktickers/" . "spec/")
+ ("/home/clara/Software/stocktickers/" . "app/")
  ("/home/clara/Software/marzipan/web/staff/" . "op_tools/")
  ("/home/clara/Software/marzipan/web/" . "common/")
  ("/home/clara/Software/dilemma/app/models/" . "concerns/")
@@ -122,12 +122,20 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "dilemma/")
+ ("/home/clara/Software/" . "stocktickers/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/stocktickers/"
+ "/home/clara/Software/stocktickers/app/views/tickers/"
+ "/home/clara/Software/stocktickers/config/locales/"
+ "/home/clara/Software/stocktickers/config/"
+ "/home/clara/Software/stocktickers/app/models/"
+ "/home/clara/Software/stocktickers/spec/models/"
+ "/home/clara/Software/stocktickers/spec/controllers/"
+ "/home/clara/Software/stocktickers/app/controllers/"
  "/home/clara/Software/dilemma/config/"
  "/home/clara/Software/dilemma/config/environments/"
  "/home/clara/Software/dilemma/"
@@ -137,20 +145,12 @@
  "/home/clara/Software/bss/config/deploy/"
  "/home/clara/Software/webcastplatform/app/assets/javascripts/"
  "/home/clara/Software/webcastplatform/app/controllers/"
- "/home/clara/Software/stocktickers/spec/models/"
- "/home/clara/Software/stocktickers/spec/controllers/"
- "/home/clara/Software/stocktickers/app/models/"
- "/home/clara/Software/stocktickers/app/views/tickers/"
  "/home/clara/Software/stocktickers/app/views/feed_items/"
- "/home/clara/Software/stocktickers/config/"
- "/home/clara/Software/stocktickers/app/controllers/"
- "/home/clara/Software/stocktickers/"
  "/home/clara/Software/stocktickers/db/migrate/"
  "/home/clara/Software/stocktickers/app/assets/stylesheets/"
  "/home/clara/Software/stocktickers/app/views/rails_settings_ui/settings/"
  "/home/clara/Software/stocktickers/config/environments/"
  "/home/clara/Software/stocktickers/spec/"
- "/home/clara/Software/stocktickers/config/locales/"
  "/home/clara/Software/stocktickers/config/initializers/"
  "/home/clara/Software/marzipan/web/common/"
  "/home/clara/Software/bss/app/models/"
@@ -182,21 +182,35 @@
 
 ;; ----- ido-work-file-list -----
 (
- "secrets.yml"
- "production.rb"
- "application.rb"
- "development.rb"
- "Capfile"
  "Gemfile"
- "deploy.rb"
- "chats.coffee"
- "chat_messages_controller.rb"
+ "show.html.erb"
+ "en.yml"
+ "app.yml"
+ "routes.rb"
+ "feed_item.rb"
  "feed_item_spec.rb"
+ "tickers_controller_spec.rb"
+ "ticker.rb"
+ "feed_items_controller_spec.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/dilemma/config/" (23166 7887 433400 695000) "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
+ ("/home/clara/Software/stocktickers/config/" (23169 65284 642479 505000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "app.yml" "schedule.rb" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
+
+ ("/home/clara/Software/stocktickers/app/models/" (23169 64660 319299 260000) "price_feed_item.rb" "ticker.rb" "setting.rb" "./" "feed_item.rb" "model.rb" "../" "user.rb" "application_record.rb" "concerns/")
+
+ ("/home/clara/Software/stocktickers/spec/models/" (23169 64234 263875 443000) "./" "feed_item_spec.rb" "price_feed_item_spec.rb" "user_spec.rb" "../")
+
+ ("/home/clara/Software/stocktickers/spec/controllers/" (23169 64735 611198 914000) "./" "tickers_controller_spec.rb" "../" "feed_items_controller_spec.rb")
+
+ ("/home/clara/Software/stocktickers/app/controllers/" (23169 64663 503295 7000) "./" "application_controller.rb" "tickers_controller.rb" "../" "feed_items_controller.rb" "concerns/")
+
+ ("/home/clara/Software/stocktickers/config/initializers/" (23151 38631 625153 161000) "inflections.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "rails_settings_ui.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "../" "devise.rb" "cookies_serializer.rb" "application_controller_renderer.rb" "assets.rb")
+
+ ("/home/clara/Software/stocktickers/config/locales/" (23169 63434 101004 10000) "en.yml" "./" "devise.en.yml" "../")
+
+ ("/home/clara/Software/dilemma/config/" (23166 9195 310692 243000) "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
 
  ("/home/clara/Software/dilemma/config/environments/" (23051 21728 826645 792000) "./" "../" "production.rb" "test.rb" "development.rb")
 
@@ -220,8 +234,6 @@
 
  ("/home/clara/Software/webcastplatform/app/" (22840 21821 371406 746000) "models/" "channels/" "controllers/" "./" "helpers/" "views/" "../" "assets/" "mailers/")
 
- ("/home/clara/Software/stocktickers/spec/models/" (23163 34791 44370 908000) "./" "feed_item_spec.rb" "price_feed_item_spec.rb" "user_spec.rb" "../")
-
  ("/home/clara/Software/stocktickers/config/environments/" (23152 54041 594731 342000) "./" "../" "staging.rb" "production.rb" "test.rb" "development.rb")
 
  ("/home/clara/Software/stocktickers/app/views/rails_settings_ui/settings/" (23152 53197 380333 614000) "./" "../" "index.html.erb")
@@ -234,19 +246,11 @@
 
  ("/home/clara/Software/stocktickers/app/views/tickers/" (23162 8471 599880 713000) "show.html.erb" "rss_prices.rss.builder" "./" "custom_feed.rss.builder" "../")
 
- ("/home/clara/Software/stocktickers/spec/controllers/" (23156 51967 420568 876000) "./" "../" "feed_items_controller_spec.rb")
-
- ("/home/clara/Software/stocktickers/app/models/" (23163 34031 480322 75000) "price_feed_item.rb" "ticker.rb" "setting.rb" "./" "feed_item.rb" "model.rb" "../" "user.rb" "application_record.rb" "concerns/")
-
  ("/home/clara/Software/dilemma/config/deploy/" (23163 28856 228710 10000) "./" "../" "staging.rb" "production.rb")
 
  ("/home/clara/Software/stocktickers/spec/" (23156 52085 628286 351000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "views/" "../" "rails_helper.rb" "requests/" "routing/")
 
- ("/home/clara/Software/stocktickers/config/" (23156 52474 155376 618000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "app.yml" "schedule.rb" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
-
  ("/home/clara/Software/stocktickers/" (23160 57885 490711 75000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "package.json" "Gemfile" "public/" ".metrics" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
-
- ("/home/clara/Software/stocktickers/app/controllers/" (23162 7969 735263 389000) "./" "application_controller.rb" "tickers_controller.rb" "../" "feed_items_controller.rb" "concerns/")
 
  ("/home/clara/Software/stocktickers/db/" (23160 54203 835260 167000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
 
@@ -255,10 +259,6 @@
  ("/home/clara/Software/stocktickers/app/assets/" (23125 7660 594315 507000) "config/" "./" "javascripts/" "../" "stylesheets/" "images/")
 
  ("/home/clara/Software/stocktickers/app/views/rails_settings_ui/" (23147 28229 312456 670000) "./" "../" "settings/")
-
- ("/home/clara/Software/stocktickers/config/locales/" (23135 46137 117361 913000) "en.yml" "./" "../")
-
- ("/home/clara/Software/stocktickers/config/initializers/" (23135 42860 840192 189000) "inflections.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "rails_settings_ui.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "../" "cookies_serializer.rb" "application_controller_renderer.rb" "assets.rb")
 
  ("/home/clara/Software/stocktickers/app/" (23125 7660 594315 507000) "models/" "channels/" "controllers/" "./" "jobs/" "helpers/" "views/" "../" "assets/" "mailers/")
 
