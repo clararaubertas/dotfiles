@@ -5,9 +5,9 @@
  ("/home/clara/Software/stocktickers/app/assets/" . "stylesheets/")
  ("/home/clara/Software/stocktickers/app/views/rails_settings_ui/" . "settings/")
  ("/home/clara/Software/stocktickers/spec/" . "models/")
- ("/home/clara/Software/stocktickers/app/views/" . "tickers/")
+ ("/home/clara/Software/stocktickers/app/views/" . "feed_items/")
  ("/home/clara/Software/stocktickers/config/" . "locales/")
- ("/home/clara/Software/stocktickers/app/" . "controllers/")
+ ("/home/clara/Software/stocktickers/app/" . "views/")
  ("/home/clara/Software/stocktickers/db/" . "migrate/")
  ("/home/clara/Software/stocktickers/" . "config/")
  ("/home/clara/Software/marzipan/web/staff/" . "op_tools/")
@@ -40,7 +40,7 @@
  ("/home/clara/Software/webcastplatform/app/views/admin/" . "users/")
  ("/home/clara/Software/webcastplatform/spec/" . "requests/")
  ("/home/clara/Software/webcastplatform/app/views/" . "events/")
- ("/home/clara/Software/webcastplatform/app/" . "views/")
+ ("/home/clara/Software/webcastplatform/app/" . "models/")
  ("/home/clara/Software/webcastplatform/config/" . "deploy/")
  ("/home/clara/Software/polynumeral/www.polynumeral.com/" . "contact/")
  ("/home/clara/Software/polynumeral/" . "www.polynumeral.com/")
@@ -129,13 +129,19 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/clara/Software/stocktickers/config/"
- "/home/clara/Software/stocktickers/app/controllers/"
+ "/home/clara/Software/stocktickers/app/views/feed_items/"
  "/home/clara/Software/stocktickers/app/models/"
- "/home/clara/Software/stocktickers/"
- "/home/clara/Software/stocktickers/app/views/tickers/"
- "/home/clara/Software/stocktickers/config/locales/"
+ "/home/clara/Software/webcastplatform/"
+ "/home/clara/Software/webcastplatform/app/models/"
+ "/home/clara/Software/webcastplatform/app/channels/"
  "/home/clara/Software/stocktickers/spec/models/"
+ "/home/clara/Software/stocktickers/app/controllers/"
+ "/home/clara/Software/stocktickers/app/views/tickers/"
+ "/home/clara/Software/stocktickers/"
+ "/home/clara/Software/stocktickers/spec/factories/"
  "/home/clara/Software/stocktickers/spec/controllers/"
+ "/home/clara/Software/stocktickers/config/locales/"
+ "/home/clara/Software/stocktickers/config/initializers/"
  "/home/clara/Software/dilemma/config/"
  "/home/clara/Software/dilemma/config/environments/"
  "/home/clara/Software/dilemma/"
@@ -145,13 +151,11 @@
  "/home/clara/Software/bss/config/deploy/"
  "/home/clara/Software/webcastplatform/app/assets/javascripts/"
  "/home/clara/Software/webcastplatform/app/controllers/"
- "/home/clara/Software/stocktickers/app/views/feed_items/"
  "/home/clara/Software/stocktickers/db/migrate/"
  "/home/clara/Software/stocktickers/app/assets/stylesheets/"
  "/home/clara/Software/stocktickers/app/views/rails_settings_ui/settings/"
  "/home/clara/Software/stocktickers/config/environments/"
  "/home/clara/Software/stocktickers/spec/"
- "/home/clara/Software/stocktickers/config/initializers/"
  "/home/clara/Software/marzipan/web/common/"
  "/home/clara/Software/bss/app/models/"
  "/home/clara/Software/bss/app/views/resources/"
@@ -174,43 +178,51 @@
  "/home/clara/Software/bss/db/migrate/"
  "/home/clara/Software/bss/app/views/communities/"
  "/home/clara/Software/bss/app/views/pages/"
- "/home/clara/Software/dilemma/app/admin/"
- "/home/clara/Software/dilemma/app/views/attempts/build/"
- "/home/clara/Software/dilemma/app/views/layouts/"
- "/home/clara/Software/dilemma/spec/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "routes.rb"
- "tickers_controller.rb"
- "price_feed_item.rb"
- "ticker.rb"
- "Gemfile"
- "show.html.erb"
- "en.yml"
- "app.yml"
+ "schedule.rb"
+ "custom_feed.rss.builder"
  "feed_item.rb"
- "feed_item_spec.rb"
+ "Gemfile"
+ "user_activity.rb"
+ "user.rb"
+ "chats_channel.rb"
+ "ticker.rb"
+ "price_feed_item_spec.rb"
+ "price_feed_item.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/clara/Software/stocktickers/app/controllers/" (23177 59673 598760 71000) "./" "application_controller.rb" "tickers_controller.rb" "../" "feed_items_controller.rb" "concerns/")
+ ("/home/clara/Software/stocktickers/config/" (23180 34461 77178 390000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "app.yml" "schedule.rb" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
 
- ("/home/clara/Software/stocktickers/app/models/" (23177 59434 334796 584000) "price_feed_item.rb" "ticker.rb" "setting.rb" "./" "feed_item.rb" "model.rb" "../" "user.rb" "application_record.rb" "concerns/")
+ ("/home/clara/Software/stocktickers/app/models/" (23187 7849 523721 361000) "price_feed_item.rb" "ticker.rb" "setting.rb" "./" "feed_item.rb" "model.rb" "../" "user.rb" "application_record.rb" "concerns/")
+
+ ("/home/clara/Software/webcastplatform/" (23184 38412 860968 492000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "codecov.yml" "tmp/" "./" "Gemfile.lock" "Gemfile" ".rvmrc" "sockets/" "public/" "spec/" "test/" "../" "app/" "coverage/" ".rspec" ".travis.yml" "lib/" "db/" "schema.txt" "Capfile" "config.ru" "WebCast_Schema.png" "Rakefile" "local_users.csv" ".git/")
+
+ ("/home/clara/Software/webcastplatform/app/models/" (23184 33524 176341 569000) "chat.rb" "user_login.rb" "question.rb" "embed.rb" "chat_message.rb" "question_follow.rb" "survey.rb" "./" "event_embed.rb" "events_user.rb" "user_activity.rb" "survey_answer.rb" "../" "ability.rb" "user.rb" "application_record.rb" "event.rb" "concerns/" "answer.rb")
+
+ ("/home/clara/Software/webcastplatform/app/channels/" (22910 28140 26511 197000) "./" "../" "chats_channel.rb" "application_cable/")
+
+ ("/home/clara/Software/stocktickers/app/controllers/" (23180 36597 26843 328000) "./" "application_controller.rb" "tickers_controller.rb" "../" "feed_items_controller.rb" "concerns/")
+
+ ("/home/clara/Software/stocktickers/app/views/tickers/" (23174 3855 245913 693000) "show.html.erb" "rss_prices.rss.builder" "./" "custom_feed.rss.builder" "../")
+
+ ("/home/clara/Software/stocktickers/" (23180 32119 269346 737000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "package.json" "Gemfile" "public/" ".metrics" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
+
+ ("/home/clara/Software/stocktickers/spec/controllers/" (23180 28073 206287 478000) "./" "tickers_controller_spec.rb" "../" "feed_items_controller_spec.rb")
+
+ ("/home/clara/Software/stocktickers/spec/factories/" (23156 52065 524334 205000) "price_feed_items.rb" "./" "feed_items.rb" "models.rb" "../" "tickers.rb" "users.rb")
+
+ ("/home/clara/Software/stocktickers/spec/models/" (23180 28053 210251 837000) "./" "feed_item_spec.rb" "price_feed_item_spec.rb" "../")
+
+ ("/home/clara/Software/stocktickers/config/locales/" (23180 27916 250014 470000) "en.yml" "./" "devise.en.yml" "../")
 
  ("/home/clara/" (23171 38885 671332 538000) ".emulator_console_auth_token" "fbe.sav" "countersigned-mainstream.pdf" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "git-ssh-bss-staging-clara.sh" ".wicd/" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "typong.odt" "narnia.txt" "natas.txt" ".yafc/" "mtr.txt" ".AndroidStudio2.3/" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "git-ssh-stocktickers-staging-clara.sh" "encod" "emergencies.odt" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" "moar typing.odt" "git-ssh-dilemma-staging-clara.sh" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" ".lastpass/" "web@pepper" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" ".netrc" "krypton.txt" "MotionPro_Linux_Ubuntu_x86-64_1.0.4.sh" ".gradle/" "puz.odt" ".dropbox/" ".bash_logout" "bandit.txt" "nwcfs-fall.pdf" ".ssh/" "Untitled 1.odt" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".oracle_jre_usage/" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garglk/" ".gnome/")
 
- ("/home/clara/Software/stocktickers/config/" (23169 65284 642479 505000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "app.yml" "schedule.rb" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
-
- ("/home/clara/Software/stocktickers/spec/models/" (23169 64234 263875 443000) "./" "feed_item_spec.rb" "price_feed_item_spec.rb" "user_spec.rb" "../")
-
- ("/home/clara/Software/stocktickers/spec/controllers/" (23169 64735 611198 914000) "./" "tickers_controller_spec.rb" "../" "feed_items_controller_spec.rb")
-
  ("/home/clara/Software/stocktickers/config/initializers/" (23151 38631 625153 161000) "inflections.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "rails_settings_ui.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "../" "devise.rb" "cookies_serializer.rb" "application_controller_renderer.rb" "assets.rb")
-
- ("/home/clara/Software/stocktickers/config/locales/" (23169 63434 101004 10000) "en.yml" "./" "devise.en.yml" "../")
 
  ("/home/clara/Software/dilemma/config/" (23166 9195 310692 243000) "routes.rb" "environment.rb" "deploy.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/")
 
@@ -244,13 +256,9 @@
 
  ("/home/clara/Software/stocktickers/app/views/feed_items/" (23162 10503 159456 744000) "edit.html.erb" "_form.html.erb" "./" "new.html.erb" "custom_feed.rss.builder" "../" "index.html.erb")
 
- ("/home/clara/Software/stocktickers/app/views/tickers/" (23162 8471 599880 713000) "show.html.erb" "rss_prices.rss.builder" "./" "custom_feed.rss.builder" "../")
-
  ("/home/clara/Software/dilemma/config/deploy/" (23163 28856 228710 10000) "./" "../" "staging.rb" "production.rb")
 
  ("/home/clara/Software/stocktickers/spec/" (23156 52085 628286 351000) "models/" "factories/" "controllers/" "./" "spec_helper.rb" "helpers/" "views/" "../" "rails_helper.rb" "requests/" "routing/")
-
- ("/home/clara/Software/stocktickers/" (23160 57885 490711 75000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "tmp/" "./" "Gemfile.lock" "package.json" "Gemfile" "public/" ".metrics" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
 
  ("/home/clara/Software/stocktickers/db/" (23160 54203 835260 167000) "./" "../" "development.sqlite3" "seeds.rb" "migrate/" "schema.rb" "test.sqlite3")
 
@@ -380,21 +388,13 @@
 
  ("/home/clara/Software/webcastplatform/config/deploy/" (23045 59057 239104 10000) "./" "../" "staging.rb" "production.rb")
 
- ("/home/clara/Software/webcastplatform/" (23042 5388 580341 728000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "codecov.yml" "tmp/" "./" "Gemfile.lock" "Gemfile" ".rvmrc" "sockets/" "public/" "spec/" "test/" "../" "app/" "coverage/" ".rspec" ".travis.yml" "lib/" "db/" "schema.txt" "Capfile" "config.ru" "WebCast_Schema.png" "Rakefile" "local_users.csv" ".git/")
-
  ("/home/clara/Software/webcastplatform/config/" (23045 63136 575139 958000) "spring.rb" "routes.rb" "cable.yml" "environment.rb" "deploy.rb" "puma.rb" "./" "deploy/" "boot.rb" "../" "environments/" "application.rb" "secrets.yml" "locales/" "database.yml" "initializers/" "database.yml.orig")
 
  ("/home/clara/Software/webcastplatform/app/views/events/" (23042 5421 456356 629000) "_form.html.slim" "_message.html.slim" "show.html.slim" "edit.html.slim" "manage_users.html.slim" "./" "walkthrough1.html.erb" "_question_queue.html.slim" "_question_follows.html.slim" "../" "walkthrough2.html.erb" "index.html.erb" "_chat_window.html.slim" "_guest_view.html.erb" "_moderation_queue.html.slim" "_user_list.html.slim" "_question.html.slim" "_host_view.html.erb" "upload_users.html.slim" "_add_new_user.html.slim")
 
- ("/home/clara/Software/webcastplatform/app/models/" (23045 59875 315062 403000) "chat.rb" "user_login.rb" "question.rb" "embed.rb" "chat_message.rb" "question_follow.rb" "survey.rb" "./" "event_embed.rb" "events_user.rb" "user_activity.rb" "survey_answer.rb" "../" "ability.rb" "user.rb" "application_record.rb" "event.rb" "concerns/" "answer.rb")
-
  ("/home/clara/Software/treasure-hunt/app/models/" (23068 34116 948270 498000) "admin_user.rb" "answer_choice.rb" "color.rb" "./" "map.rb" "game.rb" "survey_answer.rb" "../" "question_group.rb" "shape.rb" "room.rb" ".gitkeep" "user_session.rb" "survey_question.rb" "run.rb")
 
  ("/home/clara/Software/dilemma/app/" (23069 49209 952782 772000) "models/" "controllers/" "./" "helpers/" "admin/" "views/" "../" "assets/" "mailers/")
-
- ("/home/clara/Software/dilemma/app/assets/" (23051 21728 822645 797000) "./" "javascripts/" "../" "stylesheets/" "images/")
-
- ("/home/clara/Software/dilemma/app/mailers/" (23051 21728 822645 797000) "./" "../" ".keep")
 )
 
 ;; ----- ido-unc-hosts-cache -----
