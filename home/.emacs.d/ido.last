@@ -122,12 +122,13 @@
  ("/home/clara/Software/fotc/db/" . "migrate/")
  ("/home/clara/Software/fotc/config/" . "environments/")
  ("/home/clara/Software/fotc/" . "app/")
- ("/home/clara/Software/" . "bss/")
+ ("/home/clara/Software/" . "webcastplatform/")
  ("/home/clara/" . "Software/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/Software/webcastplatform/"
  "/home/clara/Software/bss/app/models/"
  "/home/clara/Software/stocktickers/app/views/tickers/"
  "/home/clara/Software/stocktickers/app/views/feed_items/"
@@ -145,7 +146,6 @@
  "/home/clara/Software/bss/app/views/resources/"
  "/home/clara/Software/bss/app/views/pages/"
  "/home/clara/Software/bss/app/controllers/"
- "/home/clara/Software/webcastplatform/"
  "/home/clara/Software/webcastplatform/app/models/"
  "/home/clara/Software/webcastplatform/app/channels/"
  "/home/clara/Software/stocktickers/spec/models/"
@@ -182,6 +182,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "Gemfile"
  "topic.rb"
  "application_record.rb"
  "rss_prices.rss.builder"
@@ -191,11 +192,12 @@
  "ticker.rb"
  "scheduler.rb"
  "application.rb"
- "production.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/" (23193 24417 47286 865000) ".emulator_console_auth_token" "fbe.sav" "countersigned-mainstream.pdf" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "git-ssh-bss-staging-clara.sh" ".wicd/" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "typong.odt" "narnia.txt" "natas.txt" ".yafc/" "mtr.txt" ".AndroidStudio2.3/" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "git-ssh-stocktickers-staging-clara.sh" "encod" "emergencies.odt" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" "moar typing.odt" "git-ssh-dilemma-staging-clara.sh" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "parallactic.pem" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" ".lastpass/" "web@pepper" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" ".netrc" "krypton.txt" "MotionPro_Linux_Ubuntu_x86-64_1.0.4.sh" ".gradle/" "puz.odt" ".dropbox/" ".bash_logout" "bandit.txt" "nwcfs-fall.pdf" ".ssh/" "Untitled 1.odt" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".oracle_jre_usage/" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garglk/" ".gnome/")
+
  ("/home/clara/Software/stocktickers/app/models/" (23190 49344 470841 856000) "price_feed_item.rb" "ticker.rb" "setting.rb" "./" "feed_item.rb" "../" "user.rb" "application_record.rb" "concerns/")
 
  ("/home/clara/Software/stocktickers/config/initializers/" (23189 54078 116161 973000) "inflections.rb" "filter_parameter_logging.rb" "wrap_parameters.rb" "rails_settings_ui.rb" "backtrace_silencers.rb" "./" "mime_types.rb" "../" "devise.rb" "cookies_serializer.rb" "application_controller_renderer.rb" "assets.rb" "scheduler.rb")
@@ -237,8 +239,6 @@
  ("/home/clara/Software/bss/app/controllers/" (23188 35758 746569 780000) "communities_controller.rb" "categories_controller.rb" "blog_posts_controller.rb" "pages_controller.rb" "contributes_controller.rb" "./" "application_controller.rb" "contacts_controller.rb" "../" "events_controller.rb" "resources_controller.rb")
 
  ("/home/clara/Software/bss/" (23188 35509 865714 639000) "log/" ".gitignore" "README.md" "vendor/" ".rstrip" "bin/" "config/" "tmp/" "solr/" "./" "Gemfile.lock" ".ruby-version" "Gemfile" "public/" "spec/" "../" "app/" "coverage/" ".rspec" "lib/" ".bundle/" "db/" "Capfile" "config.ru" "Rakefile" ".git/")
-
- ("/home/clara/" (23184 31420 405559 749000) ".emulator_console_auth_token" "fbe.sav" "countersigned-mainstream.pdf" "jackson park.odt" ".cinnamon/" ".zoom/" ".gnupg/" ".thunderbird/" ".weather/" ".texmf-var/" "ally.sav" "git-ssh-bss-staging-clara.sh" ".wicd/" "lablpdf.odt" ".icons/" "lblsbapdf.odt" ".cache/" "bloo.sav" ".xsession-errors" "Desktop/" "Text/" ".elinks/" "leviathan.txt" ".gnome2_private/" ".selected_editor" "mainstream-embedding-contract.pdf" "Keystone%20600%20Master%20Inventory%20Document%20(Autosaved).xlsx_0.ods" "2016-raubertas-raber-taxes.zip" ".face" ".gnome2/" "mainstream-updates-october.log" "window.sav" ".sqlite_history" ".wget-hsts" "mainstream-updates-october.pdf" ".gnutls/" ".xsession-errors.old" "AndroidStudioProjects/" "PDF/" ".bashrc" "seamod_rings.lua~" ".android/" ".zlogin" ".Skype/" ".irb-history" "untitled_0.odt" ".pki/" "chaptor.odt" "notes.odt" ".dmrc" "new.sav" ".conky/" "save.sav" ".cxoffice/" ".eclipse/" ".dbus/" ".compiz/" ".java/" ".sane/" "Untitled2.sav" ".gksu.lock" "opt/" "statements.odt" "Pictures/" ".pry_history" ".bash_profile" "statement.odt" ".xdvirc" "Android/" "berea.pdf" ".npm/" "./" "typong.odt" "narnia.txt" "natas.txt" ".yafc/" "mtr.txt" ".AndroidStudio2.3/" ".gimp-2.8/" "labl.odt" "clara.jpg" ".bash_history" ".emacs.d/" "Untitled.sav" ".install4j" "saveq2.sav" ".sudo_as_admin_successful" ".thumbnails/" "labls.odt" "mainstream-updates-october.aux" "nick-est.odt" ".hplip/" ".gem/" ".lesshst" "git-ssh-stocktickers-staging-clara.sh" "encod" "emergencies.odt" ".profile" "Documents/" "seamod_rings.lua" "puzz.odt" ".MultiBitHD/" ".mysql_history" "mainstream-updates-october.dvi" ".putty/" ".gitkraken/" ".Xauthority" ".gitconfig" "Dropbox/" "mainstream-updates-october.tex" "index.html" "Downloads/" "../" ".electrum/" ".mozilla/" "moojo-dogs.pdf" "moar typing.odt" "git-ssh-dilemma-staging-clara.sh" ".scribus/" ".emacs" ".config/" "atla.sav" "Videos/" "parallactic.pem" "estimate-0617.pdf" "chapt0r.odt" ".themes/" "torch/" ".lastpass/" "web@pepper" ".m2/" ".linuxmint/" "x1_carbon3_hmm_en_sp40g55065.pdf" ".local/" "slides.odt" ".rvm/" ".nano/" ".iscan_preference" "moojo-forms.pdf" ".bundle/" "labbel.odt" ".netrc" "krypton.txt" "MotionPro_Linux_Ubuntu_x86-64_1.0.4.sh" ".gradle/" "puz.odt" ".dropbox/" ".bash_logout" "bandit.txt" "nwcfs-fall.pdf" ".ssh/" "Untitled 1.odt" ".fonts.conf" ".gconf/" ".gvfs/" "db.txt" ".homesick/" ".ICEauthority" "Software/" ".dropbox-dist/" ".heroku/" ".oracle_jre_usage/" ".fonts/" "android-sdk-linux/" "nick-est.org" "puzzz.odt" "garglk/" ".gnome/")
 
  ("/home/clara/Software/webcastplatform/" (23184 38412 860968 492000) "log/" ".gitignore" "README.md" "vendor/" "bin/" "config/" "codecov.yml" "tmp/" "./" "Gemfile.lock" "Gemfile" ".rvmrc" "sockets/" "public/" "spec/" "test/" "../" "app/" "coverage/" ".rspec" ".travis.yml" "lib/" "db/" "schema.txt" "Capfile" "config.ru" "WebCast_Schema.png" "Rakefile" "local_users.csv" ".git/")
 
