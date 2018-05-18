@@ -252,4 +252,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH=${PATH}:$HOME/sdk/android-sdk-linux/platform-tools:$HOME/sdk/android-sdk-linux/tools:$HOME/sdk/android-sdk-linux/build-tools/22.0.1/
 
 
-. /home/clara/torch/install/bin/torch-activate
+
