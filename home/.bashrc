@@ -95,9 +95,6 @@ export RSENSE_HOME=/opt/rsense-0.3/
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-alias apt-get="apt-fast"
-
-alias freckle='python .freckle_cli/freckle.py'
 
 alias such=git
 alias very=git
@@ -105,7 +102,6 @@ alias wow='git status'
 alias many='bundle exec cap'
 alias corm='crontab'
 alias cormtab='crontab'
-alias emacs='emacsclient -c'
 
 mymosh() { /usr/bin/mosh "$@" -- screen -dR -s bash -e^Aa;}
 
@@ -253,3 +249,5 @@ export PATH=${PATH}:$HOME/sdk/android-sdk-linux/platform-tools:$HOME/sdk/android
 
 
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

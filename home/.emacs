@@ -3,17 +3,16 @@
 ;;;;;;;;;; I. Package Management ;;;;;;;;;;
 
 
- (package-initialize)
- (add-to-list 'package-archives
-              '("ELPA" . "http://tromey.com/elpa/")) 
- (add-to-list 'package-archives
-                '("gnu" . "http://elpa.gnu.org/packages/"))
- (add-to-list 'package-archives
-                '("marmalade" . "http://marmalade-repo.org/packages/"))
- (add-to-list 'package-archives
-                '("melpa" . "http://melpa.milkbox.net/packages/"))
- (add-to-list 'package-archives
-                '("org" . "http://orgmode.org/elpa/"))
+
+(require 'package)
+;; (add-to-list 'package-archives
+;;     '("marmalade" .
+;;       "http://marmalade-repo.org/packages/"))
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                     ("marmalade" . "http://marmalade-repo.org/packages/")))
+(package-initialize)
+(setq package-check-signature nil)
+
 
 
 (add-to-list 'load-path "~/.emacs.d/*")
@@ -21,13 +20,15 @@
 (add-to-list 'load-path "~/.emacs.d/org-sync")
 
 (mapc 'load
-       '("os" "os-github"))
+      '("os" "os-github"))
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
 (require 'android-mode)
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/wordpress-mode/"))
+(require 'wordpress-mode)
 
 
-;;(projectile-global-mode)
+(projectile-global-mode)
 
 ;;;;;;;;;; ;;;;;;;;;;
 
@@ -37,15 +38,17 @@
 
 (set-frame-font "Hack 15" )
 
- (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
-   (lambda () (idle-highlight-mode 1)))
- (my-global-idle-highlight-mode 1)
+
+(define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
+  (lambda () (idle-highlight-mode 1)))
+(my-global-idle-highlight-mode 1)
 
 (define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
   (lambda () (blink-cursor-mode 1)))
 (my-global-blink-cursor-mode 1)
 
-
+(rainbow-delimiters-mode)
+(electric-pair-mode)
 
 (setq idle-highlight-idle-time 0)
 
@@ -98,13 +101,13 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
   "Return a new file path of a given file path.
 If the new path's directories does not exist, create them."
   (let* (
-        (backupRootDir "~/.emacs.d/emacs-backup/")
-        (filePath (replace-regexp-in-string "[A-Za-z]:" "" fpath ))         (backupFilePath (replace-regexp-in-string "//" "/" (concat backupRootDir filePath "~") ))
-        )
+	 (backupRootDir "~/.emacs.d/emacs-backup/")
+	 (filePath (replace-regexp-in-string "[A-Za-z]:" "" fpath ))         (backupFilePath (replace-regexp-in-string "//" "/" (concat backupRootDir filePath "~") ))
+	 )
     (make-directory (file-name-directory backupFilePath) (file-name-directory backupFilePath))
     backupFilePath
+    )
   )
-)
 (setq make-backup-file-name-function 'my-backup-file-name)
 
 ;;when saving files, set execute permission if #! is in first line.
@@ -116,6 +119,16 @@ If the new path's directories does not exist, create them."
 (setq scpaste-http-destination "http://clararaubertas.net"
       scpaste-scp-destination "clara@kumquat:/var/www/clararaubertas/")
 
+
+;; (flx-ido-mode)
+;; ;; Display ido results vertically, rather than horizontally
+;; (setq ido-decorations (quote ("\n-> " "" "\n   " "\n   ..." "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]")))
+;; (defun ido-disable-line-truncation () (set (make-local-variable 'truncate-lines) nil))
+;; (add-hook 'ido-minibuffer-setup-hook 'ido-disable-line-truncation)
+;; (defun ido-define-keys () ;; C-n/p is more intuitive in vertical layout
+;;   (define-key ido-completion-map (kbd "C-n") 'ido-next-match)
+;;     (define-key ido-completion-map (kbd "C-p") 'ido-prev-match))
+;;   (add-hook 'ido-setup-hook 'ido-define-keys)
 
 
 ;; This is your old M-x.
@@ -141,9 +154,9 @@ If the new path's directories does not exist, create them."
 (allout-mode)
 
 (global-set-key [(control .)] 'goto-last-change)
-; M-. can conflict with etags tag search. But C-. can get overwritten
-; by flyspell-auto-correct-word. And goto-last-change needs a really
-; fast key.
+					; M-. can conflict with etags tag search. But C-. can get overwritten
+					; by flyspell-auto-correct-word. And goto-last-change needs a really
+					; fast key.
 (global-set-key [(meta .)] 'goto-last-change)
 ;; buffrs
 ;; set up ibuffer
@@ -187,24 +200,29 @@ If the new path's directories does not exist, create them."
 (add-to-list 'auto-mode-alist '("\\.gem\\(spec\\)?$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
+(require 'flymake-ruby)
+(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+
+
 (add-hook 'ruby-mode-hook '(lambda ()
-                               (setq ruby-deep-arglist t)
-                               (setq ruby-deep-indent-paren nil)
-                               (esk-paredit-nonlisp)
-                               (ruby-electric-mode)
-                               (rspec-mode)
-                               (rubocop-mode)
-                               (ruby-tools-mode)
-                               (ruby-end-mode)
-                               (local-set-key [S-f7] 'ruby-compilation-this-buffer)
-                               (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
-                               (define-key ruby-mode-map (kbd "TAB") 'indent-for-tab-command)
-                               (local-set-key [f7] 'ruby-compilation-this-test)
-                               (local-set-key [f6] 'recompile)
-                               (local-set-key (kbd "C-c .") 'rsense-complete)
-                               (add-to-list 'ac-sources 'ac-source-rsense-method)
-                               (add-to-list 'ac-sources 'ac-source-rsense-constant)
-                               ))
+			     (setq ruby-deep-arglist t)
+			     (setq ruby-deep-indent-paren nil)
+			     (esk-paredit-nonlisp)
+			     (ruby-electric-mode)
+			     (rspec-mode)
+			     (rubocop-mode)
+			     (ruby-tools-mode)
+			     (ruby-end-mode)
+			     (local-set-key [S-f7] 'ruby-compilation-this-buffer)
+			     (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
+			     (define-key ruby-mode-map (kbd "TAB") 'indent-for-tab-command)
+			     (local-set-key [f7] 'ruby-compilation-this-test)
+			     (local-set-key [f6] 'recompile)
+			     (local-set-key (kbd "C-c .") 'rsense-complete)
+			     (add-to-list 'ac-sources 'ac-source-rsense-method)
+			     (add-to-list 'ac-sources
+					  'ac-source-rsense-constant)
+			     ))
 
 ;;;;;;;;;; end RUBY section ;;;;;;;;;;
 
@@ -334,3 +352,26 @@ With argument ARG, do this that many times."
 (message "You're doing a great job!")
 ;;;;;;;;;; END ;;;;;;;;;;
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(background-color "#002b36")
+ '(background-mode dark)
+ '(cursor-color "#839496")
+ '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
+ '(custom-safe-themes
+   (quote
+    ("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
+ '(foreground-color "#839496")
+ '(package-selected-packages
+   (quote
+    (color-theme-sanityinc-solarized mmm-mode php-mode flx-ido bundler inf-ruby web-mode projectile projectile-rails robe zencoding-mode yaml-mode unfill undo-tree unbound textmate telepathy tabbar switch-window sudo-edit smart-cursor-color slim-mode scss-mode rvm ruby-end ruby-electric rinari rhtml-mode regex-tool rainbow-mode rainbow-delimiters pretty-mode pretty-lambdada pkg-info php+-mode paredit org-mobile-sync org-agenda-property nyan-mode notify noflet mwe-log-commands multicolumn multi-term magit log4e idle-highlight-mode highline highlight-tail goto-chg gntp gnome-calendar flymake-ruby flymake-haml feature-mode dired-details crontab-mode color-theme-solarized coffee-mode closure-template-html-mode auto-complete anything-exuberant-ctags android-mode ace-jump-mode)))
+ '(projectile-rails-global-mode t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
