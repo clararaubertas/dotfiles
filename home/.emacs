@@ -5,11 +5,17 @@
 
 
 (require 'package)
-;; (add-to-list 'package-archives
-;;     '("marmalade" .
-;;       "http://marmalade-repo.org/packages/"))
+
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                     ("marmalade" . "http://marmalade-repo.org/packages/")))
+                     ("marmalade" . "http://marmalade-repo.org/packages/")
+                     ("melpa" . "http://melpa.org/packages/")))
+
+
+;; ;; (add-to-list 'package-archives
+;; ;;     '("marmalade" .
+;; ;;       "http://marmalade-repo.org/packages/"))
+;; (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+;;                      ("marmalade" . "http://marmalade-repo.org/packages/")))
 (package-initialize)
 (setq package-check-signature nil)
 
@@ -24,8 +30,8 @@
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
 (require 'org-agenda-property)
 (require 'android-mode)
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/wordpress-mode/"))
-(require 'wordpress-mode)
+
+
 
 
 (projectile-global-mode)
@@ -86,8 +92,7 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
   )
 
 
-(setq default-frame-alist
-      '((background-color . "#002b36")))
+
 
 
 
@@ -352,26 +357,26 @@ With argument ARG, do this that many times."
 (message "You're doing a great job!")
 ;;;;;;;;;; END ;;;;;;;;;;
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(background-color "#002b36")
- '(background-mode dark)
- '(cursor-color "#839496")
- '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
- '(custom-safe-themes
-   (quote
-    ("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
- '(foreground-color "#839496")
- '(package-selected-packages
-   (quote
-    (color-theme-sanityinc-solarized mmm-mode php-mode flx-ido bundler inf-ruby web-mode projectile projectile-rails robe zencoding-mode yaml-mode unfill undo-tree unbound textmate telepathy tabbar switch-window sudo-edit smart-cursor-color slim-mode scss-mode rvm ruby-end ruby-electric rinari rhtml-mode regex-tool rainbow-mode rainbow-delimiters pretty-mode pretty-lambdada pkg-info php+-mode paredit org-mobile-sync org-agenda-property nyan-mode notify noflet mwe-log-commands multicolumn multi-term magit log4e idle-highlight-mode highline highlight-tail goto-chg gntp gnome-calendar flymake-ruby flymake-haml feature-mode dired-details crontab-mode color-theme-solarized coffee-mode closure-template-html-mode auto-complete anything-exuberant-ctags android-mode ace-jump-mode)))
- '(projectile-rails-global-mode t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(background-color "#002b36")
+;;  '(background-mode dark)
+;;  '(cursor-color "#839496")
+;;  '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
+;;  '(custom-safe-themes
+;;    (quote
+;;     ("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
+;;  '(foreground-color "#839496")
+;;  '(package-selected-packages
+;;    (quote
+;;     (color-theme-sanityinc-solarized mmm-mode php-mode flx-ido bundler inf-ruby web-mode projectile projectile-rails robe zencoding-mode yaml-mode unfill undo-tree unbound textmate telepathy tabbar switch-window sudo-edit smart-cursor-color slim-mode scss-mode rvm ruby-end ruby-electric rinari rhtml-mode regex-tool rainbow-mode rainbow-delimiters pretty-mode pretty-lambdada pkg-info php+-mode paredit org-mobile-sync org-agenda-property nyan-mode notify noflet mwe-log-commands multicolumn multi-term magit log4e idle-highlight-mode highline highlight-tail goto-chg gntp gnome-calendar flymake-ruby flymake-haml feature-mode dired-details crontab-mode color-theme-solarized coffee-mode closure-template-html-mode auto-complete anything-exuberant-ctags android-mode ace-jump-mode)))
+;;  '(projectile-rails-global-mode t))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
