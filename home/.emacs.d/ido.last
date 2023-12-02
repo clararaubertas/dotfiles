@@ -277,6 +277,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/clara/"
  "/home/clara/Software/bssw.io/app/models/"
  "/home/clara/Software/bssw.io/spec/controllers/"
  "/home/clara/Software/bssw.io/spec/models/"
@@ -326,11 +327,11 @@
  "/home/clara/Software/soviet_sourcebook/app/views/people/"
  "/home/clara/Software/soviet_sourcebook/app/assets/stylesheets/"
  "/home/clara/Software/soviet_sourcebook/app/views/layouts/"
- "/home/clara/Software/soviet_sourcebook/spec/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ ".emacs"
  "github_import.rb"
  "rebuild.rb"
  "site_item.rb"
@@ -340,11 +341,12 @@
  "community.rb"
  "how_to_spec.rb"
  "what_is_spec.rb"
- "resource_spec.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/clara/" (25961 64636 176135 301000) "Pictures/" "*Messages*" ".wine/" "_LOCAL_8721.emacs" "Templates/" ".zshrc" "Music/" ".mkshrc" ".sudo_as_admin_successful" ".local/" ".config/" "../" ".mozilla/" ".pki/" ".gtkrc-2.0" ".gitconfig" ".ssh/" ".homesick/" "_BASE_8721.emacs" "_REMOTE_8721.emacs" ".gtkrc-xfce" ".cache/" "Public/" ".emacs" ".profile" "./" ".steampath" "Videos/" ".themes/" "Downloads/" ".xsession-errors" ".gnupg/" ".bashrc" ".rvm/" "Documents/" ".steampid" ".dmrc" ".steam/" ".zlogin" ".Xauthority" ".mysql_history" "#*Messages*#" ".lesshsQ" ".bash_logout" ".lesshst" ".linuxmint/" ".icons/" ".xsession-errors.old" ".emacs.d/" ".bash_profile" "Firefox_wallpaper.png" ".bash_history" "charm/" "Software/" ".bundle/" "Desktop/")
+
  ("/home/clara/Software/bssw.io/app/models/" (24720 28060 188944 738000) "site_item.rb" "quote.rb" "application_record.rb" "github_import.rb" "category.rb" "contact_form.rb" "how_to.rb" "announcement.rb" "topic.rb" "featured_post.rb" "rebuild_status.rb" "author.rb" "event.rb" "fellow.rb" "contribution.rb" "resource.rb" "what_is.rb" "searchable.rb" "rebuild.rb" "markdown_import.rb" "page.rb" "staff.rb" "feature.rb" "./" "../" "blog_post.rb" "fellow_link.rb" "contribute.rb" "community.rb")
 
  ("/home/clara/Software/bssw.io/spec/controllers/" (24720 26943 438617 639000) "communities_controller_spec.rb" "blog_posts_controller_spec.rb" "rebuilds_controller_spec.rb" "events_controller_spec.rb" "contributes_controller_spec.rb" "categories_controller_spec.rb" "resources_controller_spec.rb" "contacts_controller_spec.rb" "application_controller_spec.rb" "pages_controller_spec.rb" "announcements_controller_spec.rb" "./" "../" "fellows_controller_spec.rb")
@@ -368,8 +370,6 @@
  ("/home/clara/Software/marzipan/register/" (24713 48967 480133 687000) "postscriptbarcode/" "unpaid_tabs.cgi" "marzipan_io.py" "ui.py" "test_script.py" "ippay_text.py" "straight.flf" "money.pyc" "logo.eps" "sale_receipt.tex" "db.pyc" "launch.sh" "register_logging.pyc" "error.py" "openproduce05.svg" "error" "cc.pyc" "util/" "ui/" "cui.py" "register_logging.py" "db.py" "__pycache__/" "metaphone.py" "marzipan_io.pyc" "match.py" "./" "metaphone.pyc" "../" "match.pyc" "pysimplesoap-1.05a/" "apc.py" "logo.pdf" "config.pyc" "config.py" "tab-history.cgi" ".gitignore" "cc.py" "config.py.tmpl" "money.py" "marzipan.py")
 
  ("/home/clara/Software/bssw.io/app/views/layouts/" (24711 6663 572887 451000) "_sidebar.html.erb" "mailer.html.erb" "application.html.erb" "_footer.html.erb" "_communities_dropdown.html.erb" "_navbar.html.erb" "./" "../" "mailer.text.erb" "_dropdowns.html.erb" "_flash.html.erb" "_pagination.html.erb" "_share.html.erb")
-
- ("/home/clara/" (24720 5769 945272 563000) "CuratorHome.pdf" "test4/" "SourcebookWireframes.zip" "Desktop/" "Public Pages.zip" ".conky/" ".bundle/" ".emacs" "User Pages/" ".config/" "nil" ".gnome/" "Homepage.pdf" "soviet-wireframes.zip" "activism-mail-bot/" ".profile" ".zoom/" ".yafc/" ".emacs.d/" ".revision" "index.html.1" "._AnonymousPro-1.002.001" "go/" ".bashrc" "index.html.6" ".themes/" "bss.sql" ".pgadmin3" "parallactic.com.zone" ".face" ".sudo_as_admin_successful" ".rvm/" "PaperWM/" ".xdvirc" ".aws/" ".scribus/" ".icons/" "application.scss" "index.html.2" "ArtifactDisplay.pdf" ".ICEauthority" ".cache/" ".eclipse/" ".android/" ".paradoxlauncher/" "test2/" "Public/" ".texlive2018/" "yakyak-1.5.9-linux-amd64.deb" ".pki/" ".dbeaver-drivers/" ".Xdefaults" "Videos/" "soviet-wireframes/" ".dbus/" ".zlogin" "Public Pages/" ".yarn-cache/" ".gvfs/" "index.html.3" "libglapi-mesa_19.2.8-0ubuntu0~19.10.3_amd64.deb" ".htaccess" "index.html.5" ".hplip/" ".#So" "AdbeRdr9.5.5-1_i386linux_enu.deb" ".conkyrc" "mysql.bak/" "label.pdf" "slick.scss.1" ".Xauthority" ".irb_history" "Software/" ".thumbnails/" ".gitattributes" "main.js" ".fonts/" "20200515220001.sql" "mozilla.pdf" "test/" ".netrc" ".npm/" "Downloads/" ".sane/" ".log/" "index.html" "#So#" ".wine/" "Music/" ".swt/" ".texlive2020/" "OneLife/" "slick.min.js" ".dbeaver4/" "About.pdf" ".yarn/" ".mysql/" ".xbindkeysrc" "browse.pdf" "winetricks" "NewArtifact.pdf" ".lesshst" ".irb-history" ".claws-mail/" ".bash_history" "./" "libffi6_3.2.1-9_amd64.deb" ".xscreensaver" "summervacation.wav" ".gconf/" ".pylint.d/" "vhosts.conf" "resources.rss" ".mkshrc" ".subversion/" "slick.scss" "../" ".steampid" "application.scss.1" ".mozilla/" "snap/" "Medium.pdf" ".gem/" "Text/" "WireframeSketcher/" ".dmrc" "New Artifact.pdf" ".pearrc" ".wget-hsts" ".java/" "wireframes-soviet-sourcebook-draft-1.zip" "test.sav" ".mysql_history" "ArtifactView.pdf" "SearchResults.pdf" "oldsuds/" ".dropbox/" ".workrave/" ".gimp-2.8/" ".emerald/" "main.js.1" ".yarnrc" ".bash_profile" "Pictures/" "Games/" ".audacity-data/" ".xsession-errors.old" "noise-repellent/" ".local/" "resources.rss.1" ".xsession-errors" ".steam/" ".homesick/" "kxstudio-repos_10.0.3_all.deb" ".purple/" ".gnupg/" ".gitignore" "types.odt" ".Fontmatrix/" ".bash_logout" ".pulse-cookie" "index.html.4" ".jackdrc" ".gitconfig" "Tools/" "slick.min.js.1" "sourcebook-wireframes-draft1.zip" ".zshrc" "register_for_testing.sql" "Dropbox/" "assets/" ".dropbox-dist/" "n" "NewScreen.pdf" ".adobe/" ".PlayOnLinux/" ".ssh/" ".jkiss-lm/" "User Pages.zip" ".gtkrc-2.0" "Documents/" ".steampath" "animalpattern.jpg")
 
  ("/home/clara/Software/bssw.io/app/views/events/" (24684 30534 769209 844000) "index.html.erb" "_events.html.erb" "./" "_show_more.html.erb" "../" "show.html.erb" "index.js.erb")
 

@@ -6,18 +6,14 @@
 
 (require 'package)
 
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                     ("marmalade" . "http://marmalade-repo.org/packages/")
-                     ("melpa" . "http://melpa.org/packages/")))
+(add-to-list 'package-archives '("melpa"  . "https://melpa.org/packages/"))
+(add-to-list 'package-archives '("nongnu" . "https://elpa.nongnu.org/nongnu/"))
+(setq package-archive-priorities '(("melpa"  . 3)
+                                   ("gnu"    . 2)))
 
 
-;; ;; (add-to-list 'package-archives
-;; ;;     '("marmalade" .
-;; ;;       "http://marmalade-repo.org/packages/"))
-;; (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-;;                      ("marmalade" . "http://marmalade-repo.org/packages/")))
 (package-initialize)
-(setq package-check-signature nil)
+
 
 
 
@@ -28,21 +24,25 @@
 (mapc 'load
       '("os" "os-github"))
 (setq os-github-auth '("clararaubertas" . "poppyasm"))
-(require 'org-agenda-property)
-(require 'android-mode)
+;;(require 'org-agenda-property)
+;;(require 'android-mode)
 
 
+(projectile-mode +1)
+;; Recommended keymap prefix on macOS
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+;; Recommended keymap prefix on Windows/Linux
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 
-(projectile-global-mode)
 
 ;;;;;;;;;; ;;;;;;;;;;
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
 
-(set-face-attribute 'default t :font "Hack 15" )
+(set-face-attribute 'default t :font "Victor Mono SemiBold 15" )
 
-(set-frame-font "Hack 15" )
+(set-frame-font "Victor Mono SemiBold 15" )
 
 
 (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
@@ -141,21 +141,9 @@ If the new path's directories does not exist, create them."
 
 
 
-;; git
-(require 'magit)
-
-;; (require 'auto-complete)
-;; (require 'auto-complete-config)
-
-;; (setq ac-expand-on-auto-complete nil)
-;; (setq ac-auto-start nil)
-;; (setq ac-dwim nil) ; To get pop-ups with docs even if a word is uniquely completed
-;; (define-key ac-completing-map (kbd "C-n") 'ac-next)
-;; (define-key ac-completing-map (kbd "C-p") 'ac-previous)
-
 (require 'ido)
 (ido-mode t)
-;; (setq ido-enable-flex-matching t)
+(setq ido-enable-flex-matching t)
 (allout-mode)
 
 (global-set-key [(control .)] 'goto-last-change)
@@ -165,8 +153,8 @@ If the new path's directories does not exist, create them."
 (global-set-key [(meta .)] 'goto-last-change)
 ;; buffrs
 ;; set up ibuffer
-;; (autoload 'ibuffer "ibuffer" "List buffers." t)
-;; (setq ibuffer-default-sorting-mode 'major-mode)
+ (autoload 'ibuffer "ibuffer" "List buffers." t)
+ (setq ibuffer-default-sorting-mode 'major-mode)
 
 
 ;; ;; uniquify
@@ -200,7 +188,7 @@ If the new path's directories does not exist, create them."
 (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.r\\(b\\(w\\|x\\)?\\|html?\\|js\\)$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\([Rr]ake\\|[Cc]ap\\|[Gg]em\\)file$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.cl$" . lisp-mode))
+
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gem\\(spec\\)?$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
@@ -380,3 +368,17 @@ With argument ARG, do this that many times."
 ;;  ;; Your init file should contain only one such instance.
 ;;  ;; If there is more than one, they won't work right.
 ;;  )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ispell-dictionary nil)
+ '(package-selected-packages
+   '(paredit cl-libify projectile flx-ido yaml-mode with-editor undo-tree unbound rinari rhtml-mode rainbow-delimiters pretty-lambdada popup php+-mode org-publish-agenda notify mwe-log-commands idle-highlight-mode highline highlight-tail flymake-ruby dired-details color-theme-solarized closure-template-html-mode anything-exuberant-ctags)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

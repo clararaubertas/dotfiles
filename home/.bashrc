@@ -229,8 +229,9 @@ PROMPT_COMMAND='echo -ne "\033];${USER}@${HOSTNAME}: ${PWD}\007"'
 
 PS1="\n" # newline
 PS1+="$userStyle\u" # username
-PS1+="$black@"
+PS1+="$bold$black@"
 PS1+="$hostStyle\h" # host
+PS1+="$blue !\$(~/.rvm/bin/rvm-prompt)"
 PS1+="$black: "
 PS1+="\[$green\]\w" # working directory
 PS1+="\$(prompt_git \"$black on $cyan\")" # git repository details
@@ -238,6 +239,8 @@ PS1+="\n"
 PS1+="\[$black\]\$ \[$reset\]" # $ (and reset color)
 export PS1
 }
+
+
 set_prompts
 unset set_prompts
 
@@ -247,7 +250,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # android
 export PATH=${PATH}:$HOME/sdk/android-sdk-linux/platform-tools:$HOME/sdk/android-sdk-linux/tools:$HOME/sdk/android-sdk-linux/build-tools/22.0.1/
 
-
-
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+source /home/clara/.rvm/scripts/rvm
+
+
