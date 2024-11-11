@@ -1,4 +1,0 @@
-class AddPartialPaymentToInvoice < ActiveRecord::Migration
-  def change
-  end
-end

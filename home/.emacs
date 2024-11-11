@@ -21,11 +21,12 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/org-sync")
 
-(mapc 'load
-      '("os" "os-github"))
-(setq os-github-auth '("clararaubertas" . "poppyasm"))
+;; (mapc 'load
+;;       '("os" "os-github"))
+;; (setq os-github-auth '("clararaubertas" . "poppyasm"))
 ;;(require 'org-agenda-property)
 ;;(require 'android-mode)
+
 
 
 (projectile-mode +1)
@@ -40,9 +41,9 @@
 
 ;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
 
-(set-face-attribute 'default t :font "Victor Mono SemiBold 15" )
+(set-face-attribute 'default t :font "VictorMono Nerd Font 15" )
 
-(set-frame-font "Victor Mono SemiBold 15" )
+(set-frame-font "VictorMono Nerd Font 15" )
 
 
 (define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode

@@ -1,3 +1,0 @@
-class SurveyAnswer < ActiveRecord::Base
-  attr_accessible :text, :user_session_id
-end
