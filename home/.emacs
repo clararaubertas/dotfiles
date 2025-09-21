@@ -1,80 +1,429 @@
-;; it's clara's .emacs
-
-;;;;;;;;;; I. Package Management ;;;;;;;;;;
-
-
+(message "hi")
 
 (require 'package)
-
-(add-to-list 'package-archives '("melpa"  . "https://melpa.org/packages/"))
-(add-to-list 'package-archives '("nongnu" . "https://elpa.nongnu.org/nongnu/"))
-(setq package-archive-priorities '(("melpa"  . 3)
-                                   ("gnu"    . 2)))
-
-
+(add-to-list 'package-archives '("gnu"   . "https://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(setq use-package-always-ensure t)
+(eval-and-compile
+  (setq use-package-always-ensure t
+        use-package-expand-minimally t))
+
+(use-package diminish)
+
+(use-package smartparens
+  :diminish (smartparens-mode .  "()")
+  :hook (prog-mode text-mode markdown-mode) ;; add `smartparens-mode` to these hooks
+  :init
+  ;;  (use-package smartparens-ruby)
+  (add-hook 'ruby-mode-hook 'smartparens-strict-mode))
+
+;; ( compilation-scroll-output t)
+;; (setq compilation-auto-jump-to-first-error t)
+
+;; (setq compilation-max-output-line-length nil)
+(defun ar/colorize-compilation-buffer ()
+  (let ((inhibit-read-only t))
+    (ansi-color-apply-on-region (point-min) (point-max))))
+
+(add-hook 'compilation-filter-hook 'ar/colorize-compilation-buffer)
+
+
+(use-package markdown-mode
+  :mode ("\\.md\\'" . markdown-mode))
+
+(use-package magit
+  :bind (("C-x g" . magit-status)
+         ("C-x C-g" . magit-status)))
+
+
+(use-package rainbow-delimiters
+  :diminish
+  :hook (prog-mode text-mode))
+
+(use-package rainbow-mode
+  :diminish
+  :hook (prog-mode text-mode))
 
 
 
-(add-to-list 'load-path "~/.emacs.d/*")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
-(add-to-list 'load-path "~/.emacs.d/org-sync")
+(use-package company
+  :config (global-company-mode) )
 
-;; (mapc 'load
-;;       '("os" "os-github"))
-;; (setq os-github-auth '("clararaubertas" . "poppyasm"))
-;;(require 'org-agenda-property)
-;;(require 'android-mode)
-
-
-
-(projectile-mode +1)
-;; Recommended keymap prefix on macOS
-(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
-;; Recommended keymap prefix on Windows/Linux
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+(use-package css-mode
+  :mode "\\.css\\'")
+(use-package scss-mode
+  :mode "\\.scss\\'")
+(setq-default css-indent-offset 2)
+(add-hook 'scss-mode-hook
+          (lambda () (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
+(use-package web-mode
+  :mode "\\.erb\\'"
+  :mode "\\.html\\'"
+  :mode "\\.php\\'"
+  )
 
 
+;;; \begin ruby
 
-;;;;;;;;;; ;;;;;;;;;;
+(use-package ruby-mode
+  :mode "\\.rb\\'"
+  :mode "\\.rake\\'"
+  :mode "\\.gem\\'"
+  :mode "Rakefile\\'"
+  :mode "Gemfile\\'"
+  :interpreter "ruby"
 
-;;;;;;;;;; III. COLORS!!!!! ;;;;;;;;;;
+  :init
+  (setq ruby-indent-level 2
+        ruby-indent-tabs-mode nil)
+  :bind
+  (([(meta down)] . forward-sexp)
+   ([(meta up)]   . backward-sexp)
+   (("C-c C-e"    . ruby-send-region))))  ;; Rebind since Rubocop uses C-c C-r
 
-(set-face-attribute 'default t :font "VictorMono Nerd Font 15" )
+(use-package inf-ruby
+  :init
+  (add-hook 'ruby-mode-hook 'inf-ruby-minor-mode))
 
-(set-frame-font "VictorMono Nerd Font 15" )
-
-
-(define-globalized-minor-mode my-global-idle-highlight-mode idle-highlight-mode
-  (lambda () (idle-highlight-mode 1)))
-(my-global-idle-highlight-mode 1)
-
-(define-globalized-minor-mode my-global-blink-cursor-mode blink-cursor-mode
-  (lambda () (blink-cursor-mode 1)))
-(my-global-blink-cursor-mode 1)
-
-(rainbow-delimiters-mode)
-(electric-pair-mode)
-
-(setq idle-highlight-idle-time 0)
+(use-package flymake
+  :diminish
+  :init
+  :hook (prog-mode text-mode markdown-mode)
+  )
 
 
-(global-font-lock-mode t)
-(global-prettify-symbols-mode)
+(use-package rvm
+  :config
+  (rvm-use-default))
 
-(add-hook 'prog-mode-hook 'paredit-mode)
+(use-package bundler
+  :config
+  ;; (ha-local-leader 'ruby-mode-map
+  ;;   "g"  '(:ignore t :which-key "bundler")
+  ;;   "g o" '("open" . bundle-open)
+  ;;   "g g" '("console" . bundle-console)
+  ;;   "g c" '("check" . bundle-check)
+  ;;   "g i" '("install" . bundle-install)
+  ;;   "g u" '("update" . bundle-update)))
+  )
+
+(use-package rubocop
+  :init
+  :hook (ruby-mode))
+
+(use-package rufo
+  :hook (ruby-mode))
+
+(use-package robe
+  :config (global-robe-mode))
+
+(use-package ruby-electric
+  :hook (ruby-mode))
+
+(use-package rspec-mode
+  :hook (ruby-mode web-mode))
+
+(eval-after-load 'rspec-mode
+  '(rspec-install-snippets))
+
+(use-package projectile
+  :diminish
+  :config (projectile-mode)
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
+  :init
+  )
+
+
+
+(use-package expand-region
+  :bind ("C-=" . er/expand-region))
+
+
+;;; \end ruby
+
+;; or
+(use-package all-the-icons)
+
+
+
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook)
+  :init
+  (setq dashboard-icon-type 'all-the-icons)
+
+  (setq dashboard-startup-banner (random 4))
+  )
+
+
+
+(use-package smart-mode-line
+  
+  :init
+  (setq sml/no-confirm-load-theme t)
+
+  (setq sml/theme 'dark)
+  (setq sml/name-width 20)
+  (setq sml/mode-width 'full)
+  (sml/setup)
+
+  (setq display-time-day-and-date t)
+  (setq display-time-format "  %I:%M %p  %a %e %b ")
+  (setq display-time-default-load-average nil)
+  (set-face-attribute 'mode-line nil :font "VictorMono Nerd Font-11:weight=bold")
+
+  (display-time-mode)
+  )
+(use-package ewth
+  :ensure nil
+  :load-path "/home/clara/.emacs.d/ewth.el"
+  :config
+  (setq ewth-url "http://wttr.in/Chicago?u&format=2")
+  (ewth-mode)
+  )
+
+(use-package diff-hl
+  :ensure t
+  :init
+  :config
+
+  (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
+  (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
+  (setq diff-hl-fringe-bmp-function 'diff-hl-fringe-bmp-from-type)
+  (setq diff-hl-margin-side 'left)
+  (global-diff-hl-mode)
+  (diff-hl-margin-mode t)
+  (diff-hl-flydiff-mode t))
+
+
+
+(use-package emojify
+  :config
+  (set-fontset-font
+   t 'symbol (font-spec :family "Noto Emoji") nil 'prepend)
+  (setq emojify-display-style 'unicode)
+  (setq emojify-emoji-styles '(unicode))
+  (bind-key* (kbd "C-c .") #'emojify-insert-emoji)) ; override binding in any mode
 
 (load-theme 'solarized-dark t)
 (set-face-foreground 'default "#fdf6e3") ; Normal
 (set-face-foreground 'mode-line "#859900")
 (set-face-foreground 'mode-line-inactive "#2aa198")
 (set-face-background 'highlight "#073642")
-(set-face-foreground 'highlight nil)
-(set-face-background 'idle-highlight "#859900")
-(set-face-foreground 'idle-highlight nil)
+
+
+(use-package almost-mono-themes
+  :config
+  (load-theme 'almost-mono-black t))
+
+(use-package nyan-mode
+  :init (nyan-mode))
+
+
+(use-package fancy-battery
+  :init (fancy-battery-mode))
+
+(global-display-line-numbers-mode)
+
+
+(use-package idle-highlight-in-visible-buffers-mode
+  :hook (prog-mode text-mode))
+
+(use-package indent-bars
+  :hook (prog-mode))
+
+(use-package orderless
+  :ensure t
+  :config
+  (setq completion-styles '(orderless basic)))
+
+
+(use-package vertico
+  :config
+  (setq vertico-cycle t
+        vertico-resize nil
+
+        vertico-scroll-margin 0 ;; Different scroll margi
+        vertico-count 20 ;; Show more candidates
+        vertico-resize t ;; Grow and shrink the Vertico minibuffer
+        vertico-cycle t ;; Enable cycling for `vertico-next/previous'
+        )
+  :init
+  (vertico-mode))
+
+;; Persist history over Emacs restarts. Vertico sorts by history position.
+(use-package savehist
+  :init
+  (savehist-mode))
+
+(use-package consult
+  ;; Replace bindings. Lazily loaded by `use-package'.
+  :bind (;; C-c bindings in `mode-specific-map'
+         ("C-c M-x" . consult-mode-command)
+         ("C-c h" . consult-history)
+         ("C-c k" . consult-kmacro)
+         ("C-c m" . consult-man)
+         ("C-c i" . consult-info)
+         ([remap Info-search] . consult-info)
+         ;; C-x bindings in `ctl-x-map'
+         ("C-x M-:" . consult-complex-command)     ;; orig. repeat-complex-command
+         ("C-x b" . consult-buffer)                ;; orig. switch-to-buffer
+         ("C-x 4 b" . consult-buffer-other-window) ;; orig. switch-to-buffer-other-window
+         ("C-x 5 b" . consult-buffer-other-frame)  ;; orig. switch-to-buffer-other-frame
+         ("C-x t b" . consult-buffer-other-tab)    ;; orig. switch-to-buffer-other-tab
+         ("C-x r b" . consult-bookmark)            ;; orig. bookmark-jump
+         ("C-x p b" . consult-project-buffer)      ;; orig. project-switch-to-buffer
+         ;; Custom M-# bindings for fast register access
+         ("M-#" . consult-register-load)
+         ("M-'" . consult-register-store)          ;; orig. abbrev-prefix-mark (unrelated)
+         ("C-M-#" . consult-register)
+         ;; Other custom bindings
+         ("M-y" . consult-yank-pop)                ;; orig. yank-pop
+         ;; M-g bindings in `goto-map'
+         ("M-g e" . consult-compile-error)
+         ("M-g f" . consult-flymake)               ;; Alternative: consult-flycheck
+         ("M-g g" . consult-goto-line)             ;; orig. goto-line
+         ("M-g M-g" . consult-goto-line)           ;; orig. goto-line
+         ("M-g o" . consult-outline)               ;; Alternative: consult-org-heading
+         ("M-g m" . consult-mark)
+         ("M-g k" . consult-global-mark)
+         ("M-g i" . consult-imenu)
+         ("M-g I" . consult-imenu-multi)
+         ;; M-s bindings in `search-map'
+         ("M-s d" . consult-find)                  ;; Alternative: consult-fd
+         ("M-s c" . consult-locate)
+         ("M-s g" . consult-grep)
+         ("M-s G" . consult-git-grep)
+         ("M-s r" . consult-ripgrep)
+         ("M-s l" . consult-line)
+         ("M-s L" . consult-line-multi)
+         ("M-s k" . consult-keep-lines)
+         ("M-s u" . consult-focus-lines)
+         ;; Isearch integration
+         ("M-s e" . consult-isearch-history)
+         :map isearch-mode-map
+         ("M-e" . consult-isearch-history)         ;; orig. isearch-edit-string
+         ("M-s e" . consult-isearch-history)       ;; orig. isearch-edit-string
+         ("M-s l" . consult-line)                  ;; needed by consult-line to detect isearch
+         ("M-s L" . consult-line-multi)            ;; needed by consult-line to detect isearch
+         ;; Minibuffer history
+         :map minibuffer-local-map
+         ("M-s" . consult-history)                 ;; orig. next-matching-history-element
+         ("M-r" . consult-history))                ;; orig. previous-matching-history-element
+
+  ;; Enable automatic preview at point in the *Completions* buffer. This is
+  ;; relevant when you use the default completion UI.
+  :hook (completion-list-mode . consult-preview-at-point-mode)
+
+  ;; The :init configuration is always executed (Not lazy)
+  :init
+
+  ;; Tweak the register preview for `consult-register-load',
+  ;; `consult-register-store' and the built-in commands.  This improves the
+  ;; register formatting, adds thin separator lines, register sorting and hides
+  ;; the window mode line.
+  (advice-add #'register-preview :override #'consult-register-window)
+  (setq register-preview-delay 0.5)
+
+  ;; Use Consult to select xref locations with preview
+  (setq xref-show-xrefs-function #'consult-xref
+        xref-show-definitions-function #'consult-xref)
+
+  ;; Configure other variables and modes in the :config section,
+  ;; after lazily loading the package.
+  :config
+
+  ;; Optionally configure preview. The default value
+  ;; is 'any, such that any key triggers the preview.
+  ;; (setq consult-preview-key 'any)
+  ;; (setq consult-preview-key "M-.")
+  ;; (setq consult-preview-key '("S-<down>" "S-<up>"))
+  ;; For some commands and buffer sources it is useful to configure the
+  ;; :preview-key on a per-command basis using the `consult-customize' macro.
+  (consult-customize
+   consult-theme :preview-key '(:debounce 0.2 any)
+   consult-ripgrep consult-git-grep consult-grep consult-man
+   consult-bookmark consult-recent-file consult-xref
+   consult--source-bookmark consult--source-file-register
+   consult--source-recent-file consult--source-project-recent-file
+   ;; :preview-key "M-."
+   :preview-key '(:debounce 0.4 any))
+
+  ;; Optionally configure the narrowing key.
+  ;; Both < and C-+ work reasonably well.
+  (setq consult-narrow-key "<") ;; "C-+"
+
+  ;; Optionally make narrowing help available in the minibuffer.
+  ;; You may want to use `embark-prefix-help-command' or which-key instead.
+  ;; (keymap-set consult-narrow-map (concat consult-narrow-key " ?") #'consult-narrow-help)
+  )
+;; Enable rich annotations using the Marginalia package
+(use-package marginalia
+  ;; Bind `marginalia-cycle' locally in the minibuffer.  To make the binding
+  ;; available in the *Completions* buffer, add it to the
+  ;; `completion-list-mode-map'.
+  :bind (:map minibuffer-local-map
+	      ("M-A" . marginalia-cycle))
+
+  ;; The :init section is always executed.
+  :init
+
+  (marginalia-mode))
+
+(use-package nerd-icons-completion
+  :after marginalia
+  :config
+  (nerd-icons-completion-mode)
+  (add-hook 'marginalia-mode-hook #'nerd-icons-completion-marginalia-setup))
+
+(unless (package-installed-p 'vc-use-package)
+  (package-vc-install "https://github.com/slotThe/vc-use-package"))
+(require 'vc-use-package)
+
+(use-package nerd-icons-mode-line
+  :ensure t
+  :vc (:fetcher github :repo "grolongo/nerd-icons-mode-line")
+  :custom
+  (nerd-icons-mode-line-v-adjust 0.1) ; default value
+  (nerd-icons-mode-line-size 1.0) ; default value
+  :config (nerd-icons-mode-line-global-mode t))
+
+
+(use-package yasnippet
+  :ensure t
+  :hook ((text-mode
+          prog-mode
+          conf-mode
+          snippet-mode) . yas-minor-mode-on)
+  :init
+  (setq yas-snippet-dir "~/.emacs.d/snippets"))
+
+(use-package yasnippet-snippets ; Collection of snippets
+  :ensure t)
+
+;; font
+
+(set-face-attribute 'default t :font "VictorMono Nerd Font 13" )
+
+(set-frame-font "VictorMono Nerd Font 13" )
+
+
+(global-font-lock-mode t)
+(global-prettify-symbols-mode)
+
+
+
 (setq default-frame-alist
       '((background-color . "#002b36")))
+
+;;; B.L.I.N.K
 
 (defvar blink-cursor-colors (list "#b58900" "#859900" "#268bd2")
   "On each blink the cursor will cycle to the next color in this list.")
@@ -92,15 +441,7 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
   (internal-show-cursor nil (not (internal-show-cursor-p)))
   )
 
-
-
-
-
-
-;;;;;;;;;; END Colors ;;;;;;;;;;
-
-
-;;;;;;;;;; IV. Saving & Permissions ;;;;;;;;;;
+;;; files
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in
 ;; ~/.emacs.d/.
 (defun my-backup-file-name (fpath)
@@ -118,179 +459,8 @@ If the new path's directories does not exist, create them."
 
 ;;when saving files, set execute permission if #! is in first line.
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
-;;;;;;;;;; ;;;;;;;;;;
 
-
-(autoload 'scpaste "scpaste" "Paste the current buffer." t nil)
-(setq scpaste-http-destination "http://clararaubertas.net"
-      scpaste-scp-destination "clara@kumquat:/var/www/clararaubertas/")
-
-
-;; (flx-ido-mode)
-;; ;; Display ido results vertically, rather than horizontally
-;; (setq ido-decorations (quote ("\n-> " "" "\n   " "\n   ..." "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]")))
-;; (defun ido-disable-line-truncation () (set (make-local-variable 'truncate-lines) nil))
-;; (add-hook 'ido-minibuffer-setup-hook 'ido-disable-line-truncation)
-;; (defun ido-define-keys () ;; C-n/p is more intuitive in vertical layout
-;;   (define-key ido-completion-map (kbd "C-n") 'ido-next-match)
-;;     (define-key ido-completion-map (kbd "C-p") 'ido-prev-match))
-;;   (add-hook 'ido-setup-hook 'ido-define-keys)
-
-
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-
-
-(require 'ido)
-(ido-mode t)
-(setq ido-enable-flex-matching t)
-(allout-mode)
-
-(global-set-key [(control .)] 'goto-last-change)
-					; M-. can conflict with etags tag search. But C-. can get overwritten
-					; by flyspell-auto-correct-word. And goto-last-change needs a really
-					; fast key.
-(global-set-key [(meta .)] 'goto-last-change)
-;; buffrs
-;; set up ibuffer
- (autoload 'ibuffer "ibuffer" "List buffers." t)
- (setq ibuffer-default-sorting-mode 'major-mode)
-
-
-;; ;; uniquify
-;; (require 'uniquify)
-;; (setq uniquify-buffer-name-style 'forward)
-;; ;; Remap common buffer bindings to ibuffer and iswitchb
-
-;; (define-key global-map "\C-x\C-b" 'ibuffer-other-window)
-
-;;;;;;;;;; VI. Ruby preferences ;;;;;;;;;;
-;; (setq rsense-home "/opt/rsense-0.3")
-;; (add-to-list 'load-path (concat rsense-home "/etc"))
-;; (require 'rsense)
-(add-to-list 'load-path "~/.emacs.d/rinari")
-(require 'rinari)
-
-;; (defun ruby-insert-end () 
-;;   "Insert \"end\" at point and reindent current line." 
-;;   (interactive) 
-;;   (insert "end") 
-;;   (ruby-indent-line t) 
-;;   (end-of-line))
-
-(require 'yaml-mode)
-(add-to-list 'load-path "~/.emacs.d/rhtml")
-(require 'rhtml-mode)
-(add-hook 'haml-mode-hook
-          (lambda ()
-            (setq indent-tabs-mode nil)
-            (define-key haml-mode-map "\C-m" 'newline-and-indent)))
-(add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.r\\(b\\(w\\|x\\)?\\|html?\\|js\\)$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\([Rr]ake\\|[Cc]ap\\|[Gg]em\\)file$" . ruby-mode))
-
-(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.gem\\(spec\\)?$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-
-(require 'flymake-ruby)
-(add-hook 'ruby-mode-hook 'flymake-ruby-load)
-
-
-(add-hook 'ruby-mode-hook '(lambda ()
-			     (setq ruby-deep-arglist t)
-			     (setq ruby-deep-indent-paren nil)
-			     (esk-paredit-nonlisp)
-			     (ruby-electric-mode)
-			     (rspec-mode)
-			     (rubocop-mode)
-			     (ruby-tools-mode)
-			     (ruby-end-mode)
-			     (local-set-key [S-f7] 'ruby-compilation-this-buffer)
-			     (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
-			     (define-key ruby-mode-map (kbd "TAB") 'indent-for-tab-command)
-			     (local-set-key [f7] 'ruby-compilation-this-test)
-			     (local-set-key [f6] 'recompile)
-			     (local-set-key (kbd "C-c .") 'rsense-complete)
-			     (add-to-list 'ac-sources 'ac-source-rsense-method)
-			     (add-to-list 'ac-sources
-					  'ac-source-rsense-constant)
-			     ))
-
-;;;;;;;;;; end RUBY section ;;;;;;;;;;
-
-
-;; ;;;;;;;;;; V. ORG MODE ;;;;;;;;;;
-;; (setq-default major-mode 'org-mode)
-;; (setq org-startup-indented t)
-
-;; (setq org-todo-keywords
-;;       (quote ((sequence "TODO(t)" "|" "DONE(d!)")
-;;               (sequence "WAITING(w)" "SOMEDAY/MAYBE(m)" "JESSE(j)" "PROJECT(p)" "|" "CANCELLED(c)")
-;; )))
-;; (setq org-todo-keyword-faces      (quote (
-;;                     ("TODO" ( :background "#859900" :weight bold :foreground "#002b36"))
-;;                     ("WAITING" (  :weight bold :foreground "#fdf6e3"))
-;;                     ("SOMEDAY/MAYBE" (  :weight bold :foreground "#2aa198"))
-;;                     ("DONE" (  :weight bold :foreground "#859900"))
-;;                     ("PROJECT" ( :background "#2aa198" :weight bold  :foreground "#002b36"))
-;;                     ("JESSE" ( :weight bold :foreground "#fdf6e3"))
-;;                     ("CANCELLED" (  :weight bold :foreground "#2aa198"))
-;;                     )))
-;; (define-key global-map "\C-ca" 'org-agenda)
-;; (define-key global-map "\C-cc" 'org-capture)
-;; ;; NOTE: the 2 below have a bug where they only do half at a time so
-;; ;; it takes YOU, the USER, log(n) time instead of constant time.
-;; ;; see http://stackoverflow.com/questions/6997387
-;; (defun my-org-archive-done-tasks ()
-;;   (interactive)
-;;   (org-map-entries 'org-archive-subtree "/DONE" 'file))
-;; (defun my-org-archive-cancelled-tasks ()
-;;   (interactive)
-;;   (org-map-entries 'org-archive-subtree "/CANCELLED" 'file))
-
-
-;; (require 'org-install)
-
-;; (require 'org-habit)
-
-;; (getcals)
-;; (setq org-agenda-include-diary t)
-;;;;;;;;;; ;;;;;;;;;; 
-
-
-
-
-(defun sudo-edit (&optional arg)
-  "Edit currently visited file as root.
-
-With a prefix ARG prompt for a file to visit.
-Will also prompt for a file to visit if current
-buffer is not visiting a file."
-  (interactive "P")
-  (if (or arg (not buffer-file-name))
-      (find-file (concat "/sudo:root@localhost:"
-                         (ido-read-file-name "Find file(as root): ")))
-    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
-
-
-
-;;;;;;;;;; VI. Lisp & Scheme ;;;;;;;;;;
-(add-hook 'scheme-mode-hook 'paredit-mode)
-(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
-(add-hook 'emacs-lisp-mode-hook 'rainbow-mode)
-(add-hook 'css-mode-hook 'rainbow-mode)
-
-;;;;;;;;;; ;;;;;;;;;;
-
-;; ;; Exclude very large buffers from dabbrev
-;; (defun sanityinc/dabbrev-friend-buffer (other-buffer)
-;;   (< (buffer-size other-buffer) (* 1 1024 1024)))
-;; (setq dabbrev-friend-buffer-function 'sanityinc/dabbrev-friend-buffer)
-;; (company-mode)
-
-;;;;;;;;;; VII. Shortcuts ;;;;;;;;;;
+;;;;
 (defun backward-delete-word (arg)
   "Delete characters backward until encountering the beginning of a word.
 With argument ARG, do this that many times."
@@ -303,80 +473,56 @@ With argument ARG, do this that many times."
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 (global-set-key  (kbd "C-;") 'comment-region)
-;;;;;;;;;; ;;;;;;;;;;
 
-;;;;;;;;;; VIII. Line Behaviors ;;;;;;;;;;
-;; desired default behaviors for lines & line breaks, visually & behind-the-scenes
+
+;;;;
+
+(use-package flycheck
+  :ensure t
+  :config
+  (add-hook 'after-init-hook #'global-flycheck-mode))
 
 (global-visual-line-mode 1)
-(auto-fill-mode nil)
-(remove-hook 'textt-mode-hook 'turn-on-auto-fill)
-(global-linum-mode t)
-;;;;;;;;;; ;;;;;;;;;;
-
-;;;;;;;;;; IX. Text Mode ;;;;;;;;;;
-
-;;;;;;;;;; ;;;;;;;;;;
-
-(require 'ox-latex)
-(unless (boundp 'org-latex-classes)
-  (setq org-latex-classes nil))
-(add-to-list 'org-latex-classes
-             '("article"
-               "\\documentclass{article}"
-               ("\\section{%s}" . "\\section*{%s}")
-               ("\\subsection{%s}" . "\\subsection*{%s}")
-	       ))
+(diminish 'visual-line-mode)
+(diminish 'eldoc-mode)
+(auto-fill-mode -1)
+(remove-hook 'text-mode-hook 'turn-on-auto-fill)
 
 
-(setq magit-last-seen-setup-instructions "2.4.1")
-
-
-;;;;;;;;;; X. Remove annoying defaults, provide encouragement ;;;;;;;;;;
+;;; ..........
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-(setq inhibit-startup-screen t)   
+(setq inhibit-startup-screen t)
 (setq inhibit-splash-screen t)
 (setq transient-mark-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq debug-on-error nil)
-(setq inhibit-startup-echo-area-message "clara") 
+(setq inhibit-startup-echo-area-message "clara")
 (setq initial-scratch-message nil)
 (message "You're doing a great job!")
-;;;;;;;;;; END ;;;;;;;;;;
 
-;; (custom-set-variables
-;;  ;; custom-set-variables was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(background-color "#002b36")
-;;  '(background-mode dark)
-;;  '(cursor-color "#839496")
-;;  '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
-;;  '(custom-safe-themes
-;;    (quote
-;;     ("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
-;;  '(foreground-color "#839496")
-;;  '(package-selected-packages
-;;    (quote
-;;     (color-theme-sanityinc-solarized mmm-mode php-mode flx-ido bundler inf-ruby web-mode projectile projectile-rails robe zencoding-mode yaml-mode unfill undo-tree unbound textmate telepathy tabbar switch-window sudo-edit smart-cursor-color slim-mode scss-mode rvm ruby-end ruby-electric rinari rhtml-mode regex-tool rainbow-mode rainbow-delimiters pretty-mode pretty-lambdada pkg-info php+-mode paredit org-mobile-sync org-agenda-property nyan-mode notify noflet mwe-log-commands multicolumn multi-term magit log4e idle-highlight-mode highline highlight-tail goto-chg gntp gnome-calendar flymake-ruby flymake-haml feature-mode dired-details crontab-mode color-theme-solarized coffee-mode closure-template-html-mode auto-complete anything-exuberant-ctags android-mode ace-jump-mode)))
-;;  '(projectile-rails-global-mode t))
-;; (custom-set-faces
-;;  ;; custom-set-faces was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  )
+
+(message "world")
+
+;; end
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ispell-dictionary nil)
+ '(custom-safe-themes
+   '("fc1275617f9c8d1c8351df9667d750a8e3da2658077cfdda2ca281a2ebc914e0" default))
+ '(flycheck-checker-error-threshold 500)
+ '(indent-tabs-mode nil)
  '(package-selected-packages
-   '(paredit cl-libify projectile flx-ido yaml-mode with-editor undo-tree unbound rinari rhtml-mode rainbow-delimiters pretty-lambdada popup php+-mode org-publish-agenda notify mwe-log-commands idle-highlight-mode highline highlight-tail flymake-ruby dired-details color-theme-solarized closure-template-html-mode anything-exuberant-ctags)))
+   '(smart-mode-line spaceline-ml-all-the-icons fancy-battery spaceline-config spaceline-all-the-icons spaceline nyan-mode doom-modeline almost-mono-themes all-the-icons dashboard scss-mode vc-use-package nerd-icons-mode-line nerd-icons-completion nerd-icons orderless magit expand-region yasnippet-snippets rspec yasnippet marginalia consult rufo vertico rspec-mode yaml-mode web-mode undo-tree unbound smartparens rvm ruby-electric rubocop robe rinari rainbow-mode rainbow-delimiters projectile pretty-lambdada php-mode php+-mode paredit notify mwe-log-commands markdown-mode indent-guide indent-bars idle-highlight-mode idle-highlight-in-visible-buffers-mode highline highlight-tail highlight-indentation flymake-ruby flycheck exec-path-from-shell dired-details diminish dash company color-theme-solarized color-theme closure-template-html-mode cl-libify bundler anything-exuberant-ctags))
+ '(package-vc-selected-packages
+   '((nerd-icons-mode-line :vc-backend Git :url "https://github.com/grolongo/nerd-icons-mode-line")
+     (vc-use-package :vc-backend Git :url "https://github.com/slotThe/vc-use-package"))))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
