@@ -3,3 +3,5 @@
 	name = Clara Raubertas
 [push]
 	default = matching
+[credential]
+	helper = store
