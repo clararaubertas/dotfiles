@@ -44,6 +44,19 @@
   :bind (("C-x g" . magit-status)
          ("C-x C-g" . magit-status)))
 
+(use-package magit-delta)
+
+(use-package which-key
+  :init (which-key-mode))
+
+(use-package auto-package-update
+  :config
+  (setq auto-package-update-prompt-before-update t)
+  (setq auto-package-update-delete-old-versions t)
+  :init
+  (auto-package-update-maybe)
+  (add-hook 'auto-package-update-before-hook
+            (lambda () (message "I will update packages now"))))
 
 (use-package rainbow-delimiters
   :diminish
@@ -56,7 +69,7 @@
 
 
 (use-package company
-  :diminish (company-mode .  "\uec0d")
+  :diminish (company-mode .  " \uec0d")
   :config (global-company-mode) )
 
 (use-package css-mode
@@ -95,6 +108,8 @@
   :init
   (add-hook 'ruby-mode-hook 'inf-ruby-minor-mode))
 
+
+
 (use-package flymake
   :diminish
   :init
@@ -106,16 +121,8 @@
   :config
   (rvm-use-default))
 
-(use-package bundler
-  :config
-  ;; (ha-local-leader 'ruby-mode-map
-  ;;   "g"  '(:ignore t :which-key "bundler")
-  ;;   "g o" '("open" . bundle-open)
-  ;;   "g g" '("console" . bundle-console)
-  ;;   "g c" '("check" . bundle-check)
-  ;;   "g i" '("install" . bundle-install)
-  ;;   "g u" '("update" . bundle-update)))
-  )
+
+
 
 (use-package rubocop
   :init
@@ -175,66 +182,37 @@
   (sky-color-clock-initialize 41)
   (setq sky-color-clock-format "%k:%M")
   (setq sky-color-clock-enable-emoji-icon t)
-    (push '(:eval (sky-color-clock)) (default-value 'global-mode-string))
+  (push '(:eval (sky-color-clock)) (default-value 'global-mode-string))
   (display-time-mode -1))
 
 (setq zone-programs [zone-pgm-drip])
 
 
 
-
-;; (use-package spaceline :ensure t
-;;   :config
-;;   (setq-default powerline-height 80)
-;;   (setq-default powerline-default-separator 'zigzag)
-;;     (setq-default mode-line-format '("%e" (:eval (spaceline-ml-main))))
-;;   )
-
-
-
-
-;; (use-package spaceline-config :ensure spaceline
-;;   :config
-;;   ;;  (spaceline-spacemacs-theme)
-;;   (spaceline-toggle-battery-on)
-;;   (spaceline-toggle-major-mode-on)
-;;   (spaceline-toggle-version-control-on)
-;;   (spaceline-toggle-buffer-modified-on)
-;;   (spaceline-toggle-minor-modes-on)
-;;   (spaceline-toggle-flycheck-error-on)
-;;   (spaceline-toggle-flycheck-info-on)
-;;   )
-
-
 (set-face-attribute 'mode-line-active nil :box 'unspecified)
 (set-face-attribute 'mode-line-inactive nil :box 'unspecified)
 
-;; (use-package doom-modeline
-;;   :config
-;;   (setq doom-modeline-buffer-file-name-style 'truncate-with-project)
+(use-package doom-modeline
+  :config
+  (setq doom-modeline-buffer-file-name-style 'truncate-with-project)
+  (setq doom-modeline-buffer-state-icon t)
+  (setq doom-modeline-buffer-modification-icon t)
+  (setq doom-modeline-major-mode-icon t)
+  (setq doom-modeline-icon t)
+  (setq doom-modeline-time-analogue-clock t)
+  (setq doom-modeline-time-live-icon t)
+  (setq doom-modeline-project-detection 'auto)
+  (setq doom-modeline-env-version t)
+  (setq doom-modeline-env-enable-ruby t)
+  (setq doom-modeline-height 25)
+  (setq doom-modeline-major-mode-color-icon t)
+  (setq doom-modeline-github nil)
+  (setq doom-modeline-minor-modes t)
+  (setq doom-modeline-enable-buffer-position t)
+  (setq doom-modeline-position-line-format '("L%l"))
+  (doom-modeline-mode))
 
-;;   (setq doom-modeline-major-mode-icon t)
-;;   (setq doom-modeline-icon t)
-;;   (setq doom-modeline-time-analogue-clock t)
-;;   (setq doom-modeline-time-live-icon t)
-;;   (setq doom-modeline-battery t)
-;;   (setq doom-modeline-env-version t)
-;;   (setq doom-modeline-env-enable-ruby t)
-;;   (setq doom-modeline-height 25)
-;;   (setq doom-modeline-major-mode-color-icon t)
-;;   (setq doom-modeline-github nil)
-;;   (setq doom-modeline-minor-modes t)
-;;   :init
-;;   (doom-modeline-mode))
 
-
-
-(set-face-attribute 'mode-line nil
-                    :background "#353644"
-                    :foreground "#d33682"
-		    ;;                    :box '(:line-width 8 :color "#353644")
-                    :overline nil
-                    :underline nil)
 
 
 (use-package diff-hl
@@ -247,7 +225,7 @@
   (setq diff-hl-fringe-bmp-function 'diff-hl-fringe-bmp-from-type)
   (setq diff-hl-margin-side 'left)
   (global-diff-hl-mode)
-  (diff-hl-margin-mode t)
+  (diff-hl-margin-mode nil)
   (diff-hl-flydiff-mode t))
 
 ;; (use-package omnibox
@@ -263,38 +241,142 @@
   (setq emojify-emoji-styles '(unicode))
   (bind-key* (kbd "C-c .") #'emojify-insert-emoji)) ; override binding in any mode
 
-(use-package solarized-theme
+
+(use-package ef-themes
+  :ensure t
   :init
-  (load-theme 'solarized-dark t)
-  ;; Use more italics
-  (setq solarized-use-more-italic t)
-  (set-face-foreground 'default "#fdf6e3") ; Normal
-;; (set-face-foreground 'mode-line "#859900")
-;; (set-face-foreground 'mode-line-inactive "#2aa198")
-(set-face-background 'highlight "#073642")
+  ;; This makes the Modus commands listed below consider only the Ef
+  ;; themes.  For an alternative that includes Modus and all
+  ;; derivative themes (like Ef), enable the
+  ;; `modus-themes-include-derivatives-mode' instead.  The manual of
+  ;; the Ef themes has a section that explains all the possibilities:
+  ;;
+  ;; - Evaluate `(info "(ef-themes) Working with other Modus themes or taking over Modus")'
+  ;; - Visit <https://protesilaos.com/emacs/ef-themes#h:6585235a-5219-4f78-9dd5-6a64d87d1b6e>
 
-
-  )
-
-(use-package almost-mono-themes
+  (ef-themes-take-over-modus-themes-mode 1)
+  :bind
+  (("<f5>" . modus-themes-rotate)
+   ("C-<f5>" . modus-themes-select)
+   ("M-<f5>" . modus-themes-load-random))
   :config
-  (load-theme 'almost-mono-black t))
+  ;; All customisations here.
+  (set-face-attribute 'default t :font "IosevkaTermSlab NF 12" )
+  (setq modus-themes-mixed-fonts t)
+  (setq modus-themes-italic-constructs t)
+
+  ;; Use them in overrides
+  (setq modus-themes-common-palette-overrides
+	'(
+	  (bg-main  "#002b36")
+	  (fg-main  "#EEE8D5")
+	  (default "#fdf6e3")
+	  (solar-red  "#DC322F")
+	  (red  "#DC322F")
+	  (solar-green  "#859900")
+	  (green  "#859900")
+	  (yellow  "#B58900")
+	  (solar-yellow  "#B58900")
+	  (cyan-cooler  "#268BD2")
+	  (solar-magenta "#D33682")
+	  (cyan-warmer  "#2AA198")
+	  (violet "#6c71c4")
+	  (orange "#cb4b16")
+	  (bg-region solar-yellow)
+;;	  (comment solar-magenta)
+	   (fg-mode-line-active solar-magenta)
+	   (bg-mode-line-active "#030602")
+	  (comment solar-magenta)
+	  (font-lock-function-call-face solar-yellow)
+	  (font-lock-function-name-face solar-green)
+	  (rainbow-0 solar-yellow)
+	  (rainbow-1 cyan-warmer)
+	  (rainbow-2 cyan-cooler)
+	  (rainbow-3 violet)
+	  (rainbow-4 orange)
+	  (flycheck-error-list-info solar-green)
+
+	  (set-face-foreground 'flycheck-error-list-info solar-green)
+	  (rainbow-5 solar-yellow)
+	  (rainbow-6 blue)
+	  
+	  (rainbow-7 cyan)
+	  (rainbow-8 magenta)
+	  ))
+
+
+  ;; Finally, load your theme of choice (or a random one with
+  ;; `modus-themes-load-random', `modus-themes-load-random-dark',
+  ;; `modus-themes-load-random-light').
+  ;; ef-bio
+  (modus-themes-load-theme 'ef-maris-dark) )
+
+
+
+
+
+  (set-face-attribute 'line-number nil
+                    :background "#353644"
+                    :foreground "#d33682"
+		    :box nil
+		    :font "IosevkaTermSlab NF 10"
+                    :overline nil
+                    :underline nil)
+ (set-face-attribute 'line-number-current-line nil
+                    :background "#353644"
+                    :foreground "#268bd2"
+		    :box nil
+		    :slant 'italic
+		    :font "IosevkaTermSlab NF 10"
+                    :overline nil
+                    :underline nil)
+
+(set-face-attribute 'mode-line nil
+                    :background "#353644"
+                    :foreground "#d33682"
+		    :box nil
+		    :font "IosevkaTermSlab NF 8"
+                    :overline nil
+                    :underline nil)
+(set-face-attribute 'mode-line-active nil
+		    :font "IosevkaTermSlab NF 8")
+(set-face-attribute 'mode-line-inactive nil
+		    :foreground "#353644"
+		    :font "IosevkaTermSlab NF 8")
+
+(let* ((variable-tuple
+        (cond ((x-list-fonts "Iosevkatermslab")         '(:font "Iosevkatermslab NF"))
+	      (nil (warn "Cannot find da font..."))))
+       (base-font-color     (face-foreground 'default nil 'default))
+       (headline           `(:inherit default :weight bold :foreground ,base-font-color)))
+
+  (custom-theme-set-faces
+   'user
+   `(org-level-8 ((t (,@headline ,@variable-tuple))))
+   `(org-level-7 ((t (,@headline ,@variable-tuple))))
+   `(org-level-6 ((t (,@headline ,@variable-tuple))))
+   `(org-level-5 ((t (,@headline ,@variable-tuple))))
+   `(org-level-4 ((t (,@headline ,@variable-tuple :height 1))))
+   `(org-level-3 ((t (,@headline ,@variable-tuple :height 1))))
+   `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.1))))
+   `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.2))))
+   `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
+
 
 (use-package nyan-mode
-  :config (setq nyan-bar-length 5)
+  :config (setq nyan-bar-length 3)
   :init (nyan-mode))
-
-
 
 (global-display-line-numbers-mode)
 
-
 (use-package idle-highlight-in-visible-buffers-mode
   :diminish
+  :config (set-face-background 'idle-highlight-in-visible-buffers "#268BD2")
   :hook (prog-mode text-mode))
 
 (use-package indent-bars
-  :hook (prog-mode))
+  :hook (prog-mode lisp-mode))
+
 
 (use-package orderless
   :ensure t
@@ -340,17 +422,6 @@
   (nerd-icons-completion-mode)
   (add-hook 'marginalia-mode-hook #'nerd-icons-completion-marginalia-setup))
 
-(unless (package-installed-p 'vc-use-package)
-  (package-vc-install "https://github.com/slotThe/vc-use-package"))
-(require 'vc-use-package)
-
-(use-package nerd-icons-mode-line
-  :ensure t
-  :vc (:fetcher github :repo "grolongo/nerd-icons-mode-line")
-  :custom
-  (nerd-icons-mode-line-v-adjust 0.1) ; default value
-  (nerd-icons-mode-line-size 1.0) ; default value
-  :config (nerd-icons-mode-line-global-mode t))
 
 
 (use-package yasnippet
@@ -367,28 +438,40 @@
 
 ;; font
 
-(set-face-attribute 'default t :font "VictorMono Nerd Font 18" )
-
-(set-frame-font "VictorMono Nerd Font 18" )
 
 
+
+
+
+(setq
+ ;; Edit settings
+ org-auto-align-tags nil
+ org-tags-column 0
+ org-catch-invisible-edits 'show-and-error
+ org-special-ctrl-a/e t
+ org-insert-heading-respect-content t
+
+ ;; Org styling, hide markup etc.
+ org-hide-emphasis-markers t
+ org-pretty-entities t
+ org-agenda-tags-column 0
+ org-ellipsis "…")
+
+(global-org-modern-mode)
 (global-font-lock-mode t)
 (global-prettify-symbols-mode)
-
-
 
 (setq default-frame-alist
       '((background-color . "#002b36")))
 
 ;;; B.L.I.N.K
-
 (defvar blink-cursor-colors (list "#b58900" "#859900" "#268bd2")
   "On each blink the cursor will cycle to the next color in this list.")
 (setq blink-cursor-count 0)
 (defun blink-cursor-timer-function ()
-  "Cyberpunk variant of timer `blink-cursor-timer'. OVERWRITES original version in `frame.el'.
-
-This one changes the cursor color on each blink. Define colors in `blink-cursor-colors'."
+  "Cyberpunk variant of timer `blink-cursor-timer'.
+OVERWRITES original version in `frame.el'.
+This one changes the cursor color on each blink.  Define colors in `blink-cursor-colors'."
   (when (not (internal-show-cursor-p))
     (when (>= blink-cursor-count (length blink-cursor-colors))
       (setq blink-cursor-count 0))
@@ -409,16 +492,11 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
   (ewth-mode)
   )
 
-(use-package fancy-battery
- :init (fancy-battery-mode))
+;; (use-package fancy-battery
+;;   :init (fancy-battery-mode))
 
 
-(use-package moody
-  :config
-  (moody-replace-mode-line-front-space)
-  (moody-replace-mode-line-buffer-identification)
 
-  (moody-replace-vc-mode))
 
 
 
@@ -426,7 +504,7 @@ This one changes the cursor color on each blink. Define colors in `blink-cursor-
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in
 ;; ~/.emacs.d/.
 (defun my-backup-file-name (fpath)
-  "Return a new file path of a given file path.
+  "Return a new file path of a given file path FPATH.
 If the new path's directories does not exist, create them."
   (let* (
 	 (backupRootDir "~/.emacs.d/emacs-backup/")
@@ -488,19 +566,37 @@ With argument ARG, do this that many times."
 (message "world")
 
 ;; end
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(moody yasnippet-snippets web-mode vertico vc-use-package solarized-theme smartparens scss-mode rvm rufo ruby-electric rubocop rspec-mode robe request rainbow-mode rainbow-delimiters projectile orderless nyan-mode nerd-icons-mode-line nerd-icons-completion markdown-mode marginalia magit indent-bars idle-highlight-in-visible-buffers-mode flycheck fancy-battery expand-region emojify diminish diff-hl dashboard company bundler almost-mono-themes all-the-icons))
+   '(all-the-icons almost-mono-themes auto-package-update bundler
+		   color-theme-sanityinc-solarized company dashboard
+		   diff-hl diminish doom-modeline emojify
+		   expand-region fancy-battery flycheck
+		   idle-highlight-in-visible-buffers-mode indent-bars
+		   magit magit-delta marginalia markdown-mode
+		   mode-line-nerd-icon modus-themes moody
+		   nerd-icons-completion nerd-icons-mode-line
+		   nyan-mode orderless org-modern projectile
+		   rainbow-delimiters rainbow-mode request robe
+		   rspec-mode rubocop ruby-electric rufo rvm scss-mode
+		   smartparens solarized-theme sudo-edit
+		   vc-use-package vertico web-mode which-key
+		   yasnippet-snippets))
  '(package-vc-selected-packages
-   '((nerd-icons-mode-line :vc-backend Git :url "https://github.com/grolongo/nerd-icons-mode-line")
-     (vc-use-package :vc-backend Git :url "https://github.com/slotThe/vc-use-package"))))
+   '((vc-use-package :vc-backend Git :url
+		     "https://github.com/slotThe/vc-use-package")
+     (nerd-icons-mode-line :vc-backend Git :url
+			   "https://github.com/grolongo/nerd-icons-mode-line"))))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+

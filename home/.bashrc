@@ -257,3 +257,11 @@ source /home/clara/.rvm/scripts/rvm
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+
+. "$HOME/.cargo/env"
+
+PATH="/home/clara/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/clara/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/clara/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/clara/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/clara/perl5"; export PERL_MM_OPT;
