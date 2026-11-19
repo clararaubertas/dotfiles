@@ -620,20 +620,20 @@ With argument ARG, do this that many times."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(all-the-icons almost-mono-themes auto-package-update bundler
-		   color-theme-sanityinc-solarized company dashboard
-		   diff-hl diminish doom-modeline ement emojify
-		   expand-region fancy-battery flycheck
-		   idle-highlight-in-visible-buffers-mode indent-bars
-		   magit magit-delta marginalia markdown-mode
-		   mode-line-nerd-icon modus-themes moody
-		   nerd-icons-completion nerd-icons-mode-line
-		   nyan-mode orderless org-modern php-mode projectile
-		   rainbow-delimiters rainbow-mode request robe
-		   rspec-mode rubocop ruby-electric rufo rvm scss-mode
-		   smartparens solarized-theme sudo-edit
-		   vc-use-package vertico web-mode which-key
-		   yasnippet-snippets))
+   '(0blayout 750words all-the-icons almost-mono-themes
+	      auto-package-update bundler
+	      color-theme-sanityinc-solarized company dashboard
+	      diff-hl diminish doom-modeline ement emojify
+	      expand-region fancy-battery flycheck
+	      idle-highlight-in-visible-buffers-mode indent-bars magit
+	      magit-delta marginalia markdown-mode mode-line-nerd-icon
+	      modus-themes moody nerd-icons-completion
+	      nerd-icons-mode-line nyan-mode orderless org-modern
+	      php-mode projectile rainbow-delimiters rainbow-mode
+	      request robe rspec-mode rubocop ruby-electric rufo rvm
+	      scss-mode smartparens solarized-theme sudo-edit
+	      vc-use-package vertico web-mode which-key
+	      yasnippet-snippets))
  '(package-vc-selected-packages
    '((vc-use-package :vc-backend Git :url
 		     "https://github.com/slotThe/vc-use-package")
