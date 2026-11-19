@@ -46,6 +46,20 @@
 
 (use-package magit-delta)
 
+;; Matrix client — SMS via the mautrix-gmessages bridge on matrix.parallactic.com.
+;; M-x ement-connect, then M-x ement-list-rooms.
+;; Saved session (~/.cache/ement.el) so the daemon reconnects without a password;
+;; comms.sh opens the sms frame at login.
+(use-package ement
+  :commands (ement-connect ement-list-rooms ement-room-list)
+  :custom (ement-save-sessions t))
+
+;; M-x sms — plain list of text conversations on top of Ement (~/.emacs.d/sms/sms.el).
+(use-package sms
+  :ensure nil
+  :load-path "/home/clara/.emacs.d/sms"
+  :commands sms)
+
 (use-package which-key
   :init (which-key-mode))
 
@@ -66,7 +80,7 @@
   :diminish
   :hook (prog-mode text-mode))
 
-
+(setq native-comp-async-report-warnings-errors 'silent)
 
 (use-package company
   :diminish (company-mode .  " \uec0d")
@@ -261,7 +275,8 @@
    ("M-<f5>" . modus-themes-load-random))
   :config
   ;; All customisations here.
-  (set-face-attribute 'default t :font "IosevkaTermSlab NF 12" )
+  (set-face-attribute 'default t :font
+		      "IosevkaTermSlab NF 11" )
   (setq modus-themes-mixed-fonts t)
   (setq modus-themes-italic-constructs t)
 
@@ -345,22 +360,25 @@
 		    :font "IosevkaTermSlab NF 8")
 
 (let* ((variable-tuple
-        (cond ((x-list-fonts "Iosevkatermslab")         '(:font "Iosevkatermslab NF"))
+        ;; a daemon (emacs --daemon, started by swaygrid.sh) has no window system during
+        ;; init, so x-list-fonts would error; assume the font is there
+        (cond ((or (daemonp) (x-list-fonts "Iosevkatermslab")) '(:font "Iosevkatermslab NF"))
 	      (nil (warn "Cannot find da font..."))))
        (base-font-color     (face-foreground 'default nil 'default))
        (headline           `(:inherit default :weight bold :foreground ,base-font-color)))
 
   (custom-theme-set-faces
    'user
-   `(org-level-8 ((t (,@headline ,@variable-tuple))))
-   `(org-level-7 ((t (,@headline ,@variable-tuple))))
-   `(org-level-6 ((t (,@headline ,@variable-tuple))))
-   `(org-level-5 ((t (,@headline ,@variable-tuple))))
-   `(org-level-4 ((t (,@headline ,@variable-tuple :height 1))))
-   `(org-level-3 ((t (,@headline ,@variable-tuple :height 1))))
-   `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.1))))
-   `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.2))))
-   `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
+   `(org-level-8 ((t (,@headline ,@variable-tuple :height 0.8 :weight normal :slant italic))))
+   `(org-level-7 ((t (,@headline ,@variable-tuple :height 0.8 :weight normal))))
+   `(org-level-6 ((t (,@headline ,@variable-tuple :height 0.9 :weight normal :slant italic))))
+   `(org-level-5 ((t (,@headline ,@variable-tuple :height 0.9 :weight normal))))
+   `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.0 :weight normal :slant italic :foreground "#2aa198"))))
+   `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.0 :weight normal :foreground "#268bd2"))))
+   `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.0 :foreground "#6c71c4"))))
+   `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.1  :underline t :foreground "#d33682")))
+		 `(org-document-title ((t (,@headline ,@variable-tuple :height 1.2 :underline nil :foreground "#eeeeee"))
+   )))))
 
 
 (use-package nyan-mode
@@ -457,7 +475,10 @@
  org-agenda-tags-column 0
  org-ellipsis "…")
 
+
+
 (global-org-modern-mode)
+(setq org-startup-indented t)
 (global-font-lock-mode t)
 (global-prettify-symbols-mode)
 
@@ -519,6 +540,25 @@ If the new path's directories does not exist, create them."
 ;;when saving files, set execute permission if #! is in first line.
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 
+;; Keep unmodified buffers in sync with their files on disk.
+(global-auto-revert-mode 1)
+
+;; Save file buffers automatically after 5 idle seconds, so the
+;; "Save file …?" question (which can hide in another frame) rarely
+;; comes up — but ONLY if the file hasn't changed on disk since the
+;; buffer last read/saved it, so a stale buffer can never overwrite
+;; newer edits made elsewhere.
+(setq auto-save-visited-interval 5
+      auto-save-visited-predicate
+      (lambda () (verify-visited-file-modtime (current-buffer))))
+(auto-save-visited-mode 1)
+
+;; No stacked prompts: a prompt opened in one frame while another is
+;; waiting in a different frame made input look frozen (C-g only
+;; cancels one level).  Set after init so nothing turns it back on.
+(add-hook 'after-init-hook
+          (lambda () (setq enable-recursive-minibuffers nil)))
+
 ;;;;
 (defun backward-delete-word (arg)
   "Delete characters backward until encountering the beginning of a word.
@@ -548,6 +588,12 @@ With argument ARG, do this that many times."
 (auto-fill-mode -1)
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
 
+;; Built-in latex-mode: C-c C-f builds a PDF, C-c C-v opens it (default was dvi2tty).
+;; TeX Live lives in ~/texlive (see ~/.profile for PATH).
+(setq latex-run-command "pdflatex"
+      tex-print-file-extension ".pdf"
+      tex-dvi-view-command "xdg-open *")
+
 
 ;;; ..........
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
@@ -575,13 +621,13 @@ With argument ARG, do this that many times."
  '(package-selected-packages
    '(all-the-icons almost-mono-themes auto-package-update bundler
 		   color-theme-sanityinc-solarized company dashboard
-		   diff-hl diminish doom-modeline emojify
+		   diff-hl diminish doom-modeline ement emojify
 		   expand-region fancy-battery flycheck
 		   idle-highlight-in-visible-buffers-mode indent-bars
 		   magit magit-delta marginalia markdown-mode
 		   mode-line-nerd-icon modus-themes moody
 		   nerd-icons-completion nerd-icons-mode-line
-		   nyan-mode orderless org-modern projectile
+		   nyan-mode orderless org-modern php-mode projectile
 		   rainbow-delimiters rainbow-mode request robe
 		   rspec-mode rubocop ruby-electric rufo rvm scss-mode
 		   smartparens solarized-theme sudo-edit
@@ -598,5 +644,13 @@ With argument ARG, do this that many times."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:background nil))))
+ '(org-level-1 ((t (:inherit default :weight bold :foreground "unspecified-fg" :font "Iosevkatermslab NF" :height 1.1 :underline t :foreground "#d33682"))))
+ '(org-level-2 ((t (:inherit default :weight bold :foreground "unspecified-fg" :font "Iosevkatermslab NF" :height 1.0 :foreground "#6c71c4"))))
+ '(org-level-3 ((t (:inherit default :weight bold :foreground "unspecified-fg" :font "Iosevkatermslab NF" :height 1.0 :weight normal :foreground "#268bd2"))))
+ '(org-level-4 ((t (:inherit default :weight bold :foreground "unspecified-fg" :font "Iosevkatermslab NF" :height 1.0 :weight normal :slant italic :foreground "#2aa198"))))
+ '(org-level-5 ((t (:inherit default :weight bold :foreground "unspecified-fg" :font "Iosevkatermslab NF" :height 0.9 :weight normal))))
+ '(org-level-6 ((t (:inherit default :weight bold :foreground "unspecified-fg" :font "Iosevkatermslab NF" :height 0.9 :weight normal :slant italic))))
+ '(org-level-7 ((t (:inherit default :weight bold :foreground "unspecified-fg" :font "Iosevkatermslab NF" :height 0.8 :weight normal))))
+ '(org-level-8 ((t (:inherit default :weight bold :foreground "unspecified-fg" :font "Iosevkatermslab NF" :height 0.8 :weight normal :slant italic)))))
 

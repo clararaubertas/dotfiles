@@ -5,3 +5,36 @@ home/.emacs.d/backups
 home/.emacs.d/emacs-backup
 home/.emacs.d/lawlist-org
 home/.emacs.d/emacs-color-theme-solarized
+
+# --- Backups and editor leftovers (anywhere) ---
+*~
+\#*#
+.#*
+%backup%~
+*.bak
+*.bak-*
+*.orig
+home/.emacs.old
+
+# --- Emacs: packages and compiled code (reinstalled by use-package) ---
+home/.emacs.d/elpa/
+home/.emacs.d/eln-cache/
+
+# --- Emacs: per-machine state and history ---
+home/.emacs.d/recentf
+home/.emacs.d/history
+home/.emacs.d/ido.last
+home/.emacs.d/projectile-bookmarks.eld
+home/.emacs.d/projectile-frecency.eld
+home/.emacs.d/transient/
+home/.emacs.d/.last-package-update-day
+home/.emacs.d/tramp
+
+# --- Emacs: cookies and security data (private) ---
+home/.emacs.d/url/
+home/.emacs.d/request/
+home/.emacs.d/network-security.data
+
+# --- Separate git checkouts (have their own repos) ---
+home/.emacs.d/ewth.el/
+home/.emacs.d/ewth.el.git
