@@ -196,7 +196,8 @@
   (sky-color-clock-initialize 41)
   (setq sky-color-clock-format "%k:%M")
   (setq sky-color-clock-enable-emoji-icon t)
-  (push '(:eval (sky-color-clock)) (default-value 'global-mode-string))
+  ;; add-to-list, not push: re-evaluating .emacs mustn't add a second clock
+  (add-to-list 'global-mode-string '(:eval (sky-color-clock)))
   (display-time-mode -1))
 
 (setq zone-programs [zone-pgm-drip])
@@ -590,7 +591,7 @@ With argument ARG, do this that many times."
 
 ;; Built-in latex-mode: C-c C-f builds a PDF, C-c C-v opens it (default was dvi2tty).
 ;; TeX Live lives in ~/texlive (see ~/.profile for PATH).
-(setq latex-run-command "pdflatex"
+(setq latex-run-command "lualatex"   ; lualatex so fontspec/system fonts work
       tex-print-file-extension ".pdf"
       tex-dvi-view-command "xdg-open *")
 
